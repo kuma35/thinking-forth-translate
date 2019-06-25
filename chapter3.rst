@@ -59,7 +59,7 @@ These truisms apply to software design, particularly to the preliminary
 design phase. This phase is traditionally the one in which the designer
 dissects a large application into smaller, programmer-sized modules.
 
-In Chapter One we discovered that applications can be conveniently
+In :doc:`Chapter One<chapter1>` we discovered that applications can be conveniently
 decomposed into components.
 
 .. tip::
@@ -152,7 +152,8 @@ Example: A Tiny Editor
 ======================
 
 Let’s apply decomposition by component to a real problem. It would be
-nice to design a large application right here in Chapter Three, but
+nice to design a large application right here in
+doc:`Chapter Three<chapter3>`, but
 alas, we don’t have the room and besides, we’d get sidetracked in trying
 to understand the application.
 
@@ -357,7 +358,8 @@ Mode, we add a new procedure:
 slide everything to the right leftward, covering the mistake).
 
 This table seems to be the most logical expression of the problem at the
-current level. We’ll save the implementation for later (Chapter Eight).
+current level. We’ll save the implementation for later (
+:doc:`Chapter Eight<chapter8>`).
 
 Now we’ll demonstrate the tremendous value of this approach in terms of
 maintainability. We’ll throw ourselves a curve—a major change of plans!
@@ -833,8 +835,7 @@ only the *name* of the routine ``?HOLDOVER`` need be created early; its
 definition can be given
 later.
 
-Chapter Seven treats the subject of vectoring in
-Forth.
+:doc:`Chapter Seven<chapter7>` treats the subject of vectoring in Forth.
 
 The Limits of Level Thinking
 ============================
@@ -1079,7 +1080,7 @@ chapter.
 For Further Thinking
 ====================
 
-*(Answers appear in Appendix D.)*
+*(Answers appear in :doc:`Appendix D<appendixd>`.)*
 
 #. Below are two approaches to defining an editor’s keyboard
    interpreter. Which would you prefer? Why?

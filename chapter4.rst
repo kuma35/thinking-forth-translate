@@ -46,7 +46,8 @@ the science of problem solving:
 
    Determine your goal.
 
-Know what you’re trying to accomplish. As we saw in Chapter Two, this
+Know what you’re trying to accomplish. As we saw in
+:doc:`Chapter Two<chapter2>`, this
 step can be detailed further:
 
 Determine the data
@@ -56,7 +57,8 @@ is expected to produce (output). For a single definition, this means
 writing the stack-effect comment.
 
 Determine the rules; review all
-the facts that you know. In Chapter Two we described the rates for
+the facts that you know. In :doc:`Chapter Two<chapter2>` Two we described
+the rates for
 computing the cost of a phone call along with the rules for applying the
 rates.
 
@@ -555,15 +557,16 @@ we have several options. ``SHOW`` might set a flag and ``INVENTORY`` would act
 according to the flag. Such an approach has certain disadvantages,
 especially that ``INVENTORY`` must be “smart” enough to know all the
 possible actions that might be taken on it. (We’ll treat these problems
-in Chapters :doc:`chapter7` and :doc:`chapter8` .)
+in Chapters :doc:`Chapter Seven<chapter7>`
+and :doc:`Chapter Eight<chapter8>` .)
 
 Or, ``SHOW`` might look ahead at the next word in the input stream. We’ll
 discuss this approach in a tip, “Avoid expectations,” later in this
 chapter.
 
 Or, the recommended approach, ``SHOW`` might set an “execution variable”
-that INVENTORY will then execute. (We’ll discuss vectored execution in
-Chapter Seven.)
+that ``INVENTORY`` will then execute. (We’ll discuss vectored execution in
+:doc:`Chapter Seven<chapter7>`.)
 
 .. tip::
 
@@ -906,8 +909,9 @@ interpreter or compiler.
 Algorithms and Data Structures
 ==============================
 
-In Chapter Two we learned how to describe a problem’s requirements in
-terms of interfaces and rules. In this section we’ll refine the
+In :doc:`Chapter Two<chapter2>` we learned how to describe a problem\’s
+requirements in
+terms of interfaces and rules. In this section we\’ll refine the
 conceptual model for each component into clearly defined algorithms and
 data structures.
 
@@ -1006,7 +1010,8 @@ applications requiring trig, it’s faster to look up the answer in a
 table stored in memory. In this case, the simplest *adequate* solution
 is using the data structure.
 
-In Chapter Two we introduced the telephone rate problem. In that problem
+In :doc:`Chapter Two<chapter2>` we introduced the telephone rate problem.
+In that problem
 the rates appeared to be arbitrary, so we designed a data structure:
 
 +---------------+---------------+----------------+-----------------+
@@ -1022,7 +1027,8 @@ invent a formula by which these values could be calculated. And the
 formula might prove wrong later. In this case, table-driven code is
 easier to maintain.
 
-In Chapter Three we designed a keystroke interpreter for our Tiny Editor
+In :doc:`Chapter Three<chapter3>` we designed a keystroke interpreter for
+our Tiny Editor
 using a decision table:
 
 .. list-table::
@@ -1064,8 +1070,8 @@ used in the original design.
 
 The use of logic becomes advisable when the result is not calculable, or
 when the decision is not complicated enough to warrant a decision table.
-Chapter Eight is devoted to the issue of minimizing the use of logic in
-your programs.
+:doc:`Chapter Eight<chapter8>` is devoted to the issue of minimizing the
+use of logic in your programs.
 
 .. tip::
 
@@ -1610,7 +1616,7 @@ only a byte, let’s make each “slot” one byte. We’ll call the table
 
 Note: This use of ``ASCII`` requires that
 ``ASCII`` be “ ``STATE`` -dependent”
-(see :doc:`appendixc`). If the word ``ASCII`` is
+(see :doc:`Appendix C<appendixc>`). If the word ``ASCII`` is
 not defined in your system, or if it is not state-dependent, use:
 
 .. code-block:: none

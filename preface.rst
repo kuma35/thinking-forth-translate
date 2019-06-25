@@ -41,7 +41,7 @@ all areas of computer application.
 
 If you want to learn more about Forth, another book of mine,
 *Starting Forth*, covers the language aspects of Forth. Otherwise,
-Appendix A of this book introduces Forth fundamentals.
+:doc:`Appendix A<appendixa>` of this book introduces Forth fundamentals.
 
 A few words about the layout of the book: After devoting the first
 chapter to fundamental concepts, I\’ve patterned the book after the

@@ -118,7 +118,7 @@ The Value of Planning
 =====================
 
 In the nine phases at the start of this chapter we listed five steps
-*before* “implementation.” Yet in Chapter One we saw that an
+*before* “implementation.” Yet in :doc:`Chapter One<chapter1>` we saw that an
 overindulgence in planning is both difficult and pointless.
 
 Clearly you can’t undertake a significant software project—regardless of
@@ -372,7 +372,7 @@ versions:
    For Forth addicts (without a "traditional" background):
    Hold off on coding as long as you can possibly stand it.
 
-Or, as we observed in Chapter One:
+Or, as we observed in :doc:`Chapter One<chapter1>`:
 
 .. tip::
 
@@ -1070,10 +1070,10 @@ a running Forth application. But it is only pseudocode. We’ve avoided
 stack manipulations by assuming that values will somehow be on the stack
 where the comments indicate. Also, we’ve used hyphenated names because
 they might be more readable for the customer. Short names are preferred
-in real code—see Chapter Five.)
+in real code—see :doc:`Chapter Five<chapter5>`.)
 
-We’ll unveil the finished code for this example in Chapter
-Eight.
+We’ll unveil the finished code for this example in
+doc:`Chapter Eight<chapter8>`.
 
 Defining the Data Structures
 ============================

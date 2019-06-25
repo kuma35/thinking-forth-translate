@@ -75,7 +75,7 @@ lattermost screens (i.e., not load them) and still have a
 self-sufficient, running application, working properly except for the
 lack of the more advanced features.
 
-We discussed the art of decomposition extensively in :doc:`chapter3`.
+We discussed the art of decomposition extensively in :doc:`Chapter Three<chapter3>`.
 
 Composition
 -----------
@@ -210,7 +210,7 @@ run-time routine for semicolon. In these systems the use of
 require for internal reasons a different routine for the “skip-screen”
 function.
 
-Definitions for ``\`` and ``\S`` can be found in :doc:`appendixc`.
+Definitions for ``\`` and ``\S`` can be found in :doc:`Appendix C<appendixc>`.
 
 Chapter-load Screens
 --------------------
@@ -262,7 +262,7 @@ and
         1+ SWAP DO  I +LOAD  LOOP ;
 
 My own way, which I submit as a more useful factoring, requires a single
-word, ``FH`` (see :doc:`appendixc` for its definition).
+word, ``FH`` (see :doc:`Appendix C<appendixc>` for its definition).
 
 The phrase
 
@@ -594,7 +594,7 @@ This form requires fewer characters than
 
 and eliminates possible confusion between dates and months.
 
-If your system has ``\`` (“skip-line”—see :doc:`appendixc`),
+If your system has ``\`` (“skip-line”—see :doc:`Appendix C<appendixc>`),
 you can write the comment line like this:
 
 .. code-block:: none
@@ -653,7 +653,7 @@ This rule makes it easier to find a definition in the listing. (When
 definitions continue for more than one line, the subsequent lines should
 always be indented.) ``VARIABLE`` s and
 ``CONSTANT`` s should also be defined one per line.
-(See “Samples of Good Commenting Style” in :doc:`appendixe`) This
+(See “Samples of Good Commenting Style” in :doc:`Appendix E<appendixe>`) This
 leaves room for an explanatory comment on the same line. The exception
 is a large “family” of words (defined by a common defining-word) which
 do not need unique comments:
@@ -712,10 +712,10 @@ accomplished in this fashion:
 
 Sometimes an argument is passed on the stack from
 screen to screen, such as the value returned by
-``BEGIN`` or ``IF`` in a multiscreen
-assembler definition, or the base address passed from one defining word
-to another—see “Compile-Time Factoring” in :doc:`chapter6`. In these cases,
-it’s best to save the value of ``BASE`` on the return stack like this:
+``BEGIN`` or ``IF`` in a multiscreen assembler definition, or the base address
+passed from one defining word to another—see “Compile-Time Factoring” in
+:doc:`Chapter Six<chapter6>`. In these cases, it’s best to save the value of
+``BASE`` on the return stack like this:
 
 .. code-block:: none
    
@@ -1015,7 +1015,7 @@ Stack Abbreviation Standards
 
 Abbreviations used in stack notation should be consistent. Table
 :numref:`tab-5-2` lists most of the commonly used
-abbreviations. (This table reappears in :doc:`appendixe`.) The terms
+abbreviations. (This table reappears in :doc:`Appendix E<appendixe>`.) The terms
 “single-length,” “double-length,” etc. refer to the size of a “cell” in
 the particular Forth system. (If the system uses a 16-bit cell, “n”
 represents a 16-bit number; if the system uses a 32-bit cell, “n”
@@ -1459,7 +1459,7 @@ about it) require three comments. For instance:
    \ Interpret:   c   ( -- c )
         ... ; IMMEDIATE
 
-:doc:`appendixe` includes two screens showing good commenting style.
+:doc:`Appendix E<appendixe>` includes two screens showing good commenting style.
 
 Vertical Format vs. Horizontal Format
 =====================================
@@ -1578,7 +1578,7 @@ about it. This means that:
 -  definitions are not too long
 
 -  not too many arguments are passed to a single definition via the
-   stack (see “The Stylish Stack” in :doc:`chapter7`).
+   stack (see “The Stylish Stack” in :doc:`Chapter Seven<chapter7>`).
 
 Forth is simply not like other languages, in which line-by-line
 commenting is one of the few things you can do to make programs more
@@ -1680,7 +1680,7 @@ good thesaurus [laxen]_ .
 
 Sometimes you’ll think of an adequate word for a definition, but it
 doesn’t feel quite right. It may be months later before you realize that
-you fell short of the mark. In the Roman numeral example in :doc:`chapter4`
+you fell short of the mark. In the Roman numeral example in :doc:`Chapter Four<chapter4>`
 one-less-than the next symbol’s value. My first choice was ``4-0R-9``.
 That’s awkward, but it was much later that I thought of ``ALMOST``.
 
@@ -1899,7 +1899,7 @@ Naming Standards: The Science
    Learn and adopt Forth\'s naming conventions.
 
 In the quest for short, yet meaningful names, Forth programmers have
-adopted certain naming conventions. :doc:`appendixe` includes a list
+adopted certain naming conventions. :doc:`Appendix E<appendixe>` includes a list
 of the most useful conventions developed over the years.
 
 An example of the power of naming conventions is the use of “dot” to
@@ -1973,7 +1973,7 @@ More Tips for Readability
 =========================
 
 Here are some final suggestions to make your code more readable.
-(Definitions appear in :doc:`appendixc`.)
+(Definitions appear in :doc:`Appendix C<appendixc>`.)
 
 One constant that pays for itself in most applications is
 ``BL`` (the ASCII value for “blank-space”).

@@ -762,7 +762,7 @@ Here\’s an example of Forth code;
 
 This is structurally identical to the procedure ``MAKE-BREAKFAST`` on page
 :numref:`fig1-4` . (If you\’re new to Forth, refer to
-Appendix A for an explanation). The words ``HURRIED?``, ``CEREAL``,
+:doc:`Appendix A<appendixa>` for an explanation). The words ``HURRIED?``, ``CEREAL``,
 ``EGGS``, and ``CLEAN`` are (most likely) also defined as colon definitions.
 
 Up to a point, Forth exhibits all the traits we\’ve studied: mnemonic

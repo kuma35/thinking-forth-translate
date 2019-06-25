@@ -916,7 +916,8 @@ Using Decision Tables
 
    Use decision tables.
 
-We introduced these in Chapter Two. A decision table is a structure that
+We introduced these in :doc:`Chapter Two<chapter2>`.
+A decision table is a structure that
 contains either data (a “data table”) or addresses of functions (a
 “function table”) arranged according to any number of dimensions. Each
 dimension represents all the possible, mutually exclusive states of a
@@ -1280,7 +1281,8 @@ It’s easier to perform a simple, consistent algorithm while changing the
 context of your environment than to choose from several algorithms while
 keeping a fixed environment.
 
-Recall from Chapter One our example of the word ``APPLES``. This was
+Recall from :doc:`Chapter One<chapter1>` our example of the word
+``APPLES``. This was
 originally defined as a variable; it was referred to many times
 throughout the application by words that incremented the number of
 apples (when shipments arrive), decremented the number (when apples are
@@ -1629,8 +1631,8 @@ If the only purpose to setting a flag is so that later some code can
 decide between one number and another, you’re better off saving the
 number itself.
 
-The “colors” example in Chapter Six’s section called “Factoring
-Criteria” illustrates this point.
+The “colors” example in :doc:`Chapter Six<chapter6>`\’s section called
+“Factoring Criteria” illustrates this point.
 
 The purpose of the word ``LIGHT`` is to set a flag which indicates whether
 we want the intensity bit to be set or not. While we could have

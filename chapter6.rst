@@ -200,7 +200,7 @@ The messiest situation occurs when the
 difference between two definitions is a function within a structure that
 makes it impossible to factor out the half-fragments. In this case, use
 stack arguments, variables, or even vectoring. We’ll see how vectoring
-can be used in a section of :doc:`chapter7` called “Using DOER/MAKE.”
+can be used in a section of :doc:`Chapter Seven<chapter7>` called “Using DOER/MAKE.”
 
 Here’s a reminder about factoring code from out of a ``DO``  ``LOOP``:
 
@@ -246,13 +246,13 @@ both. Watch this:
 The word ``CONDITIONALLY`` may—depending on the
 condition—alter the control flow so that the remaining words in each
 definition will be skipped. This approach has certain disadvantages as
-well. We’ll discuss this technique—pros and cons—in :doc:`chapter8`.
+well. We’ll discuss this technique—pros and cons—in :doc:`Chapter Eight<chapter8>`.
 
 More benign examples of factoring-out control structures include case
 statements, which eliminate nested ``IF``  ``ELSE``  ``THEN`` s,
 and multiple exit loops  (the ``BEGIN``  ``WHILE``  ``WHILE``  ``WHILE``
 ``...``  ``REPEAT`` construct).
-We\’ll also discuss these topics in :doc:`chapter8`.
+We\’ll also discuss these topics in :doc:`Chapter Eight<chapter8>`.
 
 Factoring Out Names
 -------------------
@@ -593,7 +593,7 @@ the similar cases.
     Certainly you get more confidence in the idea.
 
 Compare this view with the criteria
-for decomposing a module espoused by structured design in :doc:`chapter1`.
+for decomposing a module espoused by structured design in :doc:`Chapter One<chapter1>`.
 According to that method, a module should exhibit “functional binding,”
 which can be verified by describing its function in a single,
 non-compound, *sentence*. Forth’s “atom,” a *name*, is an order of
@@ -713,7 +713,7 @@ Here’s a better factoring found in some Forth systems:
    : .  ( n)  (.) TYPE SPACE ;
 
 We find another example of failing to factor the output function from
-the calculation function in our own Roman numeral example in :doc:`chapter4`
+the calculation function in our own Roman numeral example in :doc:`Chapter Four<chapter4>`
 Four. Given our solution, we can’t store a Roman numeral in a buffer or
 even center it in a field. (A better approach would have been to use
 ``HOLD`` instead of ``EMIT``.)
@@ -758,7 +758,7 @@ Implementation.”
 
 It
 may seem paradoxical, but good factoring can often yield *fewer* names.
-In :doc:`chapter5` we saw how six simple names (``LEFT``, ``RIGHT``, ``MOTOR``,
+In :doc:`Chapger Five<chapter5>` we saw how six simple names (``LEFT``, ``RIGHT``, ``MOTOR``,
 ``SOLENOID``, ``ON``, and ``OFF``) could do the work of eight badly-factored,
 hyphenated names.
 
