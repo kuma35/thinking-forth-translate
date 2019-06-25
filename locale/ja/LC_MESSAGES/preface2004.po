@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: 2019-06-24 22:52+0900\n"
+"PO-Revision-Date: 2019-06-25 19:06+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -30,7 +30,7 @@ msgid ""
 " technology have crested in popularity. These are simply concepts of good"
 " programming, discovered and rediscovered by countless working developers"
 " over the years, and given a fresh twist by a genius named Chuck Moore."
-msgstr ""
+msgstr "「Forth思考」の最初の出版から20年後、私自身が再び序文を書けるのを名誉に思います。多くの新技術の波が寄せてきた後でも、ここで取り上げた概念がいまだ有効であることを嬉しく思っています。それらは、長年に渡って無数の開発者に発見・再発見されてきた、良いプログラミングのシンプルな概念です。そしてそれはチャック・ムーア(Chuck Moore)という天才によって新たなひねりを加えられました。"
 
 #: ../../preface2004.rst:14
 msgid ""
@@ -38,7 +38,7 @@ msgid ""
 "recent career has centered more on requirements and functional design "
 "than on development technologies. But with the honor of writing another "
 "preface to this book comes another opportunity to express my opinion."
-msgstr ""
+msgstr "私は比較言語学の専門家であると主張したことはありません。私の最近の職歴は開発技術よりも要件定義と機能設計に集中しています。しかし、この序文で、私の意見を述べる新たな機会が訪れました。"
 
 #: ../../preface2004.rst:19
 msgid ""
@@ -50,7 +50,7 @@ msgid ""
 "phenomenon. Some of the patterns do, like the controller pattern, but too"
 " many others, such as the factory pattern, address problems that are "
 "created by the programming language itself."
-msgstr ""
+msgstr "インターネットアプリケーションを設計する過程で、私はJavaとC#をつまみ食いしました。それはチャックがずっと支持してきた優雅さを垣間見るのに十分でした。私は、現実世界の現象に対して繰り返し発生するプログラムコードの設計のために、デザインパターンを説明した最近の本を幾つか読みました。いくつかのパターンは、コントローラパターンのようにしますが、ファクトリパターンのようなのはプログラミング言語自体によって引き起こされる問題に対処します。"
 
 #: ../../preface2004.rst:28
 msgid ""
@@ -66,7 +66,7 @@ msgid ""
 "Java written in Forth. There was no need for garbage collection, etc. I "
 "won’t apologize now for my apology then, but please know that I didn\\’t "
 "mean to sell out in favor of full-blown object oriented languages."
-msgstr ""
+msgstr "1994年度版への序文の中で、私は1984年度版でのオブジェクト指向プログラミングの否定が勇み足だったことを謝罪しました。その謝罪がDigalog社のGary Friedlanderが開発したオブジェクト指向風Forthを使う契機になりました。私は、カプセル化の原則が、それぞれ独自の共通メソッドを実装したクラスから派生したForthの「オブジェクト」にエレガントに適用できることを発見しました。オブジェクトは自分自身についての情報を「知っている」ので、それらを呼び出すコードをよりシンプルにしました。しかし、これらはまだForthによる組み立てであり、まだForth構文です。JavaはForthで書かれていませんでした。ガベージコレクションなどは必要ありませんでした。当時の私の謝罪を今は謝罪しませんが、私が本格的なオブジェクト指向言語を支持して売り込むつもりはないことを知っておいてください。"
 
 #: ../../preface2004.rst:42
 msgid ""
@@ -74,7 +74,7 @@ msgid ""
 "Programming. For example, emphasis on iterative development, "
 "incrementally enhancing code that “works,” and not over-solving the "
 "problem, and so on."
-msgstr ""
+msgstr "幾人かは「Forth思考」とエクストリーム・プログラミングとの類似点に着目しました。例えば反復的な開発、「動く」コードを段階的に強化すること、問題を解決しすぎないことを重視します。"
 
 #: ../../preface2004.rst:47
 msgid ""
@@ -84,7 +84,7 @@ msgid ""
 "doesn\\’t need to be formalized because good developers do it "
 "intuitively. But in the projects I\\’ve been working on, involving five "
 "or more developers, it\\’s crucial."
-msgstr ""
+msgstr "しかし、私の考えでは、エクストリーム・プログラミングはソフトウェア開発ライフサイクルにおける重要なステップ、すなわち概念モデルの設計を見逃しているようです。エクストリーム・プログラミングでは1人か2人の開発者しかプロジェクトに取り組んでいないため、この段階は正式なものにする必要はありません。優れた開発者が直感的に行うからです。 しかし、私が取り組んできた5人以上の開発者が関わるプロジェクトでは、概念モデルの設計が非常に重要です。"
 
 #: ../../preface2004.rst:54
 msgid ""
@@ -99,7 +99,7 @@ msgid ""
 "design and implementation, or how the software actually works. The "
 "conceptual model is designed collaboratively by the program manager, "
 "developers, and business owners."
-msgstr ""
+msgstr "概念モデルは、ソフトウェアがどのように動作するように見えるかを表すものとして定義します。 概念モデルは、単に要件を修正したものではありません。 これは、トップレベルの要件を慎重に分析し、ユーザーにとって意味のある設計でそれらを創造的に対処した結果です。 例として、コマースアプリケーションの「買い物かご」構造があります。 第1段階である概念設計は、第2段階である要件の基礎を形成し、ユーザー/システムの対話を記述するユースケースを推進します。 次に、この第2段階の要件によって、第3段階以降の技術設計と実装、またはソフトウェアの実際の動作が決定されます。 概念モデルは、プログラムマネージャ、開発者、および事業主によって共同で設計されています。"
 
 #: ../../preface2004.rst:66
 msgid ""
@@ -112,23 +112,23 @@ msgid ""
 " with Extreme Programming is that some developers of the XP stripe (and "
 "who of course have never heard of this book) don\\’t even see the value "
 "of a spec!"
-msgstr ""
+msgstr "私がエクストリーム・プログラミングについて読んだかぎりでは、概念設計の代わりに要件定義が実装を直接駆動すると仮定しているようです。私の経験では、概念モデルの理解者であるプログラムマネージャの立ち位置に惹かれます。一緒に仕事したほとんどのソフトウェア開発者は、論理的および技術的な設計を行う前に概念モデルを設計することに注意を払う私に感謝しています。しかし「Forth思考」とエクストリーム・プログラミングを比較すると、皮肉なことにXPストライプの開発者の中には(もちろんこの本を聞いたことがない人も)仕様の価値さえわからないという人がいます。"
 
 #: ../../preface2004.rst:76
 msgid "Ah well."
-msgstr ""
+msgstr "嗚呼、"
 
 #: ../../preface2004.rst:78
 msgid "**May wisdom, fun, and the greater good shine forth in all your work.**"
-msgstr ""
+msgstr "知恵、楽しさ、そしてより良い善があなたのすべての仕事に輝くように願っています。"
 
 #: ../../preface2004.rst:80
 msgid "Leo Brodie"
-msgstr ""
+msgstr "レオ・ブロディー"
 
 #: ../../preface2004.rst:84
 msgid "Acknowledgments for 2004 Edition"
-msgstr ""
+msgstr "謝辞"
 
 #: ../../preface2004.rst:86
 msgid ""
@@ -136,17 +136,17 @@ msgid ""
 " In this case, it\\’s the other way around. This entire project was "
 "conceived, executed and completed by an inspired group of people with no "
 "prompting or significant assistance from me."
-msgstr ""
+msgstr "通常ここは、本を作るのを手伝ってくれた人々に著者が感謝を述べるところですが、今回は逆に、この2004年度版出版プロジェクトは私からの助言も重要な支援も受けず、発奮した人々によって構想、実施、完成しました。"
 
 #: ../../preface2004.rst:91
 msgid ""
 "For that reason, I have asked them to describe their contributions in "
 "their own words:"
-msgstr ""
+msgstr "そのため私は、彼らの貢献を彼ら自身の言葉でつづってもらうよう依頼しました。"
 
 #: ../../preface2004.rst:114
 msgid "**John R. Hogerhuis**:"
-msgstr ""
+msgstr "**John R. Hogerhuis**:"
 
 #: ../../preface2004.rst:95
 msgid ""
@@ -155,7 +155,7 @@ msgid ""
 "under an open content license. I acquired a copy of 1984 edition, chopped"
 " off the binding, and scanned it in. Then I did a proof-of-concept and "
 "typeset the first chapter of the book in LyX."
-msgstr ""
+msgstr "私はレオ・ブロディーに、オープンコンテンツライセンスの下で電子フォーマットで「Forth思考」の再公開を許可する条件について話し合うために連絡しました。 私は1984年版のコピーを入手し、本の背を切り落としてスキャンしました。それから概念の検証を行い、その本の最初の章をLyXで組版しました。"
 
 #: ../../preface2004.rst:101
 msgid ""
@@ -168,18 +168,18 @@ msgid ""
 "copyrights had to be assigned to Leo Brodie)---that the more I stayed out"
 " of the way and avoided being a bottleneck the faster the work came "
 "together."
-msgstr ""
+msgstr "一人でできる量では無いことが判明したので、(妻が言うように、私は時折見せる野心を燃やし)、 :newsgroup:`comp.lang.forth` ニュースグループのForthコミュニティに助けを求めました。この本への愛ゆえの支援の多さは途方もないもので、作業を分割して基本的なルール(1984年度版に準拠し、組版言語にLaTeXを使用し、著作権はレオ・ブロディーに譲渡する必要がありました)を決めた後は、私が邪魔しないようにして、ボトルネックにならないようにすればするほど作業が早くなることがわかりました。"
 
 #: ../../preface2004.rst:112
 msgid ""
 "I also OCRed all the pages at some point using Transym OCR tool (others "
 "used the same tool in their transcription effort), and did the "
 "cleanup/vectorization pass on the images for Chapter Three."
-msgstr ""
+msgstr "私はまた、同時期にTransym OCRツールを使ってすべてのページをOCRし(他の人は同じツールを転記のために使っていました)、そして第3章のために画像のクリーンアップとベクトル化を行いました。"
 
 #: ../../preface2004.rst:129
 msgid "**Bernd Paysan**:"
-msgstr ""
+msgstr "**Bernd Paysan**:"
 
 #: ../../preface2004.rst:117
 msgid ""
@@ -189,119 +189,119 @@ msgid ""
 "(\"despite limitations on use, I recommend approval; this is a unique and"
 " excellent resource on Forth\"). The actual approval was processed by "
 "David Burley."
-msgstr ""
+msgstr "私はインフラを整えました。私はSourceforgeによって承認されたプロジェクトを手に入れ、CVSと開発者を追加したメーリングリストを用意しました。非営利ライセンスにもかかわらず承認されたのは、Jacob Moormanがこの本に関して「使用上の制限に抵触しますが、承認をおすすめします。これはForthに関する優れたリソースです」としたおかげです。実際の承認処理はDavid Burleyが行いました。"
 
 #: ../../preface2004.rst:124
 msgid ""
 "As the LaTeX guru, I created most of the style file, and cleaned up most "
 "of the submissions so that they work with the style file."
-msgstr ""
+msgstr "LaTeX導師として、私はほとんどのスタイルファイルを作成し、ほとんどの提出物がそのスタイルファイルで機能するようにクリーンアップしました。"
 
 #: ../../preface2004.rst:127
 msgid ""
 "I cleaned up pictures, restoring halftone and removing raster as "
 "necessary. I translated non-hand-drawn figures to LaTeX. [#f1]_"
-msgstr ""
+msgstr "必要に応じて絵図をクリーンアップし、ハーフトーンを復元してラスタを削除。手書きではない図をLaTeXに変換。 [#f1]_"
 
 #: ../../preface2004.rst:138
 msgid "**Andrew Nicholson**:"
-msgstr ""
+msgstr "**Andrew Nicholson**:"
 
 #: ../../preface2004.rst:132
 msgid ""
 "item extracted, rotated and converting the scanned images from Chapter "
 "One, Chapter Two, Chapter Seven, Chapter Eight into PNGs and adding the "
 "images into the correct places."
-msgstr ""
+msgstr "第1章、第2章、第7章、第8章からスキャンした画像を抽出、回転、PNGに変換して正しい場所に挿入。"
 
 #: ../../preface2004.rst:135
 msgid "transcribed Chapter Two from OCR to LaTeX"
-msgstr ""
+msgstr "第2章をOCRからLaTeXに書き写し。"
 
 #: ../../preface2004.rst:136
 msgid "rebuilt the index from 1984"
-msgstr ""
+msgstr "1984年度版の索引を再作成。"
 
 #: ../../preface2004.rst:137
 msgid "revised and cleaned up Chapter One and Chapter Five"
-msgstr ""
+msgstr "第1章と第5章の改訂とクリーンアップ"
 
 #: ../../preface2004.rst:138
 msgid "cleaned up Chapter Six, Chapter Seven, Chapter Eight"
-msgstr ""
+msgstr "第6章、第7章、第8章をクリーンアップ。"
 
 #: ../../preface2004.rst:142
 msgid "**Nils Holm**:"
-msgstr ""
+msgstr "**Nils Holm**:"
 
 #: ../../preface2004.rst:141
 msgid ""
 "Transcription/initial typesetting of Chapter Four, Chapter Seven, and "
 "Chapter Eight"
-msgstr ""
+msgstr "第4章、第7章、第8章の書き写しと初期タイプセット。"
 
 #: ../../preface2004.rst:145
 msgid "**Anton Ertl**:"
-msgstr ""
+msgstr "**Anton Ertl**:"
 
 #: ../../preface2004.rst:145
 msgid "I LaTeXified (typeset) and did some cleanup of Chapter Three."
-msgstr ""
+msgstr "第3章で、幾つかLaTeX化(タイプセット)とクリーンアップ。"
 
 #: ../../preface2004.rst:148
 msgid "**Joseph Knapka**:"
-msgstr ""
+msgstr "**Joseph Knapka**:"
 
 #: ../../preface2004.rst:148
 msgid "Transcription of Chapter Three"
-msgstr ""
+msgstr "第3章の書き写し。"
 
 #: ../../preface2004.rst:153
 msgid "**Josef Gabriel**:"
-msgstr ""
+msgstr "**Josef Gabriel**:"
 
 #: ../../preface2004.rst:151
 msgid ""
 "I transcribed Chapter Six. I see my contribution as helping to pass on "
 "Forth to other folks.  I hope folks will read *Thinking Forth* and have "
 "their code changed."
-msgstr ""
+msgstr "私は第6章を書き写しました。私の貢献はForthを他の人々に引き継ぐのに役立つと考えています。みなさんが「Forth思考」を読んで、そのコードが変化することを願っています。"
 
 #: ../../preface2004.rst:156
 msgid "**Ed Beroset**:"
-msgstr ""
+msgstr "**Ed Beroset**:"
 
 #: ../../preface2004.rst:156
 msgid "Typeset the epilog and appendices, and did some of the LaTeX coding."
-msgstr ""
+msgstr "エピローグと付録のタイプセットと、幾つかのLaTeXコーディング。"
 
 #: ../../preface2004.rst:159
 msgid "**Albert van der Horst**:"
-msgstr ""
+msgstr "**Albert van der Horst**:"
 
 #: ../../preface2004.rst:159
 msgid "Transcribed/did initial typesetting for Chapter Five"
-msgstr ""
+msgstr "第5章の書き写しと初期タイプセット。"
 
 #: ../../preface2004.rst:162
 msgid "**Steve Fisher**:"
-msgstr ""
+msgstr "**Steve Fisher**:"
 
 #: ../../preface2004.rst:162
 msgid "Ran the OCR for Chapter Seven and Chapter Eight"
-msgstr ""
+msgstr "第7章と第8章をOCRスキャン。"
 
 #: ../../preface2004.rst:164
 msgid "To all of the above, I am deeply indebted and honored."
-msgstr ""
+msgstr "上記の全ての方々に、私は深くお世話になり、そして尊敬しています。"
 
 #: ../../preface2004.rst:166
 msgid "**Leo Brodie** Seattle, WA November 2004"
-msgstr ""
+msgstr "2004年11月 ワシントン州シアトル レオ・ブロディー"
 
 #: ../../preface2004.rst:169
 msgid "Footnotes"
-msgstr ""
+msgstr "脚注"
 
 #: ../../preface2004.rst:170
 msgid ""
@@ -310,5 +310,5 @@ msgid ""
 "  Of course, an important part of most Free Software projects is one "
 "dedicated super developer who blazes the trail and gets a large "
 "percentage of the work done.  Bernd is that guy."
-msgstr ""
+msgstr "John R. Hogerhuisより：印象的な効果の為に「フリーソフトウェア」開発モデルを採用しましたが、Bernd Paysanがボールを奪い、ボールとともに走り抜けたことを付け加えておきます。つまり、フリーソフトウェアプロジェクトのほとんどの重要な部分は、道を切り拓き大部分の仕事をした、この一人の献身的なスーパー開発者によってなされました。 Bernd Paysanはほんとに凄い奴です。"
 
