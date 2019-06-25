@@ -4,15 +4,15 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-25 09:29+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-06-26 07:11+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../chapter1.rst:4
 msgid "1. The Philosophy of Forth"
-msgstr ""
+msgstr "1. Forthの哲学"
 
 #: ../../chapter1.rst:6
 msgid ""
@@ -29,13 +29,13 @@ msgid ""
 "described as something apart from Forth. It did not precede Forth, nor is"
 " it described anywhere apart from discussions of Forth, nor does it even "
 "have a name other than “Forth.”"
-msgstr ""
+msgstr "Forthは言語とオペレーティングシステムです。しかしそれだけではありません。それは哲学の具現化でもあります。Forthと哲学は不可分の存在です。Forth以前にはこのようなことはありませんでした。かつてこのような議論が行われたのはForthのみです。"
 
 #: ../../chapter1.rst:13
 msgid ""
 "What is this philosophy? How can you apply it to solve your software "
 "problems?"
-msgstr ""
+msgstr "哲学とは一体何でしょうか？　ソフトウェアの問題を解決するためにそれをどのように適用できるのでしょうか？"
 
 #: ../../chapter1.rst:16
 msgid ""
@@ -44,11 +44,12 @@ msgid ""
 "scientists over the years. After tracing the trajectory of these "
 "advances, we\\’ll compare—and contrast—Forth with these state-of-the-art "
 "programming principles."
-msgstr ""
+msgstr "これらの質問に答える前に、ちょっと寄り道して、コンピュータ科学者によって長年研究されてきた主要な哲学を幾つか調べてみましょう。これらの進歩の軌跡を辿ったあと、これら最先端のプログラミング原則とForthを比較対照します。"
 
+# armchar(じぶんでは経験していない) history の良い訳語探索中
 #: ../../chapter1.rst:25
 msgid "An Armchair History of Software Elegance"
-msgstr ""
+msgstr "ソフトウェアの優雅さ昔話"
 
 #: ../../chapter1.rst:27
 msgid ""
@@ -57,7 +58,7 @@ msgid ""
 "provided great cause for wonderment. As computers became more civilized, "
 "the wonder waned. Management wanted more from programmers and from their "
 "programs."
-msgstr ""
+msgstr "むかしむかし、プログラミング原始時代、コンピュータが恐竜であったとき、幾人かの天才があるプログラムを正しく走らせる事ができるという稀有な事例は、大いなる驚きをもって迎えられました。コンピュータが文明化するにつれて驚きは薄れ、経営陣はプログラマーとプログラマーの作ったプログラムにより多くを求めるようになりました。"
 
 #: ../../chapter1.rst:33
 msgid ""
@@ -66,21 +67,21 @@ msgid ""
 " be developed quickly and maintained easily. A new demand began to share "
 "the spotlight with correctness. The missing quality was called "
 "“elegance.”"
-msgstr ""
+msgstr "ハードウェアのコストが着実に低下するにつれて、ソフトウェアのコストは急上昇しました。もはやプログラムが正しく実行されるに十分なコストが賄えなくなりました。ソフトウェアを迅速に開発し容易に維持しなければなりませんでした。新しい需要が正確さにスポットライトを当てました。欠けている品質は「優雅さ」と呼ばれました。"
 
 #: ../../chapter1.rst:39
 msgid ""
 "In this section we\\’ll outline a history of the tools and techniques for"
 " writing more elegant programs."
-msgstr ""
+msgstr "この節では、より優雅なプログラムを書くための道具とテクニックの歴史についておおまかに紹介します。"
 
 #: ../../chapter1.rst:43
 msgid "Memorability"
-msgstr ""
+msgstr "おぼえやすさ"
 
 #: ../../chapter1.rst:45
 msgid "The first computer programs looked something like this:"
-msgstr ""
+msgstr "最初のコンピュータプログラムは以下のようなものでした。"
 
 #: ../../chapter1.rst:56
 msgid ""
@@ -90,11 +91,11 @@ msgid ""
 " to perform some mundane operation like “Move the contents or Register B "
 "to Register A,” or “Add the contents of Register C into the contents of "
 "Register A.”"
-msgstr ""
+msgstr "プログラマは一連のスイッチをセットすることによってこれらのプログラムを入力しました。数字が「1」の場合は「スイッチオン」、「0」の場合は「スイッチオフ」です。これらの数値はコンピューターのための「機械語」で、そしてそれがコンピュータに「内容またはレジスタBをレジスタAに移動しろ」とか「レジスタCの内容をレジスタAの内容に追加しろ」とかのようなありふれた操作を実行させました。"
 
 #: ../../chapter1.rst:63
 msgid "This proved a bit tedious."
-msgstr ""
+msgstr "これは少々退屈です。"
 
 #: ../../chapter1.rst:65
 msgid ""
@@ -102,7 +103,7 @@ msgid ""
 "realized that the computer itself could be used to help. So they wrote a "
 "program that translated easy-to-remember abbreviations into the hard-to-"
 "remember bit patterns. The new language looked something like this:"
-msgstr ""
+msgstr "退屈さは発明の継母です。幾人かの賢いプログラマーはコンピューター自体にその助けさせることができる事に気づきました。そこで、彼らは覚えやすい略語を覚えにくいビットパターンに翻訳するプログラムを書きました。その新しい言語は以下のようになりました。"
 
 #: ../../chapter1.rst:80
 msgid ""
@@ -112,18 +113,18 @@ msgid ""
 "assembly instruction and machine instruction. But names are easier for "
 "programmers to remember. For this reason the new instructions were called"
 " *mnemonics* ."
-msgstr ""
+msgstr "翻訳プログラムは「アセンブラ」と呼ばれ、その新しい言語は「アセンブリ言語」と呼ばれました。各命令はその命令にふさわしいビットパターンをアセンブリ命令と機械命令との間で1対1の対応で「組み立て(assembled)」しました。ビットパターンと違って名前ならプログラマにとって覚えやすい。このためアセンブリ命令は「ニーモニック(記憶術)」と呼ばれていました。"
 
 #: ../../chapter1.rst:90
 msgid "Power"
-msgstr ""
+msgstr "パワー"
 
 #: ../../chapter1.rst:92
 msgid ""
 "Assembly-language programming is characterized by a one-for-one "
 "correspondence between each command that the programmer types and each "
 "command that the processor performs."
-msgstr ""
+msgstr "アセンブリ言語プログラミングは、プログラマが入力する各命令とプロセッサが実行する各命令が1対1で対応しているのが特徴です。"
 
 #: ../../chapter1.rst:96
 msgid ""
@@ -131,7 +132,7 @@ msgid ""
 "*sequence* of instructions over and again to accomplish the same thing in"
 " different parts of the program. How nice it would be to have a name "
 "which would represent each of these common sequences."
-msgstr ""
+msgstr "実際には、プログラマはプログラムの様々な部分で、同じ事をするために同じ「シーケンス(連なり)」の命令群をしばしば繰り返し使いました。同じ事をする同じシーケンスには名前を付けると素敵な気がします。"
 
 #: ../../chapter1.rst:101
 msgid ""
@@ -140,29 +141,29 @@ msgid ""
 " (“macros”). For each name, the macro assembler assembles the five or ten"
 " machine instructions represented by the name, just as though the "
 "programmer had written them out in full."
-msgstr ""
+msgstr "この要望は、通常の命令だけでなく特別な名前(「マクロ」)も認識できる、より複雑なアセンブラである「マクロアセンブラ」によって満たされました。マクロアセンブラは名前があるたびに、まるでプログラマが書き込んだかのように名前で表される複数の機械命令を組み立てます。"
 
 #: ../../chapter1.rst:112
 msgid "So then I typed GOTO 500---and here I am!"
-msgstr ""
+msgstr "GOTO 500って打ち込んだら、ここに来ちゃったんだ！"
 
 #: ../../chapter1.rst:117
 msgid "Abstraction"
-msgstr ""
+msgstr "抽象化"
 
 #: ../../chapter1.rst:119
 msgid ""
 "A major advance was the invention of the “high-level language\". Again "
 "this was a translator program, but a more powerful one. High-level "
 "languages make it possible for programmers to write code like this:"
-msgstr ""
+msgstr "大きな進歩は「高級言語」の発明でした。これもまた翻訳プログラムですが、より強力なものでした。 高級言語ではプログラマ以下のようなコードを書くことができます。"
 
 #: ../../chapter1.rst:132
 msgid ""
 "which looks a lot like algebra. Thanks to high-level languages, "
 "engineers, not just bizarre bit-jockeys, could start writing programs. "
 "BASIC and FORTRAN are examples of high-level languages."
-msgstr ""
+msgstr "まるで算数のようです。高級言語のおかげで、ビット野郎だけでなく技術者もプログラムを書けるようになりました。高級言語の例としてBASICやFORTRANがあります。"
 
 #: ../../chapter1.rst:138
 msgid ""
@@ -171,7 +172,7 @@ msgid ""
 "instructions. But more significantly, high-level languages eliminate the "
 "linear correspondence between source code and the resulting machine "
 "instructions."
-msgstr ""
+msgstr "高級言語は、各命令が数十の機械語命令をコンパイルするという意味で、アセンブリ言語より明らかに「強力」です。 しかしさらに重要なことに、高級言語はソースコードと結果として得られる機械語命令との間の1対1の対応を取り除きます。"
 
 #: ../../chapter1.rst:144
 msgid ""
@@ -179,7 +180,7 @@ msgid ""
 "taken as a whole. Operators such as :math:`+` and :math:`=` have no "
 "meaning by themselves. They are merely part of a complex symbology that "
 "depends upon syntax and the operator\\’s location in the statement."
-msgstr ""
+msgstr "実際の命令はソースコード全体の中にある各「ステートメント」に依存します。 :math:`+` や :math:`=` のような演算子はそれ自身では意味を持ちません。これらは文法と、ステートメントの演算子の位置によって意味が異なる複雑な記号の一部に過ぎません。"
 
 #: ../../chapter1.rst:149
 msgid ""
@@ -187,11 +188,11 @@ msgid ""
 " code is widely considered to be an invaluable step in the progress of "
 "programming methodology. But as we’ll see, the approach ultimately offers"
 " more restriction than freedom."
-msgstr ""
+msgstr "ソースコードとオブジェクトコードとの間の1対1でない対応は、プログラミング技術論の進歩における非常に貴重なステップであると考えられています。しかし、よく目にするよう、このアプローチは結局はその自由よりも多くの制約をもたらします。"
 
 #: ../../chapter1.rst:156
 msgid "Manageability"
-msgstr ""
+msgstr "管理しやすさ"
 
 #: ../../chapter1.rst:158
 msgid ""
@@ -201,7 +202,7 @@ msgid ""
 "depending upon the outcome. They also involve “looping” over the same "
 "sections of code repeatedly, usually testing for the moment to branch out"
 " of the loop."
-msgstr ""
+msgstr "ほとんどのコンピュータプログラムは、単に最初から最後まで作業するための命令のリスト以上のものが含まれています。 また、さまざまな条件を検査してから、結果に応じてコードの適切な部分に「分岐」します。 また、コードの同じセクションを繰り返し「ループ」し、通常はループから抜ける瞬間を検査します。"
 
 #: ../../chapter1.rst:165
 msgid ""
@@ -214,7 +215,7 @@ msgstr ""
 
 #: ../../chapter1.rst:180
 msgid "Unstructured code using jumps or \"GOTOs.\""
-msgstr ""
+msgstr "ジャンプや「GOTO」を使用した非構造化コード"
 
 #: ../../chapter1.rst:184
 msgid ""
@@ -224,7 +225,7 @@ msgid ""
 "programming, it’s impossible to test a single part of the code or to "
 "figure out how something is getting executed that isn’t supposed to be "
 "getting executed."
-msgstr ""
+msgstr "This approach, still widely used in languages like FORTRAN and BASIC, suffers from being difficult to write and difficult to change if corrections need to be made. In this “bowl-of-spaghetti” school of programming, it’s impossible to test a single part of the code or to figure out how something is getting executed that isn’t supposed to be getting executed."
 
 #: ../../chapter1.rst:192
 msgid ""
@@ -340,7 +341,7 @@ msgstr ""
 
 #: ../../chapter1.rst:275
 msgid "Writeability"
-msgstr ""
+msgstr "書きやすさ"
 
 #: ../../chapter1.rst:277
 msgid ""
@@ -416,7 +417,7 @@ msgstr ""
 
 #: ../../chapter1.rst:336
 msgid "Subroutines"
-msgstr ""
+msgstr "サブルーチン"
 
 #: ../../chapter1.rst:338
 msgid ""
@@ -827,23 +828,23 @@ msgstr ""
 
 #: ../../chapter1.rst
 msgid "Sales Dept. takes order"
-msgstr ""
+msgstr "Sales Dept. takes order"
 
 #: ../../chapter1.rst
 msgid "sends blue copy to Bookkeeping"
-msgstr ""
+msgstr "sends blue copy to Bookkeeping"
 
 #: ../../chapter1.rst
 msgid "orange copy to Shipping"
-msgstr ""
+msgstr "orange copy to Shipping"
 
 #: ../../chapter1.rst
 msgid "Jay logs the orange copy in the red binder on his desk, and completes"
-msgstr ""
+msgstr "Jay logs the orange copy in the red binder on his desk, and completes"
 
 #: ../../chapter1.rst
 msgid "packing slip."
-msgstr ""
+msgstr "packing slip."
 
 #: ../../chapter1.rst:643
 msgid ""
