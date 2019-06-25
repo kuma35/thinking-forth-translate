@@ -1,0 +1,1076 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../chapter3.rst:4
+msgid "3. Preliminary Design/Decomposition"
+msgstr ""
+
+#: ../../chapter3.rst:6
+msgid "Assuming you have some idea of what your program should accomplish, it’s time to begin the design. The first stage, preliminary design, focuses on shrinking your mountainous problem into manageable molehills."
+msgstr ""
+
+#: ../../chapter3.rst:11
+msgid "In this chapter we’ll discuss two ways to decompose your Forth application."
+msgstr ""
+
+#: ../../chapter3.rst:15
+msgid "Decomposition by Component"
+msgstr ""
+
+#: ../../chapter3.rst:17
+msgid "Has this sort of thing ever happened to you? You’ve been planning for three months to take a weekend vacation to the mountains. You’ve been making lists of what to bring, and daydreaming about the slopes."
+msgstr ""
+
+#: ../../chapter3.rst:21
+msgid "Meanwhile you’re deciding what to wear to your cousin’s wedding next Saturday. They’re informal types, and you don’t want to overdress. Still, a wedding’s a wedding. Maybe you should rent a tuxedo anyway."
+msgstr ""
+
+#: ../../chapter3.rst:25
+msgid "For all this planning, it’s not until Thursday that you realize the two events coincide. You have expletives for such moments."
+msgstr ""
+
+#: ../../chapter3.rst:28
+msgid "How is such a mental lapse possible, in one so intelligent as yourself? Apparently the human mind actually makes links between memories. New ideas are somehow added onto existing paths of related thoughts."
+msgstr ""
+
+#: ../../chapter3.rst:36
+msgid "Pools of thought not yet linked"
+msgstr ""
+
+#: ../../chapter3.rst:40
+msgid "In the mishap just described, no connection was ever made between the two separately-linked pools of thought until Thursday. The conflict probably occurred when some new input (something as trivial as hearing Saturday’s weather report) got linked into both pools of thought. A lightning flash of realization arced between the pools, followed inexorably by thunderous panic."
+msgstr ""
+
+#: ../../chapter3.rst:47
+msgid "A simple tool has been invented to avoid such disasters. It’s called a calendar. If you had recorded both plans in the same calendar, you would have seen the other event scheduled, something your brain failed to do for all its intricate magnificence."
+msgstr ""
+
+#: ../../chapter3.rst:54
+msgid "To see the relationship between two things, put them close together. To remind yourself of the relationship, **keep** them together."
+msgstr ""
+
+#: ../../chapter3.rst:58
+msgid "These truisms apply to software design, particularly to the preliminary design phase. This phase is traditionally the one in which the designer dissects a large application into smaller, programmer-sized modules."
+msgstr ""
+
+#: ../../chapter3.rst:62
+msgid "In :doc:`Chapter One<chapter1>` we discovered that applications can be conveniently decomposed into components."
+msgstr ""
+
+#: ../../chapter3.rst:67
+msgid "The goal of preliminary design is to determine what components are necessary to accomplish the requirements."
+msgstr ""
+
+#: ../../chapter3.rst:70
+msgid "For instance, you might have an application in which events must occur according to some predetermined schedule. To manage the scheduling, you might first design a few words to constitute a “schedule-building lexicon.” With these words you’ll be able to describe the order of events that must occur within your application."
+msgstr ""
+
+#: ../../chapter3.rst:76
+msgid "Thus within a single component, you’ll not only share information, but also work out potential conflicts. The wrong approach would be to let each functional module “know” things about its schedule that could potentially conflict with another module’s schedule."
+msgstr ""
+
+#: ../../chapter3.rst:81
+msgid "How can you know, in designing a component, what commands the using components will need? Admittedly, this is something of a “chicken vs. egg” problem. But Forth programmers handle it the same way chickens and eggs do: iteratively."
+msgstr ""
+
+#: ../../chapter3.rst:86
+msgid "If the component is well-designed, completeness doesn’t matter. In fact, a component need only suffice for the current iteration’s design. No component should be considered a “closed book” until the application has been completed—which, in the case of maintained applications, is never."
+msgstr ""
+
+#: ../../chapter3.rst:91
+msgid "As an example, imagine that your product needs to “talk” to other machines in the outside world via a universal I/O chip that is part of your system. This particular chip has a “control register” and a “data register.” In a badly designed application, pieces of code throughout the program would access the communication chip by simply invoking the OUT instruction to put an appropriate command byte into the command register. This makes the entire application needlessly dependent on that particular chip—very risky."
+msgstr ""
+
+#: ../../chapter3.rst:100
+msgid "Instead, Forth programmers would write a component to control the I/O chip. These commands would have logical names and a convenient interface (usually Forth’s stack) to allow usage by the rest of the application."
+msgstr ""
+
+#: ../../chapter3.rst:104
+msgid "For any iteration of your product’s design, you would implement only the commands needed so far—not all the valid codes that could be sent to the “control register.” If later in the project cycle you realize that you need an additional command, say one to change the baud rate, the new command would be added to the I/O chip lexicon, not to the code needed to set the baud rate. There’s no penalty for making this change except the few minutes (at most) it takes to edit and recompile."
+msgstr ""
+
+#: ../../chapter3.rst:114
+msgid "Within each component, implement only the commands needed for the current iteration. (But don't preclude future additions.)"
+msgstr ""
+
+#: ../../chapter3.rst:117
+msgid "What goes on inside a component is pretty much its own business. It’s not necessarily bad style for definitions within the component to share redundant information."
+msgstr ""
+
+#: ../../chapter3.rst:121
+msgid "For instance, a record in a certain data structure is fourteen bytes long. One definition in the component advances a pointer 14 bytes to point to the next record; another definition decrements the pointer 14 bytes."
+msgstr ""
+
+#: ../../chapter3.rst:126
+msgid "As long as that number 14 remains a “secret” to the component and won’t be used elsewhere, you don’t need to define it as constant. Just use the number 14 in both definitions:"
+msgstr ""
+
+#: ../../chapter3.rst:137
+msgid "On the other hand, if the value will be needed outside of the component, or if it’s used several times within the component and there’s a good chance that it will change, you’re better off hiding it behind a name:"
+msgstr ""
+
+#: ../../chapter3.rst:149
+msgid "(The name /RECORD, by convention, means “bytes per record.”)"
+msgstr ""
+
+#: ../../chapter3.rst:152
+msgid "Example: A Tiny Editor"
+msgstr ""
+
+#: ../../chapter3.rst:154
+msgid "Let’s apply decomposition by component to a real problem. It would be nice to design a large application right here in doc:`Chapter Three<chapter3>`, but alas, we don’t have the room and besides, we’d get sidetracked in trying to understand the application."
+msgstr ""
+
+#: ../../chapter3.rst:160
+msgid "Instead, we’ll take a component from a large application that has already been decomposed. We’ll design this component by decomposing it further, into subcomponents."
+msgstr ""
+
+#: ../../chapter3.rst:164
+msgid "Imagine that we must create a tiny editor that will allow users to change the contents of input fields on their terminal screen. For instance, the screen might look like this:"
+msgstr ""
+
+#: ../../chapter3.rst:171
+msgid "The editor will provide three modes for users to change the contents of the input field:"
+msgstr ""
+
+#: ../../chapter3.rst:176
+msgid "Overwrite."
+msgstr ""
+
+#: ../../chapter3.rst:175
+msgid "Typing ordinary characters overwrites any characters that were there before."
+msgstr ""
+
+#: ../../chapter3.rst:180
+msgid "Delete."
+msgstr ""
+
+#: ../../chapter3.rst:179
+msgid "Pressing the combination of keys “Ctrl D” deletes the character under the cursor and slides the remaining characters leftwards."
+msgstr ""
+
+#: ../../chapter3.rst:186
+msgid "Insert."
+msgstr ""
+
+#: ../../chapter3.rst:183
+msgid "Pressing the combination of keys “Ctrl I” switches the editor into “Insert Mode,” where subsequently typing ordinary characters inserts them at the cursor position, sliding the remaining characters rightwards."
+msgstr ""
+
+#: ../../chapter3.rst:188
+msgid "As part of the conceptual model we should also consider the error or exception-handling; for instance, what is the limit of the field? what happens in insert mode when characters spill off the right? etc."
+msgstr ""
+
+#: ../../chapter3.rst:192
+msgid "That’s all the specification we have right now. The rest is up to us."
+msgstr ""
+
+#: ../../chapter3.rst:194
+msgid "Let’s try to determine what components we’ll need. First, the editor will react to keys that are typed at the keyboard. Therefore we’ll need a keystroke interpreter—some kind of routine that awaits keystrokes and matches them up with a list of possible operations. The keystroke interpreter is one component, and its lexicon will consist of a single word. Since that word will allow the editing of a field, let’s call the word EDIT."
+msgstr ""
+
+#: ../../chapter3.rst:202
+msgid "The operations invoked by the keystroke interpreter will comprise a second lexicon. The definitions in this lexicon will perform the various functions required. One word might be called DELETE, another INSERT, etc. Since each of these commands will be invoked by the interpreter, each of them will process a single keystroke."
+msgstr ""
+
+#: ../../chapter3.rst:208
+msgid "Below these commands should lie a third component, the set of words that implement the data structure to be edited."
+msgstr ""
+
+#: ../../chapter3.rst:215
+msgid "Generalized decomposition of the Tiny Editor problem."
+msgstr ""
+
+#: ../../chapter3.rst:219
+msgid "Finally, we’ll need a component to display the field on the video screen. For the sake of simplicity, let’s plan on creating one word only, REDISPLAY, to redisplay the entire field after each key is pressed."
+msgstr ""
+
+#: ../../chapter3.rst:230
+msgid "This approach separates revising the buffer from updating the display. For now, we’ll only concentrate on revising the buffer."
+msgstr ""
+
+#: ../../chapter3.rst:233
+msgid "Let’s look at each component separately and try to determine the words each will need. We can begin by considering the events that must occur within the three most important editing functions: overwriting, deleting, and inserting. We might draw something like the following on the back of an old pizza menu (we won’t pay much attention to exception-handling in the present discussion):"
+msgstr ""
+
+#: ../../chapter3.rst:244
+msgid "To Overwrite:"
+msgstr ""
+
+#: ../../chapter3.rst:241
+msgid "Store new character into byte pointer to by pointer."
+msgstr ""
+
+#: ../../chapter3.rst:242
+#: ../../chapter3.rst:256
+msgid "Advance pointer (unless at end of field)."
+msgstr ""
+
+#: ../../chapter3.rst:251
+msgid "To Delete:"
+msgstr ""
+
+#: ../../chapter3.rst:247
+msgid "Copy leftwards, by one place, the string beginning one place to the right of the pointer."
+msgstr ""
+
+#: ../../chapter3.rst:249
+msgid "Store a \"blank\" into the last position on the line."
+msgstr ""
+
+#: ../../chapter3.rst:258
+msgid "To Insert:"
+msgstr ""
+
+#: ../../chapter3.rst:254
+msgid "Copy rightwards, by one place, the string beginning at the pointer."
+msgstr ""
+
+#: ../../chapter3.rst:255
+msgid "Store new character into byte pointed to by pointer."
+msgstr ""
+
+#: ../../chapter3.rst:260
+msgid "We’ve just developed the algorithms for the problem at hand."
+msgstr ""
+
+#: ../../chapter3.rst:262
+msgid "Our next step is to examine these three essential procedures, looking for useful “names”—that is procedures or elements which can either:"
+msgstr ""
+
+#: ../../chapter3.rst:265
+msgid "possibly be reused, or"
+msgstr ""
+
+#: ../../chapter3.rst:267
+msgid "possibly change"
+msgstr ""
+
+#: ../../chapter3.rst:269
+msgid "We discover that all three procedures use something called a “pointer.” We need two procedures:"
+msgstr ""
+
+#: ../../chapter3.rst:272
+msgid "to get the pointer (if the pointer itself is relative, this function will perform some computation)."
+msgstr ""
+
+#: ../../chapter3.rst:275
+msgid "to advance the pointer"
+msgstr ""
+
+#: ../../chapter3.rst:277
+msgid "Wait, three procedures:"
+msgstr ""
+
+#: ../../chapter3.rst:279
+msgid "to move the pointer backwards"
+msgstr ""
+
+#: ../../chapter3.rst:281
+msgid "because we will want “cursor keys” to move the cursor forward and back without editing changes."
+msgstr ""
+
+#: ../../chapter3.rst:284
+msgid "These three operators will all refer to a physical pointer somewhere in memory. Where it is kept and how (relative or absolute) should be hidden within this component."
+msgstr ""
+
+#: ../../chapter3.rst:288
+msgid "Let’s attempt to rewrite these algorithms in code:"
+msgstr ""
+
+#: ../../chapter3.rst:302
+msgid "To copy the text leftwards and rightwards, we had to invent two new names as we went along, SLIDE< and SLIDE> (pronounced “slide-backwards” and “slide-forwards” respectively). Both of them will certainly use POSITION, but they also must rely on an element we’ve deferred considering: a way to “know” the length of the field. We can tackle that aspect when we get to writing the third component. But look at what we found out already: we can describe “Insert” as simply “SLIDE> OVERWRITE”."
+msgstr ""
+
+#: ../../chapter3.rst:311
+msgid "In other words, “Insert” actually *uses* “Overwrite” even though they appear to exist on the same level (at least to a Structured Programmer)."
+msgstr ""
+
+#: ../../chapter3.rst:314
+msgid "Instead of probing deeper into the third component, let’s lay out what we know about the first component, the key interpreter. First we must solve the problem of “insert mode.” It turns out that “insert” is not just something that happens when you press a certain key, as delete is. Instead it is a *different way of interpreting* some of the possible keystrokes."
+msgstr ""
+
+#: ../../chapter3.rst:321
+msgid "For instance in “overwrite” mode, an ordinary character gets stored into the current cursor position; but in “insert mode” the remainder of the line must first be shifted right. And the backspace key works differently when the editor is in Insert Mode as well."
+msgstr ""
+
+#: ../../chapter3.rst:326
+msgid "Since there are two modes, “inserting” and “not-inserting,” the keystroke interpreter must associate the keys with two possible sets of named procedures."
+msgstr ""
+
+#: ../../chapter3.rst:330
+msgid "We can write our keystroke interpreter as a decision table (worrying about the implementation later):"
+msgstr ""
+
+#: ../../chapter3.rst:333
+msgid "decision table"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "Key"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "Not-inserting"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "Inserting"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "Ctrl-D"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "DELETE"
+msgstr ""
+
+#: ../../chapter3.rst:1
+#: ../../chapter3.rst:1
+#: ../../chapter3.rst:1
+#: ../../chapter3.rst:1
+#: ../../chapter3.rst:1
+msgid "INSERT-OFF"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "Ctrl-I"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "INSERT-ON"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "backspace"
+msgstr ""
+
+#: ../../chapter3.rst:1
+#: ../../chapter3.rst:1
+msgid "BACKWARD"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "INSERT<"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "left-arrow"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "right-arrow"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "FORWARD"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "return"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "ESCAPE"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "any printable"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "OVERWRITE"
+msgstr ""
+
+#: ../../chapter3.rst:1
+msgid "INSERT"
+msgstr ""
+
+#: ../../chapter3.rst:344
+msgid "We’ve placed the possible types of keys in the left column, what they do normally in the middle column, and what they do in “insert mode” in the right column."
+msgstr ""
+
+#: ../../chapter3.rst:348
+msgid "To implement what happens when “backspace” is pressed while in Insert Mode, we add a new procedure:"
+msgstr ""
+
+#: ../../chapter3.rst:357
+msgid "(move the cursor backwards on top of the last character typed, then slide everything to the right leftward, covering the mistake)."
+msgstr ""
+
+#: ../../chapter3.rst:360
+msgid "This table seems to be the most logical expression of the problem at the current level. We’ll save the implementation for later ( :doc:`Chapter Eight<chapter8>`)."
+msgstr ""
+
+#: ../../chapter3.rst:364
+msgid "Now we’ll demonstrate the tremendous value of this approach in terms of maintainability. We’ll throw ourselves a curve—a major change of plans!"
+msgstr ""
+
+#: ../../chapter3.rst:368
+msgid "Maintaining a Component-based Application"
+msgstr ""
+
+#: ../../chapter3.rst:370
+msgid "How well will our design fare in the face of change? Envision the following scenario:"
+msgstr ""
+
+#: ../../chapter3.rst:373
+msgid "We originally assumed that we could refresh the video display simply by retyping the field every time a key is pressed. We even implemented the code on our personal computer, with its memory-mapped video that refreshes an entire line in the blink of a scan cycle. But now our customer wants the application to run on a telephone-based network, with all I/O being done at a not-so-fast baud rate. Since some of our input fields are almost as wide as the video screen, maybe 65 characters, it just takes too long to refresh the entire line on every key stroke."
+msgstr ""
+
+#: ../../chapter3.rst:382
+msgid "We’ve got to change the application so that we only refresh that part of the field that actually changes. In “insert” and “delete,” this would mean the text to the right of the cursor. In “overwrite” it would mean changing just the single character being overwritten."
+msgstr ""
+
+#: ../../chapter3.rst:387
+msgid "This change is significant. The video refresh function, which we cavalierly relegated to the key interpreter, now must depend on which editing functions occur. As we’ve discovered, the most important names needed to implement the key interpreter are:"
+msgstr ""
+
+#: ../../chapter3.rst:403
+msgid "None of their descriptions make any reference to the video refresh process, because that was originally assumed to happen later."
+msgstr ""
+
+#: ../../chapter3.rst:406
+msgid "But things aren’t as bad as they seem. Looking at it now, the process OVERWRITE could easily include a command to type the new character where the terminal’s cursor is. And SLIDE< and SLIDE> could include commands to type everything to the right of, and including, POSITION, then reset the terminal’s cursor to its current position."
+msgstr ""
+
+#: ../../chapter3.rst:412
+msgid "Here are our revised procedure names. The commands just added are in boldface:"
+msgstr ""
+
+#: ../../chapter3.rst:425
+msgid "Since these are the only three functions that change memory, they are the only three functions that need to refresh the screen. This idea is critical. We must be able to make such assertions to assure program correctness. The assertion is intrinsic to the nature of the problem."
+msgstr ""
+
+#: ../../chapter3.rst:430
+msgid "Note that the additional problem of video refresh adds an additional “pointer”: the current cursor position on the screen. But decomposition by component has encouraged us to view the ``OVERWRITE`` process as changing both the data field and the video vision of it; similarly with ``SLIDE<`` and ``SLIDE>`` . For this reason it seems natural now to maintain only one real pointer—a relative one—from which we can compute either the data address in memory, or the column number on the screen."
+msgstr ""
+
+#: ../../chapter3.rst:438
+msgid "Since the nature of the pointer is wholly hidden within the three processes ``POSITION`` , ``FORWARD`` , and ``BACKWARD`` , we can readily accommodate this approach, even if it wasn’t our first approach."
+msgstr ""
+
+#: ../../chapter3.rst:442
+msgid "This change may have seemed simple enough here—even obvious. If so, it’s because the technique ensures flexible design. If we had used a traditional approach—if we had designed according to structure, or according to data transformation through sequential processes—our brittle design would have been shattered by the change."
+msgstr ""
+
+#: ../../chapter3.rst:448
+msgid "To prove this assertion, we’ll have to start all over again from scratch."
+msgstr ""
+
+#: ../../chapter3.rst:452
+msgid "Designing and Maintaining a Traditional Application"
+msgstr ""
+
+#: ../../chapter3.rst:454
+msgid "Let’s pretend we haven’t studied the Tiny Editor problem yet, and we’re back with a minimal set of specs. We’ll also start with our initial assumption, that we can refresh the display by retyping the entire field after each keystroke."
+msgstr ""
+
+#: ../../chapter3.rst:459
+msgid "According to the dictum of top-down design, let’s take the widest-angle view possible and examine the problem.  :numref:`fig3-3`  depicts the program in its simplest terms. Here we’ve realized that the editor is actually a loop which keeps getting keystrokes and performing some editing function, until the user presses the return key."
+msgstr ""
+
+#: ../../chapter3.rst:469
+msgid "The traditional approach: view from the top."
+msgstr ""
+
+#: ../../chapter3.rst:473
+msgid "Inside the loop we have three modules: getting a character from the keyboard, editing the data, and finally refreshing the display to match the data."
+msgstr ""
+
+#: ../../chapter3.rst:477
+msgid "Clearly most of the work will go on inside “Process a Keystroke.”"
+msgstr ""
+
+#: ../../chapter3.rst:479
+msgid "Applying the notion of successive refinement,  :numref:`fig3-4` shows the editor problem redrawn with “Process a Keystroke” expanded. We find it takes several attempts before we arrive at this configuration. Designing this level forces us to consider many things at once that we had deferred till later in the previous try."
+msgstr ""
+
+#: ../../chapter3.rst:489
+msgid "A structure for \"Process a Keystroke.\""
+msgstr ""
+
+#: ../../chapter3.rst:493
+msgid "For instance, we must determine all the keys that might be pressed. More significantly, we must consider the problem of “insert mode.” This realization forces us to invent a flag called INSERT-MODE which gets toggled by the “Ctrl I” key. It’s used within several of the structural lines to determine how to process a type of key."
+msgstr ""
+
+#: ../../chapter3.rst:499
+msgid "A second flag, called ESCAPE, seems to provide a nice structured way of escaping the editor loop if the user presses the return key while not in insert mode."
+msgstr ""
+
+#: ../../chapter3.rst:503
+msgid "Having finished the diagram, we’re bothered by the multiple tests for Insert Mode. Could we test for Insert Mode once, at the beginning? Following this notion, we draw yet another chart ( :numref:`fig3-5` )."
+msgstr ""
+
+#: ../../chapter3.rst:508
+msgid "As you can see, this turns out even more awkward than the first figure. Now we’re testing for each key twice. It’s interesting though, how the two structures are totally different, yet functionally equivalent. It’s enough to make one wonder whether the control structure is terribly relevant to the problem."
+msgstr ""
+
+#: ../../chapter3.rst:518
+msgid "Another structure for \"Process a Keystroke.\""
+msgstr ""
+
+#: ../../chapter3.rst:522
+msgid "Having decided on the first structure, we’ve finally arrived at the most important modules—the ones that do the work of overwriting, inserting, and deleting. Take another look at our expansion of “Process a Character” in  :numref:`fig3-4` . Let’s consider just one of the seven possible execution paths, the one that happens if a printable character is pressed."
+msgstr ""
+
+#: ../../chapter3.rst:529
+msgid "In  :numref:`fig3-6` (a) we see the original structural path for a printable character."
+msgstr ""
+
+#: ../../chapter3.rst:532
+msgid "Once we figure out the algorithms for overwriting and inserting characters, we might refine it as shown in  :numref:`fig3-6` (b). But look at that embarrassing redundancy of code (circled portions). Most competent structured programmers would recognize that this redundancy is unnecessary, and change the structure as shown in :numref:`fig3-6` (c). Not too bad so far, right?"
+msgstr ""
+
+#: ../../chapter3.rst:540
+msgid "Change in Plan"
+msgstr ""
+
+#: ../../chapter3.rst:542
+msgid "Okay, everyone, now act surprised. We’ve just been told that this application won’t run on a memory-mapped display. What does this change do to our design structure?"
+msgstr ""
+
+#: ../../chapter3.rst:550
+msgid "The same section, \"refined\" and \"optimized.\""
+msgstr ""
+
+#: ../../chapter3.rst:554
+msgid "Well, for one thing it destroys “Refresh Display” as a separate module. The function of “Refresh Display” is now scattered among the various structural lines inside “Process a Keystroke.” The structure of our entire application has changed. It’s easy to see how we might have spent weeks doing top-down design only to find we’d been barking down the wrong tree."
+msgstr ""
+
+#: ../../chapter3.rst:561
+msgid "What happens when we try to change the program? Let’s look again at the path for any printable character."
+msgstr ""
+
+#: ../../chapter3.rst:564
+msgid ":numref:`fig3-7`  (a) shows what happens to our first-pass design when we add refresh. Part (b) shows our “optimized” design with the refresh modules expanded. Notice that we’re now testing the Insert flag twice within this single leg of the outer loop."
+msgstr ""
+
+#: ../../chapter3.rst:569
+msgid "But worse, there’s a bug in this design. Can you find it?"
+msgstr ""
+
+#: ../../chapter3.rst:571
+msgid "In both cases, overwriting and inserting, the pointer is incremented *before* the refresh. In the case of overwrite, we’re displaying the new character in the wrong position. In the case of insert, we’re typing the remainder of the line but not the new character."
+msgstr ""
+
+#: ../../chapter3.rst:576
+msgid "Granted, this is an easy problem to fix. We need only move the refresh modules up before “Increment Pointer.” The point here is: How did we miss it? By getting preoccupied with control flow structure, a superficial element of program design."
+msgstr ""
+
+#: ../../chapter3.rst:585
+msgid "Adding refresh."
+msgstr ""
+
+#: ../../chapter3.rst:589
+msgid "In contrast, in our design by components the correct solution fell out naturally because we “used” the refresh component inside the editing component. Also we used OVERWRITE inside INSERT."
+msgstr ""
+
+#: ../../chapter3.rst:593
+msgid "By decomposing our application into components which use one another, we achieved not only *elegance* but a more direct path to *correctness*."
+msgstr ""
+
+#: ../../chapter3.rst:598
+msgid "The Interface Component"
+msgstr ""
+
+#: ../../chapter3.rst:600
+msgid "In computer science terminology, interfacing between modules has two aspects. First, there’s the way other modules invoke the module; this is the control interface. Second, there’s the way other modules pass and receive data to and from the module; this is the data interface."
+msgstr ""
+
+#: ../../chapter3.rst:605
+msgid "Because of Forth’s dictionary structure, control is not an issue. Definitions are invoked by being named. In this section, when we use the term “interface” we’re referring to data."
+msgstr ""
+
+#: ../../chapter3.rst:609
+msgid "When it comes to data interfaces between modules, traditional wisdom says only that “interfaces should be carefully designed, with a minimum of complexity.” The reason for the care, of course, is that each module must implement its own end of the interface ( :numref:`fig3-8` )."
+msgstr ""
+
+#: ../../chapter3.rst:614
+msgid "This means the presence of redundant code. As we’ve seen, redundant code brings at least two problems: bulky code and poor maintainability. A change to the interface of one module will affect the interface of the opposite module."
+msgstr ""
+
+#: ../../chapter3.rst:623
+msgid "Traditional view of the interface as a junction."
+msgstr ""
+
+#: ../../chapter3.rst:627
+msgid "There’s more to good interface design than that. Allow me to introduce a design element which I call the “interface component.” The purpose an interface component is to implement, and *hide information about*, the data interface between two or more other components ( :numref:`fig3-9` )."
+msgstr ""
+
+#: ../../chapter3.rst:637
+msgid "Use of the interface component."
+msgstr ""
+
+#: ../../chapter3.rst:643
+msgid "Both data structures and the commands involved in the communication of data between modules should be localized in an interface component."
+msgstr ""
+
+#: ../../chapter3.rst:646
+msgid "Let me give an example from my own recent experience. One of my hobbies is writing text formatter/editors. (I’ve written two of them, including the one on which I am writing this book.)"
+msgstr ""
+
+#: ../../chapter3.rst:650
+msgid "In my latest design the formatter portion contains two components. The first component reads the source document and decides where to make line and page breaks, etc. But instead of sending the text directly to the terminal or printer, it saves up a line’s worth at a time in a “line buffer.”"
+msgstr ""
+
+#: ../../chapter3.rst:656
+msgid "Similarly, instead of sending printer-control commands—for bold-facing, underlining, etc.—as the text is being formatted, it defers these commands until the text is actually sent. To defer the control commands, I have a second buffer called the “attribute buffer.” It corresponds, byte-for-byte, with the line buffer, except that each byte contains a set of flags that indicate whether the corresponding character should be underlined, boldfaced, or whatever."
+msgstr ""
+
+#: ../../chapter3.rst:664
+msgid "The second component displays or prints the contents of the line buffer. The component knows whether it is transmitting to the terminal or to the printer, and outputs the text according to the attributes indicated by the attribute buffer."
+msgstr ""
+
+#: ../../chapter3.rst:669
+msgid "Here we have two well-defined components—the line-formatter and the output component—each one shouldering part of the function of the formatter as a whole."
+msgstr ""
+
+#: ../../chapter3.rst:673
+msgid "The data interface between these two components is fairly complex. The interface consists of two buffers, a variable that indicates the current number of valid characters, and finally a “knowledge” of what all those attribute patterns mean."
+msgstr ""
+
+#: ../../chapter3.rst:678
+msgid "In Forth I’ve defined these elements together in a single screen. The buffers are defined with ``CREATE``, the count is an ordinary ``VARIABLE``, and the attribute patterns are defined as ``CONSTANT`` s, such as:"
+msgstr ""
+
+#: ../../chapter3.rst:690
+msgid "The formatting component uses phrases like ``UNDERNESS SET-FLAG`` to set bits in the attribute buffer. The output component uses phrases like ``UNDERNESS AND`` to read the attribute buffer."
+msgstr ""
+
+#: ../../chapter3.rst:695
+msgid "A Design Mistake"
+msgstr ""
+
+#: ../../chapter3.rst:697
+msgid "In designing an interface component, you should ask yourself “What is the set of structures and commands that must be shared by the communicating components?” It’s important to determine what elements belong to the interface and what elements should remain within a single component."
+msgstr ""
+
+#: ../../chapter3.rst:703
+msgid "In writing my text formatter, I failed to answer this question fully and found myself with a bug. The problem was this:"
+msgstr ""
+
+#: ../../chapter3.rst:706
+msgid "I allow different type widths to be used: condensed, double width, etc. This means not only sending different signals to the printer, but changing the number of characters allowed per line."
+msgstr ""
+
+#: ../../chapter3.rst:710
+msgid "I keep a variable, called WALL, for the formatter. WALL indicates the right margin: the point beyond which no more text can be set. Changing to a different type width means changing the value of WALL proportionately. (Actually, this turns out to be a mistake in itself. I should be using a finer unit of measurement, the number of which remains constant for the line. Changing type widths would mean changing the number of units per character. But getting back to the mistake at hand…)"
+msgstr ""
+
+#: ../../chapter3.rst:718
+msgid "Alas, I was also using WALL inside the output component to determine how many characters to display. My reasoning was that this value would change depending on what type-width I was using."
+msgstr ""
+
+#: ../../chapter3.rst:722
+msgid "I was right—99% of the time. But one day I discovered that, under a certain condition, a line of condensed text was being somehow cut short. The final couple of words were just missing. The reason turned out to be that WALL was getting changed before the output component had a chance to use it."
+msgstr ""
+
+#: ../../chapter3.rst:728
+msgid "Originally I had seen nothing wrong with letting the output component blithely use the formatter’s WALL as well. Now I realized that the formatter had to leave a separate variable for the output component, to indicate how many valid characters were in the buffers. This would leave any subsequent font commands free to change WALL."
+msgstr ""
+
+#: ../../chapter3.rst:734
+msgid "It was important that the two buffers, the attribute commands, and the new variable were the *only* elements that could be shared between the two modules. Reaching into either module from the other one spells trouble."
+msgstr ""
+
+#: ../../chapter3.rst:739
+msgid "The moral of this story is that we must distinguish between data structures that are validly used only within a single component and those that may be shared by more than one component."
+msgstr ""
+
+#: ../../chapter3.rst:743
+msgid "A related point:"
+msgstr ""
+
+#: ../../chapter3.rst:747
+msgid "Express in objective units any data to be shared by components."
+msgstr ""
+
+#: ../../chapter3.rst:749
+msgid "For example:"
+msgstr ""
+
+#: ../../chapter3.rst:751
+msgid "Module A measures the temperature of the oven."
+msgstr ""
+
+#: ../../chapter3.rst:753
+msgid "Module B controls the burner."
+msgstr ""
+
+#: ../../chapter3.rst:755
+msgid "Module C makes sure the door is locked if the oven is too hot."
+msgstr ""
+
+#: ../../chapter3.rst:757
+msgid "The information of global interest is the temperature of the oven, expressed objectively in degrees. While Module A might receive a value representing the voltage from a heat sensor, it should convert this value to degrees before presenting it to the rest of the application."
+msgstr ""
+
+#: ../../chapter3.rst:764
+msgid "Decomposition by Sequential Complexity"
+msgstr ""
+
+#: ../../chapter3.rst:766
+msgid "We’ve been discussing one way to do decomposition: according to components. The second way is according to sequential complexity."
+msgstr ""
+
+#: ../../chapter3.rst:769
+msgid "One of Forth’s rules is that a word must already have been defined to be invoked or referred to. Usually the sequence in which words are defined parallels the order of increasing capabilities which the words must possess. This sequence leads to a natural organization of the source listing. The powerful commands are simply added on top of the elementary application ( :numref:`fig3-10` a)."
+msgstr ""
+
+#: ../../chapter3.rst:776
+msgid "Like a textbook, the elementary stuff comes first. A newcomer to the project would be able to read the elementary parts of the code before moving on the advanced stuff."
+msgstr ""
+
+#: ../../chapter3.rst:784
+msgid "Two ways to add advanced capabilities."
+msgstr ""
+
+#: ../../chapter3.rst:788
+msgid "But in many large applications, the extra capabilities are best implemented as an enhancement to some private, root function in the elementary part of the application ( :numref:`fig3-10` b). By being able to change the root’s capability, the user can change the capability of all the commands that use the root."
+msgstr ""
+
+#: ../../chapter3.rst:794
+msgid "Returning to the word processor for an example, a fairly primitive routine is the one that starts a new page. It’s used by the word that starts a new line; when we run out of lines we must start a new page. The word that starts a new line, in turn, is used by the routine that formats words on the line; when the next word won’t fit on the current line, we invoke ``NEWLINE`` . This “uses” hierarchy demands that we define ``NEWPAGE`` early in the application."
+msgstr ""
+
+#: ../../chapter3.rst:802
+msgid "The problem? One of the advanced components includes a routine that must be invoked by ``NEWPAGE`` . Specifically, if a figure or table appears in the middle of text, but at format time won’t fit on what’s left of the page, the formatter defers the figure to the next page while continuing with the text. This feature requires somehow “getting inside of” ``NEWPAGE`` , so that when ``NEWPAGE`` is next executed, it will format the deferred figure at the top of the new page:"
+msgstr ""
+
+#: ../../chapter3.rst:817
+msgid "How can ``NEWPAGE`` invoke ``?HOLDOVER`` , if ``?HOLDOVER`` is not defined until much later?"
+msgstr ""
+
+#: ../../chapter3.rst:820
+msgid "While it’s theoretically possible to organize the listing so that the advanced capability is defined before the root function, that approach is bad news for two reasons."
+msgstr ""
+
+#: ../../chapter3.rst:824
+msgid "First, the natural organization (by degree of capability) is destroyed. Second, the advanced routines often use code that is defined amid the elementary capabilities. If you move the advanced routines to the front of the application, you’ll also have to move any routines they use, or duplicate the code. Very messy."
+msgstr ""
+
+#: ../../chapter3.rst:830
+msgid "You can organize the listing by degree of complexity using a technique called “vectoring.” You can allow the root function to invoke (point to) any of various routines that have been defined after the root function itself. In our example, only the *name* of the routine ``?HOLDOVER`` need be created early; its definition can be given later."
+msgstr ""
+
+#: ../../chapter3.rst:838
+msgid ":doc:`Chapter Seven<chapter7>` treats the subject of vectoring in Forth."
+msgstr ""
+
+#: ../../chapter3.rst:841
+msgid "The Limits of Level Thinking"
+msgstr ""
+
+#: ../../chapter3.rst:843
+msgid "Most of us are guilty of over-emphasizing the difference between “high-level” and “low-level.” This notion is an arbitrary one. It limits our ability to think clearly about software problems."
+msgstr ""
+
+#: ../../chapter3.rst:847
+msgid "“Level” thinking, in the traditional sense, distorts our efforts in three ways:"
+msgstr ""
+
+#: ../../chapter3.rst:850
+msgid "It implies that the order of development should follow a hierarchical structure"
+msgstr ""
+
+#: ../../chapter3.rst:853
+msgid "It implies that levels should be segregated from each other, prohibiting the benefits of reusability"
+msgstr ""
+
+#: ../../chapter3.rst:856
+msgid "It fosters syntactical differences between levels (e.g., assembler vs. “high-level” languages) and a belief that the nature of programming somehow changes as we move further from machine code."
+msgstr ""
+
+#: ../../chapter3.rst:860
+msgid "Let’s examine each of these misconceptions one by one."
+msgstr ""
+
+#: ../../chapter3.rst:863
+msgid "Where to Begin?"
+msgstr ""
+
+#: ../../chapter3.rst:865
+msgid "I asked Moore how he would go about developing a particular application, a game for children. As the child presses the digits on the numeric keypad, from zero to nine, that same number of large boxes would appear on the screen."
+msgstr ""
+
+#: ../../chapter3.rst:874
+msgid "**Moore**:"
+msgstr ""
+
+#: ../../chapter3.rst:871
+msgid "I don't start at the top and work down. Given that exact problem, I would write a word that draws a box. I'd start at the bottom, and I'd end up with a word called ``GO`` , which monitored the keyboard."
+msgstr ""
+
+#: ../../chapter3.rst:876
+msgid "How much of that is intuitive?"
+msgstr ""
+
+#: ../../chapter3.rst:878
+msgid "Perhaps some degree of it. I know where I'm going so I don't have to start there. But also it's more fun to draw boxes than to program a keyboard. I'll do the thing that's most fun in order to get into the problem. If I have to clean up all those details later, that's the price I pay."
+msgstr ""
+
+#: ../../chapter3.rst:884
+msgid "Are you advocating a \"fun-down\" approach?"
+msgstr ""
+
+#: ../../chapter3.rst:886
+msgid "Given that you're doing it in a free-spirit fashion, yes. If we were giving a demonstration to a customer in two days, I'd do it differently. I would start with the most visible thing, not the most fun thing. But still not in that hierarchical sequence, top down. I base my approach on more immediate considerations such as impressing the customer, getting something to work, or showing other people how it's going to work to get them interested."
+msgstr ""
+
+#: ../../chapter3.rst:895
+msgid "If you define a level as \"nesting,\" then yes, it's a good way to decompose a problem. But I've never found the notion of \"level\" useful. Another aspect of levels is languages, metalanguages, meta-metalanguages. To try and split hairs as to which level you are on---assembler level, first integration level, last integration level---it's just tedious and not helpful. My levels get all mixed up hopelessly."
+msgstr ""
+
+#: ../../chapter3.rst:903
+msgid "Designing by components makes where you start less important. You could start with the key interpreter, for instance. Its goal is to receive keystrokes and convert them to numbers, passing these numbers to an internally invoked word. If you substitute the Forth word . (“dot,” which prints a number from the stack), then we can implement the key interpreter, test it, and debug it without using routines that have anything to do with drawing squares. On the other hand, if the application required hardware support (such as a graphics package) that we didn’t have on hand, we might want to substitute something available, such as displaying an asterisk, just to get into the problem. Thinking in terms of lexicons is like painting a huge mural that spans several canvases. You work on all the canvases at once, first sketching in the key design elements, then adding splashes of color here and there… until the entire wall is complete."
+msgstr ""
+
+#: ../../chapter3.rst:920
+msgid "In deciding where to start designing, look for:"
+msgstr ""
+
+#: ../../chapter3.rst:922
+msgid "areas where the most creativity is required (the areas where change is most likely)"
+msgstr ""
+
+#: ../../chapter3.rst:924
+msgid "areas that give the most satisfying feedback (get the juices flowing)"
+msgstr ""
+
+#: ../../chapter3.rst:926
+msgid "areas in which the approach decided upon will greatly affect other areas, or which will determine whether the stated problem can be solved at all"
+msgstr ""
+
+#: ../../chapter3.rst:929
+msgid "things you should show the customer, for mutual understanding"
+msgstr ""
+
+#: ../../chapter3.rst:930
+msgid "things you can show the investors, if necessary for the rent."
+msgstr ""
+
+#: ../../chapter3.rst:933
+msgid "No Segregation Without Representation"
+msgstr ""
+
+#: ../../chapter3.rst:935
+msgid "The second way in which levels can interfere with optimal solutions is by encouraging segregation of the levels. A popular design construct called the “object” typifies this dangerous philosophy. [#f1]_"
+msgstr ""
+
+#: ../../chapter3.rst:941
+msgid "An object is a portion of code that can be invoked by a single name, but that can perform more than one function. To select a particular function you have to invoke the object and pass it a parameter or a group of parameters. You can visualize the parameters as representing a row of buttons you can push to make the object do what you want."
+msgstr ""
+
+#: ../../chapter3.rst:947
+msgid "The benefit of designing an application in terms of objects is that, like a component, the object hides information from the rest of the application, making revision easier."
+msgstr ""
+
+#: ../../chapter3.rst:951
+msgid "There are several problems, though. First, the object must contain a complicated decision structure to determine which function it must perform. This increases object size and decreases performance. A lexicon, on the other hand, provides all usable functions by name for you to invoke directly."
+msgstr ""
+
+#: ../../chapter3.rst:957
+msgid "Second, the object is usually designed to stand alone. It can’t take advantage of tools provided by supporting components. As a result, it tends to duplicate code inside itself that will appear elsewhere in the application. Some objects are even required to parse text in order to interpret their parameters. Each may even use its own syntax. A shameless waste of time and energy!"
+msgstr ""
+
+#: ../../chapter3.rst:968
+msgid "\"No scrambled?\""
+msgstr ""
+
+#: ../../chapter3.rst:972
+msgid "Finally, because the object is constructed to recognize a finite set of possibilities, it’s difficult to make additions to the row of buttons when a new function is needed. The tools inside the object have not been designed for reuse."
+msgstr ""
+
+#: ../../chapter3.rst:977
+msgid "The idea of levels pervades the design of the IBM Personal Computer. Besides the processor itself (with its own machine instruction set, of course), there are these software levels:"
+msgstr ""
+
+#: ../../chapter3.rst:981
+msgid "the set of utilities written in assembler and burned into the system’s ROM"
+msgstr ""
+
+#: ../../chapter3.rst:984
+msgid "the disk operating system, which invokes the utilities"
+msgstr ""
+
+#: ../../chapter3.rst:986
+msgid "the high-level language of choice, which invokes the operating system and the utilities"
+msgstr ""
+
+#: ../../chapter3.rst:989
+msgid "and finally, any application using the language."
+msgstr ""
+
+#: ../../chapter3.rst:991
+msgid "The ROM utilities provide the hardware-dependent routines: those that handle the video screen, disk drives, and keyboard. You invoke them by placing a control code in a certain register and generating the appropriate software interrupt."
+msgstr ""
+
+#: ../../chapter3.rst:996
+msgid "For instance, software interrupt 10H causes entry to the video routines. There are 16 of these routines. You load register AH with the number of the video routine you want."
+msgstr ""
+
+#: ../../chapter3.rst:1000
+msgid "Unfortunately, in all 16 routines there is not one that displays a text string. To do that, you must repeat the process of loading registers and generating a software interrupt, which in turn must make a decision about which routine you want, and do a few other things you don’t need—for *every single character*."
+msgstr ""
+
+#: ../../chapter3.rst:1006
+msgid "Try writing a text editor in which the entire screen may need to be refreshed with each keystroke. Slow as mail! You can’t improve the speed because you can’t reuse any of the information within the video routines except for what’s provided on the outside. The stated reason for this is to “insulate” the programmer from device addresses and other details of the hardware. After all, these could change with future upgrades."
+msgstr ""
+
+#: ../../chapter3.rst:1013
+msgid "The only way to efficiently implement video I/O on this machine is to move strings directly into video memory. You can do this easily, because the reference manual tells you the address at which video memory starts. But this defeats the intent of the system’s designers. Your code may no longer survive a hardware revision."
+msgstr ""
+
+#: ../../chapter3.rst:1019
+msgid "By supposedly “protecting” the programmer from details, segregation has defeated the purpose of information hiding. Components, in contrast, are not segregated modules but rather cumulative additions to the dictionary. A video lexicon would, at the very least, give a name for the address of video memory."
+msgstr ""
+
+#: ../../chapter3.rst:1025
+msgid "It’s not that anything’s wrong with the concept of a bit-switch function interface between components, when it’s necessary. The problem here is that this video component was incompletely designed. On the other hand, if the system had been fully integrated—operating system and drivers written in Forth—the video component would not *have* to be designed to suit all needs. An application programmer could either rewrite the driver or write an extension to the driver using available tools from the video lexicon."
+msgstr ""
+
+#: ../../chapter3.rst:1036
+msgid "Don't bury your tools."
+msgstr ""
+
+#: ../../chapter3.rst:1039
+msgid "The Tower of Babble"
+msgstr ""
+
+#: ../../chapter3.rst:1041
+msgid "The final deception perpetrated by level thinking is that programming languages should become qualitatively different the “higher” you go. We tend to speak of high-level code as something rarefied, and low-level code as something grubby and profane."
+msgstr ""
+
+#: ../../chapter3.rst:1046
+msgid "To some degree these distinctions have validity, but this is only the result of certain arbitrary architectural constraints that we all accept as the norm. We’ve grown accustomed to assemblers with terse mnemonics and unnatural syntactical rules, because they’re “low-level.”"
+msgstr ""
+
+#: ../../chapter3.rst:1051
+msgid "The component concept rebels against the polarity of high-level vs. low-level. All code should look and feel the same. A component is simply a set of commands that together transform data structures and algorithms into useful functions. These functions can be used without knowledge of the structures and/or algorithms within."
+msgstr ""
+
+#: ../../chapter3.rst:1057
+msgid "The distance of these structures from actual machine code is irrelevant. The code written to toggle bits in an output port should, in theory, look no more intimidating than the code to format a report."
+msgstr ""
+
+#: ../../chapter3.rst:1061
+msgid "Even machine code should be readable. A true Forth-based engine would enjoy a syntax and dictionary identical and continuous with the “high-level” dictionary we know today.`Level'' thinking, limits of|)}`"
+msgstr ""
+
+#: ../../chapter3.rst:1067
+msgid "Summary"
+msgstr ""
+
+#: ../../chapter3.rst:1069
+msgid "In this chapter we’ve seen two ways that applications can be decomposed: into components, and according to sequential complexity."
+msgstr ""
+
+#: ../../chapter3.rst:1072
+msgid "Special attention should be paid to those components that serve as interfaces between other components."
+msgstr ""
+
+#: ../../chapter3.rst:1075
+msgid "Now, if you’ve done preliminary design correctly, your problem is lying at your feet in a heap of manageable pieces. Each piece represents a problem to solve. Grab your favorite piece and turn to the next chapter."
+msgstr ""
+
+#: ../../chapter3.rst:1081
+msgid "For Further Thinking"
+msgstr ""
+
+#: ../../chapter3.rst:1083
+msgid "*(Answers appear in :doc:`Appendix D<appendixd>`.)*"
+msgstr ""
+
+#: ../../chapter3.rst:1085
+msgid "Below are two approaches to defining an editor’s keyboard interpreter. Which would you prefer? Why?"
+msgstr ""
+
+#: ../../chapter3.rst:1088
+msgid "(a)."
+msgstr ""
+
+#: ../../chapter3.rst:1112
+msgid "(b)."
+msgstr ""
+
+#: ../../chapter3.rst:1127
+msgid "This problem is an exercise in information hiding. Let’s suppose we have a region of memory outside of the Forth dictionary which we want to allocate for data structures (for whatever reason). The region of memory begins at HEX address C000. We want to define a series of arrays which will reside in that memory."
+msgstr ""
+
+#: ../../chapter3.rst:1133
+msgid "We might do something like this:"
+msgstr ""
+
+#: ../../chapter3.rst:1142
+msgid "Each array-name defined above will return the starting address of the appropriate array. But notice we had to compute the correct starting address for each array, based on how many bytes we had already allocated. Let’s try to automate this, by keeping an “allocation pointer,” called >RAM, showing where the next free byte is. We first set the pointer to the beginning of the RAM space:"
+msgstr ""
+
+#: ../../chapter3.rst:1154
+msgid "Now we can define each array like this: x"
+msgstr ""
+
+#: ../../chapter3.rst:1162
+msgid "Notice that after defining each array, we increment the pointer by the size of the new array to show that we’ve allocated that much additional RAM."
+msgstr ""
+
+#: ../../chapter3.rst:1166
+msgid "To make the above more readable, we might add these two definitions:"
+msgstr ""
+
+#: ../../chapter3.rst:1174
+msgid "We can now rewrite the above equivalently as:"
+msgstr ""
+
+#: ../../chapter3.rst:1182
+msgid "(An advanced Forth programmer would probably combine these operations into a single defining word, but that whole topic is not germane to what I’m leading up to.)"
+msgstr ""
+
+#: ../../chapter3.rst:1186
+msgid "Finally, suppose we have 20 such array definitions scattered throughout our application."
+msgstr ""
+
+#: ../../chapter3.rst:1189
+msgid "Now, the problem: Somehow the architecture of our system changes and we decide that we must allocate this memory such that it *ends* at HEX address EFFF. In other words, we must start at the end, allocating arrays backwards. We still want each array name to return its *starting* address, however."
+msgstr ""
+
+#: ../../chapter3.rst:1195
+msgid "To do this, we must now write:"
+msgstr ""
+
+#: ../../chapter3.rst:1207
+msgid "This time ``RAM-ALLOT`` *decrements* the pointer. That’s okay, it’s easy to add ``NEGATE`` to the definition of ``RAM-ALLOT``. Our present concern is that each time we define an array we must ``RAM-ALLOT`` *before* defining it, not after. Twenty places in our code need finding and correcting."
+msgstr ""
+
+#: ../../chapter3.rst:1212
+msgid "The words ``THERE`` and ``RAM-ALLOT`` are nice and friendly, but they didn’t succeed at hiding *how* the region is allocated. If they had, it wouldn’t matter which order we invoked them in."
+msgstr ""
+
+#: ../../chapter3.rst:1216
+msgid "At long last, our question: What could we have done to ``THERE`` and ``RAM-ALLOT`` to minimize the impact of this design change? (Again, the answer I’m looking for has nothing to do with defining words.)"
+msgstr ""
+
+#: ../../chapter3.rst:1221
+msgid "Footnotes"
+msgstr ""
+
+#: ../../chapter3.rst:1222
+msgid "Editor\\'s note: But see the recant in the 1994 Preface on page :doc:`preface94` , and the clairification in the 2004 Preface on page :doc:`preface2004` . Think of something like Windows COM \"objects\" or CORBA. Real object oriented programming, as it originates in Smalltalk, does not hide information from the programmer. Adding a \"scrambled\" method to the \"egg master object\" is no problem. Smalltalk works by adding methods to known classes, you don't even need to subclass them. You can look inside an object and its source code whenever you want. And table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd Paysan**"
+msgstr ""
+

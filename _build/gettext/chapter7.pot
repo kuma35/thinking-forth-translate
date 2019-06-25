@@ -1,0 +1,1119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../chapter7.rst:4
+msgid "7. Handling Data: Stacks and States"
+msgstr ""
+
+#: ../../chapter7.rst:6
+msgid "Forth handles data in one of two ways: either on the stack or in data structures. When to use which approach and how to manage both the stack and data structures are the topics of this chapter."
+msgstr ""
+
+#: ../../chapter7.rst:12
+msgid "The Stylish Stack"
+msgstr ""
+
+#: ../../chapter7.rst:14
+msgid "The simplest way for Forth words to pass arguments to each other is via the stack. The process is “simple” because all the work of pushing and popping values to and from the stack is implicit."
+msgstr ""
+
+#: ../../chapter7.rst:23
+#: ../../chapter7.rst:668
+msgid "**Moore**:"
+msgstr ""
+
+#: ../../chapter7.rst:19
+msgid "The data stack uses this idea of \"hidden information.\" The arguments being passed between subroutines are not explicit in the calling sequence. The same argument might ripple through a whole lot of words quite invisibly, even below the level of awareness of the programmer, simply because it doesn't have to be referred to explicitly."
+msgstr ""
+
+#: ../../chapter7.rst:25
+msgid "One important result of this approach: Arguments are unnamed. They reside on the stack, not in named variables. This effect is one of the reasons for Forth’s elegance. At the same time it’s one of the reasons badly written Forth code can be unreadable. Let’s explore this paradox."
+msgstr ""
+
+#: ../../chapter7.rst:30
+msgid "The invention of the stack is analogous to that of pronouns in English. Consider the passage:"
+msgstr ""
+
+#: ../../chapter7.rst:33
+msgid "Take this gift, wrap it in tissue paper and put it in a box."
+msgstr ""
+
+#: ../../chapter7.rst:35
+msgid "Notice the word “gift” is mentioned only once. The gift is referred to henceforth as “it.”"
+msgstr ""
+
+#: ../../chapter7.rst:38
+msgid "The informality of the “it” construct makes English more readable (provided the reference is unambiguous). So with the stack, the implicit passing of arguments makes code more readable. We emphasize the *processes*, not the *passing of arguments* to the processes."
+msgstr ""
+
+#: ../../chapter7.rst:43
+msgid "Our analogy to pronouns suggests why bad Forth can be so unreadable. The spoken language gets confusing when too many things are referred to with pronouns."
+msgstr ""
+
+#: ../../chapter7.rst:47
+msgid "Take off the wrapping and open the box. Remove the gift and throw it away."
+msgstr ""
+
+#: ../../chapter7.rst:50
+msgid "The problem with this passage is that we’re using “it” to refer to too many things at once. There are two solutions to this error. The easiest solution is to supply a real name instead of “it”:"
+msgstr ""
+
+#: ../../chapter7.rst:54
+msgid "Remove the wrapping and open the box. Take out the gift and throw **the box** away."
+msgstr ""
+
+#: ../../chapter7.rst:57
+msgid "Or we can introduce the words “former” and “latter.” But the best solution is to redesign the passage:"
+msgstr ""
+
+#: ../../chapter7.rst:60
+msgid "Remove the wrapping and open the present. Throw away the box."
+msgstr ""
+
+#: ../../chapter7.rst:62
+msgid "So in Forth we have analogous observations:"
+msgstr ""
+
+#: ../../chapter7.rst:66
+msgid "Simplify code by using the stack. But don't stack too deeply within any single definition. Redesign, or, as a last resort, use a named variable."
+msgstr ""
+
+#: ../../chapter7.rst:69
+msgid "Some newcomers to Forth view the stack the way a gymnast views a trampoline: as a fun place to bounce around on. But the stack is meant for data-passing, not acrobatics."
+msgstr ""
+
+#: ../../chapter7.rst:73
+msgid "So how deep is “too deep?” Generally, three elements on the stack is the most you can manage within a single definition. (In double-length arithmetic, each “element” occupies two stack positions but is logically treated as a single element by operators such as ``2DUP``, ``2OVER``, etc.)"
+msgstr ""
+
+#: ../../chapter7.rst:79
+msgid "In your ordinary lexicon of stack operators, ``ROT`` is the only one that gives you access to the third stack item. Aside from ``PICK`` and ``ROLL`` (which we’ll comment on soon), there’s no easy way to get at anything below that."
+msgstr ""
+
+#: ../../chapter7.rst:85
+msgid "To stretch our analogy to the limit, perhaps three elements on the stack corresponds to the three English pronouns “this,” “that,” and “t’other.”"
+msgstr ""
+
+#: ../../chapter7.rst:90
+msgid "Redesign"
+msgstr ""
+
+#: ../../chapter7.rst:92
+msgid "Let’s witness a case where a wrong-headed approach leads to a messy stack problem. Suppose we’re trying to write the definition of +THRU (see :doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative Loading” subsection). We’ve decided that our loop body will be"
+msgstr ""
+
+#: ../../chapter7.rst:100
+msgid "that is, we’ll put ``LOAD`` in a loop, then arrange for the index and limit to correspond to the absolute screens being loaded."
+msgstr ""
+
+#: ../../chapter7.rst:104
+msgid "On the stack initially we have:"
+msgstr ""
+
+#: ../../chapter7.rst:110
+msgid "where “lo” and “hi” are the *offsets* from ``BLK``."
+msgstr ""
+
+#: ../../chapter7.rst:112
+msgid "We need to permute them for ``DO``, like this:"
+msgstr ""
+
+#: ../../chapter7.rst:118
+msgid "Our biggest problem is adding the value of ``BLK`` to both offsets."
+msgstr ""
+
+#: ../../chapter7.rst:120
+msgid "We’ve already taken a wrong turn but we don’t know it yet. So let’s proceed. We try:"
+msgstr ""
+
+#: ../../chapter7.rst:141
+msgid "We made it, but what a mess!"
+msgstr ""
+
+#: ../../chapter7.rst:143
+msgid "If we’re gluttons for punishment, we might make two more stabs at it arriving at:"
+msgstr ""
+
+#: ../../chapter7.rst:150
+msgid "and"
+msgstr ""
+
+#: ../../chapter7.rst:156
+msgid "All three sequences do the same thing, but the code seems to be getting blurrier, not better."
+msgstr ""
+
+#: ../../chapter7.rst:159
+msgid "With experience we learn to recognize the combination ``ROT ROT`` as a danger sign: the stack is too crowded. Without having to work out the alternates, we recognize the problem: once we make two copies of “blk,” we have four elements on the stack."
+msgstr ""
+
+#: ../../chapter7.rst:164
+msgid "At this point, the first resort is usually the return stack:"
+msgstr ""
+
+#: ../../chapter7.rst:171
+msgid "(See “The Stylish Return Stack,” coming up next.) Here we’ve ``DUP``\\ ed “blk,” saving one copy on the return stack and adding the other copy to “hi.”"
+msgstr ""
+
+#: ../../chapter7.rst:175
+msgid "Admittedly an improvement. But readable?"
+msgstr ""
+
+#: ../../chapter7.rst:177
+msgid "Next we think, “Maybe we need a named variable.” Of course, we have one already: ``BLK``. So we try:"
+msgstr ""
+
+#: ../../chapter7.rst:184
+msgid "Now it’s more readable, but it’s still rather long, and redundant too. ``BLK @ +`` appears twice."
+msgstr ""
+
+#: ../../chapter7.rst:187
+msgid "“``BLK @ +``”? That sounds familiar. Finally our neurons connect."
+msgstr ""
+
+#: ../../chapter7.rst:189
+msgid "We look back at the source for ``+LOAD`` just defined:"
+msgstr ""
+
+#: ../../chapter7.rst:195
+msgid "This word, ``+LOAD``, should be doing the work. All we have to write is:"
+msgstr ""
+
+#: ../../chapter7.rst:201
+msgid "We haven’t created a more efficient version here, because the work of ``BLK @ +`` will be done on every pass of the loop. But we have created a cleaner, conceptually simpler, and more readable piece of code. In this case, the inefficiency is unnoticeable because it only occurs as each block is loaded."
+msgstr ""
+
+#: ../../chapter7.rst:207
+msgid "Redesigning, or rethinking the problem, was the path we should have taken as soon as things got ugly."
+msgstr ""
+
+#: ../../chapter7.rst:211
+msgid "Local Variables"
+msgstr ""
+
+#: ../../chapter7.rst:213
+msgid "Most of the time problems can be arranged so that only a few arguments are needed on the stack at any one time. Occasionally, however, there’s nothing you can do."
+msgstr ""
+
+#: ../../chapter7.rst:217
+msgid "Here’s an example of a worst case. Assume you have a word called ``LINE`` which draws a line between any two points, specified as coordinates in this order:"
+msgstr ""
+
+#: ../../chapter7.rst:225
+msgid "where :math:`x_1,y_1` represent the :math:`x,y` coordinates for the one end-point, and :math:`x_2,y_2` represent the opposite end-point."
+msgstr ""
+
+#: ../../chapter7.rst:228
+msgid "Now you have to write a box-drawing word called ``[BOX]`` which takes four arguments in this order:"
+msgstr ""
+
+#: ../../chapter7.rst:235
+msgid "where x1 y1 represent the :math:`x,y` coordinates for the upper left-hand corner of the box, and x2 y2 represent the lower right-hand corner coordinates. Not only do you have four elements on the stack, they each have to be referred to more than once as you draw lines from point to point."
+msgstr ""
+
+#: ../../chapter7.rst:241
+msgid "Although we’re using the stack to get the four arguments, the algorithm for drawing a box doesn’t lend itself to the nature of the stack. If you’re in a hurry, it would probably be best to take the easy way out:"
+msgstr ""
+
+#: ../../chapter7.rst:257
+msgid "What we’ve done is create four named variables, one for each coordinate. The first thing ``[BOX]`` does is fill these variables with the arguments from the stack. Then the four lines are drawn, referencing the variables. Variables such as these that are used only within a definition (or in some cases, within a lexicon) are called “local variables.”"
+msgstr ""
+
+#: ../../chapter7.rst:264
+msgid "I’ve been guilty many times of playing hotshot, trying to do as much as possible on the stack rather than define a local variable. There are three reasons to avoid this cockiness."
+msgstr ""
+
+#: ../../chapter7.rst:268
+msgid "First, it’s a pain to code that way. Second, the result is unreadable. Third, all your work becomes useless when a design change becomes necessary, and the order of two arguments changes on the stack. The ``DUP``\\ s, ``OVER``\\ s and ``ROT``\\ s weren’t really solving the problem, just jockeying things into position."
+msgstr ""
+
+#: ../../chapter7.rst:274
+msgid "With this third reason in mind, I recommend the following:"
+msgstr ""
+
+#: ../../chapter7.rst:278
+msgid "Especially in the design phase, keep on the stack only the arguments you're using immediately. Create local variables for any others. (If necessary, eliminate the variables during the optimization phase.)"
+msgstr ""
+
+#: ../../chapter7.rst:282
+msgid "Fourth, if the definition is extremely time-critical, those tricky stack manipulators, (e.g., ``ROT ROT``) can really eat up clock cycles. Direct access to variables is faster."
+msgstr ""
+
+#: ../../chapter7.rst:286
+msgid "If it’s *really* time-critical, you may need to convert to assembler anyway. In this case, all your stack problems fly out the door, because all your data will be referenced either in registers or indirectly through registers. Luckily, the definitions with the messiest stack arguments are often the ones written in code. Our ``[BOX]`` primitive is a case in point. ``CMOVE>`` is another."
+msgstr ""
+
+#: ../../chapter7.rst:293
+msgid "The approach we took with ``[BOX]`` certainly beats spending half an hour juggling items on the stack, but it is by no means the best solution. What’s nasty about it is the expense of creating four named variables, headers and all, solely for use within this one routine."
+msgstr ""
+
+#: ../../chapter7.rst:298
+msgid "(If you’re target compiling an application that will not require headers in the dictionary, the only loss will be the 8 bytes in RAM for the variables. In Forth systems of the future, headers may be separated into other pages of memory anyway; again the loss will be only 8 bytes.) Let me repeat: This example represents a worst-case situation, and occurs rarely in most Forth applications. If words are well-factored, then each word is designed to do very little. Words that do little generally require few arguments."
+msgstr ""
+
+#: ../../chapter7.rst:307
+msgid "In this case, though, we are dealing with two points each represented by two coordinates."
+msgstr ""
+
+#: ../../chapter7.rst:310
+msgid "Can we change the design? First, ``LINE`` may be *too* primitive a primitive. It requires four arguments because it can draw lines between any two points, diagonally, if necessary."
+msgstr ""
+
+#: ../../chapter7.rst:314
+msgid "In drawing our box, we may only need perfectly vertical and horizontal lines. In this case we can write the more powerful, but less specific, words ``VERTICAL`` and ``HORIZONTAL`` to draw these lines. Each requires only *three* arguments: the starting position’s x and y, and the length. This factoring of function simplifies the definition of ``[BOX]``."
+msgstr ""
+
+#: ../../chapter7.rst:320
+msgid "Or we might discover that this syntax feels more natural to the user:"
+msgstr ""
+
+#: ../../chapter7.rst:326
+msgid "where ``ORIGIN!`` sets a two-element pointer to the “origin,” the place where the box will start (the upper left-hand corner). Then ``30 30 BOX`` draws a box 30 units high and 30 units wide, relative to the origin."
+msgstr ""
+
+#: ../../chapter7.rst:330
+msgid "This approach reduces the number of stack arguments to BOX as part of the design."
+msgstr ""
+
+#: ../../chapter7.rst:335
+msgid "When determining which arguments to handle via data structures rather than via the stack, choose the arguments that are the more permanent or that represent a current state."
+msgstr ""
+
+#: ../../chapter7.rst:340
+msgid "On PICK and ROLL"
+msgstr ""
+
+#: ../../chapter7.rst:342
+msgid "Some folks like the words ``PICK`` and ``ROLL``. They use these words to access elements from any level on the stack. We don’t recommend them. For one thing, ``PICK`` and ``ROLL`` encourage the programmer to think of the stack as an array, which it is not. If you have so many elements on the stack that you need ``PICK`` and ``ROLL``, those elements should be in an array instead."
+msgstr ""
+
+#: ../../chapter7.rst:351
+msgid "Second, they encourage the programmer to refer to arguments that have been left on the stack by higher-level, calling definitions without being explicitly *passed* as arguments. This makes the definition dependent on other definitions. That’s unstructured—and dangerous."
+msgstr ""
+
+#: ../../chapter7.rst:356
+msgid "Finally, the position of an element on the stack depends on what’s above it, and the number of things above it can change constantly. For instance, if you have an address at the fourth stack position down, you can write"
+msgstr ""
+
+#: ../../chapter7.rst:365
+msgid "to fetch its contents. But you must write"
+msgstr ""
+
+#: ../../chapter7.rst:371
+msgid "because with “:math:`n`” on the stack, the address is now in the fifth position. Code like this is hard to read and harder to modify."
+msgstr ""
+
+#: ../../chapter7.rst:375
+msgid "Make Stack Drawings"
+msgstr ""
+
+#: ../../chapter7.rst:377
+msgid "When you do have a cumbersome stack situation to solve, it’s best to work it out with paper and pencil. Some people even make up forms, such as the one in :numref:`fig7-1` . Done formally like this (instead of on the back of your phone bill), stack commentaries serve as nice auxiliary documentation."
+msgstr ""
+
+#: ../../chapter7.rst:384
+msgid "Stack Tips"
+msgstr ""
+
+#: ../../chapter7.rst:388
+msgid "Make sure that stack effects balance out under all possible control flows"
+msgstr ""
+
+#: ../../chapter7.rst:390
+msgid "In the stack commentary for ``CMOVE>`` in :numref:`fig7-1` , the inner brace represents the contents of the ``DO``  ``LOOP``. The stack depth upon exiting the loop is the same as upon entering it: one element. Within the outer braces, the stack result of the ``IF`` clause is the same as that of the ``ELSE`` clause: one element left over. (What that leftover element represents doesn’t matter, as symbolized by the “x” next to ``THEN``.)"
+msgstr ""
+
+#: ../../chapter7.rst:404
+msgid "Example of a stack commentary."
+msgstr ""
+
+#: ../../chapter7.rst:408
+msgid "When doing two things with the same number, perform the function that will go underneath first."
+msgstr ""
+
+#: ../../chapter7.rst:411
+msgid "For example:"
+msgstr ""
+
+#: ../../chapter7.rst:417
+msgid "(where you first get the count) is more efficiently written:"
+msgstr ""
+
+#: ../../chapter7.rst:423
+msgid "(where you first compute the address)."
+msgstr ""
+
+#: ../../chapter7.rst:427
+msgid "Where possible, keep the number of return arguments the same in all possible cases."
+msgstr ""
+
+#: ../../chapter7.rst:430
+msgid "You’ll often find a definition which does some job and, if something goes wrong, returns an error-code identifying the problem. Here’s one way the stack interface might be designed:"
+msgstr ""
+
+#: ../../chapter7.rst:439
+msgid "If the flag is true, the operation was successful. If the flag is false, it was unsuccessful and there’s another value on the stack to indicate the nature of the error."
+msgstr ""
+
+#: ../../chapter7.rst:443
+msgid "You’ll find stack manipulation easier, though, if you redesign the interface to look like this:"
+msgstr ""
+
+#: ../../chapter7.rst:450
+msgid "One value serves both as a flag and (in case of an error) the error code. Note that reverse-logic is used; non-zero indicates an error. You can use any values for the error codes except zero."
+msgstr ""
+
+#: ../../chapter7.rst:456
+msgid "The Stylish Return Stack"
+msgstr ""
+
+#: ../../chapter7.rst:458
+msgid "What about this use of the return stack to hold temporary arguments? Is it good style or what?"
+msgstr ""
+
+#: ../../chapter7.rst:461
+msgid "Some people take great offense to its use. But the return stack offers the simplest solution to certain gnarly stack jams. Witness the definition of ``CMOVE>`` in the previous section."
+msgstr ""
+
+#: ../../chapter7.rst:465
+msgid "If you decide to use the return stack for this purpose, remember that you are using a component of Forth for a purpose other than that intended. (See the section called “Sharing Components,” later in this chapter.)"
+msgstr ""
+
+#: ../../chapter7.rst:470
+msgid "Here’s some suggestions to keep you from shooting yourself in the foot:"
+msgstr ""
+
+#: ../../chapter7.rst:474
+msgid "Keep return stack operators symmetrical."
+msgstr ""
+
+#: ../../chapter7.rst:475
+msgid "Keep return stack operators symmetrical under all control flow conditions."
+msgstr ""
+
+#: ../../chapter7.rst:477
+msgid "In factoring definitions, watch out that one part doesn't contain one return stack operator, and the other its counterpart."
+msgstr ""
+
+#: ../../chapter7.rst:479
+msgid "If used inside a ``DO``  ``LOOP`` , return stack operators must be symmetrical within the loop, and ``I`` is no longer valid in code bounded by ``>R`` and ``R>``."
+msgstr ""
+
+#: ../../chapter7.rst:483
+msgid "For every ``>R`` there must be a ``R>`` in the same definition. Sometimes the operators will appear to be symmetrical, but due to the control structure they aren’t. For instance:"
+msgstr ""
+
+#: ../../chapter7.rst:492
+msgid "If this construction is used in the outer loop of your application, everything will run fine until you exit (perhaps hours later) when you’ll suddenly blow up. The problem? The last time through the loop, the resolving ``R>`` has been skipped."
+msgstr ""
+
+#: ../../chapter7.rst:498
+msgid "The Problem With Variables"
+msgstr ""
+
+#: ../../chapter7.rst:500
+msgid "Although we handle data of immediate interest on the stack, we depend on much information tucked away in variables, ready for recurring access. A piece of code can change the contents of a variable without necessarily having to know anything about how that data will be used, who will use it, or when and if it will be used. Another piece of code can fetch the contents of a variable and use it without knowing where that value came from."
+msgstr ""
+
+#: ../../chapter7.rst:508
+msgid "For every word that pushes a value onto the stack, another word must consume that value. The stack gives us point-to-point communication, like the post office."
+msgstr ""
+
+#: ../../chapter7.rst:512
+msgid "Variables, on the other hand, can be set by any command and accessed any number of times—or not at all—by any command. Variables are available for anyone who cares to look—like graffiti."
+msgstr ""
+
+#: ../../chapter7.rst:516
+msgid "Thus variables can be used to reflect the current state of affairs."
+msgstr ""
+
+#: ../../chapter7.rst:518
+msgid "Using currentness can simplify problems. In the Roman numeral example of :doc:`Chapter Four<chapter4>`, we used the variable ``COLUMN#`` to represent the current decimal-place; the words ``ONER``, ``FIVER``, and ``TENER`` depended on this information to determine which type of symbol to display. We didn’t have to specify both descriptions every time, as in ``TENS ONER``, ``TENS FIVER``, etc."
+msgstr ""
+
+#: ../../chapter7.rst:526
+msgid "On the other hand, currentness adds a new level of complexity. To make something current we must first define a variable or some type of data structure. We also must remember to initialize it, if there’s any chance that part of our code will refer to it before another part has had a chance to set it."
+msgstr ""
+
+#: ../../chapter7.rst:532
+msgid "A more serious problem with variables is that they are not “reentrant.” On a multi-tasked Forth system, each task which requires local variables must have its own copies. Forth’s ``USER`` variables serve this purpose. (See *Starting Forth*, Chapter Nine, “Forth Geography.”)"
+msgstr ""
+
+#: ../../chapter7.rst:538
+msgid "Even within a single task, a definition that refers to a variable is harder to test, verify, and reuse in a different situation than one in which arguments are passed via the stack."
+msgstr ""
+
+#: ../../chapter7.rst:542
+msgid "Suppose we are implementing a word-processor editor. We need a routine that calculates the number of characters between the current cursor position and the previous carriage-return/line-feed sequence. So we write a word that employs a ``DO``   ``LOOP`` starting at the current position (``CURSOR @``) and ending at the zeroth position, searching for the line feed character."
+msgstr ""
+
+#: ../../chapter7.rst:550
+msgid "Once the loop has found the character sequence, we subtract its relative address from our current cursor position"
+msgstr ""
+
+#: ../../chapter7.rst:557
+msgid "to determine the distance between them."
+msgstr ""
+
+#: ../../chapter7.rst:559
+msgid "Our word’s stack effect is:"
+msgstr ""
+
+#: ../../chapter7.rst:565
+msgid "But in later coding we find we need a similar word to compute the distance from an arbitrary character—\\ *not* the current cursor position—to the first previous line-feed character. We end up factoring out the “``CURSOR @``” and allowing the starting address to be passed as an argument on the stack, resulting in:"
+msgstr ""
+
+#: ../../chapter7.rst:575
+msgid "By factoring-out the reference to the variable, we made the definition more useful."
+msgstr ""
+
+#: ../../chapter7.rst:580
+msgid "Unless it involves cluttering up the stack to the point of unreadability, try to pass arguments via the stack rather than pulling them out of variables."
+msgstr ""
+
+#: ../../chapter7.rst:597
+msgid "**Kogge**:"
+msgstr ""
+
+#: ../../chapter7.rst:585
+msgid "Most of the modularity of Forth comes from designing and treating Forth words as \"functions\" in the mathematical sense. In my experience a Forth programmer usually tries quite hard to avoid defining any but the most essential global variables (I have a friend who has the sign \"Help stamp out variables\" above his desk), and tries to write words with what is called \"referential transparency,\" i.e., given the same stack inputs a word will always give the same stack outputs regardless of the more global context in which it is executed."
+msgstr ""
+
+#: ../../chapter7.rst:594
+msgid "In fact this property is exactly what we use when we test words in isolation.  Words that do not have this property are significantly harder to test. In a sense a \"named variable\" whose value changes frequently is the next worst thing to the now \"forbidden\" GOTO."
+msgstr ""
+
+#: ../../chapter7.rst:603
+msgid "\"Shot from a cannon on a fast-moving train, hurtling between the blades of a windmill, and expecting to grab a trapeze dangling from a hot-air balloon... I told you Ace, there were too many variables!\""
+msgstr ""
+
+#: ../../chapter7.rst:605
+msgid "Earlier we suggested the use of local variables especially during the design phase, to eliminate stack traffic. It’s important to note that in doing so, the variables were referred to only within the one definition. In our example, ``[BOX]`` receives four arguments from the stack and immediately loads them into local variables for its own use. The four variables are not referred to outside of this definition, and the word behaves safely as a function."
+msgstr ""
+
+#: ../../chapter7.rst:613
+msgid "Programmers unaccustomed to a language in which data can be passed implicitly don’t always utilize the stack as fully as they should. Michael Ham suggests the reason may be that beginning Forth users don’t trust the stack [ham83]_. He admits to initially feeling safer about storing values into variables than leaving them on the stack. “No telling *what* might happen with all that thrashing about on the stack,” he felt."
+msgstr ""
+
+#: ../../chapter7.rst:622
+msgid "It took some time for him to appreciate that “if words keep properly to themselves, using the stack only for their expected input and output and cleaning up after themselves, they can be looked upon as sealed systems … I could put the count on the stack at the beginning of the loop, go through the complete routine for each group, and at the end the count would emerge, back on top of the stack, not a hair out of place.”"
+msgstr ""
+
+#: ../../chapter7.rst:631
+msgid "Local and Global Variables/Initialization"
+msgstr ""
+
+#: ../../chapter7.rst:633
+msgid "As we saw earlier, a variable that is used exclusively within a single definition (or single lexicon), hidden from other code, is called a local variable. A variable used by more than one lexicon is called a global variable. As we’ve seen in an earlier chapter, a set of global variables that collectively describe a common interface between several lexicons is called an “interface lexicon.”"
+msgstr ""
+
+#: ../../chapter7.rst:640
+msgid "Forth makes no distinction between local and global variables. But Forth programmers do."
+msgstr ""
+
+#: ../../chapter7.rst:644
+msgid "We should be writing for the reader. If something is referred to only locally, a temporary variable just for accumulating a sum in, we should define it locally. It's handier to define it in the block where it's used, where you can see its comment."
+msgstr ""
+
+#: ../../chapter7.rst:649
+msgid "If it's used globally, we should collect things according to their logical function, and define them together on a separate screen. One per line with a comment."
+msgstr ""
+
+#: ../../chapter7.rst:653
+msgid "The question is, where do you initialize them? Some say on the same line, immediately following its definition. But that messes up the comments, and there isn't room for any decent comment. And it scatters the initialization all over the application."
+msgstr ""
+
+#: ../../chapter7.rst:658
+msgid "I tend to do all my initialization in the load screen. After I've loaded all my blocks, I initialize the things that have to be initialized. It might also set up color lookup tables or execute some initialization code."
+msgstr ""
+
+#: ../../chapter7.rst:662
+msgid "If your program is destined to be target compiled, then it's easy to write a word at the point that encompasses all the initialization."
+msgstr ""
+
+#: ../../chapter7.rst:665
+msgid "It can get much more elaborate. I've defined variables in ROM where the variables were all off in an array in high memory, and the initial values are in ROM, and I copy up the initial values at initialization time. But usually you're only initializing a few variables to anything other than zero."
+msgstr ""
+
+#: ../../chapter7.rst:671
+msgid "Saving and Restoring a State"
+msgstr ""
+
+#: ../../chapter7.rst:673
+msgid "Variables have the characteristic that when you change their contents, you clobber the value that was there before. Let’s look at some of the problems this can create, and some of the things we can do about them."
+msgstr ""
+
+#: ../../chapter7.rst:677
+msgid "``BASE`` is a variable that indicates the current number radix for all numeric input and output. The following words are commonly found in Forth systems:"
+msgstr ""
+
+#: ../../chapter7.rst:686
+msgid "Suppose we’ve written a word that displays a “dump” of memory. Ordinarily, we work in decimal mode, but we want the dump in hexadecimal. So we write:"
+msgstr ""
+
+#: ../../chapter7.rst:695
+msgid "This works—most of the time. But there’s a presumption that we want to come back to decimal mode. What if it had been working in hexadecimal, and wants to come back to hexadecimal? Before we change the base to ``HEX``, we have to save its current value. When we’re done dumping, we restore it."
+msgstr ""
+
+#: ../../chapter7.rst:701
+msgid "This means we have to tuck away the saved value temporarily, while we format the dump. The return stack is one place to do this:"
+msgstr ""
+
+#: ../../chapter7.rst:710
+msgid "If things get too messy, we may have to define a temporary variable:"
+msgstr ""
+
+#: ../../chapter7.rst:719
+msgid "How quickly things get complicated."
+msgstr ""
+
+#: ../../chapter7.rst:721
+msgid "In this situation, if both the current and the old version of a variable belong only to your application (and not part of your system), and if this same situation comes up more than once, apply a technique of factoring:"
+msgstr ""
+
+#: ../../chapter7.rst:731
+msgid "Then instead of defining two variables, such as ``CONDITION`` and ``OLD-CONDITION``, define one double-length variable:"
+msgstr ""
+
+#: ../../chapter7.rst:738
+msgid "Use ``BURY`` and ``EXHUME`` to save and restore the original value:"
+msgstr ""
+
+#: ../../chapter7.rst:745
+msgid "``BURY`` saves the “old” version of condition at ``CONDITION 2+``."
+msgstr ""
+
+#: ../../chapter7.rst:747
+msgid "You still have to be careful. Going back to our ``DUMP`` example, suppose you decided to add the friendly feature of letting the user exit the dump at any time by pressing the “escape” key. So inside the loop you build the test for a key being pressed, and if so execute ``QUIT``. But what happens?"
+msgstr ""
+
+#: ../../chapter7.rst:754
+msgid "The user starts in decimal, then types ``DUMP``. He exits ``DUMP`` midway through and finds himself, strangely, in hexadecimal."
+msgstr ""
+
+#: ../../chapter7.rst:758
+msgid "In the simple case at hand, the best solution is to not use ``QUIT``, but rather a controlled exit from the loop (via ``LEAVE``, etc.) to the end of the definition where ``BASE`` is reset."
+msgstr ""
+
+#: ../../chapter7.rst:763
+msgid "In very complex applications a controlled exit is often impractical, yet many variables must somehow be restored to a natural condition."
+msgstr ""
+
+#: ../../chapter7.rst:782
+msgid "**Moore** responds to this example:"
+msgstr ""
+
+#: ../../chapter7.rst:767
+msgid "You really get tied up in a knot. You're creating problems for yourself. If I want a hex dump I say ``HEX``   ``DUMP``. If I want a decimal dump I say ``DECIMAL``   ``DUMP``. I don't give ``DUMP`` the privilege of messing around with my environment."
+msgstr ""
+
+#: ../../chapter7.rst:772
+msgid "There's a philosophical choice between restoring a situation when you finish and establishing the situation when you start. For a long time I felt you should restore the situation when you're finished. And I would try to do that consistently everywhere. But it's hard to define \"everywhere.\" So now I tend to establish the state before I start."
+msgstr ""
+
+#: ../../chapter7.rst:778
+msgid "If I have a word which cares where things are, it had better set them. If somebody else changes them, they don't have to worry about resetting them."
+msgstr ""
+
+#: ../../chapter7.rst:782
+msgid "There are more exits than there are entrances."
+msgstr ""
+
+#: ../../chapter7.rst:784
+msgid "In cases in which I need to do the resetting before I’m done, I’ve found it useful to have a single word (which I call ``PRISTINE``) to perform this resetting. I invoke ``PRISTINE``:"
+msgstr ""
+
+#: ../../chapter7.rst:788
+msgid "at the normal exit point of the application"
+msgstr ""
+
+#: ../../chapter7.rst:790
+msgid "at the point where the user may deliberately exit (just before ``QUIT``)"
+msgstr ""
+
+#: ../../chapter7.rst:792
+msgid "at any point where a fatal error may occur, causing an abort."
+msgstr ""
+
+#: ../../chapter7.rst:794
+msgid "Finally, when you encounter this situation of having to save/restore a value, make sure it’s not just a case of bad factoring. For example, suppose we have written:"
+msgstr ""
+
+#: ../../chapter7.rst:804
+msgid "The current ``GAME`` is either ``LONG`` or ``SHORT``."
+msgstr ""
+
+#: ../../chapter7.rst:806
+msgid "Later we decide we need a word to play *any* number of holes. So we invoke ``GAME`` making sure not to clobber the current value of ``#HOLES``:"
+msgstr ""
+
+#: ../../chapter7.rst:813
+msgid "Because we needed ``HOLES`` after we’d defined ``GAME``, it seemed to be of greater complexity; we built ``HOLES`` around ``GAME``. But in fact—perhaps you see it already—rethinking is in order:"
+msgstr ""
+
+#: ../../chapter7.rst:822
+msgid "We can build ``GAME`` around ``HOLES`` and avoid all this saving/restoring nonsense."
+msgstr ""
+
+#: ../../chapter7.rst:826
+msgid "Application Stacks"
+msgstr ""
+
+#: ../../chapter7.rst:828
+msgid "In the last section we examined some ways to save and restore a single previous value. Some applications require *several* values to be saved and restored. You may often find the best solution to this problem in defining your own stack."
+msgstr ""
+
+#: ../../chapter7.rst:833
+msgid "Here is the code for a user stack including very simple error checking (an error clears the stack):"
+msgstr ""
+
+#: ../../chapter7.rst:845
+msgid "The word ``PUSH`` takes a value from off of your data stack and “pushes” it onto this new stack. ``POP`` is the opposite, “popping” a value from off the new stack, and onto Forth’s data stack."
+msgstr ""
+
+#: ../../chapter7.rst:849
+msgid "In a real application you might want to change the names ``PUSH`` and ``POP`` to better match their conceptual purposes."
+msgstr ""
+
+#: ../../chapter7.rst:853
+msgid "Sharing Components"
+msgstr ""
+
+#: ../../chapter7.rst:857
+msgid "It's legal to use a component for an additional purpose besides its intended one, provided:"
+msgstr ""
+
+#: ../../chapter7.rst:860
+msgid "All uses of the component are mutually exclusive"
+msgstr ""
+
+#: ../../chapter7.rst:861
+msgid "Each interrupting use of the component restores the component to its previous state when finished."
+msgstr ""
+
+#: ../../chapter7.rst:864
+msgid "Otherwise you need an additional component or level of complexity."
+msgstr ""
+
+#: ../../chapter7.rst:866
+msgid "We’ve seen a simple example of this principle with the return stack. The return stack is a component of the Forth system designed to hold return addresses, and thereby serve as an indication of where you’ve been and where you’re going. To use the return stack as a holder for temporary values is possible, and in many cases desirable. Problems occur when one of the above restrictions is ignored."
+msgstr ""
+
+#: ../../chapter7.rst:874
+msgid "In my text formatter the output can go invisible. This feature has two purposes:"
+msgstr ""
+
+#: ../../chapter7.rst:877
+msgid "for looking ahead to see whether something will fit, and"
+msgstr ""
+
+#: ../../chapter7.rst:879
+msgid "for formatting the table of contents (the entire document is formatted and page numbers are calculated without anything actually being displayed)."
+msgstr ""
+
+#: ../../chapter7.rst:883
+msgid "It was tempting to think that once having added the ability to make the output invisible, I could use this feature to serve both purposes. Unfortunately, the two purposes are not mutually exclusive."
+msgstr ""
+
+#: ../../chapter7.rst:887
+msgid "Let’s see what would happen if I tried to violate this rule. Imagine that the word ``DISPLAY`` does the output, and it’s smart enough to know whether to be visible or invisible. The words ``VISIBLE`` and ``INVISIBLE`` set the state respectively."
+msgstr ""
+
+#: ../../chapter7.rst:892
+msgid "My code for looking ahead will first execute ``INVISIBLE``, then test-format the upcoming text to determine its length, and finally execute ``VISIBLE`` to restore things to the normal state."
+msgstr ""
+
+#: ../../chapter7.rst:896
+msgid "This works fine."
+msgstr ""
+
+#: ../../chapter7.rst:898
+msgid "Later I add the table-of-contents feature. First the code executes ``IN-VI-SI-BLE``, then runs through the document determining page numbers etc.; then finally executes ``VISIBLE`` to restore things to normal."
+msgstr ""
+
+#: ../../chapter7.rst:903
+msgid "The catch? Suppose I’m running a table of contents and I hit one of those places where I look ahead. When I finish looking ahead, I execute ``VISIBLE``. Suddenly I start printing the document when I was supposed to be running the table of contents."
+msgstr ""
+
+#: ../../chapter7.rst:908
+msgid "The solution? There are several."
+msgstr ""
+
+#: ../../chapter7.rst:910
+msgid "One solution views the problem as being that the lookahead code is clobbering the visible/invisible flag, which may have been preset by table-of-contents. Therefore, the lookahead code should be responsible for saving, and later restoring, the flag."
+msgstr ""
+
+#: ../../chapter7.rst:915
+msgid "Another solution involves keeping two separate variables—one to indicate we’re looking ahead, the other to indicate we’re printing the table of contents. The word ``DISPLAY`` requires that both flags be false in order to actually display anything."
+msgstr ""
+
+#: ../../chapter7.rst:920
+msgid "There are two ways to accomplish the latter approach, depending on how you want to decompose the problem. First, we could nest one condition within the other:"
+msgstr ""
+
+#: ../../chapter7.rst:933
+msgid "``DISPLAY`` checks that we’re not setting the table of contents and invokes ``<DISPLAY>``, which in turn checks that we’re not looking ahead and invokes ``[DISPLAY]``."
+msgstr ""
+
+#: ../../chapter7.rst:937
+msgid "In the development cycle, the word ``[DISPLAY]`` that always does the output was originally called ``DISPLAY``. Then a new ``DISPLAY`` was defined to include the lookahead check, and the original definition was renamed ``[DISPLAY]``, thus adding a level of complexity backward without changing any of the code that used ``DISPLAY``."
+msgstr ""
+
+#: ../../chapter7.rst:943
+msgid "Finally, when the table-of-contents feature was added, a new ``DISPLAY`` was defined to include the table-of-contents check, and the previous ``DISPLAY`` was renamed ``<DISPLAY>``."
+msgstr ""
+
+#: ../../chapter7.rst:947
+msgid "That’s one approach to the use of two variables. Another is to include both tests within a single word:"
+msgstr ""
+
+#: ../../chapter7.rst:954
+msgid "But in this particular case, yet another approach can simplify the whole mess. We can use a single variable not as a flag, but as a counter."
+msgstr ""
+
+#: ../../chapter7.rst:957
+msgid "We define:"
+msgstr ""
+
+#: ../../chapter7.rst:966
+msgid "The lookahead code begins by invoking ``INVISIBLE`` which bumps the counter up one. Non-zero is “true,” so ``DISPLAY`` will not do the output. After the lookahead, the code invokes ``VISIBLE`` which decrements the counter back to zero (“false”)."
+msgstr ""
+
+#: ../../chapter7.rst:971
+msgid "The table-of-contents code also begins with ``VISIBLE`` and ends with ``IN-VI-SI-BLE``. If we’re running the table of contents while we come upon a lookahead, the second invocation of ``VISIBLE`` raises the counter to two."
+msgstr ""
+
+#: ../../chapter7.rst:976
+msgid "The subsequent invocation of ``INVISIBLE`` decrements the counter to one, so we’re still invisible, and will remain invisible until the table of contents has been run."
+msgstr ""
+
+#: ../../chapter7.rst:980
+msgid "(Note that we must substitute ``0=`` for ``NOT``. The ’83 Standard has changed ``NOT`` to mean one’s complement, so that ``1 NOT`` yields true. By the way, I think this was a mistake.)"
+msgstr ""
+
+#: ../../chapter7.rst:986
+msgid "This use of a counter may be dangerous, however. It requires parity of command usage: two ``VISIBLE``\\ s yields invisible. That is, unless ``VISIBLE`` clips the counter:"
+msgstr ""
+
+#: ../../chapter7.rst:995
+msgid "The State Table"
+msgstr ""
+
+#: ../../chapter7.rst:997
+msgid "A single variable can express a single condition, either a flag, a value, or the address of a function."
+msgstr ""
+
+#: ../../chapter7.rst:1000
+msgid "A collection of conditions together represent the *state* of the application or of a particular component [slater83]_. Some applications require the ability to save a current state, then later restore it, or perhaps to have a number of alternating states."
+msgstr ""
+
+#: ../../chapter7.rst:1007
+msgid "When the application requires handling a group of conditions simultaneously, use a state table, not separate variables."
+msgstr ""
+
+#: ../../chapter7.rst:1010
+msgid "The simple case requires saving and restoring a state. Suppose we initially have six variables representing the state of a particular component, as shown in :numref:`fig7-2`."
+msgstr ""
+
+#: ../../chapter7.rst:1014
+msgid "A collection of related variables."
+msgstr ""
+
+#: ../../chapter7.rst:1025
+msgid "Now suppose that we need to save all of them, so that further processing can take place, and later restore all of them. We could define:"
+msgstr ""
+
+#: ../../chapter7.rst:1036
+msgid "thereby saving all the values on the stack until it’s time to restore them. Or, we might define alternate variables for each of the variables above, in which to save each value separately."
+msgstr ""
+
+#: ../../chapter7.rst:1040
+msgid "But a preferred technique involves creating a table, with each element of the table referred to by name. Then creating a second table of the same length. As you can see in :numref:`fig7-3`, we can save the state by copying the table, called ``POINTERS,`` into the second table, called SAVED."
+msgstr ""
+
+#: ../../chapter7.rst:1050
+msgid "Conceptual model for saving a state table."
+msgstr ""
+
+#: ../../chapter7.rst:1052
+msgid "We’ve implemented this approach with the code in :numref:`fig7-4`."
+msgstr ""
+
+#: ../../chapter7.rst:1054
+msgid "Implementation of save/restorable state table."
+msgstr ""
+
+#: ../../chapter7.rst:1075
+msgid "Notice in this implementation that the names of the pointers, ``TOP``, ``BOTTOM``, etc., always return the same address. There is only one location used to represent the current value of any state at any time."
+msgstr ""
+
+#: ../../chapter7.rst:1079
+msgid "Also notice that we define ``POINTERS`` (the name of the table) with ``CON-STANT``, not with ``CREATE``, using a dummy value of zero. This is because we refer to ``POINTERS`` in the defining word ``POSITION``, but it’s not until after we’ve defined all the field names that we know how big the table must be and can actually ``ALLOT`` it."
+msgstr ""
+
+#: ../../chapter7.rst:1085
+msgid "As soon as we create the field names, we define the size of the table as a constant ``/POINTERS``. At last we reserve room for the table itself, patching its beginning address (``HERE``) into the constant ``POINTERS``. (The word ``>BODY`` converts the address returned by tick into the address of the constant’s value.) Thus ``POINTERS`` returns the address of the table allotted later, just as a name defined by ``CREATE`` returns the address of a table allotted directly below the name’s header."
+msgstr ""
+
+#: ../../chapter7.rst:1094
+msgid "Although it’s valid to patch the value of a ``CONSTANT`` at compile time, as we do here, there is a restriction of style:"
+msgstr ""
+
+#: ../../chapter7.rst:1099
+msgid "A ``CONSTANT``\\ s value should never be changed once the application is compiled."
+msgstr ""
+
+#: ../../chapter7.rst:1102
+msgid "The case of alternating states is slightly more involved. In this situation we need to alternate back and forth between two (or more) states, never clobbering the conditions in each state when we jump to the other state. :numref:`fig7-5` shows the conceptual model for this kind of state table."
+msgstr ""
+
+#: ../../chapter7.rst:1112
+msgid "Conceptual model for alternating-states tables."
+msgstr ""
+
+#: ../../chapter7.rst:1114
+msgid "In this model, the names ``TOP``, ``BOTTOM``, etc., can be made to point into either of two tables, ``REAL`` or ``PSEUDO``. By making the ``REAL`` table the current one, all the pointer names reference addresses in the ``REAL`` table; by making the ``PSEUDO`` table current, they address the ``PSEUDO`` table."
+msgstr ""
+
+#: ../../chapter7.rst:1120
+msgid "The code in :numref:`fig7-6` implements this alternating states mechanism. The words ``WORKING`` and ``PRETENDING`` change the pointer appropriately. For instance:"
+msgstr ""
+
+#: ../../chapter7.rst:1124
+msgid "Implementation of alternating-states mechanism."
+msgstr ""
+
+#: ../../chapter7.rst:1158
+msgid "The major difference with this latter approach is that names go through an extra level of indirection (``POINTERS`` has been changed from a constant to a colon definition). The field names can be made to point to either of two state tables. Thus each name has slightly more work to do. Also, in the former approach the names refer to fixed locations; a ``CMOVE`` is required each time we save or restore the values. In this approach, we have only to change a single pointer to change the current table."
+msgstr ""
+
+#: ../../chapter7.rst:1168
+msgid "Vectored Execution"
+msgstr ""
+
+#: ../../chapter7.rst:1170
+msgid "Vectored execution extends the ideas of currentness and indirection beyond data, to functions. Just as we can save values and flags in variables, we can also save functions, because functions can be referred to by address."
+msgstr ""
+
+#: ../../chapter7.rst:1175
+msgid "The traditional techniques for implementing vectored execution are described in *Starting Forth*, Chapter Nine. In this section we’ll discuss a new syntax which I invented and which I think can be used in many circumstances more elegantly than the traditional methods."
+msgstr ""
+
+#: ../../chapter7.rst:1180
+msgid "The syntax is called ``DOER/MAKE``. (If your system doesn’t include these words, refer to :doc:`Appendix B<appendixb>` for code and implementation details.) It works like this: You define the word whose behavior will be vectorable with the defining word ``DOER``, as in"
+msgstr ""
+
+#: ../../chapter7.rst:1190
+msgid "Initially, the new word ``PLATFORM`` does nothing. Then you can write words that change what ``PLATFORM`` does by using the word ``MAKE``:"
+msgstr ""
+
+#: ../../chapter7.rst:1198
+msgid "When you invoke ``LEFTWING``, the phrase ``MAKE PLATFORM`` changes what ``PLATFORM`` will do. Now if you type ``PLATFORM``, you’ll see:"
+msgstr ""
+
+#: ../../chapter7.rst:1206
+msgid "``RIGHTWING`` will make ``PLATFORM`` display “opponent.” You can use ``PLATFORM`` within another definition:"
+msgstr ""
+
+#: ../../chapter7.rst:1214
+msgid "The statement"
+msgstr ""
+
+#: ../../chapter7.rst:1220
+msgid "will display one campaign statement, while"
+msgstr ""
+
+#: ../../chapter7.rst:1226
+msgid "will display another."
+msgstr ""
+
+#: ../../chapter7.rst:1228
+msgid "The ``MAKE`` code can be any Forth code, as much or as long as you want; just remember to conclude it with semicolon. The semicolon at the end of ``LEFTWING`` serves for both ``LEFTWING`` and for the bit of code after ``MAKE``. When ``MAKE`` redirects execution of the ``DOER`` word, it also *stops* execution of the word in which it appears."
+msgstr ""
+
+#: ../../chapter7.rst:1234
+msgid "When you invoke ``LEFTWING``, for example, ``MAKE`` redirects ``PLATFORM`` and exits. Invoking ``LEFTWING`` does not cause “proponent” to be printed. :numref:`fig7-7`  demonstrates this point, using a conceptualized illustration of the dictionary."
+msgstr ""
+
+#: ../../chapter7.rst:1243
+msgid "``DOER`` and ``MAKE``."
+msgstr ""
+
+#: ../../chapter7.rst:1245
+msgid "If you want to *continue* execution, you can use the word ``;AND`` in place of semicolon. ``;AND`` terminates the code that the ``DOER`` word points to, and resumes execution of the definition in which it appears, as you can see in :numref:`fig7-8` ."
+msgstr ""
+
+#: ../../chapter7.rst:1255
+msgid "Multiple ``MAKE``\\ s in parallel using ``;AND``."
+msgstr ""
+
+#: ../../chapter7.rst:1257
+msgid "Finally, you can chain the “making” of ``DOER`` words in series by not using ``;AND``. :numref:`fig7-9`  explains this better than I could write about it."
+msgstr ""
+
+#: ../../chapter7.rst:1265
+msgid "Multiple ``MAKE``\\ s in series."
+msgstr ""
+
+#: ../../chapter7.rst:1268
+msgid "Using DOER/MAKE"
+msgstr ""
+
+#: ../../chapter7.rst:1270
+msgid "There are many occasions when the ``DOER/MAKE`` construct proves beneficial. They are:"
+msgstr ""
+
+#: ../../chapter7.rst:1273
+msgid "To change the state of a function (when external testing of the state is not necessary). The words ``LEFTWING`` and ``RIGHTWING`` change the state of the word ``PLATFORM``."
+msgstr ""
+
+#: ../../chapter7.rst:1277
+msgid "To factor out internal phrases from similar definitions, but within control structures such as loops."
+msgstr ""
+
+#: ../../chapter7.rst:1280
+msgid "Consider the definition of a word called ``DUMP``, designed to reveal the contents of a specified region of memory."
+msgstr ""
+
+#: ../../chapter7.rst:1289
+msgid "The problem arises when you write a definition called ``CDUMP``, designed to format the output according to bytes, not cells:"
+msgstr ""
+
+#: ../../chapter7.rst:1298
+msgid "The code within these two definitions is identical except for the fragments in boldface. But factoring is difficult because the fragments occur inside the    ``DO``  ``LOOP``."
+msgstr ""
+
+#: ../../chapter7.rst:1302
+msgid "Here’s a solution to this problem, using ``DOER/MAKE``. The code that changes has been replaced with the word ``.UNIT``, whose behavior is vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that “``1``  ``+LOOP``” has the same effect as “``LOOP``”.)"
+msgstr ""
+
+#: ../../chapter7.rst:1316
+msgid "Notice how ``DUMP`` and ``CDUMP`` *set-up* the vector, then go on to *execute* the shell (the word ``<DUMP>``)."
+msgstr ""
+
+#: ../../chapter7.rst:1319
+msgid "To change the state of related functions by invoking a single command. For instance:"
+msgstr ""
+
+#: ../../chapter7.rst:1337
+msgid "Here we’ve defined a vectorable set of output words, each name having a “prime” mark at the end. ``VISIBLE`` sets them to their expected functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that would normally be passed to them. Say ``INVISIBLE`` and any words defined in terms of these four output operators will *not* produce any output."
+msgstr ""
+
+#: ../../chapter7.rst:1344
+msgid "To change the state for the next occurrence only, then change the state (or reset it) again."
+msgstr ""
+
+#: ../../chapter7.rst:1347
+msgid "Suppose we’re writing an adventure game. When the player first arrives at a particular room, the game will display a detailed description. If the player returns to the same room later, the game will show a shorter message."
+msgstr ""
+
+#: ../../chapter7.rst:1352
+msgid "We write:"
+msgstr ""
+
+#: ../../chapter7.rst:1363
+msgid "The word ``ANNOUNCE`` will display either message. First we say ``LONG``, to initialize ``ANNOUNCE`` to the long message. Now we can test ``ANNOUNCE``, and find that it prints the long message. Having done that, however, it continues to “make” ``ANNOUNCE`` display the short message."
+msgstr ""
+
+#: ../../chapter7.rst:1368
+msgid "If we test ``ANNOUNCE`` a second time, it prints the short message. And it will for ever more, until we say ``LONG`` again."
+msgstr ""
+
+#: ../../chapter7.rst:1371
+msgid "In effect we’re queuing behaviors. We can queue any number of behaviors, letting each one set the next. The following example (though not terribly practical) illustrates the point."
+msgstr ""
+
+#: ../../chapter7.rst:1392
+msgid "In this code we’ve created a list of variables, then defined an ``ORDER`` in which they are to be searched. The word ``HUNT`` looks through each of them, looking for the first one that contains a 17. ``HUNT`` returns either the address of the correct variable, or a zero if none have the value."
+msgstr ""
+
+#: ../../chapter7.rst:1398
+msgid "It does this by simply executing ``WHERE`` five times. Each time, ``WHERE`` returns a different address, as defined in ``ORDER``, then finally zero."
+msgstr ""
+
+#: ../../chapter7.rst:1401
+msgid "We can even define a ``DOER`` word that toggles its own behavior endlessly:"
+msgstr ""
+
+#: ../../chapter7.rst:1412
+msgid "To implement a forward reference. A forward reference is usually needed as a “hook,” that is, a word invoked in a low-level definition but reserved for use by a component defined later in the listing."
+msgstr ""
+
+#: ../../chapter7.rst:1416
+msgid "To implement a forward reference, build the header of the word with ``DOER``, before invoking its name."
+msgstr ""
+
+#: ../../chapter7.rst:1423
+msgid "Later in the listing, use ``MAKE``;"
+msgstr ""
+
+#: ../../chapter7.rst:1429
+msgid "(Remember, ``MAKE`` can be used outside a colon definition.)"
+msgstr ""
+
+#: ../../chapter7.rst:1431
+msgid "Recursion, direct or indirect."
+msgstr ""
+
+#: ../../chapter7.rst:1433
+msgid "Direct recursion occurs when a word invokes itself. A good example is the recursive definition of greatest-common-denominator:"
+msgstr ""
+
+#: ../../chapter7.rst:1441
+msgid "This translates nicely into:"
+msgstr ""
+
+#: ../../chapter7.rst:1448
+msgid "Indirect recursion occurs when one word invokes a second word, while the second word invokes the first. This can be done using the form:"
+msgstr ""
+
+#: ../../chapter7.rst:1457
+msgid "Debugging. I often define:"
+msgstr ""
+
+#: ../../chapter7.rst:1463
+msgid "(short for ``SNAPSHOT``), then edit ``SNAP`` into my application at a point where I want to see what’s going on. For instance, with ``SNAP`` invoked inside the main loop of a keystroke interpreter, I can set it up to let me watch what’s happening to a data structure as I enter keys. And I can change what SNAP does without having to recompile the loop."
+msgstr ""
+
+#: ../../chapter7.rst:1471
+msgid "The situations in which it’s preferable to use the tick-and-execute approach are those in which you need control over the address of the vector, such as when vectoring through an element in a decision table, or attempting to save/restore the contents of the vector."
+msgstr ""
+
+#: ../../chapter7.rst:1477
+msgid "Summary"
+msgstr ""
+
+#: ../../chapter7.rst:1479
+msgid "In this chapter we’ve examined the tradeoffs between using the stack and using variables and other data structures. Using the stack is preferable for testing and reusability, but too many values manipulated on the stack by a single definition hurts readability and writeability."
+msgstr ""
+
+#: ../../chapter7.rst:1484
+msgid "We also explored techniques for saving and restoring data structures, and concluded with a study of vectored execution using ``DOER/MAKE``."
+msgstr ""
+
+#: ../../chapter7.rst:1489
+msgid "REFERNCES"
+msgstr ""
+
+#: ../../chapter7.rst:1491
+msgid "Michael Ham, \"Why Novices Use So Many Variables,\"    **Forth Dimensions** , vol. 5, no. 4, November/December 1983."
+msgstr ""
+
+#: ../../chapter7.rst:1492
+msgid "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal of Forth Application and Research** ,   1, 1 (September 1983), 17."
+msgstr ""
+

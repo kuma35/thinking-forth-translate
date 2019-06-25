@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-25 00:54+0900\n"
+"PO-Revision-Date: 2019-06-25 02:05+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../preface.rst:4
+msgid "Preface"
+msgstr "序文"
+
+#: ../../preface.rst:6
+msgid ""
+"Programming computers can be crazy-making. Other professions give you the"
+" luxury of seeing tangible proof of your efforts. A watchmaker can watch "
+"the cogs and wheels; a seamstress can watch the seams come together with "
+"each stitch. But programmers design, build, and repair the stuff of "
+"imagination, ghostly mechanisms that escape the senses. Our work takes "
+"place not in RAM, not in an editor, but within our own minds."
+msgstr "コンピュータ・プログラミングは頭がおかしくなります。他の職業は努力した結果を目にすることができる贅沢に恵まれています。時計職人は歯車やホィールを見る事ができます。仕立て屋はステッチ毎に縫い目が伸びるのを見ることができます。しかしプログラマーは想像や意識外の恐ろしげな仕組みのようなものを設計・構築・修復します。私たちの仕事はRAMやエディタ内ではなく、自身の心の中で行われます。"
+
+#: ../../preface.rst:14
+msgid ""
+"Building models in the mind is both the challenge and the joy of "
+"programming. How should we prepare for it? Arm ourselves with better "
+"debuggers, decompilers, and disassemblers? They help, but our most "
+"essential tools and techniques are mental. We need a consistent and "
+"practical methodology for *thinking about* software problems. That is "
+"what I have tried to capture in this book. *Thinking Forth* is meant for "
+"anyone interested in writing software to solve problems. It focuses on "
+"design and implementation; deciding what you want to accomplish, "
+"designing the components of the system, and finally building the program."
+msgstr "頭の中でモデルを構築することは、プログラミングの課題でもあり喜びでもあります。そのためにどのような準備をするべきでしょうか？よりよいデバッガ・逆コンパイラ・逆アセンブラで武装しますか？それらは助けにはなりますが、最も重要なツールとテクニックは精神です。私達はソフトウェアの問題について考えるための一貫した実用的な方法論を必要としています。それが私がこの本の中でとらえようとしたことです。「Forth思考」は問題解決のためのソフトウェアを書く事に興味がある人のためのものです。達成したいことを決定し、システムのコンポーネントを設計し、そして最後にプログラムを構築します。"
+
+#: ../../preface.rst:25
+msgid ""
+"The book stresses the importance of writing programs that not only work, "
+"but that are also readable, logical, and that express the best solution "
+"in the simplest terms."
+msgstr "この本は、うまく機能するだけでなく、読みやすく、論理的で、簡潔なことばで最良の解決策を表すプログラムを書くことの重要性を強調しています。"
+
+#: ../../preface.rst:29
+msgid ""
+"Although most of the principles described here can be applied to any "
+"language, I’ve presented them in the context of Forth. Forth is a "
+"language, an operating system, a set of tools, and a philosophy. It is an"
+" ideal means for thinking because it corresponds to the way our minds "
+"work. *Thinking Forth* is thinking simple, thinking elegant, thinking "
+"flexible. It is *not* restrictive, *not* complicated, *not* over-general."
+" You don’t have to know Forth to benefit from this book. *Thinking Forth*"
+" synthesizes the Forth approach with many principles taught by modern "
+"computer science. The marriage of Forth\\’s simplicity with the "
+"traditional disciplines of analysis and style will give you a new and "
+"better way to look at software problems and will be helpful in all areas "
+"of computer application."
+msgstr "ここで説明している大部分の原則はどの言語にも適用できるけれども、私はそれらをForthについて提示しています。Forthは言語であり、オペレーティングシステムであり、道具箱であり、哲学です。それは私達の考え方に対応した、思考の為の理想的な手段です。「Forth思考」はシンプルに考え、エレガントに考え、柔軟に考えます。それは制約ではなく、複雑でもなく、過度に一般的でもありません。この本の恩恵をえるためにForthを知る必要はありません。「Forth思考」は現代コンピューター科学によって授けられた多くの原則とForthのアプローチを統合したものです。Forthの単純さと伝統的な分析やスタイルとの結婚は、あなたにソフトウェアの問題を見るための新しくてよりよい方法を与え、そしてそれはコンピューターアプリケーションの全ての分野で役に立つでしょう。"
+
+#: ../../preface.rst:42
+msgid ""
+"If you want to learn more about Forth, another book of mine, *Starting "
+"Forth*, covers the language aspects of Forth. Otherwise, :doc:`Appendix "
+"A<appendixa>` of this book introduces Forth fundamentals."
+msgstr "Forthについてもっと学びたいのであれば、もう一つの本「Forth入門」(原著: Starting Forth)が言語面をカバーしています。あるいは、この本の :doc:`付録 A<appendixa>` でForthの基本を紹介しています。"
+
+#: ../../preface.rst:46
+msgid ""
+"A few words about the layout of the book: After devoting the first "
+"chapter to fundamental concepts, I\\’ve patterned the book after the "
+"software development cycle; from initial specification up through "
+"implementation. The appendixes in back include an overview of Forth for "
+"those new to the language, code for several of the utilities described, "
+"answers to problems, and a summary of style conventions."
+msgstr "この本の構成は、最初の章を基本概念に費やし、そしてソフトウェア開発サイクルを経験した後に、その後の章立てを初期仕様から実装まで順序立てて記述しました。後ろの付録には言語に不慣れな人の為にForthの概要、本文中で説明したユーティリティのコードの幾つか、問題に対する答え、スタイル規則の要約があります。"
+
+#: ../../preface.rst:53
+msgid ""
+"Many of the ideas in this book are unscientific. They are based on "
+"subjective experience and observations of our own humanity. For this "
+"reason, I\\’ve included interviews with a variety of Forth professionals,"
+" not all of whom completely agree with one another, or with me. All these"
+" opinions are subject to change without notice. The book also offers "
+"suggestions called “tips”. They are meant to be taken only as they apply "
+"to your situation. Forth thinking accepts no inviolable rules. To ensure "
+"the widest possible conformity to available Forth systems, all coded "
+"examples in this book are consistent with the Forth-83 Standard."
+msgstr "この本のアイデアの多くは非科学的です。それらは主観的な経験と自身の人間性の観察に基づいています。このため、私は様々なForth専門家へのインタビューを含めました。各人がお互い完全に合意したわけでなく、私と完全に合意しているわけでもありません。各人の主張は予告なしに変更される可能性があります。本はまた「ちなみに」と提案をしています。それらはあなたの状況にあてはまるときだけ活用してください。Forth思考は不可抗力なルールを受け入れません。利用可能なForthシステムへの最大限の適合性を保証するために、この本の全てのコード例はForth-83規格に準拠しています。"
+
+#: ../../preface.rst:63
+msgid ""
+"One individual who greatly influenced this book is the man who invented "
+"Forth, Charles Moore. In addition to spending several days interviewing "
+"him for this book, I\\’ve been privileged to watch him at work. He is a "
+"master craftsman, moving with speed and deftness, as though he were "
+"physically altering the conceptual models inside the machine—building, "
+"tinkering, playing. He accomplishes this with a minimum of tools (the "
+"result of an ongoing battle against insidious complexity) and few "
+"restrictions other than those imposed by his own techniques. I hope this "
+"book captures some of his wisdom. Enjoy!"
+msgstr "この本に大きな影響を与えた人物は、Forthを発明したチャールズ・ムーアです。この本の為に彼にインタビューするのに数日費やした事に加えて、職場での彼を観察できたのは役得でした。彼は機械の中の概念モデルを物理的に置き換えているかのように、組み立て、いじくり、操作する、スピードと巧みさを兼ね備えている熟練した職人です。彼は、これを(潜在的な複雑さとの継続的な戦いの結果、)最小限のツールと、彼自身のテクニックによって課された制約以外ほとんど無しに実現しています。この本が彼の智慧の一部を捉えていることを願っています。ではお楽しみ下さい。"
+
+#: ../../preface.rst:74
+msgid "Acknowledgments"
+msgstr "謝辞"
+
+#: ../../preface.rst:76
+msgid ""
+"Many thanks to all the good people who gave their time and ideas to this "
+"book, including: Charles Moore, Dr. Mark Bernstein, Dave Johnson, John "
+"Teleska, Dr. Michael Starling, Dr. Peter Kogge, Tom Dowling, Donald "
+"Burgess, Cary Campbell, Dr. Raymond Dessy, Michael Ham, and Kim Harris. "
+"Another of the interviewees, Michael LaManna, passed away while this book"
+" was in production. He is deeply missed by those of us who loved him."
+msgstr ""
+"この本の為に時間を割きアイディアを提供してくれた良き人々に感謝します。\n"
+"チャールズ・ムーア(Charles Moore)、マーク・バーンスタイン博士(Dr. Mark Bernstein)、デイヴ・ジョンソン(Dave Johnson)、ジョン・テレスカ(John Teleska)、マイケル・スターリング博士(Dr. Michael Starling)、ピーター・コゲ博士(Dr. Peter Kogge)、トム・ダウリング(Tom Dowling)、ドナルド・バージェス(Donald Burgess)、キャリー・キャンベル(Cary Campbell)、レイモンド・デス(Dr. Raymond Dessy)、マイケル・ハム(Michael Ham)、キム・ハリス(Kim Harris)。なお、この本の製作中にもう一人のインタビュー対象者の Michael LaManna が無くなりました。謹んで哀悼の意を表します。"
+

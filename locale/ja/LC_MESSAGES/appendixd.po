@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-24 20:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../appendixd.rst:4
+msgid "Appendix D: Answers to \"Further Thinking” Problems"
+msgstr ""
+
+#: ../../appendixd.rst:7
+msgid "Chapter Three"
+msgstr ""
+
+#: ../../appendixd.rst:9
+msgid ""
+"The answer depends on whether you believe that other components will need"
+" to know the numeric code associated with each key. Usually this would "
+"*not* be the case. The simpler, more compact form is therefore "
+"preferable. Also in the first version, to add a new key would require a "
+"change in two places."
+msgstr ""
+
+#: ../../appendixd.rst:15
+msgid ""
+"The problem with the words ``RAM-ALLOT`` and ``THERE`` are that they are "
+"*time-dependent* : we must execute them in a particular order. Our "
+"solution then will be to devise an interface to the RAM allocation "
+"pointer that is not dependent on order; the way to do this is to have a "
+"*single* word which does both functions transparently."
+msgstr ""
+
+#: ../../appendixd.rst:21
+msgid "Our word’s syntax will be"
+msgstr ""
+
+#: ../../appendixd.rst:30
+msgid ""
+"This syntax will remain the same whether we define it to allocate growing"
+" upward:"
+msgstr ""
+
+#: ../../appendixd.rst:40
+msgid "or to allocate growing downward:"
+msgstr ""
+
+#: ../../appendixd.rst:48
+msgid "Chapter Four"
+msgstr ""
+
+#: ../../appendixd.rst:50
+msgid "Our solution is as follows:"
+msgstr ""
+
+#: ../../appendixd.rst:68
+msgid "Chapter Eight"
+msgstr ""
+

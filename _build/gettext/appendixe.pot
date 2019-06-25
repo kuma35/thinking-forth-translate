@@ -1,0 +1,1361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appendixe.rst:4
+msgid "Appendix E: Summary of Style Conventions"
+msgstr ""
+
+#: ../../appendixe.rst:6
+msgid "The contents of this Appendix are in the public domain. We encourage publication without restriction, provided that you credit the source."
+msgstr ""
+
+#: ../../appendixe.rst:11
+msgid "Spacing and Indentation Guidelines"
+msgstr ""
+
+#: ../../appendixe.rst:13
+msgid "1 space between the colon and the name"
+msgstr ""
+
+#: ../../appendixe.rst:15
+msgid "2 spaces between the name and the comment [#f1]_"
+msgstr ""
+
+#: ../../appendixe.rst:17
+msgid "2 spaces, or a carriage return, after the comment and before the definition [#f1]_"
+msgstr ""
+
+#: ../../appendixe.rst:19
+msgid "3 spaces between the name and definition if no comment is used"
+msgstr ""
+
+#: ../../appendixe.rst:21
+msgid "3 spaces indentation on each subsequent line (or multiples of 3 for nested indentation)"
+msgstr ""
+
+#: ../../appendixe.rst:23
+msgid "1 space between words/numbers within a phrase"
+msgstr ""
+
+#: ../../appendixe.rst:25
+msgid "2 or 3 spaces between phrases"
+msgstr ""
+
+#: ../../appendixe.rst:27
+msgid "1 space between the last word and the semicolon"
+msgstr ""
+
+#: ../../appendixe.rst:29
+msgid "1 space between semicolon and ``IMMEDIATE`` (if invoked)"
+msgstr ""
+
+#: ../../appendixe.rst:31
+msgid "No blank lines between definitions, except to separate distinct groups of definitions"
+msgstr ""
+
+#: ../../appendixe.rst:35
+#: ../../appendixe.rst:37
+msgid "Stack-Comment Abbreviations"
+msgstr ""
+
+#: ../../appendixe.rst:40
+msgid "n"
+msgstr ""
+
+#: ../../appendixe.rst:41
+msgid "single-length signed number"
+msgstr ""
+
+#: ../../appendixe.rst:42
+msgid "d"
+msgstr ""
+
+#: ../../appendixe.rst:43
+msgid "double-length signed number"
+msgstr ""
+
+#: ../../appendixe.rst:44
+msgid "u"
+msgstr ""
+
+#: ../../appendixe.rst:45
+msgid "single-length unsigned number"
+msgstr ""
+
+#: ../../appendixe.rst:46
+msgid "ud"
+msgstr ""
+
+#: ../../appendixe.rst:47
+msgid "double-length unsigned number"
+msgstr ""
+
+#: ../../appendixe.rst:48
+msgid "t"
+msgstr ""
+
+#: ../../appendixe.rst:49
+msgid "triple-length"
+msgstr ""
+
+#: ../../appendixe.rst:50
+msgid "q"
+msgstr ""
+
+#: ../../appendixe.rst:51
+msgid "quadruple-length"
+msgstr ""
+
+#: ../../appendixe.rst:52
+#: ../../appendixe.rst:96
+msgid "c"
+msgstr ""
+
+#: ../../appendixe.rst:53
+msgid "7-bit character value"
+msgstr ""
+
+#: ../../appendixe.rst:54
+msgid "b"
+msgstr ""
+
+#: ../../appendixe.rst:55
+msgid "8-bit byte"
+msgstr ""
+
+#: ../../appendixe.rst:56
+#: ../../appendixe.rst:466
+msgid "?"
+msgstr ""
+
+#: ../../appendixe.rst:57
+msgid "boolean flag; or:"
+msgstr ""
+
+#: ../../appendixe.rst:58
+msgid "t="
+msgstr ""
+
+#: ../../appendixe.rst:59
+msgid "true"
+msgstr ""
+
+#: ../../appendixe.rst:60
+msgid "f="
+msgstr ""
+
+#: ../../appendixe.rst:61
+msgid "false"
+msgstr ""
+
+#: ../../appendixe.rst:62
+msgid "a or adr"
+msgstr ""
+
+#: ../../appendixe.rst:63
+msgid "address"
+msgstr ""
+
+#: ../../appendixe.rst:64
+msgid "acf"
+msgstr ""
+
+#: ../../appendixe.rst:65
+msgid "address of code field"
+msgstr ""
+
+#: ../../appendixe.rst:66
+msgid "apf"
+msgstr ""
+
+#: ../../appendixe.rst:67
+msgid "address of parameter field"
+msgstr ""
+
+#: ../../appendixe.rst:68
+#: ../../appendixe.rst:446
+msgid "\\`"
+msgstr ""
+
+#: ../../appendixe.rst:69
+msgid "(as prefix) address of"
+msgstr ""
+
+#: ../../appendixe.rst:70
+msgid "s d"
+msgstr ""
+
+#: ../../appendixe.rst:71
+msgid "(as a pair) source destination"
+msgstr ""
+
+#: ../../appendixe.rst:72
+msgid "lo hi"
+msgstr ""
+
+#: ../../appendixe.rst:73
+msgid "lower-limit upper-limit (inclusive)"
+msgstr ""
+
+#: ../../appendixe.rst:74
+#: ../../appendixe.rst:420
+msgid "#"
+msgstr ""
+
+#: ../../appendixe.rst:75
+msgid "count"
+msgstr ""
+
+#: ../../appendixe.rst:76
+msgid "o"
+msgstr ""
+
+#: ../../appendixe.rst:77
+msgid "offset"
+msgstr ""
+
+#: ../../appendixe.rst:78
+msgid "i"
+msgstr ""
+
+#: ../../appendixe.rst:79
+msgid "index"
+msgstr ""
+
+#: ../../appendixe.rst:80
+msgid "m"
+msgstr ""
+
+#: ../../appendixe.rst:81
+msgid "mask"
+msgstr ""
+
+#: ../../appendixe.rst:82
+msgid "x"
+msgstr ""
+
+#: ../../appendixe.rst:83
+msgid "don't care (data structure notation)"
+msgstr ""
+
+#: ../../appendixe.rst:85
+msgid "An “offset” is a difference expressed in absolute units, such as bytes."
+msgstr ""
+
+#: ../../appendixe.rst:87
+msgid "An “index” is a difference expressed in logical units, such as elements or records."
+msgstr ""
+
+#: ../../appendixe.rst:91
+#: ../../appendixe.rst:93
+msgid "Input-Stream Comment Designations"
+msgstr ""
+
+#: ../../appendixe.rst:97
+msgid "single character, blank-delimited"
+msgstr ""
+
+#: ../../appendixe.rst:98
+#: ../../appendixe.rst:309
+msgid "name"
+msgstr ""
+
+#: ../../appendixe.rst:99
+msgid "sequence of characters, blank delimited"
+msgstr ""
+
+#: ../../appendixe.rst:100
+msgid "text"
+msgstr ""
+
+#: ../../appendixe.rst:101
+msgid "sequence of characters, delimited by non-blank"
+msgstr ""
+
+#: ../../appendixe.rst:103
+msgid "Follow “text” with the actual delimiter required; e.g., text” or text)."
+msgstr ""
+
+#: ../../appendixe.rst:107
+msgid "Samples of Good Commenting Style"
+msgstr ""
+
+#: ../../appendixe.rst:109
+msgid "Here are two sample screens to illustrate good commenting style."
+msgstr ""
+
+#: ../../appendixe.rst:146
+#: ../../appendixe.rst:148
+msgid "Naming Conventions"
+msgstr ""
+
+#: ../../appendixe.rst:152
+msgid "Meaning"
+msgstr ""
+
+#: ../../appendixe.rst:153
+msgid "Form"
+msgstr ""
+
+#: ../../appendixe.rst:154
+msgid "Example"
+msgstr ""
+
+#: ../../appendixe.rst:155
+msgid "**Arithmetic**"
+msgstr ""
+
+#: ../../appendixe.rst:158
+msgid "integer 1"
+msgstr ""
+
+#: ../../appendixe.rst:159
+msgid "1name"
+msgstr ""
+
+#: ../../appendixe.rst:160
+msgid "1\\+"
+msgstr ""
+
+#: ../../appendixe.rst:161
+msgid "integer 2"
+msgstr ""
+
+#: ../../appendixe.rst:162
+msgid "2name"
+msgstr ""
+
+#: ../../appendixe.rst:163
+msgid "2\\*"
+msgstr ""
+
+#: ../../appendixe.rst:164
+msgid "takes relative input parameters"
+msgstr ""
+
+#: ../../appendixe.rst:165
+#: ../../appendixe.rst:168
+#: ../../appendixe.rst:306
+msgid "+name"
+msgstr ""
+
+#: ../../appendixe.rst:166
+msgid "+DRAW"
+msgstr ""
+
+#: ../../appendixe.rst:167
+msgid "takes scaled input parameters"
+msgstr ""
+
+#: ../../appendixe.rst:169
+msgid "\\*DRAW"
+msgstr ""
+
+#: ../../appendixe.rst:170
+msgid "**Compilation**"
+msgstr ""
+
+#: ../../appendixe.rst:173
+msgid "start of \"high-level\" code"
+msgstr ""
+
+#: ../../appendixe.rst:174
+msgid "name:"
+msgstr ""
+
+#: ../../appendixe.rst:175
+msgid "CASE:"
+msgstr ""
+
+#: ../../appendixe.rst:176
+msgid "end of \"high-level\" code"
+msgstr ""
+
+#: ../../appendixe.rst:177
+msgid ";name"
+msgstr ""
+
+#: ../../appendixe.rst:178
+msgid ";CODE"
+msgstr ""
+
+#: ../../appendixe.rst:179
+msgid "put something into dictionary"
+msgstr ""
+
+#: ../../appendixe.rst:180
+msgid "name,"
+msgstr ""
+
+#: ../../appendixe.rst:181
+msgid "C,"
+msgstr ""
+
+#: ../../appendixe.rst:182
+msgid "executes at compile time"
+msgstr ""
+
+#: ../../appendixe.rst:183
+msgid "[name]"
+msgstr ""
+
+#: ../../appendixe.rst:184
+msgid "[COMPILE]"
+msgstr ""
+
+#: ../../appendixe.rst:185
+msgid "slightly different"
+msgstr ""
+
+#: ../../appendixe.rst:186
+msgid "name\\' (prime)"
+msgstr ""
+
+#: ../../appendixe.rst:187
+msgid "CR\\'"
+msgstr ""
+
+#: ../../appendixe.rst:188
+msgid "internal form or primitive"
+msgstr ""
+
+#: ../../appendixe.rst:189
+#: ../../appendixe.rst:249
+msgid "(name)"
+msgstr ""
+
+#: ../../appendixe.rst:190
+msgid "(TYPE)"
+msgstr ""
+
+#: ../../appendixe.rst:192
+msgid "or <name>"
+msgstr ""
+
+#: ../../appendixe.rst:193
+msgid "<TYPE>"
+msgstr ""
+
+#: ../../appendixe.rst:194
+msgid "compiling word run-time part:"
+msgstr ""
+
+#: ../../appendixe.rst:197
+msgid "systems with no folding"
+msgstr ""
+
+#: ../../appendixe.rst:198
+msgid "lower-case"
+msgstr ""
+
+#: ../../appendixe.rst:199
+msgid "if"
+msgstr ""
+
+#: ../../appendixe.rst:200
+msgid "systems with folding"
+msgstr ""
+
+#: ../../appendixe.rst:201
+msgid "(NAME)"
+msgstr ""
+
+#: ../../appendixe.rst:202
+msgid "(IF)"
+msgstr ""
+
+#: ../../appendixe.rst:203
+msgid "defining word"
+msgstr ""
+
+#: ../../appendixe.rst:204
+#: ../../appendixe.rst:333
+msgid ":name"
+msgstr ""
+
+#: ../../appendixe.rst:205
+msgid ":COLOR"
+msgstr ""
+
+#: ../../appendixe.rst:206
+msgid "block-number where overlay begins"
+msgstr ""
+
+#: ../../appendixe.rst:207
+msgid "namING"
+msgstr ""
+
+#: ../../appendixe.rst:208
+msgid "DISKING"
+msgstr ""
+
+#: ../../appendixe.rst:209
+msgid "**Data Structures**"
+msgstr ""
+
+#: ../../appendixe.rst:212
+msgid "table or array"
+msgstr ""
+
+#: ../../appendixe.rst:213
+msgid "names"
+msgstr ""
+
+#: ../../appendixe.rst:214
+msgid "EMPLOYEES"
+msgstr ""
+
+#: ../../appendixe.rst:215
+msgid "total number of elements"
+msgstr ""
+
+#: ../../appendixe.rst:216
+msgid "#name"
+msgstr ""
+
+#: ../../appendixe.rst:217
+msgid "#EMPLOYEES"
+msgstr ""
+
+#: ../../appendixe.rst:218
+msgid "current item number (variable)"
+msgstr ""
+
+#: ../../appendixe.rst:219
+msgid "name#"
+msgstr ""
+
+#: ../../appendixe.rst:220
+msgid "EMPLOYEE#"
+msgstr ""
+
+#: ../../appendixe.rst:221
+msgid "sets current item"
+msgstr ""
+
+#: ../../appendixe.rst:222
+msgid "( n) name"
+msgstr ""
+
+#: ../../appendixe.rst:223
+msgid "13 EMPLOYEE"
+msgstr ""
+
+#: ../../appendixe.rst:224
+msgid "advance to next element"
+msgstr ""
+
+#: ../../appendixe.rst:225
+msgid "\\+name"
+msgstr ""
+
+#: ../../appendixe.rst:226
+msgid "\\+EMPLOYEE"
+msgstr ""
+
+#: ../../appendixe.rst:227
+msgid "size of offset to item from"
+msgstr ""
+
+#: ../../appendixe.rst:228
+msgid "name\\+"
+msgstr ""
+
+#: ../../appendixe.rst:229
+msgid "DATE\\+"
+msgstr ""
+
+#: ../../appendixe.rst:230
+msgid "beginning of structure"
+msgstr ""
+
+#: ../../appendixe.rst:233
+msgid "size of (bytes per)"
+msgstr ""
+
+#: ../../appendixe.rst:234
+#: ../../appendixe.rst:279
+#: ../../appendixe.rst:384
+msgid "/name"
+msgstr ""
+
+#: ../../appendixe.rst:235
+msgid "/EMPLOYEE"
+msgstr ""
+
+#: ../../appendixe.rst:236
+msgid "(short for BYTES/name)"
+msgstr ""
+
+#: ../../appendixe.rst:239
+msgid "index pointer"
+msgstr ""
+
+#: ../../appendixe.rst:240
+#: ../../appendixe.rst:243
+#: ../../appendixe.rst:270
+msgid ">name"
+msgstr ""
+
+#: ../../appendixe.rst:241
+msgid ">IN"
+msgstr ""
+
+#: ../../appendixe.rst:242
+msgid "convert address of structure to"
+msgstr ""
+
+#: ../../appendixe.rst:244
+msgid ">BODY"
+msgstr ""
+
+#: ../../appendixe.rst:245
+msgid "address of item"
+msgstr ""
+
+#: ../../appendixe.rst:248
+msgid "file index"
+msgstr ""
+
+#: ../../appendixe.rst:250
+msgid "(PEOPLE)"
+msgstr ""
+
+#: ../../appendixe.rst:251
+msgid "file pointer"
+msgstr ""
+
+#: ../../appendixe.rst:252
+msgid "-name"
+msgstr ""
+
+#: ../../appendixe.rst:253
+msgid "-JOB"
+msgstr ""
+
+#: ../../appendixe.rst:254
+msgid "initialize structure"
+msgstr ""
+
+#: ../../appendixe.rst:255
+msgid "0name"
+msgstr ""
+
+#: ../../appendixe.rst:256
+msgid "0RECORD"
+msgstr ""
+
+#: ../../appendixe.rst:257
+msgid "**Direction, Conversion**"
+msgstr ""
+
+#: ../../appendixe.rst:260
+msgid "backwards"
+msgstr ""
+
+#: ../../appendixe.rst:261
+msgid "name<"
+msgstr ""
+
+#: ../../appendixe.rst:262
+msgid "SLIDE<"
+msgstr ""
+
+#: ../../appendixe.rst:263
+msgid "forwards"
+msgstr ""
+
+#: ../../appendixe.rst:264
+#: ../../appendixe.rst:393
+msgid "name>"
+msgstr ""
+
+#: ../../appendixe.rst:265
+msgid "CMOVE>"
+msgstr ""
+
+#: ../../appendixe.rst:266
+msgid "from"
+msgstr ""
+
+#: ../../appendixe.rst:267
+#: ../../appendixe.rst:390
+msgid "<name"
+msgstr ""
+
+#: ../../appendixe.rst:268
+msgid "<TAPE"
+msgstr ""
+
+#: ../../appendixe.rst:269
+msgid "to"
+msgstr ""
+
+#: ../../appendixe.rst:271
+msgid ">TAPE"
+msgstr ""
+
+#: ../../appendixe.rst:272
+msgid "convert to"
+msgstr ""
+
+#: ../../appendixe.rst:273
+msgid "name>name"
+msgstr ""
+
+#: ../../appendixe.rst:274
+msgid "FEET>METERS"
+msgstr ""
+
+#: ../../appendixe.rst:275
+msgid "downward"
+msgstr ""
+
+#: ../../appendixe.rst:276
+msgid "\\\\name"
+msgstr ""
+
+#: ../../appendixe.rst:277
+msgid "\\\\LINE"
+msgstr ""
+
+#: ../../appendixe.rst:278
+msgid "upward"
+msgstr ""
+
+#: ../../appendixe.rst:280
+msgid "/LINE"
+msgstr ""
+
+#: ../../appendixe.rst:281
+msgid "open"
+msgstr ""
+
+#: ../../appendixe.rst:282
+msgid "\\{name"
+msgstr ""
+
+#: ../../appendixe.rst:283
+msgid "\\{FILE"
+msgstr ""
+
+#: ../../appendixe.rst:284
+msgid "close"
+msgstr ""
+
+#: ../../appendixe.rst:285
+msgid "\\}name"
+msgstr ""
+
+#: ../../appendixe.rst:286
+msgid "\\}FILE"
+msgstr ""
+
+#: ../../appendixe.rst:287
+msgid "**Logic, Control**"
+msgstr ""
+
+#: ../../appendixe.rst:290
+msgid "return boolean value"
+msgstr ""
+
+#: ../../appendixe.rst:291
+msgid "name?"
+msgstr ""
+
+#: ../../appendixe.rst:292
+msgid "SHORT?"
+msgstr ""
+
+#: ../../appendixe.rst:293
+msgid "returns reversed boolean"
+msgstr ""
+
+#: ../../appendixe.rst:294
+msgid "-name?"
+msgstr ""
+
+#: ../../appendixe.rst:295
+msgid "-SHORT?"
+msgstr ""
+
+#: ../../appendixe.rst:296
+msgid "address of boolean"
+msgstr ""
+
+#: ../../appendixe.rst:297
+msgid "\\'name?"
+msgstr ""
+
+#: ../../appendixe.rst:298
+msgid "\\'SHORT?"
+msgstr ""
+
+#: ../../appendixe.rst:299
+msgid "operates conditionally"
+msgstr ""
+
+#: ../../appendixe.rst:300
+msgid "?name"
+msgstr ""
+
+#: ../../appendixe.rst:301
+msgid "?DUP"
+msgstr ""
+
+#: ../../appendixe.rst:304
+msgid "(maybe ``DUP``)"
+msgstr ""
+
+#: ../../appendixe.rst:305
+msgid "enable"
+msgstr ""
+
+#: ../../appendixe.rst:307
+msgid "+CLOCK"
+msgstr ""
+
+#: ../../appendixe.rst:308
+msgid "or, absence of symbol"
+msgstr ""
+
+#: ../../appendixe.rst:310
+msgid "BLINKING"
+msgstr ""
+
+#: ../../appendixe.rst:311
+msgid "disable"
+msgstr ""
+
+#: ../../appendixe.rst:312
+msgid "\\-name"
+msgstr ""
+
+#: ../../appendixe.rst:313
+msgid "\\-CLOCK"
+msgstr ""
+
+#: ../../appendixe.rst:316
+msgid "\\-BLINKING"
+msgstr ""
+
+#: ../../appendixe.rst:317
+msgid "**Memory**"
+msgstr ""
+
+#: ../../appendixe.rst:320
+msgid "save value of"
+msgstr ""
+
+#: ../../appendixe.rst:321
+msgid "@name"
+msgstr ""
+
+#: ../../appendixe.rst:322
+msgid "@CURSOR"
+msgstr ""
+
+#: ../../appendixe.rst:323
+msgid "restore value of"
+msgstr ""
+
+#: ../../appendixe.rst:324
+msgid "!name"
+msgstr ""
+
+#: ../../appendixe.rst:325
+msgid "!CURSOR"
+msgstr ""
+
+#: ../../appendixe.rst:326
+msgid "store into"
+msgstr ""
+
+#: ../../appendixe.rst:327
+msgid "name!"
+msgstr ""
+
+#: ../../appendixe.rst:328
+msgid "SECONDS!"
+msgstr ""
+
+#: ../../appendixe.rst:329
+msgid "fetch from"
+msgstr ""
+
+#: ../../appendixe.rst:330
+msgid "name@"
+msgstr ""
+
+#: ../../appendixe.rst:331
+msgid "INDEX@"
+msgstr ""
+
+#: ../../appendixe.rst:332
+msgid "name of buffer"
+msgstr ""
+
+#: ../../appendixe.rst:334
+msgid ":INSERT"
+msgstr ""
+
+#: ../../appendixe.rst:335
+msgid "address of name"
+msgstr ""
+
+#: ../../appendixe.rst:336
+#: ../../appendixe.rst:339
+msgid "\\'name"
+msgstr ""
+
+#: ../../appendixe.rst:337
+msgid "\\'S"
+msgstr ""
+
+#: ../../appendixe.rst:338
+msgid "address of pointer to name"
+msgstr ""
+
+#: ../../appendixe.rst:340
+msgid "\\'TYPE"
+msgstr ""
+
+#: ../../appendixe.rst:341
+msgid "exchange, especially bytes"
+msgstr ""
+
+#: ../../appendixe.rst:342
+msgid ">name<"
+msgstr ""
+
+#: ../../appendixe.rst:343
+msgid ">MOVE<"
+msgstr ""
+
+#: ../../appendixe.rst:344
+msgid "**Numeric Types**"
+msgstr ""
+
+#: ../../appendixe.rst:347
+msgid "byte length"
+msgstr ""
+
+#: ../../appendixe.rst:348
+msgid "Cname"
+msgstr ""
+
+#: ../../appendixe.rst:349
+msgid "C@"
+msgstr ""
+
+#: ../../appendixe.rst:350
+msgid "2 cell size, 2\\'s complement"
+msgstr ""
+
+#: ../../appendixe.rst:351
+msgid "Dname"
+msgstr ""
+
+#: ../../appendixe.rst:352
+msgid "D+"
+msgstr ""
+
+#: ../../appendixe.rst:353
+msgid "integer encoding"
+msgstr ""
+
+#: ../../appendixe.rst:356
+msgid "mixed 16 and 32-bit operator"
+msgstr ""
+
+#: ../../appendixe.rst:357
+msgid "Mname"
+msgstr ""
+
+#: ../../appendixe.rst:358
+msgid "M*"
+msgstr ""
+
+#: ../../appendixe.rst:359
+msgid "3 cell size"
+msgstr ""
+
+#: ../../appendixe.rst:360
+msgid "Tname"
+msgstr ""
+
+#: ../../appendixe.rst:361
+msgid "T*"
+msgstr ""
+
+#: ../../appendixe.rst:362
+msgid "4 cell size"
+msgstr ""
+
+#: ../../appendixe.rst:363
+msgid "Qname"
+msgstr ""
+
+#: ../../appendixe.rst:364
+msgid "Q*"
+msgstr ""
+
+#: ../../appendixe.rst:365
+msgid "unsigned encoding"
+msgstr ""
+
+#: ../../appendixe.rst:366
+msgid "Uname"
+msgstr ""
+
+#: ../../appendixe.rst:368
+msgid "**Output, Printing**"
+msgstr ""
+
+#: ../../appendixe.rst:371
+msgid "print item"
+msgstr ""
+
+#: ../../appendixe.rst:372
+msgid ".name"
+msgstr ""
+
+#: ../../appendixe.rst:373
+msgid ".S"
+msgstr ""
+
+#: ../../appendixe.rst:374
+msgid "print numeric (name denotes type)"
+msgstr ""
+
+#: ../../appendixe.rst:375
+msgid "name."
+msgstr ""
+
+#: ../../appendixe.rst:376
+msgid ", U."
+msgstr ""
+
+#: ../../appendixe.rst:377
+msgid "print right justified"
+msgstr ""
+
+#: ../../appendixe.rst:378
+msgid "name.R"
+msgstr ""
+
+#: ../../appendixe.rst:379
+msgid "U.R"
+msgstr ""
+
+#: ../../appendixe.rst:380
+msgid "**Quantity**"
+msgstr ""
+
+#: ../../appendixe.rst:383
+msgid "\"per\""
+msgstr ""
+
+#: ../../appendixe.rst:385
+msgid "/SIDE"
+msgstr ""
+
+#: ../../appendixe.rst:386
+msgid "**Sequencing**"
+msgstr ""
+
+#: ../../appendixe.rst:389
+msgid "start"
+msgstr ""
+
+#: ../../appendixe.rst:391
+msgid "<#"
+msgstr ""
+
+#: ../../appendixe.rst:392
+msgid "end"
+msgstr ""
+
+#: ../../appendixe.rst:394
+msgid "#>"
+msgstr ""
+
+#: ../../appendixe.rst:395
+msgid "**Text**"
+msgstr ""
+
+#: ../../appendixe.rst:398
+msgid "string follows delimited by \\\""
+msgstr ""
+
+#: ../../appendixe.rst:399
+msgid "name\\\""
+msgstr ""
+
+#: ../../appendixe.rst:400
+msgid "ABORT\\\" text\\\""
+msgstr ""
+
+#: ../../appendixe.rst:401
+msgid "text or string operator"
+msgstr ""
+
+#: ../../appendixe.rst:402
+msgid "\\\"name"
+msgstr ""
+
+#: ../../appendixe.rst:403
+msgid "\\\"COMPARE"
+msgstr ""
+
+#: ../../appendixe.rst:404
+msgid "(similar to $ prefix in BASIC)"
+msgstr ""
+
+#: ../../appendixe.rst:407
+msgid "superstring array"
+msgstr ""
+
+#: ../../appendixe.rst:408
+msgid "\\\"name\\\""
+msgstr ""
+
+#: ../../appendixe.rst:409
+msgid "\\\"COLORS\\\""
+msgstr ""
+
+#: ../../appendixe.rst:411
+msgid "*How to Pronounce the Symbols*"
+msgstr ""
+
+#: ../../appendixe.rst:413
+msgid "How to Pronounce the Symbols"
+msgstr ""
+
+#: ../../appendixe.rst:416
+msgid "!"
+msgstr ""
+
+#: ../../appendixe.rst:417
+msgid "store"
+msgstr ""
+
+#: ../../appendixe.rst:418
+msgid "@"
+msgstr ""
+
+#: ../../appendixe.rst:419
+msgid "fetch"
+msgstr ""
+
+#: ../../appendixe.rst:421
+msgid "sharp (or \"number\", as in #RECORDS)"
+msgstr ""
+
+#: ../../appendixe.rst:422
+msgid "$"
+msgstr ""
+
+#: ../../appendixe.rst:423
+msgid "dollar"
+msgstr ""
+
+#: ../../appendixe.rst:424
+msgid "%"
+msgstr ""
+
+#: ../../appendixe.rst:425
+msgid "percent"
+msgstr ""
+
+#: ../../appendixe.rst:426
+msgid "^"
+msgstr ""
+
+#: ../../appendixe.rst:427
+msgid "caret"
+msgstr ""
+
+#: ../../appendixe.rst:428
+msgid "&"
+msgstr ""
+
+#: ../../appendixe.rst:429
+msgid "ampersand"
+msgstr ""
+
+#: ../../appendixe.rst:430
+msgid "\\*"
+msgstr ""
+
+#: ../../appendixe.rst:431
+msgid "star"
+msgstr ""
+
+#: ../../appendixe.rst:432
+msgid "("
+msgstr ""
+
+#: ../../appendixe.rst:433
+msgid "left paren; paren"
+msgstr ""
+
+#: ../../appendixe.rst:434
+msgid ")"
+msgstr ""
+
+#: ../../appendixe.rst:435
+msgid "right paren; paren"
+msgstr ""
+
+#: ../../appendixe.rst:436
+msgid "\\-"
+msgstr ""
+
+#: ../../appendixe.rst:437
+msgid "dash; not"
+msgstr ""
+
+#: ../../appendixe.rst:438
+msgid "\\+"
+msgstr ""
+
+#: ../../appendixe.rst:439
+msgid "plus"
+msgstr ""
+
+#: ../../appendixe.rst:440
+msgid "="
+msgstr ""
+
+#: ../../appendixe.rst:441
+msgid "equals"
+msgstr ""
+
+#: ../../appendixe.rst:442
+msgid "{ }"
+msgstr ""
+
+#: ../../appendixe.rst:443
+msgid "braces (traditionally called \"curly brackets\")"
+msgstr ""
+
+#: ../../appendixe.rst:444
+msgid "[ ]"
+msgstr ""
+
+#: ../../appendixe.rst:445
+msgid "square brackets"
+msgstr ""
+
+#: ../../appendixe.rst:447
+msgid "quote"
+msgstr ""
+
+#: ../../appendixe.rst:448
+msgid "\\'"
+msgstr ""
+
+#: ../../appendixe.rst:449
+msgid "as prefix: tick; as suffix: prime"
+msgstr ""
+
+#: ../../appendixe.rst:450
+msgid "~"
+msgstr ""
+
+#: ../../appendixe.rst:451
+msgid "tilde"
+msgstr ""
+
+#: ../../appendixe.rst:452
+msgid "\\|"
+msgstr ""
+
+#: ../../appendixe.rst:453
+msgid "bar"
+msgstr ""
+
+#: ../../appendixe.rst:454
+msgid "\\\\"
+msgstr ""
+
+#: ../../appendixe.rst:455
+msgid "backslash. (also \"under\", \"down\", and \"skip\")"
+msgstr ""
+
+#: ../../appendixe.rst:456
+msgid "/"
+msgstr ""
+
+#: ../../appendixe.rst:457
+msgid "slash. (also \"up\")"
+msgstr ""
+
+#: ../../appendixe.rst:458
+msgid "<"
+msgstr ""
+
+#: ../../appendixe.rst:459
+msgid "less-than"
+msgstr ""
+
+#: ../../appendixe.rst:461
+msgid "left dart"
+msgstr ""
+
+#: ../../appendixe.rst:462
+msgid ">"
+msgstr ""
+
+#: ../../appendixe.rst:463
+msgid "greater-than"
+msgstr ""
+
+#: ../../appendixe.rst:465
+msgid "right dart"
+msgstr ""
+
+#: ../../appendixe.rst:467
+msgid "question (some prefer \"query\")"
+msgstr ""
+
+#: ../../appendixe.rst:468
+msgid ","
+msgstr ""
+
+#: ../../appendixe.rst:469
+msgid "comma"
+msgstr ""
+
+#: ../../appendixe.rst:470
+msgid "."
+msgstr ""
+
+#: ../../appendixe.rst:471
+msgid "dot"
+msgstr ""
+
+#: ../../appendixe.rst:474
+msgid "Footnotes"
+msgstr ""
+
+#: ../../appendixe.rst:475
+msgid "An often-seen alternative calls for 1 space between the name and comment and 3 between the comment and the definition. A more liberal technique uses 3 spaces before and after the comment. Whatever you choose, be consistent."
+msgstr ""
+

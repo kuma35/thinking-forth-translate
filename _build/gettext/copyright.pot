@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../copyright.rst:3
+msgid "©1984, 1994, and 2004 by Leo Brodie, preprint version 1.0"
+msgstr ""
+
+#: ../../copyright.rst:12
+msgid "**Attribution-NonCommercial-ShareAlike 2.0**"
+msgstr ""
+
+#: ../../copyright.rst:14
+msgid "**You are free:**"
+msgstr ""
+
+#: ../../copyright.rst:16
+msgid "to copy, distribute, display, and perform the work"
+msgstr ""
+
+#: ../../copyright.rst:18
+msgid "to make derivative works"
+msgstr ""
+
+#: ../../copyright.rst:20
+msgid "**Under the following conditions:**"
+msgstr ""
+
+#: ../../copyright.rst:23
+msgid "|Attribution| Attribution."
+msgstr ""
+
+#: ../../copyright.rst:23
+msgid "You must give the original author credit."
+msgstr ""
+
+#: ../../copyright.rst:26
+msgid "|Noncommercial| Noncommercial."
+msgstr ""
+
+#: ../../copyright.rst:26
+msgid "You may not use this work for commercial purposes."
+msgstr ""
+
+#: ../../copyright.rst:31
+msgid "|ShareAlike| Share Alike."
+msgstr ""
+
+#: ../../copyright.rst:29
+msgid "If you alter, transform, or build upon this work, you may distribute the resulting work only under a license identical to this one."
+msgstr ""
+
+#: ../../copyright.rst:42
+msgid "For any reuse or distribution, you must make clear to others the license terms of this work."
+msgstr ""
+
+#: ../../copyright.rst:45
+msgid "Any of these conditions can be waived if you get permission from the copyright holder."
+msgstr ""
+
+#: ../../copyright.rst:48
+msgid "**Your fair use and other rights are in no way affected by the above.**"
+msgstr ""
+
+#: ../../copyright.rst:50
+msgid "This is a human-readable summary of the Legal Code"
+msgstr ""
+
+#: ../../copyright.rst:52
+msgid "http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode"
+msgstr ""
+
+#: ../../copyright.rst:54
+msgid "You can download the electronic version from http://thinking-forth.sourceforge.net/"
+msgstr ""
+

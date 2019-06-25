@@ -1,3 +1,6 @@
 *~
 #*#
-_build
+*.mo
+_build/gettext/.doctrees/
+_build/doctrees/
+_build/html/

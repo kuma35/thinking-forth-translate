@@ -168,3 +168,7 @@ texinfo_documents = [
 
 # sphinx v1.3 and over
 numfig = True
+
+# sphinx-intl
+locale_dirs = ['locale/']
+gettext_compact = False

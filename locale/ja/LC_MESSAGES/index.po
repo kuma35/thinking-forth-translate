@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-24 20:17+0900\n"
+"PO-Revision-Date: 2019-06-25 00:39+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+# Starting Forthが「FORTH入門」となっているので「Forth思考」としたが、
+# 「Forth脳」や「Forthで考える」も捨てがたい。
+#: ../../index.rst:8
+msgid "Thinking Forth --A Language and Philosophy for Solving Problems--"
+msgstr "Forth思考 ―問題解決のための言語と哲学―"
+
+# 人名は原文を基準とする。
+# 「FORTH入門」にカタカナ等で記載があるもの、
+# ネットで検索して日本で知られている人名についても訳出する。
+# 訳出する際も最初に出た場所では原文併記とする。
+#: ../../index.rst:10
+msgid "author: Leo Brodie"
+msgstr "レオ・ブロディー(Leo Brodie) 著"
+
+#: ../../index.rst:12
+msgid ""
+"Includes interviews with Forth's inventor, Charles H. Moore, and other "
+"Forth thinkers"
+msgstr "Forthの発明者チャールズ・H・ムーア(Charles H. Moore)やForth思想家達へのインタビューを掲載！"
+
+#: ../../index.rst:15
+msgid "With illustrations by the author"
+msgstr "著者によるイラスト付き！"
+
+#: ../../copyright.rst:3
+msgid "©1984, 1994, and 2004 by Leo Brodie, preprint version 1.0"
+msgstr "©1984, 1994, and 2004 by Leo Brodie, preprint version 1.0"
+
+#: ../../copyright.rst:12
+msgid "**Attribution-NonCommercial-ShareAlike 2.0**"
+msgstr "**Attribution-NonCommercial-ShareAlike 2.0**"
+
+#: ../../copyright.rst:14
+msgid "**You are free:**"
+msgstr "**You are free:**"
+
+#: ../../copyright.rst:16
+msgid "to copy, distribute, display, and perform the work"
+msgstr "to copy, distribute, display, and perform the work"
+
+#: ../../copyright.rst:18
+msgid "to make derivative works"
+msgstr "to make derivative works"
+
+#: ../../copyright.rst:20
+msgid "**Under the following conditions:**"
+msgstr "**Under the following conditions:**"
+
+#: ../../copyright.rst:23
+msgid "|Attribution| Attribution."
+msgstr "|Attribution| Attribution."
+
+#: ../../copyright.rst:23
+msgid "You must give the original author credit."
+msgstr "You must give the original author credit."
+
+#: ../../copyright.rst:26
+msgid "|Noncommercial| Noncommercial."
+msgstr "|Noncommercial| Noncommercial."
+
+#: ../../copyright.rst:26
+msgid "You may not use this work for commercial purposes."
+msgstr "You may not use this work for commercial purposes."
+
+#: ../../copyright.rst:31
+msgid "|ShareAlike| Share Alike."
+msgstr "|ShareAlike| Share Alike."
+
+#: ../../copyright.rst:29
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under a license identical to this one."
+msgstr "If you alter, transform, or build upon this work, you may distribute the resulting work only under a license identical to this one."
+
+#: ../../copyright.rst:42
+msgid ""
+"For any reuse or distribution, you must make clear to others the license "
+"terms of this work."
+msgstr "For any reuse or distribution, you must make clear to others the license terms of this work."
+
+#: ../../copyright.rst:45
+msgid ""
+"Any of these conditions can be waived if you get permission from the "
+"copyright holder."
+msgstr "Any of these conditions can be waived if you get permission from the copyright holder."
+
+#: ../../copyright.rst:48
+msgid "**Your fair use and other rights are in no way affected by the above.**"
+msgstr "**Your fair use and other rights are in no way affected by the above.**"
+
+#: ../../copyright.rst:50
+msgid "This is a human-readable summary of the Legal Code"
+msgstr "This is a human-readable summary of the Legal Code"
+
+#: ../../copyright.rst:52
+msgid "http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode"
+msgstr "http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode"
+
+#: ../../copyright.rst:54
+msgid ""
+"You can download the electronic version from http://thinking-"
+"forth.sourceforge.net/"
+msgstr "You can download the electronic version from http://thinking-forth.sourceforge.net/"
+
+#: ../../bio.rst:3
+msgid ""
+"Leo Brodie has been thinking professionally about software development "
+"since 1980, when he joined Forth, Inc. as a technical writer. He has also"
+" served as a consultant, author, developer and program manager for "
+"companies including IBM, NCR, Digalog Corp., Microsoft, and Real "
+"Networks. He is also the owner of Punch & Brodie productions, which "
+"occasionally provides puppet characters for corporate videos and company "
+"meetings. He is married and the father of three children. He also "
+"authored *Starting Forth* (Prentice-Hall, 1981)."
+msgstr "レオ・ブロディーは1980年にForth社にテクニカルライターとして入社以来、ソフトウェア開発について専門的に考えてきました。彼はまた、IBMやNCRやDialogやマイクロソフトやリアルネットワークスなどの企業で、コンサルタントや作家や開発者やプログラムマネージャを務めました。パンチ＆ブロディ プロダクションのオーナーでもあり、時折、企業のビデオや会社の会議に人形のキャラクターを提供しています。既婚で3人の子供の父親です。著作には(邦訳)「FORTH入門」原 道宏 訳 工学社 昭和59年4月30日(原著:\"Starting Forth\", Prentice-Hall, 1981)があります。"
+
+# 邦訳名：化学のはじめ　だそうなので、どこかに訳がありそうな気もするが
+# 入手できなかったので訳出した。
+#: ../../quotation.rst:2
+msgid ""
+"*It is impossible to disassociate language from science or science from "
+"language, because every natural science always involves three things: the"
+" sequence of phenomena on which the science is based, the abstract "
+"concepts which call these phenomena to mind, and the words in which the "
+"concepts are expressed. To call forth a concept, a word is needed; to "
+"portray a phenomenon, a concept is needed. All three mirror one and the "
+"same reality.*"
+msgstr "*全ての科学は常3つのこと、つまり、科学が基づいている一連の現象、その現象を抽象化した概念、そしてその概念を表現する言葉を含んでいるので、科学から言語へ、また言語から科学への結びつきを解除することは不可能です。概念を呼び出すには言葉が必要です。現象を表現するためには概念が必要です。3つとも同じ現実を写す鏡です。*"
+
+#: ../../quotation.rst:10
+msgid "\\-\\-\\- Antoine Lavoisier, 1789"
+msgstr "― アントワーヌ・ラヴォアジエ 1789年"
+
+#: ../../index.rst:21
+msgid "Contents:"
+msgstr "Contents:"
+
+#: ../../index.rst:44
+msgid "Indices and tables"
+msgstr "Indices and tables"
+
+#: ../../index.rst:46
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+#: ../../index.rst:47
+msgid ":ref:`modindex`"
+msgstr ":ref:`modindex`"
+
+#: ../../index.rst:48
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+

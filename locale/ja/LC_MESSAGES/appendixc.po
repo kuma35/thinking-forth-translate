@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-24 20:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../appendixc.rst:4
+msgid "Appendix C: Other Utilities Described in This Book"
+msgstr ""
+
+#: ../../appendixc.rst:6
+msgid ""
+"This appendix is here to help you define some of the words referred to in"
+" this book that may not exist in your system. Definitions are given in "
+"Forth-83 Standard."
+msgstr ""
+
+#: ../../appendixc.rst:11
+msgid "From Chapter Four"
+msgstr ""
+
+#: ../../appendixc.rst:13
+msgid "A definition of ``ASCII`` that will work in ’83 Standard is:"
+msgstr ""
+
+#: ../../appendixc.rst:26
+msgid "From Chapter Five"
+msgstr ""
+
+#: ../../appendixc.rst:28
+msgid "The word ``\\bs`` can be defined as:"
+msgstr ""
+
+#: ../../appendixc.rst:38
+msgid ""
+"If you decide not to use ``EXIT`` to terminate a screen, you can define "
+"``\\bs S`` as:"
+msgstr ""
+
+#: ../../appendixc.rst:47
+msgid "The word ``FH`` can be defined simply as:"
+msgstr ""
+
+#: ../../appendixc.rst:57
+msgid "This factoring allows you to use ``FH`` in many ways, e.g.:"
+msgstr ""
+
+#: ../../appendixc.rst:65 ../../appendixc.rst:119
+msgid "or"
+msgstr ""
+
+#: ../../appendixc.rst:73
+msgid ""
+"A slightly more complicated version of ``FH`` also lets you edit or load "
+"a screen with a phrase such as “14 FH LIST,” relative to the screen that "
+"you just listed ``(SCR)``:"
+msgstr ""
+
+#: ../../appendixc.rst:84
+msgid "``BL`` is a simple constant:"
+msgstr ""
+
+#: ../../appendixc.rst:93
+msgid "``TRUE`` and ``FALSE`` can be defined as:"
+msgstr ""
+
+#: ../../appendixc.rst:104
+msgid ""
+"(Forth’s control words such as ``IF`` and ``UNTIL`` interpret zero as "
+"“false” and any non-zero value as “true.” Before Forth ’83, the "
+"convention was to indicate “true” with the value 1. Starting with Forth "
+"’83, however, “true” is indicated with hex FFFF, which is the signed "
+"number -1 (all bits set)."
+msgstr ""
+
+#: ../../appendixc.rst:109
+msgid "``WITHIN`` can be defined in high level like this:"
+msgstr ""
+
+#: ../../appendixc.rst:129
+msgid "From Chapter Eight"
+msgstr ""
+
+#: ../../appendixc.rst:131
+msgid ""
+"The implementation of ``LEAP`` will depend on how your system implements "
+"``DO`` ``LOOP`` s. If ``DO`` keeps two items on the return stack (the "
+"index and the limit), ``LEAP`` must drop both of them plus one more "
+"return-stack item to exit:"
+msgstr ""
+
+#: ../../appendixc.rst:144
+msgid "If ``DO`` keeps *three* items on the return stack, it must be defined:"
+msgstr ""
+

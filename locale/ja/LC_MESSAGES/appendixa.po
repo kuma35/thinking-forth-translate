@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, Leo Brodie
+# This file is distributed under the same license as the Thinking Forth
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Thinking Forth 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-24 20:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../appendixa.rst:4
+msgid "Appendix A: Overview of Forth (For Newcomers)"
+msgstr ""
+
+#: ../../appendixa.rst:7
+msgid "The Dictionary"
+msgstr ""
+
+#: ../../appendixa.rst:9
+msgid "Forth is expressed in words (and numbers) and is separated by spaces:"
+msgstr ""
+
+#: ../../appendixa.rst:18
+msgid ""
+"Such commands may be typed directly from the keyboard, or edited onto "
+"mass storage then “``LOAD``”ed."
+msgstr ""
+
+#: ../../appendixa.rst:21
+msgid ""
+"All words, whether included with the system or user-defined, exist in the"
+" \"dictionary,\" a linked list. A “defining word” is used to add new "
+"names to the dictionary. One defining word is ``:`` (pronounced “colon”),"
+" which is used to define a new word in terms of previously defined words."
+" Here is how one might define a new word called LIFT:"
+msgstr ""
+
+#: ../../appendixa.rst:34
+msgid ""
+"The ``;`` terminates the definition. The new word LIFT may now be used "
+"instead of the long sequence of words that comprise its definition."
+msgstr ""
+
+#: ../../appendixa.rst:38
+msgid ""
+"Forth words can be nested like this indefinitely. Writing a Forth "
+"application consists of building increasingly powerful definitions, such "
+"as this one, in terms of previously defined ones."
+msgstr ""
+
+#: ../../appendixa.rst:42
+msgid ""
+"Another defining word is ``CODE``, which is used in place of colon to "
+"define a command in terms of machine instructions for the native "
+"processor. Words defined with ``CODE`` are indistinguishable to the user "
+"from words defined with colon. ``CODE`` definitions are needed only for "
+"the most time-critical portions of an applications, if at all."
+msgstr ""
+
+#: ../../appendixa.rst:51
+msgid "Data Structures"
+msgstr ""
+
+#: ../../appendixa.rst:53
+msgid "Still another defining word is ``CONSTANT``, which is used like this:"
+msgstr ""
+
+#: ../../appendixa.rst:63
+msgid "The new word SEVENTEEN can now be used in place of the actual number 17."
+msgstr ""
+
+#: ../../appendixa.rst:65
+msgid ""
+"The defining word VARIABLE creates a location for temporary data. "
+"VARIABLE is used like this:"
+msgstr ""
+
+#: ../../appendixa.rst:75
+msgid "This reserves a location which is identified by the name BANANAS."
+msgstr ""
+
+#: ../../appendixa.rst:77
+msgid ""
+"Fetching the contents of this location is the job of the word ``@`` "
+"(pronounced “fetch”). For instance,"
+msgstr ""
+
+#: ../../appendixa.rst:86
+msgid ""
+"fetches the contents of the variable BANANAS. Its counterpart is ``!`` "
+"(pronounced “store”), which stores a value into the location, as in:"
+msgstr ""
+
+#: ../../appendixa.rst:96
+msgid ""
+"Forth also provides a word to increment the current value by the given "
+"value; for instance, the phrase"
+msgstr ""
+
+#: ../../appendixa.rst:105
+msgid "increments the count by two, making it 102."
+msgstr ""
+
+#: ../../appendixa.rst:107
+msgid ""
+"Forth provides many other data structure operators, but more importantly,"
+" it provides the tools necessary for the programmer to create any type of"
+" data structure needed for the application."
+msgstr ""
+
+#: ../../appendixa.rst:114
+msgid "The Stack"
+msgstr ""
+
+#: ../../appendixa.rst:116
+msgid ""
+"In Forth, variables and arrays are used for saving values that may be "
+"required by many other routines and/or at unpredictable times. They are "
+"*not* used for the local passing of data between the definitions. For "
+"this, Forth employs a much simpler mechanism: the data stack."
+msgstr ""
+
+#: ../../appendixa.rst:122
+msgid ""
+"When you type a number, it goes on the stack. When you invoke a word "
+"which has numeric input, it will take it from the stack. Thus the phrase"
+msgstr ""
+
+#: ../../appendixa.rst:131
+msgid ""
+"will display seventeen blanks on the current output device. “17” pushes "
+"the binary value 17 onto the stack; the word ``SPACES`` consumes it."
+msgstr ""
+
+#: ../../appendixa.rst:135
+msgid "A constant also pushes its value onto the stack; thus the phrase:"
+msgstr ""
+
+#: ../../appendixa.rst:143
+msgid "has the same effect."
+msgstr ""
+
+#: ../../appendixa.rst:145
+msgid ""
+"The stack operates on a “last-in, first-out” (LIFO) basis. This means "
+"that data can be passed between words in an orderly, modular way, "
+"consistent with the nesting of colon definitions."
+msgstr ""
+
+#: ../../appendixa.rst:149
+msgid ""
+"For instance, a definition called GRID might invoke the phrase 17 SPACES."
+" This temporary activity on the stack will be transparent to any other "
+"definition that invokes GRID because the value placed on the stack is "
+"removed before the definition of GRID ends. The calling definition might "
+"have placed some numbers of its own on the stack prior to calling GRID. "
+"These will remain on the stack, unharmed, until GRID has been executed "
+"and the calling definition continues."
+msgstr ""
+
+#: ../../appendixa.rst:158
+msgid "Control Structures"
+msgstr ""
+
+#: ../../appendixa.rst:160
+msgid ""
+"Forth provides all the control structures needed for structured, GOTO-"
+"less programming."
+msgstr ""
+
+#: ../../appendixa.rst:164
+msgid "The syntax of the ``IF THEN`` construct is as follows:"
+msgstr ""
+
+#: ../../appendixa.rst:172
+msgid ""
+"The “flag” is a value on the stack, consumed by IF. A non-zero value "
+"indicates true, zero indicates false. A true flag causes the code after "
+"``IF`` (in this case, the word KNOCK) to be executed. The word ``THEN`` "
+"marks the end of the conditional phrase; execution resumes with the word "
+"OPEN. A false flag causes the code between ``IF`` and ``THEN`` to *not* "
+"be executed. In either case, OPEN will be performed."
+msgstr ""
+
+#: ../../appendixa.rst:181
+msgid ""
+"The word ``ELSE`` allows an alternate phrase to be executed in the false "
+"case. In the phrase:"
+msgstr ""
+
+#: ../../appendixa.rst:190
+msgid ""
+"the word KNOCK will be performed if the flag is true, otherwise the word "
+"RING will be performed. Either way, execution will continue starting with"
+" OPEN."
+msgstr ""
+
+#: ../../appendixa.rst:194
+msgid "Forth also provides for indexed loops in the form"
+msgstr ""
+
+#: ../../appendixa.rst:203
+msgid "and indefinite loops in the forms:"
+msgstr ""
+
+#: ../../appendixa.rst:211
+msgid "and"
+msgstr ""
+
+#: ../../appendixa.rst:220
+msgid "For the Whole Story"
+msgstr ""
+
+#: ../../appendixa.rst:222
+msgid ""
+"For a complete introduction to the Forth command set, read *Starting "
+"Forth*, published by Prentice-Hall."
+msgstr ""
+
