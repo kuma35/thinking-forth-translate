@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-06-27 17:25+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -815,6 +815,10 @@ msgstr ""
 
 #: ../../chapter6.rst:1067
 msgid "Now, to define the left margin, we might compute it mentally, We want to center all these boxes on a screen 80 columns wide. To center something, we subtract its width from 80 and divide by two to determine the left margin. To figure the total width of all the boxes, we add"
+msgstr ""
+
+#: ../../chapter6.rst:1072
+msgid "8 + 4 + 8 + 4 + 8 = 32  (three widths and two avenues). :math:`(80-31) / 2 = 24`."
 msgstr ""
 
 #: ../../chapter6.rst:1078

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-06-27 17:09+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../chapter6.rst:4
 msgid "6. Factoring"
@@ -1172,6 +1172,12 @@ msgid ""
 "center all these boxes on a screen 80 columns wide. To center something, "
 "we subtract its width from 80 and divide by two to determine the left "
 "margin. To figure the total width of all the boxes, we add"
+msgstr ""
+
+#: ../../chapter6.rst:1072
+msgid ""
+"8 + 4 + 8 + 4 + 8 = 32  (three widths and two avenues). :math:`(80-31) / "
+"2 = 24`."
 msgstr ""
 
 #: ../../chapter6.rst:1078
