@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
-"PO-Revision-Date: 2019-06-26 07:11+0900\n"
+"POT-Creation-Date: 2019-06-29 21:52+0900\n"
+"PO-Revision-Date: 2019-06-29 23:50+0900\n"
 "Last-Translator: kuma35\n"
-"Language-Team: Japanese\n"
 "Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../chapter1.rst:4
 msgid "1. The Philosophy of Forth"
@@ -103,7 +104,7 @@ msgid ""
 "realized that the computer itself could be used to help. So they wrote a "
 "program that translated easy-to-remember abbreviations into the hard-to-"
 "remember bit patterns. The new language looked something like this:"
-msgstr "退屈さは発明の継母です。幾人かの賢いプログラマーはコンピューター自体にその助けさせることができる事に気づきました。そこで、彼らは覚えやすい略語を覚えにくいビットパターンに翻訳するプログラムを書きました。その新しい言語は以下のようになりました。"
+msgstr "そして退屈は発明の継母です。幾人かの賢いプログラマーはコンピューター自体にその助けさせることができる事に気づきました。そこで、彼らは覚えやすい略語を覚えにくいビットパターンに翻訳するプログラムを書きました。その新しい言語は以下のようになりました。"
 
 #: ../../chapter1.rst:80
 msgid ""
@@ -156,7 +157,9 @@ msgid ""
 "A major advance was the invention of the “high-level language\". Again "
 "this was a translator program, but a more powerful one. High-level "
 "languages make it possible for programmers to write code like this:"
-msgstr "大きな進歩は「高級言語」の発明でした。これもまた翻訳プログラムですが、より強力なものでした。 高級言語ではプログラマ以下のようなコードを書くことができます。"
+msgstr ""
+"大きな進歩は「高級言語」の発明でした。これもまた翻訳プログラムですが、より強力なものでした。 "
+"高級言語ではプログラマ以下のようなコードを書くことができます。"
 
 #: ../../chapter1.rst:132
 msgid ""
@@ -172,7 +175,9 @@ msgid ""
 "instructions. But more significantly, high-level languages eliminate the "
 "linear correspondence between source code and the resulting machine "
 "instructions."
-msgstr "高級言語は、各命令が数十の機械語命令をコンパイルするという意味で、アセンブリ言語より明らかに「強力」です。 しかしさらに重要なことに、高級言語はソースコードと結果として得られる機械語命令との間の1対1の対応を取り除きます。"
+msgstr ""
+"高級言語は、各命令が数十の機械語命令をコンパイルするという意味で、アセンブリ言語より明らかに「強力」です。 "
+"しかしさらに重要なことに、高級言語はソースコードと結果として得られる機械語命令との間の直線形な対応を取り除きます。"
 
 #: ../../chapter1.rst:144
 msgid ""
@@ -180,7 +185,9 @@ msgid ""
 "taken as a whole. Operators such as :math:`+` and :math:`=` have no "
 "meaning by themselves. They are merely part of a complex symbology that "
 "depends upon syntax and the operator\\’s location in the statement."
-msgstr "実際の命令はソースコード全体の中にある各「ステートメント」に依存します。 :math:`+` や :math:`=` のような演算子はそれ自身では意味を持ちません。これらは文法と、ステートメントの演算子の位置によって意味が異なる複雑な記号の一部に過ぎません。"
+msgstr ""
+"実際の命令はソースコード全体の中にある各「ステートメント」に依存します。 :math:`+` や :math:`=` "
+"のような演算子はそれ自身では意味を持ちません。これらは文法と、ステートメントの演算子の位置によって意味が異なる複雑な記号の一部に過ぎません。"
 
 #: ../../chapter1.rst:149
 msgid ""
@@ -188,7 +195,7 @@ msgid ""
 " code is widely considered to be an invaluable step in the progress of "
 "programming methodology. But as we’ll see, the approach ultimately offers"
 " more restriction than freedom."
-msgstr "ソースコードとオブジェクトコードとの間の1対1でない対応は、プログラミング技術論の進歩における非常に貴重なステップであると考えられています。しかし、よく目にするよう、このアプローチは結局はその自由よりも多くの制約をもたらします。"
+msgstr "ソースコードとオブジェクトコードとの間の、直線形でない対応は、プログラミング技術論の進歩における非常に貴重なステップであると考えられています。しかし、よく目にするよう、このアプローチは結局はその自由よりも多くの制約をもたらします。"
 
 #: ../../chapter1.rst:156
 msgid "Manageability"
@@ -202,7 +209,10 @@ msgid ""
 "depending upon the outcome. They also involve “looping” over the same "
 "sections of code repeatedly, usually testing for the moment to branch out"
 " of the loop."
-msgstr "ほとんどのコンピュータプログラムは、単に最初から最後まで作業するための命令のリスト以上のものが含まれています。 また、さまざまな条件を検査してから、結果に応じてコードの適切な部分に「分岐」します。 また、コードの同じセクションを繰り返し「ループ」し、通常はループから抜ける瞬間を検査します。"
+msgstr ""
+"ほとんどのコンピュータプログラムは、単に最初から最後まで作業するための命令のリスト以上のものが含まれています。 "
+"また、さまざまな条件をテストしてから、結果に応じてコードの適切な部分に「分岐」します。 "
+"また、コードの同じセクションを繰り返し「ループ」し、通常はループから抜ける瞬間をテストします。"
 
 #: ../../chapter1.rst:165
 msgid ""
@@ -212,6 +222,8 @@ msgid ""
 "are used in the most brute-force way, programs tend to look like the "
 "jumble you see in  :numref:`fig1-1` ."
 msgstr ""
+"アセンブラと高級言語の両方とも分岐機能とループ機能を提供しています。 アセンブリ言語では「ジャンプ命令」を使いますが、高級言語では「GO "
+"TO」命令を使います。 これらの機能を力づくで使うと、プログラムは :numref:`fig1-1` のようにこんがらがります。"
 
 #: ../../chapter1.rst:180
 msgid "Unstructured code using jumps or \"GOTOs.\""
@@ -225,7 +237,9 @@ msgid ""
 "programming, it’s impossible to test a single part of the code or to "
 "figure out how something is getting executed that isn’t supposed to be "
 "getting executed."
-msgstr "This approach, still widely used in languages like FORTRAN and BASIC, suffers from being difficult to write and difficult to change if corrections need to be made. In this “bowl-of-spaghetti” school of programming, it’s impossible to test a single part of the code or to figure out how something is getting executed that isn’t supposed to be getting executed."
+msgstr ""
+"FORTRANやBASICのような言語で未だに広く使われているこのアプローチは、書くのが難しく、修正が必要な場合には変更が難しいという難点があります。"
+" 「スパゲッティ」プログラミング教室では、コードの一部を検査したり、実行されるはずのない何かが実行されている様子を把握することは不可能です。"
 
 #: ../../chapter1.rst:192
 msgid ""
@@ -236,10 +250,13 @@ msgid ""
 "from code to flow chart and back by hand. Many programmers found old-"
 "fashioned flow charts less than useful."
 msgstr ""
+"スパゲッティプログラムの難しさは「フローチャート」の発見につながりました。これらは書かれているコードを理解するのを助けるためにプログラマーによって使用される実行の「フロー(流れ)」を表すペンとインクの図面でした。"
+" 残念ながら、プログラマーはコードからフローチャートへ手作業による翻訳を行わなければなりませんでした。 "
+"多くのプログラマは、古くさいフローチャートをあまり役に立たないと感じました。"
 
 #: ../../chapter1.rst:202
 msgid "Modularity"
-msgstr ""
+msgstr "モジュール性"
 
 #: ../../chapter1.rst:204
 msgid ""
@@ -249,6 +266,8 @@ msgid ""
 "[dahl72]_ . Each piece is called a *module*. Programs consist of modules "
 "within modules."
 msgstr ""
+"大きな問題は小さな問題の集まりとして扱うと、より簡単に解決できるという観察に基づく方法論である「構造化プログラミング」の発明によって、大きな進歩が生まれました。"
+" [dahl72]_ それぞれの部分は「モジュール」と呼ばれます。 プログラムはモジュール内のモジュールで構成されています。"
 
 #: ../../chapter1.rst:210
 msgid ""
@@ -256,6 +275,8 @@ msgid ""
 "control flow can be diverted only within a module. You can’t jump out "
 "from the middle of one module into the middle of another module."
 msgstr ""
+"構造化プログラミングは、制御フローをモジュール内で完結させることでスパゲッティコーディングを排除します。 "
+"あるモジュールの途中から別のモジュールの途中にジャンプすることはできません。"
 
 #: ../../chapter1.rst:215
 msgid ""
@@ -264,10 +285,12 @@ msgid ""
 "submodule you\\’ll find a whole new level of complexity which needn’t be "
 "shown at this level."
 msgstr ""
+"例えば、 :numref:`fig1-2` は4つのサブモジュールからなる「Make Breakfast」モジュールの構造図を示します。 "
+"各サブモジュール内には、このレベルでは表示する必要のないまったく新しいレベルの複雑さがあります。"
 
 #: ../../chapter1.rst:224
 msgid "Design for a structured program"
-msgstr ""
+msgstr "構造化プログラムの設計"
 
 #: ../../chapter1.rst:228
 msgid ""
@@ -275,10 +298,12 @@ msgid ""
 "cereal” module and the “eggs” module, but control flow stays within the "
 "outer module"
 msgstr ""
+"このモジュールでは、「cold "
+"cereal」モジュールと「eggs」モジュールのどちらかを選択する分岐決定が行われますが、制御フローは外側のモジュール内にあります。"
 
 #: ../../chapter1.rst:232
 msgid "Structured programming has three premises:"
-msgstr ""
+msgstr "構造化プログラミングには3つの前提があります。"
 
 #: ../../chapter1.rst:234
 msgid ""
@@ -286,30 +311,33 @@ msgid ""
 "functions, called *modules*. Each module has exactly one entry point and "
 "one exit point."
 msgstr ""
+"すべてのプログラムは「モジュール」と呼ばれる自己完結型関数の直線形シーケンスとして記述されています。 "
+"モジュールにはそれぞれ1つの入り口と1つの出口があります。"
 
 #: ../../chapter1.rst:238
 msgid ""
 "Each module consists of one or more functions, each of which has exactly "
 "one entry point and one exit point and can itself be described as a "
 "module."
-msgstr ""
+msgstr "各モジュールは1つ以上の関数で構成され、各関数はそれぞれ1つの入り口と1つの出口を持ち、それ自体モジュールとして記述できます。"
 
 #: ../../chapter1.rst:242
 msgid "A module can contain:"
-msgstr ""
+msgstr "モジュールは以下のものを含む事ができます。"
 
 #: ../../chapter1.rst:244
 msgid "operations or other modules"
-msgstr ""
+msgstr "演算子や他のモジュール"
 
 #: ../../chapter1.rst:246
 msgid "decision structures (``IF``  ``THEN`` statements)"
-msgstr ""
+msgstr "判断構造( ``IF`` や ``THEN`` 文)"
 
 #: ../../chapter1.rst:248
 msgid "looping structures"
-msgstr ""
+msgstr "ループ構造"
 
+# testの訳語はテストにする。
 #: ../../chapter1.rst:250
 msgid ""
 "The idea of modules having “one-entry, one-exit” is that you can unplug "
@@ -318,6 +346,9 @@ msgid ""
 "each piece by itself. That’s only possible if you know exactly where you "
 "stand when you start the module, and where you stand when you leave it."
 msgstr ""
+"「入り口1つ出口1つ」モジュールのアイディアは、他のプログラムとの接続を台無しにしなくても、それらを取り外し、内部を変更し、再び差し込むことができるということです。"
+" これは、あなたがそれぞれの部品を単独でテストできることを意味します。 "
+"単独のテストは、モジュールを起動したときにどういう状態なのか、そしてモジュールから去った時にどういう状態なのかを正確に知っている場合のみ可能です。"
 
 #: ../../chapter1.rst:256
 msgid ""
@@ -325,10 +356,12 @@ msgid ""
 "And you\\’ll always clean up. (Some programmers I know circumvent this "
 "last module by renting a new apartment every three months.)"
 msgstr ""
+"「Make Breakfast」では、cerealを盛るかeggsを作るかのどちらかを行います。 "
+"そして、あなたはいつも片付けるでしょう(私が知っているプログラマーの中には、3か月ごとに新しいアパートを借りることによってこの最後のモジュールを行わずに済ませる人もいますが)。"
 
 #: ../../chapter1.rst:264
 msgid "Structured programming with a non-structured language"
-msgstr ""
+msgstr "非構造化言語での構造化プログラミング"
 
 #: ../../chapter1.rst:268
 msgid ""
@@ -338,6 +371,9 @@ msgid ""
 "programming design techniques are applied to non-structured languages "
 "like BASIC, the result looks something like :numref:`fig1-3` ."
 msgstr ""
+"構造化プログラミングは、もともと設計アプローチとして考えられていました。 "
+"モジュールは、実際のソースコードのユニットではなく、プログラマーまたは設計者の頭の中に存在する架空のユニットです。 "
+"構造化プログラミング設計技法をBASICのような非構造化言語に適用すると、 :numref:`fig1-3` のような結果になります。"
 
 #: ../../chapter1.rst:275
 msgid "Writeability"
@@ -351,16 +387,18 @@ msgid ""
 "more modular appearance. Pascal is such a language, invented by Niklaus "
 "Wirth to teach the principles of structured programming to his students."
 msgstr ""
+"さらに別の突破口が構造化プログラムの使用を促進しました。すなわち構造化プログラミング言語です。これらの言語では、命令セットが制御構造を含んでいるので、よりモジュール化した身なりのプログラムを書くことができます。Pascalはそのような言語で、構造化プログラミングの原則を学生に教えるためにNiklaus"
+" Wirthによって考案されました。"
 
 #: ../../chapter1.rst:288
 msgid "Using a structured language."
-msgstr ""
+msgstr "構造化言語の使用"
 
 #: ../../chapter1.rst:292
 msgid ""
 ":numref:`fig1-4`  shows how this type of language would allow “Make "
 "Breakfast” to be written."
-msgstr ""
+msgstr ":numref:`fig1-4` はこのタイプの言語で書いた「Make Breakfast」です。"
 
 #: ../../chapter1.rst:295
 msgid ""
@@ -371,10 +409,14 @@ msgid ""
 "referred to by name (e.g., ``MAKE-CEREAL``). The finished program might "
 "take ten pages, with the ``ELSE`` on page five."
 msgstr ""
+"構造化プログラミング言語は、制御フローのモジュール性を確保するために、 ``IF``や ``THEN`` のような制御構造演算子を含みます。 "
+"ご覧のとおり、インデント(字下げ)は読みやすさのために重要です。 "
+"なぜなら、各モジュール内の命令群は1つの名前で参照されるのではなく、ただつらつらと書き連ねられているからです(たとえば、右の波括弧「MAKE-"
+"CEREAL」の部分)。完成したプログラムは5ページ目に ``ELSE`` を付けて、10ページに渡るものになるかもしれません。"
 
 #: ../../chapter1.rst:303
 msgid "Designing from the Top"
-msgstr ""
+msgstr "頂上からの設計作業"
 
 #: ../../chapter1.rst:305
 msgid ""
@@ -383,6 +425,8 @@ msgid ""
 "with the most general, overall module and working down to the nitty-"
 "gritty modules."
 msgstr ""
+"これらのモジュールをどのように設計すればいいでしょうか？ "
+"「トップダウン設計」と呼ばれる方法論は、トップの最も一般的で全体的なモジュールから始めて、トップから下り核心のモジュールに至るまで設計する必要があるとしています。"
 
 #: ../../chapter1.rst:310
 msgid ""
@@ -391,16 +435,18 @@ msgid ""
 "trying to correct programs after they’ve been written—a practice known as"
 " “patching”—is like locking the barn door after the horse has bolted."
 msgstr ""
+"トップダウン設計の支持者は、計画不足のために恥ずべき時間の浪費を目撃しています。 "
+"彼らは苦しい経験から、プログラムの作成後にプログラムを修正しようとすること(「パッチあて」として知られる方法)は、馬が暴れて逃げ出した後に納屋の扉を施錠するようなものだと学びました。"
 
 #: ../../chapter1.rst:316
 msgid ""
 "So they offer as a countermeasure this official rule of top-down "
 "programming:"
-msgstr ""
+msgstr "そこで彼らは、対策として以下のトップダウンプログラミング公式ルールを提案します。"
 
 #: ../../chapter1.rst:319
 msgid "Write no code until you have planned every last detail."
-msgstr ""
+msgstr "最後の詳細をすべて計画するまでコードを書かないでください。"
 
 #: ../../chapter1.rst:321
 msgid ""
@@ -410,10 +456,12 @@ msgid ""
 "down design, Otherwise, man-years of effort may be wasted writing code "
 "that cannot be used."
 msgstr ""
+"プログラムは一度書かれると変更するのが難しいので、実際のコードレベルのモジュールを作成する前に、事前計画段階での設計もれすべて明らかにしておく必要があります。"
+" トップダウン設計によれば、そうでなければ使用できないゴミなコードを書くのに多大な人月が浪費される可能性があります。"
 
 #: ../../chapter1.rst:331
 msgid "Software patches are ugly and conceal structural weaknesses."
-msgstr ""
+msgstr "ソフトウェアパッチは醜く、構造的な弱点を含んでいます。"
 
 #: ../../chapter1.rst:336
 msgid "Subroutines"
@@ -428,12 +476,16 @@ msgid ""
 "subroutines, procedures, or functions, depending on the particular high-"
 "level language and on how they happen to be implemented."
 msgstr ""
+"私たちは抽象的なモジュールとして「モジュール」を議論してきました。 "
+"しかし、すべての高級言語には、設計のモジュールをコードのモジュール、つまり名前を付けて他のコードから「呼び出す」ことができるコード・モジュールとしてコーディングできるようにする技法が組み込まれています。"
+" "
+"これらのユニットは、特定の高級言語および実装方法に応じて、サブルーチン(subroutine)、プロシージャ(procedure)、または関数(function)と呼ばれます。"
 
 #: ../../chapter1.rst:345
 msgid ""
 "Suppose we write “MAKE-CEREAL” as a subroutine. It might look something "
 "like this:"
-msgstr ""
+msgstr "サブルーチンとして「MAKE-CEREAL」を書くと以下のようになります。"
 
 #: ../../chapter1.rst:361
 msgid ""
@@ -441,6 +493,8 @@ msgid ""
 " we can define ``MAKE-BREAKFAST`` as a simple routine that invokes, or "
 "calls, these subroutines:"
 msgstr ""
+"サブルーチンとして ``MAKE-EGGS`` や ``CLEANUP`` を書くこともできます。他方、 ``MAKE-BREAKFAST`` "
+"は、単一のルーチンとして定義することもできますし、これらのサブルーチンを呼び出すこともできます。"
 
 #: ../../chapter1.rst:380
 msgid ""
@@ -449,6 +503,9 @@ msgid ""
 "returns back to the calling program at the point following the call. "
 "Subroutines obey the rules of structured programming."
 msgstr ""
+"「call make-cereal」という句は「make-"
+"cereal」という名前のサブルーチンを実行します。サブルーチンの実行が完了すると制御が戻ってきて「call make-"
+"cereal」の次の行の実行を開始します。サブルーチンは構造化プログラミングの規則に従います。"
 
 #: ../../chapter1.rst:386
 msgid ""
@@ -459,10 +516,13 @@ msgid ""
 "to be compiled within the object code of the main program ( "
 ":numref:`fig1-5` )."
 msgstr ""
+"ご覧のとおり、サブルーチン呼び出しの効果は、サブルーチンコードが呼び出し元のモジュール内で完全に書き込まれたかのようです。 "
+"しかし、マクロアセンブラによって生成されたコードとは異なり、サブルーチンはメモリ内の他の場所でコンパイルされ、参照されるだけのことがあります。 "
+"必ずしもメインプログラムのオブジェクトコード内でコンパイルされる必要はありません。( :numref:`fig1-5` )"
 
 #: ../../chapter1.rst:397
 msgid "A main program and a subroutine in memory."
-msgstr ""
+msgstr "メモリ内にメインプログラムとサブルーチン"
 
 #: ../../chapter1.rst:401
 msgid ""
@@ -473,6 +533,10 @@ msgid ""
 "different parts of a program to different programmers. Smaller pieces of "
 "code are easier to think about and easier to verify for correctness."
 msgstr ""
+"何年にもわたって、コンピュータ科学者は、長くはてしないプログラムよりも、多くの小さなサブルーチンの使用を強く推奨しています。 "
+"サブルーチンは独立して書いてテストすることができます。 "
+"これにより、以前に作成したプログラムの一部を再利用しやすくなり、プログラムのさまざまな部分をさまざまなプログラマーに割り振るが容易になります。 "
+"コードが小さいほど、考えるのが簡単になり、正確さを検証するのが容易になります。"
 
 #: ../../chapter1.rst:409
 msgid ""
@@ -481,6 +545,8 @@ msgid ""
 "without wasting space on repeated object code. Thus the judicious use of "
 "subroutines can also decrease program size."
 msgstr ""
+"サブルーチンがメモリの別の部分でコンパイルされて参照されると、繰り返されるオブジェクトコードがスペースを無駄にすることなく、プログラム全体を通して同じサブルーチンを何度も呼び出すことができます。"
+" したがって、サブルーチンを思慮深く使用すると、プログラムサイズも小さくなります。"
 
 #: ../../chapter1.rst:414
 msgid ""
@@ -490,6 +556,9 @@ msgid ""
 "consuming is the invisible but significant code needed to pass parameters"
 " to and from the subroutine."
 msgstr ""
+"残念ながら、サブルーチンを使用すると実行速度が低下します。 "
+"1つの問題は、サブルーチンにジャンプして後でそれらを復元する前にレジスタを保存する際のオーバーヘッドです。 "
+"さらに時間がかかるのは、サブルーチンとの間でパラメータをやり取りするのに必要な、目に見えないが重要なコードです。"
 
 #: ../../chapter1.rst:420
 msgid ""
@@ -497,17 +566,19 @@ msgid ""
 " you pass data to and from them. To test them independently you need to "
 "write a special testing program to call them from."
 msgstr ""
+"サブルーチンは、どのようにしてそれらを呼び出すのか、特にどのようにしてそれらとの間でデータをやり取りするのかについては神経質です。 "
+"それらを独立してテストするには、それらを呼び出すための特別なテストプログラムを書く必要があります。"
 
 #: ../../chapter1.rst:424
 msgid ""
 "For these reasons computer scientists recommend their use in moderation. "
 "In practice subroutines are usually fairly large between a half page to a"
 " full page of source code in length."
-msgstr ""
+msgstr "これらの理由から、コンピュータ科学者は適度の数の使用を推奨します。 実際は、サブルーチンの長さは大きめで、半ページから1ページの長さになります。"
 
 #: ../../chapter1.rst:429
 msgid "Successive Refinement"
-msgstr ""
+msgstr "継続的改良"
 
 #: ../../chapter1.rst:431
 msgid ""
@@ -518,6 +589,9 @@ msgid ""
 "continue this process to greater levels of detail until the procedures "
 "can only be written in the computer language itself."
 msgstr ""
+"サブルーチンに大きく依存しているこのアプローチは「継続的改良」と呼ばれています。 [wirth71]_ "
+"そのアイデアでは、データ構造の手続きのために自然な名前を使った骨格バージョンの記述から始めます。次に、名前付き手続きのそれぞれの説明を書きます。 "
+"手続きがコンピュータ言語自体でしか記述できなくなるまで、この処理を詳細レベルまで続けます。"
 
 #: ../../chapter1.rst:439
 msgid ""
@@ -526,12 +600,14 @@ msgid ""
 "Decisions about the algorithms and associated data structures should be "
 "made in parallel."
 msgstr ""
+"各ステップで、プログラマーは使用するアルゴリズムと、それに伴うデータ構造について決定を下さなければなりません。 "
+"アルゴリズムと関連するデータ構造に関する決定は、並行して行われるべきです。"
 
 #: ../../chapter1.rst:444
 msgid ""
 "If an approach doesn\\’t work out the programmer is encouraged to back "
 "track as far as necessary and start again."
-msgstr ""
+msgstr "アプローチがうまくいかない場合は、プログラマは必要な範囲で後戻りしてやり直すことをお勧めします。"
 
 #: ../../chapter1.rst:447
 msgid ""
@@ -540,23 +616,25 @@ msgid ""
 "Typically this means you can\\’t test the program until after you\\’ve "
 "completely designed it."
 msgstr ""
+"継続的改良は、最低レベルのコンポーネントが作成されるまで、プログラムのどの部分も実際には実行できないことに注意してください。 "
+"通常、これは完全に設計が完了するまでプログラムをテストできないことを意味しています。"
 
 #: ../../chapter1.rst:452
 msgid ""
 "Also notice: Successive refinement forces you to work out all details of "
 "control structure on each level before proceeding to the next lower "
 "level."
-msgstr ""
+msgstr "継続的改良は、次の、より詳細なレベル進む前に各レベルでの制御構造の詳細を全て解決しなければならない事にも注意して下さい。"
 
 #: ../../chapter1.rst:460
 msgid ""
 "Tobias, I think you\\'ve carried the successive refinement of that module"
 " far enough."
-msgstr ""
+msgstr "トビアス、このモジュールの継続的改良はそのぐらいでいいんじゃないか？"
 
 #: ../../chapter1.rst:465
 msgid "Structured Design"
-msgstr ""
+msgstr "構造化設計"
 
 #: ../../chapter1.rst:467
 msgid ""
@@ -565,7 +643,7 @@ msgid ""
 "maintaining software—keeping it functional in the face of "
 "change—accounted for more than half of the total cost of software, in "
 "some estimates as much as ninety percent!"
-msgstr ""
+msgstr "コンピュータ業界は70年代後半までに、いままで説明した概念を全て試していましたが、それでもまだ不幸でした。ソフトウェアを維持し、変化に直面しても機能するように維持するためのコストは、ソフトウェアの総コストの半分以上を占めていました。なんと、幾つかの見積もりではそれは90%に達しました。"
 
 #: ../../chapter1.rst:473
 msgid ""
@@ -574,20 +652,20 @@ msgid ""
 "that there was anything wrong with structured programming *per se*. When "
 "projects came in late, incomplete, or incorrect, the designers took the "
 "blame for not anticipating the unforeseen."
-msgstr ""
+msgstr "これら無残な状況は、一般に、プログラムの分析が不完全だったか、よく考えられてない設計が原因と考えられると言うことに、誰もが同意したものです。構造化プログラミング「それ自体」には何か問題があったわけではありませんが、プロジェクトの遅延や不完全や不正確に際しては、設計者は思いもかけず責任を取るはめになりました。"
 
 #: ../../chapter1.rst:479
 msgid ""
 "Scholars naturally responded by placing more emphasis on design. “Next "
 "time let\\’s think things out better”."
-msgstr ""
+msgstr "学者たちは当然、設計にもっと重点を置くべきだと答えました。「次回はもっとよく考えましょう」と。"
 
 #: ../../chapter1.rst:482
 msgid ""
 "About this time a new philosophy arose, described in an article called "
 "“Structured Design” [stevens74-1]_ . One of its principles is stated in "
 "this paragraph:"
-msgstr ""
+msgstr "この頃、「構造化設計」 [stevens74-1]_ という記事で説明されている、新しい原則ができました。 その原則の1つがこれです。"
 
 #: ../../chapter1.rst:486
 msgid ""
@@ -596,23 +674,23 @@ msgid ""
 "Simplicity can be enhanced by dividing the system into separate pieces in"
 " such a way that pieces can be considered, implemented, fixed and changed"
 " with minimal consideration or effect on the other pieces of the system."
-msgstr ""
+msgstr "シンプルさは、デバッグおよび変更時間の短縮と比較して代替設計を評価するために推奨される主要な尺度です。システムの他の部分に最小限の考慮で済むかあるいは全く影響を与えることなく、部分を考え、実装し、修正し、変更することができるようにシステムを別々の部分に分割することによって、シンプルさを高める事ができます。"
 
 #: ../../chapter1.rst:493
 msgid ""
 "By dividing a problem into simple modules, programs were expected to be "
 "easier to write, easier to change, and easier to understand."
-msgstr ""
+msgstr "問題をシンプルなモジュールに分割することによって、プログラムは書きやすく、変更しやすく、そして理解しやすくなると期待されました。"
 
 #: ../../chapter1.rst:496
 msgid ""
 "But what is a module, and on what basis does one make the divisions? "
 "“Structured Design” outlines three factors for designing modules."
-msgstr ""
+msgstr "しかし、モジュールとは一体何でしょうか？　どのような基準で分割するのでしょうか？　「構造化設計」ではモジュール設計の3つの要因について概説します。"
 
 #: ../../chapter1.rst:500
 msgid "Functional Strength"
-msgstr ""
+msgstr "機能的強度"
 
 #: ../../chapter1.rst:502
 msgid ""
@@ -621,6 +699,8 @@ msgid ""
 "all the statements inside the module collectively can be thought of as "
 "performing a single task, they are functionally bound."
 msgstr ""
+"1つ目の要因は「機能強度」と呼ばれるもので、これはモジュール内のすべての文の目的の統一度という尺度です。 "
+"モジュール内のすべての文をまとめて1つのタスクを実行すると見なすことができる場合、それらは機能的に結合されています。"
 
 #: ../../chapter1.rst:507
 msgid ""
@@ -629,77 +709,80 @@ msgid ""
 "describe its purpose in one sentence? If not, the module is probably not "
 "functionally bound. Next, ask these four questions about the module:"
 msgstr ""
+"一般に、モジュール内の文が機能的に結合されているかどうかは、以下の質問をすることでわかります。 まず最初に、その目的を一文で説明できますか。 "
+"そうでなければ、モジュールはおそらく機能的に結合されていません。 次に、モジュールについて次の4つの質問をします(訳注：もちろん英語での話)。"
 
 #: ../../chapter1.rst:512
 msgid "Does the description have to be a compound sentence?"
-msgstr ""
+msgstr "説明文は複合文である必要はありますか？"
 
 #: ../../chapter1.rst:514
 msgid "Does it use words involving time, such as “first,” “next,” “then,” etc.?"
-msgstr ""
+msgstr "「最初(first)」、「次(next)」、「それから(then)」など、時間を伴う言葉を使用していますか？"
 
+# 文法用語不明。そもそも日本語に対応する文法用語あるんか？
 #: ../../chapter1.rst:517
 msgid "Does it use a general or nonspecific object following the verb?"
-msgstr ""
+msgstr "動詞(verb)の後に一般の目的語(general object)や間接目的語(nonspecific object)を使用しますか？"
 
 #: ../../chapter1.rst:519
 msgid ""
 "Does it use words like “initialize” which imply a lot of different "
 "functions being done at the same time?"
-msgstr ""
+msgstr "同時に多くの異なる機能が実行されることを意味する、「初期化(initialize)」のような言葉が使われていませんか？"
 
 #: ../../chapter1.rst:522
 msgid ""
 "If the answer to any of these four questions is “yes,” you’re looking at "
 "some less cohesive type of binding than functional binding. Weaker forms "
 "of binding include:"
-msgstr ""
+msgstr "これら4つの質問の答えのいずれかが「はい」の場合、あなたの目の前にあるのは機能的な結合よりも結合度が少ないタイプの結合です。これら弱い結合形式は以下のとおりです。"
 
 #: ../../chapter1.rst:527
 msgid "Coincidental binding:"
-msgstr ""
+msgstr "偶然の結合"
 
 #: ../../chapter1.rst:527
 msgid "(the statements just happen to appear in the same module)"
-msgstr ""
+msgstr "(これらの文はなぜか知らないが、たまたま同じモジュールにある)"
 
 #: ../../chapter1.rst:532
 msgid "Logical binding:"
-msgstr ""
+msgstr "ロジック結合"
 
 #: ../../chapter1.rst:530
 msgid ""
 "(the module has several related functions and requires a flag or "
 "parameter to decide which particular function to perform)"
-msgstr ""
+msgstr "（モジュールにはいくつかの関連する機能があり、どの機能を実行するかを決定するためにフラグまたはパラメーターが必要です）"
 
 #: ../../chapter1.rst:536
 msgid "Temporal binding:"
-msgstr ""
+msgstr "テンポラリ結合"
 
 #: ../../chapter1.rst:535
 msgid ""
 "(the module contains a group of statements that happen at the same time, "
 "such as initialization but have no other relationship)"
-msgstr ""
+msgstr "(モジュールには、初期化のような、同時に発生するという以外の関係が無い複数の文が含まれています)"
 
 #: ../../chapter1.rst:540
 msgid "Communicational binding:"
-msgstr ""
+msgstr "コミュニケーション結合"
 
 #: ../../chapter1.rst:539
 msgid ""
 "(the module contains a group of statements that all refer to the same set"
 " of data)"
-msgstr ""
+msgstr "(このモジュールには、同じデータセットを参照する複数の文が含まれています)"
 
 #: ../../chapter1.rst:544
 msgid "Sequential binding:"
-msgstr ""
+msgstr "シーケンシャル結合"
 
 #: ../../chapter1.rst:543
 msgid "(where the output of one statement serves as input for the next statement)"
-msgstr ""
+msgstr "(ある文の出力が次の文の入力として機能する場合)"
 
 #: ../../chapter1.rst:546
 msgid ""
@@ -707,10 +790,12 @@ msgid ""
 " thought of as doing one thing, even though it consists of several "
 "subordinate tasks."
 msgstr ""
+"``MAKE-CEREAL`` "
+"モジュールは、それがいくつかの従属タスクで構成されているとしても、一つのことをすると考えることができるので、機能的な結合が成り立っていると言えます。"
 
 #: ../../chapter1.rst:552
 msgid "Coupling"
-msgstr ""
+msgstr "連結"
 
 #: ../../chapter1.rst:554
 msgid ""
@@ -720,6 +805,9 @@ msgid ""
 "code inside another module. Even passing control flags to other modules "
 "with the intent to control their function is dangerous."
 msgstr ""
+"構造化設計のもう1つの原則は、「連結」に関するものです。これは、モジュールが他のモジュールの動作にどのように影響するかを示す尺度です。 "
+"強い結合は悪い形式と見なされます。 最悪の場合は、あるモジュールが実際に別のモジュール内のコードを変更したときです。 "
+"機能を制御する目的で他のモジュールに制御フラグを渡すことさえ危険です。"
 
 #: ../../chapter1.rst:560
 msgid ""
@@ -728,6 +816,8 @@ msgid ""
 "systems are easiest to build and maintain when the data interfaces "
 "between modules are as simple as possible."
 msgstr ""
+"許容される連結形態は「データ連結」です。これはあるモジュールから別のモジュールへ(制御情報ではなく)データを渡すことを含みます。 "
+"それでも、モジュール間のデータインタフェースが可能な限りシンプルな場合、システムの構築と保守は容易です。"
 
 #: ../../chapter1.rst:565
 msgid ""
@@ -736,6 +826,8 @@ msgid ""
 "programmer needs to change one module, there\\’s a greater danger that "
 "the other modules will exhibit “side effects”."
 msgstr ""
+"データが多くのモジュールからアクセスできる場合(グローバル変数など)は、モジュール間の連結が強くなります。 "
+"プログラマが1つのモジュールだけ変更する場合でも、他のモジュールが「副作用」を示すという大きな危険があります。"
 
 #: ../../chapter1.rst:570
 msgid ""
@@ -746,16 +838,18 @@ msgid ""
 "have put the answer in the variable named Z. No one else will use these "
 "variables”."
 msgstr ""
+"最も安全な種類のデータ連結は、あるモジュールから別のモジュールへパラメータとしてローカル変数を渡すことです。 "
+"呼び出し側のモジュールは、サブルーチンモジュールにこう言います「私がXとYという名前の変数に入れたデータをあなたに使用してもらいたいのです。そして処理が完了したら、あなたが答えをZという名前の変数に答えを入れることを期待します。他の誰もこれらの変数は使いません」。"
 
 #: ../../chapter1.rst:577
 msgid ""
 "As we said, conventional languages that support subroutines include "
 "elaborate methods of passing arguments from one module to another."
-msgstr ""
+msgstr "前述したように、サブルーチンをサポートする従来の言語には、あるモジュールから別のモジュールに引数を渡すための精巧な方法が含まれています。"
 
 #: ../../chapter1.rst:582
 msgid "Hierarchical Input-Process-Output Designing"
-msgstr ""
+msgstr "階層型 入力・処理・出力 設計"
 
 #: ../../chapter1.rst:584
 msgid ""
@@ -766,6 +860,10 @@ msgid ""
 "should focus on the program\\’s hierarchy (which modules call which "
 "modules) and to the passing of data from one module to another."
 msgstr ""
+"構造化設計の3番目の教えは設計プロセスに関するものです。 "
+"設計者はトップダウンアプローチを使用することをお勧めしますが、最初は制御構造に注意を払わないようにします。 "
+"「判断設計」は、後のモジュールの詳細設計まで待つことができます。 "
+"代わりに、初期の設計では、プログラムの階層（どのモジュールがどのモジュールを呼び出すのか）と、あるモジュールから別のモジュールへのデータの受け渡しに焦点を当てる必要があります。"
 
 #: ../../chapter1.rst:592
 msgid ""
@@ -775,12 +873,15 @@ msgid ""
 "output”). Structure charts include two parts, a hierarchy chart and an "
 "input-output chart."
 msgstr ""
+"設計者がこれらの新しい線に沿って考えるのを助けるために、「構造化チャート」と呼ばれる図法が発明されました(階層型 "
+"入力-処理-出力(Hierarchical Input-Process-Output)を表すHIPO図と呼ばれる)。 "
+"構造化チャートは、階層図と入出力図の2つの部品を含んでいます。"
 
 #: ../../chapter1.rst:603
 msgid ""
 "The form of a structured chart, from \"Structured Design,\" **IBM Systems"
 " Journal.**"
-msgstr ""
+msgstr "構造化チャート様式(「構造化デザイン」IBMシステムジャーナル より)"
 
 #: ../../chapter1.rst:607
 msgid ""
@@ -789,6 +890,9 @@ msgid ""
 "modules shown below them. As you can see, the design emphasizes the "
 "transformation of input to output."
 msgstr ""
+":numref:`fig1-6` はこれら二つの部分を示しています。 "
+"DOITと呼ばれるメインプログラムは、3つのサブルーチンジュールから構成されています。これらのサブルーチンモジュールは、その下に表示されている他のモジュールを呼び出します。"
+" ご覧のとおり、設計は入力から出力への変換を強調しています。"
 
 #: ../../chapter1.rst:612
 msgid ""
@@ -796,7 +900,10 @@ msgid ""
 "chart. At point 1 (the module READ), the output is the value A. At point "
 "2 (the module TRANSFORM-TO-B), the input is A, and the output is B."
 msgstr ""
+"階層図の小さな番号は、入出力図の行を表します。 ポイント1（モジュールREAD）では、出力は値Aです。ポイント2（モジュールTRANSFORM-"
+"TO-B）では、入力はA、出力はBです。"
 
+# deep six 名詞不可算名詞《米俗》1 埋葬; 海の水葬. 2 投棄，破棄.
 #: ../../chapter1.rst:616
 msgid ""
 "Perhaps the greatest contribution of this approach is recognizing that "
@@ -807,10 +914,14 @@ msgid ""
 "around other concerns, such as the flow of data, then a change in plan "
 "won’t have so disastrous an effect."
 msgstr ""
+"おそらくこのアプローチの最大の貢献は、制御フローに関する決定が設計の重点ではないと認識していることです。 "
+"見ての通り、制御フローは問題の表面的な側面です。 "
+"要求を少し変更するだけで、プログラムの制御構造が大幅に変わったり、何年にも渡る作業を葬るはめになる可能性があります。 "
+"しかし、プログラムがデータの流れなどの他の問題を考慮して設計されている場合、計画の変更はそれほど悲惨な結果にはなりません。"
 
 #: ../../chapter1.rst:625
 msgid "Information-Hiding"
-msgstr ""
+msgstr "情報隠蔽"
 
 #: ../../chapter1.rst:627
 msgid ""
@@ -819,45 +930,47 @@ msgid ""
 "process, but rather pieces of information that might possibly change. "
 "Modules should be used to hide such information."
 msgstr ""
+"1972年に出版された論文 [parnas72]_ で、David L. "
+"Parnas博士は次のように述べています。モジュールを分割するための基準は、プロセスのステップであってはなりません。むしろ変更する可能性がある情報の断片であるべきです。モジュールはそのような情報を隠すために使われるべきです。"
 
 #: ../../chapter1.rst:633
 msgid ""
 "Let’s look at this important idea of “information-hiding”: Suppose you "
 "are writing a Procedures Manual for your company. Here\\’s a portion:"
-msgstr ""
+msgstr "「情報隠蔽」というこの重要な考え方を見てみましょう。あなたが会社で手順書を書いているとしましょう。 以下はその一部です。"
 
 #: ../../chapter1.rst
 msgid "Sales Dept. takes order"
-msgstr "Sales Dept. takes order"
+msgstr "営業部が受注"
 
 #: ../../chapter1.rst
 msgid "sends blue copy to Bookkeeping"
-msgstr "sends blue copy to Bookkeeping"
+msgstr "経理部に青いカーボンコピーを送る"
 
 #: ../../chapter1.rst
 msgid "orange copy to Shipping"
-msgstr "orange copy to Shipping"
+msgstr "オレンジ色のカーボンコピーは配送部へ"
 
 #: ../../chapter1.rst
 msgid "Jay logs the orange copy in the red binder on his desk, and completes"
-msgstr "Jay logs the orange copy in the red binder on his desk, and completes"
+msgstr "ジェイは机の上にある赤いバインダーにオレンジ色のカーボンコピーの内容を記録し、"
 
 #: ../../chapter1.rst
 msgid "packing slip."
-msgstr "packing slip."
+msgstr "梱包票を完成させます"
 
 #: ../../chapter1.rst:643
 msgid ""
 "Everyone agrees that this procedure is correct, and your manual gets "
 "distributed to everyone in the company."
-msgstr ""
+msgstr "そして、皆がこの手順が正しいことに同意し、あなたが書いた手順書は社内の全員に配布されます。"
 
 #: ../../chapter1.rst:646
 msgid ""
 "Then Jay quits, and Marilyn takes over. The new duplicate forms have "
 "green and yellow sheets, not blue and orange. The red binder fills up and"
 " gets replaced with a black one."
-msgstr ""
+msgstr "それからジェイが辞職し、マリリンが引き継ぎました。新しい伝票用紙には青とオレンジではなく緑と黄色の複写があります。赤いバインダーが満杯になったので黒いバインダーに置き換えました。"
 
 #: ../../chapter1.rst:650
 msgid ""
@@ -865,7 +978,7 @@ msgid ""
 "by using the term “Shipping Clerk” instead of the name “Jay”, the terms "
 "“Bookkeeping Dept. copy” and “Shipping Dept. copy” instead of “blue” and "
 "“orange”, etc."
-msgstr ""
+msgstr "あなたの手順書はまるごとゴミになってしまいました。「ジェイ」という名前の代わりに「配送係」という用語、「青」や「オレンジ」の代わりに「経理部用コピー」および「配送部用コピー」などの用語を使用することで、陳腐化を回避できた可能性があります。"
 
 #: ../../chapter1.rst:655
 msgid ""
@@ -876,7 +989,7 @@ msgid ""
 " employees and their job titles, so anyone who needed to know who the "
 "shipping clerk was could look it up in this single source. As the "
 "personnel changes, this list would change."
-msgstr ""
+msgstr "この例は、変化する環境に直面しても正確性を維持するために、恣意的な詳細を手順から除外するべきであることを示しています。詳細は必要に応じて他の場所に記録することができます。たとえば、都度人事部門が従業員とその役職のリストを発行するなら、配送担当者が誰であるかを知る必要がある人なら誰でもこの単一の情報源で調べることができます。人員が変わると、このリストも変わります。"
 
 #: ../../chapter1.rst:663
 msgid ""
@@ -889,6 +1002,8 @@ msgid ""
 " that is, many versions of related programs in their particular "
 "application field, each a variant on an earlier program."
 msgstr ""
+"このテクニックはソフトウェアを書く上で非常に重要です。プログラムが既に実行できているのに、なぜプログラムを変更する必要があるのでしょうか？　"
+"でも、プログラムを変更する理由は無数にあります。あなたは新しい機器で古いプログラムを走らせたいと思うかもしれません。プログラムは、新しいハードウェアに対応するのに十分変更する必要があります。プログラムは十分に速くないかもしれません、またはそれを使用している人々に合うように十分強力かもしれません。ほとんどのソフトウェアグループは、自分たちがプログラムの「ファミリー」を書いていることに気づいています。つまり、特定のアプリケーション分野における関連プログラムの多くのバージョンは、それぞれそれ以前のプログラムの変形です。"
 
 #: ../../chapter1.rst:673
 msgid ""
@@ -899,6 +1014,8 @@ msgid ""
 "computers, etc.) can make a system more secure, redundancy of information"
 " is dangerous."
 msgstr ""
+"情報隠蔽の原則をソフトウェアに適用するには、プログラムの特定の詳細を単一の場所に限定し、有用な情報を一度だけ表現する必要があります。この格言を無視するプログラムは冗長性の罪を犯します。"
+" ハードウェアの冗長性（バックアップコンピュータなど）はシステムをより安全にすることができますが、情報の冗長性は危険です。"
 
 #: ../../chapter1.rst:680
 msgid ""
@@ -910,7 +1027,11 @@ msgid ""
 "languages provide “EQU”s and labels for associating values such as "
 "addresses and bit-patterns with names."
 msgstr ""
+"知識のあるプログラマーなら誰でも言うように、将来のバージョンのプログラムではおそらく変わるかもしれない数は「定数」にして、値ではなく名前でプログラム全体を通して参照する必要があります。"
+" たとえば、コンピュータの用紙の幅を表す列の数は定数として表す必要があります。 "
+"アセンブリ言語でも、アドレスやビットパターンなどの値を名前に関連付けるための「EQU」およびラベルを提供しています。"
 
+# Edison by Per Brinch Hansen 1981
 #: ../../chapter1.rst:688
 msgid ""
 "Any good programmer will also apply the concept of information-hiding to "
@@ -919,6 +1040,8 @@ msgid ""
 " languages such as C, Modula 2, and Edison apply this concept to the "
 "architecture of their procedures."
 msgstr ""
+"優れたプログラマーであれば、情報隠蔽の概念をサブルーチンの開発にも適用して、各モジュールが他のモジュールの内部について可能な限り少ない知識しか持たないようにします。"
+" C、Modula 2、Edisonなどの最新のプログラミング言語は、この概念をプロシージャのアーキテクチャに適用します。"
 
 #: ../../chapter1.rst:694
 msgid ""
@@ -927,22 +1050,25 @@ msgid ""
 "information—not decision-structure or calling-hierarchy—should be the "
 "primary basis for design!"
 msgstr ""
+"しかし、Parnas博士その考えをもっと先に進めています。 彼はその概念をアルゴリズムとデータ構造に拡張するべきだと提案しています。 "
+"実際、意思決定構造や呼び出し階層ではなく、情報を隠すことが設計の主な基盤となるはずです。"
 
+# superficiality 不可算名詞 浅薄，皮相. 可算名詞 浅薄な事物.
 #: ../../chapter1.rst:701
 msgid "The Superficiality of Structure"
-msgstr ""
+msgstr "構造の表層"
 
 #: ../../chapter1.rst:703
 msgid "Parnas proposes two criteria for decomposition:"
-msgstr ""
+msgstr "Parnas博士は分解のための2つの基準を提案します。"
 
 #: ../../chapter1.rst:705
 msgid "possible (though currently unplanned) reuse, and"
-msgstr ""
+msgstr "(今現在計画されてないとしても)再利用可能であること。"
 
 #: ../../chapter1.rst:706
 msgid "possible (though unplanned) change."
-msgstr ""
+msgstr "(今現在計画されてないとしても)変更可能であること。"
 
 #: ../../chapter1.rst:708
 msgid ""
@@ -950,6 +1076,8 @@ msgid ""
 "“module” is a collection of routines, usually very small, which together "
 "hide information about some aspect of the problem."
 msgstr ""
+"この「モジュール」の新しい見方は、従来の見方とは異なります。 "
+"この「モジュール」は、通常は非常に小さいルーチンの集まりで、問題のとある面に関する情報をまとめて隠します。"
 
 #: ../../chapter1.rst:712
 msgid ""
@@ -963,24 +1091,30 @@ msgid ""
 "interdependent. You can’t change the method for pushing a value without "
 "also changing the method for popping a value."
 msgstr ""
+"他の2人の作家は、「データ抽象化」 [liskov75]_ という用語を使用して、同じ考え方を異なる方法で説明しています。 "
+"彼らの例はプッシュダウンスタックです。 "
+"スタック「モジュール」は、スタックを初期化し、スタックに値をプッシュし、スタックから値をポップし、スタックが空かどうかを判断するためのルーチンで構成されています。"
+" この「マルチプロシージャモジュール」は、スタックがどのように構成されているかの情報をアプリケーションの他の部分から隠します。 "
+"これらの手順は相互依存しているため、単一のモジュールと見なされます。 "
+"値をポップする方法も変更せずに、値をプッシュする方法を変更することはできません。"
 
 #: ../../chapter1.rst:723
 msgid ""
 "The word *uses* plays an important role in this concept. Parnas writes in"
 " a later paper [parnas79]_:"
-msgstr ""
+msgstr "この概念では、「使用」という言葉が重要な役割を果たします。 Parnas博士は論文で次のように書いています。 [parnas79]_"
 
 #: ../../chapter1.rst:727
 msgid ""
 "Systems that have achieved a certain \"elegance\"... have done so by "
 "having parts of the system use other parts..."
-msgstr ""
+msgstr "一定の優雅さを達成したシステム。それはシステムの部品として他の部品を使うことで達成されます。"
 
 #: ../../chapter1.rst:730
 msgid ""
 "If such a hierarchical ordering exists then each level offers a testable "
 "and usable subset of the system..."
-msgstr ""
+msgstr "そのような階層的な順序付けが存在する場合、各レベルではテスト可能で使用可能なシステムのサブセットを提供します。"
 
 #: ../../chapter1.rst:733
 msgid ""
@@ -989,6 +1123,8 @@ msgid ""
 "independently callable subprograms has to go in parallel with the "
 "decisions about **uses**, because they influence each other."
 msgstr ""
+"「使用」階層の設計は、設計作業における主要なマイルストーンの1つです。 "
+"システムを独立して呼び出し可能なサブプログラムに分割することは、「使用」*に関する決定と並行して行わなければなりません。それらは互いに影響を与えるからです。"
 
 #: ../../chapter1.rst:738
 msgid ""
@@ -996,26 +1132,29 @@ msgid ""
 "sequence will not readily allow design changes. Structure, in the sense "
 "or control-flow hierarchy, is superficial."
 msgstr ""
+"モジュールが制御フローまたはシーケンスに従ってグループ化されている設計では設計変更は容易にはできません。 "
+"構造は、制御フロー階層では、ある意味表層的なものです。"
 
 #: ../../chapter1.rst:743
 msgid ""
 "A design in which modules are grouped according to things that may change"
 " can readily accommodate change."
-msgstr ""
+msgstr "変更される可能性のあるものに従ってモジュールがグループ化されている設計は、容易に変更に対応することができます。"
 
+# 節タイトルとしてどうよ？
 #: ../../chapter1.rst:748
 msgid "Looking Back, and Forth"
-msgstr ""
+msgstr "一方、Forthでは..."
 
 #: ../../chapter1.rst:750
 msgid ""
 "In this section we\\’ll review the fundamental features of Forth and "
 "relate them to what we\\’ve seen about traditional methodologies."
-msgstr ""
+msgstr "本節ではForthの基本機能を概説します。そしてそれらを従来の方法論と関連付けます。"
 
 #: ../../chapter1.rst:754
 msgid "Here\\’s an example of Forth code;"
-msgstr ""
+msgstr "以下にForthコードの例があります。"
 
 #: ../../chapter1.rst:763
 msgid ""
@@ -1025,6 +1164,9 @@ msgid ""
 " ``CEREAL``, ``EGGS``, and ``CLEAN`` are (most likely) also defined as "
 "colon definitions."
 msgstr ""
+"これは :numref:`fig1-4` の ``MAKE-BREAKFAST`` 手続きと構造的に同じです(Forthを初めて使用する場合は、 "
+":doc:`付録 A<appendixa>` 参照）。 ``HURRIED?`` , ``CEREAL`` , ``EGGS`` , "
+"``CLEAN`` というワードも(おそらく)コロン定義として定義されています。"
 
 #: ../../chapter1.rst:768
 msgid ""
@@ -1033,30 +1175,30 @@ msgid ""
 "functional binding, limited coupling, and modularity. But regarding "
 "modularity, we encounter what may be Forth’s most significant "
 "breakthrough:"
-msgstr ""
+msgstr "ある程度までは、Forthは私たちが勉強してきたすべての特性をもっています。ニーモニック値、抽象化、パワー、構造化制御演算子、強力な機能結合、限定的な連結、モジュール性。しかし、モジュール性に関してはForthの最も重要な突破口となる可能性があります。"
 
 #: ../../chapter1.rst:774
 msgid ""
 "The smallest atom of a Forth program is not a module or a subroutine or a"
 " procedure, but a \"word.\""
-msgstr ""
+msgstr "Forthプログラムの最小単位はモジュールでもサブルーチンでもプロシージャでもなく「ワード(word)」です。"
 
 #: ../../chapter1.rst:777
 msgid ""
 "Furthermore, there are no subroutines, main programs, utilities, or "
 "executives, each of which must be invoked differently. *Everything* in "
 "Forth is a word."
-msgstr ""
+msgstr "更に、サブルーチンやメインプログラムやユーティリティや管理プログラムのメニューはありません。それぞれを別に起動する必要があります。Forthでは全てが「ワード(word)」です。"
 
 #: ../../chapter1.rst:781
 msgid ""
 "Before we explore the significance of a word-based environment, let\\’s "
 "first study two Forth inventions that make it possible."
-msgstr ""
+msgstr "ワードベースの環境の重要性を探る前に、まずそれを可能にするForthの2つの発明について学習しましょう。"
 
 #: ../../chapter1.rst:785
 msgid "Implicit Calls"
-msgstr ""
+msgstr "暗黙の呼び出し"
 
 #: ../../chapter1.rst:787
 msgid ""
@@ -1064,17 +1206,20 @@ msgid ""
 "simply say ``CEREAL`` . In Forth, the definition of ``CEREAL`` “knows” "
 "what kind of word it is and what procedure to use to invoke itself."
 msgstr ""
+"最初に、呼び出しは暗黙に行います。あなたは ``CALL CEREAL`` と書く必要はありません。シンプルに ``CEREAL`` "
+"でいいです。Forthでは ``CEREAL`` "
+"の定義は、自身がどんな種類のワードであるか、そして自身を呼び出すためにどのような手続きを使うべきかを「知って」います。"
 
 #: ../../chapter1.rst:791
 msgid ""
 "Thus variables and constants, system functions, utilities, as well as any"
 " user-defined commands or data structures can all be “called” simply by "
 "name."
-msgstr ""
+msgstr "よって、変数や定数やシステム関数やユーティリティ及びユーザ定義のコマンドやデータ構造は全て、シンプルに「名前」で「呼び出す」ことができます。"
 
 #: ../../chapter1.rst:796
 msgid "Implicit Data Passing"
-msgstr ""
+msgstr "暗黙のデータ渡し"
 
 #: ../../chapter1.rst:798
 msgid ""
@@ -1085,10 +1230,12 @@ msgid ""
 " the stack. The words ``PUSH`` and ``POP`` do not exist in high-level "
 "Forth."
 msgstr ""
+"次に、データ渡しは暗黙に行われます。この効果を生み出すメカニズムがForthのデータスタックです。Forthは自動的に数字をスタックにプッシュます。入力として数jを必要とするワードは、自動的にそれらをスタックからポップします。出力として数字を生成するワードは自動的にそれらをスタックにプッシュします。"
+" ``PUSH`` と ``POP`` というワードは高レベルのForthには存在しません。"
 
 #: ../../chapter1.rst:805
 msgid "Thus we can write:"
-msgstr ""
+msgstr "よって次のように書くことができます。"
 
 #: ../../chapter1.rst:814
 msgid ""
@@ -1099,6 +1246,10 @@ msgid ""
 "leaving us to concentrate on the functional steps of the data\\’s "
 "transformation."
 msgstr ""
+"``GETC`` が 'C' を取得し、それをスタックに残して去ると確信しています。そして ``TRANSFORM-TO-D`` はスタックから "
+"'C' を取り出し変換して 'D' をスタックに残して去ります。最後に、 ``PUT-D`` はスタックから 'D' "
+"を取り出しそれを書き込みます。 "
+"Forthはコードからデータ渡しの操作を取り除き、データ変換(transform)の機能的なステップに集中できるようにします。"
 
 #: ../../chapter1.rst:821
 msgid ""
@@ -1108,7 +1259,7 @@ msgid ""
 "course, that the word doesn\\’t consume or leave any unexpected values). "
 "Thus the stack supports structured, modular programming while providing a"
 " simple mechanism for passing local arguments."
-msgstr ""
+msgstr "Forthはデータ渡しのためにスタックを使うので、ワードはワードの中に入れ子にすることができます。どんなワードでも、より高いレベルでワード間のデータの流れを混乱させることなく、スタックに数字を入れたり取り除いたりすることができます(もちろん、ワードが予想外の値を消費したり残したりしないことが条件です)。したがって、スタックは、構造化されたモジュール式プログラミングをサポートしながら、ローカル引数を渡す為のシンプルなメカニズムを提供します。"
 
 #: ../../chapter1.rst:828
 msgid ""
@@ -1116,6 +1267,8 @@ msgid ""
 " and *how* data are passed. What’s left? Only the words that describe our"
 " problem."
 msgstr ""
+"Forthはプログラムから「どのように」ワードが呼び出されるか、「どのように」データが渡されるかの細々を取り除きます。 "
+"あるのは問題を説明する「言葉(ワード)」だけです。"
 
 #: ../../chapter1.rst:832
 msgid ""
@@ -1124,11 +1277,11 @@ msgid ""
 "“module” consist of many small functions, as many as are needed to hide "
 "information about that module. In Forth we can write as many words as we "
 "need to do that, no matter how simple each of them may be."
-msgstr ""
+msgstr "言い換えれば、Parnas博士の推奨のとおり、変更される可能性のあるものに従って問題を分解し、それぞれの「モジュール」を、そのモジュールに関する情報を隠すために必要なだけ、多くの小さな機能で構成することができます。Forthではそれがどれほどシンプルであっても必要なだけワードを書くことができます。"
 
 #: ../../chapter1.rst:839
 msgid "A line from a typical Forth application might read:"
-msgstr ""
+msgstr "典型的なForthアプリケーションの1行はこんなのです。"
 
 #: ../../chapter1.rst:847
 msgid ""
@@ -1136,17 +1289,19 @@ msgid ""
 "``LEFT`` , merely as a modifier, or a subroutine called ``TURRET`` , "
 "merely to name part of the hardware."
 msgstr ""
+"他の言語では、単に修飾子として ``LEFT`` というサブルーチンを使ったり、単にハードウェアの一部に名前を付けるために ``TURRET`` "
+"というサブルーチンを使ったりすることを推奨することはまずありません。"
 
 #: ../../chapter1.rst:851
 msgid ""
 "Since a Forth word is easier to invoke than a subroutine (simply by being"
 " named, not by being called), a Forth program is likely to be decomposed "
 "into more words than a conventional program would be into subroutines."
-msgstr ""
+msgstr "Forthのワードはサブルーチンよりも呼び出しが簡単(呼び出すのではなくて単に名前を書くだけ)なので、Forthプログラムは、従来のプログラムをサブルーチンに分割するよりも多くのワードに分割される可能性があります。"
 
 #: ../../chapter1.rst:857
 msgid "Component Programming"
-msgstr ""
+msgstr "コンポーネントプログラミング"
 
 #: ../../chapter1.rst:859
 msgid ""
@@ -1157,7 +1312,7 @@ msgid ""
 "devices such as terminals and printers, interfaces such as UART chips, "
 "the operating system, any data structure or data representation, any "
 "algorithm, etc."
-msgstr ""
+msgstr "よりシンプルなワードをたくさん使うことで「コンポーネントプログラミング」という手法を容易に利用できるようになります。詳しく解説するために、まず「変更される可能性のあるもの」として漠然と述べたコレクションについて再検討しましょう。典型的なシステムでは、ターミナルやプリンタなどのI/Oデバイス、UARTチップなどとのインターフェイス、オペレーティングシステム、データ構造やデータ表現、アルゴリズムなどなど、ほとんど全てが変更される可能性があります。"
 
 #: ../../chapter1.rst:867
 msgid ""
@@ -1165,20 +1320,22 @@ msgid ""
 " is the smallest set of other things that must change along with such a "
 "change?”"
 msgstr ""
+"では、そのような変更の影響を最小限に抑えるにはどうすればいいでしょうか？　"
+"そのようなものと一緒に変更しなければならない他のものとの最小の組み合わせはどれでしょうか？"
 
 #: ../../chapter1.rst:871
 msgid ""
 "The answer is: “The smallest set of interacting data structures and "
 "algorithms that share knowledge about how they collectively work.” We’ll "
 "call this unit a “component.”"
-msgstr ""
+msgstr "その答えは「それらがひとまとめに機能する方法についての知識を共有する、相互作用するデータ構造及びアルゴリズムの最小の組み合わせ」です。私たちはこのユニットを「コンポーネント」と呼びます。"
 
 #: ../../chapter1.rst:875
 msgid ""
 "A component is a resource. It may be a piece of hardware such as a UART "
 "or a hardware stack. Or the component may be a software resource such as "
 "a queue, a dictionary, or a software stack."
-msgstr ""
+msgstr "コンポーネントは資源です。それはUARTチップやハードウェアスタックなどのハードウェアの一部です。あるいは、コンポーネントは、キュー、辞書、ソフトウェアスタック等のソフトウェア資源です。"
 
 #: ../../chapter1.rst:879
 msgid ""
@@ -1188,10 +1345,14 @@ msgid ""
 " matter whether the algorithm is described in machine code or in problem-"
 "oriented words such as ``CEREAL`` and ``EGGS`` ."
 msgstr ""
+"すべてのコンポーネントはデータオブジェクトとアルゴリズムを含みます。 "
+"データオブジェクトが物理的(ハードウェアレジスタなど)であるか、抽象的(スタックの場所やデータベース内のフィールドなど)であるかは関係ありません。"
+" アルゴリズムが機械語で記述されているか、あるいは ``CEREAL`` や ``EGGS`` "
+"のような問題指向のワードで記述されているかは関係ありません。"
 
 #: ../../chapter1.rst:890
 msgid "Structured design vs. component design."
-msgstr ""
+msgstr "構造化設計 対 コンポーネント設計"
 
 #: ../../chapter1.rst:894
 msgid ""
@@ -1201,6 +1362,9 @@ msgid ""
 "*components* that describe the structure of records, provide a set of "
 "editor commands, and provide read/write routines to storage."
 msgstr ""
+":numref:`fig1-7` は構造化設計の結果と部品別設計の結果を対比しています。私たちは ``READ-RECORD`` , "
+"``EDIT-RECORD`` , ``WRITE-RECORD`` "
+"と呼ばれる「モジュール」の代わりに、レコードの構造を記述し、エディタコマンドのセットを提供し、ストレージへの読み書きルーチンを提供する、「コンポーネント」に関心があります。"
 
 #: ../../chapter1.rst:901
 msgid ""
@@ -1210,6 +1374,8 @@ msgid ""
 "Yes, it’s an extra step, but we now have an extra dimension for "
 "decomposition—not just slicing but *dicing* ."
 msgstr ""
+"私たちは何をやらかしたのでしょうか？　"
+"つまり、開発プロセスに新しいステージを追加挿入しました。「設計」でコンポーネントに分解し、それから「実装」でシーケンスと階層と入力-処理-出力ｎついて説明しました。はい、たしかにこれは余分なステップですが、スライスだけでなくさいの目切りするために分解の追加のステージがあります。"
 
 #: ../../chapter1.rst:908
 msgid ""
@@ -1219,6 +1385,8 @@ msgid ""
 "be confined to the record-structure component. No code that uses this "
 "component needs to know of the change."
 msgstr ""
+"プログラムが書かれた後に、レコード構造を変更する必要があるとします。 階層設計では、この変更は3つのモジュールすべてに影響します。 "
+"コンポーネントによる設計では、変更はレコード構造コンポーネントに限定されます。 このコンポーネントを使用するコードは、変更を知る必要がありません。"
 
 #: ../../chapter1.rst:914
 msgid ""
@@ -1227,7 +1395,10 @@ msgid ""
 "interdependence. The principle of component programming applies to team "
 "management as well as to software design."
 msgstr ""
+"この方式の保守以外の利点は、チームのプログラマー同士で相互依存性を少なくして、コンポーネントを個別に割り当てることができることです。 "
+"コンポーネントプログラミングの原則は、チーム設計とソフトウェア設計に適用されます。"
 
+# Google翻訳は lexicon を 用語集 とした。そのまま採用する。
 #: ../../chapter1.rst:920
 msgid ""
 "We’ll call the set of words which describe a component a “lexicon.” (One "
@@ -1235,6 +1406,8 @@ msgid ""
 " interest.”) The lexicon is your interface with the component from the "
 "outside ( :numref:`fig1-8` )."
 msgstr ""
+"コンポーネントを説明する単語の集まりを「用語集(lexicon)」と呼びます（用語集の1つの意味は、「特定の分野に関連する単語の集まり」です）。用語集は、コンポーネントと外部とのインターフェイスです("
+" :numref:`fig1-8` )。"
 
 #: ../../chapter1.rst:925
 msgid ""
@@ -1243,10 +1416,13 @@ msgid ""
 "also contain definitions written solely to support the externally visible"
 " lexicon. We’ll call the supporting definitions “internal” words."
 msgstr ""
+"この本では、「用語集」という用語は、コンポーネントの外側で名前によって使用されているコンポーネントのワードのみを指します。 "
+"コンポーネントは、外部から見える用語集をサポートするためだけに書かれた定義も含むことができます。 "
+"このサポートするためだけの定義を「内部」ワードと呼びます。"
 
 #: ../../chapter1.rst:934
 msgid "A lexicon describes a component."
-msgstr ""
+msgstr "用語集(lexicon)はコンポーネントを説明する"
 
 #: ../../chapter1.rst:938
 msgid ""
@@ -1256,6 +1432,8 @@ msgid ""
 "only a “conceptual model” of the component described in simple words—the "
 "“what it does.”"
 msgstr ""
+"用語集は、データオブジェクトおよびアルゴリズムと論理的に等価なものを名前で提供します。 "
+"用語集は、コンポーネントのデータ構造とアルゴリズム、つまり「どのように動くか」を明らかにしています。それはシンプルなワードで表現されたコンポーネントの「概念モデル」、つまり「動作するもの」のみをコンポーネントの外界に提示します。"
 
 #: ../../chapter1.rst:944
 msgid ""
@@ -1263,10 +1441,12 @@ msgid ""
 "and algorithms of components written at a a higher level. The “what” of "
 "one component becomes the “how” of a higher component."
 msgstr ""
+"これらのワードは、より高いレベルで書かれたコンポーネントのデータ構造とアルゴリズムを記述するための言語になります。 "
+"1つのコンポーネントの「何か(what)」は、上位コンポーネントの「どのように(how)」になります。"
 
 #: ../../chapter1.rst:952
 msgid "The entire application consists of components."
-msgstr ""
+msgstr "アプリケーションはコンポーネントで構成されている"
 
 #: ../../chapter1.rst:956
 msgid ""
@@ -1274,13 +1454,15 @@ msgid ""
 "components.  :numref:`fig1-9`  show show a robotics application might be "
 "decomposed."
 msgstr ""
+"Forthで書かれているように、アプリケーションはコンポーネント以外何も含んでいません。 ロボット工学アプリケーションは "
+":numref:`fig1-9` のように分割されるかもしれません。"
 
 #: ../../chapter1.rst:960
 msgid ""
 "You could even say that each lexicon is a special-purpose compiler, "
 "written solely for the purpose of supporting higher-level application "
 "code in the most efficient and reliable way."
-msgstr ""
+msgstr "各用語集は、高レベルのアプリケーションコードを最も効率的で信頼性の高い方法でサポートすることのみを目的として書かれた、特殊目的のコンパイラであると言えるかもしれません。"
 
 #: ../../chapter1.rst:964
 msgid ""
@@ -1290,6 +1472,10 @@ msgid ""
 "saving source code. A component can usually be written in one or two "
 "screens of Forth.)"
 msgstr ""
+"ところで、Forth自体はコンポーネントをサポートしていません。 その必要はありません。 "
+"コンポーネントはプログラム設計者の分解の産物です(Forthには「Screen」があります。ソースコードを保存するための、大容量記憶装置の小さく区分けされた部分です。通常、1つまたは2つのForth"
+" Screenにコンポーネントを記述できます)。(訳注:当時のScreenはフロッピーディスクに 1 "
+"Screen当たり2000バイト(80桁25行)として容量の許す限り記録できる。ForthのみでScreenの読み書きもできる)"
 
 #: ../../chapter1.rst:970
 msgid ""
@@ -1301,6 +1487,10 @@ msgid ""
 "language, with its variables, constants, stack operators, math operators,"
 " and so on, as heavily as any other component."
 msgstr ""
+"用語集は、あらゆるレベルのコンポーネントで使用できることを理解することが重要です。 "
+"設計への階層的なアプローチではよくあることですが、連続する各コンポーネントは、そこにサポートコンポーネントを埋め込むことはしません。 "
+"代わりに、各用語集はその中にあるすべてのコマンドを自由に使用できます。 robot-"
+"movementコマンドは、他のコンポーネントと同様に、その言語、変数、定数、スタック演算子、数学演算子などとともに、大元の言語に依存しています。"
 
 #: ../../chapter1.rst:979
 msgid ""
@@ -1309,6 +1499,8 @@ msgid ""
 "is why I use the term “lexicon” and not “language.” Languages have unique"
 " syntaxes."
 msgstr ""
+"このアプローチの重要な結果は、アプリケーション全体が単一の構文を使用することです。これにより、習得および保守が容易になります。 "
+"「言語」ではなく「用語集」という用語を使用するのはこのためです。言語には独自の構文があります。"
 
 #: ../../chapter1.rst:985
 msgid ""
@@ -1316,17 +1508,19 @@ msgid ""
 "debugging a whole lot easier. Because Forth is interactive, the "
 "programmer can type and test the primitive commands, such as"
 msgstr ""
+"コマンドがこのように利用可能であることは、テストとデバッグのプロセスを非常に簡単にします。 "
+"Forthは対話式なので、プログラマーは次のような基本コマンドを入力してテストすることができます。"
 
 #: ../../chapter1.rst:995
 msgid "from the “outside” as easily as the more powerful ones like"
-msgstr ""
+msgstr "外部からと同じぐらい簡単に、更に強力なこれとか。"
 
 #: ../../chapter1.rst:1003
 msgid ""
 "At the same time, the programmer can (if he or she wants) deliberately "
 "seal any commands, including Forth itself, from being accessed by the end"
 " user, once the application is complete."
-msgstr ""
+msgstr "同時に、アプリケーションが完成した時点で、プログラマーは(そう望むのなら)、Forth自体を含むすべてのコマンドが意図的にエンドユーザーからアクセスされるのを封印するとができます。"
 
 #: ../../chapter1.rst:1007
 msgid ""
@@ -1334,7 +1528,10 @@ msgid ""
 "extending the root language toward the application, providing new "
 "commands that can be used to describe the problem at hand."
 msgstr ""
+"これでForthの方法論が明らかになりました。 "
+"Forthプログラミングは、根源的な言語をアプリケーションに拡張し、直面する問題を説明するのに使用できる新しいコマンドを提供することで構成されています。"
 
+# Forthはアプリケーション指向言語を「作成」するためのプログラミング環境です。
 #: ../../chapter1.rst:1011
 msgid ""
 "Programming languages designed especially for particular applications "
@@ -1342,7 +1539,7 @@ msgid ""
 "“application-oriented languages.” Forth is a programming environment for "
 "*creating* app-li-ca-tion-oriented languages. (That last sentence may be "
 "the most succinct description of Forth that you’ll find.)"
-msgstr ""
+msgstr "ロボット工学、在庫管理、統計などの特定のアプリケーション用に特別に設計されたプログラミング言語は「アプリケーション指向言語」として知られています。Forthはアプリケーション指向言語を「作成」するためのプログラミング環境です(このの最後の文はあなたが見つけることができるForthの最も簡潔な説明かもしれませ）。"
 
 #: ../../chapter1.rst:1018
 msgid ""
@@ -1350,11 +1547,11 @@ msgid ""
 "language it’s simply not powerful enough. What you *should* do is write "
 "your own language in Forth (lexicons) to model your understanding of the "
 "problem, in which you can elegantly describe its solution."
-msgstr ""
+msgstr "実際、素のForthで深刻なアプリケーションを書くべきではありません。素のForthは言語としては十分強力とは言えません。あなたがすべきことは、あなたの問題への理解をForth(の用語集)として、あなた専用の言語を書くことです。そうすれば問題の解決策をあなた専用の言語で優雅に記述することができます。"
 
 #: ../../chapter1.rst:1024
 msgid "Hide From Whom?"
-msgstr ""
+msgstr "誰から隠す？"
 
 #: ../../chapter1.rst:1026
 msgid ""
@@ -1362,6 +1559,8 @@ msgid ""
 "the phrase “information-hiding,” we should clarify. From what, or whom "
 "are we hiding information?"
 msgstr ""
+"現在主流となっている言語では、「情報隠蔽」という言葉の意味が若干異なりますので、明確にしておく必要があります。 "
+"何から、または誰から情報を隠していますか？"
 
 #: ../../chapter1.rst:1030
 msgid ""
@@ -1371,7 +1570,7 @@ msgid ""
 "coupling). The fear seems to be that modules strive to attack each other "
 "like alien antibodies. Or else, that evil bands of marauding modules are "
 "out to clobber the precious family data structures."
-msgstr ""
+msgstr "(Modula2のような)伝統的な言語の最新版は、モジュールがその内部ルーチンやデータ構造を他のモジュールから確実に隠すことに後ろ向きです。目標はモジュールの独立性(最小連結)を達成することです。モジュールがエイリアン抗体のようにお互いを攻撃しようとしているのは恐怖です。また、そうでなければ、悪意のあるモジュールの仲間入りが貴重な家族データ構造を乱しています。"
 
 #: ../../chapter1.rst:1037
 msgid ""
@@ -1380,6 +1579,8 @@ msgid ""
 "possible design-change by localizing things that might change within each"
 " component."
 msgstr ""
+"これは私たちが心配していることではありません。 "
+"情報を非表示にする目的は、各コンポーネント内で変化する可能性があるものを局限することによって、設計変更による影響の可能性を最小限に抑えることです。"
 
 #: ../../chapter1.rst:1042
 msgid ""
@@ -1389,10 +1590,13 @@ msgid ""
 "Modula-type modules to Forth has been implemented, in only three lines of"
 " code, by Dewey Val Shorre [shorre71]_ )."
 msgstr ""
+"Forthプログラマは、一般に、データ構造を物理的に隠す手法を使用せず、プログラムを自分の管理下に置くことを好みます(にもかかわらず、Dewey "
+"Val ShorreによってModulaタイプのモジュールを追加する為の見事でシンプルなテクニックがわずか3行のコードで実装されています "
+"[shorre71]_ )。"
 
 #: ../../chapter1.rst:1050
 msgid "Hiding the Construction of Data Structures"
-msgstr ""
+msgstr "データ構造構築の隠蔽"
 
 #: ../../chapter1.rst:1052
 msgid ""
@@ -1401,145 +1605,181 @@ msgid ""
 " allows the data structures within a component to be described in terms "
 "of previously-defined components. This feature is direct access memory."
 msgstr ""
+"私たちが説明した方法論を可能にする、暗黙の呼び出しと暗黙のデータ渡しという、Forthの2つの発明について着目してきました。 "
+"3番目の特徴として、以前に定義済のコンポーネントに対して、コンポーネント内のデータ構造を記述することを可能にします。この機能はダイレクトアクセスメモリです。"
 
 #: ../../chapter1.rst:1059
-msgid "Suppose we define a variable called APPLES, like this:"
-msgstr ""
+msgid "Suppose we define a variable called ``APPLES``, like this:"
+msgstr "このように、 ``APPLES`` という変数を定義したとします。"
 
 #: ../../chapter1.rst:1068
 msgid ""
 "We can store a number into this variable to indicate how many apples we "
 "currently have:"
-msgstr ""
+msgstr "このように、この変数に数値を格納して、現在りんごが幾つあるか保持する事ができます。"
 
 #: ../../chapter1.rst:1077
-msgid "We can display the contents of the variable:"
-msgstr ""
+msgid ""
+"We can display the contents of the variable(type ``APPLES ?`` "
+"\\[:kbd:`Enter`\\]):"
+msgstr "\"以下のように変数の内容を表示することができます(``APPLES ?`` \\\\[:kbd:`Enter`\\\\] とタイプする):"
 
 #: ../../chapter1.rst:1085
 msgid "We can up the count by one:"
-msgstr ""
+msgstr "以下のようにして+1カウントアップできます。"
 
 #: ../../chapter1.rst:1093
-msgid "(The newcomer can study the mechanics of these phrases in Appendix A.)"
-msgstr ""
-
-#: ../../chapter1.rst:1095
 msgid ""
-"The word APPLES has but one function: to put on the stack the *address* "
-"of the memory location where the tally of apples is kept. The tally can "
-"be thought of as a “thing,” while the words that set the tally, read the "
-"tally, or increment the tally can be considered as “actions.”"
-msgstr ""
+"(The newcomer can study the mechanics of these phrases in :doc:`Appendix "
+"A<appendixa>`.)"
+msgstr "(入門者はこれらのフレーズの仕組みについては :doc:`付録 A<appendixa>` を参照下さい)。"
 
-#: ../../chapter1.rst:1100
+#: ../../chapter1.rst:1096
+msgid ""
+"The word ``APPLES`` has but one function: to put on the stack the "
+"*address* of the memory location where the tally of apples is kept. The "
+"tally can be thought of as a “thing,” while the words that set the tally,"
+" read the tally, or increment the tally can be considered as “actions.”"
+msgstr ""
+"``APPLES`` "
+"というワードには1つの機能しかありません。それはりんごの集計が保存されているメモリ位置のアドレスをスタックに積むことです。集計は「もの」としてとらえることができ、集計をセットする、集計を読む、集計を増やすワードは「行動(action)」と見なすことができます。"
+
+#: ../../chapter1.rst:1101
 msgid ""
 "Forth conveniently separates “things” from “actions” by allowing "
 "addresses of data structures to be passed on the stack and providing the "
 "“fetch” and “store” commands."
 msgstr ""
+"Forthは、データ構造のアドレスをスタックに渡すのを許可することで、 "
+"「読み込み(fetch)」と「格納(store)」コマンドを提供することで、 「もの」と 「アクション」を便利に分離しています。"
 
-#: ../../chapter1.rst:1104
+#: ../../chapter1.rst:1105
 msgid ""
 "We’ve discussed the importance of designing around things that may "
-"change. Suppose we’ve written a lot of code using this variable APPLES. "
-"And now, at the eleventh hour, we discover that we must keep track of two"
-" different kinds of apples, red and green!"
+"change. Suppose we’ve written a lot of code using this variable "
+"``APPLES``. And now, at the eleventh hour, we discover that we must keep "
+"track of two different kinds of apples, red and green!"
 msgstr ""
+"変化する可能性があるものを中心に設計することの重要性について説明しました。 この変数 ``APPLES`` "
+"を使ってその後たくさんのコードを書いたとしましょう。 そして今、赤と緑の2種類のリンゴを追跡しなければならないことがわかりました。"
 
-#: ../../chapter1.rst:1109
+#: ../../chapter1.rst:1110
 msgid ""
-"We needn’t wring our hands, but rather remember the function of APPLES: "
-"to provide an address. If we need two separate tallies, APPLES can supply"
-" two different addresses depending on which kind of apple we’re currently"
-" talking about. So we define a more complicated version of APPLES as "
-"follows:"
+"We needn’t wring our hands, but rather remember the function of "
+"``APPLES``: to provide an address. If we need two separate tallies, "
+"``APPLES`` can supply two different addresses depending on which kind of "
+"apple we’re currently talking about. So we define a more complicated "
+"version of ``APPLES`` as follows:"
 msgstr ""
+"私たちは固唾を飲む必要はありません。 ``APPLES`` "
+"の機能を思い出してください。それはアドレスを提供することです。2つの別々の集計が必要なら、 ``APPLES`` "
+"はりんごの種類に応じて2つの異なるアドレスを提供できます。ですから私たちは以下のように ``APPLES`` のより複雑なバージョンを定義します。"
 
-#: ../../chapter1.rst:1130
+#: ../../chapter1.rst:1131
 msgid "Changing the indirect pointer."
-msgstr ""
+msgstr "間接ポインタの変更"
 
-#: ../../chapter1.rst:1134
+#: ../../chapter1.rst:1135
 msgid ""
-"Here we’ve redefined APPLES. Now it fetches the contents of a variable "
-"called COLOR. COLOR is a pointer, either to the variable REDS or to the "
-"variable GREENS. These two variables are the real tallies."
+"Here we’ve redefined ``APPLES.`` Now it fetches the contents of a "
+"variable called ``COLOR``. ``COLOR`` is a pointer, either to the variable"
+" ``REDS`` or to the variable ``GREENS``. These two variables are the real"
+" tallies."
 msgstr ""
+"ここで、 ``APPLES`` は再定義されました。これで ``COLOR`` という変数の内容を取得します。 ``COLOR`` は、変数 "
+"``REDS`` か、変数 ``GREENS`` を指すポインタです。``REDS`` と ``GREENS`` は実際に集計を格納する変数です。"
 
-#: ../../chapter1.rst:1139
+#: ../../chapter1.rst:1140
 msgid ""
-"If we first say RED, then we can use APPLES to refer to red apples. If we"
-" say GREEN, we can use it to refer to green apples ( :numref:`fig1-10` )."
+"If we first say ``RED``, then we can use ``APPLES`` to refer to red "
+"apples. If we say ``GREEN``, we can use it to refer to green apples ( "
+":numref:`fig1-10` )."
 msgstr ""
+"最初に ``RED`` と言えば、 ``APPLES`` を赤いりんごを参照するために使うことができます。もし ``GREEN`` "
+"と言えば、緑のりんごを参照するために使う事ができます( :numref:`fig1-10` )。"
 
-#: ../../chapter1.rst:1143
+#: ../../chapter1.rst:1144
 msgid ""
 "We didn’t need to change the syntax of any existing code that uses "
-"APPLES. We can still say"
-msgstr ""
+"``APPLES``. We can still say"
+msgstr "``APPLES`` を使う既存のコードの文法を変更する必要はありませんでした。私たちは依然として、"
 
-#: ../../chapter1.rst:1152
+#: ../../chapter1.rst:1153
 msgid "and"
-msgstr ""
+msgstr "や、"
 
-#: ../../chapter1.rst:1160
+#: ../../chapter1.rst:1161
 msgid ""
-"Look again at what we did. We changed the definition of APPLES from that "
-"of a variable to a colon definition, without affecting its usage. Forth "
-"allows us to hide the details of how APPLES is defined from the code that"
-" uses it. What appears to be “thing” (a variable) to the original code is"
-" actually defined as an “action” (a colon definition) within the "
-"component."
+"Look again at what we did. We changed the definition of ``APPLES`` from "
+"that of a variable to a colon definition, without affecting its usage. "
+"Forth allows us to hide the details of how ``APPLES`` is defined from the"
+" code that uses it. What appears to be “thing” (a variable) to the "
+"original code is actually defined as an “action” (a colon definition) "
+"within the component."
 msgstr ""
+"と書く事ができます。\n"
+"私たちがやったことをもう一度見返してください。私たちは、使い方に影響を与えること無く ``APPLES`` "
+"の定義を変数からコロン定義に変更しました。Forthでは、 ``APPLES`` の定義方法の詳細を、 "
+"それを使用するコードから隠すことができます。元のコードからは「もの」として見えているものは、実際にはコンポーネント内では「アクション」(コロン定義)として定義されています。"
 
-#: ../../chapter1.rst:1167
+#: ../../chapter1.rst:1168
 msgid ""
 "Forth encourages the use of abstract data types by allowing data "
 "structures to be defined in terms of lower level components. Only Forth, "
 "which eliminates the CALLs from procedures, which allows addresses and "
 "data to be implicitly passed via the stack, and which provides direct "
-"access to memory locations with @ and !, can offer this level of "
+"access to memory locations with ``@`` and ``!``, can offer this level of "
 "information-hiding."
 msgstr ""
+"Forthは、データ構造を低レベルのコンポーネントの観点から定義できるようにすることで、抽象データ型の使用を推奨しています。手続きからCALLを排除し、アドレスとデータを暗黙的にスタック経由で渡し、"
+" ``@`` や ``!`` を使ってメモリ位置に直接アクセスできるForthだけが、このレベルの情報隠蔽を提供できます。"
 
-#: ../../chapter1.rst:1174
+#: ../../chapter1.rst:1175
 msgid ""
 "Forth pays little attention to whether something is a data structure or "
 "an algorithm. This indifference allows us programmers incredible freedom "
 "in creating the parts of speech we need to describe our applications."
 msgstr ""
+"Forthは何かがデータ構造なのかアルゴリズムなのかにはほとんど注意を払いません。 "
+"この無関心はアプリケーションを記述するのに必要な部品を作成する際に、信じられないほどの自由をプログラマーに許します"
 
-#: ../../chapter1.rst:1178
+#: ../../chapter1.rst:1179
 msgid ""
-"I tend to think of any word which returns an address, such as APPLES, as "
-"a “noun,” regardless of how it’s defined. A word that performs an obvious"
-" action is a “verb.”"
+"I tend to think of any word which returns an address, such as ``APPLES``,"
+" as a “noun,” regardless of how it’s defined. A word that performs an "
+"obvious action is a “verb.”"
 msgstr ""
+"私は、どのように定義されているかに関わらず、 ``APPLES`` "
+"のようなアドレスを返すワードを「名詞」と考える傾向があります。明白なアクションをとるワードは「動詞」です。"
 
-#: ../../chapter1.rst:1182
+#: ../../chapter1.rst:1183
 msgid ""
-"Words such as RED and GREEN in our example can only be called "
-"“adjectives” since they modify the function of APPLES. The phrase"
+"Words such as ``RED`` and ``GREEN`` in our example can only be called "
+"“adjectives” since they modify the function of ``APPLES``. The phrase"
 msgstr ""
+"この例の ``RED`` や ``GREEN`` のようなワードは、 ``APPLES`` "
+"の機能を変更するため、「形容詞」としか呼ぶことができません。次のフレーズ、"
 
-#: ../../chapter1.rst:1191
+#: ../../chapter1.rst:1192
 msgid "is different from"
-msgstr ""
+msgstr "は、以下とは違います。"
 
-#: ../../chapter1.rst:1199
+#: ../../chapter1.rst:1200
 msgid ""
 "Forth words can also serve as adverbs and prepositions. There’s little "
 "value in trying to determine what part of speech a particular word is, "
 "since Forth doesn’t care anyway. We need only enjoy the ease of "
 "describing an application in natural terms."
 msgstr ""
+"Forthのワードは副詞や前置詞としても使用できます。 "
+"Forthはとにかく気にしないので、特定のワードがどの品詞であるか判断するのはほとんど意味がありません。 "
+"アプリケーションを自然な言葉で説明することの容易さをただただ楽しんでください。"
 
-#: ../../chapter1.rst:1206
+#: ../../chapter1.rst:1207
 msgid "But Is It a High-Level Language?"
-msgstr ""
+msgstr "でもそれって高級言語なの？"
 
-#: ../../chapter1.rst:1208
+#: ../../chapter1.rst:1209
 msgid ""
 "In our brief technical overview, we noted that traditional high-level "
 "languages broke away from assembly-language by eliminating not only the "
@@ -1547,54 +1787,60 @@ msgid ""
 " also the *linear* correspondence. Clearly Forth lays claim to the first "
 "difference; but regarding the second, the order of words that you use in "
 "a definition is the order in which those commands are compiled."
-msgstr ""
+msgstr "短い技術概要では、伝統的な高級言語は、コマンドと機械操作の間の「1対1」の対応だけでなく、「直線形」な対応も排除することによってアセンブリ言語からへだたっていることに注目しました。明らかにForthは「1対1」の対応ではありません。しかし、「直線形」な対応に関しては、定義で使用するワードの順序はそれらのコマンドがコンパイルされる順序です。"
 
-#: ../../chapter1.rst:1215
+#: ../../chapter1.rst:1216
 msgid ""
 "Does this disqualify Forth from the ranks of high-level languages? Before"
 " we answer, let’s explore the advantages of the Forth approach."
-msgstr ""
+msgstr "Forthは高級言語水準に達してないのでしょうか？　答える前に、Forthアプローチの利点を探検してみましょう。"
 
-#: ../../chapter1.rst:1222
+#: ../../chapter1.rst:1223
 msgid "Two points of view."
-msgstr ""
+msgstr "2つの視点"
 
-#: ../../chapter1.rst:1239
+#: ../../chapter1.rst:1240
 msgid "Here\\'s what **Charles Moore**, the inventor of Forth, has to say:"
-msgstr ""
+msgstr "Forthの発明者である **チャールズ・ムーア** は以下のように述べています："
 
-#: ../../chapter1.rst:1227
+#: ../../chapter1.rst:1228
 msgid ""
 "You define each word so that the computer knows what it means. The way it"
 " knows is that it executes some code as a consequence of being invoked. "
 "The computer takes an action on every word. It doesn\\'t store the word "
 "away and keep it in mind for later."
-msgstr ""
+msgstr "あなたは各ワードを定義して、コンピュータがその意味を理解できるようにします。それが知っている方法は、それが呼び出されたら何らかのコードを実行するということです。コンピュータは全てのワードに対してアクションします。それはワードから去りワードを保存せず、心にも留めません。"
 
-#: ../../chapter1.rst:1232
+#: ../../chapter1.rst:1233
 msgid ""
 "In a philosophical sense I think this means that the computer "
 "\"understands\" a word. It understands the word ``DUP`` , perhaps more "
 "profoundly than you do, because there\\'s never any question in its mind "
 "what ``DUP`` means."
 msgstr ""
+"哲学的な意味で、これはコンピュータがワードを「理解する」ことを意味していると思います。コンピュータは、おそらくあなたよりももっと深く "
+"``DUP`` というワードを理解しています。なぜなら ``DUP`` の意味について頭の中には何の疑問も無いからです。"
 
-#: ../../chapter1.rst:1237
+#: ../../chapter1.rst:1238
 msgid ""
 "The connection between words that have meaning to you and words that have"
 " meaning to the computer is a profound one. The computer becomes the "
 "vehicle for communication between human being and concept."
 msgstr ""
+"あなたにとって意味のあるワードとコンピュータにとって意味のあるワードとの間のつながりは深遠なものです。 "
+"コンピュータは、人間と概念の間のコミュニケーションの手段となります。"
 
-#: ../../chapter1.rst:1241
+#: ../../chapter1.rst:1242
 msgid ""
 "One advantage of the correspondence between source code and machine "
 "execution is the tremendous simplification of the compiler and "
 "interpreter. This simplification improves performance in several ways, as"
 " we’ll see in a later section."
 msgstr ""
+"ソースコードと機械実行の間の対応の1つの利点は、コンパイラとインタプリタが非常に単純化されていることです。 "
+"後の節で説明するように、この単純化によっていくつかの点で性能が向上します。"
 
-#: ../../chapter1.rst:1246
+#: ../../chapter1.rst:1247
 msgid ""
 "From the standpoint of programming methodology, the advantage to the "
 "Forth approach is that *new* words and *new* syntaxes can easily be "
@@ -1603,8 +1849,11 @@ msgid ""
 "well. There’s no difference between existing words and words that you "
 "add."
 msgstr ""
+"プログラミング方法論の観点からは、Forthアプローチの利点は「新しい」ワードと「新しい」文法を簡単に追加できることです。 "
+"Forthはワードを「見つける」とは言えません。ワードを探し出して実行します。 "
+"新しいワードを追加すると、Forthはそれらも探し出して実行します。 既存のワードと追加したワードに違いはありません。"
 
-#: ../../chapter1.rst:1253
+#: ../../chapter1.rst:1254
 msgid ""
 "What’s more, this “extensibility” applies to all types of words, not just"
 " action-type functions. For instance, Forth allows you to add new "
@@ -1613,8 +1862,11 @@ msgid ""
 " if you need them, or, just as importantly, take them out if you don’t "
 "need them."
 msgstr ""
+"さらに、この「拡張性」は、アクション型の機能だけでなく、あらゆる種類のワードに適用されます。 "
+"例えば、Forthでは、構造化された制御フローを提供する ``IF`` や ``THEN`` "
+"のような新しい「コンパイル」ワードを追加することができます。必要に応じてcase文や複数出口ループを簡単に追加できます。あるいは、必要でなければそれらを削除することもできます。"
 
-#: ../../chapter1.rst:1260
+#: ../../chapter1.rst:1261
 msgid ""
 "By contrast, any language that depends on word order to understand a "
 "statement must “know” all legal words and all legal combinations. Its "
@@ -1622,8 +1874,10 @@ msgid ""
 " exists as determined by its manufacturer; you can’t extend its "
 "knowledge."
 msgstr ""
+"それとは対照的に、文を理解するために語順に依存するすべての言語は、すべての有効な単語およびすべての有効な組み合わせを「知っている」必要があります。"
+" あなたが望むすべての構成を含む可能性はわずかです。 製造元によって決め打ちされた言語が存在するだけです。知識を広げることはできません。"
 
-#: ../../chapter1.rst:1266
+#: ../../chapter1.rst:1267
 msgid ""
 "Laboratory researchers cite flexibility and extensibility as among "
 "Forth’s most important benefits in their environment. Lexicons can be "
@@ -1633,8 +1887,12 @@ msgid ""
 "toolbox” of small words to write simple programs for experimentation. As "
 "new equipment appears, new lexicons are added."
 msgstr ""
+"実験室の研究者は、研究環境におけるForthの最も重要な利点の1つとして、柔軟性と拡張性を挙げています。 "
+"コンピュータに接続されているさまざまなテスト機器に関する情報を隠すために、用語集を開発することができます。 "
+"この作業がより経験豊富なプログラマーによって行われると、研究者は実験用の簡単なプログラムを書くために少数のワードによる「ソフトウェアツールボックス」を自由に使用することができます。"
+" 新しい機器が登場すると、新しい用語集が追加されます。"
 
-#: ../../chapter1.rst:1274
+#: ../../chapter1.rst:1275
 msgid ""
 "Mark Bernstein  has described the problem of using an off-the-shelf "
 "special-purpose procedure library in the laboratory [bern83]_ : “The "
@@ -1644,64 +1902,71 @@ msgid ""
 "equipment. Initiative becomes once more the prerogative of the "
 "researcher.”"
 msgstr ""
+"Mark Bernsteinは、研究室で既製の特殊目的手続きライブラリを使用することの問題を説明しています( [bern83]_ "
+")。曰く、「ユーザーではなく、コンピューターが実験を支配します」。しかしForthでは、彼曰く、「コンピュータは実際、研究者自身が、ソフトウェアを変更、修復、改良し、彼らの機器で実験し特性を測るのを励ましてくれます。再び研究者が主導権を握ります」。"
 
-#: ../../chapter1.rst:1287
+#: ../../chapter1.rst:1288
 msgid "Two solutions to the problem of security."
-msgstr ""
+msgstr "セキュリティ問題の2つの解決策"
 
-#: ../../chapter1.rst:1291
+#: ../../chapter1.rst:1292
 msgid ""
 "For those purists who believe Forth isn’t fit to be called a high-level "
 "language, Forth makes matters even worse. While strong syntax checking "
 "and data typing are becoming one of the major thrusts of contemporary "
 "programming languages, Forth does almost no syntax checking at all. In "
 "order to provide the kind of freedom and flexibility we have described, "
-"it cannot tell you that you meant to type RED APPLES instead of APPLES "
-"RED. You have just invented syntax!"
+"it cannot tell you that you meant to type ``RED APPLES`` instead of "
+"``APPLES RED``. You have just invented syntax!"
 msgstr ""
+"Forthが高級言語と呼ばれるのに適していないと信じる純粋主義者にとって、Forthは問題をさらに悪化させます。強力な文法チェックとデータ型指定が現代のプログラミング言語の主要な推進力の1つになりつつありますが、Forthはほとんど文法チェックをしません。"
+" 説明した自由度と柔軟性の種類を説明するために、 ``APPLES RED`` の代わりに ``RED APPLES`` "
+"とタイプするつもりだったと言うことはできません。あなたはたった今、文法を発明したばかりなのですから。"
 
-#: ../../chapter1.rst:1299
+#: ../../chapter1.rst:1300
 msgid ""
 "Yet Forth more than makes up for its omission by letting you compile each"
 " definition, one at a time, with turnaround on the order of seconds. You "
 "discover your mistake soon enough when the definition doesn’t work. In "
 "addition, you can add appropriate syntax checking in your definitions if "
 "you want to."
-msgstr ""
+msgstr "それでも、Forthでは各定義を一度に一つづつ、秒単位のターンアラウンドでコンパイルさせることで、その抜け漏れを補う以上の効果があります。定義がうまくいかないときにはすぐに間違いを発見するでしょう。さらに必要に応じて、定義に適切な文法チェックを追加できます。"
 
-#: ../../chapter1.rst:1305
+#: ../../chapter1.rst:1306
 msgid ""
 "An artist’s paintbrush doesn’t notify the artist of a mistake; the "
 "painter will be the judge of that. The chef’s skillet and the composer’s "
 "piano remain simple and yielding. Why let a programming language try to "
 "out think you?"
-msgstr ""
+msgstr "画家の絵筆は、画家に間違いを通知したりはしません。画家がそれを判断します。シェフのフライパンや作曲家のピアノはシンプルで柔軟なままです。なぜあなたはプログラミング言語に考えさせようとするのでしょうか？"
 
-#: ../../chapter1.rst:1310
+#: ../../chapter1.rst:1311
 msgid ""
 "So is Forth a high-level language? On the question of syntax checking, it"
 " strikes out. On the question of abstraction and power, it seems to be of"
 " *infinite* level—supporting everything from bit manipulation at an "
 "output port to business applications."
 msgstr ""
+"では、Forthは高級言語なのでしょうか？　"
+"文法チェックの問題ではそれは際立っています。抽象化とパワーの問題ではそれは「無限大」レベルのように思えます。出力ポートでのビット操作からビジネスアプリケーションまで全てをサポートします。"
 
-#: ../../chapter1.rst:1316
+#: ../../chapter1.rst:1317
 msgid "You decide. (Forth doesn’t care.)"
-msgstr ""
+msgstr "あなたが決めるのです(Forthは気にしません)。"
 
-#: ../../chapter1.rst:1319
+#: ../../chapter1.rst:1320
 msgid "The Language of Design"
-msgstr ""
+msgstr "設計言語"
 
-#: ../../chapter1.rst:1321
+#: ../../chapter1.rst:1322
 msgid ""
 "Forth is a design language. To the student of traditional computer "
 "science, this statement is self-contradictory. “One doesn’t design with a"
 " language, one implements with a language. Design precedes "
 "implementation.”"
-msgstr ""
+msgstr "Forthは設計言語です。伝統的なコンピュータ科学の学生にとって、この言葉は矛盾しています。「言語で設計するのではなく、言語で実装するのです。設計は実装よりも優先されます」。"
 
-#: ../../chapter1.rst:1327
+#: ../../chapter1.rst:1328
 msgid ""
 "Experienced Forth programmers disagree. In Forth you can write abstract, "
 "design-level code and still be able to test it at any time by taking "
@@ -1711,15 +1976,18 @@ msgid ""
 "instead of controlling stepper motors. They may print their own names "
 "just to let you know they’ve executed. They may do nothing at all."
 msgstr ""
+"ベテランのForthプログラマは同意しません。Forthでは抽象的な設計レベルのコードを書くことができ、用語集への分解を徹底することで、それをいつでもテストする事が可能です。"
+" "
+"開発が進むにつれて、抽象的な設計レベルのコードを使用するコンポーネントの下にあるコンポーネントは簡単に書き換えることができます。最初はコンポーネント内のワードがステッピングモーターを制御する代わりにあなたの端末に数字をプリントするかもしれません。それらはそれら自身が実行されたことを知らせるために自身の名前をプリントするかもしれません。それらは何もしないかもしれません。"
 
-#: ../../chapter1.rst:1335
+#: ../../chapter1.rst:1336
 msgid ""
 "Using this philosophy you can write a simple but testable version of your"
 " application, then successively change and refine it until you reach your"
 " goal."
-msgstr ""
+msgstr "この哲学を使用して、あなたはアプリケーションのシンプルだがテスト可能なバージョンを書くことができ、目標に到達するまで連続的に変更し洗練させることができる。"
 
-#: ../../chapter1.rst:1339
+#: ../../chapter1.rst:1340
 msgid ""
 "Another factor that makes designing in code possible is that Forth, like "
 "some of the newer languages, eliminates the “batch-compile” development "
@@ -1729,8 +1997,11 @@ msgid ""
 "productive state of mind that artists achieve when the creative current "
 "flows unhindered."
 msgstr ""
+"コードでの設計を可能にするもう1つの要因は、Forthが、いくつかの新しい言語のように、「バッチ-コンパイル」開発シーケンス(編集-コンパイル-テスト-編集-コンパイル-テスト...)を排除することです。"
+" フィードバックは瞬時に行われるため、この媒体はクリエイティブプロセスのパートナーになります。 "
+"バッチコンパイラ言語を使用しているプログラマーは、クリエイティブな流れが妨げなく流れるときにアーティストが到達する生産的な気分になることはめったにありません。"
 
-#: ../../chapter1.rst:1348
+#: ../../chapter1.rst:1349
 msgid ""
 "For these reasons, Forth programmers spend less time planning than their "
 "classical counterparts, who feel righteous about planning. To them, not "
@@ -1738,97 +2009,115 @@ msgid ""
 " programmers to plan because traditional programming languages do not "
 "readily accommodate change."
 msgstr ""
+"これらの理由から、Forthのプログラマーは、計画することが正しいと感じる古臭い人たちよりも計画に費やす時間が少なくてすみます。彼らにとって、計画していないのは無謀で無責任な事です。"
+" 伝統的なプログラミング言語は変化に容易に対応できないため、伝統的な環境はプログラマに計画することを強いるのです。"
 
-#: ../../chapter1.rst:1354
+#: ../../chapter1.rst:1355
 msgid ""
 "Unfortunately, human foresight is limited even under the best conditions."
 " Too much planning becomes counterproductive."
-msgstr ""
+msgstr "残念なことに、人間の先見の明は最良の条件下でも限定されたものです。計画が多すぎると逆効果になります。"
 
-#: ../../chapter1.rst:1357
+#: ../../chapter1.rst:1358
 msgid ""
 "Of course Forth doesn’t eliminate planning. It allows prototyping. "
 "Constructing a prototype is a more refined way to plan, just as "
 "breadboarding is in electronic design."
-msgstr ""
+msgstr "もちろんForthは計画を排除している訳ではありません。試作を許しています。試作することは、電子設計のブレッドボードと同様に、計画するためのより洗練された方法です。"
 
-#: ../../chapter1.rst:1362
+#: ../../chapter1.rst:1363
 msgid ""
 "As we’ll see in the next chapter, experimentation proves more reliable in"
 " arriving at the truth than the guesswork of planning."
-msgstr ""
+msgstr "次の章に見るように、実験は計画の当て推量よりも真実にたどり着くためにより信頼できることを証明します。"
 
-#: ../../chapter1.rst:1367
+#: ../../chapter1.rst:1368
 msgid "The Language of Performance"
-msgstr ""
+msgstr "性能の言語"
 
-#: ../../chapter1.rst:1369
+#: ../../chapter1.rst:1370
 msgid ""
 "Although performance is not the main topic of this book, the newcomer to "
 "Forth should be reassured that its advantages aren’t purely "
 "philosophical. Overall, Forth outdoes all other high-level languages in "
 "speed, capability and compactness."
-msgstr ""
+msgstr "性能はこの本の主なトピックではりませんが、Forthの初心者は、Forthの利点が純粋に哲学的なものだけではないことに安心して下さい。全体的に、Forthは他の全ての高級言語を、スピード・機能・コンパクトさで上回っています。"
 
-#: ../../chapter1.rst:1375
+#: ../../chapter1.rst:1376
 msgid "Speed"
-msgstr ""
+msgstr "スピード"
 
-#: ../../chapter1.rst:1377
+#: ../../chapter1.rst:1378
 msgid ""
 "Although Forth is an interpretive language, it executes compiled code. "
 "Therefore it runs about ten times faster than interpretive BASIC."
-msgstr ""
+msgstr "Forthはインタプリタ言語ですが、コンパイルされたコードを実行します。したがって、インタプリタBASICよりも10倍高速に実行されます。"
 
-#: ../../chapter1.rst:1380
+#: ../../chapter1.rst:1381
 msgid ""
 "Forth is optimized for the execution of words by means of a technique "
 "known as “threaded code” [bell72]_ , [dewar]_ , [kogge82]_ . The penalty "
 "for modularizing into very small pieces of code is relatively slight."
-msgstr ""
+msgstr "Forthは、 「スレッド化コード」として知られている手法によって、ワードの実行に最適化されています( [bell72]_ 、 [dewar]_ 、 [kogge82]_ )。非常に小さなコードにモジュール化することによるペナルティは比較的わずかです。"
 
-#: ../../chapter1.rst:1385
-#, python-format
+#: ../../chapter1.rst:1386
 msgid ""
 "It does not run as fast as assembler code because the inner interpreter "
 "(which interprets the list of addresses that comprise each colon "
-"definition) may consume up to 50% of the run time of primitive words, "
+"definition) may consume up to 50\\% of the run time of primitive words, "
 "depending on the processor."
 msgstr ""
+"内部インタプリタ(各コロン定義を構成するアドレスのリストを解釈する)は、\n"
+"プロセッサによっては、\n"
+"プリミティブワードの実行時間の最大50％を消費する可能性があるため、\n"
+"アセンブラコードほど速くは実行されません。"
 
-#: ../../chapter1.rst:1390
+#: ../../chapter1.rst:1391
 msgid ""
 "But in large applications, Forth comes very close to the speed of "
 "assembler. Here are three reasons:"
-msgstr ""
+msgstr "しかし、大規模なアプリケーションでは、Forthはアセンブラの速度に非常に近くなります。 これには3つの理由があります。"
 
-#: ../../chapter1.rst:1393
+#: ../../chapter1.rst:1394
 msgid ""
 "First and foremost, Forth is simple. Forth’s use of a data stack greatly "
 "reduces the performance cost of passing arguments from word to word. In "
 "most languages, passing arguments between modules is one of the main "
 "reasons that the use of subroutines inhibits performance."
 msgstr ""
+"最初にして傑出していることは、Forthはシンプルです。Forthがデータスタックを使用することで、あるワードの引数を別のワードへ渡すことによるパフォーマンスコストが大幅に削減されます。"
+" ほとんどの言語では、サブルーチンを利用するときにモジュール間で引数を渡すことがパフォーマンスが低下する主な理由の1つになっています。"
 
-#: ../../chapter1.rst:1399
-#, python-format
+#: ../../chapter1.rst:1400
 msgid ""
 "Second, Forth allows you to define words either in high-level or in "
 "machine language. Either way, no special calling sequence is needed. You "
 "can write a new definition in high level and, having verified that it is "
 "correct, rewrite it in assembler without changing any of the code that "
-"uses it. In a typical application, perhaps 20% of the code will be "
-"running 80% of the time. Only the most often used, time-critical routines"
-" need to be machine coded. The Forth system itself is largely implemented"
-" in machine-code definitions, so you’ll have few application words that "
-"need to be coded in assembler."
+"uses it. In a typical application, perhaps 20\\% of the code will be "
+"running 80\\% of the time. Only the most often used, time-critical "
+"routines need to be machine coded. The Forth system itself is largely "
+"implemented in machine-code definitions, so you’ll have few application "
+"words that need to be coded in assembler."
 msgstr ""
+"第二に、\n"
+"Forthはあなたが高級言語でも機械語でもワードを定義することを可能にします。\n"
+"どちらの方法でも、特別な呼び出しシーケンスは必要ありません。\n"
+"新しい定義を高レベルで記述し、それが正しいことを確認したら、\n"
+"それを使用するコードを変更することなくアセンブラーでそれを書き直す\n"
+"ことができます。 典型的なアプリケーションでは、\n"
+"おそらくコードの20\\%が実行時間の80\\%を占めるでしょう。\n"
+"マシンコード化する必要があるのは、\n"
+"最も頻繁に使用されるタイムクリティカルなルーチンだけです。\n"
+"Forthシステム自体は大部分がマシンコード定義で実装されているので、\n"
+"アセンブラでコーディングする必要がある\n"
+"アプリケーションワードはほとんどありません。"
 
-#: ../../chapter1.rst:1413
+#: ../../chapter1.rst:1414
 msgid "The best top-down designs of mice and young men."
-msgstr ""
+msgstr "ベストなおしゃべりのトップダウン設計と若者"
 
-#: ../../chapter1.rst:1417
+#: ../../chapter1.rst:1418
 msgid ""
 "Third, Forth applications tend to be better designed than those written "
 "entirely in assembler. Forth programmers take advantage of the language’s"
@@ -1836,44 +2125,50 @@ msgid ""
 "on the one best suited for their needs. Because Forth encourages change, "
 "it can also be called the language of optimization."
 msgstr ""
+"第三に、Forthアプリケーションは完全にアセンブラで書かれたものよりも\n"
+"よい設計になる傾向があります。 Forthプログラマは、言語の試作機能を\n"
+"利用して、いくつかのアルゴリズムを試してから、自分のニーズに最も\n"
+"適したものを選びます。 Forthは変更を奨励するため、\n"
+"最適化の言語とも呼ばれます。"
 
-#: ../../chapter1.rst:1423
+#: ../../chapter1.rst:1424
 msgid ""
 "Forth doesn’t guarantee fast applications. It does give the programmer a "
 "creative environment in which to design fast applications."
-msgstr ""
+msgstr "Forthは高速アプリケーションを保証しません。 それはプログラマに速いアプリケーションを設計するための創造的な環境を与えます。"
 
-#: ../../chapter1.rst:1428
+# 将来性、可能性
+#: ../../chapter1.rst:1429
 msgid "Capability"
-msgstr ""
+msgstr "可能性"
 
-#: ../../chapter1.rst:1430
+#: ../../chapter1.rst:1431
 msgid "Forth can do anything any other language can do—usually easier."
-msgstr ""
+msgstr "Forthは他の言語でできることなら何でもできます。通常はもっと簡単にできます。"
 
-#: ../../chapter1.rst:1434
+#: ../../chapter1.rst:1435
 msgid ""
 "At the low end, nearly all Forth systems include assemblers. These "
 "support control-structure operators for writing conditionals and loops "
 "using structured programming techniques. They usually allow you to write "
 "interrupts—you can even write interrupt code in high level if desired."
-msgstr ""
+msgstr "ローエンドでは、ほとんどすべてのForthシステムにアセンブラが含まれています。 これらは、構造化プログラミング技法を使用して条件文とループを書くための制御構造演算子をサポートします。 通常は割り込みを書くことができます。必要に応じて割り込みコードを高レベルで書くこともできます。"
 
-#: ../../chapter1.rst:1440
+#: ../../chapter1.rst:1441
 msgid ""
 "Some Forth systems are multitasked, allowing you to add as many "
 "foreground or background tasks as you want."
-msgstr ""
+msgstr "いくつかのForthシステムはマルチタスクで、あなたが望むだけ多くのフォアグラウンドまたはバックグラウンドタスクを追加することを可能にします。"
 
-#: ../../chapter1.rst:1443
+#: ../../chapter1.rst:1444
 msgid ""
 "Forth can be written to run on top of any operating system such as RT-11,"
 " CP/M, or MS-DOS—or, for those who prefer it, Forth can be written as a "
 "self-sufficient operating system including its own terminal drivers and "
 "disk drivers."
-msgstr ""
+msgstr "Forthは、RT-11、CP/M、またはMS-DOSなどの任意のオペレーティングシステム上で実行するように書くことができます。または、Forthは自身の端末ドライバやディスクドライバを含む自給自足オペレーティングシステムとして書くことができます。"
 
-#: ../../chapter1.rst:1448
+#: ../../chapter1.rst:1449
 msgid ""
 "With a Forth cross-compiler or target compiler, you can use Forth to "
 "recreate new Forth systems, for the same computer or for different "
@@ -1881,19 +2176,19 @@ msgid ""
 "unthinkable opportunity to rewrite the operating system according to the "
 "needs of your application. Or you can transport streamlined versions of "
 "applications over to embedded systems."
-msgstr ""
+msgstr "Forthクロスコンパイラまたはターゲットコンパイラでは、Forthを使用して、同じコンピュータ用または異なるコンピュータ用に新しいForthシステムを再作成できます。 ForthはForthで書かれているので、あなたはアプリケーションの必要性に従ってオペレーティングシステムを書き直すという、他では考えられないチャンスがあります。あるいは、最適化したバージョンのアプリケーションを組み込みシステムに転送することもできます。"
 
-#: ../../chapter1.rst:1458
+#: ../../chapter1.rst:1459
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
-#: ../../chapter1.rst:1460
+#: ../../chapter1.rst:1461
 msgid ""
 "There are two considerations here: the size of the root Forth system, and"
 " the size of compiled Forth applications."
-msgstr ""
+msgstr "ここで考慮すべき点が2つあります。根元のForthシステムのサイズとコンパイル済みForthアプリケーションのサイズです。"
 
-#: ../../chapter1.rst:1464
+#: ../../chapter1.rst:1465
 msgid ""
 "The Forth nucleus is very flexible. In an embedded application, the part "
 "of Forth you need to run your application can fit in as little as 1K. In "
@@ -1902,17 +2197,17 @@ msgid ""
 " support utilities averages 16K. This leaves plenty of room for "
 "applications. (And some Forths on the newer processors handle 32-bit "
 "addressing, allowing unimaginably large programs.)"
-msgstr ""
+msgstr "Forthの核は非常に柔軟です。 組み込みアプリケーションでは、アプリケーションを実行するために必要なForthの部分は、わずか1Kに収まります。 完全な開発環境では、インタプリタ、コンパイラ、アセンブラ、エディタ、オペレーティングシステム、およびその他すべてのサポートユーティリティを含むマルチタスクForthシステムは平均16Kです。 ですからアプリケーションのための十分な余地が残っています(そして、新しいプロセッサ用Forthの中には、32ビットアドレッシングを処理するので、想像を絶するほど大きなプログラムを可能にするものもあります)。"
 
-#: ../../chapter1.rst:1473
+#: ../../chapter1.rst:1474
 msgid ""
 "Similarly, Forth compiled applications tend to be very small—usually "
 "smaller than equivalent assembly language programs. The reason, again, is"
 " threaded code. Each reference to a previously defined word, no matter "
 "how powerful, uses only two bytes."
-msgstr ""
+msgstr "同様に、Forthでコンパイルされたアプリケーションは非常に小さい傾向があります。通常、同等のアセンブリ言語プログラムよりも小さいです。 その理由もまた、スレッド化コードです。 定義済のワードへの各参照は、どんなに強力であっても、2バイトしか使用しません。"
 
-#: ../../chapter1.rst:1478
+#: ../../chapter1.rst:1479
 msgid ""
 "One of the most exciting new territories for Forth is the production of "
 "Forth chips such as the Rockwell R65F11 Forth-based microprocessor "
@@ -1920,137 +2215,152 @@ msgid ""
 "time portions of the Forth language and operating system for dedicated "
 "applications. Only Forth’s architecture and compactness make Forth-based "
 "micros possible."
-msgstr ""
+msgstr "Forthにとって最もエキサイティングな新しい領域の1つは、ロックウェル R65F11 ForthベースのマイクロプロセッサなどのForthチップの製造です。 [dumse]_ このチップには、ハードウェア機能だけでなく、Forth言語のランタイム部分および専用アプリケーション用のオペレーティングシステムも含まれています。 ForthのアーキテクチャとコンパクトさだけがForthベースのマイクロ化を可能にします。"
 
-#: ../../chapter1.rst:1488
+#: ../../chapter1.rst:1489
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
-#: ../../chapter1.rst:1490
+#: ../../chapter1.rst:1491
 msgid ""
 "Forth has often been characterized as offbeat, totally unlike any other "
 "popular language in structure or in philosophy. On the contrary, Forth "
 "incorporates many principles now boasted by the most contemporary "
 "languages. Structured design, modularity, and information-hiding are "
 "among the buzzwords of the day."
-msgstr ""
+msgstr "Forthは構造や哲学の点で他の一般的な言語とは全く違って、しばしば奇妙なものとして特徴付けられてきました。 そうではなくて、Forthは現在最も現代的な言語が自慢されている多くの原則を組み込んでいます。 構造化設計、モジュール性、そして情報隠蔽は、今日の流行語の1つです。"
 
-#: ../../chapter1.rst:1496
+#: ../../chapter1.rst:1497
 msgid ""
 "Some newer languages approach even closer to the spirit of Forth. The "
 "language C, for instance, lets the programmer define new functions either"
 " in C or in assembly language, as does Forth. And as with Forth, most of "
 "C is defined in terms of functions."
-msgstr ""
+msgstr "新しい言語の中には、Forthの精神にさらに近づくものがあります。 たとえば、C言語では、Forthと同様に、プログラマがCまたはアセンブリ言語のいずれかで新しい機能を定義できます。 そしてForthと同様に、Cの大部分は機能に関して定義されています。"
 
-#: ../../chapter1.rst:1501
+#: ../../chapter1.rst:1502
 msgid ""
 "But Forth extends the concepts of modularity and information-hiding "
 "further than any other contemporary language. Forth even hides the manner"
 " in which words are invoked and the way local arguments are passed."
-msgstr ""
+msgstr "しかし、Forthはモジュール性と情報隠蔽の概念を他の現代言語よりもさらに拡張しています。 Forthはワードが呼び出される方法やローカル引数が渡される方法を隠しさえします。"
 
-#: ../../chapter1.rst:1506
+#: ../../chapter1.rst:1507
 msgid ""
 "The resulting code becomes a concentrated interplay of words, the purest "
 "expression of abstract thought. As a result, Forth programmers tend to be"
 " more productive and to write tighter, more efficient, and better "
 "maintainable code."
-msgstr ""
+msgstr "結果のコードはワードの集中的な相互作用、抽象的な思考の最も純粋な表現になります。 その結果、Forthプログラマはより生産的になり、より短く、より効率的に、そしてより保守しやすいコードを書くようになります。"
 
-#: ../../chapter1.rst:1511
+#: ../../chapter1.rst:1512
 msgid ""
 "Forth may not be the ultimate language. But I believe the ultimate "
 "language, if such a thing is possible, will more closely resemble Forth "
 "than any other contemporary language."
-msgstr ""
+msgstr "Forthは究極の言語ではないかもしれません。 しかし、そのようなものがもしあれば、私は究極の言語は他の現代の言語よりもForthによく似ていると思います。"
 
-#: ../../chapter1.rst:1517
+#: ../../chapter1.rst:1518
 msgid "REFERNCES"
-msgstr ""
+msgstr "参考文献"
 
-#: ../../chapter1.rst:1519
+#: ../../chapter1.rst:1520
 msgid ""
 "Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  "
 "London, Academic Press, 1972."
 msgstr ""
+"Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  "
+"London, Academic Press, 1972."
 
-#: ../../chapter1.rst:1520
+#: ../../chapter1.rst:1521
 msgid ""
 "Niklaus Wirth, \"Program Development by StepwiseRefinement,\"  "
 "**Communications of ACM,**  14, No. 4 (1971), 221-27."
 msgstr ""
+"Niklaus Wirth, \"Program Development by StepwiseRefinement,\"  "
+"**Communications of ACM,**  14, No. 4 (1971), 221-27."
 
-#: ../../chapter1.rst:1521
+#: ../../chapter1.rst:1522
 msgid ""
 "Stevens, G. J. Myers, and L. L. Constantine,\"Structured Design,\"  **IBM"
 " Systems Journal,**  Vol. 13, No. 2, 1974."
 msgstr ""
+"Stevens, G. J. Myers, and L. L. Constantine,\"Structured Design,\"  **IBM"
+" Systems Journal,**  Vol. 13, No. 2, 1974."
 
-#: ../../chapter1.rst:1522
+#: ../../chapter1.rst:1523
 msgid ""
 "David L. Parnas, \"On the Criteria To Be Used inDecomposing Systems into "
 "Modules,\"  **Communications of the ACM,** December 1972."
 msgstr ""
-
-#: ../../chapter1.rst:1523
-msgid ""
-"Barbara H. Liskov and Stephen N. Zilles,\"Specification Techniques for "
-"Data Abstractions,\"  **IEEETransactions on Software Engineering,**  "
-"March 1975."
-msgstr ""
+"David L. Parnas, \"On the Criteria To Be Used inDecomposing Systems into "
+"Modules,\"  **Communications of the ACM,** December 1972."
 
 #: ../../chapter1.rst:1524
+msgid ""
+"Barbara H. Liskov and Stephen N. Zilles,\"Specification Techniques for "
+"Data Abstractions,\"  **IEEE Transactions on Software Engineering,**  "
+"March 1975."
+msgstr ""
+"Barbara H. Liskov and Stephen N. Zilles,\"Specification Techniques for "
+"Data Abstractions,\"  **IEEE Transactions on Software Engineering,**  "
+"March 1975."
+
+#: ../../chapter1.rst:1525
 msgid ""
 "David L. Parnas, \"Designing Software for Ease ofExtension and "
 "Contraction,\"  **IEEE Transactions on SoftwareEngineering,**  March "
 "1979."
 msgstr ""
+"David L. Parnas, \"Designing Software for Ease ofExtension and "
+"Contraction,\"  **IEEE Transactions on SoftwareEngineering,**  March "
+"1979."
 
-#: ../../chapter1.rst:1525
+#: ../../chapter1.rst:1526
 msgid ""
 "Dewey Val Shorre, \"Adding Modules to Forth,\"1980 FORML Proceedings, p. "
 "71."
 msgstr ""
+"Dewey Val Shorre, \"Adding Modules to Forth,\"1980 FORML Proceedings, p. "
+"71."
 
-#: ../../chapter1.rst:1526
+#: ../../chapter1.rst:1527
 msgid ""
 "Mark Bernstein, \"Programming in the Laboratory,\"  unpublished paper, "
 "1983."
 msgstr ""
+"Mark Bernstein, \"Programming in the Laboratory,\"  unpublished paper, "
+"1983."
 
-#: ../../chapter1.rst:1527
+#: ../../chapter1.rst:1528
 msgid ""
 "James R. Bell, \"Threaded Code,\"  **Communicationsof ACM,**  Vol. 16, "
 "No. 6, 370-72."
 msgstr ""
+"James R. Bell, \"Threaded Code,\"  **Communicationsof ACM,**  Vol. 16, "
+"No. 6, 370-72."
 
-#: ../../chapter1.rst:1528
+#: ../../chapter1.rst:1529
 msgid ""
 "Robert B. K. DeWar, \"Indirect Threaded Code,\" **Communications of "
 "ACM,**  Vol. 18, No. 6, 331."
 msgstr ""
+"Robert B. K. DeWar, \"Indirect Threaded Code,\" **Communications of "
+"ACM,**  Vol. 18, No. 6, 331."
 
-#: ../../chapter1.rst:1529
+#: ../../chapter1.rst:1530
 msgid ""
 "Peter M. Kogge, \"An Architectural Trail toThreaded-Code Systems,\"  "
 "**Computer,**  March, 1982."
 msgstr ""
+"Peter M. Kogge, \"An Architectural Trail toThreaded-Code Systems,\"  "
+"**Computer,**  March, 1982."
 
-#: ../../chapter1.rst:1530
+#: ../../chapter1.rst:1531
 msgid ""
 "Randy Dumse, \"The R65F11 Forth Chip,\"  **ForthDimensions,**  Vol. 5, "
 "No. 2, p. 25."
 msgstr ""
-
-#~ msgid ""
-#~ "This is structurally identical to the"
-#~ " procedure ``MAKE-BREAKFAST`` on page "
-#~ ":numref:`fig1-4` . (If you\\’re new to"
-#~ " Forth, refer to Appendix A for "
-#~ "an explanation). The words ``HURRIED?``, "
-#~ "``CEREAL``, ``EGGS``, and ``CLEAN`` are "
-#~ "(most likely) also defined as colon "
-#~ "definitions."
-#~ msgstr ""
+"Randy Dumse, \"The R65F11 Forth Chip,\"  **ForthDimensions,**  Vol. 5, "
+"No. 2, p. 25."
 

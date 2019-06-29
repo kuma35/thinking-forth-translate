@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-27 17:09+0900\n"
+"POT-Creation-Date: 2019-06-29 09:41+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -933,11 +933,11 @@ msgid "Applying the principles of good naming, I suggested:"
 msgstr ""
 
 #: ../../chapter6.rst:817
-msgid "allowing the syntax"
+msgid "allowing the syntax(``CONTEXT IS`` \\[:kbd:`Enter`\\])"
 msgstr ""
 
-#: ../../chapter6.rst:823 ../../chapter6.rst:1282
-msgid "or"
+#: ../../chapter6.rst:823
+msgid "or(``CURRENT IS`` \\[:kbd:`Enter`\\])"
 msgstr ""
 
 #: ../../chapter6.rst:829
@@ -1370,6 +1370,10 @@ msgstr ""
 msgid "This approach allows the syntax"
 msgstr ""
 
+#: ../../chapter6.rst:1282
+msgid "or"
+msgstr ""
+
 #: ../../chapter6.rst:1288
 msgid ""
 "By switching from an explicit value to a variable that contains a value, "
@@ -1660,5 +1664,14 @@ msgstr ""
 #~ "``MOTOR``, ``SOLENOID``, ``ON``, and ``OFF``)"
 #~ " could do the work of eight "
 #~ "badly-factored, hyphenated names."
+#~ msgstr ""
+
+#~ msgid "allowing the syntax"
+#~ msgstr ""
+
+#~ msgid "allowing the syntax(``CONTEXT IS`` :kbd:`Enter`)"
+#~ msgstr ""
+
+#~ msgid "or(``CURRENT IS`` :kbd:`Enter`)"
 #~ msgstr ""
 

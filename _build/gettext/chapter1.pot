@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-06-29 21:52+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -833,7 +833,7 @@ msgid "We’ve noted two inventions of Forth that make possible the methodology 
 msgstr ""
 
 #: ../../chapter1.rst:1059
-msgid "Suppose we define a variable called APPLES, like this:"
+msgid "Suppose we define a variable called ``APPLES``, like this:"
 msgstr ""
 
 #: ../../chapter1.rst:1068
@@ -841,7 +841,7 @@ msgid "We can store a number into this variable to indicate how many apples we c
 msgstr ""
 
 #: ../../chapter1.rst:1077
-msgid "We can display the contents of the variable:"
+msgid "We can display the contents of the variable(type ``APPLES ?`` \\[:kbd:`Enter`\\]):"
 msgstr ""
 
 #: ../../chapter1.rst:1085
@@ -849,354 +849,354 @@ msgid "We can up the count by one:"
 msgstr ""
 
 #: ../../chapter1.rst:1093
-msgid "(The newcomer can study the mechanics of these phrases in Appendix A.)"
+msgid "(The newcomer can study the mechanics of these phrases in :doc:`Appendix A<appendixa>`.)"
 msgstr ""
 
-#: ../../chapter1.rst:1095
-msgid "The word APPLES has but one function: to put on the stack the *address* of the memory location where the tally of apples is kept. The tally can be thought of as a “thing,” while the words that set the tally, read the tally, or increment the tally can be considered as “actions.”"
+#: ../../chapter1.rst:1096
+msgid "The word ``APPLES`` has but one function: to put on the stack the *address* of the memory location where the tally of apples is kept. The tally can be thought of as a “thing,” while the words that set the tally, read the tally, or increment the tally can be considered as “actions.”"
 msgstr ""
 
-#: ../../chapter1.rst:1100
+#: ../../chapter1.rst:1101
 msgid "Forth conveniently separates “things” from “actions” by allowing addresses of data structures to be passed on the stack and providing the “fetch” and “store” commands."
 msgstr ""
 
-#: ../../chapter1.rst:1104
-msgid "We’ve discussed the importance of designing around things that may change. Suppose we’ve written a lot of code using this variable APPLES. And now, at the eleventh hour, we discover that we must keep track of two different kinds of apples, red and green!"
+#: ../../chapter1.rst:1105
+msgid "We’ve discussed the importance of designing around things that may change. Suppose we’ve written a lot of code using this variable ``APPLES``. And now, at the eleventh hour, we discover that we must keep track of two different kinds of apples, red and green!"
 msgstr ""
 
-#: ../../chapter1.rst:1109
-msgid "We needn’t wring our hands, but rather remember the function of APPLES: to provide an address. If we need two separate tallies, APPLES can supply two different addresses depending on which kind of apple we’re currently talking about. So we define a more complicated version of APPLES as follows:"
+#: ../../chapter1.rst:1110
+msgid "We needn’t wring our hands, but rather remember the function of ``APPLES``: to provide an address. If we need two separate tallies, ``APPLES`` can supply two different addresses depending on which kind of apple we’re currently talking about. So we define a more complicated version of ``APPLES`` as follows:"
 msgstr ""
 
-#: ../../chapter1.rst:1130
+#: ../../chapter1.rst:1131
 msgid "Changing the indirect pointer."
 msgstr ""
 
-#: ../../chapter1.rst:1134
-msgid "Here we’ve redefined APPLES. Now it fetches the contents of a variable called COLOR. COLOR is a pointer, either to the variable REDS or to the variable GREENS. These two variables are the real tallies."
+#: ../../chapter1.rst:1135
+msgid "Here we’ve redefined ``APPLES.`` Now it fetches the contents of a variable called ``COLOR``. ``COLOR`` is a pointer, either to the variable ``REDS`` or to the variable ``GREENS``. These two variables are the real tallies."
 msgstr ""
 
-#: ../../chapter1.rst:1139
-msgid "If we first say RED, then we can use APPLES to refer to red apples. If we say GREEN, we can use it to refer to green apples ( :numref:`fig1-10` )."
+#: ../../chapter1.rst:1140
+msgid "If we first say ``RED``, then we can use ``APPLES`` to refer to red apples. If we say ``GREEN``, we can use it to refer to green apples ( :numref:`fig1-10` )."
 msgstr ""
 
-#: ../../chapter1.rst:1143
-msgid "We didn’t need to change the syntax of any existing code that uses APPLES. We can still say"
+#: ../../chapter1.rst:1144
+msgid "We didn’t need to change the syntax of any existing code that uses ``APPLES``. We can still say"
 msgstr ""
 
-#: ../../chapter1.rst:1152
+#: ../../chapter1.rst:1153
 msgid "and"
 msgstr ""
 
-#: ../../chapter1.rst:1160
-msgid "Look again at what we did. We changed the definition of APPLES from that of a variable to a colon definition, without affecting its usage. Forth allows us to hide the details of how APPLES is defined from the code that uses it. What appears to be “thing” (a variable) to the original code is actually defined as an “action” (a colon definition) within the component."
+#: ../../chapter1.rst:1161
+msgid "Look again at what we did. We changed the definition of ``APPLES`` from that of a variable to a colon definition, without affecting its usage. Forth allows us to hide the details of how ``APPLES`` is defined from the code that uses it. What appears to be “thing” (a variable) to the original code is actually defined as an “action” (a colon definition) within the component."
 msgstr ""
 
-#: ../../chapter1.rst:1167
-msgid "Forth encourages the use of abstract data types by allowing data structures to be defined in terms of lower level components. Only Forth, which eliminates the CALLs from procedures, which allows addresses and data to be implicitly passed via the stack, and which provides direct access to memory locations with @ and !, can offer this level of information-hiding."
+#: ../../chapter1.rst:1168
+msgid "Forth encourages the use of abstract data types by allowing data structures to be defined in terms of lower level components. Only Forth, which eliminates the CALLs from procedures, which allows addresses and data to be implicitly passed via the stack, and which provides direct access to memory locations with ``@`` and ``!``, can offer this level of information-hiding."
 msgstr ""
 
-#: ../../chapter1.rst:1174
+#: ../../chapter1.rst:1175
 msgid "Forth pays little attention to whether something is a data structure or an algorithm. This indifference allows us programmers incredible freedom in creating the parts of speech we need to describe our applications."
 msgstr ""
 
-#: ../../chapter1.rst:1178
-msgid "I tend to think of any word which returns an address, such as APPLES, as a “noun,” regardless of how it’s defined. A word that performs an obvious action is a “verb.”"
+#: ../../chapter1.rst:1179
+msgid "I tend to think of any word which returns an address, such as ``APPLES``, as a “noun,” regardless of how it’s defined. A word that performs an obvious action is a “verb.”"
 msgstr ""
 
-#: ../../chapter1.rst:1182
-msgid "Words such as RED and GREEN in our example can only be called “adjectives” since they modify the function of APPLES. The phrase"
+#: ../../chapter1.rst:1183
+msgid "Words such as ``RED`` and ``GREEN`` in our example can only be called “adjectives” since they modify the function of ``APPLES``. The phrase"
 msgstr ""
 
-#: ../../chapter1.rst:1191
+#: ../../chapter1.rst:1192
 msgid "is different from"
 msgstr ""
 
-#: ../../chapter1.rst:1199
+#: ../../chapter1.rst:1200
 msgid "Forth words can also serve as adverbs and prepositions. There’s little value in trying to determine what part of speech a particular word is, since Forth doesn’t care anyway. We need only enjoy the ease of describing an application in natural terms."
 msgstr ""
 
-#: ../../chapter1.rst:1206
+#: ../../chapter1.rst:1207
 msgid "But Is It a High-Level Language?"
 msgstr ""
 
-#: ../../chapter1.rst:1208
+#: ../../chapter1.rst:1209
 msgid "In our brief technical overview, we noted that traditional high-level languages broke away from assembly-language by eliminating not only the *one-for-one* correspondence between commands and machine operations, but also the *linear* correspondence. Clearly Forth lays claim to the first difference; but regarding the second, the order of words that you use in a definition is the order in which those commands are compiled."
 msgstr ""
 
-#: ../../chapter1.rst:1215
+#: ../../chapter1.rst:1216
 msgid "Does this disqualify Forth from the ranks of high-level languages? Before we answer, let’s explore the advantages of the Forth approach."
 msgstr ""
 
-#: ../../chapter1.rst:1222
+#: ../../chapter1.rst:1223
 msgid "Two points of view."
 msgstr ""
 
-#: ../../chapter1.rst:1239
+#: ../../chapter1.rst:1240
 msgid "Here\\'s what **Charles Moore**, the inventor of Forth, has to say:"
 msgstr ""
 
-#: ../../chapter1.rst:1227
+#: ../../chapter1.rst:1228
 msgid "You define each word so that the computer knows what it means. The way it knows is that it executes some code as a consequence of being invoked. The computer takes an action on every word. It doesn\\'t store the word away and keep it in mind for later."
 msgstr ""
 
-#: ../../chapter1.rst:1232
+#: ../../chapter1.rst:1233
 msgid "In a philosophical sense I think this means that the computer \"understands\" a word. It understands the word ``DUP`` , perhaps more profoundly than you do, because there\\'s never any question in its mind what ``DUP`` means."
 msgstr ""
 
-#: ../../chapter1.rst:1237
+#: ../../chapter1.rst:1238
 msgid "The connection between words that have meaning to you and words that have meaning to the computer is a profound one. The computer becomes the vehicle for communication between human being and concept."
 msgstr ""
 
-#: ../../chapter1.rst:1241
+#: ../../chapter1.rst:1242
 msgid "One advantage of the correspondence between source code and machine execution is the tremendous simplification of the compiler and interpreter. This simplification improves performance in several ways, as we’ll see in a later section."
 msgstr ""
 
-#: ../../chapter1.rst:1246
+#: ../../chapter1.rst:1247
 msgid "From the standpoint of programming methodology, the advantage to the Forth approach is that *new* words and *new* syntaxes can easily be added. Forth cannot be said to be “looking” for words—it finds words and executes them. If you add new words Forth will find and execute them as well. There’s no difference between existing words and words that you add."
 msgstr ""
 
-#: ../../chapter1.rst:1253
+#: ../../chapter1.rst:1254
 msgid "What’s more, this “extensibility” applies to all types of words, not just action-type functions. For instance, Forth allows you to add new *compiling* words—like ``IF`` and ``THEN`` that provide structured control flow. You can easily add a case statement or a multiple-exit loop if you need them, or, just as importantly, take them out if you don’t need them."
 msgstr ""
 
-#: ../../chapter1.rst:1260
+#: ../../chapter1.rst:1261
 msgid "By contrast, any language that depends on word order to understand a statement must “know” all legal words and all legal combinations. Its chances of including all the constructs you’d like are slim. The language exists as determined by its manufacturer; you can’t extend its knowledge."
 msgstr ""
 
-#: ../../chapter1.rst:1266
+#: ../../chapter1.rst:1267
 msgid "Laboratory researchers cite flexibility and extensibility as among Forth’s most important benefits in their environment. Lexicons can be developed to hide information about the variety of test equipment attached to the computer. Once this work has been done by a more experienced programmer, the researchers are free to use their “software toolbox” of small words to write simple programs for experimentation. As new equipment appears, new lexicons are added."
 msgstr ""
 
-#: ../../chapter1.rst:1274
+#: ../../chapter1.rst:1275
 msgid "Mark Bernstein  has described the problem of using an off-the-shelf special-purpose procedure library in the laboratory [bern83]_ : “The computer, not the user, dominates the experiment.” But with Forth, he writes, “the computer actually encourages scientists to modify, repair, and improve the software, to experiment with and characterize their equipment. Initiative becomes once more the prerogative of the researcher.”"
 msgstr ""
 
-#: ../../chapter1.rst:1287
+#: ../../chapter1.rst:1288
 msgid "Two solutions to the problem of security."
 msgstr ""
 
-#: ../../chapter1.rst:1291
-msgid "For those purists who believe Forth isn’t fit to be called a high-level language, Forth makes matters even worse. While strong syntax checking and data typing are becoming one of the major thrusts of contemporary programming languages, Forth does almost no syntax checking at all. In order to provide the kind of freedom and flexibility we have described, it cannot tell you that you meant to type RED APPLES instead of APPLES RED. You have just invented syntax!"
+#: ../../chapter1.rst:1292
+msgid "For those purists who believe Forth isn’t fit to be called a high-level language, Forth makes matters even worse. While strong syntax checking and data typing are becoming one of the major thrusts of contemporary programming languages, Forth does almost no syntax checking at all. In order to provide the kind of freedom and flexibility we have described, it cannot tell you that you meant to type ``RED APPLES`` instead of ``APPLES RED``. You have just invented syntax!"
 msgstr ""
 
-#: ../../chapter1.rst:1299
+#: ../../chapter1.rst:1300
 msgid "Yet Forth more than makes up for its omission by letting you compile each definition, one at a time, with turnaround on the order of seconds. You discover your mistake soon enough when the definition doesn’t work. In addition, you can add appropriate syntax checking in your definitions if you want to."
 msgstr ""
 
-#: ../../chapter1.rst:1305
+#: ../../chapter1.rst:1306
 msgid "An artist’s paintbrush doesn’t notify the artist of a mistake; the painter will be the judge of that. The chef’s skillet and the composer’s piano remain simple and yielding. Why let a programming language try to out think you?"
 msgstr ""
 
-#: ../../chapter1.rst:1310
+#: ../../chapter1.rst:1311
 msgid "So is Forth a high-level language? On the question of syntax checking, it strikes out. On the question of abstraction and power, it seems to be of *infinite* level—supporting everything from bit manipulation at an output port to business applications."
 msgstr ""
 
-#: ../../chapter1.rst:1316
+#: ../../chapter1.rst:1317
 msgid "You decide. (Forth doesn’t care.)"
 msgstr ""
 
-#: ../../chapter1.rst:1319
+#: ../../chapter1.rst:1320
 msgid "The Language of Design"
 msgstr ""
 
-#: ../../chapter1.rst:1321
+#: ../../chapter1.rst:1322
 msgid "Forth is a design language. To the student of traditional computer science, this statement is self-contradictory. “One doesn’t design with a language, one implements with a language. Design precedes implementation.”"
 msgstr ""
 
-#: ../../chapter1.rst:1327
+#: ../../chapter1.rst:1328
 msgid "Experienced Forth programmers disagree. In Forth you can write abstract, design-level code and still be able to test it at any time by taking advantage of decomposition into lexicons. A component can easily be rewritten, as development proceeds, underneath any components that use it. At first the words in a component may print numbers on your terminal instead of controlling stepper motors. They may print their own names just to let you know they’ve executed. They may do nothing at all."
 msgstr ""
 
-#: ../../chapter1.rst:1335
+#: ../../chapter1.rst:1336
 msgid "Using this philosophy you can write a simple but testable version of your application, then successively change and refine it until you reach your goal."
 msgstr ""
 
-#: ../../chapter1.rst:1339
+#: ../../chapter1.rst:1340
 msgid "Another factor that makes designing in code possible is that Forth, like some of the newer languages, eliminates the “batch-compile” development sequence (edit-compile-test-edit-compile-test). Because the feedback is instantaneous, the medium becomes a partner in the creative process. The programmer using a batch-compiler language can seldom achieve the productive state of mind that artists achieve when the creative current flows unhindered."
 msgstr ""
 
-#: ../../chapter1.rst:1348
+#: ../../chapter1.rst:1349
 msgid "For these reasons, Forth programmers spend less time planning than their classical counterparts, who feel righteous about planning. To them, not planning seems reckless and irresponsible. Traditional environments force programmers to plan because traditional programming languages do not readily accommodate change."
 msgstr ""
 
-#: ../../chapter1.rst:1354
+#: ../../chapter1.rst:1355
 msgid "Unfortunately, human foresight is limited even under the best conditions. Too much planning becomes counterproductive."
 msgstr ""
 
-#: ../../chapter1.rst:1357
+#: ../../chapter1.rst:1358
 msgid "Of course Forth doesn’t eliminate planning. It allows prototyping. Constructing a prototype is a more refined way to plan, just as breadboarding is in electronic design."
 msgstr ""
 
-#: ../../chapter1.rst:1362
+#: ../../chapter1.rst:1363
 msgid "As we’ll see in the next chapter, experimentation proves more reliable in arriving at the truth than the guesswork of planning."
 msgstr ""
 
-#: ../../chapter1.rst:1367
+#: ../../chapter1.rst:1368
 msgid "The Language of Performance"
 msgstr ""
 
-#: ../../chapter1.rst:1369
+#: ../../chapter1.rst:1370
 msgid "Although performance is not the main topic of this book, the newcomer to Forth should be reassured that its advantages aren’t purely philosophical. Overall, Forth outdoes all other high-level languages in speed, capability and compactness."
 msgstr ""
 
-#: ../../chapter1.rst:1375
+#: ../../chapter1.rst:1376
 msgid "Speed"
 msgstr ""
 
-#: ../../chapter1.rst:1377
+#: ../../chapter1.rst:1378
 msgid "Although Forth is an interpretive language, it executes compiled code. Therefore it runs about ten times faster than interpretive BASIC."
 msgstr ""
 
-#: ../../chapter1.rst:1380
+#: ../../chapter1.rst:1381
 msgid "Forth is optimized for the execution of words by means of a technique known as “threaded code” [bell72]_ , [dewar]_ , [kogge82]_ . The penalty for modularizing into very small pieces of code is relatively slight."
 msgstr ""
 
-#: ../../chapter1.rst:1385
-msgid "It does not run as fast as assembler code because the inner interpreter (which interprets the list of addresses that comprise each colon definition) may consume up to 50% of the run time of primitive words, depending on the processor."
+#: ../../chapter1.rst:1386
+msgid "It does not run as fast as assembler code because the inner interpreter (which interprets the list of addresses that comprise each colon definition) may consume up to 50\\% of the run time of primitive words, depending on the processor."
 msgstr ""
 
-#: ../../chapter1.rst:1390
+#: ../../chapter1.rst:1391
 msgid "But in large applications, Forth comes very close to the speed of assembler. Here are three reasons:"
 msgstr ""
 
-#: ../../chapter1.rst:1393
+#: ../../chapter1.rst:1394
 msgid "First and foremost, Forth is simple. Forth’s use of a data stack greatly reduces the performance cost of passing arguments from word to word. In most languages, passing arguments between modules is one of the main reasons that the use of subroutines inhibits performance."
 msgstr ""
 
-#: ../../chapter1.rst:1399
-msgid "Second, Forth allows you to define words either in high-level or in machine language. Either way, no special calling sequence is needed. You can write a new definition in high level and, having verified that it is correct, rewrite it in assembler without changing any of the code that uses it. In a typical application, perhaps 20% of the code will be running 80% of the time. Only the most often used, time-critical routines need to be machine coded. The Forth system itself is largely implemented in machine-code definitions, so you’ll have few application words that need to be coded in assembler."
+#: ../../chapter1.rst:1400
+msgid "Second, Forth allows you to define words either in high-level or in machine language. Either way, no special calling sequence is needed. You can write a new definition in high level and, having verified that it is correct, rewrite it in assembler without changing any of the code that uses it. In a typical application, perhaps 20\\% of the code will be running 80\\% of the time. Only the most often used, time-critical routines need to be machine coded. The Forth system itself is largely implemented in machine-code definitions, so you’ll have few application words that need to be coded in assembler."
 msgstr ""
 
-#: ../../chapter1.rst:1413
+#: ../../chapter1.rst:1414
 msgid "The best top-down designs of mice and young men."
 msgstr ""
 
-#: ../../chapter1.rst:1417
+#: ../../chapter1.rst:1418
 msgid "Third, Forth applications tend to be better designed than those written entirely in assembler. Forth programmers take advantage of the language’s prototyping capabilities and try out several algorithms before settling on the one best suited for their needs. Because Forth encourages change, it can also be called the language of optimization."
 msgstr ""
 
-#: ../../chapter1.rst:1423
+#: ../../chapter1.rst:1424
 msgid "Forth doesn’t guarantee fast applications. It does give the programmer a creative environment in which to design fast applications."
 msgstr ""
 
-#: ../../chapter1.rst:1428
+#: ../../chapter1.rst:1429
 msgid "Capability"
 msgstr ""
 
-#: ../../chapter1.rst:1430
+#: ../../chapter1.rst:1431
 msgid "Forth can do anything any other language can do—usually easier."
 msgstr ""
 
-#: ../../chapter1.rst:1434
+#: ../../chapter1.rst:1435
 msgid "At the low end, nearly all Forth systems include assemblers. These support control-structure operators for writing conditionals and loops using structured programming techniques. They usually allow you to write interrupts—you can even write interrupt code in high level if desired."
 msgstr ""
 
-#: ../../chapter1.rst:1440
+#: ../../chapter1.rst:1441
 msgid "Some Forth systems are multitasked, allowing you to add as many foreground or background tasks as you want."
 msgstr ""
 
-#: ../../chapter1.rst:1443
+#: ../../chapter1.rst:1444
 msgid "Forth can be written to run on top of any operating system such as RT-11, CP/M, or MS-DOS—or, for those who prefer it, Forth can be written as a self-sufficient operating system including its own terminal drivers and disk drivers."
 msgstr ""
 
-#: ../../chapter1.rst:1448
+#: ../../chapter1.rst:1449
 msgid "With a Forth cross-compiler or target compiler, you can use Forth to recreate new Forth systems, for the same computer or for different computers. Since Forth is written in Forth, you have the otherwise unthinkable opportunity to rewrite the operating system according to the needs of your application. Or you can transport streamlined versions of applications over to embedded systems."
 msgstr ""
 
-#: ../../chapter1.rst:1458
+#: ../../chapter1.rst:1459
 msgid "Size"
 msgstr ""
 
-#: ../../chapter1.rst:1460
+#: ../../chapter1.rst:1461
 msgid "There are two considerations here: the size of the root Forth system, and the size of compiled Forth applications."
 msgstr ""
 
-#: ../../chapter1.rst:1464
+#: ../../chapter1.rst:1465
 msgid "The Forth nucleus is very flexible. In an embedded application, the part of Forth you need to run your application can fit in as little as 1K. In a full development environment, a multitasked Forth system including interpreter, compiler, assembler, editor, operating system, and all other support utilities averages 16K. This leaves plenty of room for applications. (And some Forths on the newer processors handle 32-bit addressing, allowing unimaginably large programs.)"
 msgstr ""
 
-#: ../../chapter1.rst:1473
+#: ../../chapter1.rst:1474
 msgid "Similarly, Forth compiled applications tend to be very small—usually smaller than equivalent assembly language programs. The reason, again, is threaded code. Each reference to a previously defined word, no matter how powerful, uses only two bytes."
 msgstr ""
 
-#: ../../chapter1.rst:1478
+#: ../../chapter1.rst:1479
 msgid "One of the most exciting new territories for Forth is the production of Forth chips such as the Rockwell R65F11 Forth-based microprocessor [dumse]_ . The chip includes not only hardware features but also the run-time portions of the Forth language and operating system for dedicated applications. Only Forth’s architecture and compactness make Forth-based micros possible."
 msgstr ""
 
-#: ../../chapter1.rst:1488
+#: ../../chapter1.rst:1489
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter1.rst:1490
+#: ../../chapter1.rst:1491
 msgid "Forth has often been characterized as offbeat, totally unlike any other popular language in structure or in philosophy. On the contrary, Forth incorporates many principles now boasted by the most contemporary languages. Structured design, modularity, and information-hiding are among the buzzwords of the day."
 msgstr ""
 
-#: ../../chapter1.rst:1496
+#: ../../chapter1.rst:1497
 msgid "Some newer languages approach even closer to the spirit of Forth. The language C, for instance, lets the programmer define new functions either in C or in assembly language, as does Forth. And as with Forth, most of C is defined in terms of functions."
 msgstr ""
 
-#: ../../chapter1.rst:1501
+#: ../../chapter1.rst:1502
 msgid "But Forth extends the concepts of modularity and information-hiding further than any other contemporary language. Forth even hides the manner in which words are invoked and the way local arguments are passed."
 msgstr ""
 
-#: ../../chapter1.rst:1506
+#: ../../chapter1.rst:1507
 msgid "The resulting code becomes a concentrated interplay of words, the purest expression of abstract thought. As a result, Forth programmers tend to be more productive and to write tighter, more efficient, and better maintainable code."
 msgstr ""
 
-#: ../../chapter1.rst:1511
+#: ../../chapter1.rst:1512
 msgid "Forth may not be the ultimate language. But I believe the ultimate language, if such a thing is possible, will more closely resemble Forth than any other contemporary language."
 msgstr ""
 
-#: ../../chapter1.rst:1517
+#: ../../chapter1.rst:1518
 msgid "REFERNCES"
 msgstr ""
 
-#: ../../chapter1.rst:1519
+#: ../../chapter1.rst:1520
 msgid "Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  London, Academic Press, 1972."
 msgstr ""
 
-#: ../../chapter1.rst:1520
+#: ../../chapter1.rst:1521
 msgid "Niklaus Wirth, \"Program Development by StepwiseRefinement,\"  **Communications of ACM,**  14, No. 4 (1971), 221-27."
 msgstr ""
 
-#: ../../chapter1.rst:1521
+#: ../../chapter1.rst:1522
 msgid "Stevens, G. J. Myers, and L. L. Constantine,\"Structured Design,\"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974."
 msgstr ""
 
-#: ../../chapter1.rst:1522
+#: ../../chapter1.rst:1523
 msgid "David L. Parnas, \"On the Criteria To Be Used inDecomposing Systems into Modules,\"  **Communications of the ACM,** December 1972."
 msgstr ""
 
-#: ../../chapter1.rst:1523
-msgid "Barbara H. Liskov and Stephen N. Zilles,\"Specification Techniques for Data Abstractions,\"  **IEEETransactions on Software Engineering,**  March 1975."
-msgstr ""
-
 #: ../../chapter1.rst:1524
-msgid "David L. Parnas, \"Designing Software for Ease ofExtension and Contraction,\"  **IEEE Transactions on SoftwareEngineering,**  March 1979."
+msgid "Barbara H. Liskov and Stephen N. Zilles,\"Specification Techniques for Data Abstractions,\"  **IEEE Transactions on Software Engineering,**  March 1975."
 msgstr ""
 
 #: ../../chapter1.rst:1525
-msgid "Dewey Val Shorre, \"Adding Modules to Forth,\"1980 FORML Proceedings, p. 71."
+msgid "David L. Parnas, \"Designing Software for Ease ofExtension and Contraction,\"  **IEEE Transactions on SoftwareEngineering,**  March 1979."
 msgstr ""
 
 #: ../../chapter1.rst:1526
-msgid "Mark Bernstein, \"Programming in the Laboratory,\"  unpublished paper, 1983."
+msgid "Dewey Val Shorre, \"Adding Modules to Forth,\"1980 FORML Proceedings, p. 71."
 msgstr ""
 
 #: ../../chapter1.rst:1527
-msgid "James R. Bell, \"Threaded Code,\"  **Communicationsof ACM,**  Vol. 16, No. 6, 370-72."
+msgid "Mark Bernstein, \"Programming in the Laboratory,\"  unpublished paper, 1983."
 msgstr ""
 
 #: ../../chapter1.rst:1528
-msgid "Robert B. K. DeWar, \"Indirect Threaded Code,\" **Communications of ACM,**  Vol. 18, No. 6, 331."
+msgid "James R. Bell, \"Threaded Code,\"  **Communicationsof ACM,**  Vol. 16, No. 6, 370-72."
 msgstr ""
 
 #: ../../chapter1.rst:1529
-msgid "Peter M. Kogge, \"An Architectural Trail toThreaded-Code Systems,\"  **Computer,**  March, 1982."
+msgid "Robert B. K. DeWar, \"Indirect Threaded Code,\" **Communications of ACM,**  Vol. 18, No. 6, 331."
 msgstr ""
 
 #: ../../chapter1.rst:1530
+msgid "Peter M. Kogge, \"An Architectural Trail toThreaded-Code Systems,\"  **Computer,**  March, 1982."
+msgstr ""
+
+#: ../../chapter1.rst:1531
 msgid "Randy Dumse, \"The R65F11 Forth Chip,\"  **ForthDimensions,**  Vol. 5, No. 2, p. 25."
 msgstr ""
 

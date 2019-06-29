@@ -1056,7 +1056,7 @@ passing. A third feature
 allows the data structures within a component to be described in terms
 of previously-defined components. This feature is direct access memory.
 
-Suppose we define a variable called APPLES, like
+Suppose we define a variable called ``APPLES``, like
 this:
 
 .. code-block:: none
@@ -1074,11 +1074,11 @@ currently have:
 
 ..
 
-We can display the contents of the variable:
+We can display the contents of the variable(type ``APPLES ?`` \[:kbd:`Enter`\]):
 
 .. code-block:: none
    
-   APPLES ? **20 ok**
+   APPLES ? 20 ok
 
 ..
 
@@ -1090,9 +1090,10 @@ We can up the count by one:
 
 ..
 
-(The newcomer can study the mechanics of these phrases in Appendix A.)
+(The newcomer can study the mechanics of these phrases in
+:doc:`Appendix A<appendixa>`.)
 
-The word APPLES has but one function: to put on the stack the *address*
+The word ``APPLES`` has but one function: to put on the stack the *address*
 of the memory location where the tally of apples is kept. The tally can
 be thought of as a “thing,” while the words that set the tally, read the
 tally, or increment the tally can be considered as “actions.”
@@ -1102,15 +1103,15 @@ addresses of data structures to be passed on the stack and providing the
 “fetch” and “store” commands.
 
 We’ve discussed the importance of designing around things that may
-change. Suppose we’ve written a lot of code using this variable APPLES.
+change. Suppose we’ve written a lot of code using this variable ``APPLES``.
 And now, at the eleventh hour, we discover that we must keep track of
 two different kinds of apples, red and green!
 
-We needn’t wring our hands, but rather remember the function of APPLES:
-to provide an address. If we need two separate tallies, APPLES can
+We needn’t wring our hands, but rather remember the function of ``APPLES``:
+to provide an address. If we need two separate tallies, ``APPLES`` can
 supply two different addresses depending on which kind of apple we’re
 currently talking about. So we define a more complicated version of
-APPLES as follows:
+``APPLES`` as follows:
 
 .. code-block:: none
    
@@ -1131,17 +1132,17 @@ APPLES as follows:
 
 ..
 
-Here we’ve redefined APPLES. Now it fetches the
-contents of a variable called COLOR. COLOR is a pointer, either to the
-variable REDS or to the variable GREENS. These two variables are the
+Here we’ve redefined ``APPLES.`` Now it fetches the
+contents of a variable called ``COLOR``. ``COLOR`` is a pointer, either to the
+variable ``REDS`` or to the variable ``GREENS``. These two variables are the
 real tallies.
 
-If we first say RED, then we can use APPLES to refer to red apples. If
-we say GREEN, we can use it to refer to green apples
+If we first say ``RED``, then we can use ``APPLES`` to refer to red apples. If
+we say ``GREEN``, we can use it to refer to green apples
 ( :numref:`fig1-10` ).
 
 We didn’t need to change the syntax of any existing code that uses
-APPLES. We can still say
+``APPLES``. We can still say
 
 .. code-block:: none
    
@@ -1157,9 +1158,9 @@ and
 
 ..
 
-Look again at what we did. We changed the definition of APPLES from that
+Look again at what we did. We changed the definition of ``APPLES`` from that
 of a variable to a colon definition, without affecting its usage. Forth
-allows us to hide the details of how APPLES is defined from the code
+allows us to hide the details of how ``APPLES`` is defined from the code
 that uses it. What appears to be “thing” (a variable) to the original
 code is actually defined as an “action” (a colon definition) within the
 component.
@@ -1168,19 +1169,19 @@ Forth encourages the use of abstract data types by allowing data
 structures to be defined in terms of lower level components. Only Forth,
 which eliminates the CALLs from procedures, which allows addresses and
 data to be implicitly passed via the stack, and which provides direct
-access to memory locations with @ and !, can offer this level of
+access to memory locations with ``@`` and ``!``, can offer this level of
 information-hiding.
 
 Forth pays little attention to whether something is a data structure or
 an algorithm. This indifference allows us programmers incredible freedom
 in creating the parts of speech we need to describe our applications.
 
-I tend to think of any word which returns an address, such as APPLES, as
+I tend to think of any word which returns an address, such as ``APPLES``, as
 a “noun,” regardless of how it’s defined. A word that performs an
 obvious action is a “verb.”
 
-Words such as RED and GREEN in our example can only be called
-“adjectives” since they modify the function of APPLES. The phrase
+Words such as ``RED`` and ``GREEN`` in our example can only be called
+“adjectives” since they modify the function of ``APPLES``. The phrase
 
 .. code-block:: none
    
@@ -1293,8 +1294,8 @@ language, Forth makes matters even worse. While strong syntax checking
 and data typing are becoming one of the major thrusts of contemporary
 programming languages, Forth does almost no syntax checking at all. In
 order to provide the kind of freedom and flexibility we have described,
-it cannot tell you that you meant to type RED APPLES instead of APPLES
-RED. You have just invented syntax!
+it cannot tell you that you meant to type ``RED APPLES`` instead of
+``APPLES RED``. You have just invented syntax!
 
 Yet Forth more than makes up for its omission by letting you compile
 each definition, one at a time, with turnaround on the order of seconds.
@@ -1384,7 +1385,7 @@ modularizing into very small pieces of code is relatively slight.
 
 It does not run as fast as assembler code because the inner interpreter
 (which interprets the list of addresses that comprise each colon
-definition) may consume up to 50% of the run time of primitive words,
+definition) may consume up to 50\% of the run time of primitive words,
 depending on the processor.
 
 But in large applications, Forth comes very close to the speed of
@@ -1400,8 +1401,8 @@ Second, Forth allows you to define words either in high-level or in
 machine language. Either way, no special calling sequence is needed. You
 can write a new definition in high level and, having verified that it is
 correct, rewrite it in assembler without changing any of the code that
-uses it. In a typical application, perhaps 20% of the code will be
-running 80% of the time. Only the most often used, time-critical
+uses it. In a typical application, perhaps 20\% of the code will be
+running 80\% of the time. Only the most often used, time-critical
 routines need to be machine coded. The Forth system itself is largely
 implemented in machine-code definitions, so you’ll have few application
 words that need to be coded in assembler.
@@ -1520,7 +1521,7 @@ REFERNCES
 .. [wirth71]  Niklaus Wirth, "Program Development by StepwiseRefinement,"  **Communications of ACM,**  14, No. 4 (1971), 221-27.
 .. [stevens74-1]  W. P. Stevens, G. J. Myers, and L. L. Constantine,"Structured Design,"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974.
 .. [parnas72]  David L. Parnas, "On the Criteria To Be Used inDecomposing Systems into Modules,"  **Communications of the ACM,** December 1972.
-.. [liskov75]  Barbara H. Liskov and Stephen N. Zilles,"Specification Techniques for Data Abstractions,"  **IEEETransactions on Software Engineering,**  March 1975.
+.. [liskov75]  Barbara H. Liskov and Stephen N. Zilles,"Specification Techniques for Data Abstractions,"  **IEEE Transactions on Software Engineering,**  March 1975.
 .. [parnas79]  David L. Parnas, "Designing Software for Ease ofExtension and Contraction,"  **IEEE Transactions on SoftwareEngineering,**  March 1979.
 .. [shorre71]  Dewey Val Shorre, "Adding Modules to Forth,"1980 FORML Proceedings, p. 71.
 .. [bern83]  Mark Bernstein, "Programming in the Laboratory,"  unpublished paper, 1983.

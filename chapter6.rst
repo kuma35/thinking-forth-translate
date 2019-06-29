@@ -814,13 +814,13 @@ Applying the principles of good naming, I suggested:
    
    : IS  ( adr)   @  8 -  NFA  ID. ;
 
-allowing the syntax
+allowing the syntax(``CONTEXT IS`` \[:kbd:`Enter`\])
 
 .. code-block:: none
    
    CONTEXT IS ASSEMBLER ok
 
-or
+or(``CURRENT IS`` \[:kbd:`Enter`\])
 
 .. code-block:: none
    

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: 2019-06-25 00:39+0900\n"
+"PO-Revision-Date: 2019-06-26 23:27+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 # Starting Forthが「FORTH入門」となっているので「Forth思考」としたが、
-# 「Forth脳」や「Forthで考える」も捨てがたい。
+# 「Forth流」や「Forth脳」や「Forthで考える」も捨てがたい。
 #: ../../index.rst:8
 msgid "Thinking Forth --A Language and Philosophy for Solving Problems--"
 msgstr "Forth思考 ―問題解決のための言語と哲学―"
