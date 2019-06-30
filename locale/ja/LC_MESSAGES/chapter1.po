@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-29 21:52+0900\n"
-"PO-Revision-Date: 2019-06-29 23:50+0900\n"
+"PO-Revision-Date: 2019-06-30 07:29+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../chapter1.rst:4
 msgid "1. The Philosophy of Forth"
-msgstr "1. Forthの哲学"
+msgstr "第1章 Forthの哲学"
 
 #: ../../chapter1.rst:6
 msgid ""
@@ -1001,9 +1001,7 @@ msgid ""
 " it. Most software groups find themselves writing “families” of programs;"
 " that is, many versions of related programs in their particular "
 "application field, each a variant on an earlier program."
-msgstr ""
-"このテクニックはソフトウェアを書く上で非常に重要です。プログラムが既に実行できているのに、なぜプログラムを変更する必要があるのでしょうか？　"
-"でも、プログラムを変更する理由は無数にあります。あなたは新しい機器で古いプログラムを走らせたいと思うかもしれません。プログラムは、新しいハードウェアに対応するのに十分変更する必要があります。プログラムは十分に速くないかもしれません、またはそれを使用している人々に合うように十分強力かもしれません。ほとんどのソフトウェアグループは、自分たちがプログラムの「ファミリー」を書いていることに気づいています。つまり、特定のアプリケーション分野における関連プログラムの多くのバージョンは、それぞれそれ以前のプログラムの変形です。"
+msgstr "このテクニックはソフトウェアを書く上で非常に重要です。プログラムが既に実行できているのに、なぜプログラムを変更する必要があるのでしょうか？　でも、プログラムを変更する理由は無数にあります。あなたは新しい機器で古いプログラムを走らせたいと思うかもしれません。プログラムを新しいハードウェアに対応させるため変更する必要があるかもしれません。プログラムは充分速くないかもしれません。充分強力ではないかもしれません。それを使用している人々に合わないかもしれません。ほとんどのソフトウェアグループは、自分たちがプログラムの「ファミリー」を書いていることに気づいています。つまり、特定のアプリケーション分野における関連プログラムの多くのバージョンは、それぞれ、それ以前のプログラムの変形です。"
 
 #: ../../chapter1.rst:673
 msgid ""
