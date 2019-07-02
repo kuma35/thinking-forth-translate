@@ -255,7 +255,7 @@ situations.
 Using the Dictionary
 --------------------
 
-.. tip::
+.. hint::
 
    Give each function its own definition.
 
@@ -292,7 +292,7 @@ added.
 Forth is efficient because all these words— ``FROM`` and ``BILL`` and ``+`` and
 ``D+`` —can be implemented without any need for testing and branching.
 
-.. tip::
+.. hint::
 
    Use dumb words.
 
@@ -382,7 +382,7 @@ that a programmer might want to reuse either of these words in a
 higher-level definition and have them behave in the same way they do
 normally.
 
-.. tip::
+.. hint::
 
    Words should not depend on ``STATE`` if a programmer might ever want
    to invoke them from within a higher-level definition and expect them to
@@ -394,7 +394,7 @@ normally.
 Nesting and Combining Conditionals
 ----------------------------------
 
-.. tip::
+.. hint::
 
    Don't test for something that has already been excluded.
 
@@ -423,7 +423,7 @@ Instead, you can nest the conditionals, like this:
                                   CURSOR-DOWN
               THEN THEN THEN  DROP ;
 
-.. tip::
+.. hint::
 
    Combine booleans of similar weight.
 
@@ -489,7 +489,7 @@ Another exception arises if any term is probably not true. By
 eliminating such a condition first, you avoid having to try the other
 conditions.
 
-.. tip::
+.. hint::
 
    When multiple conditions have dissimilar weights (in likelihood or
    calculation time) nest conditionals with the term that is least likely
@@ -521,7 +521,7 @@ desirable.
 Choosing Control Structures
 ---------------------------
 
-.. tip::
+.. hint::
 
    The most elegant code is that which most closely matches the problem.
    Choose the control structure that most closely matches the control-flow
@@ -647,7 +647,7 @@ loop prematurely, this approach seems the most natural structure to use.
 (We’ll see an example of this in a later section, “Using Structured
 Exits.”) 
 
-.. tip::
+.. hint::
 
    Favor counts over terminators.
 
@@ -706,7 +706,7 @@ list.)
 Calculating Results
 ~~~~~~~~~~~~~~~~~~~
 
-.. tip::
+.. hint::
 
    Don't decide, calculate.
 
@@ -716,7 +716,7 @@ in numbers. If numbers are involved, we can calculate them.
 (In :doc:`Chapter Four<chapter4>` see the section called
 “Calculations vs. Data Structures vs. Logic.”) 
 
-.. tip::
+.. hint::
 
    Use booleans as hybrid values.
 
@@ -762,7 +762,7 @@ See :doc:`Appendix C<appendixc>`.)
 
 We can do even more with “hybrid values”: 
 
-.. tip::
+.. hint::
 
    To effect a decision with a numeric outcome, use ``AND``.
 
@@ -890,7 +890,7 @@ which data are arranged in a table, the listing must clearly document
 the assumption used by the
 trick.
 
-.. tip::
+.. hint::
 
    Use ``MIN`` and ``MAX`` for clipping.
 
@@ -912,7 +912,7 @@ In this case the conditional is factored within the word ``MAX``.
 Using Decision Tables
 ---------------------
 
-.. tip::
+.. hint::
 
    Use decision tables.
 
@@ -1267,7 +1267,7 @@ In general, addition is much faster than multiplication.
 Redesigning
 -----------
 
-.. tip::
+.. hint::
 
    One change at the bottom can save ten decisions at the top.
 
@@ -1300,7 +1300,7 @@ and ``PRETENDING``, which changed the meaning of a group of variables. Later
 in that chapter, we used vectored execution to define ``VISIBLE`` and
 ``INVISIBLE``, to change the meanings of ``TYPE’``, ``EMIT’``, ``SPACES’`` and ``CR’`` and thereby easily change all the formatting code that uses them.
 
-.. tip::
+.. hint::
 
    Don't test for something that can't possibly happen.
 
@@ -1310,7 +1310,7 @@ There’s no need for a function to check an argument passed by another
 component in the system. The calling program should bear the
 responsibility for not exceeding the limits of the called component.
 
-.. tip::
+.. hint::
 
    Reexamine the algorithm.
 
@@ -1332,7 +1332,7 @@ responsibility for not exceeding the limits of the called component.
     Instead of trying to get rid of conditionals, you're best to question the
     underlying theory that led to the conditionals.
 
-.. tip::
+.. hint::
 
    Avoid the need for special handling.
 
@@ -1354,7 +1354,7 @@ gotten into trouble.
 Anytime you run into a special case, try to find an algorithm for which
 the special case becomes a normal case.
 
-.. tip::
+.. hint::
 
    Use properties of the component.
 
@@ -1426,7 +1426,7 @@ necessary.
 Using Structured Exits
 ----------------------
 
-.. tip::
+.. hint::
 
    Use the structured exit.
 
@@ -1571,7 +1571,7 @@ fire.
 Employing Good Timing
 ---------------------
 
-.. tip::
+.. hint::
 
    Take the action when you know you need to, not later.
 
@@ -1580,7 +1580,7 @@ answer is, “So I’ll know to do such-and-such later,” then ask yourself
 if you can do such-and-such *now*. A little restructuring can greatly
 simplify your design.
 
-.. tip::
+.. hint::
 
    Don't put off till run time what you can compile today.
 
@@ -1603,7 +1603,7 @@ context):
    
    : STEPPERS   150  'TESTING? @  1 AND +  LOAD ;
 
-.. tip::
+.. hint::
 
    ``DUP`` a flag, don't recreate it.
 
@@ -1623,7 +1623,7 @@ This can be simplified to:
    : DID-I?  ( -- t=I-did)
            SHOULD-I? DUP  IF  DO-IT  THEN ;
 
-.. tip::
+.. hint::
 
    Don't set a flag, set the data.
 
@@ -1663,7 +1663,7 @@ and then simply writing
 
 to use it.
 
-.. tip::
+.. hint::
 
    Don't set a flag, set the function. (Vector.)
 
@@ -1785,7 +1785,7 @@ opting for simplicity. While other tips concern maintainability,
 performance, compactness, etc., this tip relates to the sort of
 satisfaction that Thoreau sought at Walden Pond.
 
-.. tip::
+.. hint::
 
    Try to avoid altogether saving flags in memory.
 

@@ -42,7 +42,7 @@ a software problem, you’ll find some valuable suggestions there.
 The following series of tips summarize several techniques recommended by
 the science of problem solving:
 
-.. tip::
+.. hint::
 
    Determine your goal.
 
@@ -62,7 +62,7 @@ the rates for
 computing the cost of a phone call along with the rules for applying the
 rates.
 
-.. tip::
+.. hint::
 
    Picture the problem as a whole.
 
@@ -89,7 +89,7 @@ do so, it’s important that you have already concentrated on the
 problem’s requirements all at once, engraving these requirements on your
 mental retina.
 
-.. tip::
+.. hint::
 
    Develop a plan.
 
@@ -99,7 +99,7 @@ avoid the trap of fumbling about aimlessly.
 
 The following tips suggest several approaches you might consider.
 
-.. tip::
+.. hint::
 
    Think of an analogous problem.
 
@@ -108,7 +108,7 @@ before? Figure out what parts of the problem are familiar, and in what
 ways this problem might differ. Try to remember how you solved it
 before, or how you solved something like it.
 
-.. tip::
+.. hint::
 
    Work forward.
 
@@ -117,7 +117,7 @@ known, and proceeding to the unknown. In deciding which horse to bet on,
 you’d begin with their recent histories, their current health, and so
 on, apply weights to these various factors and arrive at a favorite.
 
-.. tip::
+.. hint::
 
    Work backward.
 
@@ -134,7 +134,7 @@ backward ( :numref:`fig4-1` ).
 
 ..
 
-.. tip::
+.. hint::
 
    Believe.
 
@@ -217,7 +217,7 @@ backward: If the problem is
 unsolvable, working backward helps you quickly prove that it has no
 solution.
 
-.. tip::
+.. hint::
 
    Recognize the auxiliary problem.
 
@@ -239,7 +239,7 @@ that solution might be, we forge ahead with our main problem.
 
 (Forth is ideally suited to this technique, as we’ll see.)
 
-.. tip::
+.. hint::
 
    Step back from the problem.
 
@@ -284,7 +284,7 @@ But if you sit back and ask yourself,
 then you might think of extending some of the lines beyond the perimeter
 of the nine dots.
 
-.. tip::
+.. hint::
 
    Use whole-brain thinking.
 
@@ -323,7 +323,7 @@ problem by means of logic:
     answer that is evaluated and then popped into conscious attention---often
     in astonishingly full-blown detail.
 
-.. tip::
+.. hint::
 
    Evaluate your solution. Look for other solutions.
 
@@ -407,7 +407,7 @@ will be only used within this component.
 
 Create as many words as necessary to obey the following tip:
 
-.. tip::
+.. hint::
 
    Each definition should perform a simple, well-defined task.
 
@@ -447,7 +447,7 @@ At this point in the development cycle you must decide how the words in
 your new lexicon will be used in context. In doing so, keep in mind how
 the lexicon will be used by subsequent components.
 
-.. tip::
+.. hint::
 
    In designing a component, the goal is to create a lexicon that will make your
    later code readable and easy to maintain.
@@ -464,7 +464,7 @@ support without any special effort on your part.
 
 Here are some elementary rules of Forth’s natural syntax:
 
-.. tip::
+.. hint::
 
    Let numbers precede names.
 
@@ -568,7 +568,7 @@ Or, the recommended approach, ``SHOW`` might set an “execution variable”
 that ``INVENTORY`` will then execute. (We’ll discuss vectored execution in
 :doc:`Chapter Seven<chapter7>`.)
 
-.. tip::
+.. hint::
 
    Let text follow names.
 
@@ -593,7 +593,7 @@ not execute in the usual way. An example is ``FORGET`` , as in
 Syntactically, ``FORGET`` must precede ``TASK`` so that
 ``TASK`` doesn’t execute.
 
-.. tip::
+.. hint::
 
    Let definitions consume their arguments.
 
@@ -632,7 +632,7 @@ and not
    
    : READY  ( pad#)  LOAD  AIM  DROP ;
 
-.. tip::
+.. hint::
 
    Use zero-relative numbering.
 
@@ -690,7 +690,7 @@ the conversion from zero-to one-relative numbering:
 
 ..
 
-.. tip::
+.. hint::
 
    Let addresses precede counts.
 
@@ -698,7 +698,7 @@ Again, this is a convention, not a requirement of Forth, but such
 conventions are essential for readable code. You’ll find examples of
 this rule in the words ``TYPE``, ``ERASE``, and ``BLANK``.
 
-.. tip::
+.. hint::
 
    Let sources precede destinations.
 
@@ -716,7 +716,7 @@ this convention and the previous convention:
    
    source destination count CMOVE
 
-.. tip::
+.. hint::
 
    Avoid expectations (in the input stream).
 
@@ -780,7 +780,7 @@ even necessary. (The proposed ``TO`` solution is often implemented this way
 But generally, avoid expectations. You’re setting yourself up for
 disappointment.
 
-.. tip::
+.. hint::
 
    Let commands perform themselves.
 
@@ -829,7 +829,7 @@ Forth’s address interpreter also adhere to this same rule.
 
 The following tip is perhaps the most important in this chapter:
 
-.. tip::
+.. hint::
 
    Don't write your own interpreter/compiler when you can use {Forth}{}'s.
 
@@ -1073,7 +1073,7 @@ when the decision is not complicated enough to warrant a decision table.
 :doc:`Chapter Eight<chapter8>` is devoted to the issue of minimizing the
 use of logic in your programs.
 
-.. tip::
+.. hint::
 
    In choosing which approach to apply towards solving a problem, give
    preference in the following order:
@@ -1363,7 +1363,7 @@ because the computer will do a, b, and c before it knows any better.
 Instead, we have to check whether the exceptions apply *before* we do
 anything else.
 
-.. tip::
+.. hint::
 
    In devising an algorithm, consider exceptions last. In writing code, handle
    exceptions first.
@@ -1598,7 +1598,7 @@ with code.
 Beginners who are learning to think in this right-brain way might find
 the following tip helpful:
 
-.. tip::
+.. hint::
 
    If you have trouble thinking about a conceptual model,
    visualize it---or draw it---as a mechanical device.

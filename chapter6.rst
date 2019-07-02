@@ -114,7 +114,7 @@ you’ll need to add appropriate stack-manipulation operators.)
 If the operation involves addition, you can nullify it by passing a
 zero.
 
-.. tip::
+.. hint::
 
    For simplicity, try to express the difference between similar
    fragments as a numeric difference (values or addresses), rather than
@@ -166,7 +166,7 @@ Segment 1:
 Segment 2:
     BLETCH-AB PERVERSITY BLETCH-DEF
 
-.. tip::
+.. hint::
 
    Don't pass control flags downward.
 
@@ -204,7 +204,7 @@ can be used in a section of :doc:`Chapter Seven<chapter7>` called “Using DOER/
 
 Here’s a reminder about factoring code from out of a ``DO``  ``LOOP``:
 
-.. tip::
+.. hint::
 
    In factoring out the contents of a ``DO``   ``LOOP`` into a new
    definition, rework the code so that ``I`` (the index) is not
@@ -324,7 +324,7 @@ combine things and make the awkwardness go away.
 Factoring Out Functions into Defining Words
 -------------------------------------------
 
-.. tip::
+.. hint::
 
    If a series of definitions contains identical functions, with
    variation only in data, use a defining word.
@@ -391,7 +391,7 @@ factoring Forth definitions. They include:
 
 #. Simplifying the command interface
 
-.. tip::
+.. hint::
 
    Keep definitions short.
 
@@ -444,7 +444,7 @@ for extra nesting due to proper factoring will not be noticeable. If you
 timings are that tight, the real solution is to translate something into
 assembler.
 
-.. tip::
+.. hint::
 
    Factor at the point where you feel unsure about your code (where
    complexity approaches the conscious limit).
@@ -464,7 +464,7 @@ code should never feel uncomfortably complex. Factor!
 
 Here’s another facet of the same principle:
 
-.. tip::
+.. hint::
 
    Factor at the point where a comment seems necessary
 
@@ -494,7 +494,7 @@ This solution is generally a sign of bad factoring. Better to write:
 No narrative stack pictures are needed. Furthermore, the programmer now
 has a reusable, testable subset of the definition.
 
-.. tip::
+.. hint::
 
    Limit repetition of code.
 
@@ -539,7 +539,7 @@ But in fact, it can be written
 
 On the other hand:
 
-.. tip::
+.. hint::
 
    When factoring out duplicate code, make sure the factored code serves
    a single purpose.
@@ -572,7 +572,7 @@ on the address.
 
 Similar to our injunction against repetition of code:
 
-.. tip:: latex
+.. hint::
 
    Look for repetition of patterns.
 
@@ -582,7 +582,7 @@ a specific application. The part of the pattern you are copying perhaps
 can be factored out as an independent definition that can be used in all
 the similar cases. 
 
-.. tip:: latex
+.. hint::
 
    Be sure you can name what you factor.
 
@@ -599,7 +599,7 @@ which can be verified by describing its function in a single,
 non-compound, *sentence*. Forth’s “atom,” a *name*, is an order of
 magnitude more refined.
 
-.. tip::
+.. hint::
 
    Factor definitions to hide details that may change.
 
@@ -648,7 +648,7 @@ this:
 
 The rest of your code can remain intact.
 
-.. tip::
+.. hint::
 
    Factor functions out of definitions that display results.
 
@@ -737,7 +737,7 @@ the phrase with the new word ``FRAME,`` because you may change the
 definition of ``FRAME`` and there will certainly be times when you really
 want ``SCR``  ``@``  ``BLOCK``.
 
-.. tip::
+.. hint::
 
    If a repeated code fragment is likely to change in some cases but not
    others, factor out only those instances that might change. If the
@@ -752,7 +752,7 @@ You can never predict everything, though. It would be useless to try, as
 we’ll see in the upcoming section called “The Iterative Approach in
 Implementation.”
 
-.. tip::
+.. hint::
 
    Simplify the command interface by reducing the number of commands.
 
@@ -971,7 +971,7 @@ If necessary for readability, we still might want to define:
 Again, through this approach we’ve achieved a more pleasant syntax and
 shorter object code.
 
-.. tip::
+.. hint::
 
    Don't factor for the sake of factoring. Use clich\'es.
 
@@ -1020,7 +1020,7 @@ for organizing code and data to reduce redundancy.
 We can also apply limited redundancy during compilation, by letting
 Forth do some of out dirty work.
 
-.. tip::
+.. hint::
 
    For maximum maintainability, limit redundancy even at compile time.
 
@@ -1095,7 +1095,7 @@ we’re compiling. Why not let Forth do the figuring?
    WIDE 3 *  AVE 2 *  +  80 SWAP -  2/ CONSTANT LEFTMARGIN
    HIGH 3 *  STREET 2 * +  24 SWAP -  2/ CONSTANT TOPMARGIN
 
-.. tip::
+.. hint::
 
    If a constant's value depends on the value of an earlier constant, use
    Forth to calculate the value of the second.
@@ -1238,7 +1238,7 @@ its impact on the design phase. Now that we’re talking about
 implementation, let’s see how the approach is actually used in writing
 code.
 
-.. tip::
+.. hint::
 
    Work on only one aspect of a problem at a time.
 
@@ -1295,7 +1295,7 @@ solve each dimension more efficiently. If there’s an error in your
 thinking, the problem will be easier to see if it’s not obscured by yet
 another untried, untested aspect of your code.
 
-.. tip::
+.. hint::
 
    Don't change too much at once.
 
@@ -1311,7 +1311,7 @@ have nothing work!
 Making changes one at a time ensures that when it stops working, you
 know why.
 
-.. tip::
+.. hint::
 
    Don't try to anticipate ways to factor too early.
 
@@ -1374,7 +1374,7 @@ reason.
     Building levels of abstraction is a dynamic process, not one you can
     predict.
 
-.. tip::
+.. hint::
 
    Today, make it work. Tomorrow, optimize it.
 
@@ -1411,7 +1411,7 @@ if necessary.
 
 These decisions take experience. But as a general rule:
 
-.. tip::
+.. hint::
 
    Anticipate things-that-may-change by organizing information, not by
    adding complexity. Add complexity only as necessary to make the

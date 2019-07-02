@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-07-01 21:04+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../chapter5.rst:4
 msgid "5. Implementation: Elements of Forth Style"
@@ -340,10 +340,6 @@ msgstr ""
 
 #: ../../chapter5.rst:231
 msgid "Screen #100"
-msgstr ""
-
-#: ../../chapter5.rst:245 ../../chapter5.rst:687 ../../chapter5.rst:1897
-msgid "latex"
 msgstr ""
 
 #: ../../chapter5.rst:247
@@ -2821,5 +2817,8 @@ msgstr ""
 #~ "Here are some final suggestions to "
 #~ "make your code more readable. "
 #~ "(Definitions appear in :doc:`appendixc`.)"
+#~ msgstr ""
+
+#~ msgid "latex"
 #~ msgstr ""
 

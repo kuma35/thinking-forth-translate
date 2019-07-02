@@ -49,7 +49,7 @@ calendar. If you had recorded both plans in the same calendar, you would
 have seen the other event scheduled, something your brain failed to do
 for all its intricate magnificence.
 
-.. tip::
+.. hint::
 
    To see the relationship between two things, put them close
    together. To remind yourself of the relationship, **keep** them
@@ -62,7 +62,7 @@ dissects a large application into smaller, programmer-sized modules.
 In :doc:`Chapter One<chapter1>` we discovered that applications can be conveniently
 decomposed into components.
 
-.. tip::
+.. hint::
 
    The goal of preliminary design is to determine what components are
    necessary to accomplish the requirements.
@@ -109,7 +109,7 @@ command would be added to the I/O chip lexicon, not to the code needed
 to set the baud rate. There’s no penalty for making this change except
 the few minutes (at most) it takes to edit and recompile.
 
-.. tip::
+.. hint::
 
    Within each component, implement only the commands needed for the
    current iteration. (But don't preclude future additions.)
@@ -638,7 +638,7 @@ between two or more other components ( :numref:`fig3-9` ).
 
 ..
 
-.. tip::
+.. hint::
 
    Both data structures and the commands involved in the communication of
    data between modules should be localized in an interface component.
@@ -742,7 +742,7 @@ those that may be shared by more than one component.
 
 A related point:
 
-.. tip::
+.. hint::
 
    Express in objective units any data to be shared by components.
 
@@ -915,7 +915,7 @@ canvases. You work on all the canvases at once, first sketching in the
 key design elements, then adding splashes of color here and there… until
 the entire wall is complete.
 
-.. tip::
+.. hint::
 
    In deciding where to start designing, look for:
    
@@ -1031,7 +1031,7 @@ suit all needs. An application programmer could either rewrite the
 driver or write an extension to the driver using available tools from
 the video lexicon.
 
-.. tip::
+.. hint::
 
    Don't bury your tools.
 

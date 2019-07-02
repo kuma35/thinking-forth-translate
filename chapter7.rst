@@ -61,7 +61,7 @@ solution is to redesign the passage:
 
 So in Forth we have analogous observations:
 
-.. tip::
+.. hint::
 
    Simplify code by using the stack. But don't stack too deeply within any
    single definition. Redesign, or, as a last resort, use a named variable.
@@ -273,7 +273,7 @@ just jockeying things into position.
 
 With this third reason in mind, I recommend the following:
 
-.. tip::
+.. hint::
 
    Especially in the design phase, keep on the stack only the arguments you're
    using immediately. Create local variables for any others. (If necessary,
@@ -330,7 +330,7 @@ draws a box 30 units high and 30 units wide, relative to the origin.
 This approach reduces the number of stack arguments to BOX as part of
 the design.
 
-.. tip::
+.. hint::
 
    When determining which arguments to handle via data structures rather
    than via the stack, choose the arguments that are the more permanent or
@@ -383,7 +383,7 @@ nice auxiliary documentation.
 Stack Tips
 ----------
 
-.. tip::
+.. hint::
 
    Make sure that stack effects balance out under all possible control flows
 
@@ -403,7 +403,7 @@ next to ``THEN``.)
 
    Example of a stack commentary.
 
-.. tip::
+.. hint::
 
    When doing two things with the same number, perform the function that
    will go underneath first.
@@ -422,7 +422,7 @@ For example:
 
 (where you first compute the address). 
 
-.. tip::
+.. hint::
 
    Where possible, keep the number of return arguments the same in all
    possible cases.
@@ -469,7 +469,7 @@ chapter.)
 
 Here’s some suggestions to keep you from shooting yourself in the foot:
 
-.. tip::
+.. hint::
 
    #. Keep return stack operators symmetrical.
    #. Keep return stack operators symmetrical under all control flow
@@ -575,7 +575,7 @@ argument on the stack, resulting in:
 By factoring-out the reference to the variable, we made the definition
 more useful.
 
-.. tip::
+.. hint::
 
    Unless it involves cluttering up the stack to the point of unreadability,
    try to pass arguments via the stack rather than pulling them out of
@@ -852,7 +852,7 @@ better match their conceptual purposes.
 Sharing Components
 ==================
 
-.. tip::
+.. hint::
 
    It's legal to use a component for an additional purpose besides its
    intended one, provided:
@@ -1002,7 +1002,7 @@ application or of a particular component [slater83]_.
 Some applications require the ability to save a current state, then
 later restore it, or perhaps to have a number of alternating states.
 
-.. tip::
+.. hint::
 
    When the application requires handling a group of conditions
    simultaneously, use a state table, not separate variables.
@@ -1094,7 +1094,7 @@ header.
 Although it’s valid to patch the value of a ``CONSTANT`` at compile time, as
 we do here, there is a restriction of style:
 
-.. tip::
+.. hint::
 
    A ``CONSTANT``\ s value should never be changed once the application is
    compiled.

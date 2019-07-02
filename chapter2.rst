@@ -108,7 +108,7 @@ evolution. From protozoa to tadpoles to people, each species along the
 way has consisted of functional, living beings. The Creator does not
 appear to be a top-down designer.
 
-.. tip::
+.. hint::
 
    Start simple. Get it running. Learn what you're trying to do. Add
    complexity gradually, as needed to fit the requirements and
@@ -237,7 +237,7 @@ Experience has taught us to map out where we’re going before we begin
 coding. But planning has certain limitations. The following interviews
 give different perspectives to the value of planning.
 
-**Despite Teleska** 's preference for a well-planned project, he suggests that the choice between a top-down and bottom-up approach may depend on the situation:
+Despite **Teleska** 's preference for a well-planned project, he suggests that the choice between a top-down and bottom-up approach may depend on the situation:
     On two recent projects involving a lot of technical interface work, I
     did the whole thing bottom-up. I milled around in a bunch of
     data-sheets and technical descriptions of little crannies of the
@@ -314,7 +314,7 @@ requires days, instead of months, to install and configure.
     didn't know they could do on such a small computer, such as applying
     digital filters and signal processing to the data.
     
-    One of the things about {Forth}{} that makes this approach possible is
+    One of the things about Forth that makes this approach possible is
     that primitives are easily testable. It takes some experience with
     Forth to learn how to take advantage of this. Guys from traditional
     environments want to write ten pages of code at their desk, then sit
@@ -364,7 +364,7 @@ experienced Forth programmers, you won’t have to worry about them
 spending too much time on planning. Thus the following tip has two
 versions:
 
-.. tip::
+.. hint::
    
    For newcomers to Forth (with "traditional" backgrounds):
    Keep the analysis phase to a minimum.
@@ -374,13 +374,13 @@ versions:
 
 Or, as we observed in :doc:`Chapter One<chapter1>`:
 
-.. tip::
+.. hint::
 
    Plan for change (by designing components that can be changed).
 
 Or, simply:
 
-.. tip::
+.. hint::
    
    Prototype.
 
@@ -492,7 +492,7 @@ Nevertheless, it’s useful to make the distinction. A conceptual model is
 more flexible than a design. It’s easier to fit the requirements and
 constraints into the model than into a design.
 
-.. tip::
+.. hint::
 
    Strive to build a solid conceptual model before beginning the design.
 
@@ -533,7 +533,7 @@ and documenting the conceptual model:
 Defining the Interfaces
 =======================
 
-.. tip::
+.. hint::
 
    First, and most importantly, the conceptual model should describe the
    system's interfaces.
@@ -580,7 +580,7 @@ Teleska:
     implementation. The prose must be complete, even without reference to
     the diagrams.
 
-.. tip::
+.. hint::
 
    Decide on error- and exception-handling early as part of defining the
    interface.
@@ -611,7 +611,7 @@ Obviously, the choice bears tremendous impact on the design and
 implementation of the
 application.
 
-.. tip::
+.. hint::
 
    Develop the conceptual model by imagining the data traveling through and
    being acted upon by the parts of the model.
@@ -769,7 +769,7 @@ Then there’s the rate structure itself, which should be described in
 terms of “first-minute rate,” “additional minute rate,” “distance rate,”
 and “operator-assistance rate.”
 
-.. tip::
+.. hint::
 
    Factor the fruit. (Don't confuse apples with oranges.)
 
@@ -940,7 +940,7 @@ books on structured analysis recommend. That approach only increases the
 amount of available detail. The problem solver must also try to simplify
 the problem.
 
-.. tip::
+.. hint::
 
    You don't understand a problem until you can simplify it.
 
@@ -1114,7 +1114,7 @@ library.
 Achieving Simplicity
 ====================
 
-.. tip::
+.. hint::
 
    Keep it simple.
 
@@ -1159,7 +1159,7 @@ One of the most compelling advocates of simplicity is Moore:
     are a subset. They have violated the principle that the solution
     should match the problem.
 
-.. tip::
+.. hint::
 
    Generality usually involves complexity. Don't generalize your solution any
    more than will be required; instead, keep it changeable.
@@ -1204,7 +1204,7 @@ Moore continues:
     coefficients in a digital filter for a much cleaner, simpler and more
     efficient solution.
 
-.. tip::
+.. hint::
 
    Go back to what the problem was before the customer tried to solve it.
    Exploit the "don\'t cares".
@@ -1240,7 +1240,7 @@ Moore continues:
     By quantizing things fairly brutally, you make it easier to work with,
     more responsive, and simpler.
 
-.. tip::
+.. hint::
 
    To simplify, quantize.
 
@@ -1263,7 +1263,7 @@ consequences of replacing that with this?” etc.
 
 Yet another way to simplify a problem is this:
 
-.. tip::
+.. hint::
 
    To simplify, keep the user out of trouble.
 
@@ -1287,7 +1287,7 @@ error message such as “invalid number.” It’s just as easy—probably
 easier—to check each key as it’s typed and simply not allow non-numeric
 characters to appear.
 
-.. tip::
+.. hint::
 
    To simplify, take advantage of what's available.
 
@@ -1326,7 +1326,7 @@ probability:
 
 ..
 
-.. tip::
+.. hint::
 
    The mean time for making a "two-hour" addition to an application is
    approximately 12 hours.
@@ -1402,7 +1402,7 @@ observations.
 
    Most customers opt for jumping through the hoop.
 
-.. tip::
+.. hint::
 
    Everything takes longer than you think, including thinking.
 

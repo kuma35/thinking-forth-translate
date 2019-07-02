@@ -90,7 +90,7 @@ chain every screen of code to the next, linking the entire listing
 together linearly like a lengthy parchment scroll. This is not a useful
 approach. Instead:
 
-.. tip::
+.. hint::
 
    Structure your application listing like a book: hierarchically.
 
@@ -242,7 +242,7 @@ Example of a chapter-load screen.
    
    CORNER  \ initialize relative position to low-left corner
 
-.. tip:: latex
+.. hint::
 
    Use absolute screen numbers in the application-load screen.  Use
    relative screen numbers in the chapter- or section-load screens.
@@ -509,7 +509,7 @@ current listing, replacing exactly one page with no overlapping screens.
 Similarly, the word ``INDEX`` lists the first line of each screen, 60 per
 page, on boundaries evenly divisible by 60.
 
-.. tip::
+.. hint::
 
    Begin sections or lexicons on screen numbers evenly divisible by three.
    Begin applications or chapters on screen numbers evenly divisible by
@@ -538,7 +538,7 @@ Screen Layout
 
 In this section we’ll discuss the layout of each source screen.
 
-.. tip::
+.. hint::
 
    Reserve Line 0 as a "comment line."
 
@@ -631,7 +631,7 @@ indented.
    101    \ Circles                                    JPJ 06/10/83
    102    \ Circles                                    JPJ 06/10/83
 
-.. tip::
+.. hint::
 
    Begin all definitions at the left edge of the screen, and define only
    one word per line.
@@ -663,7 +663,7 @@ do not need unique comments:
    0 HUE BLACK     1 HUE BLUE      2 HUE GREEN
    3 HUE CYAN      4 HUE RED       5 HUE MAGENTA
 
-.. tip::
+.. hint::
 
    Leave lots of room at the bottom of the screen for later additions.
 
@@ -684,7 +684,7 @@ should contain about 20–40 percent code and 80–60 percent whitespace
 Don’t skip a line between each definition. You may, however, skip a line
 between *groups* of definitions.
 
-.. tip:: latex
+.. hint::
 
    All screens must leave ``BASE`` set to ``DECIMAL``.
 
@@ -733,7 +733,7 @@ don’t have to worry about resetting.
 Spacing and Indentation
 -----------------------
 
-.. tip::
+.. hint::
 
    Spacing and indentation are essential for readability.
 
@@ -868,7 +868,7 @@ these types of comments and give examples for each type.
 Stack Notation
 --------------
 
-.. tip::
+.. hint::
 
    Every colon or code definition that consumes and/or returns any arguments
    on the stack must include a stack-effect comment.
@@ -1267,7 +1267,7 @@ scanned-for.
 Purpose Comments
 ----------------
 
-.. tip::
+.. hint::
 
    Every definition should bear a purpose comment unless:
    
@@ -1325,7 +1325,7 @@ instance:
    
    : BLOCK  ( n -- a)  \   ensure block n in buffer at a
 
-.. tip::
+.. hint::
 
    Indicate the type of comment by ordering: input-stream comments first,
    stack-effect comments second, purpose comments last.
@@ -1363,7 +1363,7 @@ a defining word involves two behaviors:
 
 These two behaviors must be commented separately.
 
-.. tip::
+.. hint::
 
    Comment a defining word's compile-time behavior in the usual way;
    comment its run-time behavior separately, following the word
@@ -1422,7 +1422,7 @@ As with defining words, most compiling words involve two behaviors:
 #. That of the run-time routine which will execute when we invoke the
    word being defined. Again we must comment each behavior separately.
 
-.. tip::
+.. hint::
 
    Comment a compiling word's run-time behavior in the usual way; comment
    its compile-time behavior separately, beginning with the label
@@ -1601,7 +1601,7 @@ explanations.
 
    Wiggins, proud of his commenting technique.
 
-.. tip::
+.. hint::
 
    The most-accurate, least-expensive documentation
    is self-documenting code.
@@ -1634,7 +1634,7 @@ on your perceptions of what the entity should or should not do.
 
 Here are some rules for choosing good names:
 
-.. tip::
+.. hint::
 
    Choose names according to "what," not "how."
 
@@ -1656,7 +1656,7 @@ region of memory *forward* into overlapping memory. It accomplishes this
 by starting with the last byte and working *backward*. In the new name,
 the forwardness of the “what” supersedes the backwardness of the “how.”
 
-.. tip::
+.. hint::
 
    Find the most expressive word.
 
@@ -1707,7 +1707,7 @@ security when you’re forced to distribute source, you can make your code
 very unreadable by deliberately choosing misleading names. Of course,
 maintenance becomes impossible.
 
-.. tip::
+.. hint::
 
    Choose names that work in phrases.
 
@@ -1760,7 +1760,7 @@ is TH, which he uses as an array indexing word. For instance, the phrase
 returns the address of the “fifth” element of the
 array.
 
-.. tip::
+.. hint::
 
    Spell names in full.
 
@@ -1816,7 +1816,7 @@ pronounceable; otherwise you may regret it when you try to discuss the
 program with other people. If the name is symbolic, invent a
 pronunciation (e.g., ``>R`` is called “to-r”; ``R>`` is called “r-from”).
 
-.. tip::
+.. hint::
 
    Favor short words.
 
@@ -1827,7 +1827,7 @@ than ``INTENSE``. ``ENABLE`` is a better name than ``ACTIVATE``; ``GO``, ``RUN``
 Shorter names are easier to type. They save space in the source screen.
 Most important, they make your code crisp and clean.
 
-.. tip::
+.. hint::
 
    Hyphenated names may be a sign of bad factoring.
 
@@ -1861,7 +1861,7 @@ reused in other parts of the application. If you had a ``MIDDLE`` motor and
 solenoid as well, you’d need only seven words to describe sixteen
 combinations.
 
-.. tip::
+.. hint::
 
    Don't bundle numbers into names.
 
@@ -1894,7 +1894,7 @@ We’ll amplify on these ideas in the next chapter on “Factoring.”
 Naming Standards: The Science
 =============================
 
-.. tip:: latex
+.. hint::
 
    Learn and adopt Forth\'s naming conventions.
 
@@ -1930,7 +1930,7 @@ code. Which is more readable and natural sounding?:
 
 Probably the former, even though it assumes you know the play.
 
-.. tip::
+.. hint::
 
    Use prefixes and suffices to differentiate between like words rather
    than to cram details of meaning into the name itself.
@@ -1952,7 +1952,7 @@ additional word called DONE (as a flag, for instance).
 
 A final tip on naming:
 
-.. tip::
+.. hint::
 
    Begin all hex numbers with "0" (zero) to avoid potential collisions
    with names.
