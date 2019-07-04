@@ -1,7 +1,7 @@
 
-***********
-2. Analysis
-***********
+=============
+ 2. Analysis
+=============
 
 Anyone who tells you there is some definite number
 of phases to the software development cycle is a fool.
@@ -1003,7 +1003,7 @@ This leaves us with the simplified table shown in
 :numref:`fig2-8` , and an increased reliance on expressing
 calculations. Now we’re getting somewhere.
 
-Let’s go back to our definition of PER-MINUTE-CHARGE:
+Let’s go back to our definition of ``PER-MINUTE-CHARGE``:
 
 .. code-block:: none
    
@@ -1017,16 +1017,16 @@ for the mileage charge.
 
 The connection charge depends on whether the minute is the first or an
 additional minute. Since there are two kinds of per-minute charges,
-perhaps it will be easiest to rewrite PER-MINUTE-CHARGE as two different
+perhaps it will be easiest to rewrite ``PER-MINUTE-CHARGE`` as two different
 words.
 
 Let’s assume we will build a component that will fetch the appropriate
-rates from the table. The word 1MINUTE will get the rate for the first
-minute; +MINUTES will get the rate for each additional minute. Both of
+rates from the table. The word ``1MINUTE`` will get the rate for the first
+minute; ``+MINUTES`` will get the rate for each additional minute. Both of
 these words will depend on the time of day to determine whether to use
 the full, lower, or lowest rates.
 
-Now we can define the pair of words to replace PER-MINUTE-CHARGE:
+Now we can define the pair of words to replace ``PER-MINUTE-CHARGE``:
 
 .. code-block:: none
    
@@ -1039,7 +1039,7 @@ Now we can define the pair of words to replace PER-MINUTE-CHARGE:
 
 What is the rule for the mileage charge? Very simple. It is the rate
 (per hundred miles) times the number of miles (in hundreds). Let’s
-assume we can define the word MILEAGE-RATE, which will fetch the mileage
+assume we can define the word ``MILEAGE-RATE``, which will fetch the mileage
 rate from the table:
 
 .. code-block:: none
@@ -1073,7 +1073,7 @@ they might be more readable for the customer. Short names are preferred
 in real code—see :doc:`Chapter Five<chapter5>`.)
 
 We’ll unveil the finished code for this example in
-doc:`Chapter Eight<chapter8>`.
+:doc:`Chapter Eight<chapter8>`.
 
 Defining the Data Structures
 ============================
@@ -1087,8 +1087,8 @@ If you’re automating a library index, for instance, a crucial portion of
 your analysis will concern developing the logical data structure. You’ll
 have to decide what information will be kept for each book: title,
 author, subject, etc. These “attributes” will comprise an “entity” (set
-of related records) called BOOKS. Then you’ll have to determine what
-other data structures will be required to let the users search the BOOKS
+of related records) called ``BOOKS``. Then you’ll have to determine what
+other data structures will be required to let the users search the ``BOOKS``
 efficiently.
 
 .. figure:: img2-060.png
@@ -1191,15 +1191,15 @@ Moore continues:
     Another example is the PID (proportional integration and
     differentiation) algorithm for servos. You have one term that
     integrates, another term that differentiates, and a third term that
-    smooths. You combine those with 30% integration, 10%
-    differentiation, or whatever. But it's only a digital filter. It used
+    smooths. You combine those with 30\% integration, 10\%
+    differentiation, or whatever. But it\'s only a digital filter. It used
     to be convenient in analog days to break out certain terms of the
     digital filter and say, "This is the integrator and this is the
     differentiator. I\'ll make this with a capacitor and I\'ll make that
     with an inductor".
     
     Again the spec writers will model the analog solution which was
-    modeling the electromechanical solution, and they're several models
+    modeling the electromechanical solution, and they\'re several models
     away from reality. In fact, you can replace it all with two or three
     coefficients in a digital filter for a much cleaner, simpler and more
     efficient solution.

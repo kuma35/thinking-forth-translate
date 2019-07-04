@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-25 00:54+0900\n"
-"PO-Revision-Date: 2019-07-01 21:08+0900\n"
+"PO-Revision-Date: 2019-07-04 08:48+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -31,7 +31,7 @@ msgid ""
 "each stitch. But programmers design, build, and repair the stuff of "
 "imagination, ghostly mechanisms that escape the senses. Our work takes "
 "place not in RAM, not in an editor, but within our own minds."
-msgstr "コンピュータ・プログラミングは頭がおかしくなります。他の職業は努力した結果を目にすることができる贅沢に恵まれています。時計職人は歯車やホィールを見る事ができます。仕立て屋はステッチ毎に縫い目が伸びるのを見ることができます。しかしプログラマーは想像や意識外の恐ろしげな仕組みのようなものを設計・構築・修復します。私たちの仕事はRAMやエディタ内ではなく、自身の心の中で行われます。"
+msgstr "コンピュータ・プログラミングは頭がおかしくなります。他の職業は努力した結果を目にすることができる贅沢に恵まれています。時計職人は歯車やホィールを見る事ができます。仕立て屋はステッチ毎に縫い目が伸びるのを見ることができます。しかしプログラマは想像や意識外の恐ろしげな仕組みのようなものを設計・構築・修復します。私たちの仕事はRAMやエディタ内ではなく、自身の心の中で行われます。"
 
 #: ../../preface.rst:14
 msgid ""
@@ -117,6 +117,7 @@ msgid "Acknowledgments"
 msgstr "謝辞"
 
 #: ../../preface.rst:76
+#, fuzzy
 msgid ""
 "Many thanks to all the good people who gave their time and ideas to this "
 "book, including: Charles Moore, Dr. Mark Bernstein, Dave Johnson, John "

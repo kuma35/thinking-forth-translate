@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 18:46+0900\n"
+"POT-Creation-Date: 2019-07-04 22:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -897,7 +897,7 @@ msgid "This leaves us with the simplified table shown in :numref:`fig2-8` , and 
 msgstr ""
 
 #: ../../chapter2.rst:1006
-msgid "Let’s go back to our definition of PER-MINUTE-CHARGE:"
+msgid "Let’s go back to our definition of ``PER-MINUTE-CHARGE``:"
 msgstr ""
 
 #: ../../chapter2.rst:1015
@@ -905,19 +905,19 @@ msgid "Let’s get more specific about the rules for the connection charge and f
 msgstr ""
 
 #: ../../chapter2.rst:1018
-msgid "The connection charge depends on whether the minute is the first or an additional minute. Since there are two kinds of per-minute charges, perhaps it will be easiest to rewrite PER-MINUTE-CHARGE as two different words."
+msgid "The connection charge depends on whether the minute is the first or an additional minute. Since there are two kinds of per-minute charges, perhaps it will be easiest to rewrite ``PER-MINUTE-CHARGE`` as two different words."
 msgstr ""
 
 #: ../../chapter2.rst:1023
-msgid "Let’s assume we will build a component that will fetch the appropriate rates from the table. The word 1MINUTE will get the rate for the first minute; +MINUTES will get the rate for each additional minute. Both of these words will depend on the time of day to determine whether to use the full, lower, or lowest rates."
+msgid "Let’s assume we will build a component that will fetch the appropriate rates from the table. The word ``1MINUTE`` will get the rate for the first minute; ``+MINUTES`` will get the rate for each additional minute. Both of these words will depend on the time of day to determine whether to use the full, lower, or lowest rates."
 msgstr ""
 
 #: ../../chapter2.rst:1029
-msgid "Now we can define the pair of words to replace PER-MINUTE-CHARGE:"
+msgid "Now we can define the pair of words to replace ``PER-MINUTE-CHARGE``:"
 msgstr ""
 
 #: ../../chapter2.rst:1040
-msgid "What is the rule for the mileage charge? Very simple. It is the rate (per hundred miles) times the number of miles (in hundreds). Let’s assume we can define the word MILEAGE-RATE, which will fetch the mileage rate from the table:"
+msgid "What is the rule for the mileage charge? Very simple. It is the rate (per hundred miles) times the number of miles (in hundreds). Let’s assume we can define the word ``MILEAGE-RATE``, which will fetch the mileage rate from the table:"
 msgstr ""
 
 #: ../../chapter2.rst:1052
@@ -933,7 +933,7 @@ msgid "(Some final notes on this example: We’ve written something very close t
 msgstr ""
 
 #: ../../chapter2.rst:1075
-msgid "We’ll unveil the finished code for this example in doc:`Chapter Eight<chapter8>`."
+msgid "We’ll unveil the finished code for this example in :doc:`Chapter Eight<chapter8>`."
 msgstr ""
 
 #: ../../chapter2.rst:1079
@@ -945,7 +945,7 @@ msgid "After defining the interfaces, and sometimes defining the rules, occasion
 msgstr ""
 
 #: ../../chapter2.rst:1086
-msgid "If you’re automating a library index, for instance, a crucial portion of your analysis will concern developing the logical data structure. You’ll have to decide what information will be kept for each book: title, author, subject, etc. These “attributes” will comprise an “entity” (set of related records) called BOOKS. Then you’ll have to determine what other data structures will be required to let the users search the BOOKS efficiently."
+msgid "If you’re automating a library index, for instance, a crucial portion of your analysis will concern developing the logical data structure. You’ll have to decide what information will be kept for each book: title, author, subject, etc. These “attributes” will comprise an “entity” (set of related records) called ``BOOKS``. Then you’ll have to determine what other data structures will be required to let the users search the ``BOOKS`` efficiently."
 msgstr ""
 
 #: ../../chapter2.rst:1098
@@ -1050,11 +1050,11 @@ msgid "Take an engineering application, such as a 75-ton metal powder press, sta
 msgstr ""
 
 #: ../../chapter2.rst:1191
-msgid "Another example is the PID (proportional integration and differentiation) algorithm for servos. You have one term that integrates, another term that differentiates, and a third term that smooths. You combine those with 30% integration, 10% differentiation, or whatever. But it's only a digital filter. It used to be convenient in analog days to break out certain terms of the digital filter and say, \"This is the integrator and this is the differentiator. I\\'ll make this with a capacitor and I\\'ll make that with an inductor\"."
+msgid "Another example is the PID (proportional integration and differentiation) algorithm for servos. You have one term that integrates, another term that differentiates, and a third term that smooths. You combine those with 30\\% integration, 10\\% differentiation, or whatever. But it\\'s only a digital filter. It used to be convenient in analog days to break out certain terms of the digital filter and say, \"This is the integrator and this is the differentiator. I\\'ll make this with a capacitor and I\\'ll make that with an inductor\"."
 msgstr ""
 
 #: ../../chapter2.rst:1201
-msgid "Again the spec writers will model the analog solution which was modeling the electromechanical solution, and they're several models away from reality. In fact, you can replace it all with two or three coefficients in a digital filter for a much cleaner, simpler and more efficient solution."
+msgid "Again the spec writers will model the analog solution which was modeling the electromechanical solution, and they\\'re several models away from reality. In fact, you can replace it all with two or three coefficients in a digital filter for a much cleaner, simpler and more efficient solution."
 msgstr ""
 
 #: ../../chapter2.rst:1209
