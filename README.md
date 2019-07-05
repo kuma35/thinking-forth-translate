@@ -2,6 +2,7 @@
 # thinking-forth-translate
 
 Thinking Forth by Leo Brodie (1986,1994,2004)
+
 translate English to Japanese by Sphinx-intl
 
 venv sphinx environment and output.
@@ -20,11 +21,11 @@ venv sphinx environment and output.
 2. cd /path/to/thinking-forth-translate
 3. python3 -m venv ./venv
 4. source ./venv/bin/activate
-5. pip install -r ./venv-pip-freeze.tex
+5. pip install -r ./venv-pip-freeze.txt
 
 # Usage
 
-- see https://github.com/kuma35/thinking-forth-translate
+- see https://thinking-forth-ja.readthedocs.io/ja/latest/
 - clone this repo.
 
 # Authors
