@@ -4,40 +4,41 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-08 05:15+0900\n"
+"PO-Revision-Date: 2019-07-08 05:17+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../chapter3.rst:4
 msgid "3. Preliminary Design/Decomposition"
-msgstr ""
+msgstr "第３章 予備設計・分解"
 
 #: ../../chapter3.rst:6
 msgid ""
 "Assuming you have some idea of what your program should accomplish, it’s "
 "time to begin the design. The first stage, preliminary design, focuses on"
 " shrinking your mountainous problem into manageable molehills."
-msgstr ""
+msgstr "あなたが、自分のプログラムで何を達成すべきかについて何らかの考えを持っていると仮定して、設計を始める時が来ました。最初の段階である予備設計では、山のようにそびえ立つ問題をモグラ塚に縮小する事に焦点を当てます。"
 
 #: ../../chapter3.rst:11
 msgid ""
 "In this chapter we’ll discuss two ways to decompose your Forth "
 "application."
-msgstr ""
+msgstr "この章では、Forthアプリケーションを分解する2つの方法について説明します。"
 
 #: ../../chapter3.rst:15
 msgid "Decomposition by Component"
-msgstr ""
+msgstr "コンポーネントによる分解"
 
 #: ../../chapter3.rst:17
 msgid ""
@@ -45,19 +46,21 @@ msgid ""
 "three months to take a weekend vacation to the mountains. You’ve been "
 "making lists of what to bring, and daydreaming about the slopes."
 msgstr ""
+"あなたはこのような経験がないでしょうか？　"
+"あなたはある週末に登山するために３ヶ月前から計画を練っていました。あなたは何を持っていくべきかのリストを作り、そして山肌について空想しています。"
 
 #: ../../chapter3.rst:21
 msgid ""
 "Meanwhile you’re deciding what to wear to your cousin’s wedding next "
 "Saturday. They’re informal types, and you don’t want to overdress. Still,"
 " a wedding’s a wedding. Maybe you should rent a tuxedo anyway."
-msgstr ""
+msgstr "その合間に、あなたは来週の土曜日、いとこの結婚式に何を着ていくかを決めます。彼らは形式ばらないタイプなので、あなたはあまり着飾りたくはありません。しかし、結婚式は結婚式です。たぶんあなたはとにかくタキシードを借りるべきです。"
 
 #: ../../chapter3.rst:25
 msgid ""
 "For all this planning, it’s not until Thursday that you realize the two "
 "events coincide. You have expletives for such moments."
-msgstr ""
+msgstr "これら全ての計画において、あなたは木曜日になるまで2つのイベントが同時に起こる事に気付きませんでした。誰しもそんな事があります。"
 
 #: ../../chapter3.rst:28
 msgid ""
@@ -65,10 +68,12 @@ msgid ""
 "Apparently the human mind actually makes links between memories. New "
 "ideas are somehow added onto existing paths of related thoughts."
 msgstr ""
+"私は賢いはずなのに、どうしてうっかりなんかしちゃうんだろう？　"
+"どうやら人間の心は記憶と記憶の間に繋がりを作ります。関連する考えの経路に、新しい考えがなぜか追加されています。"
 
 #: ../../chapter3.rst:36
 msgid "Pools of thought not yet linked"
-msgstr ""
+msgstr "まだ繋がってない記憶のプール"
 
 #: ../../chapter3.rst:40
 msgid ""
@@ -78,7 +83,7 @@ msgid ""
 " weather report) got linked into both pools of thought. A lightning flash"
 " of realization arced between the pools, followed inexorably by "
 "thunderous panic."
-msgstr ""
+msgstr "今述べた災難では、木曜日になるまで２つの記憶プールの間に繋がりができることはありませんでした。(土曜日の天気予報を聞くようなちょっとしたことで)幾つかの新しい入力が２つの思考プールをつなげた時、おそらく矛盾に気付くのです。理解のひらめきが記憶プール間で起こり、そして容赦ないパニックがそれに続きます。"
 
 #: ../../chapter3.rst:47
 msgid ""
@@ -87,12 +92,14 @@ msgid ""
 "have seen the other event scheduled, something your brain failed to do "
 "for all its intricate magnificence."
 msgstr ""
+"そのような災害を回避するためのシンプルなツールが発明されました。 カレンダーと呼ばれています。 "
+"両方の計画を同じカレンダーに記録する場合、もう一方のイベントがスケジュールされているのが分かります。これはあなたの脳の、その複雑な素晴らしさゆえに出来なかった事です。"
 
 #: ../../chapter3.rst:54
 msgid ""
 "To see the relationship between two things, put them close together. To "
 "remind yourself of the relationship, **keep** them together."
-msgstr ""
+msgstr "二つの事の関係を調べるためには、それらを近づけてください。 関係を思い出させるために、それらを **一緒** に保持します。"
 
 #: ../../chapter3.rst:58
 msgid ""
@@ -100,18 +107,20 @@ msgid ""
 "design phase. This phase is traditionally the one in which the designer "
 "dissects a large application into smaller, programmer-sized modules."
 msgstr ""
+"これらわかりきったことはソフトウェア設計、特に予備設計段階に当てはまります。 "
+"このフェイズでは伝統的に、設計者が大規模なアプリケーションを、より小さなプログラマサイズのモジュールに分割します。"
 
 #: ../../chapter3.rst:62
 msgid ""
 "In :doc:`Chapter One<chapter1>` we discovered that applications can be "
 "conveniently decomposed into components."
-msgstr ""
+msgstr ":doc:`第１章<chapter1>` で、私たちはアプリケーションが都合よくコンポーネントに分解できる事を発見しました。"
 
 #: ../../chapter3.rst:67
 msgid ""
 "The goal of preliminary design is to determine what components are "
 "necessary to accomplish the requirements."
-msgstr ""
+msgstr "予備設計の目的は、要件を満たすためにどのコンポーネントが必要かを決定することです。"
 
 #: ../../chapter3.rst:70
 msgid ""
@@ -121,6 +130,8 @@ msgid ""
 "lexicon.” With these words you’ll be able to describe the order of events"
 " that must occur within your application."
 msgstr ""
+"たとえば、あらかじめ決められたスケジュールに従ってイベントを発生させる必要があるアプリケーションがあるとします。 "
+"スケジュールを管理するには、最初に「スケジュール作成用の語彙」を構成するためのいくつかのワードを設計します。これらのワードを使用して、アプリケーション内で発生するイベントの順序を記述できます。"
 
 #: ../../chapter3.rst:76
 msgid ""
@@ -129,6 +140,8 @@ msgid ""
 "each functional module “know” things about its schedule that could "
 "potentially conflict with another module’s schedule."
 msgstr ""
+"こうすれば単一のコンポーネント内で、情報を共有するだけでなく、潜在的な競合を解決することもできます。 "
+"間違った方法とは、各機能モジュールがそのスケジュールについて、他のモジュールのスケジュールと衝突する可能性があることを「知っている」ことです。"
 
 #: ../../chapter3.rst:81
 msgid ""
@@ -137,6 +150,8 @@ msgid ""
 "egg” problem. But Forth programmers handle it the same way chickens and "
 "eggs do: iteratively."
 msgstr ""
+"コンポーネントを設計する際に、使用するコンポーネントに必要なコマンドはどのようして知るのでしょうか？確かに、これは「鶏が先か、卵が先か」問題のようなものです。"
+" しかし、Forthプログラマーは、鶏や卵と同じ方法でそれを処理しています。"
 
 #: ../../chapter3.rst:86
 msgid ""
@@ -145,6 +160,8 @@ msgid ""
 "component should be considered a “closed book” until the application has "
 "been completed—which, in the case of maintained applications, is never."
 msgstr ""
+"コンポーネントが適切に設計されていれば、完全性は重要ではありません。 実際、コンポーネントは現在の反復回の設計に十分であれば十分です。 "
+"維持管理中のアプリケーションと異なり、そのアプリケーションが完成するまでは、どのコンポーネントも「決定済の事項」と見なすべきではありません。"
 
 #: ../../chapter3.rst:91
 msgid ""
@@ -156,7 +173,7 @@ msgid ""
 "instruction to put an appropriate command byte into the command register."
 " This makes the entire application needlessly dependent on that "
 "particular chip—very risky."
-msgstr ""
+msgstr "例として、あなたの製品がシステムの一部である汎用I/Oチップを介して他のマシンと「話す」必要があると想像してください。この特定のチップは「制御レジスタ」と「データレジスタ」を持っています。良くない設計のアプリケーションでは、プログラム全体に散りばめられたコード片が、単純にOUT命令を呼び出して適当なコマンドバイトをコマンドレジスタに入れるだけでその通信チップに通信チップにアクセスします。これはアプリケーション全体を特定のチップに不必要に依存させることになります。非常に危険です。"
 
 #: ../../chapter3.rst:100
 msgid ""
@@ -164,6 +181,8 @@ msgid ""
 "chip. These commands would have logical names and a convenient interface "
 "(usually Forth’s stack) to allow usage by the rest of the application."
 msgstr ""
+"代わりに、ForthプログラマはI/Oチップを制御するためのコンポーネントを書くでしょう。 "
+"これらのコマンドには、論理名と便利なインタフェース（通常はForthのスタック）があり、残りのアプリケーションで使用することができます。"
 
 #: ../../chapter3.rst:104
 msgid ""
@@ -175,12 +194,14 @@ msgid ""
 " set the baud rate. There’s no penalty for making this change except the "
 "few minutes (at most) it takes to edit and recompile."
 msgstr ""
+"製品の設計を何度も繰り返す場合は、その時点までに必要なコマンドだけを実装します。「制御レジスタ」にセットできる有効なコードをすべて実装したりはしません。プロジェクトサイクルの後半で追加のコマンドが必要になり、それがボーレートを変更するためのものであれば、新しいコマンドはボーレートの設定に必要なコードではなく、I/Oチップの語彙に追加します。"
+" この変更を行っても、編集や再コンパイルにかかる時間が最大数分掛かることを除けば、ペナルティはありません。"
 
 #: ../../chapter3.rst:114
 msgid ""
 "Within each component, implement only the commands needed for the current"
-" iteration. (But don't preclude future additions.)"
-msgstr ""
+" iteration. (But don\\'t preclude future additions.)"
+msgstr "各コンポーネント内で、現在の反復回に必要なコマンドだけを実装します(しかし、将来の追加を妨げないようにしてください)。"
 
 #: ../../chapter3.rst:117
 msgid ""
@@ -188,6 +209,8 @@ msgid ""
 " necessarily bad style for definitions within the component to share "
 "redundant information."
 msgstr ""
+"コンポーネントの内部で起きることは、ほとんどそれ自身のための仕事です。 "
+"コンポーネント内の定義が冗長な情報を共有するのは必ずしも悪いスタイルではありません。"
 
 #: ../../chapter3.rst:121
 msgid ""
@@ -196,6 +219,8 @@ msgid ""
 "point to the next record; another definition decrements the pointer 14 "
 "bytes."
 msgstr ""
+"たとえば、あるデータ構造のレコードは14バイトの長さです。 "
+"コンポーネント内のある定義では、次のレコードを指すためにポインタを14バイト分進めます。 別の定義では、ポインタを14バイト分減算します。"
 
 #: ../../chapter3.rst:126
 msgid ""
@@ -203,29 +228,33 @@ msgid ""
 "be used elsewhere, you don’t need to define it as constant. Just use the "
 "number 14 in both definitions:"
 msgstr ""
+"その数字14はコンポーネントの「秘密」であり、他の場所から利用されない限り、定数として定義する必要はありません。 "
+"両方の定義に14という数字を使用するだけです。"
 
 #: ../../chapter3.rst:137
 msgid ""
 "On the other hand, if the value will be needed outside of the component, "
 "or if it’s used several times within the component and there’s a good "
 "chance that it will change, you’re better off hiding it behind a name:"
-msgstr ""
+msgstr "一方、コンポーネントの外部で値が必要になる場合、またはコンポーネント内で値が複数回使用されていて値が変更される可能性が高い場合は、それを名前の下に隠すことをお勧めします。"
 
 #: ../../chapter3.rst:149
-msgid "(The name /RECORD, by convention, means “bytes per record.”)"
-msgstr ""
+msgid "(The name ``/RECORD``, by convention, means “bytes per record.”)"
+msgstr "(Forthの慣習的に ``/RECORD`` と言う名前は、「レコード当たりのバイト(byotes per record)」を意味します。)"
 
 #: ../../chapter3.rst:152
 msgid "Example: A Tiny Editor"
-msgstr ""
+msgstr "例：タイニー・エディタ"
 
 #: ../../chapter3.rst:154
 msgid ""
 "Let’s apply decomposition by component to a real problem. It would be "
-"nice to design a large application right here in doc:`Chapter "
+"nice to design a large application right here in :doc:`Chapter "
 "Three<chapter3>`, but alas, we don’t have the room and besides, we’d get "
 "sidetracked in trying to understand the application."
 msgstr ""
+"実際の問題にコンポーネントによる分解を適用しましょう。:doc:`第３章<chapter3>` "
+"のここで大規模なアプリケーションを設計するのは素敵です。しかし、残念なことに、私たちは開発チームを持っていないし、アプリケーションを理解しようとして横道にそれてしまいます。"
 
 #: ../../chapter3.rst:160
 msgid ""
@@ -233,43 +262,45 @@ msgid ""
 " been decomposed. We’ll design this component by decomposing it further, "
 "into subcomponents."
 msgstr ""
+"代わりに、すでに分解されている大規模アプリケーションからコンポーネントを取り出します。 "
+"このコンポーネントをさらに分解してサブコンポーネントにすることで、このコンポーネントを設計します。"
 
 #: ../../chapter3.rst:164
 msgid ""
 "Imagine that we must create a tiny editor that will allow users to change"
 " the contents of input fields on their terminal screen. For instance, the"
 " screen might look like this:"
-msgstr ""
+msgstr "ユーザが端末画面の入力フィールドの内容を変更できるようにするちっこいエディタを作成する必要があるとします。 たとえば、画面は次のようになります。"
 
 #: ../../chapter3.rst:171
 msgid ""
 "The editor will provide three modes for users to change the contents of "
 "the input field:"
-msgstr ""
+msgstr "エディタは、ユーザが入力フィールドの内容を変更するための3つのモードを提供します。"
 
 #: ../../chapter3.rst:176
 msgid "Overwrite."
-msgstr ""
+msgstr "上書き"
 
 #: ../../chapter3.rst:175
 msgid ""
 "Typing ordinary characters overwrites any characters that were there "
 "before."
-msgstr ""
+msgstr "通常の文字をタイプすると、そこにある文字は全て上書きされます。"
 
 #: ../../chapter3.rst:180
 msgid "Delete."
-msgstr ""
+msgstr "削除"
 
 #: ../../chapter3.rst:179
 msgid ""
 "Pressing the combination of keys “Ctrl D” deletes the character under the"
 " cursor and slides the remaining characters leftwards."
-msgstr ""
+msgstr "組み合わせキー :kbd:`CTRL D` を押すと、カーソル位置の1文字を削除し、その後ろの文字列が1文字左にスライドします。"
 
 #: ../../chapter3.rst:186
 msgid "Insert."
-msgstr ""
+msgstr "挿入"
 
 #: ../../chapter3.rst:183
 msgid ""
@@ -277,6 +308,8 @@ msgid ""
 "“Insert Mode,” where subsequently typing ordinary characters inserts them"
 " at the cursor position, sliding the remaining characters rightwards."
 msgstr ""
+"組み合わせキー :kbd:`CTRL I` "
+"を押すと、エディタは「挿入モード」に切り替わり、通常の文字を入力すると、カーソル位置に挿入し、カーソル位置にあった1文字とそれ以降の文字列は右にスライドします。"
 
 #: ../../chapter3.rst:188
 msgid ""
@@ -284,10 +317,12 @@ msgid ""
 "exception-handling; for instance, what is the limit of the field? what "
 "happens in insert mode when characters spill off the right? etc."
 msgstr ""
+"概念モデルの一部として、エラーまたは例外処理も考慮する必要があります。 例えば、フィールドは何文字まで入力できますか？ "
+"挿入モードで文字が右にあふれたときに何が起こりますか？などです。"
 
 #: ../../chapter3.rst:192
 msgid "That’s all the specification we have right now. The rest is up to us."
-msgstr ""
+msgstr "これが今現在、私たちの手元にあるすべての仕様です。 残りは私たち次第です。"
 
 #: ../../chapter3.rst:194
 msgid ""
@@ -297,40 +332,48 @@ msgid ""
 "matches them up with a list of possible operations. The keystroke "
 "interpreter is one component, and its lexicon will consist of a single "
 "word. Since that word will allow the editing of a field, let’s call the "
-"word EDIT."
+"word ``EDIT``."
 msgstr ""
+"どのコンポーネントが必要かを決定してみましょう。まず、エディタはキーボードで入力されたキーに反応します。したがって、私たちにはキーストロークインタプリタが必要です。それはキーストロークを待ち受け、それらを可能な操作のリストと照合する、ある種のルーチンです。キーストロークインタプリタは1つのコンポーネントであり、その語彙は単一のワードで構成されます。"
+" そのワードはフィールドの編集を許可するので、 ``EDIT`` というワードを呼び出すことになるしょう。"
 
 #: ../../chapter3.rst:202
 msgid ""
 "The operations invoked by the keystroke interpreter will comprise a "
 "second lexicon. The definitions in this lexicon will perform the various "
-"functions required. One word might be called DELETE, another INSERT, etc."
-" Since each of these commands will be invoked by the interpreter, each of"
-" them will process a single keystroke."
+"functions required. One word might be called ``DELETE``, another "
+"``INSERT``, etc. Since each of these commands will be invoked by the "
+"interpreter, each of them will process a single keystroke."
 msgstr ""
+"キーストロークインタプリタによって呼び出された操作は、2番目の語彙を構成します。 この語彙の定義は、必要なさまざまな機能を実行します。 "
+"``DELETE`` 、 ``INSERT`` "
+"、等と呼ばれるかもしれません。これらのコマンドはそれぞれキーストロークインタプリタによって呼び出されるので、それぞれが単一のキーストロークを処理します。"
 
 #: ../../chapter3.rst:208
 msgid ""
 "Below these commands should lie a third component, the set of words that "
 "implement the data structure to be edited."
-msgstr ""
+msgstr "これらのコマンドの下には、3番目のコンポーネント、編集するデータ構造を実装する一連のワードがあります。"
 
 #: ../../chapter3.rst:215
 msgid "Generalized decomposition of the Tiny Editor problem."
-msgstr ""
+msgstr "タイニーエディタ問題の一般化された分解"
 
 #: ../../chapter3.rst:219
 msgid ""
 "Finally, we’ll need a component to display the field on the video screen."
 " For the sake of simplicity, let’s plan on creating one word only, "
-"REDISPLAY, to redisplay the entire field after each key is pressed."
+"``REDISPLAY``, to redisplay the entire field after each key is pressed."
 msgstr ""
+"最後に、ビデオ画面にフィールドを表示するためのコンポーネントが必要です。 "
+"簡単にするために、各キーが押された後にフィールド全体を再表示するために、1つのワード ``REDISPLAY`` "
+"のみを作成することを計画しましょう。"
 
 #: ../../chapter3.rst:230
 msgid ""
 "This approach separates revising the buffer from updating the display. "
 "For now, we’ll only concentrate on revising the buffer."
-msgstr ""
+msgstr "このアプローチはバッファの修正と表示の更新を分離します。 今のところ、バッファの修正に集中するだけです。"
 
 #: ../../chapter3.rst:233
 msgid ""
@@ -341,122 +384,131 @@ msgid ""
 " an old pizza menu (we won’t pay much attention to exception-handling in "
 "the present discussion):"
 msgstr ""
+"各コンポーネントを個別に見て、それぞれが必要とするワードを判断してみましょう。 "
+"まず、上書き、削除、挿入という3つの最も重要な編集機能内で発生しなければならないイベントについて検討します。 "
+"私たちは、チラシの裏に次のようなものを描くかもしれません（この議論では例外処理にあまり注意を払いません）。"
 
 #: ../../chapter3.rst:244
 msgid "To Overwrite:"
-msgstr ""
+msgstr "上書き処理"
 
 #: ../../chapter3.rst:241
 msgid "Store new character into byte pointer to by pointer."
-msgstr ""
+msgstr "１文字をポインタの示すバイト位置に格納。"
 
 #: ../../chapter3.rst:242 ../../chapter3.rst:256
 msgid "Advance pointer (unless at end of field)."
-msgstr ""
+msgstr "（フィールドの末尾以外なら）ポインタを１つ進める。"
 
 #: ../../chapter3.rst:251
 msgid "To Delete:"
-msgstr ""
+msgstr "削除処理"
 
 #: ../../chapter3.rst:247
 msgid ""
 "Copy leftwards, by one place, the string beginning one place to the right"
 " of the pointer."
-msgstr ""
+msgstr "ポインタの1つ右から始まる文字列を１桁左にコピー。"
 
 #: ../../chapter3.rst:249
 msgid "Store a \"blank\" into the last position on the line."
-msgstr ""
+msgstr "その行の末尾に「空白」を格納。"
 
 #: ../../chapter3.rst:258
 msgid "To Insert:"
-msgstr ""
+msgstr "挿入処理"
 
 #: ../../chapter3.rst:254
 msgid "Copy rightwards, by one place, the string beginning at the pointer."
-msgstr ""
+msgstr "ポインタ位置からの文字列を１桁右にコピー。"
 
 #: ../../chapter3.rst:255
 msgid "Store new character into byte pointed to by pointer."
-msgstr ""
+msgstr "ポインタの示すバイト位置に新しい1文字を格納"
 
 #: ../../chapter3.rst:260
 msgid "We’ve just developed the algorithms for the problem at hand."
-msgstr ""
+msgstr "この問題の為のアルゴリズムは丁度いま手元で開発中です。"
 
 #: ../../chapter3.rst:262
 msgid ""
 "Our next step is to examine these three essential procedures, looking for"
 " useful “names”—that is procedures or elements which can either:"
-msgstr ""
+msgstr "次のステップでは、これら3つの重要な処理を調べて、便利な「名前」を探します。それは手順または要素のいずれかで、以下のいずれかを実行できるものです。"
 
 #: ../../chapter3.rst:265
 msgid "possibly be reused, or"
-msgstr ""
+msgstr "再利用可能か、または、"
 
 #: ../../chapter3.rst:267
 msgid "possibly change"
-msgstr ""
+msgstr "変更可能なもの"
 
 #: ../../chapter3.rst:269
 msgid ""
 "We discover that all three procedures use something called a “pointer.” "
 "We need two procedures:"
-msgstr ""
+msgstr "私たちは、3つの処理全てが「ポインタ」と呼ばれるものを使用していること発見しました。私たちには以下の２つの処理が必要です。"
 
 #: ../../chapter3.rst:272
 msgid ""
 "to get the pointer (if the pointer itself is relative, this function will"
 " perform some computation)."
-msgstr ""
+msgstr "ポインタを取得する(ポインタが相対位置指定の場合は、この関数は何らかの計算を実行します)。"
 
 #: ../../chapter3.rst:275
 msgid "to advance the pointer"
-msgstr ""
+msgstr "ポインタを進める"
 
 #: ../../chapter3.rst:277
 msgid "Wait, three procedures:"
-msgstr ""
+msgstr "ちょっと待った！３つめの処理が必要です。"
 
 #: ../../chapter3.rst:279
 msgid "to move the pointer backwards"
-msgstr ""
+msgstr "ポインタを後ろに動かす"
 
 #: ../../chapter3.rst:281
 msgid ""
 "because we will want “cursor keys” to move the cursor forward and back "
 "without editing changes."
-msgstr ""
+msgstr "なぜなら私たちは編集せずに「カーソルキー」でカーソルを前後に移動させたいからです。"
 
 #: ../../chapter3.rst:284
 msgid ""
 "These three operators will all refer to a physical pointer somewhere in "
 "memory. Where it is kept and how (relative or absolute) should be hidden "
 "within this component."
-msgstr ""
+msgstr "これら3つの操作はすべて、メモリ内のどこかにある物理ポインタを参照します。それが保持される場所と、それがどのように(相対値または絶対値)格納されるかはコンポーネント内に隠されるべきです。"
 
 #: ../../chapter3.rst:288
 msgid "Let’s attempt to rewrite these algorithms in code:"
-msgstr ""
+msgstr "これらのアルゴリズムをコードに書き換えてみましょう。"
 
 #: ../../chapter3.rst:302
 msgid ""
 "To copy the text leftwards and rightwards, we had to invent two new names"
-" as we went along, SLIDE< and SLIDE> (pronounced “slide-backwards” and "
-"“slide-forwards” respectively). Both of them will certainly use POSITION,"
-" but they also must rely on an element we’ve deferred considering: a way "
-"to “know” the length of the field. We can tackle that aspect when we get "
-"to writing the third component. But look at what we found out already: we"
-" can describe “Insert” as simply “SLIDE> OVERWRITE”."
+" as we went along, ``SLIDE<`` and ``SLIDE>`` (pronounced “slide-"
+"backwards” and “slide-forwards” respectively). Both of them will "
+"certainly use ``POSITION``, but they also must rely on an element we’ve "
+"deferred considering: a way to “know” the length of the field. We can "
+"tackle that aspect when we get to writing the third component. But look "
+"at what we found out already: we can describe “Insert” as simply ``SLIDE>"
+" OVERWRITE``."
 msgstr ""
+"テキストを左側方向に、あるいは右側方向にコピーするためには、私たちは２つの新しい名前 ``SLIDE<`` と ``SLIDE>`` (それぞれ"
+"「slide-backwards」、「slide-forwards」と発音します)をペアで考え出す必要がありました。それらの両方とも `` "
+"POSITION`` "
+"を使用します。しかし、それらは我々が考慮するのを延期した要素に依存します。それはフィールドの長さを「知る」方法です。3番目のコンポーネントを書くことになったら、その側面に取り組むことができます。しかし、すでに判った事もあります。「挿入」は単に"
+" ``SLIDE> OVERWRITE`` と記述することができます。"
 
-#: ../../chapter3.rst:311
+#: ../../chapter3.rst:310
 msgid ""
 "In other words, “Insert” actually *uses* “Overwrite” even though they "
 "appear to exist on the same level (at least to a Structured Programmer)."
-msgstr ""
+msgstr "言い換えれば、 「挿入」は、（少なくとも構造化プログラマにとっては）同じレベルに存在しているように見えても、実際には「上書き」を使用します。"
 
-#: ../../chapter3.rst:314
+#: ../../chapter3.rst:313
 msgid ""
 "Instead of probing deeper into the third component, let’s lay out what we"
 " know about the first component, the key interpreter. First we must solve"
@@ -465,151 +517,153 @@ msgid ""
 "Instead it is a *different way of interpreting* some of the possible "
 "keystrokes."
 msgstr ""
+"3番目の要素について詳しく調べるのではなく、最初の要素、つまりキーインタプリタについて知っていることを設計しましょう。 "
+"まず、「挿入モード」の問題を解決しなければなりません。「挿入」は、削除のように特定のキーを押したときに発生するものではないことが判明します。代わりに、それは、可能なキーストロークのいくつかを"
+" *異なる方法で解釈すること* です。"
 
-#: ../../chapter3.rst:321
+#: ../../chapter3.rst:320
 msgid ""
 "For instance in “overwrite” mode, an ordinary character gets stored into "
 "the current cursor position; but in “insert mode” the remainder of the "
 "line must first be shifted right. And the backspace key works differently"
 " when the editor is in Insert Mode as well."
 msgstr ""
+"たとえば「上書き」モードでは、通常の文字が現在のカーソル位置に格納されます。 "
+"しかし「挿入モード」では、行の残りの部分を最初に右にシフトする必要があります。 "
+"また、バックスペースキーは、エディタが挿入モードのときにも動作が異なります。"
 
-#: ../../chapter3.rst:326
+#: ../../chapter3.rst:325
 msgid ""
 "Since there are two modes, “inserting” and “not-inserting,” the keystroke"
 " interpreter must associate the keys with two possible sets of named "
 "procedures."
-msgstr ""
+msgstr "「挿入」と「非挿入」の2つのモードがあるため、キーストロークインタプリタはキーを2つの可能な名前付き手続きセットに関連付ける必要があります。"
 
-#: ../../chapter3.rst:330
+#: ../../chapter3.rst:329
 msgid ""
 "We can write our keystroke interpreter as a decision table (worrying "
 "about the implementation later):"
-msgstr ""
-
-#: ../../chapter3.rst:333
-msgid "decision table"
-msgstr ""
+msgstr "キーストロークインタプリタを以下のようにデシジョンテーブルとして書くことができます（実装については後で考えますします）。"
 
 #: ../../chapter3.rst:1
 msgid "Key"
-msgstr ""
+msgstr "Key"
 
 #: ../../chapter3.rst:1
 msgid "Not-inserting"
-msgstr ""
+msgstr "Not-inserting"
 
 #: ../../chapter3.rst:1
 msgid "Inserting"
-msgstr ""
+msgstr "Inserting"
 
 #: ../../chapter3.rst:1
-msgid "Ctrl-D"
-msgstr ""
+msgid ":kbd:`Ctrl-D`"
+msgstr ":kbd:`Ctrl-D`"
 
 #: ../../chapter3.rst:1
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE"
 
 #: ../../chapter3.rst:1
 msgid "INSERT-OFF"
-msgstr ""
+msgstr "INSERT-OFF"
 
 #: ../../chapter3.rst:1
-msgid "Ctrl-I"
-msgstr ""
+msgid ":kbd:`Ctrl-I`"
+msgstr ":kbd:`Ctrl-I`"
 
 #: ../../chapter3.rst:1
 msgid "INSERT-ON"
-msgstr ""
+msgstr "INSERT-ON"
 
 #: ../../chapter3.rst:1
-msgid "backspace"
-msgstr ""
+msgid ":kbd:`backspace`"
+msgstr ":kbd:`backspace`"
 
 #: ../../chapter3.rst:1
 msgid "BACKWARD"
-msgstr ""
+msgstr "BACKWARD"
 
 #: ../../chapter3.rst:1
 msgid "INSERT<"
-msgstr ""
+msgstr "INSERT<"
 
 #: ../../chapter3.rst:1
-msgid "left-arrow"
-msgstr ""
+msgid ":kbd:`left-arrow`"
+msgstr ":kbd:`left-arrow`"
 
 #: ../../chapter3.rst:1
-msgid "right-arrow"
-msgstr ""
+msgid ":kbd:`right-arrow`"
+msgstr ":kbd:`right-arrow`"
 
 #: ../../chapter3.rst:1
 msgid "FORWARD"
-msgstr ""
+msgstr "FORWARD"
 
 #: ../../chapter3.rst:1
-msgid "return"
-msgstr ""
+msgid ":kbd:`return`"
+msgstr ":kbd:`return`"
 
 #: ../../chapter3.rst:1
 msgid "ESCAPE"
-msgstr ""
+msgstr "ESCAPE"
 
 #: ../../chapter3.rst:1
 msgid "any printable"
-msgstr ""
+msgstr "any printable"
 
 #: ../../chapter3.rst:1
 msgid "OVERWRITE"
-msgstr ""
+msgstr "OVERWRITE"
 
 #: ../../chapter3.rst:1
 msgid "INSERT"
-msgstr ""
+msgstr "INSERT"
 
-#: ../../chapter3.rst:344
+#: ../../chapter3.rst:343
 msgid ""
 "We’ve placed the possible types of keys in the left column, what they do "
 "normally in the middle column, and what they do in “insert mode” in the "
 "right column."
-msgstr ""
+msgstr "このディシジョンテーブルでは、可能な種類のキーを左側の列に配置し、それらが通常行う操作を中央の列に配置し、「挿入モード」で行う操作を右側の列に配置します。"
 
-#: ../../chapter3.rst:348
+#: ../../chapter3.rst:347
 msgid ""
 "To implement what happens when “backspace” is pressed while in Insert "
 "Mode, we add a new procedure:"
-msgstr ""
+msgstr "挿入モードで「backspace」が押されたときに何が起こるかを実装するために、我々は新しい手順を追加します。"
 
-#: ../../chapter3.rst:357
+#: ../../chapter3.rst:356
 msgid ""
 "(move the cursor backwards on top of the last character typed, then slide"
 " everything to the right leftward, covering the mistake)."
-msgstr ""
+msgstr "（カーソルを後方に移動して最後に入力した文字の上に配置してから、すべてを左にスライドさせて間違いを隠します）。"
 
-#: ../../chapter3.rst:360
+#: ../../chapter3.rst:359
 msgid ""
 "This table seems to be the most logical expression of the problem at the "
 "current level. We’ll save the implementation for later ( :doc:`Chapter "
 "Eight<chapter8>`)."
-msgstr ""
+msgstr "このテーブルは現在のレベルでの問題の最も論理的な表現のように見えます。 後で実装します(  :doc:`第８章<chapter8>` )。"
 
-#: ../../chapter3.rst:364
+#: ../../chapter3.rst:363
 msgid ""
 "Now we’ll demonstrate the tremendous value of this approach in terms of "
 "maintainability. We’ll throw ourselves a curve—a major change of plans!"
-msgstr ""
+msgstr "それでは、保守性の観点から、このアプローチの大きな価値を実証します。 私たちは我々自身にカーブ球を投げます。それは計画の大幅な変更です！"
 
-#: ../../chapter3.rst:368
+#: ../../chapter3.rst:367
 msgid "Maintaining a Component-based Application"
-msgstr ""
+msgstr "コンポーネントベース・アプリケーションの保守"
 
-#: ../../chapter3.rst:370
+#: ../../chapter3.rst:369
 msgid ""
 "How well will our design fare in the face of change? Envision the "
 "following scenario:"
-msgstr ""
+msgstr "私たちの設計は変化に直面した時、どれだけうまくいくでしょうか。 以下のシナリオを想定します。"
 
-#: ../../chapter3.rst:373
+#: ../../chapter3.rst:372
 msgid ""
 "We originally assumed that we could refresh the video display simply by "
 "retyping the field every time a key is pressed. We even implemented the "
@@ -620,53 +674,69 @@ msgid ""
 "fields are almost as wide as the video screen, maybe 65 characters, it "
 "just takes too long to refresh the entire line on every key stroke."
 msgstr ""
+"キーを押すたびにフィールドを再入力するだけでビデオ表示を更新できると当初は考えていました。 "
+"スキャンサイクルの間に1行全体を更新する、メモリマップされたビデオを使用して、コードをパーソナルコンピュータに実装することもできました。 "
+"しかし今、私たちの顧客は、すべてのI/Oがそれほど速くないボーレートで行われる、電話ベースのネットワーク上でアプリケーションを実行することを望んでいます。"
+" 一部の入力フィールドはビデオ画面とほぼ同じ幅、おそらく65文字なので、すべてのキーストロークで行全体を更新するには時間がかかりすぎます。"
 
-#: ../../chapter3.rst:382
+#: ../../chapter3.rst:381
 msgid ""
 "We’ve got to change the application so that we only refresh that part of "
 "the field that actually changes. In “insert” and “delete,” this would "
 "mean the text to the right of the cursor. In “overwrite” it would mean "
 "changing just the single character being overwritten."
 msgstr ""
+"実際に変化するフィールドの部分だけを更新するように、アプリケーションを変更する必要があります。 "
+"「挿入」および「削除」では、これはカーソルの右側のテキストを意味します。 「上書き」では、上書きされる1文字だけを変更することを意味します。"
 
-#: ../../chapter3.rst:387
+#: ../../chapter3.rst:386
 msgid ""
 "This change is significant. The video refresh function, which we "
 "cavalierly relegated to the key interpreter, now must depend on which "
 "editing functions occur. As we’ve discovered, the most important names "
 "needed to implement the key interpreter are:"
 msgstr ""
+"この変更は重要です。 私たちが横柄にキーインタプリタに任せたビデオ更新機能は、今や、どの編集機能が行われるかに依存しなければなりません。 "
+"私たちが発見した、キーインタプリタを実装するために必要な最も重要な名前は以下のとおりです。"
 
-#: ../../chapter3.rst:403
+#: ../../chapter3.rst:402
 msgid ""
 "None of their descriptions make any reference to the video refresh "
 "process, because that was originally assumed to happen later."
-msgstr ""
+msgstr "これらの説明では、ビデオ更新プロセスについて言及していません。これはもともとこれらの後で起こると想定されていたためです。"
 
-#: ../../chapter3.rst:406
+#: ../../chapter3.rst:405
 msgid ""
 "But things aren’t as bad as they seem. Looking at it now, the process "
-"OVERWRITE could easily include a command to type the new character where "
-"the terminal’s cursor is. And SLIDE< and SLIDE> could include commands to"
-" type everything to the right of, and including, POSITION, then reset the"
-" terminal’s cursor to its current position."
+"``OVERWRITE`` could easily include a command to type the new character "
+"where the terminal’s cursor is. And ``SLIDE<`` and ``SLIDE>`` could "
+"include commands to type everything to the right of, and including, "
+"``POSITION``, then reset the terminal’s cursor to its current position."
 msgstr ""
+"しかし、物事は見かけほど悪くはありません。 今見てみると、``OVERWRITE`` "
+"処理は端末のカーソルがあるところに新しい文字をタイプするコマンドを簡単に含めることができます。 そして ``SLIDE<`` と "
+"``SLIDE>``  は ``POSITION`` "
+"の右側に全てをタイプするコマンドを含めることができ、それから端末のカーソルを現在の位置にリセットします。"
 
-#: ../../chapter3.rst:412
+#: ../../chapter3.rst:411
 msgid ""
 "Here are our revised procedure names. The commands just added are in "
 "boldface:"
 msgstr ""
+"以下が、私たちが改訂した手続き名です。 追加したコマンドは、``OVERWRITE`` の定義の ``KEY# EMIT`` の部分と、 "
+"``RETYPE`` の定義および、 ``INSERT`` 、 ``DELETE`` での使用です。"
 
-#: ../../chapter3.rst:425
+#: ../../chapter3.rst:424
 msgid ""
 "Since these are the only three functions that change memory, they are the"
 " only three functions that need to refresh the screen. This idea is "
 "critical. We must be able to make such assertions to assure program "
 "correctness. The assertion is intrinsic to the nature of the problem."
 msgstr ""
+"これらはメモリを変更する唯一の3つの機能なので、画面を更新する必要があるのはこれら3つの機能だけです。 この考えは重要です。 "
+"私たちはプログラムの正当性を保証するためにそのような主張をすることができなければなりません。 この主張は問題の本質に内在するものです。"
 
-#: ../../chapter3.rst:430
+#: ../../chapter3.rst:429
 msgid ""
 "Note that the additional problem of video refresh adds an additional "
 "“pointer”: the current cursor position on the screen. But decomposition "
@@ -676,15 +746,21 @@ msgid ""
 "maintain only one real pointer—a relative one—from which we can compute "
 "either the data address in memory, or the column number on the screen."
 msgstr ""
+"画面リフレッシュの、この追加の問題には「追加のポインタ」が要るとに注意してください。それは現在の画面上のカーソルの位置です。しかし、コンポーネントによる分解は、"
+" ``OVERWRITE`` 処理がデータフィールドと画面の表示の両方の変更の面倒を見る事を我々に勧めました。 ``SLIDE<`` や "
+"``SLIDE>`` "
+"も同様です。このため、メモリ内のデータアドレス、または画面上の桁位置のいずれかを計算できる、実際のポインタを1つだけ（相対ポインタ）を維持することが、今や自然なように思われます。"
 
-#: ../../chapter3.rst:438
+#: ../../chapter3.rst:437
 msgid ""
 "Since the nature of the pointer is wholly hidden within the three "
 "processes ``POSITION`` , ``FORWARD`` , and ``BACKWARD`` , we can readily "
 "accommodate this approach, even if it wasn’t our first approach."
 msgstr ""
+"ポインタの性質は、 ``POSITION`` 、 ``FORWARD`` 、  ``BACKWARD`` "
+"の3つのプロセスの中に完全に隠されているので、たとえそれが最初のアプローチではなかったとしても、このアプローチにて容易に対応できます。"
 
-#: ../../chapter3.rst:442
+#: ../../chapter3.rst:441
 msgid ""
 "This change may have seemed simple enough here—even obvious. If so, it’s "
 "because the technique ensures flexible design. If we had used a "
@@ -692,24 +768,26 @@ msgid ""
 "according to data transformation through sequential processes—our brittle"
 " design would have been shattered by the change."
 msgstr ""
+"この変更は、ここでも十分に単純に思えたかもしれません。 もしそう思ったのなら、それはこの技法が柔軟な設計を保証するからです。 "
+"従来のアプローチを使用していた場合、つまり構造に従って、または順次プロセスによるデータ変換に従って設計していた場合、私たちの脆弱な設計は変更によって粉々になります。"
 
-#: ../../chapter3.rst:448
+#: ../../chapter3.rst:447
 msgid "To prove this assertion, we’ll have to start all over again from scratch."
-msgstr ""
+msgstr "この主張を証明するには、私たちは最初からやり直す必要があります。"
 
-#: ../../chapter3.rst:452
+#: ../../chapter3.rst:451
 msgid "Designing and Maintaining a Traditional Application"
-msgstr ""
+msgstr "伝統的なアプリケーションの設計と保守"
 
-#: ../../chapter3.rst:454
+#: ../../chapter3.rst:453
 msgid ""
 "Let’s pretend we haven’t studied the Tiny Editor problem yet, and we’re "
 "back with a minimal set of specs. We’ll also start with our initial "
 "assumption, that we can refresh the display by retyping the entire field "
 "after each keystroke."
-msgstr ""
+msgstr "タイニーエディタの問題に付いてまだ検討していないとしましょう。私たちは最小限の仕様の頃まで巻き戻します。各キーストロークの後でフィールド全体を再タイプすることで表示を更新できるという最初の仮定から再度始めます。"
 
-#: ../../chapter3.rst:459
+#: ../../chapter3.rst:458
 msgid ""
 "According to the dictum of top-down design, let’s take the widest-angle "
 "view possible and examine the problem.  :numref:`fig3-3`  depicts the "
@@ -717,23 +795,26 @@ msgid ""
 "actually a loop which keeps getting keystrokes and performing some "
 "editing function, until the user presses the return key."
 msgstr ""
+"トップダウン設計の格言に従って、可能な限り広角の展望で問題を検証しましょう。 :numref:`fig3-3` "
+"はプログラムを最も簡単に表現しています。 "
+"ここで、私たちは、エディタは実際にはユーザーがリターンキーを押すまで、キーストロークを取得して何らかの編集機能を実行し続けるループであることが分かりました。"
 
-#: ../../chapter3.rst:469
+#: ../../chapter3.rst:468
 msgid "The traditional approach: view from the top."
-msgstr ""
+msgstr "伝統的アプローチ：頂上から展望せよ。"
 
-#: ../../chapter3.rst:473
+#: ../../chapter3.rst:472
 msgid ""
 "Inside the loop we have three modules: getting a character from the "
 "keyboard, editing the data, and finally refreshing the display to match "
 "the data."
-msgstr ""
+msgstr "ループ内には３つのモジュールがあります。それは、キーボードから文字を取得するモジュール、データを編集するモジュール、最後にデータに合わせて表示を更新するモジュールです。"
 
-#: ../../chapter3.rst:477
+#: ../../chapter3.rst:476
 msgid "Clearly most of the work will go on inside “Process a Keystroke.”"
-msgstr ""
+msgstr "明らかに、ほとんどの作業は「キーストロークの処理」内で行われます。"
 
-#: ../../chapter3.rst:479
+#: ../../chapter3.rst:478
 msgid ""
 "Applying the notion of successive refinement,  :numref:`fig3-4` shows the"
 " editor problem redrawn with “Process a Keystroke” expanded. We find it "
@@ -741,35 +822,48 @@ msgid ""
 "this level forces us to consider many things at once that we had deferred"
 " till later in the previous try."
 msgstr ""
+"連続した改良の概念を適用して、 :numref:`fig3-4` 「キーストローク処理」を拡張して描き直した、エディタの問題を表しています。 "
+"この設定にたどり着くまでに数回試行する必要があります。 "
+"このレベルを設計すると、以前の試行で後にすると延期していた多くのことを一度に検討する必要があります。"
 
-#: ../../chapter3.rst:489
+#: ../../chapter3.rst:488
 msgid "A structure for \"Process a Keystroke.\""
-msgstr ""
+msgstr "「キーストローク処理」の構造"
 
-#: ../../chapter3.rst:493
+#: ../../chapter3.rst:492
 msgid ""
 "For instance, we must determine all the keys that might be pressed. More "
 "significantly, we must consider the problem of “insert mode.” This "
-"realization forces us to invent a flag called INSERT-MODE which gets "
-"toggled by the “Ctrl I” key. It’s used within several of the structural "
-"lines to determine how to process a type of key."
+"realization forces us to invent a flag called ``INSERT-MODE`` which gets "
+"toggled by the :kbd:`Ctrl I` key. It’s used within several of the "
+"structural lines to determine how to process a type of key."
 msgstr ""
+"たとえば、押される可能性のあるすべてのキーを決定する必要があります。 "
+"もっと重要なことに、「挿入モード」の問題を考慮しなければなりません。そのために、 :kbd:`Ctrl I` キーによってON/OFFされる "
+"``INSERT-MODE`` と呼ばれるフラグを作り出す必要があります。 "
+"それはいくつかの処理の流れの中で、ある型のキーどのように処理するかを決定するために使われます。"
 
-#: ../../chapter3.rst:499
+#: ../../chapter3.rst:498
 msgid ""
-"A second flag, called ESCAPE, seems to provide a nice structured way of "
-"escaping the editor loop if the user presses the return key while not in "
-"insert mode."
+"A second flag, called ``ESCAPE``, seems to provide a nice structured way "
+"of escaping the editor loop if the user presses the return key while not "
+"in insert mode."
 msgstr ""
+"``ESCAPE`` "
+"と呼ばれる2番目のフラグは、挿入モードではないときにユーザがリターンキーを押した場合に、エディタループをエスケープするための、素敵な構造化された方法を提供するように見えます。"
 
-#: ../../chapter3.rst:503
+# かなり意訳しちまったがプログラマ意味的にはこのほうがしっくりくる
+#: ../../chapter3.rst:502
 msgid ""
 "Having finished the diagram, we’re bothered by the multiple tests for "
 "Insert Mode. Could we test for Insert Mode once, at the beginning? "
 "Following this notion, we draw yet another chart ( :numref:`fig3-5` )."
 msgstr ""
+"図は完成しましたが、いま私たちは挿入モードのための複数の条件に悩まされています。 "
+"処理の初めで挿入モードかどうかの条件分岐が必要です。これを盛り込む為に、私たちはさらに別のチャートを描きます( :numref:`fig3-5` "
+")。"
 
-#: ../../chapter3.rst:508
+#: ../../chapter3.rst:507
 msgid ""
 "As you can see, this turns out even more awkward than the first figure. "
 "Now we’re testing for each key twice. It’s interesting though, how the "
@@ -777,12 +871,14 @@ msgid ""
 "enough to make one wonder whether the control structure is terribly "
 "relevant to the problem."
 msgstr ""
+"ご覧のとおり、これは最初の図よりもさらに厄介です。 今や各キーについて2回テストしています。 "
+"興味深いのは、2つの構造がまったく異なるのに機能的には同一であることです。 この制御構造が問題に密接に関連しているのかどうかはなはだ疑問です。"
 
-#: ../../chapter3.rst:518
+#: ../../chapter3.rst:517
 msgid "Another structure for \"Process a Keystroke.\""
-msgstr ""
+msgstr "「キーストローク処理」の別の構造"
 
-#: ../../chapter3.rst:522
+#: ../../chapter3.rst:521
 msgid ""
 "Having decided on the first structure, we’ve finally arrived at the most "
 "important modules—the ones that do the work of overwriting, inserting, "
@@ -791,14 +887,17 @@ msgid ""
 "execution paths, the one that happens if a printable character is "
 "pressed."
 msgstr ""
+"最初の構造を決定したので、ついに最も重要なモジュール、つまり上書き、挿入、削除の作業を行うモジュールにたどり着きました。 "
+":numref:`fig3-4` の中のキーストローク処理部分をもう一度見てください。 "
+"考えられる7つの実行経路のうち、印刷可能な文字が押された場合に発生する実行経路のうちの1つだけを考えてみましょう。"
 
-#: ../../chapter3.rst:529
+#: ../../chapter3.rst:528
 msgid ""
 "In  :numref:`fig3-6` (a) we see the original structural path for a "
 "printable character."
-msgstr ""
+msgstr ":numref:`fig3-6` の(a)には、印刷可能文字の処理の元々の経路が示されています。"
 
-#: ../../chapter3.rst:532
+#: ../../chapter3.rst:531
 msgid ""
 "Once we figure out the algorithms for overwriting and inserting "
 "characters, we might refine it as shown in  :numref:`fig3-6` (b). But "
@@ -807,23 +906,26 @@ msgid ""
 "unnecessary, and change the structure as shown in :numref:`fig3-6` (c). "
 "Not too bad so far, right?"
 msgstr ""
+"文字を上書きして挿入するためのアルゴリズムを見つけたら、 :numref:`fig3-6` の(b)のように洗練させるかもしれません。 "
+"しかし、コードの冗長性(点線で囲まれた部分)を見てください。 有能な構造化プログラマは、この冗長性は不要であると認識し、 "
+":numref:`fig3-6` の(c)のように構造を変更します。 今までところ、そんなに悪くないでしょう？"
 
-#: ../../chapter3.rst:540
+#: ../../chapter3.rst:539
 msgid "Change in Plan"
-msgstr ""
+msgstr "計画の変更"
 
-#: ../../chapter3.rst:542
+#: ../../chapter3.rst:541
 msgid ""
 "Okay, everyone, now act surprised. We’ve just been told that this "
 "application won’t run on a memory-mapped display. What does this change "
 "do to our design structure?"
-msgstr ""
+msgstr "おまえら聞いて驚け、たった今、このアプリケーションはメモリマップドディスプレイ(訳注:現在一般的な、メモリの特定の番地と画面の特定の位置が対応しているディスプレイ)では実行されないと判明しました。この変更は私たちの設計構造に何をもたらすでしょうか？"
 
-#: ../../chapter3.rst:550
+#: ../../chapter3.rst:549
 msgid "The same section, \"refined\" and \"optimized.\""
-msgstr ""
+msgstr "同一区間の「洗練」と「最適化」"
 
-#: ../../chapter3.rst:554
+#: ../../chapter3.rst:553
 msgid ""
 "Well, for one thing it destroys “Refresh Display” as a separate module. "
 "The function of “Refresh Display” is now scattered among the various "
@@ -831,124 +933,149 @@ msgid ""
 "entire application has changed. It’s easy to see how we might have spent "
 "weeks doing top-down design only to find we’d been barking down the wrong"
 " tree."
-msgstr ""
+msgstr "そうですね、これは一つには、ばらばらのモジュールでの「画面更新」作業を破壊します。「画面更新」の機能は「キーストローク処理」内の様々な処理経路にちりばめられています。アプリケーション全体の構造を変えねばなりません。見当違いの事をしていたと見つけるためだけに、何週間も費やしてトップダウン設計を行った事は誰の目にも明らかです。"
 
-#: ../../chapter3.rst:561
+#: ../../chapter3.rst:560
 msgid ""
 "What happens when we try to change the program? Let’s look again at the "
 "path for any printable character."
-msgstr ""
+msgstr "私たちがプログラムを変更しようとするとどうなりますか？ 印刷可能な文字の処理経路をもう一度見てみましょう。"
 
-#: ../../chapter3.rst:564
+#: ../../chapter3.rst:563
 msgid ""
 ":numref:`fig3-7`  (a) shows what happens to our first-pass design when we"
 " add refresh. Part (b) shows our “optimized” design with the refresh "
 "modules expanded. Notice that we’re now testing the Insert flag twice "
 "within this single leg of the outer loop."
 msgstr ""
+":numref:`fig3-7` の(a)は、リフレッシュを追加したときに初回経路の設計がどうなるかを示しています。 "
+"パート(b)は、リフレッシュモジュールを拡張した「最適化」設計を示しています。 外側のループのこの単一の区間内で挿入フラグを2回テストしています。"
 
-#: ../../chapter3.rst:569
+#: ../../chapter3.rst:568
 msgid "But worse, there’s a bug in this design. Can you find it?"
-msgstr ""
+msgstr "しかしさらに悪いことに、この設計にはバグがあります。 あなたには分かりますか？"
 
-#: ../../chapter3.rst:571
+#: ../../chapter3.rst:570
 msgid ""
 "In both cases, overwriting and inserting, the pointer is incremented "
 "*before* the refresh. In the case of overwrite, we’re displaying the new "
 "character in the wrong position. In the case of insert, we’re typing the "
 "remainder of the line but not the new character."
 msgstr ""
+"上書きと挿入どちらの場合も、ポインタをリフレッシュする前に増加させています。 上書きの場合は、新しい文字が間違った位置に表示されています。 "
+"挿入の場合は、行の残りの部分は入力しますが、新しい文字は入力されません。"
 
-#: ../../chapter3.rst:576
+#: ../../chapter3.rst:575
 msgid ""
 "Granted, this is an easy problem to fix. We need only move the refresh "
 "modules up before “Increment Pointer.” The point here is: How did we miss"
 " it? By getting preoccupied with control flow structure, a superficial "
 "element of program design."
 msgstr ""
+"はい、確かにこれは簡単に直せる問題です。 「ポインタ増加(Increment "
+"Pointer)」の前にリフレッシュモジュールを移動するだけです。ここでのポイントは、どうしてそれを見逃してしまったのかです。それはプログラム設計の表面的な要素である制御フロー構造に夢中になってしまったからです。"
 
-#: ../../chapter3.rst:585
+#: ../../chapter3.rst:584
 msgid "Adding refresh."
-msgstr ""
+msgstr "画面更新処理追加"
 
-#: ../../chapter3.rst:589
+#: ../../chapter3.rst:588
 msgid ""
 "In contrast, in our design by components the correct solution fell out "
 "naturally because we “used” the refresh component inside the editing "
-"component. Also we used OVERWRITE inside INSERT."
+"component. Also we used ``OVERWRITE`` inside ``INSERT``."
 msgstr ""
+"対照的に、コンポーネントによる設計では、更新コンポーネントを編集コンポーネント内で「使用」したため、自然に正しい解決策に落着しました。つまり、私たちは"
+" ``INSERT`` 内部で ``OVERWRITE`` を使いました。"
 
-#: ../../chapter3.rst:593
+#: ../../chapter3.rst:592
 msgid ""
 "By decomposing our application into components which use one another, we "
 "achieved not only *elegance* but a more direct path to *correctness*."
 msgstr ""
+"私たちのアプリケーションを、相互使用するコンポーネントに分解することによって、 *優雅さ* だけでなく *正しさ* "
+"への、より直接的な道筋を実現しました。"
 
-#: ../../chapter3.rst:598
+#: ../../chapter3.rst:597
 msgid "The Interface Component"
-msgstr ""
+msgstr "インターフェイスコンポーネント"
 
-#: ../../chapter3.rst:600
+#: ../../chapter3.rst:599
 msgid ""
 "In computer science terminology, interfacing between modules has two "
 "aspects. First, there’s the way other modules invoke the module; this is "
 "the control interface. Second, there’s the way other modules pass and "
 "receive data to and from the module; this is the data interface."
 msgstr ""
+"コンピュータサイエンスの用語では、モジュール間のインタフェースには2つの側面があります。 "
+"まず、他のモジュールがそのモジュールを呼び出す方法があります。 これが制御インターフェースです。 "
+"次に、他のモジュールがモジュールとの間でデータをやり取りする方法があります。 これがデータインタフェースです。"
 
-#: ../../chapter3.rst:605
+#: ../../chapter3.rst:604
 msgid ""
 "Because of Forth’s dictionary structure, control is not an issue. "
 "Definitions are invoked by being named. In this section, when we use the "
 "term “interface” we’re referring to data."
 msgstr ""
+"Forthの辞書構造のため、制御インターフェイスは問題になりません。 定義は名前付きで呼び出されます。 "
+"この節では、「インターフェース」という用語を使用するときは、データの参照の事です。"
 
-#: ../../chapter3.rst:609
+#: ../../chapter3.rst:608
 msgid ""
 "When it comes to data interfaces between modules, traditional wisdom says"
 " only that “interfaces should be carefully designed, with a minimum of "
 "complexity.” The reason for the care, of course, is that each module must"
 " implement its own end of the interface ( :numref:`fig3-8` )."
 msgstr ""
+"モジュール間のデータインターフェースに関しては、伝統的な知恵は「インターフェースは最小限の複雑さで慎重に設計されるべきである」と言うだけです( "
+":numref:`fig3-8` )。"
 
-#: ../../chapter3.rst:614
+#: ../../chapter3.rst:613
 msgid ""
 "This means the presence of redundant code. As we’ve seen, redundant code "
 "brings at least two problems: bulky code and poor maintainability. A "
 "change to the interface of one module will affect the interface of the "
 "opposite module."
 msgstr ""
+"これは冗長コードの存在を意味します。 "
+"これまで見てきたように、冗長なコードは少なくとも2つの問題を引き起こします。それはかさばるコードと貧弱な保守性です。あるモジュールのインタフェースを変更すると、反対側のモジュールのインタフェースにも影響が及びます。"
 
-#: ../../chapter3.rst:623
+#: ../../chapter3.rst:622
 msgid "Traditional view of the interface as a junction."
-msgstr ""
+msgstr "インターフェイスの伝統的な観点は接合点です。"
 
-#: ../../chapter3.rst:627
+#: ../../chapter3.rst:626
+#, fuzzy
 msgid ""
-"There’s more to good interface design than that. Allow me to introduce a "
-"design element which I call the “interface component.” The purpose an "
+"There\\’s more to good interface design than that. Allow me to introduce "
+"a design element which I call the “interface component.” The purpose an "
 "interface component is to implement, and *hide information about*, the "
 "data interface between two or more other components ( :numref:`fig3-9` )."
 msgstr ""
+"これ以外にも優れたインターフェース設計があります。 "
+"「インターフェース・コンポーネント」と呼ぶ設計要素を紹介させて下さい。インターフェース・コンポーネントの目的は、2つ以上の他のコンポーネント間のデータ・インターフェースを実装し、*情報を隠すことです("
+" :numref:`fig3-9` )。"
 
-#: ../../chapter3.rst:637
+#: ../../chapter3.rst:636
 msgid "Use of the interface component."
-msgstr ""
+msgstr "インターフェイス・コンポーネントの使用"
 
-#: ../../chapter3.rst:643
+#: ../../chapter3.rst:642
 msgid ""
 "Both data structures and the commands involved in the communication of "
 "data between modules should be localized in an interface component."
-msgstr ""
+msgstr "モジュール間のデータ通信に関連するデータ構造とコマンドは、両方ともインタフェースコンポーネントに局限すべきです。"
 
-#: ../../chapter3.rst:646
+#: ../../chapter3.rst:645
 msgid ""
 "Let me give an example from my own recent experience. One of my hobbies "
 "is writing text formatter/editors. (I’ve written two of them, including "
 "the one on which I am writing this book.)"
 msgstr ""
+"私自身の最近の経験から例を挙げましょう。 "
+"私の趣味の1つは、テキストフォーマッタ・エディタを書くことです(この本を書くためのものを含むみ、２つ書きました)。"
 
-#: ../../chapter3.rst:650
+#: ../../chapter3.rst:649
 msgid ""
 "In my latest design the formatter portion contains two components. The "
 "first component reads the source document and decides where to make line "
@@ -956,8 +1083,10 @@ msgid ""
 "terminal or printer, it saves up a line’s worth at a time in a “line "
 "buffer.”"
 msgstr ""
+"私の最新の設計では、フォーマッタ部分は2つのコンポーネントを含みます。 "
+"最初のコンポーネントはソース文書を読み、改行や改ページを入れる場所などを決定します。ただし、テキストを直接端末やプリンタに送信するのではなく、一度に1行分の値を「ラインバッファ」に保存します。"
 
-#: ../../chapter3.rst:656
+#: ../../chapter3.rst:655
 msgid ""
 "Similarly, instead of sending printer-control commands—for bold-facing, "
 "underlining, etc.—as the text is being formatted, it defers these "
@@ -967,239 +1096,283 @@ msgid ""
 " of flags that indicate whether the corresponding character should be "
 "underlined, boldfaced, or whatever."
 msgstr ""
+"同様に、テキストがフォーマットされているときに、太字や下線などのプリンタ制御コマンドを送信する代わりに、テキストが実際に送信されるまでこれらのコマンドを延期します。"
+" "
+"制御コマンドを延期するために、「属性バッファ」と呼ばれる2番目のバッファがあります。バイトごとに、ラインバッファと対応します。ただし、各バイトには、対応する文字に下線引くかどうかや太字にするかやその他を示す一連のフラグが含まれます。"
 
-#: ../../chapter3.rst:664
+#: ../../chapter3.rst:663
 msgid ""
 "The second component displays or prints the contents of the line buffer. "
 "The component knows whether it is transmitting to the terminal or to the "
 "printer, and outputs the text according to the attributes indicated by "
 "the attribute buffer."
 msgstr ""
+"2番目のコンポーネントは、ラインバッファの内容を表示または印刷します。 "
+"コンポーネントは、端末に送信しているのかプリンタに送信しているのかを認識し、属性バッファによって示されている属性に従ってテキストを出力します。"
 
-#: ../../chapter3.rst:669
+#: ../../chapter3.rst:668
 msgid ""
 "Here we have two well-defined components—the line-formatter and the "
 "output component—each one shouldering part of the function of the "
 "formatter as a whole."
 msgstr ""
+"ここでは、2つの明確に定義されたコンポーネント（line-"
+"formatterとoutputコンポーネント）があり、それぞれがフォーマッター全体の機能の一部を担っています。"
 
-#: ../../chapter3.rst:673
+#: ../../chapter3.rst:672
 msgid ""
 "The data interface between these two components is fairly complex. The "
 "interface consists of two buffers, a variable that indicates the current "
 "number of valid characters, and finally a “knowledge” of what all those "
 "attribute patterns mean."
 msgstr ""
+"これら2つのコンポーネント間のデータインタフェースはかなり複雑です。 "
+"インタフェースは2つのバッファ、現在の有効文字数を示す変数、そして最後にそれらすべての属性パターンが何を意味するのかについての「知識」で構成されます。"
 
-#: ../../chapter3.rst:678
+#: ../../chapter3.rst:677
 msgid ""
 "In Forth I’ve defined these elements together in a single screen. The "
 "buffers are defined with ``CREATE``, the count is an ordinary "
 "``VARIABLE``, and the attribute patterns are defined as ``CONSTANT`` s, "
 "such as:"
 msgstr ""
+"Forthでは、これらの要素を1つの画面にまとめて定義しました。 バッファは ``CREATE`` で定義され、カウントは通常の "
+"``VARIABLE`` で、属性パターンは ``CONSTANT`` として定義されます。"
 
-#: ../../chapter3.rst:690
+#: ../../chapter3.rst:689
 msgid ""
 "The formatting component uses phrases like ``UNDERNESS SET-FLAG`` to set "
 "bits in the attribute buffer. The output component uses phrases like "
 "``UNDERNESS AND`` to read the attribute buffer."
 msgstr ""
+"フォーマット化コンポーネントは、属性バッファのビットを設定するために ``UNDERNESS SET-FLAG`` のような句を使います。 "
+"出力コンポーネントは、属性バッファを読み込むために ``UNDERNESS AND`` のような句を使います。"
 
-#: ../../chapter3.rst:695
+#: ../../chapter3.rst:694
 msgid "A Design Mistake"
-msgstr ""
+msgstr "設計ミス"
 
-#: ../../chapter3.rst:697
+#: ../../chapter3.rst:696
 msgid ""
 "In designing an interface component, you should ask yourself “What is the"
 " set of structures and commands that must be shared by the communicating "
 "components?” It’s important to determine what elements belong to the "
 "interface and what elements should remain within a single component."
-msgstr ""
+msgstr "インターフェイスコンポーネントを設計する際には、「通信するコンポーネントが共有する必要がある構造とコマンドのセットは何ですか？」と自問する必要があります。インターフェイスに属する要素と、1つのコンポーネント内に残す要素を決定することは重要です。"
 
-#: ../../chapter3.rst:703
+#: ../../chapter3.rst:702
 msgid ""
 "In writing my text formatter, I failed to answer this question fully and "
 "found myself with a bug. The problem was this:"
-msgstr ""
+msgstr "私のテキストフォーマッタを書いているとき、私はこの質問に完全に答えることができず、バグを発見しました。 以下の問題を発見しました。"
 
-#: ../../chapter3.rst:706
+#: ../../chapter3.rst:705
 msgid ""
 "I allow different type widths to be used: condensed, double width, etc. "
 "This means not only sending different signals to the printer, but "
 "changing the number of characters allowed per line."
-msgstr ""
+msgstr "異なる幅の文字を使用することを許可します。縮小文字や倍角など。これは、異なる信号をプリンタに送信するだけでなく、1行に許可される文字数を変更することを意味します。"
 
-#: ../../chapter3.rst:710
+#: ../../chapter3.rst:709
 msgid ""
-"I keep a variable, called WALL, for the formatter. WALL indicates the "
-"right margin: the point beyond which no more text can be set. Changing to"
-" a different type width means changing the value of WALL proportionately."
-" (Actually, this turns out to be a mistake in itself. I should be using a"
-" finer unit of measurement, the number of which remains constant for the "
-"line. Changing type widths would mean changing the number of units per "
-"character. But getting back to the mistake at hand…)"
+"I keep a variable, called ``WALL``, for the formatter. ``WALL`` indicates"
+" the right margin: the point beyond which no more text can be set. "
+"Changing to a different type width means changing the value of ``WALL`` "
+"proportionately. (Actually, this turns out to be a mistake in itself. I "
+"should be using a finer unit of measurement, the number of which remains "
+"constant for the line. Changing type widths would mean changing the "
+"number of units per character. But getting back to the mistake at hand…)"
 msgstr ""
+"フォーマッタのために ``WALL`` と呼ばれる変数を保持します。 ``WALL`` "
+"は右マージンを表します。これを超えると、それ以上テキストを設定できなくなります。 異なる型幅に変更することは、比例して ``WALL`` "
+"の値を変更することを意味します。 "
+"（実際には、これ自体は間違いです。私はもっと細かい単位を使用する必要があります。その数はその行では一定のままです。タイプ幅を変更すると、1文字当たりの単位数が変わることになります。"
+" ポカミス…）"
 
-#: ../../chapter3.rst:718
+#: ../../chapter3.rst:717
 msgid ""
-"Alas, I was also using WALL inside the output component to determine how "
-"many characters to display. My reasoning was that this value would change"
-" depending on what type-width I was using."
+"Alas, I was also using ``WALL`` inside the output component to determine "
+"how many characters to display. My reasoning was that this value would "
+"change depending on what type-width I was using."
 msgstr ""
+"残念ながら、私は表示する文字数を決めるためにoutputコンポーネントの中で ``WALL`` を使っていました。 "
+"私の推論は、この値は私が使っていたタイプ幅によって変わるだろうということでした。"
 
-#: ../../chapter3.rst:722
-#, python-format
+#: ../../chapter3.rst:721
+#,
 msgid ""
-"I was right—99% of the time. But one day I discovered that, under a "
+"I was right—99\\% of the time. But one day I discovered that, under a "
 "certain condition, a line of condensed text was being somehow cut short. "
 "The final couple of words were just missing. The reason turned out to be "
-"that WALL was getting changed before the output component had a chance to"
-" use it."
+"that ``WALL`` was getting changed before the output component had a "
+"chance to use it."
 msgstr ""
+"私は99％正しかった。 しかしある日、ある条件の下では、要約テキストの行がどういうわけか短くなっていることがわかりました。 "
+"最後の2、3の語はただ足りなかった。 その理由は、出力コンポーネントがそれを使用する機会を得る前に ``WALL`` が変更されていたことです。"
 
-#: ../../chapter3.rst:728
+#: ../../chapter3.rst:727
 msgid ""
 "Originally I had seen nothing wrong with letting the output component "
-"blithely use the formatter’s WALL as well. Now I realized that the "
+"blithely use the formatter’s ``WALL`` as well. Now I realized that the "
 "formatter had to leave a separate variable for the output component, to "
 "indicate how many valid characters were in the buffers. This would leave "
-"any subsequent font commands free to change WALL."
+"any subsequent font commands free to change ``WALL``."
 msgstr ""
+"もともと私は出力コンポーネントもフォーマッタの ``WALL`` を巧妙に使うようにしても問題ないと思っていました。 "
+"今、私はフォーマッタが、バッファに有効な文字がいくつあったかを示すため、出力コンポーネントのために別の変数を残さなければならないことに気づきました。"
+" これにより、以降のフォントコマンドは自由に ``WALL`` を変更できるようになります。"
 
-#: ../../chapter3.rst:734
+#: ../../chapter3.rst:733
 msgid ""
 "It was important that the two buffers, the attribute commands, and the "
 "new variable were the *only* elements that could be shared between the "
 "two modules. Reaching into either module from the other one spells "
 "trouble."
 msgstr ""
+"2つのバッファ、属性コマンド、および新しい変数が、2つのモジュール間でのみ共有できる要素であることが重要でした。 "
+"他のモジュールからどちらかのモジュールにアクセスすると、問題が発生します。"
 
-#: ../../chapter3.rst:739
+#: ../../chapter3.rst:738
 msgid ""
 "The moral of this story is that we must distinguish between data "
 "structures that are validly used only within a single component and those"
 " that may be shared by more than one component."
-msgstr ""
+msgstr "この話の教訓は、単一のコンポーネント内でのみ有効に使用されるデータ構造と、複数のコンポーネントで共有される可能性のあるデータ構造を区別する必要があるということです。"
 
-#: ../../chapter3.rst:743
+#: ../../chapter3.rst:742
 msgid "A related point:"
-msgstr ""
+msgstr "関連する点："
 
-#: ../../chapter3.rst:747
+#: ../../chapter3.rst:746
 msgid "Express in objective units any data to be shared by components."
-msgstr ""
+msgstr "コンポーネント間で共有するデータを客観的な単位で表します。"
 
-#: ../../chapter3.rst:749
+#: ../../chapter3.rst:748
 msgid "For example:"
-msgstr ""
+msgstr "例："
 
-#: ../../chapter3.rst:751
+#: ../../chapter3.rst:750
 msgid "Module A measures the temperature of the oven."
-msgstr ""
+msgstr "モジュールAはオーブンの温度を測定します。"
 
-#: ../../chapter3.rst:753
+#: ../../chapter3.rst:752
 msgid "Module B controls the burner."
-msgstr ""
+msgstr "モジュールBはバーナーを制御します。"
 
-#: ../../chapter3.rst:755
+#: ../../chapter3.rst:754
 msgid "Module C makes sure the door is locked if the oven is too hot."
-msgstr ""
+msgstr "モジュールCは、オーブンがとても熱くなると、ドアがロックされていることを確認します。"
 
-#: ../../chapter3.rst:757
+#: ../../chapter3.rst:756
 msgid ""
 "The information of global interest is the temperature of the oven, "
 "expressed objectively in degrees. While Module A might receive a value "
 "representing the voltage from a heat sensor, it should convert this value"
 " to degrees before presenting it to the rest of the application."
 msgstr ""
+"皆が関心のある情報は、客観的に「度」で表現されたオーブンの温度です。 "
+"モジュールAは熱センサーから電圧を表す値を受け取ることがありますが、他のアプリケーションに表示する前にこの値を「度数」に変換する必要があります。"
 
-#: ../../chapter3.rst:764
+#: ../../chapter3.rst:763
 msgid "Decomposition by Sequential Complexity"
-msgstr ""
+msgstr "高度化させる順序による分解"
 
-#: ../../chapter3.rst:766
+#: ../../chapter3.rst:765
 msgid ""
 "We’ve been discussing one way to do decomposition: according to "
 "components. The second way is according to sequential complexity."
-msgstr ""
+msgstr "私たちは、コンポーネントに応じて、それを分解する1つの方法を議論してきました。 2番目の方法は、高度化させる順序によるものです。"
 
-#: ../../chapter3.rst:769
+#: ../../chapter3.rst:768
 msgid ""
-"One of Forth’s rules is that a word must already have been defined to be "
-"invoked or referred to. Usually the sequence in which words are defined "
-"parallels the order of increasing capabilities which the words must "
-"possess. This sequence leads to a natural organization of the source "
-"listing. The powerful commands are simply added on top of the elementary "
-"application ( :numref:`fig3-10` a)."
+"One of Forth\\’s rules is that a word must already have been defined to "
+"be invoked or referred to. Usually the sequence in which words are "
+"defined parallels the order of increasing capabilities which the words "
+"must possess. This sequence leads to a natural organization of the source"
+" listing. The powerful commands are simply added on top of the elementary"
+" application ( :numref:`fig3-10` a)."
 msgstr ""
+"Forthの規則の一つは、ワードが呼び出されたり参照される前に、必ず定義済でなければならないということです。通常、ワードが定義されている順序は、そのワードが持っていなければならない能力を増加させる順序と同じです。この順序は、ソースリストの自然な構成を導きます。強力なこまんどは基本的なアプリケーションの上に単純に追加されています("
+" :numref:`fig3-10` (a) )。"
 
-#: ../../chapter3.rst:776
+#: ../../chapter3.rst:775
 msgid ""
 "Like a textbook, the elementary stuff comes first. A newcomer to the "
 "project would be able to read the elementary parts of the code before "
 "moving on the advanced stuff."
-msgstr ""
+msgstr "教科書のように、基本的なものが最初に来ます。 このプロジェクトの初心者は、高度なものに進む前に、コードの基本部分を読むことができます。"
 
-#: ../../chapter3.rst:784
+#: ../../chapter3.rst:783
 msgid "Two ways to add advanced capabilities."
-msgstr ""
+msgstr "高度な機能を追加する2つの方法"
 
-#: ../../chapter3.rst:788
+#: ../../chapter3.rst:787
 msgid ""
 "But in many large applications, the extra capabilities are best "
 "implemented as an enhancement to some private, root function in the "
 "elementary part of the application ( :numref:`fig3-10` b). By being able "
-"to change the root’s capability, the user can change the capability of "
+"to change the root\\’s capability, the user can change the capability of "
 "all the commands that use the root."
 msgstr ""
+"しかし多くの大規模なアプリケーションでは、追加の機能はアプリケーションの基本部分にあるプライベートな根っこの機能の拡張として実装するのが一番です("
+" :numref:`fig3-10` (b))）。 "
+"根っこの機能を変更できるようにすることで、ユーザは根っこtを使用するすべてのコマンドの機能を変更できます。"
 
-#: ../../chapter3.rst:794
+#: ../../chapter3.rst:793
 msgid ""
 "Returning to the word processor for an example, a fairly primitive "
-"routine is the one that starts a new page. It’s used by the word that "
+"routine is the one that starts a new page. It\\’s used by the word that "
 "starts a new line; when we run out of lines we must start a new page. The"
 " word that starts a new line, in turn, is used by the routine that "
-"formats words on the line; when the next word won’t fit on the current "
+"formats words on the line; when the next word won\\’t fit on the current "
 "line, we invoke ``NEWLINE`` . This “uses” hierarchy demands that we "
 "define ``NEWPAGE`` early in the application."
 msgstr ""
+"てワードプロセッサにの例戻って、かなり原始的なルーチンは新しいページを開始するものです。 改行するワードで使用されています。 "
+"行がなくなったら、新しいページを開始する必要があります。 改行するワードは、その行の語をフォーマットするルーチンによって使用されます。 "
+"次の語が現在の行に収まらない場合は、 ``NEWLINE`` を呼び出します。 この階層を「使う」ためには、アプリケーションの早い段階で "
+"``NEWPAGE`` を定義する必要があります。"
 
-#: ../../chapter3.rst:802
+#: ../../chapter3.rst:801
 msgid ""
 "The problem? One of the advanced components includes a routine that must "
 "be invoked by ``NEWPAGE`` . Specifically, if a figure or table appears in"
-" the middle of text, but at format time won’t fit on what’s left of the "
-"page, the formatter defers the figure to the next page while continuing "
-"with the text. This feature requires somehow “getting inside of” "
-"``NEWPAGE`` , so that when ``NEWPAGE`` is next executed, it will format "
-"the deferred figure at the top of the new page:"
+" the middle of text, but at format time won\\’t fit on what\\’s left of "
+"the page, the formatter defers the figure to the next page while "
+"continuing with the text. This feature requires somehow “getting inside "
+"of” ``NEWPAGE`` , so that when ``NEWPAGE`` is next executed, it will "
+"format the deferred figure at the top of the new page:"
 msgstr ""
+"問題とは？ 高度なコンポーネントの1つは、 ``NEWPAGE`` によって呼び出されるルーチンを含みます。 "
+"具体的には、図や表が(画面上は)テキストの途中に表示されていても、フォーマット時にページの残りに収まらない場合、フォーマッタはテキストの出力を続行しながら図を次のページに延期します。"
+" この機能はどういうわけか ``NEWPAGE`` の中に入ることを必要とします、それで  ``NEWPAGE`` "
+"が次に実行されるとき、それは新しいページの一番上に、延期していた図をフォーマットするでしょう。"
 
-#: ../../chapter3.rst:817
+#: ../../chapter3.rst:816
 msgid ""
 "How can ``NEWPAGE`` invoke ``?HOLDOVER`` , if ``?HOLDOVER`` is not "
 "defined until much later?"
 msgstr ""
+" ``?HOLDOVER`` がずっと後まで定義されてない場合、 ``NEWPAGE`` はどのようにすれば ``?HOLDOVER`` "
+"を呼び出す事ができますか？"
 
-#: ../../chapter3.rst:820
+#: ../../chapter3.rst:819
 msgid ""
-"While it’s theoretically possible to organize the listing so that the "
+"While it\\’s theoretically possible to organize the listing so that the "
 "advanced capability is defined before the root function, that approach is"
 " bad news for two reasons."
-msgstr ""
+msgstr "高度な機能が根っこ機能の前に定義されるようリストを編成することは理論的には可能ですが、そのアプローチはよろしくない理由が２つあります。"
 
-#: ../../chapter3.rst:824
+#: ../../chapter3.rst:823
 msgid ""
 "First, the natural organization (by degree of capability) is destroyed. "
 "Second, the advanced routines often use code that is defined amid the "
 "elementary capabilities. If you move the advanced routines to the front "
-"of the application, you’ll also have to move any routines they use, or "
+"of the application, you\\’ll also have to move any routines they use, or "
 "duplicate the code. Very messy."
-msgstr ""
+msgstr "第一に、(能力の度合いによる)自然な編成が破壊されます。第二に、高度なルーチンは、基本機能の中で定義されているコードを使用します。高度なルーチンをアプリケーションの根っこ側に移動する場合は、それらが使用する全てのルーチンを併せて移動するか、複製する必要があります。非常に面倒です。"
 
-#: ../../chapter3.rst:830
+#: ../../chapter3.rst:829
 msgid ""
 "You can organize the listing by degree of complexity using a technique "
 "called “vectoring.” You can allow the root function to invoke (point to) "
@@ -1207,119 +1380,137 @@ msgid ""
 "itself. In our example, only the *name* of the routine ``?HOLDOVER`` need"
 " be created early; its definition can be given later."
 msgstr ""
+"「ベクトル化」という手法を使用して、高度化の度合いでリストを編成できます。根っこの機能が、根っこの機能以降に定義されているさまざまなルーチンのいずれかを呼び出す(指し示す)ことを許可できます。私たちの例では"
+" ``?HOLDOVER`` の「名前だけ」を早めに作成しておく必要があります。その定義は後で与える事ができるのです。"
 
-#: ../../chapter3.rst:838
+#: ../../chapter3.rst:837
 msgid ":doc:`Chapter Seven<chapter7>` treats the subject of vectoring in Forth."
-msgstr ""
+msgstr "Forthのベクトル化手法は :doc:`第7章<chapter7>` で扱います。"
 
-#: ../../chapter3.rst:841
+#: ../../chapter3.rst:840
 msgid "The Limits of Level Thinking"
-msgstr ""
+msgstr "レベル思考の限界"
 
-#: ../../chapter3.rst:843
+#: ../../chapter3.rst:842
 msgid ""
 "Most of us are guilty of over-emphasizing the difference between “high-"
 "level” and “low-level.” This notion is an arbitrary one. It limits our "
 "ability to think clearly about software problems."
 msgstr ""
+"私たちのほとんどは、「高レベル」と「低レベル」の違いを強調し過ぎているという罪を犯しています。この概念は任意のものです。 "
+"それはソフトウェアの問題について明確に考える私たちの能力を制限します。"
 
-#: ../../chapter3.rst:847
+#: ../../chapter3.rst:846
 msgid ""
 "“Level” thinking, in the traditional sense, distorts our efforts in three"
 " ways:"
-msgstr ""
+msgstr "伝統的な意味での「レベル」思考は、3方面から私たちの努力を歪めます。"
 
-#: ../../chapter3.rst:850
+#: ../../chapter3.rst:849
 msgid ""
 "It implies that the order of development should follow a hierarchical "
 "structure"
-msgstr ""
+msgstr "開発の順序は階層構造に従うべきであるとしています。"
 
-#: ../../chapter3.rst:853
+#: ../../chapter3.rst:852
 msgid ""
 "It implies that levels should be segregated from each other, prohibiting "
 "the benefits of reusability"
-msgstr ""
+msgstr "各レベルはお互いに分離されるべきであるとし、再利用性の利点を妨げます。"
 
-#: ../../chapter3.rst:856
+#: ../../chapter3.rst:855
 msgid ""
 "It fosters syntactical differences between levels (e.g., assembler vs. "
 "“high-level” languages) and a belief that the nature of programming "
 "somehow changes as we move further from machine code."
-msgstr ""
+msgstr "それはレベル間の文法上の違い(例えば、アセンブラ対高級言語など)と、私たちが機械語から遠ざかるにつっれてプログラミングの性質がなぜか変化するという信念を助長します。"
 
-#: ../../chapter3.rst:860
-msgid "Let’s examine each of these misconceptions one by one."
-msgstr ""
+#: ../../chapter3.rst:859
+msgid "Let\\’s examine each of these misconceptions one by one."
+msgstr "これらの誤解をひとつひとつ調べてみましょう。"
 
-#: ../../chapter3.rst:863
+#: ../../chapter3.rst:862
 msgid "Where to Begin?"
-msgstr ""
+msgstr "どこから初めましょうか？"
 
-#: ../../chapter3.rst:865
+#: ../../chapter3.rst:864
 msgid ""
 "I asked Moore how he would go about developing a particular application, "
 "a game for children. As the child presses the digits on the numeric "
 "keypad, from zero to nine, that same number of large boxes would appear "
 "on the screen."
 msgstr ""
+"私はムーアに、どのようにして特定のアプリケーション、子供向けのゲームを開発するのかについて尋ねました。 "
+"子供が数字キーパッドの数字を0から9まで押すと、同じ数の大きなボックスが画面に表示されます。"
 
-#: ../../chapter3.rst:874
+#: ../../chapter3.rst:873
 msgid "**Moore**:"
-msgstr ""
+msgstr "ムーアは言います。"
 
-#: ../../chapter3.rst:871
+#: ../../chapter3.rst:870
 msgid ""
-"I don't start at the top and work down. Given that exact problem, I would"
-" write a word that draws a box. I'd start at the bottom, and I'd end up "
-"with a word called ``GO`` , which monitored the keyboard."
+"I don\\'t start at the top and work down. Given that exact problem, I "
+"would write a word that draws a box. I\\'d start at the bottom, and I\\'d"
+" end up with a word called ``GO`` , which monitored the keyboard."
 msgstr ""
+"私はトップから始めません。それはうまくいきません。 正確には、私は箱を描くワードを書くでしょう。 "
+"私は一番下から始めて、キーボードを監視している「GO」というワードで終わります。"
 
-#: ../../chapter3.rst:876
+#: ../../chapter3.rst:875
 msgid "How much of that is intuitive?"
-msgstr ""
+msgstr "そのうちのどれだけが直感的ですか？"
 
-#: ../../chapter3.rst:878
+#: ../../chapter3.rst:877
 msgid ""
-"Perhaps some degree of it. I know where I'm going so I don't have to "
-"start there. But also it's more fun to draw boxes than to program a "
-"keyboard. I'll do the thing that's most fun in order to get into the "
-"problem. If I have to clean up all those details later, that's the price "
-"I pay."
+"Perhaps some degree of it. I know where I\\'m going so I don\\'t have to "
+"start there. But also it\\'s more fun to draw boxes than to program a "
+"keyboard. I\\'ll do the thing that\\'s most fun in order to get into the "
+"problem. If I have to clean up all those details later, that\\'s the "
+"price I pay."
 msgstr ""
+"ある程度。 私はどこに到達すべきか知っているので、そこから始める必要はありません。 "
+"そして、キーボードをプログラムするよりもボックスを描く方が楽しいです。 問題を解決するために、最も楽しいことをします。 "
+"これらすべての詳細を後で整理する必要がある場合は、それが私が支払う対価です。"
 
-#: ../../chapter3.rst:884
+#: ../../chapter3.rst:883
 msgid "Are you advocating a \"fun-down\" approach?"
-msgstr ""
+msgstr "あなたは興味順アプローチを提唱しているのですか？"
 
-#: ../../chapter3.rst:886
+#: ../../chapter3.rst:885
 msgid ""
-"Given that you're doing it in a free-spirit fashion, yes. If we were "
-"giving a demonstration to a customer in two days, I'd do it differently. "
-"I would start with the most visible thing, not the most fun thing. But "
-"still not in that hierarchical sequence, top down. I base my approach on "
-"more immediate considerations such as impressing the customer, getting "
-"something to work, or showing other people how it's going to work to get "
-"them interested."
+"Given that you\\'re doing it in a free-spirit fashion, yes. If we were "
+"giving a demonstration to a customer in two days, I\\'d do it "
+"differently. I would start with the most visible thing, not the most fun "
+"thing. But still not in that hierarchical sequence, top down. I base my "
+"approach on more immediate considerations such as impressing the "
+"customer, getting something to work, or showing other people how it\\'s "
+"going to work to get them interested."
 msgstr ""
+"自由精神に基づくやり方でそれをやっているということなら、それはイエスです。2日間でお客様にデモンストレーションを行った場合は、別の方法で行います。"
+" 最もおもしろいものではなく、最も目に見えるものから始めます。 しかしそれでも、階層的な順序ではありません。 "
+"私は、顧客への感動、何かを働かせる、他の人々に関心を引くためにどのように動くべきかを示すなど、より早急な検討を基本アプローチにしています。"
 
-#: ../../chapter3.rst:895
+#: ../../chapter3.rst:894
 msgid ""
-"If you define a level as \"nesting,\" then yes, it's a good way to "
-"decompose a problem. But I've never found the notion of \"level\" useful."
-" Another aspect of levels is languages, metalanguages, meta-"
+"If you define a level as \"nesting,\" then yes, it\\'s a good way to "
+"decompose a problem. But I\\'ve never found the notion of \"level\" "
+"useful. Another aspect of levels is languages, metalanguages, meta-"
 "metalanguages. To try and split hairs as to which level you are on---"
-"assembler level, first integration level, last integration level---it's "
-"just tedious and not helpful. My levels get all mixed up hopelessly."
+"assembler level, first integration level, last integration level---it\\'s"
+" just tedious and not helpful. My levels get all mixed up hopelessly."
 msgstr ""
+"レベルを「ネスト」と定義した場合であれば、はい、それは問題を分解するための良い方法です。 "
+"しかし、私は「レベル」という概念が有用であるとは思いませんでした。 レベルのもう一つの側面は、言語、メタ言語、メタ - メタ言語です。 "
+"アセンブラレベル、最初の統合レベル、最後の統合レベル。髪の毛をより分けたりするように、どのレベルにいるのかを試してみたりするのは、単調で面倒です。"
+" 私のレベルはすべて絶望的に混ざりあっています。"
 
-#: ../../chapter3.rst:903
+#: ../../chapter3.rst:902
 msgid ""
 "Designing by components makes where you start less important. You could "
 "start with the key interpreter, for instance. Its goal is to receive "
 "keystrokes and convert them to numbers, passing these numbers to an "
-"internally invoked word. If you substitute the Forth word . (“dot,” which"
-" prints a number from the stack), then we can implement the key "
+"internally invoked word. If you substitute the Forth word ``.`` (“dot,” "
+"which prints a number from the stack), then we can implement the key "
 "interpreter, test it, and debug it without using routines that have "
 "anything to do with drawing squares. On the other hand, if the "
 "application required hardware support (such as a graphics package) that "
@@ -1330,47 +1521,56 @@ msgid ""
 "key design elements, then adding splashes of color here and there… until "
 "the entire wall is complete."
 msgstr ""
+"コンポーネントによる設計は、重要性の低いところから初めます。たとえば、キーインタプリタから始めることができます。 "
+"その目的は、キーストロークを受信して数字に変換し、これらの数字を内部的に呼び出されるワードに渡すことです。もしあなたがForthのワード "
+"``.`` (ドット。スタックから数字を出力する) "
+"で代用すれば、私たちはキーインタプリタを実装することができます、それをテストして、そして、正方形の描画に関係のあるルーチンを使用せずにそれをデバッグします。一方、アプリケーションが今現在手元にないハードウェアサポートパッケージ（グラフィックパッケージなど）を必要とする場合は、問題を解決するために、とりあえずアスタリスクを表示するなど、利用可能なものに置き換えることをお勧めします。"
+" 語彙の観点から考えることは、いくつかのキャンバスにまたがる巨大な壁画を描くようなものです。 "
+"すべてのキャンバスにまんべんなく一度に作業します。最初に重要な設計要素を全てのキャンバスにスケッチしてから、壁画全体が完成するまであちこちに色を入れていきます。"
 
-#: ../../chapter3.rst:920
+#: ../../chapter3.rst:919
 msgid "In deciding where to start designing, look for:"
-msgstr ""
+msgstr "どこから設計を始めるかを迷っている時は、以下を参考にしてください。"
 
-#: ../../chapter3.rst:922
+#: ../../chapter3.rst:921
 msgid ""
 "areas where the most creativity is required (the areas where change is "
 "most likely)"
-msgstr ""
+msgstr "最も創造性が要求される分野（変化が最も起こりそうな分野）"
 
-#: ../../chapter3.rst:924
+#: ../../chapter3.rst:923
 msgid "areas that give the most satisfying feedback (get the juices flowing)"
-msgstr ""
+msgstr "最も満足のいくフィードバックを与える領域"
 
-#: ../../chapter3.rst:926
+#: ../../chapter3.rst:925
 msgid ""
 "areas in which the approach decided upon will greatly affect other areas,"
 " or which will determine whether the stated problem can be solved at all"
-msgstr ""
+msgstr "アプローチが決定された分野は他の分野に大きな影響を与えるでしょう。あるいは述べられた問題が解決できるかどうか決定するでしょう。"
+
+#: ../../chapter3.rst:928
+msgid "things you should show the customer, for mutual understanding"
+msgstr "相互理解のために、顧客に見せるべきもの"
 
 #: ../../chapter3.rst:929
-msgid "things you should show the customer, for mutual understanding"
-msgstr ""
-
-#: ../../chapter3.rst:930
 msgid "things you can show the investors, if necessary for the rent."
-msgstr ""
+msgstr "借り入れに必要な場合は、投資家に見せることができます。"
 
-#: ../../chapter3.rst:933
+#: ../../chapter3.rst:932
 msgid "No Segregation Without Representation"
-msgstr ""
+msgstr "表現しないところは分離作業しない。"
 
-#: ../../chapter3.rst:935
+# preface94で著者後悔しまくってるのってこの辺りか？
+#: ../../chapter3.rst:934
 msgid ""
 "The second way in which levels can interfere with optimal solutions is by"
 " encouraging segregation of the levels. A popular design construct called"
 " the “object” typifies this dangerous philosophy. [#f1]_"
 msgstr ""
+"レベルが最適な解を妨げる可能性がある2つ目の方法は、レベルの分離を促進することです。 "
+"「オブジェクト」と呼ばれる一般的な設計構成は、この危険な哲学の典型です。 [#f1]_"
 
-#: ../../chapter3.rst:941
+#: ../../chapter3.rst:940
 msgid ""
 "An object is a portion of code that can be invoked by a single name, but "
 "that can perform more than one function. To select a particular function "
@@ -1378,15 +1578,18 @@ msgid ""
 "parameters. You can visualize the parameters as representing a row of "
 "buttons you can push to make the object do what you want."
 msgstr ""
+"オブジェクトは、単一の名前で呼び出すことができるコードの一部ですが、複数の機能を実行できます。 "
+"特定の機能を選択するには、オブジェクトを呼び出してそれにパラメータまたはパラメータのグループを渡す必要があります。 "
+"オブジェクトが、思いどおりに機能させるために押すことができるボタンの列を表すものとして、パラメータを視覚化できます。"
 
-#: ../../chapter3.rst:947
+#: ../../chapter3.rst:946
 msgid ""
 "The benefit of designing an application in terms of objects is that, like"
 " a component, the object hides information from the rest of the "
 "application, making revision easier."
-msgstr ""
+msgstr "オブジェクトの観点からアプリケーションを設計することの利点は、コンポーネントのように、オブジェクトがアプリケーションの他の部分から情報を隠し、改訂を容易にすることです。"
 
-#: ../../chapter3.rst:951
+#: ../../chapter3.rst:950
 msgid ""
 "There are several problems, though. First, the object must contain a "
 "complicated decision structure to determine which function it must "
@@ -1394,55 +1597,64 @@ msgid ""
 " on the other hand, provides all usable functions by name for you to "
 "invoke directly."
 msgstr ""
+"ただし、いくつか問題があります。 第一に、オブジェクトはどの機能を実行しなければならないかを決定するために複雑な決定構造を含まなければならない。 "
+"これにより、オブジェクトサイズが大きくなり、パフォーマンスが低下します。 "
+"一方、語彙は、直接呼び出すための使用可能なすべての機能を名前で提供します。"
 
-#: ../../chapter3.rst:957
+#: ../../chapter3.rst:956
 msgid ""
-"Second, the object is usually designed to stand alone. It can’t take "
+"Second, the object is usually designed to stand alone. It can\\’t take "
 "advantage of tools provided by supporting components. As a result, it "
 "tends to duplicate code inside itself that will appear elsewhere in the "
 "application. Some objects are even required to parse text in order to "
 "interpret their parameters. Each may even use its own syntax. A shameless"
 " waste of time and energy!"
 msgstr ""
+"第二に、オブジェクトは通常独立して設計されています。 サポートコンポーネントによって提供されるツールを利用することはできません。 "
+"その結果、アプリケーション内の他の場所に現れるコードをそれ自体の内部に複製する傾向があります。 "
+"いくつかのオブジェクトはそれらのパラメータを解釈するためにテキストを解析することさえ要求されます。 それぞれ独自の構文を使うことさえできます。 "
+"時間とエネルギーの恥知らずな無駄づかいです！！"
 
-#: ../../chapter3.rst:968
+#: ../../chapter3.rst:967
 msgid "\"No scrambled?\""
-msgstr ""
+msgstr "「スクランブルエッグにしたくないんだが…」"
 
-#: ../../chapter3.rst:972
+#: ../../chapter3.rst:971
 msgid ""
 "Finally, because the object is constructed to recognize a finite set of "
-"possibilities, it’s difficult to make additions to the row of buttons "
+"possibilities, it\\’s difficult to make additions to the row of buttons "
 "when a new function is needed. The tools inside the object have not been "
 "designed for reuse."
 msgstr ""
+"最後に、オブジェクトは有限の可能性を認識するように構成されているため、新しい機能が必要なときにボタンの列に追加するのは困難です。 "
+"オブジェクト内のツールは再利用できるようには設計されていません。"
 
-#: ../../chapter3.rst:977
+#: ../../chapter3.rst:976
 msgid ""
 "The idea of levels pervades the design of the IBM Personal Computer. "
 "Besides the processor itself (with its own machine instruction set, of "
 "course), there are these software levels:"
 msgstr ""
 
-#: ../../chapter3.rst:981
+#: ../../chapter3.rst:980
 msgid "the set of utilities written in assembler and burned into the system’s ROM"
 msgstr ""
 
-#: ../../chapter3.rst:984
+#: ../../chapter3.rst:983
 msgid "the disk operating system, which invokes the utilities"
 msgstr ""
 
-#: ../../chapter3.rst:986
+#: ../../chapter3.rst:985
 msgid ""
 "the high-level language of choice, which invokes the operating system and"
 " the utilities"
 msgstr ""
 
-#: ../../chapter3.rst:989
+#: ../../chapter3.rst:988
 msgid "and finally, any application using the language."
 msgstr ""
 
-#: ../../chapter3.rst:991
+#: ../../chapter3.rst:990
 msgid ""
 "The ROM utilities provide the hardware-dependent routines: those that "
 "handle the video screen, disk drives, and keyboard. You invoke them by "
@@ -1450,14 +1662,14 @@ msgid ""
 "appropriate software interrupt."
 msgstr ""
 
-#: ../../chapter3.rst:996
+#: ../../chapter3.rst:995
 msgid ""
 "For instance, software interrupt 10H causes entry to the video routines. "
 "There are 16 of these routines. You load register AH with the number of "
 "the video routine you want."
 msgstr ""
 
-#: ../../chapter3.rst:1000
+#: ../../chapter3.rst:999
 msgid ""
 "Unfortunately, in all 16 routines there is not one that displays a text "
 "string. To do that, you must repeat the process of loading registers and "
@@ -1466,7 +1678,7 @@ msgid ""
 "*every single character*."
 msgstr ""
 
-#: ../../chapter3.rst:1006
+#: ../../chapter3.rst:1005
 msgid ""
 "Try writing a text editor in which the entire screen may need to be "
 "refreshed with each keystroke. Slow as mail! You can’t improve the speed "
@@ -1476,7 +1688,7 @@ msgid ""
 "the hardware. After all, these could change with future upgrades."
 msgstr ""
 
-#: ../../chapter3.rst:1013
+#: ../../chapter3.rst:1012
 msgid ""
 "The only way to efficiently implement video I/O on this machine is to "
 "move strings directly into video memory. You can do this easily, because "
@@ -1485,7 +1697,7 @@ msgid ""
 "longer survive a hardware revision."
 msgstr ""
 
-#: ../../chapter3.rst:1019
+#: ../../chapter3.rst:1018
 msgid ""
 "By supposedly “protecting” the programmer from details, segregation has "
 "defeated the purpose of information hiding. Components, in contrast, are "
@@ -1494,7 +1706,7 @@ msgid ""
 " video memory."
 msgstr ""
 
-#: ../../chapter3.rst:1025
+#: ../../chapter3.rst:1024
 msgid ""
 "It’s not that anything’s wrong with the concept of a bit-switch function "
 "interface between components, when it’s necessary. The problem here is "
@@ -1506,15 +1718,15 @@ msgid ""
 " lexicon."
 msgstr ""
 
-#: ../../chapter3.rst:1036
-msgid "Don't bury your tools."
+#: ../../chapter3.rst:1035
+msgid "Don\\'t bury your tools."
 msgstr ""
 
-#: ../../chapter3.rst:1039
+#: ../../chapter3.rst:1038
 msgid "The Tower of Babble"
 msgstr ""
 
-#: ../../chapter3.rst:1041
+#: ../../chapter3.rst:1040
 msgid ""
 "The final deception perpetrated by level thinking is that programming "
 "languages should become qualitatively different the “higher” you go. We "
@@ -1522,7 +1734,7 @@ msgid ""
 "code as something grubby and profane."
 msgstr ""
 
-#: ../../chapter3.rst:1046
+#: ../../chapter3.rst:1045
 msgid ""
 "To some degree these distinctions have validity, but this is only the "
 "result of certain arbitrary architectural constraints that we all accept "
@@ -1530,7 +1742,7 @@ msgid ""
 "and unnatural syntactical rules, because they’re “low-level.”"
 msgstr ""
 
-#: ../../chapter3.rst:1051
+#: ../../chapter3.rst:1050
 msgid ""
 "The component concept rebels against the polarity of high-level vs. low-"
 "level. All code should look and feel the same. A component is simply a "
@@ -1539,66 +1751,66 @@ msgid ""
 "the structures and/or algorithms within."
 msgstr ""
 
-#: ../../chapter3.rst:1057
+#: ../../chapter3.rst:1056
 msgid ""
 "The distance of these structures from actual machine code is irrelevant. "
 "The code written to toggle bits in an output port should, in theory, look"
 " no more intimidating than the code to format a report."
 msgstr ""
 
-#: ../../chapter3.rst:1061
+#: ../../chapter3.rst:1060
 msgid ""
 "Even machine code should be readable. A true Forth-based engine would "
 "enjoy a syntax and dictionary identical and continuous with the “high-"
-"level” dictionary we know today.`Level'' thinking, limits of|)}`"
+"level” dictionary we know today."
 msgstr ""
 
-#: ../../chapter3.rst:1067
+#: ../../chapter3.rst:1065
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter3.rst:1069
+#: ../../chapter3.rst:1067
 msgid ""
 "In this chapter we’ve seen two ways that applications can be decomposed: "
 "into components, and according to sequential complexity."
 msgstr ""
 
-#: ../../chapter3.rst:1072
+#: ../../chapter3.rst:1070
 msgid ""
 "Special attention should be paid to those components that serve as "
 "interfaces between other components."
 msgstr ""
 
-#: ../../chapter3.rst:1075
+#: ../../chapter3.rst:1073
 msgid ""
 "Now, if you’ve done preliminary design correctly, your problem is lying "
 "at your feet in a heap of manageable pieces. Each piece represents a "
 "problem to solve. Grab your favorite piece and turn to the next chapter."
 msgstr ""
 
-#: ../../chapter3.rst:1081
+#: ../../chapter3.rst:1079
 msgid "For Further Thinking"
 msgstr ""
 
-#: ../../chapter3.rst:1083
+#: ../../chapter3.rst:1081
 msgid "*(Answers appear in :doc:`Appendix D<appendixd>`.)*"
 msgstr ""
 
-#: ../../chapter3.rst:1085
+#: ../../chapter3.rst:1083
 msgid ""
-"Below are two approaches to defining an editor’s keyboard interpreter. "
+"Below are two approaches to defining an editor\\’s keyboard interpreter. "
 "Which would you prefer? Why?"
 msgstr ""
 
-#: ../../chapter3.rst:1088
+#: ../../chapter3.rst:1086
 msgid "(a)."
-msgstr ""
+msgstr "(a)."
 
-#: ../../chapter3.rst:1112
+#: ../../chapter3.rst:1110
 msgid "(b)."
-msgstr ""
+msgstr "(b)."
 
-#: ../../chapter3.rst:1127
+#: ../../chapter3.rst:1125
 msgid ""
 "This problem is an exercise in information hiding. Let’s suppose we have "
 "a region of memory outside of the Forth dictionary which we want to "
@@ -1607,53 +1819,53 @@ msgid ""
 "will reside in that memory."
 msgstr ""
 
-#: ../../chapter3.rst:1133
+#: ../../chapter3.rst:1131
 msgid "We might do something like this:"
 msgstr ""
 
-#: ../../chapter3.rst:1142
+#: ../../chapter3.rst:1140
 msgid ""
 "Each array-name defined above will return the starting address of the "
 "appropriate array. But notice we had to compute the correct starting "
 "address for each array, based on how many bytes we had already allocated."
 " Let’s try to automate this, by keeping an “allocation pointer,” called "
-">RAM, showing where the next free byte is. We first set the pointer to "
-"the beginning of the RAM space:"
+"``>RAM``, showing where the next free byte is. We first set the pointer "
+"to the beginning of the RAM space:"
 msgstr ""
 
-#: ../../chapter3.rst:1154
+#: ../../chapter3.rst:1152
 msgid "Now we can define each array like this: x"
 msgstr ""
 
-#: ../../chapter3.rst:1162
+#: ../../chapter3.rst:1160
 msgid ""
 "Notice that after defining each array, we increment the pointer by the "
 "size of the new array to show that we’ve allocated that much additional "
 "RAM."
 msgstr ""
 
-#: ../../chapter3.rst:1166
+#: ../../chapter3.rst:1164
 msgid "To make the above more readable, we might add these two definitions:"
 msgstr ""
 
-#: ../../chapter3.rst:1174
+#: ../../chapter3.rst:1172
 msgid "We can now rewrite the above equivalently as:"
 msgstr ""
 
-#: ../../chapter3.rst:1182
+#: ../../chapter3.rst:1180
 msgid ""
 "(An advanced Forth programmer would probably combine these operations "
 "into a single defining word, but that whole topic is not germane to what "
 "I’m leading up to.)"
 msgstr ""
 
-#: ../../chapter3.rst:1186
+#: ../../chapter3.rst:1184
 msgid ""
 "Finally, suppose we have 20 such array definitions scattered throughout "
 "our application."
 msgstr ""
 
-#: ../../chapter3.rst:1189
+#: ../../chapter3.rst:1187
 msgid ""
 "Now, the problem: Somehow the architecture of our system changes and we "
 "decide that we must allocate this memory such that it *ends* at HEX "
@@ -1662,11 +1874,11 @@ msgid ""
 "address, however."
 msgstr ""
 
-#: ../../chapter3.rst:1195
+#: ../../chapter3.rst:1193
 msgid "To do this, we must now write:"
 msgstr ""
 
-#: ../../chapter3.rst:1207
+#: ../../chapter3.rst:1205
 msgid ""
 "This time ``RAM-ALLOT`` *decrements* the pointer. That’s okay, it’s easy "
 "to add ``NEGATE`` to the definition of ``RAM-ALLOT``. Our present concern"
@@ -1675,25 +1887,25 @@ msgid ""
 "correcting."
 msgstr ""
 
-#: ../../chapter3.rst:1212
+#: ../../chapter3.rst:1210
 msgid ""
 "The words ``THERE`` and ``RAM-ALLOT`` are nice and friendly, but they "
 "didn’t succeed at hiding *how* the region is allocated. If they had, it "
 "wouldn’t matter which order we invoked them in."
 msgstr ""
 
-#: ../../chapter3.rst:1216
+#: ../../chapter3.rst:1214
 msgid ""
 "At long last, our question: What could we have done to ``THERE`` and "
 "``RAM-ALLOT`` to minimize the impact of this design change? (Again, the "
 "answer I’m looking for has nothing to do with defining words.)"
 msgstr ""
 
-#: ../../chapter3.rst:1221
+#: ../../chapter3.rst:1219
 msgid "Footnotes"
 msgstr ""
 
-#: ../../chapter3.rst:1222
+#: ../../chapter3.rst:1220
 msgid ""
 "Editor\\'s note: But see the recant in the 1994 Preface on page "
 ":doc:`preface94` , and the clairification in the 2004 Preface on page "
@@ -1701,38 +1913,9 @@ msgid ""
 "CORBA. Real object oriented programming, as it originates in Smalltalk, "
 "does not hide information from the programmer. Adding a \"scrambled\" "
 "method to the \"egg master object\" is no problem. Smalltalk works by "
-"adding methods to known classes, you don't even need to subclass them. "
+"adding methods to known classes, you don\\'t even need to subclass them. "
 "You can look inside an object and its source code whenever you want. And "
 "table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd"
 " Paysan**"
 msgstr ""
-
-#~ msgid ""
-#~ "In Chapter One we discovered that "
-#~ "applications can be conveniently decomposed"
-#~ " into components."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Let’s apply decomposition by component "
-#~ "to a real problem. It would be "
-#~ "nice to design a large application "
-#~ "right here in Chapter Three, but "
-#~ "alas, we don’t have the room and"
-#~ " besides, we’d get sidetracked in "
-#~ "trying to understand the application."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This table seems to be the most"
-#~ " logical expression of the problem at"
-#~ " the current level. We’ll save the"
-#~ " implementation for later (Chapter Eight)."
-#~ msgstr ""
-
-#~ msgid "Chapter Seven treats the subject of vectoring in Forth."
-#~ msgstr ""
-
-#~ msgid "*(Answers appear in Appendix D.)*"
-#~ msgstr ""
 

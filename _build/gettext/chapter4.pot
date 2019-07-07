@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-07-08 05:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../chapter4.rst:4
-msgid "4. Detailed Design/0Problem Solving"
+msgid "4. Detailed Design/Problem Solving"
 msgstr ""
 
 #: ../../chapter4.rst:0
@@ -453,7 +453,7 @@ msgid "Let numbers precede names."
 msgstr ""
 
 #: ../../chapter4.rst:471
-msgid "Words that require a numeric argument will naturally expect to find that number on the stack. Syntactically speaking, then, the number should precede the name. For instance, the syntax of the word SPACES, which emits “:math:`n`” number of spaces, is"
+msgid "Words that require a numeric argument will naturally expect to find that number on the stack. Syntactically speaking, then, the number should precede the name. For instance, the syntax of the word ``SPACES``, which emits “:math:`n`” number of spaces, is"
 msgstr ""
 
 #: ../../chapter4.rst:480

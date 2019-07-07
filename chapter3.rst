@@ -1,7 +1,7 @@
 
-***********************************
-3. Preliminary Design/Decomposition
-***********************************
+=====================================
+ 3. Preliminary Design/Decomposition
+=====================================
 
 Assuming you have some idea of what your program
 should accomplish, it’s time to begin the design. The first stage,
@@ -112,7 +112,7 @@ the few minutes (at most) it takes to edit and recompile.
 .. hint::
 
    Within each component, implement only the commands needed for the
-   current iteration. (But don't preclude future additions.)
+   current iteration. (But don\'t preclude future additions.)
 
 What goes on inside a component is pretty much its own business. It’s
 not necessarily bad style for definitions within the component to share
@@ -146,14 +146,14 @@ chance that it will change, you’re better off hiding it behind a name:
 
 ..
 
-(The name /RECORD, by convention, means “bytes per record.”)
+(The name ``/RECORD``, by convention, means “bytes per record.”)
 
 Example: A Tiny Editor
 ======================
 
 Let’s apply decomposition by component to a real problem. It would be
 nice to design a large application right here in
-doc:`Chapter Three<chapter3>`, but
+:doc:`Chapter Three<chapter3>`, but
 alas, we don’t have the room and besides, we’d get sidetracked in trying
 to understand the application.
 
@@ -197,11 +197,11 @@ a keystroke interpreter—some kind of routine that awaits keystrokes and
 matches them up with a list of possible operations. The keystroke
 interpreter is one component, and its lexicon will consist of a single
 word. Since that word will allow the editing of a field, let’s call the
-word EDIT.
+word ``EDIT``.
 
 The operations invoked by the keystroke interpreter will comprise a
 second lexicon. The definitions in this lexicon will perform the various
-functions required. One word might be called DELETE, another INSERT,
+functions required. One word might be called ``DELETE``, another ``INSERT``,
 etc. Since each of these commands will be invoked by the interpreter,
 each of them will process a single keystroke.
 
@@ -218,7 +218,7 @@ implement the data structure to be edited.
 
 Finally, we’ll need a component to display the field on the video
 screen. For the sake of simplicity, let’s plan on creating one word
-only, REDISPLAY, to redisplay the entire field after each key is
+only, ``REDISPLAY``, to redisplay the entire field after each key is
 pressed.
 
 .. code-block:: none
@@ -269,14 +269,14 @@ for useful “names”—that is procedures or elements which can either:
 We discover that all three procedures use something called a “pointer.”
 We need two procedures:
 
-3. to get the pointer (if the pointer itself is relative, this function
+1. to get the pointer (if the pointer itself is relative, this function
    will perform some computation).
 
-4. to advance the pointer
+2. to advance the pointer
 
 Wait, three procedures:
 
-5. to move the pointer backwards
+3. to move the pointer backwards
 
 because we will want “cursor keys” to move the cursor forward and back
 without editing changes.
@@ -300,13 +300,12 @@ Let’s attempt to rewrite these algorithms in code:
 ..
 
 To copy the text leftwards and rightwards, we had to invent two new
-names as we went along, SLIDE< and SLIDE> (pronounced “slide-backwards”
+names as we went along, ``SLIDE<`` and ``SLIDE>`` (pronounced “slide-backwards”
 and “slide-forwards” respectively). Both of them will certainly use
-POSITION, but they also must rely on an element we’ve deferred
+``POSITION``, but they also must rely on an element we’ve deferred
 considering: a way to “know” the length of the field. We can tackle that
 aspect when we get to writing the third component. But look at what we
-found out already: we can describe “Insert” as simply “SLIDE>
-OVERWRITE”.
+found out already: we can describe “Insert” as simply ``SLIDE> OVERWRITE``.
 
 In other words, “Insert” actually *uses* “Overwrite” even though they
 appear to exist on the same level (at least to a Structured Programmer).
@@ -330,15 +329,15 @@ named procedures.
 We can write our keystroke interpreter as a decision table (worrying
 about the implementation later):
 
-.. csv-table:: decision table
+.. csv-table::
    :header: "Key", "Not-inserting", "Inserting"
    
-   "Ctrl-D", "DELETE", "INSERT-OFF"
-   "Ctrl-I", "INSERT-ON", "INSERT-OFF"
-   "backspace", "BACKWARD", "INSERT<"
-   "left-arrow", "BACKWARD", "INSERT-OFF"
-   "right-arrow", "FORWARD", "INSERT-OFF"
-   "return", "ESCAPE", "INSERT-OFF"
+   ":kbd:`Ctrl-D`", "DELETE", "INSERT-OFF"
+   ":kbd:`Ctrl-I`", "INSERT-ON", "INSERT-OFF"
+   ":kbd:`backspace`", "BACKWARD", "INSERT<"
+   ":kbd:`left-arrow`", "BACKWARD", "INSERT-OFF"
+   ":kbd:`right-arrow`", "FORWARD", "INSERT-OFF"
+   ":kbd:`return`", "ESCAPE", "INSERT-OFF"
    "any printable", "OVERWRITE", "INSERT"
 
 We’ve placed the possible types of keys in the
@@ -404,9 +403,9 @@ None of their descriptions make any reference to the video refresh
 process, because that was originally assumed to happen later.
 
 But things aren’t as bad as they seem. Looking at it now, the process
-OVERWRITE could easily include a command to type the new character where
-the terminal’s cursor is. And SLIDE< and SLIDE> could include commands
-to type everything to the right of, and including, POSITION, then reset
+``OVERWRITE`` could easily include a command to type the new character where
+the terminal’s cursor is. And ``SLIDE<`` and ``SLIDE>`` could include commands
+to type everything to the right of, and including, ``POSITION``, then reset
 the terminal’s cursor to its current position.
 
 Here are our revised procedure names. The commands just added are in
@@ -492,11 +491,11 @@ had deferred till later in the previous try.
 
 For instance, we must determine all the keys that might be pressed. More
 significantly, we must consider the problem of “insert mode.” This
-realization forces us to invent a flag called INSERT-MODE which gets
-toggled by the “Ctrl I” key. It’s used within several of the structural
+realization forces us to invent a flag called ``INSERT-MODE`` which gets
+toggled by the :kbd:`Ctrl I` key. It’s used within several of the structural
 lines to determine how to process a type of key.
 
-A second flag, called ESCAPE, seems to provide a nice structured way of
+A second flag, called ``ESCAPE``, seems to provide a nice structured way of
 escaping the editor loop if the user presses the return key while not in
 insert mode.
 
@@ -588,7 +587,7 @@ superficial element of program design.
 
 In contrast, in our design by components the correct solution fell out
 naturally because we “used” the refresh component inside the editing
-component. Also we used OVERWRITE inside INSERT.
+component. Also we used ``OVERWRITE`` inside ``INSERT``.
 
 By decomposing our application into components which use one another, we
 achieved not only *elegance* but a more direct path to
@@ -624,10 +623,10 @@ opposite module.
 
 ..
 
-There’s more to good interface design than that. Allow me to introduce a
+There\’s more to good interface design than that. Allow me to introduce a
 design element which I call the “interface component.” The purpose an
-interface component is to implement, and *hide information
-about*, the data interface
+interface component is to implement, and *hide information about*,
+the data interface
 between two or more other components ( :numref:`fig3-9` ).
 
 .. figure:: fig3-9.png
@@ -707,29 +706,29 @@ I allow different type widths to be used: condensed, double width, etc.
 This means not only sending different signals to the printer, but
 changing the number of characters allowed per line.
 
-I keep a variable, called WALL, for the formatter. WALL indicates the
+I keep a variable, called ``WALL``, for the formatter. ``WALL`` indicates the
 right margin: the point beyond which no more text can be set. Changing
-to a different type width means changing the value of WALL
+to a different type width means changing the value of ``WALL``
 proportionately. (Actually, this turns out to be a mistake in itself. I
 should be using a finer unit of measurement, the number of which remains
 constant for the line. Changing type widths would mean changing the
 number of units per character. But getting back to the mistake at hand…)
 
-Alas, I was also using WALL inside the output component to determine how
+Alas, I was also using ``WALL`` inside the output component to determine how
 many characters to display. My reasoning was that this value would
 change depending on what type-width I was using.
 
-I was right—99% of the time. But one day I discovered that, under a
+I was right—99\% of the time. But one day I discovered that, under a
 certain condition, a line of condensed text was being somehow cut short.
 The final couple of words were just missing. The reason turned out to be
-that WALL was getting changed before the output component had a chance
+that ``WALL`` was getting changed before the output component had a chance
 to use it.
 
 Originally I had seen nothing wrong with letting the output component
-blithely use the formatter’s WALL as well. Now I realized that the
+blithely use the formatter’s ``WALL`` as well. Now I realized that the
 formatter had to leave a separate variable for the output component, to
 indicate how many valid characters were in the buffers. This would leave
-any subsequent font commands free to change WALL.
+any subsequent font commands free to change ``WALL``.
 
 It was important that the two buffers, the attribute commands, and the
 new variable were the *only* elements that could be shared between the
@@ -766,7 +765,7 @@ Decomposition by Sequential Complexity
 We’ve been discussing one way to do decomposition: according to
 components. The second way is according to sequential complexity.
 
-One of Forth’s rules is that a word must already have been defined to be
+One of Forth\’s rules is that a word must already have been defined to be
 invoked or referred to. Usually the sequence in which words are defined
 parallels the order of increasing capabilities which the words must
 possess. This sequence leads to a natural organization of the source
@@ -788,20 +787,20 @@ moving on the advanced stuff.
 But in many large applications, the extra capabilities are best
 implemented as an enhancement to some private, root function in the
 elementary part of the application ( :numref:`fig3-10` b). By
-being able to change the root’s capability, the user can change the
+being able to change the root\’s capability, the user can change the
 capability of all the commands that use the root.
 
 Returning to the word processor for an example, a fairly primitive
-routine is the one that starts a new page. It’s used by the word that
+routine is the one that starts a new page. It\’s used by the word that
 starts a new line; when we run out of lines we must start a new page.
 The word that starts a new line, in turn, is used by the routine that
-formats words on the line; when the next word won’t fit on the current
+formats words on the line; when the next word won\’t fit on the current
 line, we invoke ``NEWLINE`` . This “uses” hierarchy demands that we define
 ``NEWPAGE`` early in the application.
 
 The problem? One of the advanced components includes a routine that must
 be invoked by ``NEWPAGE`` . Specifically, if a figure or table appears in the
-middle of text, but at format time won’t fit on what’s left of the page,
+middle of text, but at format time won\’t fit on what\’s left of the page,
 the formatter defers the figure to the next page while continuing with
 the text. This feature requires somehow “getting inside of” ``NEWPAGE`` , so
 that when ``NEWPAGE`` is next executed, it will format the deferred figure
@@ -817,14 +816,14 @@ at the top of the new page:
 How can ``NEWPAGE`` invoke ``?HOLDOVER`` , if ``?HOLDOVER`` is not defined until much
 later?
 
-While it’s theoretically possible to organize the listing so that the
+While it\’s theoretically possible to organize the listing so that the
 advanced capability is defined before the root function, that approach
 is bad news for two reasons.
 
 First, the natural organization (by degree of capability) is destroyed.
 Second, the advanced routines often use code that is defined amid the
 elementary capabilities. If you move the advanced routines to the front
-of the application, you’ll also have to move any routines they use, or
+of the application, you\’ll also have to move any routines they use, or
 duplicate the code. Very messy.
 
 You can organize the listing
@@ -857,7 +856,7 @@ three ways:
    vs. “high-level” languages) and a belief that the nature of
    programming somehow changes as we move further from machine code.
 
-Let’s examine each of these misconceptions one by one.
+Let\’s examine each of these misconceptions one by one.
 
 Where to Begin?
 ---------------
@@ -868,42 +867,42 @@ presses the digits on the numeric keypad, from zero to nine, that same
 number of large boxes would appear on the screen.
 
 **Moore**:
-    I don't start at the top and work down. Given that exact
-    problem, I would write a word that draws a box. I'd start at
-    the bottom, and I'd end up with a word called ``GO`` ,
+    I don\'t start at the top and work down. Given that exact
+    problem, I would write a word that draws a box. I\'d start at
+    the bottom, and I\'d end up with a word called ``GO`` ,
     which monitored the keyboard.
 
 How much of that is intuitive?
 
-    Perhaps some degree of it. I know where I'm going so I don't
-    have to start there. But also it's more fun to draw boxes than
-    to program a keyboard. I'll do the thing that's most fun in
+    Perhaps some degree of it. I know where I\'m going so I don\'t
+    have to start there. But also it\'s more fun to draw boxes than
+    to program a keyboard. I\'ll do the thing that\'s most fun in
     order to get into the problem. If I have to clean up all those
-    details later, that's the price I pay.
+    details later, that\'s the price I pay.
 
 Are you advocating a "fun-down" approach?
 
-    Given that you're doing it in a free-spirit fashion, yes. If
-    we were giving a demonstration to a customer in two days, I'd
+    Given that you\'re doing it in a free-spirit fashion, yes. If
+    we were giving a demonstration to a customer in two days, I\'d
     do it differently. I would start with the most visible thing,
     not the most fun thing. But still not in that hierarchical
     sequence, top down. I base my approach on more immediate
     considerations such as impressing the customer, getting
-    something to work, or showing other people how it's going to
+    something to work, or showing other people how it\'s going to
     work to get them interested.
     
-    If you define a level as "nesting," then yes, it's a good
-    way to decompose a problem. But I've never found the notion of
+    If you define a level as "nesting," then yes, it\'s a good
+    way to decompose a problem. But I\'ve never found the notion of
     "level" useful. Another aspect of levels is languages,
     metalanguages, meta-metalanguages. To try and split hairs as
     to which level you are on---assembler level, first integration
-    level, last integration level---it's just tedious and not
+    level, last integration level---it\'s just tedious and not
     helpful. My levels get all mixed up hopelessly.
 
 Designing by components makes where you start less important. You could
 start with the key interpreter, for instance. Its goal is to receive
 keystrokes and convert them to numbers, passing these numbers to an
-internally invoked word. If you substitute the Forth word . (“dot,”
+internally invoked word. If you substitute the Forth word ``.`` (“dot,”
 which prints a number from the stack), then we can implement the key
 interpreter, test it, and debug it without using routines that have
 anything to do with drawing squares. On the other hand, if the
@@ -954,7 +953,7 @@ perform. This increases object size and decreases performance. A
 lexicon, on the other hand, provides all usable functions by name for
 you to invoke directly.
 
-Second, the object is usually designed to stand alone. It can’t take
+Second, the object is usually designed to stand alone. It can\’t take
 advantage of tools provided by supporting components. As a result, it
 tends to duplicate code inside itself that will appear elsewhere in the
 application. Some objects are even required to parse text in order to
@@ -970,7 +969,7 @@ shameless waste of time and energy!
 ..
 
 Finally, because the object is constructed to recognize a finite set of
-possibilities, it’s difficult to make additions to the row of buttons
+possibilities, it\’s difficult to make additions to the row of buttons
 when a new function is needed. The tools inside the object have not been
 designed for reuse.
 
@@ -1033,7 +1032,7 @@ the video lexicon.
 
 .. hint::
 
-   Don't bury your tools.
+   Don\'t bury your tools.
 
 The Tower of Babble
 -------------------
@@ -1060,8 +1059,7 @@ look no more intimidating than the code to format a report.
 
 Even machine code should be readable. A true Forth-based engine would
 enjoy a syntax and dictionary identical and continuous with the
-“high-level” dictionary we know
-today.`Level'' thinking, limits of|)}`
+“high-level” dictionary we know today.
 
 Summary
 =======
@@ -1082,7 +1080,7 @@ For Further Thinking
 
 *(Answers appear in :doc:`Appendix D<appendixd>`.)*
 
-#. Below are two approaches to defining an editor’s keyboard
+#. Below are two approaches to defining an editor\’s keyboard
    interpreter. Which would you prefer? Why?
 
    (a).
@@ -1143,7 +1141,7 @@ For Further Thinking
    appropriate array. But notice we had to compute the correct starting
    address for each array, based on how many bytes we had already
    allocated. Let’s try to automate this, by keeping an “allocation
-   pointer,” called >RAM, showing where the next free byte is. We first
+   pointer,” called ``>RAM``, showing where the next free byte is. We first
    set the pointer to the beginning of the RAM space:
 
    .. code-block:: none
@@ -1226,7 +1224,7 @@ For Further Thinking
 	 Real object oriented programming, as it originates in Smalltalk, does
 	 not hide information from the programmer. Adding a "scrambled"
 	 method to the "egg master object" is no problem. Smalltalk works by
-	 adding methods to known classes, you don't even need to subclass them.
+	 adding methods to known classes, you don\'t even need to subclass them.
 	 You can look inside an object and its source code whenever you want.
 	 And table driven method dispatching can be quite efficient.
 	 \-\-\- **Bernd Paysan**

@@ -1,6 +1,6 @@
 
 ***********************************
-4. Detailed Design/0Problem Solving
+4. Detailed Design/Problem Solving
 ***********************************
     | **Trivial:** I can see how to do this. I just don't know how long it will take.
     | **Non-trivial:** I haven't a **clue** how to do this!
@@ -470,7 +470,7 @@ Here are some elementary rules of Forth’s natural syntax:
 
 Words that require a numeric argument will naturally expect to find that
 number on the stack. Syntactically speaking, then, the number should
-precede the name. For instance, the syntax of the word SPACES, which
+precede the name. For instance, the syntax of the word ``SPACES``, which
 emits “:math:`n`” number of spaces, is
 
 .. code-block:: none
