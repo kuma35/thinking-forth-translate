@@ -623,9 +623,9 @@ opposite module.
 
 ..
 
-There\’s more to good interface design than that. Allow me to introduce a
+There\'s more to good interface design than that. Allow me to introduce a
 design element which I call the “interface component.” The purpose an
-interface component is to implement, and *hide information about*,
+interface component is to implement, and *hide information about* ,
 the data interface
 between two or more other components ( :numref:`fig3-9` ).
 
@@ -718,7 +718,7 @@ Alas, I was also using ``WALL`` inside the output component to determine how
 many characters to display. My reasoning was that this value would
 change depending on what type-width I was using.
 
-I was right—99\% of the time. But one day I discovered that, under a
+I was right--99\% of the time. But one day I discovered that, under a
 certain condition, a line of condensed text was being somehow cut short.
 The final couple of words were just missing. The reason turned out to be
 that ``WALL`` was getting changed before the output component had a chance
@@ -1149,7 +1149,7 @@ For Further Thinking
       VARIABLE >RAM
       C000 >RAM !
 
-   Now we can define each array like this: x
+   Now we can define each array like this:
 
    .. code-block:: none
    

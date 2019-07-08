@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-08 05:15+0900\n"
-"PO-Revision-Date: 2019-07-08 05:17+0900\n"
+"POT-Creation-Date: 2019-07-09 01:27+0900\n"
+"PO-Revision-Date: 2019-07-09 07:43+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1045,15 +1045,14 @@ msgid "Traditional view of the interface as a junction."
 msgstr "インターフェイスの伝統的な観点は接合点です。"
 
 #: ../../chapter3.rst:626
-#, fuzzy
 msgid ""
-"There\\’s more to good interface design than that. Allow me to introduce "
+"There\\'s more to good interface design than that. Allow me to introduce "
 "a design element which I call the “interface component.” The purpose an "
-"interface component is to implement, and *hide information about*, the "
+"interface component is to implement, and *hide information about* , the "
 "data interface between two or more other components ( :numref:`fig3-9` )."
 msgstr ""
 "これ以外にも優れたインターフェース設計があります。 "
-"「インターフェース・コンポーネント」と呼ぶ設計要素を紹介させて下さい。インターフェース・コンポーネントの目的は、2つ以上の他のコンポーネント間のデータ・インターフェースを実装し、*情報を隠すことです("
+"「インターフェース・コンポーネント」と呼ぶ設計要素を紹介させて下さい。インターフェース・コンポーネントの目的は、2つ以上の他のコンポーネント間のデータ・インターフェースを実装し、情報を隠すことです("
 " :numref:`fig3-9` )。"
 
 #: ../../chapter3.rst:636
@@ -1201,7 +1200,7 @@ msgstr ""
 #: ../../chapter3.rst:721
 #,
 msgid ""
-"I was right—99\\% of the time. But one day I discovered that, under a "
+"I was right--99\\% of the time. But one day I discovered that, under a "
 "certain condition, a line of condensed text was being somehow cut short. "
 "The final couple of words were just missing. The reason turned out to be "
 "that ``WALL`` was getting changed before the output component had a "
@@ -1617,7 +1616,7 @@ msgstr ""
 
 #: ../../chapter3.rst:967
 msgid "\"No scrambled?\""
-msgstr "「スクランブルエッグにしたくないんだが…」"
+msgstr "「スクランブルエッグにはできないの？」"
 
 #: ../../chapter3.rst:971
 msgid ""
@@ -1635,24 +1634,26 @@ msgid ""
 "Besides the processor itself (with its own machine instruction set, of "
 "course), there are these software levels:"
 msgstr ""
+"レベルの考え方は、IBMパーソナルコンピュータの設計にも広がっています。 "
+"プロセッサ自体（もちろん、独自の機械命令セットを使用した）の他に、以下のソフトウェアのレベルがあります。"
 
 #: ../../chapter3.rst:980
 msgid "the set of utilities written in assembler and burned into the system’s ROM"
-msgstr ""
+msgstr "アセンブラで書かれ、システムのROMに書き込まれた一連のユーティリティ(訳注:BIOS)"
 
 #: ../../chapter3.rst:983
 msgid "the disk operating system, which invokes the utilities"
-msgstr ""
+msgstr "ユーティリティを起動するディスクオペレーティングシステム"
 
 #: ../../chapter3.rst:985
 msgid ""
 "the high-level language of choice, which invokes the operating system and"
 " the utilities"
-msgstr ""
+msgstr "オペレーティングシステムとユーティリティを呼び出す高級言語"
 
 #: ../../chapter3.rst:988
 msgid "and finally, any application using the language."
-msgstr ""
+msgstr "そして最後に、その言語を使用しているアプリケーション。"
 
 #: ../../chapter3.rst:990
 msgid ""
@@ -1661,6 +1662,8 @@ msgid ""
 "placing a control code in a certain register and generating the "
 "appropriate software interrupt."
 msgstr ""
+"ROMユーティリティは、ハードウェアに依存するルーチン（ビデオ画面、ディスクドライブ、およびキーボードを処理するルーチン）を提供します。 "
+"特定のレジスタに制御コードを入れて適切なソフトウェア割り込みを生成することによってそれらを呼び出します。"
 
 #: ../../chapter3.rst:995
 msgid ""
@@ -1668,6 +1671,8 @@ msgid ""
 "There are 16 of these routines. You load register AH with the number of "
 "the video routine you want."
 msgstr ""
+"例えば、ソフトウェア割り込み10Hはビデオルーチンに入る。 これらのルーチンは16個あります。 "
+"あなたは必要なビデオルーチンの番号をレジスタAHにセットします。"
 
 #: ../../chapter3.rst:999
 msgid ""
@@ -1677,6 +1682,8 @@ msgid ""
 " which routine you want, and do a few other things you don’t need—for "
 "*every single character*."
 msgstr ""
+"残念ながら、その16個のルーチンのいずれも文字列を表示するものはありません。\n"
+"あなたがやることは、どのルーチンか必要か選び、文字列の全ての文字のために、レジスタにセットしてソフトウェア割り込みを生成する処理を繰り返し行う必要があります。そして、あなたは必要としていない他のいつくかの事をします。"
 
 #: ../../chapter3.rst:1005
 msgid ""
@@ -1687,6 +1694,10 @@ msgid ""
 "to “insulate” the programmer from device addresses and other details of "
 "the hardware. After all, these could change with future upgrades."
 msgstr ""
+"各キーストローク毎に画面全体を更新する必要があるテキストエディタを書いてみてください。 えらく遅いな！ "
+"外部で提供されているものを除き、ビデオルーチン内の情報を再利用することはできないため、速度を向上させることはできません。 "
+"このような書き方をする理由は、プログラマをデバイスアドレスやその他のハードウェアの詳細から絶縁するためです。 "
+"どのみちこれらは将来のアップグレードで変わる可能性があります。"
 
 #: ../../chapter3.rst:1012
 msgid ""
@@ -1696,6 +1707,9 @@ msgid ""
 "But this defeats the intent of the system’s designers. Your code may no "
 "longer survive a hardware revision."
 msgstr ""
+"このマシンでビデオI/Oを効率的に実装する唯一の方法は、文字列をビデオメモリに直接移動することです。 "
+"リファレンスマニュアルにはビデオメモリの開始アドレスが記載されているので、これは簡単にできます。 しかし、これはシステムの設計者の意図に反します。"
+" あなたのコードはもはやハードウェアの更新に耐えられないかもしれません。"
 
 #: ../../chapter3.rst:1018
 msgid ""
@@ -1705,6 +1719,9 @@ msgid ""
 " A video lexicon would, at the very least, give a name for the address of"
 " video memory."
 msgstr ""
+"プログラマを細部から「保護」することによって、分離は情報隠蔽の目的を破りました。 "
+"対照的に、コンポーネントは分離されたモジュールではなく、辞書への累積的な追加です。 "
+"ビデオ語彙は、少なくとも、ビデオメモリのアドレスに名前を付けます。"
 
 #: ../../chapter3.rst:1024
 msgid ""
@@ -1717,14 +1734,18 @@ msgid ""
 " or write an extension to the driver using available tools from the video"
 " lexicon."
 msgstr ""
+"必要に応じて使う、コンポーネント間のビットON/OFF機能インターフェイスの概念は、何も悪いことではありません。ここでの問題は、このビデオコンポーネントが不完全に設計されていることです。"
+" "
+"一方、システムが完全に統合されている場合（オペレーティングシステムとForthで書かれたドライバ）、ビデオコンポーネントはすべてのニーズに合うように設計される必要はありません。"
+" アプリケーションプログラマは、ビデオ語彙から入手可能なツールを使用して、ドライバを書き直すか、ドライバを拡張することができます。"
 
 #: ../../chapter3.rst:1035
 msgid "Don\\'t bury your tools."
-msgstr ""
+msgstr "ツールを詰め込まないで下さい。"
 
 #: ../../chapter3.rst:1038
 msgid "The Tower of Babble"
-msgstr ""
+msgstr "泡の塔"
 
 #: ../../chapter3.rst:1040
 msgid ""
@@ -1733,6 +1754,8 @@ msgid ""
 "tend to speak of high-level code as something rarefied, and low-level "
 "code as something grubby and profane."
 msgstr ""
+"レベル思考による最後の詐欺は、プログラミング言語が高水準ほど質的に異なるようになるべきであるという思い込みです。 "
+"高水準のコードはめったに見られないありがたいものとして、低レベルのコードは不器用で不敬なものとして話す傾向があります。"
 
 #: ../../chapter3.rst:1045
 msgid ""
@@ -1741,6 +1764,8 @@ msgid ""
 "as the norm. We’ve grown accustomed to assemblers with terse mnemonics "
 "and unnatural syntactical rules, because they’re “low-level.”"
 msgstr ""
+"これらの区別はある程度は妥当性がありますが、これは私たち全員が標準として受け入れている特定の恣意的なアーキテクチャ上の制約の結果にすぎません。 "
+"簡潔なニーモニックと不自然な文法を持つアセンブラはあたりきりのものとみなしているのは、それが「低レベル」だからです。"
 
 #: ../../chapter3.rst:1050
 msgid ""
@@ -1750,6 +1775,8 @@ msgid ""
 "into useful functions. These functions can be used without knowledge of "
 "the structures and/or algorithms within."
 msgstr ""
+"コンポーネントの概念は、高レベルと低レベルの対立の概念に反しています。 すべてのコードの見た目は同じであるべきです。 "
+"コンポーネントとは、データ構造とアルゴリズムをまとめて便利な機能に変換する一連のコマンドです。これらの機能は、その中の構造やアルゴリズムに関する知識がなくても使用できます。"
 
 #: ../../chapter3.rst:1056
 msgid ""
@@ -1757,6 +1784,8 @@ msgid ""
 "The code written to toggle bits in an output port should, in theory, look"
 " no more intimidating than the code to format a report."
 msgstr ""
+"実際の機械語から、これらの構造までの距離は関係ありません。 "
+"出力ポートのビットをON/OFFするために書かれたコードは、理屈としては、レポートをフォーマットするためのコードよりも恐ろしげにに見えるべきではありません。"
 
 #: ../../chapter3.rst:1060
 msgid ""
@@ -1764,22 +1793,24 @@ msgid ""
 "enjoy a syntax and dictionary identical and continuous with the “high-"
 "level” dictionary we know today."
 msgstr ""
+"機械語でも充分読みやすいはずです。 "
+"真のForthベースのエンジンは、今日私たちが知っている「高レベル」辞書と同様で恒久的な、文法と辞書を享受するでしょう。"
 
 #: ../../chapter3.rst:1065
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
 #: ../../chapter3.rst:1067
 msgid ""
 "In this chapter we’ve seen two ways that applications can be decomposed: "
 "into components, and according to sequential complexity."
-msgstr ""
+msgstr "この章では、アプリケーションをコンポーネントに分解できることを説明しました。それはコンポーネントによる分解と、高度化させる順序による分解の2つの方法です。"
 
 #: ../../chapter3.rst:1070
 msgid ""
 "Special attention should be paid to those components that serve as "
 "interfaces between other components."
-msgstr ""
+msgstr "他のコンポーネント間のインターフェースとして機能するコンポーネントには特別な注意を払う必要があります。"
 
 #: ../../chapter3.rst:1073
 msgid ""
@@ -1787,20 +1818,22 @@ msgid ""
 "at your feet in a heap of manageable pieces. Each piece represents a "
 "problem to solve. Grab your favorite piece and turn to the next chapter."
 msgstr ""
+"いまや、予備設計を正しく行った場合、問題は管理しやすい部分がたくさんあることになります。 各部分は解決するべき問題を表します。 "
+"お気に入りの部分をつかみ、次の章に進んでください。"
 
 #: ../../chapter3.rst:1079
 msgid "For Further Thinking"
-msgstr ""
+msgstr "さらなる思考のために"
 
 #: ../../chapter3.rst:1081
 msgid "*(Answers appear in :doc:`Appendix D<appendixd>`.)*"
-msgstr ""
+msgstr "*(解答は :doc:`付録 D<appendixd>` )*"
 
 #: ../../chapter3.rst:1083
 msgid ""
 "Below are two approaches to defining an editor\\’s keyboard interpreter. "
 "Which would you prefer? Why?"
-msgstr ""
+msgstr "以下は、エディタのキーボードインタプリタを定義する2つの方法です。 どちらがいいですか？ それは何故ですか？"
 
 #: ../../chapter3.rst:1086
 msgid "(a)."
@@ -1818,10 +1851,12 @@ msgid ""
 "begins at HEX address C000. We want to define a series of arrays which "
 "will reside in that memory."
 msgstr ""
+"この問題は、情報隠蔽の課題です。 （何らかの理由で）Forthディクショナリの外部にデータ構造に割り当てたいメモリ領域があるとします。 "
+"メモリ領域はHEXアドレスC000から始まります。 そのメモリに常駐する一連の配列を定義したいと思います。"
 
 #: ../../chapter3.rst:1131
 msgid "We might do something like this:"
-msgstr ""
+msgstr "私たちはこのようにするかもしれません。"
 
 #: ../../chapter3.rst:1140
 msgid ""
@@ -1831,39 +1866,39 @@ msgid ""
 " Let’s try to automate this, by keeping an “allocation pointer,” called "
 "``>RAM``, showing where the next free byte is. We first set the pointer "
 "to the beginning of the RAM space:"
-msgstr ""
+msgstr "上記で定義した各配列要素名は適切な配列要素の開始アドレスを返します。 しかし、すでに割り当てられているバイト数に基づいて、各配列要素の正しい開始アドレスを計算する必要があることに注意してください。 ``>RAM`` という「アロケーションポインタ」を保持して、次の空きバイトがどこにあるかを示すことで、これを自動化してみましょう。 まずポインタをRAM空間の先頭に設定します。"
 
 #: ../../chapter3.rst:1152
-msgid "Now we can define each array like this: x"
-msgstr ""
+msgid "Now we can define each array like this:"
+msgstr "これで各配列要素を次のように定義できます。"
 
 #: ../../chapter3.rst:1160
 msgid ""
 "Notice that after defining each array, we increment the pointer by the "
 "size of the new array to show that we’ve allocated that much additional "
 "RAM."
-msgstr ""
+msgstr "配列要素を定義したら、次の新しい配列要素のサイズ分だけポインタを増やして、その分多くのRAMを割り当てたことを確認します。"
 
 #: ../../chapter3.rst:1164
 msgid "To make the above more readable, we might add these two definitions:"
-msgstr ""
+msgstr "上記をより読みやすくするために、これら2つの定義を追加します。"
 
 #: ../../chapter3.rst:1172
 msgid "We can now rewrite the above equivalently as:"
-msgstr ""
+msgstr "これを上記と等価に書き換えることができます。"
 
 #: ../../chapter3.rst:1180
 msgid ""
 "(An advanced Forth programmer would probably combine these operations "
 "into a single defining word, but that whole topic is not germane to what "
 "I’m leading up to.)"
-msgstr ""
+msgstr "（上級のForthプログラマーは、おそらくこれらの操作を1つの定義用語にまとめますが、そのまとめたモノ自体は私が話を向けているものと密接な関係があるわけではありません。）"
 
 #: ../../chapter3.rst:1184
 msgid ""
 "Finally, suppose we have 20 such array definitions scattered throughout "
 "our application."
-msgstr ""
+msgstr "最後に、このような配列定義が20個もアプリケーション全体に散在しているとします。"
 
 #: ../../chapter3.rst:1187
 msgid ""
@@ -1872,11 +1907,11 @@ msgid ""
 "address EFFF. In other words, we must start at the end, allocating arrays"
 " backwards. We still want each array name to return its *starting* "
 "address, however."
-msgstr ""
+msgstr "さて、今、どういうわけか私たちのシステムのアーキテクチャが変化し、私たちはそれがHEXアドレスEFFFで「終わる」ようにこのメモリを割り当てなければいけないことになりました。言い換えれば、最後から始めめて、配列を逆方向に割り当てなければなりません。ただし、各配列要素名は「開始」アドレスを返さなければなりません。"
 
 #: ../../chapter3.rst:1193
 msgid "To do this, we must now write:"
-msgstr ""
+msgstr "これを行うには、次のように書きます。"
 
 #: ../../chapter3.rst:1205
 msgid ""
@@ -1885,25 +1920,25 @@ msgid ""
 " is that each time we define an array we must ``RAM-ALLOT`` *before* "
 "defining it, not after. Twenty places in our code need finding and "
 "correcting."
-msgstr ""
+msgstr "今回は ``RAM-ALLOT`` はポインタを「デクリメント」します。 大丈夫、 ``RAM-ALLOT``　の定義に ``NEGATE`` を追加するのは簡単です。 私たちが現在懸念していることは、配列を定義するたびに、それを定義する前に「RAM-ALLOT」する必要があるということです。 コードの中から20箇所を見つけて修正する必要があります。"
 
 #: ../../chapter3.rst:1210
 msgid ""
 "The words ``THERE`` and ``RAM-ALLOT`` are nice and friendly, but they "
 "didn’t succeed at hiding *how* the region is allocated. If they had, it "
 "wouldn’t matter which order we invoked them in."
-msgstr ""
+msgstr " ``THERE`` と ``RAM-ALLOT`` というワードは素晴らしくて親しみやすいものですが、領域の割当方法を隠すことには成功していません。 領域の割当方法を隠せていたなら、それを私たちがどの順序で呼び出したかは問題になりません。"
 
 #: ../../chapter3.rst:1214
 msgid ""
 "At long last, our question: What could we have done to ``THERE`` and "
 "``RAM-ALLOT`` to minimize the impact of this design change? (Again, the "
 "answer I’m looking for has nothing to do with defining words.)"
-msgstr ""
+msgstr "ついに私たちの質問にたどり着きました。この設計変更の影響を最小限にするために、 ``THERE`` と ``RAM-ALLOT`` に何をしたらいいでしょうか（繰り返しますが、私が探している答えはワードを定義することとは関係ありません）。"
 
 #: ../../chapter3.rst:1219
 msgid "Footnotes"
-msgstr ""
+msgstr "脚注"
 
 #: ../../chapter3.rst:1220
 msgid ""
@@ -1917,5 +1952,5 @@ msgid ""
 "You can look inside an object and its source code whenever you want. And "
 "table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd"
 " Paysan**"
-msgstr ""
+msgstr "編集者 Bernd Paysn より： :doc:`preface94` の1994年度版の序文の概説と、 :doc:`preface2004` の2004年度版の序文の説明を参照してください。Windows COMの「オブジェクト」やCORBAのようなものを考えてください。実際のオブジェクト指向プログラミングは、Smalltalkに由来するので、プログラマから情報を隠すことはありません。「卵マスターオブジェクト」に「スクランブルエッグ作成」メソッドを追加しても問題ありません。Smalltalkは既知のクラスにメソッドを追加することで機能します。それらをサブクラス化する必要はありません。あなたはいつでもオブジェクトとそのソースコードの内側を見ることができます。また、テーブル駆動によるメソッドのディスパッチは非常に効率的です。"
 

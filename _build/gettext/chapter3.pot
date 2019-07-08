@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-08 05:18+0900\n"
+"POT-Creation-Date: 2019-07-09 01:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -607,7 +607,7 @@ msgid "Traditional view of the interface as a junction."
 msgstr ""
 
 #: ../../chapter3.rst:626
-msgid "There\\’s more to good interface design than that. Allow me to introduce a design element which I call the “interface component.” The purpose an interface component is to implement, and *hide information about*, the data interface between two or more other components ( :numref:`fig3-9` )."
+msgid "There\\'s more to good interface design than that. Allow me to introduce a design element which I call the “interface component.” The purpose an interface component is to implement, and *hide information about* , the data interface between two or more other components ( :numref:`fig3-9` )."
 msgstr ""
 
 #: ../../chapter3.rst:636
@@ -675,7 +675,7 @@ msgid "Alas, I was also using ``WALL`` inside the output component to determine 
 msgstr ""
 
 #: ../../chapter3.rst:721
-msgid "I was right—99\\% of the time. But one day I discovered that, under a certain condition, a line of condensed text was being somehow cut short. The final couple of words were just missing. The reason turned out to be that ``WALL`` was getting changed before the output component had a chance to use it."
+msgid "I was right--99\\% of the time. But one day I discovered that, under a certain condition, a line of condensed text was being somehow cut short. The final couple of words were just missing. The reason turned out to be that ``WALL`` was getting changed before the output component had a chance to use it."
 msgstr ""
 
 #: ../../chapter3.rst:727
@@ -1019,7 +1019,7 @@ msgid "Each array-name defined above will return the starting address of the app
 msgstr ""
 
 #: ../../chapter3.rst:1152
-msgid "Now we can define each array like this: x"
+msgid "Now we can define each array like this:"
 msgstr ""
 
 #: ../../chapter3.rst:1160
