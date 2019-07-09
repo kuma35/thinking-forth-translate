@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-29 21:52+0900\n"
-"PO-Revision-Date: 2019-07-06 08:19+0900\n"
+"PO-Revision-Date: 2019-07-10 01:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1445,14 +1445,14 @@ msgstr ""
 "この方式の保守以外の利点は、チームのプログラマ同士で相互依存性を少なくして、コンポーネントを個別に割り当てることができることです。 "
 "コンポーネントプログラミングの原則は、チーム設計とソフトウェア設計に適用されます。"
 
-# Google翻訳は lexicon を 用語集 とした。そのまま採用する。→語彙とする(2019/07/02)
+# Google翻訳は lexicon を 用語集 とした。そのまま採用する。→語彙とする(2019/07/02) →やっぱり 用語集とする(2019/07/10)
 #: ../../chapter1.rst:920
 msgid ""
 "We’ll call the set of words which describe a component a “lexicon.” (One "
 "meaning of lexicon is “a set of words pertaining to a particular field of"
 " interest.”) The lexicon is your interface with the component from the "
 "outside ( :numref:`fig1-8` )."
-msgstr "コンポーネントを説明する単語の集まりを「語彙(lexicon)」と呼びます（語彙の1つの意味は、「特定の分野に関連する単語の集まり」です）。語彙は、コンポーネントと外部とのインターフェイスです( :numref:`fig1-8` )。"
+msgstr "コンポーネントを説明する単語の集まりを「用語集(lexicon)」と呼びます（用語集の意味は、「特定の分野に関連する単語の集まり」です）。用語集は、コンポーネントと外部とのインターフェイスです( :numref:`fig1-8` )。"
 
 #: ../../chapter1.rst:925
 msgid ""
@@ -1460,11 +1460,11 @@ msgid ""
 "component that are used by name outside of a component. A component may "
 "also contain definitions written solely to support the externally visible"
 " lexicon. We’ll call the supporting definitions “internal” words."
-msgstr "この本では、「語彙」という用語は、コンポーネントの外側で名前によって使用されているコンポーネントのワードのみを指します。 コンポーネントは、外部から見える語彙をサポートするためだけに書かれた定義も含むことができます。 このサポートするためだけの定義を「内部」ワードと呼びます。"
+msgstr "この本では、「用語集」という用語は、コンポーネントの外側で名前によって使用されているコンポーネントのワードのみを指します。 コンポーネントは、外部から見える用語集をサポートするためだけに書かれた定義も含むことができます。 このサポートするためだけの定義を「内部」ワードと呼びます。"
 
 #: ../../chapter1.rst:934
 msgid "A lexicon describes a component."
-msgstr "語彙(lexicon)はコンポーネントを説明する"
+msgstr "用語集はコンポーネントを説明する"
 
 #: ../../chapter1.rst:938
 msgid ""
@@ -1473,7 +1473,7 @@ msgid ""
 "structures and algorithms—the “how it works.” It presents to the world "
 "only a “conceptual model” of the component described in simple words—the "
 "“what it does.”"
-msgstr "語彙は、データオブジェクトおよびアルゴリズムと論理的に等価なものを名前で提供します。 語彙は、コンポーネントのデータ構造とアルゴリズム、つまり「どのように動くか」を明らかにしています。それはシンプルなワードで表現されたコンポーネントの「概念モデル」、つまり「動作するもの」のみをコンポーネントの外界に提示します。"
+msgstr "用語集は、データオブジェクトおよびアルゴリズムと論理的に等価なものを名前で提供します。 用語集は、コンポーネントのデータ構造とアルゴリズム、つまり「どのように動くか」を明らかにしています。それはシンプルなワードで表現されたコンポーネントの「概念モデル」、つまり「動作するもの」のみをコンポーネントの外界に提示します。"
 
 #: ../../chapter1.rst:944
 msgid ""
@@ -1502,7 +1502,7 @@ msgid ""
 "You could even say that each lexicon is a special-purpose compiler, "
 "written solely for the purpose of supporting higher-level application "
 "code in the most efficient and reliable way."
-msgstr "各語彙は、高レベルのアプリケーションコードを最も効率的で信頼性の高い方法でサポートすることのみを目的として書かれた、特殊目的のコンパイラであると言えるかもしれません。"
+msgstr "各用語集は、高レベルのアプリケーションコードを最も効率的で信頼性の高い方法でサポートすることのみを目的として書かれた、特殊目的のコンパイラであると言えるかもしれません。"
 
 #: ../../chapter1.rst:964
 msgid ""
@@ -1526,7 +1526,7 @@ msgid ""
 "commands beneath it. The robot-movement command relies on the root "
 "language, with its variables, constants, stack operators, math operators,"
 " and so on, as heavily as any other component."
-msgstr "語彙は、あらゆるレベルのコンポーネントで使用できることを理解することが重要です。 設計への階層的なアプローチではよくあることですが、連続する各コンポーネントは、そこにサポートコンポーネントを埋め込むことはしません。 代わりに、各語彙はその中にあるすべてのコマンドを自由に使用できます。 robot-movementコマンドは、他のコンポーネントと同様に、その言語、変数、定数、スタック演算子、数学演算子などとともに、大元の言語に依存しています。"
+msgstr "用語集は、あらゆるレベルのコンポーネントで使用できることを理解することが重要です。 設計への階層的なアプローチではよくあることですが、連続する各コンポーネントは、そこにサポートコンポーネントを埋め込むことはしません。 代わりに、各用語集はその中にあるすべてのコマンドを自由に使用できます。 robot-movementコマンドは、他のコンポーネントと同様に、その言語、変数、定数、スタック演算子、数学演算子などとともに、大元の言語に依存しています。"
 
 #: ../../chapter1.rst:979
 msgid ""
@@ -1534,7 +1534,7 @@ msgid ""
 "employs a single syntax, which makes it easy to learn and maintain. This "
 "is why I use the term “lexicon” and not “language.” Languages have unique"
 " syntaxes."
-msgstr "このアプローチの重要な結果は、アプリケーション全体が単一の構文を使用することです。これにより、習得および保守が容易になります。 「言語」ではなく「語彙」という用語を使用するのはこのためです。言語には独自の文法があります。"
+msgstr "このアプローチの重要な結果は、アプリケーション全体が単一の構文を使用することです。これにより、習得および保守が容易になります。 「言語」ではなく「用語集」という用語を使用するのはこのためです。言語には独自の文法があります。"
 
 #: ../../chapter1.rst:985
 msgid ""
@@ -1584,7 +1584,7 @@ msgid ""
 msgstr ""
 "実際、素のForthで直接、深刻なアプリケーションを書くべきではありません。\n"
 "素のForthは言語としては十分強力とは言えません。あなたがすべきことは、\n"
-"あなたの問題への理解をForth(の語彙)として、あなた専用の言語を書くことです。\n"
+"あなたの問題への理解をForth(の用語集)として、あなた専用の言語を書くことです。\n"
 "そうすれば問題の解決策をあなた専用の言語で優雅に記述することができます。"
 
 #: ../../chapter1.rst:1024
@@ -1925,11 +1925,11 @@ msgid ""
 msgstr ""
 "実験室の研究者は、研究環境におけるForthの最も重要な利点の1つとして、\n"
 "柔軟性と拡張性を挙げています。 コンピュータに接続されている\n"
-"さまざまなテスト機器に関する情報を隠すために、語彙を開発することができます。\n"
+"さまざまなテスト機器に関する情報を隠すために、用語集を開発することができます。\n"
 "この作業がより経験豊富なプログラマによって行われると、\n"
 "研究者は実験用の簡単なプログラムを書くために少数のワードによる\n"
 "「ソフトウェアツールボックス」を自由に使用することができます。\n"
-"新しい機器が登場すると、新しい語彙が追加されます。"
+"新しい機器が登場すると、新しい用語集が追加されます。"
 
 #: ../../chapter1.rst:1275
 msgid ""
@@ -2017,7 +2017,7 @@ msgid ""
 msgstr ""
 "ベテランのForthプログラマはこれに同意しません。\n"
 "Forthでは抽象的な設計レベルのコードを書くことができ、\n"
-"語彙への分解を徹底することで、それをいつでもテストする事が可能です。\n"
+"用語集への分解を徹底することで、それをいつでもテストする事が可能です。\n"
 "開発が進むにつれて、\n"
 "抽象的な設計レベルのコードを使用するコンポーネントの下にあるコンポーネントは\n"
 "簡単に書き換えることができます。\n"

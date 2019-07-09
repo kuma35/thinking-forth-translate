@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-08 05:18+0900\n"
+"POT-Creation-Date: 2019-07-09 09:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgid "Even neophytes can solve programming problems without devoting any consci
 msgstr ""
 
 #: ../../chapter4.rst:36
-msgid "\\G. Polya has written several books on problem solving, especially of the mathematical problem. The most accessible of these is *How to Solve It* [polya]_ . Although solving a mathematical problem isn’t quite the same as solving a software problem, you’ll find some valuable suggestions there."
+msgid "G\\. Polya has written several books on problem solving, especially of the mathematical problem. The most accessible of these is *How to Solve It* [polya]_ . Although solving a mathematical problem isn’t quite the same as solving a software problem, you’ll find some valuable suggestions there."
 msgstr ""
 
 #: ../../chapter4.rst:42
@@ -77,7 +77,7 @@ msgid "Determine the data interfaces: Know what data will be required to accompl
 msgstr ""
 
 #: ../../chapter4.rst:59
-msgid "Determine the rules; review all the facts that you know. In :doc:`Chapter Two<chapter2>` Two we described the rates for computing the cost of a phone call along with the rules for applying the rates."
+msgid "Determine the rules; review all the facts that you know. In :doc:`Chapter Two<chapter2>` we described the rates for computing the cost of a phone call along with the rules for applying the rates."
 msgstr ""
 
 #: ../../chapter4.rst:67

@@ -4,15 +4,16 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-07 04:46+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-09 09:02+0900\n"
+"PO-Revision-Date: 2019-07-10 01:57+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,29 +21,29 @@ msgstr ""
 
 #: ../../chapter4.rst:4
 msgid "4. Detailed Design/Problem Solving"
-msgstr ""
+msgstr "第４章 詳細設計と問題解決"
 
 #: ../../chapter4.rst
 msgid ""
 "**Trivial:** I can see how to do this. I just don't know how long it will"
 " take."
-msgstr ""
+msgstr "**些細なこと** これをどうすればいいかはわかる。どのくらいの期間かかるか全くわからない。"
 
 #: ../../chapter4.rst
 msgid "**Non-trivial:** I haven't a **clue** how to do this!"
-msgstr ""
+msgstr "**重大なこと** どうすりゃいいのか手がかりが無い。"
 
 #: ../../chapter4.rst
 msgid "\\-\\-\\- *Operating philosophy developed at the Laboratory*"
-msgstr ""
+msgstr "― 研究所で開発された運営哲学"
 
 #: ../../chapter4.rst
 msgid "*Automation and Instrumentation Design Group,*"
-msgstr ""
+msgstr "自動化・計測設計グループ"
 
 #: ../../chapter4.rst
 msgid "*Chemistry Dept., Virginia Polytechnic Institute and State University*"
-msgstr ""
+msgstr "ヴァージニア工科大学化学部"
 
 #: ../../chapter4.rst:12
 msgid ""
@@ -53,6 +54,9 @@ msgid ""
 " There’s a special satisfaction in going to the mat with a non-trivial "
 "problem and coming out the victor."
 msgstr ""
+"アプリケーションのコンポーネントを決定したら、次のステップはそれらのコンポーネントを設計することです。 "
+"この章では、問題解決の手法をForthアプリケーションの詳細設計に適用します。 "
+"これは純粋な発明のためのひとときです。私たちの多くが最も楽しいと思う部分です。 大きな問題でマットに向かい勝利した人には、特別な満足感があります。"
 
 #: ../../chapter4.rst:19
 msgid ""
@@ -63,10 +67,13 @@ msgid ""
 "in this chapter by not only presenting a problem but also designing a "
 "solution to it, right on through to the coded implementation."
 msgstr ""
+"文章では、アイデアを表現するために使用される単語からアイデアを分離することは困難です。 "
+"Forthアプリケーションを書く際には、詳細な設計段階を実装から切り離すことは困難です。なぜなら、私たちはForthで設計する傾向があるからです。"
+" このため、この章では、問題を提示するだけでなく、それに対する解決策を設計することによって、コード化された実装に至るまで、少しずつ歩んでいきます。"
 
 #: ../../chapter4.rst:27
 msgid "Problem-Solving Techniques"
-msgstr ""
+msgstr "問題解決技法"
 
 #: ../../chapter4.rst:29
 msgid ""
@@ -76,31 +83,47 @@ msgid ""
 "thinking about the *ways* in which we solve problems, apart from the "
 "problems themselves, we enrich our subconscious storehouse of techniques."
 msgstr ""
+"初心者でも、問題解決技法に意識的な思考を注ぐことなくプログラミングの問題を解決できます。 "
+"では、問題解決技法を学習するメリットは何でしょうか？それは問題解決の速度を上げられます。 "
+"問題自体とは別に、問題を解決するための「方法」を考えることによって、私たちは自分の技法の引き出しを増やします。"
 
+# いかにして問題をとくか
+# 原書名     How to Solve It: A New Aspect of Mathematical Method
+# 著者名     柿内　賢信 訳
+# 発行元     丸善出版
+# 発行年月日   1975年04月
+# 判型      B6　182×128
+# ページ数    266ページ
+# ISBN    978-4-621-04593-0
 #: ../../chapter4.rst:36
 msgid ""
-"\\G. Polya has written several books on problem solving, especially of "
+"G\\. Polya has written several books on problem solving, especially of "
 "the mathematical problem. The most accessible of these is *How to Solve "
 "It* [polya]_ . Although solving a mathematical problem isn’t quite the "
 "same as solving a software problem, you’ll find some valuable suggestions"
 " there."
 msgstr ""
+"ジョージ・ポリアは、問題解決、特に数学的問題に関する本をいくつか書いています。 これらのうち最も入手しやすいのは「How to Solve It」"
+" [polya]_ です(邦題：いかにして問題をとくか 丸善出版 1975年4月)。 "
+"数学的な問題を解くことは、ソフトウェアの問題を解くこととまったく同じではありませんが、そこにはいくつかの有益な提案があります。"
 
 #: ../../chapter4.rst:42
 msgid ""
 "The following series of tips summarize several techniques recommended by "
 "the science of problem solving:"
-msgstr ""
+msgstr "次の一連のヒントは、問題解決の科学で推奨されているいくつかの手法をまとめたものです。"
 
 #: ../../chapter4.rst:47
 msgid "Determine your goal."
-msgstr ""
+msgstr "目標を決める。"
 
 #: ../../chapter4.rst:49
 msgid ""
 "Know what you’re trying to accomplish. As we saw in :doc:`Chapter "
 "Two<chapter2>`, this step can be detailed further:"
 msgstr ""
+"あなたが達成しようとしていることを知ろうとする。あなたが :doc:`第２章<chapter2>` "
+"で見たように、このステップはさらに詳細になります。"
 
 #: ../../chapter4.rst:53
 msgid ""
@@ -109,24 +132,27 @@ msgid ""
 " what data the function is expected to produce (output). For a single "
 "definition, this means writing the stack-effect comment."
 msgstr ""
+"データインターフェースを決定します。目標を達成するためにどのデータが必要かを知り、それらのデータが利用可能であることを確認します（入力）。 "
+"その機能がどのデータを生成（出力）することを期待されているかを知る。 単一の定義では、これはスタック効果のコメントを書くことを意味します。"
 
 #: ../../chapter4.rst:59
 msgid ""
 "Determine the rules; review all the facts that you know. In :doc:`Chapter"
-" Two<chapter2>` Two we described the rates for computing the cost of a "
-"phone call along with the rules for applying the rates."
-msgstr ""
+" Two<chapter2>` we described the rates for computing the cost of a phone "
+"call along with the rules for applying the rates."
+msgstr "ルールを決めます。 あなたが知っているすべての事実を確認してください。 :doc:`第２章<chapter2>` では、電話料金計算と料金を適用するための規則を説明しました。"
 
+# picture 風景、景色
 #: ../../chapter4.rst:67
 msgid "Picture the problem as a whole."
-msgstr ""
+msgstr "全体として問題を描きます。"
 
 #: ../../chapter4.rst:69
 msgid ""
 "In the *analysis* phase we separated the problem into its parts, to "
 "clarify our understanding of each piece. We are now entering the "
 "*synthesis* phase. We must visualize the problem as a whole."
-msgstr ""
+msgstr "「分析」フェーズでは、各部分の理解を明確にするために、問題を部分に分けました。 私たちは今や「合成」フェーズに入っています。 問題全体を視覚化する必要があります。"
 
 #: ../../chapter4.rst:73
 msgid ""
@@ -136,15 +162,15 @@ msgid ""
 "information at a glance. Fill your mind to bursting with the requirements"
 " of the problem you need to solve, the way you might fill your lungs with"
 " air."
-msgstr ""
+msgstr "できるだけ多くの問題についての情報を頭に入れておくようにしてください。 一目で最大限の情報を確認するのに役立つように、単語、フレーズ、図、表、またはデータやルールの任意の種類のグラフィック表現を使用してください。 あなたが息を大きく吸い込んで止めた時のように、解決する必要がある問題の要件を頭の中に詰め込んで、そして一気にはき出すようにアイデアの奔流を生み出して下さい。"
 
 #: ../../chapter4.rst:80
 msgid "Now hold that mental image, the way you might hold your breath."
-msgstr ""
+msgstr "この、思考的に「大きく吸って息を止める」方法を会得してください。"
 
 #: ../../chapter4.rst:82
 msgid "One of two things will happen:"
-msgstr ""
+msgstr "そうすると、次の２つのうちのいずれかが起こります。"
 
 #: ../../chapter4.rst:84
 msgid ""
@@ -155,26 +181,26 @@ msgid ""
 " so, it’s important that you have already concentrated on the problem’s "
 "requirements all at once, engraving these requirements on your mental "
 "retina."
-msgstr ""
+msgstr "あなたは洞察力のひらめきで解決策を見るかもしれません。 すばらしい！ 安心のため息を吐き出し、すぐに実施に進む。 または…、問題は解決するには複雑すぎる、またはなじみのないものです。 この場合は、類推と部分的な解決策に注意を向ける必要があります。 あなたがそうするとき、あなたがすでに問題の必要条件に一度に集中していて、あなたの精神的な網膜の上にこれらの必要条件を刻むことは重要です。"
 
 #: ../../chapter4.rst:94
 msgid "Develop a plan."
-msgstr ""
+msgstr "計画を開発する"
 
 #: ../../chapter4.rst:96
 msgid ""
 "If the solution didn’t come at a glance, the next step is to determine "
 "the approach that you will take to solve it. Set a course for action and "
 "avoid the trap of fumbling about aimlessly."
-msgstr ""
+msgstr "解決策が一目でわからない場合は、次のステップはあなたがそれを解決するために取るアプローチを決定することです。 行動のためのコースを設定し、無意識のうちにぶつかることの罠を避けてください。"
 
 #: ../../chapter4.rst:100
 msgid "The following tips suggest several approaches you might consider."
-msgstr ""
+msgstr "以下のヒントは、検討に値するいいくつかのアプローチを提案します。"
 
 #: ../../chapter4.rst:104
 msgid "Think of an analogous problem."
-msgstr ""
+msgstr "同様の問題を考えてください。"
 
 #: ../../chapter4.rst:106
 msgid ""
@@ -182,11 +208,12 @@ msgid ""
 "before? Figure out what parts of the problem are familiar, and in what "
 "ways this problem might differ. Try to remember how you solved it before,"
 " or how you solved something like it."
-msgstr ""
+msgstr "この問題はおなじみでしょうか。 あなたは前にそのような定義を書きましたか？ 問題のどの部分がよく知られているのか、またこの問題がどのように異なるのかを理解します。 以前にそれをどのように解決しようと試みたか、またはどのようにしてそれを解決したかを覚えておくようにしてください。"
 
+# 前方へ働く
 #: ../../chapter4.rst:113
 msgid "Work forward."
-msgstr ""
+msgstr "前進する"
 
 #: ../../chapter4.rst:115
 msgid ""
@@ -194,11 +221,12 @@ msgid ""
 "known, and proceeding to the unknown. In deciding which horse to bet on, "
 "you’d begin with their recent histories, their current health, and so on,"
 " apply weights to these various factors and arrive at a favorite."
-msgstr ""
+msgstr "問題を攻撃するための通常の明白な方法は、既知のものから始めて未知のものに進むことです。 どの馬に賭けるかを決める際には、最近の歴史や現在の健康状態などから始めて、これらのさまざまな要因に重みを付けてお気に入りに到達します。"
 
+# 後方へ働く
 #: ../../chapter4.rst:122
 msgid "Work backward."
-msgstr ""
+msgstr "逆行する"
 
 #: ../../chapter4.rst:124
 msgid ""
@@ -206,15 +234,15 @@ msgid ""
 "incoming data. How do you know which route will take you closer to the "
 "solution? You don’t. This class of problem is best solved by working "
 "backward ( :numref:`fig4-1` )."
-msgstr ""
+msgstr "より複雑な問題は、入ってくるデータを処理するための多くの可能な方法を提示します。 どのルートで解決策に近づくことができますか。 あなたは前進しません。 この種の問題は戻ることで最もよく解決されます( :numref:`fig4-1` )。"
 
 #: ../../chapter4.rst:133
 msgid "A problem that is easier to solve backward than forward."
-msgstr ""
+msgstr "前方より後方へ解決するのがより簡単な問題。"
 
 #: ../../chapter4.rst:139
 msgid "Believe."
-msgstr ""
+msgstr "信じる。"
 
 #: ../../chapter4.rst:141
 msgid ""
@@ -224,15 +252,15 @@ msgid ""
 "gallons and the other holds four gallons. Our task is to measure out "
 "exactly six gallons of water from the nearby stream in one of the "
 "containers ( :numref:`fig4-2` )."
-msgstr ""
+msgstr "信念は後方にうまく働くために必要な要素です。 私たちは有名な数学的問題で説明します。 2つのバケツがあるとします。 バケツには目盛りはありませんが、一方は9リットル入りで、、もう一方には4リットル入りです。 私たちの仕事は、小川から正確に6リットルの水を汲み上げることです( :numref:`fig4-2` ）。"
 
 #: ../../chapter4.rst:152
 msgid "Two containers."
-msgstr ""
+msgstr "2つのバケツ"
 
 #: ../../chapter4.rst:156
 msgid "Try to solve this on your own before reading further."
-msgstr ""
+msgstr "さらに読む前に、これを自分で解決してみてください。"
 
 #: ../../chapter4.rst:158
 msgid ""
@@ -242,13 +270,13 @@ msgid ""
 "container, we’ll get eight gallons. If we fill the nine-gallon container "
 "to the brim, then empty enough water to fill the four-gallon container, "
 "we’ll have exactly five gallons in the large container."
-msgstr ""
+msgstr "どのようにして、「9」と「4」から「6」を得ることができますか？ 私たちは、バケツから別のバケツへと水を移すことを想像することによって、前進し始めることができます。 たとえば、小さなバケツ(4リットル)で大きなバケツ(9リットル)に２回注ぐと、8リットルが得られます。 大きなバケツ(9リットル)をいっぱいにしてから、小さなバケツ(4リトル)を満たすと、大きなバケツ(9リットル)には正確に5リットルが余ります。"
 
 #: ../../chapter4.rst:166
 msgid ""
 "These ideas are interesting, but they haven’t gotten us six gallons. And "
 "it’s not clear how they will get us six gallons."
-msgstr ""
+msgstr "これらのアイディアは興味深いですが、私たちはまだ6リットルを手に入れてません。そしてどのように6リットルにするのか明らかではありません。"
 
 #: ../../chapter4.rst:169
 msgid ""
@@ -256,24 +284,24 @@ msgid ""
 "water, and it’s sitting in the large container (it won’t fit in the small"
 " one!). Now, how did we get it there? What was the state of our "
 "containers one step previously?"
-msgstr ""
+msgstr "逆行してみましょう。 私たちは6リットルの水を測定したと仮定します、そしてそれは大きなバケツ(9)の中に入っています（それは小さなバケツ(9)には収まりません！） さて、どうやってそこに至りましたか？ 一歩前の私たちのバケツの状態はどうでしたか？"
 
 #: ../../chapter4.rst:174
 msgid "There are only two possibilities ( :numref:`fig4-3` ):"
-msgstr ""
+msgstr "２つの可能性があります( :numref:`fig4-3` )。"
 
 #: ../../chapter4.rst:176
 msgid ""
 "The four-gallon container was full, and we just added it to the large "
 "container. This implies that we already had two gallons in the large "
 "container. Or…"
-msgstr ""
+msgstr "小さなバケツ(4)満杯の水を大きなバケツ(9)に入れたとすると、その前に大きなバケツ(9)にはすでに2リットル入っていた事になります。あるいは、"
 
 #: ../../chapter4.rst:180
 msgid ""
 "The nine-gallon container was full, and we just poured off three gallons "
 "into the small container."
-msgstr ""
+msgstr "大きなバケツ(9)を満杯にして、そこから、1リットルだけすでに入っていた小さなバケツ(4)に注ごうとしているところです。"
 
 #: ../../chapter4.rst:183
 msgid ""
@@ -281,7 +309,7 @@ msgid ""
 "measurement, the second requires a three-gallon measurement. In our "
 "initial playing around, we never saw a unit like two. But we did see a "
 "difference of one, and one from four is three. Let’s go with version b."
-msgstr ""
+msgstr "どちらの選択？ 推測しましょう。 最初の選択は2リットルの測定を必要とし、2番目は3リットルの測定を必要とします。 最初の試行では、この2つの結果はありませんでした。 しかし、1リットル差のパターンがありました。4引く1は3です。 ということで、VERSION Bから始めるとしましょう。"
 
 #: ../../chapter4.rst:188
 msgid ""
@@ -289,7 +317,7 @@ msgid ""
 "that we have arrived at the situation described. We have just poured off "
 "three gallons into the small container. Suspending all disbelief, we "
 "concentrate on how we did it."
-msgstr ""
+msgstr "ここで本物の策を弄します。私たちは、説明した状況にたどり着いたことを疑う余地なく、自分自身を信じさせなければなりません。 私達はちょうど3リットルを小さなバケツ(4)に注いだところです。すべての不信を中断して、私たちはそれをどうやったかに集中します。"
 
 #: ../../chapter4.rst:193
 msgid ""
@@ -299,31 +327,31 @@ msgid ""
 "container? We must have started with a full nine-gallon container, poured"
 " off four gallons twice, leaving one gallon. Then we transferred the one "
 "gallon to the small container."
-msgstr ""
+msgstr "小さなバケツ4)に3リットルを注ぐにはどうすればよいでしょうか。 小さいバケツにすでに1リットルがあったならば！ 突然私たちはハードルを乗り越えました。 簡単な質問は、小さなバケツに1リットルをどうやって入れるかということです。大きなバケツ(9)満杯から、小さなバケツ(4)に2回注ぐと、大きなバケツ(9)には1リットルが残りました。それからその1リットルを小さなバケツ(4)に移しました。"
 
 #: ../../chapter4.rst:204
 msgid "Achieving the end result."
-msgstr ""
+msgstr "最終結果を達成する。"
 
 #: ../../chapter4.rst:210
 msgid "Intent on a complicated problem."
-msgstr ""
+msgstr "複雑な問題の目的"
 
 #: ../../chapter4.rst:212
 msgid ""
 "Our final step should be to check our logic by running the problem "
 "forwards again."
-msgstr ""
+msgstr "私たちの最後のステップは、問題を再び前進させて論理をチェックすることです。"
 
 #: ../../chapter4.rst:215
 msgid ""
 "Here’s another benefit of working backward: If the problem is unsolvable,"
 " working backward helps you quickly prove that it has no solution."
-msgstr ""
+msgstr "逆方向に作業することのもう1つの利点は、問題が解決できない場合は、逆方向に作業すると解決策がないことをすぐに証明できます。"
 
 #: ../../chapter4.rst:222
 msgid "Recognize the auxiliary problem."
-msgstr ""
+msgstr "補助的な問題を認識してください。"
 
 #: ../../chapter4.rst:224
 msgid ""
@@ -332,14 +360,14 @@ msgid ""
 "with the problem, we begin to recognize that our problem includes one or "
 "more subproblems that somehow seem different from the main outline of the"
 " proposed procedure."
-msgstr ""
+msgstr "問題を解決する前は、どのステップが必要なのか、あるいはいくつのステップが必要なのかという漠然とした概念しかありません。 私たちが問題に慣れてくるにつれて、私たちの問題には、提案している手順の本流とは幾分異なるよう思える複数の副問題が含まれることを認識し始めます。"
 
 #: ../../chapter4.rst:230
 msgid ""
 "In the problem we just solved, we recognized two subproblems: filling the"
 " small container with one gallon and then filling the large container "
 "with six gallons."
-msgstr ""
+msgstr "私たちが今さっき解決した問題では、小さなバケツに1リットル入れ、次に大きなバケツに6リットル入れるという2つの副問題がありました。"
 
 #: ../../chapter4.rst:234
 msgid ""
@@ -348,21 +376,21 @@ msgid ""
 "subproblem, we can assume it has a straightforward solution. Without "
 "stopping to determine what that solution might be, we forge ahead with "
 "our main problem."
-msgstr ""
+msgstr "「補助問題」と呼ばれることもあるこれらの小さな問題を認識することは、重要な問題解決手法です。 部分問題を特定することで、それが簡単な解決策であると仮定することができます。 その解決策が何であるかを判断するのをやめずに、私たちは主な問題とともに先に進みます。"
 
 #: ../../chapter4.rst:240
 msgid "(Forth is ideally suited to this technique, as we’ll see.)"
-msgstr ""
+msgstr "（Forthはこの技法に最適です。これについては後で説明します。）"
 
 #: ../../chapter4.rst:244
 msgid "Step back from the problem."
-msgstr ""
+msgstr "問題から一歩遠ざかってみる"
 
 #: ../../chapter4.rst:246
 msgid ""
 "It’s easy to get so emotionally attached to one particular solution that "
 "we forget to keep an open mind."
-msgstr ""
+msgstr "ある特定の解決策に簡単に感情的になってしまうので、私たちは偏見を持たずにいることを忘れてしまいます。"
 
 #: ../../chapter4.rst:249
 msgid ""
@@ -372,56 +400,56 @@ msgid ""
 "touch or pass through all nine dots, without lifting the pen off the "
 "paper. The constraint is that you must touch all nine dots with only four"
 " lines."
-msgstr ""
+msgstr "問題解決の文献はしばしば9つの点の例を採用しています。 それは私を困惑させたので、ここに示します。 :numref:`fig4-4` のように9つの点が配置されています。 目的は、ペンを紙から持ち上げることなく、9つすべての点に接触または通過する直線を描画することです。 制約は、9つすべての点に4本の線だけで触れる必要があることです。"
 
 #: ../../chapter4.rst:261
 msgid "The nine dots problem."
-msgstr ""
+msgstr "9つの点問題"
 
 #: ../../chapter4.rst:265
 msgid ""
 "You can sit a good while and do no better than the almost-right "
 ":numref:`fig4-5` . If you concentrate really hard, you may eventually "
 "conclude that the problem is a trick—there’s no solution."
-msgstr ""
+msgstr "しばらくの間がんばっても、ほぼ正しい :numref:`fig4-5` よりも良くはありません。 あなたが本当に一生懸命集中するならば、あなたは結局問題は引っ掛けであると結論づけるかもしれません。じつは、解決策はありません。"
 
 #: ../../chapter4.rst:274
 msgid "Not quite right."
-msgstr ""
+msgstr "正解は無い"
 
 #: ../../chapter4.rst:278
 msgid "But if you sit back and ask yourself,"
-msgstr ""
+msgstr "しかし、あなたは振り返って自分自身にこう尋ねる"
 
 #: ../../chapter4.rst:280
 msgid ""
 "\"Am I cheating myself out a useful tack by being narrow-minded? Am I "
 "assuming any constraints not specified in the problem? What constraints "
 "might they be?\""
-msgstr ""
+msgstr "「私は、狭義に捉えることによって自分自身をだましていますか？問題で指定されていない制約を想定していますか？それらはどのような制約になる可能性がありますか？」"
 
 #: ../../chapter4.rst:284
 msgid ""
 "then you might think of extending some of the lines beyond the perimeter "
 "of the nine dots."
-msgstr ""
+msgstr "それなら、9つの点の周囲を超えていくつかの線を延長することを考えるかもしれません。"
 
 #: ../../chapter4.rst:289
 msgid "Use whole-brain thinking."
-msgstr ""
+msgstr "右脳左脳全部使って考えましょう。"
 
 #: ../../chapter4.rst:291
 msgid ""
 "When a problem has you stumped and you seem to be getting nowhere, relax,"
 " stop worrying about it, perhaps even forget about it for a while."
-msgstr ""
+msgstr "問題があなたを困らせ、行き詰まっているように思われるときは、リラックスして、心配するのをやめてください。"
 
 #: ../../chapter4.rst:294
 msgid ""
 "Creative people have always noted that their best ideas seem to come out "
 "of the blue, in bed or in the shower. Many books on problem solving "
 "suggest relying on the subconscious for the really difficult problems."
-msgstr ""
+msgstr "創造的な人々は、常に彼らの最高のアイデアはベッドの中やシャワーの中で、はるか彼方から出てくるように見えることに気づいていました。 問題解決に関する多くの本は、本当に困難な問題を潜在意識に頼ることを提案しています。"
 
 #: ../../chapter4.rst:298
 msgid ""
@@ -430,13 +458,13 @@ msgid ""
 " and subconscious thought (which correlates perceptions to previously "
 "stored information, recombining and relinking knowledge in new and useful"
 " ways)."
-msgstr ""
+msgstr "現代の脳機能理論は、合理的で意識的な思考（シンボルの操作に依存する）と潜在意識的な思考（知覚を以前に保存された情報と相関させ、新しい有用な方法で知識を再結合し再リンクする）の違いを探ります。"
 
 #: ../../chapter4.rst:304
 msgid ""
 "Leslie Hart [hart75]_ explains the difficulty of solving a large problem "
 "by means of logic:"
-msgstr ""
+msgstr "Leslie Hart [hart75]_ は、論理によって大きな問題を解くことの難しさを説明しています。"
 
 #: ../../chapter4.rst:308
 msgid ""
@@ -445,7 +473,7 @@ msgid ""
 " the circus act, but it seems more sensible to... use the full resources "
 "of our glorious neocortex... the multibillion-neuron capacity of the "
 "brain."
-msgstr ""
+msgstr "しばらくの間注意領域に持ち込まれることができる脳のその1つの小さな機能に大きな負荷がかかります。 サーカスのように偉業は可能ですが、私たちの栄光ある新皮質の全資源を利用すること...脳の数十億個のニューロンの能力を利用することがより賢明です。"
 
 #: ../../chapter4.rst:314
 msgid ""
@@ -453,7 +481,7 @@ msgid ""
 "observing, reading, collecting data, and reviewing what others have "
 "achieved.  Once in, [subconscious] procedures take over, simultaneously, "
 "automatically, outside of the attention zone."
-msgstr ""
+msgstr "…仕事には、観察、読み取り、データの収集、他の人が達成したことの確認など、脳に生の入力を提供する側面があります。 一度入ったら、「[潜在意識」手順が、同時に、自動的に、注意領域の外側を引き継ぎます。"
 
 #: ../../chapter4.rst:319
 msgid ""
@@ -463,37 +491,38 @@ msgid ""
 "reaches dead ends and begins afresh, and eventually assembles an answer "
 "that is evaluated and then popped into conscious attention---often in "
 "astonishingly full-blown detail."
-msgstr ""
+msgstr "…それは明らかに思えますが…大型コンピュータと同じように、必ずしも継続的ではありませんが、検索はその間に行われています。 私は、検索が分岐し、開始し、停止し、行き止まりになり、そして新たに始まり、最終的には評価された後に意識的な注意を払うように解答を集めるという推測に疑問を感じます。"
 
 #: ../../chapter4.rst:328
 msgid "Evaluate your solution. Look for other solutions."
-msgstr ""
+msgstr "解決策を評価してください。 他の解決策を探してください。"
 
 #: ../../chapter4.rst:330
 msgid ""
 "You may have found one way of skinning the cat. There may be other ways, "
 "and some of them may be better."
-msgstr ""
+msgstr "猫の皮を剥ぐ方法が1つ見つけたのかもしれません。 他の方法があるかもしれません、そしてそれらのうちのいくつかはより良いかもしれません。"
 
 #: ../../chapter4.rst:333
 msgid ""
 "Don’t invest too much effort in your first solution without asking "
 "yourself for a second opinion."
-msgstr ""
+msgstr "セカンドオピニオンを求めず、最初の解決策にばかり努力しないでください。"
 
 #: ../../chapter4.rst:340
 msgid "\"I\\'m not just sleeping. I\\'m using my neocortex.\""
-msgstr ""
+msgstr "「私はただ眠っているだけじゃありません。大脳新皮質を使ってるんです。」"
 
+# ソフトウェア元祖　ソフトウェア開発者
 #: ../../chapter4.rst:343
 msgid "Interview with a Software Inventor"
-msgstr ""
+msgstr "ソフトウェア発明者へのインタビュー"
 
 #: ../../chapter4.rst:397
 msgid ""
 "**Donald A. Burgess**, owner and president of Scientek Instrumentation, "
 "Inc.:"
-msgstr ""
+msgstr "Scientek Instrumentation, Incのオーナー兼社長である **Donald A. Burgess** は言います。"
 
 #: ../../chapter4.rst:346
 msgid ""
@@ -501,28 +530,28 @@ msgid ""
 "anything, to keep myself flexible. My first rule is, \"Nothing is "
 "impossible.\" My second rule is, \"Don't forget, the object is to make a "
 "buck.\""
-msgstr ""
+msgstr "私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 私の最初のルールは、「不可能なことは何もない」です。 私の2番目のルールは、「忘れないでください、目的は支出することです」です。"
 
 #: ../../chapter4.rst:351
 msgid ""
 "First examine the problem, laying out two or three approaches on paper. "
 "Then try the most appealing one, to see if it works. Carry it through. "
 "Then deliberately go all the way back to the beginning, and start over."
-msgstr ""
+msgstr "まず問題を調べ、2つか3つのアプローチを紙に書きます。 それからそれがはたらくかどうか見るために、最も魅力的なものを試してください。 通して実行してみます。それから、故意に始めまで戻って、最初からやり直します。"
 
 #: ../../chapter4.rst:355
 msgid ""
 "Starting over has two values. First, it gives you a fresh approach. You "
 "either gravitate back to the way you started, or the way you started "
 "gravitates toward the new way."
-msgstr ""
+msgstr "最初からやり直すことには2つの価値があります。 まず、それはあなたに新鮮なアプローチを与えます。 あなたはあなたが始めたやり方に引き返すか、あなたが始めたやり方より新しいやり方に引き寄せられます。"
 
 #: ../../chapter4.rst:359
 msgid ""
 "Second, the new approach may show all kinds of powerful possibilities. "
 "Now you have a benchmark. You can look at both approaches and compare the"
 " advantages of both. You're in a better position to judge."
-msgstr ""
+msgstr "第二に、新しいアプローチはあらゆる種類の強力な可能性を示すかもしれません。 今や、あなたは(既に一度試行したことで)基準となるものを持っています。 両方のアプローチを見て、両方の利点を比較することができます。 あなたは判断するのにより良い立場にあります。"
 
 #: ../../chapter4.rst:363
 msgid ""
@@ -530,7 +559,7 @@ msgid ""
 "Remember to say, \"I want this kumquat crusher to be different. Let's "
 "reject the traditional design as not interesting. Let's try some crazy "
 "ideas.\""
-msgstr ""
+msgstr "身動きできなくなるのは、単一のアプローチに従うのが難しすぎるからです。 「私はこの金柑しぼり器を違うものにしたいのです。伝統的なデザインを面白くないと拒絶しましょう。クレイジーなアイデアを試してみましょう。」"
 
 #: ../../chapter4.rst:368
 msgid ""
@@ -539,7 +568,7 @@ msgid ""
 "process. The human mind works exceptionally well with analogies. Putting "
 "things in context keeps you from getting stuck within the confines of any"
 " language, even Forth."
-msgstr ""
+msgstr "一番いいのは絵を描き始めることです。 私は小さな男を描きます。それが「データ」のように見えないようにして私の思考プロセスをいじくります。類推は思考を活性化させます。状況の中に物事を置くことは、Forthをはじめ、あなたがあらゆる言語の中に閉じ込められるのを防ぎます。"
 
 #: ../../chapter4.rst:374
 msgid ""
@@ -547,14 +576,14 @@ msgid ""
 "When I want to think in broad strokes, to capture the overall flow, I "
 "draw on great big pieces of paper. These are some of the crazy tricks I "
 "use to keep from getting stagnant."
-msgstr ""
+msgstr "私は集中したいときは小さな紙切れに描きます。私が全体的な流れをとらえるために広い範囲で考えたいときは大きな一枚の紙に描きます。 これらは私が停滞しないようにするために使用するクレイジーなトリックのいくつかです。"
 
 #: ../../chapter4.rst:379
 msgid ""
 "When I program in Forth, I spend a day just dreaming, kicking around "
 "ideas. Usually before I start typing, I sketch it out in general terms. "
 "No code, just talk. Notes to myself."
-msgstr ""
+msgstr "私がForthでプログラムをするとき、私はただ夢を見ながら、アイデアをの周りを蹴って一日過ごします。 通常、打ち込みを始める前に、一般的な用語でそれをスケッチします。 手書きのコードはありません、語りだけです。自分へのメモだけです。"
 
 #: ../../chapter4.rst:383
 msgid ""
@@ -565,7 +594,7 @@ msgid ""
 " my top word into two and transfer one of them to an earlier block so I "
 "can use it earlier. I run the hardware if I have it; otherwise I simulate"
 " it."
-msgstr ""
+msgstr "それから私は最初のコードの最終行から始めます。 できる限り文章に近いように、自分がやりたいことを説明します。 それから私はエディタを使ってこの定義を画面の下にスライドさせ、そして内部のワードのコーディングを始めます。 それから私はそれがそれをするためのお粗末な方法であることに気づきます。 一番上のワードを2つに分割し、そのうちの1つを以前のブロック(スクリーン)に転送して、それをmもっと早く使用できるようにするかもしれません。 ハードウェアがある場合は実行してみます。 それ以外の場合はシミュレートします。"
 
 #: ../../chapter4.rst:390
 msgid ""
@@ -573,18 +602,18 @@ msgid ""
 "keyboard. Forth is so willing to do what I tell it to, I'll tell it to do"
 " all kinds of ridiculous things that have nothing to do with where I'm "
 "trying to go. At those times I have to get away from the keyboard."
-msgstr ""
+msgstr "Forthは自己訓練が必要です。 あなたはひたすらキーボードをいじくるのをやめる必要があります。 Forthは私が言うことをやろうとします。私が行こうとしている場所とは無関係のあらゆるばかげたことやろうとします。 その時は私はキーボードから離れなければなりません。"
 
 #: ../../chapter4.rst:395
 msgid ""
 "Forth lets you play. That's fine, chances are you'll get some ideas. As "
 "long as you keep yourself from playing as a habit. Your head is a whole "
 "lot better than the computer for inventing things."
-msgstr ""
+msgstr "Forthはあなたに遊ばせます。 それで結構です、あなたはいくつかのアイデアを得ることができるでしょう。 あなたがForthで遊ぶ習慣はあっても自分自身を保つ限り、あなたの頭は物事を生み出すコンピュータよりもはるかに優れています。"
 
 #: ../../chapter4.rst:400
 msgid "Detailed Design"
-msgstr ""
+msgstr "詳細設計"
 
 #: ../../chapter4.rst:402
 msgid ""
@@ -593,81 +622,82 @@ msgid ""
 " number of words, some of which (those that comprise the lexicon) will be"
 " used by other components and some of which (the internal words) will be "
 "only used within this component."
-msgstr ""
+msgstr "私たちは今、開発サイクルの中で、コンポーネント（または特定のワード）が必要だと決心したところです。 コンポーネントはいくつかのワードで構成され、その一部（用語集を構成するもの）は他のコンポーネントによって使用され、一部（内部のワード）はこのコンポーネント内でのみ使用されます。"
 
 #: ../../chapter4.rst:408
 msgid "Create as many words as necessary to obey the following tip:"
-msgstr ""
+msgstr "次のヒントに従うために必要な数のワードを作成します。"
 
 #: ../../chapter4.rst:412
 msgid "Each definition should perform a simple, well-defined task."
-msgstr ""
+msgstr "各定義は、単純で明確に定義されたタスクを実行する必要があります。"
 
 #: ../../chapter4.rst:414
 msgid "Here are the steps generally involved in designing a component:"
-msgstr ""
+msgstr "コンポーネントの設計に一般的に含まれる手順は次のとおりです。"
 
 #: ../../chapter4.rst:417
 msgid ""
 "Based on the required functions, decide on the names and syntax for the "
 "external definitions (define the interfaces)."
-msgstr ""
+msgstr "要求される機能に基づいて、外部定義の名前と文法を決定します（インターフェースを定義します）。"
 
 #: ../../chapter4.rst:420
 msgid ""
 "Refine the conceptual model by describing the algorithm(s) and data "
 "structure(s)."
-msgstr ""
+msgstr "アルゴリズムとデータ構造を記述して、概念モデルを改良します。"
 
 #: ../../chapter4.rst:423
 msgid "Recognize auxiliary definitions."
-msgstr ""
+msgstr "補助定義を認識します。"
 
 #: ../../chapter4.rst:425
 msgid "Determine what auxiliary definitions and techniques are already available."
-msgstr ""
+msgstr "どのような補助的な定義と技法が、すでに利用可能かを判断します。"
 
 #: ../../chapter4.rst:428
 msgid "Describe the algorithm with pseudocode."
-msgstr ""
+msgstr "擬似コードを使用してアルゴリズムを説明します。"
 
 #: ../../chapter4.rst:430
 msgid "Implement it by working backwards from existing definitions to the inputs."
-msgstr ""
+msgstr "既存の定義から入力に逆方向に作業することによってそれを実装します。"
 
 #: ../../chapter4.rst:433
 msgid "Implement any missing auxiliary definitions."
-msgstr ""
+msgstr "不足している補助定義を実装します。"
 
 #: ../../chapter4.rst:435
 msgid ""
 "If the lexicon contains many names with strong elements in common, design"
 " and code the commonalities as internal definitions, then implement the "
 "external definitions."
-msgstr ""
+msgstr "強力な要素を持つ共通の名前が多く含まれている場合は、共通性を内部定義として設計およびコーディングしてから、外部定義を実装します。"
 
 #: ../../chapter4.rst:439
 msgid ""
 "We’ll discuss the first two steps in depth. Then we’ll engage in an "
 "extended example of designing a lexicon."
-msgstr ""
+msgstr "私たちは最初の2つのステップについて深く掘り下げます。それから拡張の例として語彙を設計します。"
 
+# 意味的に、このアプリ固有の「文法」を構築するという意味だろう。
 #: ../../chapter4.rst:444
 msgid "Forth Syntax"
-msgstr ""
+msgstr "文法を創造する"
 
 #: ../../chapter4.rst:446
 msgid ""
 "At this point in the development cycle you must decide how the words in "
 "your new lexicon will be used in context. In doing so, keep in mind how "
 "the lexicon will be used by subsequent components."
-msgstr ""
+msgstr "開発サイクルのこの時点で、新しい用語集のワードをどのように使用するのかを決定する必要があります。 その際、後続のコンポーネントがその用語集をどのように使用するかを覚えておいてください。"
 
 #: ../../chapter4.rst:452
 msgid ""
 "In designing a component, the goal is to create a lexicon that will make "
 "your later code readable and easy to maintain."
-msgstr ""
+msgstr "コンポーネントを設計する際の目標は、それ以降のコードを読みやすく、保守しやすくする用語集を作成することです。"
 
 #: ../../chapter4.rst:455
 msgid ""
@@ -675,7 +705,7 @@ msgid ""
 "You must design the syntax of the lexicon so that the words make sense "
 "when they appear in context. Hiding interrelated information within the "
 "component will ensure maintainability, as we’ve seen."
-msgstr ""
+msgstr "各コンポーネントはそれを使用するコンポーネントを念頭に置いて設計する必要があります。 ワードが文脈の中で現れるときに意味がわかるように、あなたは用語集の文法を設計しなければなりません。 これまで見てきたように、相互に関連する情報をコンポーネント内に隠すことで、保守性を確保します。"
 
 #: ../../chapter4.rst:460
 msgid ""
@@ -2633,5 +2663,17 @@ msgstr ""
 #~ "precede the name. For instance, the "
 #~ "syntax of the word SPACES, which "
 #~ "emits “:math:`n`” number of spaces, is"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\\G. Polya has written several books "
+#~ "on problem solving, especially of the"
+#~ " mathematical problem. The most accessible"
+#~ " of these is *How to Solve It*"
+#~ " [polya]_ . Although solving a "
+#~ "mathematical problem isn’t quite the "
+#~ "same as solving a software problem, "
+#~ "you’ll find some valuable suggestions "
+#~ "there."
 #~ msgstr ""
 

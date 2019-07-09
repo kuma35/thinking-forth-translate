@@ -1,7 +1,7 @@
 
-***********************************
-4. Detailed Design/Problem Solving
-***********************************
+====================================
+ 4. Detailed Design/Problem Solving
+====================================
     | **Trivial:** I can see how to do this. I just don't know how long it will take.
     | **Non-trivial:** I haven't a **clue** how to do this!
 
@@ -33,7 +33,7 @@ of problem solving? To quicken the process. By thinking about the *ways*
 in which we solve problems, apart from the problems themselves, we
 enrich our subconscious storehouse of techniques.
 
-\G. Polya has written several books on problem solving, especially of the
+G\. Polya has written several books on problem solving, especially of the
 mathematical problem. The most accessible of these is *How to Solve It*
 [polya]_ .
 Although solving a mathematical problem isn’t quite the same as solving
@@ -57,7 +57,7 @@ is expected to produce (output). For a single definition, this means
 writing the stack-effect comment.
 
 Determine the rules; review all
-the facts that you know. In :doc:`Chapter Two<chapter2>` Two we described
+the facts that you know. In :doc:`Chapter Two<chapter2>` we described
 the rates for
 computing the cost of a phone call along with the rules for applying the
 rates.
