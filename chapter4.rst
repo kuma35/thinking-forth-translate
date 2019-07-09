@@ -478,7 +478,7 @@ emits “:math:`n`” number of spaces, is
    20 SPACES
 
 Sometimes this rule violates the order that our ear is accustomed to
-hearing. For instance, the Forth word + expects to be preceded by both
+hearing. For instance, the Forth word ``+`` expects to be preceded by both
 arguments, as in
 
 .. code-block:: none
@@ -489,7 +489,7 @@ This ordering, in which values
 precede operators, is called “postfix.”
 
 Forth, in its magnanimity, won’t *insist* upon postfix notation. You
-could redefine + to expect one number in the input stream, like this:
+could redefine ``+`` to expect one number in the input stream, like this:
 
 .. code-block:: none
    
@@ -509,26 +509,25 @@ Fine. But you wouldn’t be able to use this definition inside other colon
 definitions or pass it arguments, thereby defeating one of Forth’s major
 advantages.
 
-Frequently, “noun” type words pass their addresses (or any type of
+Frequently, "noun" type words pass their addresses (or any type of
 pointer) as a stack argument to “verb” type words. The Forth-like syntax
 of
 
-    “noun” “verb”
-
-.. figure:: img4-110.png
-   :name: img4-110
-   :alt: img4-110
-
-   img4-110
+.. code-block:: none
+   
+   noun verb
 
 will generally prove easiest to implement because of the
 stack.
 
-In some cases this word order
-sounds unnatural. For instance, suppose we have a file named ``INVENTORY`` .
+.. image:: img4-110.png
+
+In some cases this word order sounds unnatural.
+For instance, suppose we have a file named ``INVENTORY``.
 One thing we can do with that file is ``SHOW`` it; that is, format the
-information in pretty columns. If ``INVENTORY`` passes a pointer to ``SHOW`` ,
-which acts upon it, the syntax becomes
+information in pretty columns.
+If ``INVENTORY`` passes a pointer to ``SHOW``, which acts upon it,
+the syntax becomes
 
 .. code-block:: none
    
@@ -1821,7 +1820,7 @@ each pass of the loop? Can you do so using only the one array?
 REFERNCES
 =========
 
-.. [polya]  G. Polya,  **How To Solve It: A New Aspect of   Mathematical Method** , (Princeton, New Jersey, Princeton University   Press).%!! (C) should be a nicer copyright sign
-.. [hart75]  Leslie A. Hart,  **How the Brain Works** ,   (C) 1975 by Leslie A. Hart, (New York, Basic Books, Inc.,   1975).
-.. [rosen82]  Evan Rosen, "High Speed, Low Memory Consumption   Structures," 1982  **FORML Conference Proceedings** , p. 191.
-.. [stolowitz82]  Michael Stolowitz, "A Compiler for Programmable   Logic in FORTH," 1982  **FORML Conference Proceedings** , p. 257.
+.. [polya] G. Polya, **How To Solve It: A New Aspect of Mathematical Method** ,(Princeton, New Jersey, Princeton University Press).
+.. [hart75] Leslie A. Hart, **How the Brain Works** , (C) 1975 by Leslie A. Hart, (New York, Basic Books, Inc., 1975).
+.. [rosen82] Evan Rosen, "High Speed, Low Memory Consumption Structures," 1982  **FORML Conference Proceedings** , p.191.
+.. [stolowitz82] Michael Stolowitz, "A Compiler for Programmable Logic in FORTH," 1982 **FORML Conference Proceedings** , p.257.

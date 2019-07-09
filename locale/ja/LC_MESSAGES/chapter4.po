@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 09:02+0900\n"
-"PO-Revision-Date: 2019-07-10 01:57+0900\n"
+"POT-Creation-Date: 2019-07-10 04:51+0900\n"
+"PO-Revision-Date: 2019-07-10 06:06+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -140,7 +140,9 @@ msgid ""
 "Determine the rules; review all the facts that you know. In :doc:`Chapter"
 " Two<chapter2>` we described the rates for computing the cost of a phone "
 "call along with the rules for applying the rates."
-msgstr "ルールを決めます。 あなたが知っているすべての事実を確認してください。 :doc:`第２章<chapter2>` では、電話料金計算と料金を適用するための規則を説明しました。"
+msgstr ""
+"ルールを決めます。 あなたが知っているすべての事実を確認してください。 :doc:`第２章<chapter2>` "
+"では、電話料金計算と料金を適用するための規則を説明しました。"
 
 # picture 風景、景色
 #: ../../chapter4.rst:67
@@ -152,7 +154,9 @@ msgid ""
 "In the *analysis* phase we separated the problem into its parts, to "
 "clarify our understanding of each piece. We are now entering the "
 "*synthesis* phase. We must visualize the problem as a whole."
-msgstr "「分析」フェーズでは、各部分の理解を明確にするために、問題を部分に分けました。 私たちは今や「合成」フェーズに入っています。 問題全体を視覚化する必要があります。"
+msgstr ""
+"「分析」フェーズでは、各部分の理解を明確にするために、問題を部分に分けました。 私たちは今や「合成」フェーズに入っています。 "
+"問題全体を視覚化する必要があります。"
 
 #: ../../chapter4.rst:73
 msgid ""
@@ -162,7 +166,10 @@ msgid ""
 "information at a glance. Fill your mind to bursting with the requirements"
 " of the problem you need to solve, the way you might fill your lungs with"
 " air."
-msgstr "できるだけ多くの問題についての情報を頭に入れておくようにしてください。 一目で最大限の情報を確認するのに役立つように、単語、フレーズ、図、表、またはデータやルールの任意の種類のグラフィック表現を使用してください。 あなたが息を大きく吸い込んで止めた時のように、解決する必要がある問題の要件を頭の中に詰め込んで、そして一気にはき出すようにアイデアの奔流を生み出して下さい。"
+msgstr ""
+"できるだけ多くの問題についての情報を頭に入れておくようにしてください。 "
+"一目で最大限の情報を確認するのに役立つように、単語、フレーズ、図、表、またはデータやルールの任意の種類のグラフィック表現を使用してください。 "
+"あなたが息を大きく吸い込んで止めた時のように、解決する必要がある問題の要件を頭の中に詰め込んで、そして一気にはき出すようにアイデアの奔流を生み出して下さい。"
 
 #: ../../chapter4.rst:80
 msgid "Now hold that mental image, the way you might hold your breath."
@@ -181,7 +188,10 @@ msgid ""
 " so, it’s important that you have already concentrated on the problem’s "
 "requirements all at once, engraving these requirements on your mental "
 "retina."
-msgstr "あなたは洞察力のひらめきで解決策を見るかもしれません。 すばらしい！ 安心のため息を吐き出し、すぐに実施に進む。 または…、問題は解決するには複雑すぎる、またはなじみのないものです。 この場合は、類推と部分的な解決策に注意を向ける必要があります。 あなたがそうするとき、あなたがすでに問題の必要条件に一度に集中していて、あなたの精神的な網膜の上にこれらの必要条件を刻むことは重要です。"
+msgstr ""
+"あなたは洞察力のひらめきで解決策を見るかもしれません。 すばらしい！ 安心のため息を吐き出し、すぐに実施に進む。 "
+"または…、問題は解決するには複雑すぎる、またはなじみのないものです。 この場合は、類推と部分的な解決策に注意を向ける必要があります。 "
+"あなたがそうするとき、あなたがすでに問題の必要条件に一度に集中していて、あなたの精神的な網膜の上にこれらの必要条件を刻むことは重要です。"
 
 #: ../../chapter4.rst:94
 msgid "Develop a plan."
@@ -192,7 +202,9 @@ msgid ""
 "If the solution didn’t come at a glance, the next step is to determine "
 "the approach that you will take to solve it. Set a course for action and "
 "avoid the trap of fumbling about aimlessly."
-msgstr "解決策が一目でわからない場合は、次のステップはあなたがそれを解決するために取るアプローチを決定することです。 行動のためのコースを設定し、無意識のうちにぶつかることの罠を避けてください。"
+msgstr ""
+"解決策が一目でわからない場合は、次のステップはあなたがそれを解決するために取るアプローチを決定することです。 "
+"行動のためのコースを設定し、無意識のうちにぶつかることの罠を避けてください。"
 
 #: ../../chapter4.rst:100
 msgid "The following tips suggest several approaches you might consider."
@@ -208,7 +220,10 @@ msgid ""
 "before? Figure out what parts of the problem are familiar, and in what "
 "ways this problem might differ. Try to remember how you solved it before,"
 " or how you solved something like it."
-msgstr "この問題はおなじみでしょうか。 あなたは前にそのような定義を書きましたか？ 問題のどの部分がよく知られているのか、またこの問題がどのように異なるのかを理解します。 以前にそれをどのように解決しようと試みたか、またはどのようにしてそれを解決したかを覚えておくようにしてください。"
+msgstr ""
+"この問題はおなじみでしょうか。 あなたは前にそのような定義を書きましたか？ "
+"問題のどの部分がよく知られているのか、またこの問題がどのように異なるのかを理解します。 "
+"以前にそれをどのように解決しようと試みたか、またはどのようにしてそれを解決したかを覚えておくようにしてください。"
 
 # 前方へ働く
 #: ../../chapter4.rst:113
@@ -221,7 +236,9 @@ msgid ""
 "known, and proceeding to the unknown. In deciding which horse to bet on, "
 "you’d begin with their recent histories, their current health, and so on,"
 " apply weights to these various factors and arrive at a favorite."
-msgstr "問題を攻撃するための通常の明白な方法は、既知のものから始めて未知のものに進むことです。 どの馬に賭けるかを決める際には、最近の歴史や現在の健康状態などから始めて、これらのさまざまな要因に重みを付けてお気に入りに到達します。"
+msgstr ""
+"問題を攻撃するための通常の明白な方法は、既知のものから始めて未知のものに進むことです。 "
+"どの馬に賭けるかを決める際には、最近の歴史や現在の健康状態などから始めて、これらのさまざまな要因に重みを付けてお気に入りに到達します。"
 
 # 後方へ働く
 #: ../../chapter4.rst:122
@@ -234,7 +251,9 @@ msgid ""
 "incoming data. How do you know which route will take you closer to the "
 "solution? You don’t. This class of problem is best solved by working "
 "backward ( :numref:`fig4-1` )."
-msgstr "より複雑な問題は、入ってくるデータを処理するための多くの可能な方法を提示します。 どのルートで解決策に近づくことができますか。 あなたは前進しません。 この種の問題は戻ることで最もよく解決されます( :numref:`fig4-1` )。"
+msgstr ""
+"より複雑な問題は、入ってくるデータを処理するための多くの可能な方法を提示します。 どのルートで解決策に近づくことができますか。 "
+"あなたは前進しません。 この種の問題は戻ることで最もよく解決されます( :numref:`fig4-1` )。"
 
 #: ../../chapter4.rst:133
 msgid "A problem that is easier to solve backward than forward."
@@ -252,7 +271,10 @@ msgid ""
 "gallons and the other holds four gallons. Our task is to measure out "
 "exactly six gallons of water from the nearby stream in one of the "
 "containers ( :numref:`fig4-2` )."
-msgstr "信念は後方にうまく働くために必要な要素です。 私たちは有名な数学的問題で説明します。 2つのバケツがあるとします。 バケツには目盛りはありませんが、一方は9リットル入りで、、もう一方には4リットル入りです。 私たちの仕事は、小川から正確に6リットルの水を汲み上げることです( :numref:`fig4-2` ）。"
+msgstr ""
+"信念は後方にうまく働くために必要な要素です。 私たちは有名な数学的問題で説明します。 2つのバケツがあるとします。 "
+"バケツには目盛りはありませんが、一方は9リットル入りで、、もう一方には4リットル入りです。 "
+"私たちの仕事は、小川から正確に6リットルの水を汲み上げることです( :numref:`fig4-2` ）。"
 
 #: ../../chapter4.rst:152
 msgid "Two containers."
@@ -270,7 +292,11 @@ msgid ""
 "container, we’ll get eight gallons. If we fill the nine-gallon container "
 "to the brim, then empty enough water to fill the four-gallon container, "
 "we’ll have exactly five gallons in the large container."
-msgstr "どのようにして、「9」と「4」から「6」を得ることができますか？ 私たちは、バケツから別のバケツへと水を移すことを想像することによって、前進し始めることができます。 たとえば、小さなバケツ(4リットル)で大きなバケツ(9リットル)に２回注ぐと、8リットルが得られます。 大きなバケツ(9リットル)をいっぱいにしてから、小さなバケツ(4リトル)を満たすと、大きなバケツ(9リットル)には正確に5リットルが余ります。"
+msgstr ""
+"どのようにして、「9」と「4」から「6」を得ることができますか？ "
+"私たちは、バケツから別のバケツへと水を移すことを想像することによって、前進し始めることができます。 "
+"たとえば、小さなバケツ(4リットル)で大きなバケツ(9リットル)に２回注ぐと、8リットルが得られます。 "
+"大きなバケツ(9リットル)をいっぱいにしてから、小さなバケツ(4リトル)を満たすと、大きなバケツ(9リットル)には正確に5リットルが余ります。"
 
 #: ../../chapter4.rst:166
 msgid ""
@@ -284,7 +310,10 @@ msgid ""
 "water, and it’s sitting in the large container (it won’t fit in the small"
 " one!). Now, how did we get it there? What was the state of our "
 "containers one step previously?"
-msgstr "逆行してみましょう。 私たちは6リットルの水を測定したと仮定します、そしてそれは大きなバケツ(9)の中に入っています（それは小さなバケツ(9)には収まりません！） さて、どうやってそこに至りましたか？ 一歩前の私たちのバケツの状態はどうでしたか？"
+msgstr ""
+"逆行してみましょう。 "
+"私たちは6リットルの水を測定したと仮定します、そしてそれは大きなバケツ(9)の中に入っています（それは小さなバケツ(9)には収まりません！） "
+"さて、どうやってそこに至りましたか？ 一歩前の私たちのバケツの状態はどうでしたか？"
 
 #: ../../chapter4.rst:174
 msgid "There are only two possibilities ( :numref:`fig4-3` ):"
@@ -309,7 +338,10 @@ msgid ""
 "measurement, the second requires a three-gallon measurement. In our "
 "initial playing around, we never saw a unit like two. But we did see a "
 "difference of one, and one from four is three. Let’s go with version b."
-msgstr "どちらの選択？ 推測しましょう。 最初の選択は2リットルの測定を必要とし、2番目は3リットルの測定を必要とします。 最初の試行では、この2つの結果はありませんでした。 しかし、1リットル差のパターンがありました。4引く1は3です。 ということで、VERSION Bから始めるとしましょう。"
+msgstr ""
+"どちらの選択？ 推測しましょう。 最初の選択は2リットルの測定を必要とし、2番目は3リットルの測定を必要とします。 "
+"最初の試行では、この2つの結果はありませんでした。 しかし、1リットル差のパターンがありました。4引く1は3です。 ということで、VERSION "
+"Bから始めるとしましょう。"
 
 #: ../../chapter4.rst:188
 msgid ""
@@ -317,7 +349,9 @@ msgid ""
 "that we have arrived at the situation described. We have just poured off "
 "three gallons into the small container. Suspending all disbelief, we "
 "concentrate on how we did it."
-msgstr "ここで本物の策を弄します。私たちは、説明した状況にたどり着いたことを疑う余地なく、自分自身を信じさせなければなりません。 私達はちょうど3リットルを小さなバケツ(4)に注いだところです。すべての不信を中断して、私たちはそれをどうやったかに集中します。"
+msgstr ""
+"ここで本物の策を弄します。私たちは、説明した状況にたどり着いたことを疑う余地なく、自分自身を信じさせなければなりません。 "
+"私達はちょうど3リットルを小さなバケツ(4)に注いだところです。すべての不信を中断して、私たちはそれをどうやったかに集中します。"
 
 #: ../../chapter4.rst:193
 msgid ""
@@ -327,7 +361,10 @@ msgid ""
 "container? We must have started with a full nine-gallon container, poured"
 " off four gallons twice, leaving one gallon. Then we transferred the one "
 "gallon to the small container."
-msgstr "小さなバケツ4)に3リットルを注ぐにはどうすればよいでしょうか。 小さいバケツにすでに1リットルがあったならば！ 突然私たちはハードルを乗り越えました。 簡単な質問は、小さなバケツに1リットルをどうやって入れるかということです。大きなバケツ(9)満杯から、小さなバケツ(4)に2回注ぐと、大きなバケツ(9)には1リットルが残りました。それからその1リットルを小さなバケツ(4)に移しました。"
+msgstr ""
+"小さなバケツ4)に3リットルを注ぐにはどうすればよいでしょうか。 小さいバケツにすでに1リットルがあったならば！ "
+"突然私たちはハードルを乗り越えました。 "
+"簡単な質問は、小さなバケツに1リットルをどうやって入れるかということです。大きなバケツ(9)満杯から、小さなバケツ(4)に2回注ぐと、大きなバケツ(9)には1リットルが残りました。それからその1リットルを小さなバケツ(4)に移しました。"
 
 #: ../../chapter4.rst:204
 msgid "Achieving the end result."
@@ -360,7 +397,9 @@ msgid ""
 "with the problem, we begin to recognize that our problem includes one or "
 "more subproblems that somehow seem different from the main outline of the"
 " proposed procedure."
-msgstr "問題を解決する前は、どのステップが必要なのか、あるいはいくつのステップが必要なのかという漠然とした概念しかありません。 私たちが問題に慣れてくるにつれて、私たちの問題には、提案している手順の本流とは幾分異なるよう思える複数の副問題が含まれることを認識し始めます。"
+msgstr ""
+"問題を解決する前は、どのステップが必要なのか、あるいはいくつのステップが必要なのかという漠然とした概念しかありません。 "
+"私たちが問題に慣れてくるにつれて、私たちの問題には、提案している手順の本流とは幾分異なるよう思える複数の副問題が含まれることを認識し始めます。"
 
 #: ../../chapter4.rst:230
 msgid ""
@@ -376,7 +415,10 @@ msgid ""
 "subproblem, we can assume it has a straightforward solution. Without "
 "stopping to determine what that solution might be, we forge ahead with "
 "our main problem."
-msgstr "「補助問題」と呼ばれることもあるこれらの小さな問題を認識することは、重要な問題解決手法です。 部分問題を特定することで、それが簡単な解決策であると仮定することができます。 その解決策が何であるかを判断するのをやめずに、私たちは主な問題とともに先に進みます。"
+msgstr ""
+"「補助問題」と呼ばれることもあるこれらの小さな問題を認識することは、重要な問題解決手法です。 "
+"部分問題を特定することで、それが簡単な解決策であると仮定することができます。 "
+"その解決策が何であるかを判断するのをやめずに、私たちは主な問題とともに先に進みます。"
 
 #: ../../chapter4.rst:240
 msgid "(Forth is ideally suited to this technique, as we’ll see.)"
@@ -400,7 +442,10 @@ msgid ""
 "touch or pass through all nine dots, without lifting the pen off the "
 "paper. The constraint is that you must touch all nine dots with only four"
 " lines."
-msgstr "問題解決の文献はしばしば9つの点の例を採用しています。 それは私を困惑させたので、ここに示します。 :numref:`fig4-4` のように9つの点が配置されています。 目的は、ペンを紙から持ち上げることなく、9つすべての点に接触または通過する直線を描画することです。 制約は、9つすべての点に4本の線だけで触れる必要があることです。"
+msgstr ""
+"問題解決の文献はしばしば9つの点の例を採用しています。 それは私を困惑させたので、ここに示します。 :numref:`fig4-4` "
+"のように9つの点が配置されています。 目的は、ペンを紙から持ち上げることなく、9つすべての点に接触または通過する直線を描画することです。 "
+"制約は、9つすべての点に4本の線だけで触れる必要があることです。"
 
 #: ../../chapter4.rst:261
 msgid "The nine dots problem."
@@ -411,7 +456,9 @@ msgid ""
 "You can sit a good while and do no better than the almost-right "
 ":numref:`fig4-5` . If you concentrate really hard, you may eventually "
 "conclude that the problem is a trick—there’s no solution."
-msgstr "しばらくの間がんばっても、ほぼ正しい :numref:`fig4-5` よりも良くはありません。 あなたが本当に一生懸命集中するならば、あなたは結局問題は引っ掛けであると結論づけるかもしれません。じつは、解決策はありません。"
+msgstr ""
+"しばらくの間がんばっても、ほぼ正しい :numref:`fig4-5` よりも良くはありません。 "
+"あなたが本当に一生懸命集中するならば、あなたは結局問題は引っ掛けであると結論づけるかもしれません。じつは、解決策はありません。"
 
 #: ../../chapter4.rst:274
 msgid "Not quite right."
@@ -449,7 +496,9 @@ msgid ""
 "Creative people have always noted that their best ideas seem to come out "
 "of the blue, in bed or in the shower. Many books on problem solving "
 "suggest relying on the subconscious for the really difficult problems."
-msgstr "創造的な人々は、常に彼らの最高のアイデアはベッドの中やシャワーの中で、はるか彼方から出てくるように見えることに気づいていました。 問題解決に関する多くの本は、本当に困難な問題を潜在意識に頼ることを提案しています。"
+msgstr ""
+"創造的な人々は、常に彼らの最高のアイデアはベッドの中やシャワーの中で、はるか彼方から出てくるように見えることに気づいていました。 "
+"問題解決に関する多くの本は、本当に困難な問題を潜在意識に頼ることを提案しています。"
 
 #: ../../chapter4.rst:298
 msgid ""
@@ -473,7 +522,9 @@ msgid ""
 " the circus act, but it seems more sensible to... use the full resources "
 "of our glorious neocortex... the multibillion-neuron capacity of the "
 "brain."
-msgstr "しばらくの間注意領域に持ち込まれることができる脳のその1つの小さな機能に大きな負荷がかかります。 サーカスのように偉業は可能ですが、私たちの栄光ある新皮質の全資源を利用すること...脳の数十億個のニューロンの能力を利用することがより賢明です。"
+msgstr ""
+"しばらくの間注意領域に持ち込まれることができる脳のその1つの小さな機能に大きな負荷がかかります。 "
+"サーカスのように偉業は可能ですが、私たちの栄光ある新皮質の全資源を利用すること...脳の数十億個のニューロンの能力を利用することがより賢明です。"
 
 #: ../../chapter4.rst:314
 msgid ""
@@ -481,7 +532,9 @@ msgid ""
 "observing, reading, collecting data, and reviewing what others have "
 "achieved.  Once in, [subconscious] procedures take over, simultaneously, "
 "automatically, outside of the attention zone."
-msgstr "…仕事には、観察、読み取り、データの収集、他の人が達成したことの確認など、脳に生の入力を提供する側面があります。 一度入ったら、「[潜在意識」手順が、同時に、自動的に、注意領域の外側を引き継ぎます。"
+msgstr ""
+"…仕事には、観察、読み取り、データの収集、他の人が達成したことの確認など、脳に生の入力を提供する側面があります。 "
+"一度入ったら、「[潜在意識」手順が、同時に、自動的に、注意領域の外側を引き継ぎます。"
 
 #: ../../chapter4.rst:319
 msgid ""
@@ -491,7 +544,9 @@ msgid ""
 "reaches dead ends and begins afresh, and eventually assembles an answer "
 "that is evaluated and then popped into conscious attention---often in "
 "astonishingly full-blown detail."
-msgstr "…それは明らかに思えますが…大型コンピュータと同じように、必ずしも継続的ではありませんが、検索はその間に行われています。 私は、検索が分岐し、開始し、停止し、行き止まりになり、そして新たに始まり、最終的には評価された後に意識的な注意を払うように解答を集めるという推測に疑問を感じます。"
+msgstr ""
+"…それは明らかに思えますが…大型コンピュータと同じように、必ずしも継続的ではありませんが、検索はその間に行われています。 "
+"私は、検索が分岐し、開始し、停止し、行き止まりになり、そして新たに始まり、最終的には評価された後に意識的な注意を払うように解答を集めるという推測に疑問を感じます。"
 
 #: ../../chapter4.rst:328
 msgid "Evaluate your solution. Look for other solutions."
@@ -501,13 +556,13 @@ msgstr "解決策を評価してください。 他の解決策を探してく�
 msgid ""
 "You may have found one way of skinning the cat. There may be other ways, "
 "and some of them may be better."
-msgstr "猫の皮を剥ぐ方法が1つ見つけたのかもしれません。 他の方法があるかもしれません、そしてそれらのうちのいくつかはより良いかもしれません。"
+msgstr "猫の皮を剥ぐ方法を1つ見つけたのかもしれません。 他の方法があるかもしれません、そしてそれらのうちのいくつかはより良いかもしれません。"
 
 #: ../../chapter4.rst:333
 msgid ""
 "Don’t invest too much effort in your first solution without asking "
 "yourself for a second opinion."
-msgstr "セカンドオピニオンを求めず、最初の解決策にばかり努力しないでください。"
+msgstr "最初の解決策にばかり傾注せず、セカンドオピニオンを求めて下さい。"
 
 #: ../../chapter4.rst:340
 msgid "\"I\\'m not just sleeping. I\\'m using my neocortex.\""
@@ -516,7 +571,7 @@ msgstr "「私はただ眠っているだけじゃありません。大脳新皮
 # ソフトウェア元祖　ソフトウェア開発者
 #: ../../chapter4.rst:343
 msgid "Interview with a Software Inventor"
-msgstr "ソフトウェア発明者へのインタビュー"
+msgstr "ソフトウェア新規開発者へのインタビュー"
 
 #: ../../chapter4.rst:397
 msgid ""
@@ -530,28 +585,36 @@ msgid ""
 "anything, to keep myself flexible. My first rule is, \"Nothing is "
 "impossible.\" My second rule is, \"Don't forget, the object is to make a "
 "buck.\""
-msgstr "私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 私の最初のルールは、「不可能なことは何もない」です。 私の2番目のルールは、「忘れないでください、目的は支出することです」です。"
+msgstr ""
+"私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 "
+"私の最初のルールは、「不可能なことは何もない」です。 私の2番目のルールは、「忘れないでください、目的は支出することです」です。"
 
 #: ../../chapter4.rst:351
 msgid ""
 "First examine the problem, laying out two or three approaches on paper. "
 "Then try the most appealing one, to see if it works. Carry it through. "
 "Then deliberately go all the way back to the beginning, and start over."
-msgstr "まず問題を調べ、2つか3つのアプローチを紙に書きます。 それからそれがはたらくかどうか見るために、最も魅力的なものを試してください。 通して実行してみます。それから、故意に始めまで戻って、最初からやり直します。"
+msgstr ""
+"まず問題を調べ、2つか3つのアプローチを紙に書きます。 それからそれがはたらくかどうか見るために、最も魅力的なものを試してください。 "
+"通して実行してみます。それから、故意に始めまで戻って、最初からやり直します。"
 
 #: ../../chapter4.rst:355
 msgid ""
 "Starting over has two values. First, it gives you a fresh approach. You "
 "either gravitate back to the way you started, or the way you started "
 "gravitates toward the new way."
-msgstr "最初からやり直すことには2つの価値があります。 まず、それはあなたに新鮮なアプローチを与えます。 あなたはあなたが始めたやり方に引き返すか、あなたが始めたやり方より新しいやり方に引き寄せられます。"
+msgstr ""
+"最初からやり直すことには2つの価値があります。 まず、それはあなたに新鮮なアプローチを与えます。 "
+"あなたはあなたが始めたやり方に引き返すか、あなたが始めたやり方より新しいやり方に引き寄せられます。"
 
 #: ../../chapter4.rst:359
 msgid ""
 "Second, the new approach may show all kinds of powerful possibilities. "
 "Now you have a benchmark. You can look at both approaches and compare the"
 " advantages of both. You're in a better position to judge."
-msgstr "第二に、新しいアプローチはあらゆる種類の強力な可能性を示すかもしれません。 今や、あなたは(既に一度試行したことで)基準となるものを持っています。 両方のアプローチを見て、両方の利点を比較することができます。 あなたは判断するのにより良い立場にあります。"
+msgstr ""
+"第二に、新しいアプローチはあらゆる種類の強力な可能性を示すかもしれません。 今や、あなたは(既に一度試行したことで)基準となるものを持っています。"
+" 両方のアプローチを見て、両方の利点を比較することができます。 あなたは判断するのにより良い立場にあります。"
 
 #: ../../chapter4.rst:363
 msgid ""
@@ -559,7 +622,9 @@ msgid ""
 "Remember to say, \"I want this kumquat crusher to be different. Let's "
 "reject the traditional design as not interesting. Let's try some crazy "
 "ideas.\""
-msgstr "身動きできなくなるのは、単一のアプローチに従うのが難しすぎるからです。 「私はこの金柑しぼり器を違うものにしたいのです。伝統的なデザインを面白くないと拒絶しましょう。クレイジーなアイデアを試してみましょう。」"
+msgstr ""
+"身動きできなくなるのは、単一のアプローチに従うのが難しすぎるからです。 "
+"「私はこの金柑しぼり器を違うものにしたいのです。伝統的なデザインを面白くないと拒絶しましょう。クレイジーなアイデアを試してみましょう。」"
 
 #: ../../chapter4.rst:368
 msgid ""
@@ -568,7 +633,9 @@ msgid ""
 "process. The human mind works exceptionally well with analogies. Putting "
 "things in context keeps you from getting stuck within the confines of any"
 " language, even Forth."
-msgstr "一番いいのは絵を描き始めることです。 私は小さな男を描きます。それが「データ」のように見えないようにして私の思考プロセスをいじくります。類推は思考を活性化させます。状況の中に物事を置くことは、Forthをはじめ、あなたがあらゆる言語の中に閉じ込められるのを防ぎます。"
+msgstr ""
+"一番いいのは絵を描き始めることです。 "
+"私は小さな男を描きます。それが「データ」のように見えないようにして私の思考プロセスをいじくります。類推は思考を活性化させます。状況の中に物事を置くことは、Forthをはじめ、あなたがあらゆる言語の中に閉じ込められるのを防ぎます。"
 
 #: ../../chapter4.rst:374
 msgid ""
@@ -576,14 +643,18 @@ msgid ""
 "When I want to think in broad strokes, to capture the overall flow, I "
 "draw on great big pieces of paper. These are some of the crazy tricks I "
 "use to keep from getting stagnant."
-msgstr "私は集中したいときは小さな紙切れに描きます。私が全体的な流れをとらえるために広い範囲で考えたいときは大きな一枚の紙に描きます。 これらは私が停滞しないようにするために使用するクレイジーなトリックのいくつかです。"
+msgstr ""
+"私は集中したいときは小さな紙切れに描きます。私が全体的な流れをとらえるために広い範囲で考えたいときは大きな一枚の紙に描きます。 "
+"これらは私が停滞しないようにするために使用するクレイジーなトリックのいくつかです。"
 
 #: ../../chapter4.rst:379
 msgid ""
 "When I program in Forth, I spend a day just dreaming, kicking around "
 "ideas. Usually before I start typing, I sketch it out in general terms. "
 "No code, just talk. Notes to myself."
-msgstr "私がForthでプログラムをするとき、私はただ夢を見ながら、アイデアをの周りを蹴って一日過ごします。 通常、打ち込みを始める前に、一般的な用語でそれをスケッチします。 手書きのコードはありません、語りだけです。自分へのメモだけです。"
+msgstr ""
+"私がForthでプログラムをするとき、私はただ夢を見ながら、アイデアをの周りを蹴って一日過ごします。 "
+"通常、打ち込みを始める前に、一般的な用語でそれをスケッチします。 手書きのコードはありません、語りだけです。自分へのメモだけです。"
 
 #: ../../chapter4.rst:383
 msgid ""
@@ -594,7 +665,12 @@ msgid ""
 " my top word into two and transfer one of them to an earlier block so I "
 "can use it earlier. I run the hardware if I have it; otherwise I simulate"
 " it."
-msgstr "それから私は最初のコードの最終行から始めます。 できる限り文章に近いように、自分がやりたいことを説明します。 それから私はエディタを使ってこの定義を画面の下にスライドさせ、そして内部のワードのコーディングを始めます。 それから私はそれがそれをするためのお粗末な方法であることに気づきます。 一番上のワードを2つに分割し、そのうちの1つを以前のブロック(スクリーン)に転送して、それをmもっと早く使用できるようにするかもしれません。 ハードウェアがある場合は実行してみます。 それ以外の場合はシミュレートします。"
+msgstr ""
+"それから私は最初のコードの最終行から始めます。 できる限り文章に近いように、自分がやりたいことを説明します。 "
+"それから私はエディタを使ってこの定義を画面の下にスライドさせ、そして内部のワードのコーディングを始めます。 "
+"それから私はそれがそれをするためのお粗末な方法であることに気づきます。 "
+"一番上のワードを2つに分割し、そのうちの1つを以前のブロック(スクリーン)に転送して、それをmもっと早く使用できるようにするかもしれません。 "
+"ハードウェアがある場合は実行してみます。 それ以外の場合はシミュレートします。"
 
 #: ../../chapter4.rst:390
 msgid ""
@@ -602,14 +678,19 @@ msgid ""
 "keyboard. Forth is so willing to do what I tell it to, I'll tell it to do"
 " all kinds of ridiculous things that have nothing to do with where I'm "
 "trying to go. At those times I have to get away from the keyboard."
-msgstr "Forthは自己訓練が必要です。 あなたはひたすらキーボードをいじくるのをやめる必要があります。 Forthは私が言うことをやろうとします。私が行こうとしている場所とは無関係のあらゆるばかげたことやろうとします。 その時は私はキーボードから離れなければなりません。"
+msgstr ""
+"Forthは自己訓練が必要です。 あなたはひたすらキーボードをいじくるのをやめる必要があります。 "
+"Forthは私が言うことをやろうとします。私が行こうとしている場所とは無関係のあらゆるばかげたことやろうとします。 "
+"その時は私はキーボードから離れなければなりません。"
 
 #: ../../chapter4.rst:395
 msgid ""
 "Forth lets you play. That's fine, chances are you'll get some ideas. As "
 "long as you keep yourself from playing as a habit. Your head is a whole "
 "lot better than the computer for inventing things."
-msgstr "Forthはあなたに遊ばせます。 それで結構です、あなたはいくつかのアイデアを得ることができるでしょう。 あなたがForthで遊ぶ習慣はあっても自分自身を保つ限り、あなたの頭は物事を生み出すコンピュータよりもはるかに優れています。"
+msgstr ""
+"Forthはあなたに遊ばせます。 それで結構です、あなたはいくつかのアイデアを得ることができるでしょう。 "
+"あなたがForthで遊ぶ習慣はあっても自分自身を保つ限り、あなたの頭は物事を生み出すコンピュータよりもはるかに優れています。"
 
 #: ../../chapter4.rst:400
 msgid "Detailed Design"
@@ -622,7 +703,9 @@ msgid ""
 " number of words, some of which (those that comprise the lexicon) will be"
 " used by other components and some of which (the internal words) will be "
 "only used within this component."
-msgstr "私たちは今、開発サイクルの中で、コンポーネント（または特定のワード）が必要だと決心したところです。 コンポーネントはいくつかのワードで構成され、その一部（用語集を構成するもの）は他のコンポーネントによって使用され、一部（内部のワード）はこのコンポーネント内でのみ使用されます。"
+msgstr ""
+"私たちは今、開発サイクルの中で、コンポーネント（または特定のワード）が必要だと決心したところです。 "
+"コンポーネントはいくつかのワードで構成され、その一部（用語集を構成するもの）は他のコンポーネントによって使用され、一部（内部のワード）はこのコンポーネント内でのみ使用されます。"
 
 #: ../../chapter4.rst:408
 msgid "Create as many words as necessary to obey the following tip:"
@@ -684,14 +767,16 @@ msgstr "私たちは最初の2つのステップについて深く掘り下げ�
 # 意味的に、このアプリ固有の「文法」を構築するという意味だろう。
 #: ../../chapter4.rst:444
 msgid "Forth Syntax"
-msgstr "文法を創造する"
+msgstr "Forthの文法"
 
 #: ../../chapter4.rst:446
 msgid ""
 "At this point in the development cycle you must decide how the words in "
 "your new lexicon will be used in context. In doing so, keep in mind how "
 "the lexicon will be used by subsequent components."
-msgstr "開発サイクルのこの時点で、新しい用語集のワードをどのように使用するのかを決定する必要があります。 その際、後続のコンポーネントがその用語集をどのように使用するかを覚えておいてください。"
+msgstr ""
+"開発サイクルのこの時点で、新しい用語集のワードをどのように使用するのかを決定する必要があります。 "
+"その際、後続のコンポーネントがその用語集をどのように使用するかを覚えておいてください。"
 
 #: ../../chapter4.rst:452
 msgid ""
@@ -705,7 +790,10 @@ msgid ""
 "You must design the syntax of the lexicon so that the words make sense "
 "when they appear in context. Hiding interrelated information within the "
 "component will ensure maintainability, as we’ve seen."
-msgstr "各コンポーネントはそれを使用するコンポーネントを念頭に置いて設計する必要があります。 ワードが文脈の中で現れるときに意味がわかるように、あなたは用語集の文法を設計しなければなりません。 これまで見てきたように、相互に関連する情報をコンポーネント内に隠すことで、保守性を確保します。"
+msgstr ""
+"各コンポーネントはそれを使用するコンポーネントを念頭に置いて設計する必要があります。 "
+"ワードが文脈の中で現れるときに意味がわかるように、あなたは用語集の文法を設計しなければなりません。 "
+"これまで見てきたように、相互に関連する情報をコンポーネント内に隠すことで、保守性を確保します。"
 
 #: ../../chapter4.rst:460
 msgid ""
@@ -714,14 +802,16 @@ msgid ""
 "writing a lot of unnecessary code by choosing a syntax that Forth can "
 "support without any special effort on your part."
 msgstr ""
+"同時に、Forthの自身の文法を観察してください。 "
+"あなたが親しんでいるという理由で特定の文法を主張するのではなく、Forthが特別な努力をしなくてもサポートできる文法を選択することで、不要なコードをたくさん書く必要がなくなります。"
 
 #: ../../chapter4.rst:465
 msgid "Here are some elementary rules of Forth’s natural syntax:"
-msgstr ""
+msgstr "Forthの自然な文法の基本的なルールは次のとおりです。"
 
 #: ../../chapter4.rst:469
 msgid "Let numbers precede names."
-msgstr ""
+msgstr "数字を名前の前に置く。"
 
 #: ../../chapter4.rst:471
 msgid ""
@@ -730,27 +820,33 @@ msgid ""
 "precede the name. For instance, the syntax of the word ``SPACES``, which "
 "emits “:math:`n`” number of spaces, is"
 msgstr ""
+"数値引数を必要とするワードは、当然その番号をスタック上で見つけることを期待します。 文法的に言えば、番号は名前の前に置きます。 たとえば、 "
+"n個のスペースを出力する ``SPACES`` というワードの構文は、"
 
 #: ../../chapter4.rst:480
 msgid ""
 "Sometimes this rule violates the order that our ear is accustomed to "
-"hearing. For instance, the Forth word + expects to be preceded by both "
-"arguments, as in"
+"hearing. For instance, the Forth word ``+`` expects to be preceded by "
+"both arguments, as in"
 msgstr ""
+"です。時々、このルールは(英語圏の)私たちが聞き慣れている順番に違反します。 たとえば、Forthのワード ``+`` "
+"の前には、以下ののように両方の引数が置かれることを想定しています。"
 
 #: ../../chapter4.rst:488
 msgid "This ordering, in which values precede operators, is called “postfix.”"
-msgstr ""
+msgstr "値が演算子がに先行するこの順序付けは「後置」と呼ばれます。"
 
 #: ../../chapter4.rst:491
 msgid ""
 "Forth, in its magnanimity, won’t *insist* upon postfix notation. You "
-"could redefine + to expect one number in the input stream, like this:"
+"could redefine ``+`` to expect one number in the input stream, like this:"
 msgstr ""
+"Forthは心が広いので、後置記法(訳注：しばしば「逆ポーランド記法」(RPN)とも言われる)を無理強いする事はありません。以下のように、入力ストリーム内で数の1つを期待するように"
+" ``+`` を再定義することもできます。"
 
 #: ../../chapter4.rst:498
 msgid "by defining it so:"
-msgstr ""
+msgstr "この定義は以下です。"
 
 #: ../../chapter4.rst:504
 msgid ""
@@ -758,58 +854,57 @@ msgid ""
 "returns a double-length value as in the 83 Standard Uncontrolled "
 "Reference Words)."
 msgstr ""
+"(ここで、``WORD`` は79および83標準のワードで、アドレスを返し、そして83標準では非推奨のワード(Forth-83 Appendix "
+"B. Uncontorlled Reference Words 参照)である ``NUMBER`` は倍長整数を返します)"
 
 #: ../../chapter4.rst:508
 msgid ""
 "Fine. But you wouldn’t be able to use this definition inside other colon "
 "definitions or pass it arguments, thereby defeating one of Forth’s major "
 "advantages."
-msgstr ""
+msgstr "これはいい。しかし、この定義を他のコロン定義の中で使用したり引数を渡したりすることはできず、それによってForthの大きな利点の1つが無効になります。"
 
 #: ../../chapter4.rst:512
 msgid ""
-"Frequently, “noun” type words pass their addresses (or any type of "
+"Frequently, \"noun\" type words pass their addresses (or any type of "
 "pointer) as a stack argument to “verb” type words. The Forth-like syntax "
 "of"
-msgstr ""
+msgstr "多くの場合、「名詞(noun)」タイプのワードは、そのアドレス（または任意のタイプのポインタ）を「動詞(verb)」タイプのワードのスタック引数として渡します。以下がForth流の文法です。"
 
-#: ../../chapter4.rst:516
-msgid "“noun” “verb”"
-msgstr ""
-
-#: ../../chapter4.rst:522
-msgid "img4-110"
-msgstr ""
-
-#: ../../chapter4.rst:524
+#: ../../chapter4.rst:520
 msgid "will generally prove easiest to implement because of the stack."
-msgstr ""
+msgstr "これらはスタックを使って普通に実装するのが最も簡単です。"
 
-#: ../../chapter4.rst:527
+#: ../../chapter4.rst:525
 msgid ""
 "In some cases this word order sounds unnatural. For instance, suppose we "
-"have a file named ``INVENTORY`` . One thing we can do with that file is "
+"have a file named ``INVENTORY``. One thing we can do with that file is "
 "``SHOW`` it; that is, format the information in pretty columns. If "
-"``INVENTORY`` passes a pointer to ``SHOW`` , which acts upon it, the "
+"``INVENTORY`` passes a pointer to ``SHOW``, which acts upon it, the "
 "syntax becomes"
 msgstr ""
+"(英語では)場合によっては、この語順は不自然に聞こえます。 たとえば、 ``INVENTORY`` というファイルがあるとします。 "
+"そのファイルを使ってできることの1つは、 ``SHOW`` です。 つまり、情報をきれいな列にフォーマットします。 ``INVENTORY`` "
+"がそれに作用する ``SHOW`` へのポインタを渡すと、文法は以下のようになります。"
 
-#: ../../chapter4.rst:537
+#: ../../chapter4.rst:536
 msgid ""
 "If your spec demands the English word-order, Forth offers ways to achieve"
 " it. But most involve new levels of complexity. Sometimes the best thing "
 "to do is to choose a better name. How about"
 msgstr ""
+"あなたの仕様が英語の語順を要求するならば、Forthはそれを達成する方法を提供します。 しかしほとんどの場合、新しいレベルの複雑さが伴います。 "
+"時々、よりよい名前を選ぶ事に最善を尽くしてください。例えばこんなのはどうですか？"
 
-#: ../../chapter4.rst:548
+#: ../../chapter4.rst:547
 msgid "(We’ve made the “pointer” an adjective, and the “actor” a noun.)"
-msgstr ""
+msgstr "（ここでは、 ``INVENTORY`` を形容詞として扱い、``REPORT`` 名詞として扱いました。）"
 
-#: ../../chapter4.rst:550
+#: ../../chapter4.rst:549
 msgid "If the requirements insist on the syntax"
-msgstr ""
+msgstr "もし要件で文法を指定された場合は以下のようにします。"
 
-#: ../../chapter4.rst:556
+#: ../../chapter4.rst:555
 msgid ""
 "we have several options. ``SHOW`` might set a flag and ``INVENTORY`` "
 "would act according to the flag. Such an approach has certain "
@@ -818,69 +913,82 @@ msgid ""
 "these problems in Chapters :doc:`Chapter Seven<chapter7>` and "
 ":doc:`Chapter Eight<chapter8>` .)"
 msgstr ""
+"いくつかの選択肢があります。 ``SHOW`` はフラグを立て、 ``INVENTORY`` はそのフラグに従って動作します。 "
+"このようなアプローチには、特に ``INVENTORY`` "
+"がそれに対して実行される可能性のあるすべてのアクションを認識するのに十分「スマート」でなければならないという欠点があります(これらの問題は、 "
+":doc:`第７章<chapter7>` と :doc:`第８章<chapter8>` で扱っています)。"
 
-#: ../../chapter4.rst:563
+#: ../../chapter4.rst:562
 msgid ""
 "Or, ``SHOW`` might look ahead at the next word in the input stream. We’ll"
 " discuss this approach in a tip, “Avoid expectations,” later in this "
 "chapter."
 msgstr ""
+"あるいは、 ``SHOW`` は入力ストリームの次のワードを先読みするかもしれません。 "
+"この章で後述する「期待を避ける」というヒントで、このアプローチについて説明します。"
 
-#: ../../chapter4.rst:567
+#: ../../chapter4.rst:566
 msgid ""
 "Or, the recommended approach, ``SHOW`` might set an “execution variable” "
 "that ``INVENTORY`` will then execute. (We’ll discuss vectored execution "
 "in :doc:`Chapter Seven<chapter7>`.)"
 msgstr ""
+"あるいは、推奨されるアプローチとして、 ``SHOW`` は ``INVENTORY`` "
+"が実行する「ワードへのポインタ」を設定するかもしれません(ベクトル実行については :doc:`第７章<chapter7>` で議論します)。"
 
-#: ../../chapter4.rst:573
+#: ../../chapter4.rst:572
 msgid "Let text follow names."
-msgstr ""
+msgstr "テキストは名前の後ろに続けます。"
 
-#: ../../chapter4.rst:575
+#: ../../chapter4.rst:574
 msgid ""
 "If the Forth interpreter finds a string of text that is neither a number "
 "nor a predefined word, it will abort with an error message. For this "
 "reason, an undefined string must be preceded by a defined word."
 msgstr ""
+"Forthインタプリタが数字でも定義済みのワードでもないテキスト文字列を見つけると、エラーメッセージを表示して中断します。 "
+"このため、未定義の文字列の前には定義済みのワードを置かなければなりません。"
 
-#: ../../chapter4.rst:579
+#: ../../chapter4.rst:578
 msgid ""
 "An example is ``.\"`` (dot-quote), which precedes the text it will later "
 "print. Another example is ``CREATE`` (as well as all defining words), "
 "which precedes the name that is, at the moment, still undefined."
 msgstr ""
+"例としては  ``.\"`` (ドット・クォート）があります。これはその後ろに続くプリントするテキストの前に置きます(訳注： ``.\"`` "
+"をワードとして認識させるために、その間に空白を置かねばならない。これが他言語と比べて間違いやすいところ)。もう1つの例は ``CREATE`` "
+"(そしてすべての定義語)です。 現時点ではまだ定義されていない名前の直前に置かれます(訳注：空白に関して ``.\"`` と同様)。"
 
-#: ../../chapter4.rst:584
+#: ../../chapter4.rst:583
 msgid ""
 "The rule also applies to defined words that you want to refer to, but not"
 " execute in the usual way. An example is ``FORGET`` , as in"
-msgstr ""
+msgstr "このルールは参照したい定義済ワードにも適用されますが、通常の方法では実行されません。その一つの例として以下の ``FORGET`` があります。"
 
-#: ../../chapter4.rst:593
+#: ../../chapter4.rst:592
 msgid ""
 "Syntactically, ``FORGET`` must precede ``TASK`` so that ``TASK`` doesn’t "
 "execute."
-msgstr ""
+msgstr "文法的には ``FORGET`` は ``TASK`` が実行されないように、 ``TASK`` の前に置く必要があります。"
 
-#: ../../chapter4.rst:598
+#: ../../chapter4.rst:597
 msgid "Let definitions consume their arguments."
-msgstr ""
+msgstr "定義に引数を消費させます。"
 
-#: ../../chapter4.rst:600
+#: ../../chapter4.rst:599
 msgid ""
 "This syntax rule is more a convention of good Forth programming than a "
 "preference of Forth."
-msgstr ""
+msgstr "この文法ルールは、Forth的に必要というより、優れたForthプログラミングの規則です。"
 
-#: ../../chapter4.rst:603
+#: ../../chapter4.rst:602
 msgid ""
 "Suppose you’re writing the word ``LAUNCH``, which requires the number of "
 "a launch pad and fires the appropriate rocket. You want the definition to"
 " look roughly like this:"
-msgstr ""
+msgstr "発射台の番号を必要とし、適切なロケットを発射する ``LAUNCH`` というワードを書いているとしましょう。 この定義は、おおよそ次のようになります。"
 
-#: ../../chapter4.rst:611
+#: ../../chapter4.rst:610
 msgid ""
 "Each of the three internal definitions will require the same argument, "
 "the launch pad number. You’ll need two ``DUP`` s somewhere. The question "
@@ -889,22 +997,22 @@ msgid ""
 " of ``LOAD`` and ``AIM``, you’ll have to define:"
 msgstr ""
 
-#: ../../chapter4.rst:621
+#: ../../chapter4.rst:620
 msgid ""
 "By convention, the latter version is preferable, because ``LOAD`` and "
 "``AIM`` are cleaner. They do what you expect them to do. Should you have "
 "to define ``READY``, you can do it so:"
 msgstr ""
 
-#: ../../chapter4.rst:629
+#: ../../chapter4.rst:628
 msgid "and not"
 msgstr ""
 
-#: ../../chapter4.rst:637
+#: ../../chapter4.rst:636
 msgid "Use zero-relative numbering."
 msgstr ""
 
-#: ../../chapter4.rst:639
+#: ../../chapter4.rst:638
 msgid ""
 "By habit we humans number things starting with one: “first, second, "
 "third,” etc. Mathematical models, on the other hand, work more naturally "
@@ -912,7 +1020,7 @@ msgid ""
 "becomes easier to write when we use zero-relative numbering."
 msgstr ""
 
-#: ../../chapter4.rst:645
+#: ../../chapter4.rst:644
 msgid ""
 "To illustrate, suppose we have a table of eight-byte records. The first "
 "record occupies the first eight bytes of the table. To compute its "
@@ -920,63 +1028,63 @@ msgid ""
 "address of the “second” record, we add “8” to ``TABLE``."
 msgstr ""
 
-#: ../../chapter4.rst:654
+#: ../../chapter4.rst:653
 msgid "A table of 8-byte records."
 msgstr ""
 
-#: ../../chapter4.rst:656
+#: ../../chapter4.rst:655
 msgid "It’s easy to derive a formula to achieve these results:"
 msgstr ""
 
-#: ../../chapter4.rst:661
+#: ../../chapter4.rst:660
 msgid "first record starts at:"
 msgstr ""
 
-#: ../../chapter4.rst:662
+#: ../../chapter4.rst:661
 msgid "0 × 8 ="
 msgstr ""
 
-#: ../../chapter4.rst:663 ../../chapter4.rst:1228
+#: ../../chapter4.rst:662 ../../chapter4.rst:1227
 msgid "0"
 msgstr ""
 
-#: ../../chapter4.rst:664
+#: ../../chapter4.rst:663
 msgid "second record starts at:"
 msgstr ""
 
-#: ../../chapter4.rst:665
+#: ../../chapter4.rst:664
 msgid "1 × 8 ="
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:666 ../../chapter4.rst:1244
+#: ../../chapter4.rst:1 ../../chapter4.rst:665 ../../chapter4.rst:1243
 msgid "8"
 msgstr ""
 
-#: ../../chapter4.rst:667
+#: ../../chapter4.rst:666
 msgid "third record starts at:"
 msgstr ""
 
-#: ../../chapter4.rst:668
+#: ../../chapter4.rst:667
 msgid "2 × 8 ="
 msgstr ""
 
-#: ../../chapter4.rst:669
+#: ../../chapter4.rst:668
 msgid "16"
 msgstr ""
 
-#: ../../chapter4.rst:671
+#: ../../chapter4.rst:670
 msgid ""
 "We can easily write a word which converts a record# into the address "
 "where that record begins:"
 msgstr ""
 
-#: ../../chapter4.rst:679
+#: ../../chapter4.rst:678
 msgid ""
 "Thus in computer terms it makes sense to call the “first record” the 0th "
 "record."
 msgstr ""
 
-#: ../../chapter4.rst:682
+#: ../../chapter4.rst:681
 msgid ""
 "If your requirements demand that numbering start at one, that’s fine. Use"
 " zero-relative numbering throughout your design and then, only in the "
@@ -984,68 +1092,68 @@ msgid ""
 " conversion from zero-to one-relative numbering:"
 msgstr ""
 
-#: ../../chapter4.rst:695
+#: ../../chapter4.rst:694
 msgid "Let addresses precede counts."
 msgstr ""
 
-#: ../../chapter4.rst:697
+#: ../../chapter4.rst:696
 msgid ""
 "Again, this is a convention, not a requirement of Forth, but such "
 "conventions are essential for readable code. You’ll find examples of this"
 " rule in the words ``TYPE``, ``ERASE``, and ``BLANK``."
 msgstr ""
 
-#: ../../chapter4.rst:703
+#: ../../chapter4.rst:702
 msgid "Let sources precede destinations."
 msgstr ""
 
-#: ../../chapter4.rst:705
+#: ../../chapter4.rst:704
 msgid ""
 "Another convention for readability. For instance, in some systems, the "
 "phrase"
 msgstr ""
 
-#: ../../chapter4.rst:712
+#: ../../chapter4.rst:711
 msgid ""
 "copies Screen 22 to Screen 37. The syntax of ``CMOVE`` incorporates both "
 "this convention and the previous convention:"
 msgstr ""
 
-#: ../../chapter4.rst:721
+#: ../../chapter4.rst:720
 msgid "Avoid expectations (in the input stream)."
 msgstr ""
 
-#: ../../chapter4.rst:723
+#: ../../chapter4.rst:722
 msgid ""
 "Generally try to avoid creating words that presume there will be other "
 "words in the input stream."
 msgstr ""
 
-#: ../../chapter4.rst:726
+#: ../../chapter4.rst:725
 msgid ""
 "Suppose your color computer represents blue with the value 1, and light-"
 "blue with 9. You want to define two words: ``BLUE`` will return 1; "
 "``LIGHT`` may precede ``BLUE`` to produce 9."
 msgstr ""
 
-#: ../../chapter4.rst:730
+#: ../../chapter4.rst:729
 msgid ""
 "In Forth, it would be possible to define ``BLUE`` as a constant, so that "
 "when executed it always returns 1."
 msgstr ""
 
-#: ../../chapter4.rst:737
+#: ../../chapter4.rst:736
 msgid ""
 "And then define ``LIGHT`` such that it looks for the next word in the "
 "input stream, executes it, and “ors” it with 8 (the logic of this will "
 "become apparent when we visit this example again, later in the book):"
 msgstr ""
 
-#: ../../chapter4.rst:746
+#: ../../chapter4.rst:745
 msgid "(in fig-Forth:"
 msgstr ""
 
-#: ../../chapter4.rst:752
+#: ../../chapter4.rst:751
 msgid ""
 "(For novices: The apostrophe in the definition of ``LIGHT`` is a Forth "
 "word called “tick.” Tick is a dictionary-search word; it takes a name and"
@@ -1057,45 +1165,45 @@ msgid ""
 "``LIGHT`` now “or”s an 8 into the 1, producing a 9.)"
 msgstr ""
 
-#: ../../chapter4.rst:761
+#: ../../chapter4.rst:760
 msgid ""
 "This definition will work when invoked in the input stream, but special "
 "handling is required if we want to let ``LIGHT`` be invoked within a "
 "colon definition, as in:"
 msgstr ""
 
-#: ../../chapter4.rst:769
+#: ../../chapter4.rst:768
 msgid ""
 "Even in the input stream, the use of ``EXECUTE`` here will cause a crash "
 "if ``LIGHT`` is accidentally followed by something other than a defined "
 "word."
 msgstr ""
 
-#: ../../chapter4.rst:772
+#: ../../chapter4.rst:771
 msgid ""
 "The preferred technique, if you’re forced to use this particular syntax, "
 "is to have ``LIGHT`` set a flag, and have ``BLUE`` determine whether that"
 " flag was set, as we’ll see later on."
 msgstr ""
 
-#: ../../chapter4.rst:776
+#: ../../chapter4.rst:775
 msgid ""
 "There will be times when looking ahead in the input stream is desirable, "
 "even necessary. (The proposed ``TO`` solution is often implemented this "
 "way [rosen82]_.)"
 msgstr ""
 
-#: ../../chapter4.rst:780
+#: ../../chapter4.rst:779
 msgid ""
 "But generally, avoid expectations. You’re setting yourself up for "
 "disappointment."
 msgstr ""
 
-#: ../../chapter4.rst:785
+#: ../../chapter4.rst:784
 msgid "Let commands perform themselves."
 msgstr ""
 
-#: ../../chapter4.rst:787
+#: ../../chapter4.rst:786
 msgid ""
 "This rule is a corollary to “Avoid expectations.” It’s one of Forth’s "
 "philosophical quirks to let words do their own work. Witness the Forth "
@@ -1103,35 +1211,35 @@ msgid ""
 ":numref:`fig4-7` . It has very few rules:"
 msgstr ""
 
-#: ../../chapter4.rst:797
+#: ../../chapter4.rst:796
 msgid "The traditional compiler vs. the Forth compiler."
 msgstr ""
 
-#: ../../chapter4.rst:799
+#: ../../chapter4.rst:798
 msgid ""
 "Scan for the next word in the input stream and look it up in the "
 "dictionary."
 msgstr ""
 
-#: ../../chapter4.rst:802
+#: ../../chapter4.rst:801
 msgid "If it’s an ordinary word, *compile* its address."
 msgstr ""
 
-#: ../../chapter4.rst:804
+#: ../../chapter4.rst:803
 msgid "If it’s an “immediate” word, *execute* it."
 msgstr ""
 
-#: ../../chapter4.rst:806
+#: ../../chapter4.rst:805
 msgid ""
 "If it’s not a defined word, try to convert it to a number and compile it "
 "as a literal."
 msgstr ""
 
-#: ../../chapter4.rst:809
+#: ../../chapter4.rst:808
 msgid "If it’s not a number, abort with an error message."
 msgstr ""
 
-#: ../../chapter4.rst:811
+#: ../../chapter4.rst:810
 msgid ""
 "Nothing is mentioned about compiling-words such as ``IF``, ``ELSE``, "
 "``THEN``, etc. The colon compiler doesn’t know about these words. It "
@@ -1140,14 +1248,14 @@ msgid ""
 "Control the Colon Compiler.”)"
 msgstr ""
 
-#: ../../chapter4.rst:817
+#: ../../chapter4.rst:816
 msgid ""
 "The compiler doesn’t even “look for” semicolon to know when to stop "
 "compiling. Instead it *executes* semicolon, allowing it to do the work of"
 " ending the definition and shutting off the compiler."
 msgstr ""
 
-#: ../../chapter4.rst:821
+#: ../../chapter4.rst:820
 msgid ""
 "There are two tremendous advantages to this approach. First, the compiler"
 " is so simple it can be written in a few lines of code. Second, there’s "
@@ -1156,21 +1264,21 @@ msgid ""
 "extensible!"
 msgstr ""
 
-#: ../../chapter4.rst:827
+#: ../../chapter4.rst:826
 msgid ""
 "Forth’s text interpreter and Forth’s address interpreter also adhere to "
 "this same rule."
 msgstr ""
 
-#: ../../chapter4.rst:830
+#: ../../chapter4.rst:829
 msgid "The following tip is perhaps the most important in this chapter:"
 msgstr ""
 
-#: ../../chapter4.rst:834
+#: ../../chapter4.rst:833
 msgid "Don't write your own interpreter/compiler when you can use {Forth}{}'s."
 msgstr ""
 
-#: ../../chapter4.rst:836
+#: ../../chapter4.rst:835
 msgid ""
 "One class of applications answers a need for a special purpose language—a"
 " self-contained set of commands for doing one particular thing. An "
@@ -1180,7 +1288,7 @@ msgid ""
 "mainstream philosophy."
 msgstr ""
 
-#: ../../chapter4.rst:843
+#: ../../chapter4.rst:842
 msgid ""
 "Traditional assemblers are special-purpose interpreters—that is, they are"
 " complicated programs that scan the assembly-language listing looking for"
@@ -1189,32 +1297,32 @@ msgid ""
 "lexicon of Forth words that themselves assemble machine instructions."
 msgstr ""
 
-#: ../../chapter4.rst:850
+#: ../../chapter4.rst:849
 msgid ""
 "There are many more examples of the special purpose language, each "
 "specific to individual applications. For instance:"
 msgstr ""
 
-#: ../../chapter4.rst:853
+#: ../../chapter4.rst:852
 msgid ""
 "If you\\’re building an Adventure-type game, you\\’d want to write a "
 "language that lets you create and describe monsters and rooms, etc. You "
 "might create a defining word called ``ROOM`` to be used like this:"
 msgstr ""
 
-#: ../../chapter4.rst:861
+#: ../../chapter4.rst:860
 msgid ""
 "Then create a set of words to describe the room\\’s attributes by "
 "building unseen data structures associated with the room:"
 msgstr ""
 
-#: ../../chapter4.rst:871
+#: ../../chapter4.rst:870
 msgid ""
 "The commands of this game-building language can simply be Forth words, "
 "with Forth as the interpreter."
 msgstr ""
 
-#: ../../chapter4.rst:874
+#: ../../chapter4.rst:873
 msgid ""
 "If you’re working with Programmable Array Logic (PAL) devices, you’d like"
 " a form of notation that lets you describe the behavior of the output "
@@ -1223,7 +1331,7 @@ msgid ""
 "Stolowitz [stolowitz82]_ ."
 msgstr ""
 
-#: ../../chapter4.rst:881
+#: ../../chapter4.rst:880
 msgid ""
 "If you must create a series of user menus to drive your application, you "
 "might want to first develop a menu-compiling language. The words of this "
@@ -1232,39 +1340,39 @@ msgid ""
 " cursor, etc."
 msgstr ""
 
-#: ../../chapter4.rst:887
+#: ../../chapter4.rst:886
 msgid ""
 "All of these examples can be coded in Forth as lexicons, using the normal"
 " Forth interpreter, without having to write a special-purpose interpreter"
 " or compiler."
 msgstr ""
 
-#: ../../chapter4.rst:907 ../../chapter4.rst:1742
+#: ../../chapter4.rst:906 ../../chapter4.rst:1741
 msgid "**Moore**:"
 msgstr ""
 
-#: ../../chapter4.rst:892
+#: ../../chapter4.rst:891
 msgid ""
 "A simple solution is one that does not obscure the problem with "
 "irrelevancies.  It\\'s conceivable that something about the problem "
 "requires"
 msgstr ""
 
-#: ../../chapter4.rst:896
+#: ../../chapter4.rst:895
 msgid ""
 "a unique interpreter. But every time you see a unique interpreter, it "
 "implies that there is something particularly awkward about the problem. "
 "And that is almost never the case."
 msgstr ""
 
-#: ../../chapter4.rst:900
+#: ../../chapter4.rst:899
 msgid ""
 "If you write your own interpreter, the interpreter is almost certainly "
 "the most complex, elaborate part of your entire application. You have "
 "switched from solving a problem to writing an interpreter."
 msgstr ""
 
-#: ../../chapter4.rst:904
+#: ../../chapter4.rst:903
 msgid ""
 "I think that programmers like to write interpreters. They like to do "
 "these elaborate difficult things. But there comes a time when the world "
@@ -1272,11 +1380,11 @@ msgid ""
 "binary, and start solving problems."
 msgstr ""
 
-#: ../../chapter4.rst:910
+#: ../../chapter4.rst:909
 msgid "Algorithms and Data Structures"
 msgstr ""
 
-#: ../../chapter4.rst:912
+#: ../../chapter4.rst:911
 msgid ""
 "In :doc:`Chapter Two<chapter2>` we learned how to describe a problem\\’s "
 "requirements in terms of interfaces and rules. In this section we\\’ll "
@@ -1284,7 +1392,7 @@ msgid ""
 "algorithms and data structures."
 msgstr ""
 
-#: ../../chapter4.rst:918
+#: ../../chapter4.rst:917
 msgid ""
 "An algorithm is a procedure, described as a finite number of rules, for "
 "accomplishing a certain task. The rules must be unambiguous and "
@@ -1292,7 +1400,7 @@ msgid ""
 "is named for the ninth century Persian mathematician al-Khowarizmi.)"
 msgstr ""
 
-#: ../../chapter4.rst:923
+#: ../../chapter4.rst:922
 msgid ""
 "An algorithm lies halfway between the imprecise directives of human "
 "speech, such as “Please sort these letters chronologically,” and the "
@@ -1300,27 +1408,27 @@ msgid ""
 "etc. The algorithm for sorting letters chronologically might be this:"
 msgstr ""
 
-#: ../../chapter4.rst:928
+#: ../../chapter4.rst:927
 msgid "Take an unsorted letter and note its date."
 msgstr ""
 
-#: ../../chapter4.rst:930
+#: ../../chapter4.rst:929
 msgid "Find the correspondence folder for that month and year."
 msgstr ""
 
-#: ../../chapter4.rst:932
+#: ../../chapter4.rst:931
 msgid ""
 "Flip through the letters in the folder, starting from the front, until "
 "you find the first letter dated later than your current letter."
 msgstr ""
 
-#: ../../chapter4.rst:935
+#: ../../chapter4.rst:934
 msgid ""
 "Insert your current letter just in front of the letter dated later. (If "
 "the folder is empty, just insert the letter.)"
 msgstr ""
 
-#: ../../chapter4.rst:938
+#: ../../chapter4.rst:937
 msgid ""
 "There may be several possible algorithms for the same job. The algorithm "
 "given above would work fine for folders containing ten or fewer letters, "
@@ -1328,11 +1436,11 @@ msgid ""
 "efficient algorithm, such as this:"
 msgstr ""
 
-#: ../../chapter4.rst:943 ../../chapter4.rst:945
+#: ../../chapter4.rst:942 ../../chapter4.rst:944
 msgid "(same)"
 msgstr ""
 
-#: ../../chapter4.rst:947
+#: ../../chapter4.rst:946
 msgid ""
 "If the date falls within the first half of the month, open the folder a "
 "third of the way in. If the letter you find there is dated later than "
@@ -1342,7 +1450,7 @@ msgid ""
 "backward…"
 msgstr ""
 
-#: ../../chapter4.rst:954
+#: ../../chapter4.rst:953
 msgid ""
 "… You get the point. This second algorithm is more complicated than the "
 "first. But in execution it will require fewer steps on the average "
@@ -1350,7 +1458,7 @@ msgid ""
 "every time) and therefore can be performed faster."
 msgstr ""
 
-#: ../../chapter4.rst:959
+#: ../../chapter4.rst:958
 msgid ""
 "A data structure is an arrangement of data or locations for data, "
 "organized especially to match the problem. In the last example, the file "
@@ -1360,43 +1468,43 @@ msgid ""
 "doing the filing (algorithms)."
 msgstr ""
 
-#: ../../chapter4.rst:968
+#: ../../chapter4.rst:967
 msgid "Calculations vs. Data Structures vs. Logic"
 msgstr ""
 
-#: ../../chapter4.rst:970
+#: ../../chapter4.rst:969
 msgid ""
 "We’ve stated before that the best solution to a problem is the simplest "
 "adequate one; for any problem we should strive for the simplest approach."
 msgstr ""
 
-#: ../../chapter4.rst:974
+#: ../../chapter4.rst:973
 msgid "Suppose we must write code to fulfill this specification:"
 msgstr ""
 
-#: ../../chapter4.rst:982
+#: ../../chapter4.rst:981
 msgid "There are three approaches we could take:"
 msgstr ""
 
-#: ../../chapter4.rst:987
+#: ../../chapter4.rst:986
 msgid "Calculation"
 msgstr ""
 
-#: ../../chapter4.rst:993 ../../chapter4.rst:1223
+#: ../../chapter4.rst:992 ../../chapter4.rst:1222
 msgid "Data Structure"
 msgstr ""
 
-#: ../../chapter4.rst:1001
+#: ../../chapter4.rst:1000
 msgid "Logic"
 msgstr ""
 
-#: ../../chapter4.rst:1003
+#: ../../chapter4.rst:1002
 msgid ""
 "In this problem, calculation is simplest. Assuming it is also adequate "
 "(speed is not critical), calculation is best."
 msgstr ""
 
-#: ../../chapter4.rst:1006
+#: ../../chapter4.rst:1005
 msgid ""
 "The problem of converting angles to sines and cosines can be implemented "
 "more simply (at least in terms of lines of code and object size) by "
@@ -1406,126 +1514,126 @@ msgid ""
 "using the data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1013
+#: ../../chapter4.rst:1012
 msgid ""
 "In :doc:`Chapter Two<chapter2>` we introduced the telephone rate problem."
 " In that problem the rates appeared to be arbitrary, so we designed a "
 "data structure:"
 msgstr ""
 
-#: ../../chapter4.rst:1018
+#: ../../chapter4.rst:1017
 msgid "Full Rate"
 msgstr ""
 
-#: ../../chapter4.rst:1018
+#: ../../chapter4.rst:1017
 msgid "Lower Rate"
 msgstr ""
 
-#: ../../chapter4.rst:1018
+#: ../../chapter4.rst:1017
 msgid "Lowest Rate"
 msgstr ""
 
-#: ../../chapter4.rst:1020
+#: ../../chapter4.rst:1019
 msgid "First Min."
 msgstr ""
 
-#: ../../chapter4.rst:1020
+#: ../../chapter4.rst:1019
 msgid ".30"
 msgstr ""
 
-#: ../../chapter4.rst:1020
+#: ../../chapter4.rst:1019
 msgid ".22"
 msgstr ""
 
-#: ../../chapter4.rst:1020 ../../chapter4.rst:1022
+#: ../../chapter4.rst:1019 ../../chapter4.rst:1021
 msgid ".12"
 msgstr ""
 
-#: ../../chapter4.rst:1022
+#: ../../chapter4.rst:1021
 msgid "Add’1 Mins."
 msgstr ""
 
-#: ../../chapter4.rst:1022
+#: ../../chapter4.rst:1021
 msgid ".10"
 msgstr ""
 
-#: ../../chapter4.rst:1022
+#: ../../chapter4.rst:1021
 msgid ".06"
 msgstr ""
 
-#: ../../chapter4.rst:1025
+#: ../../chapter4.rst:1024
 msgid ""
 "Using a data structure was simpler than trying to invent a formula by "
 "which these values could be calculated. And the formula might prove wrong"
 " later. In this case, table-driven code is easier to maintain."
 msgstr ""
 
-#: ../../chapter4.rst:1030
+#: ../../chapter4.rst:1029
 msgid ""
 "In :doc:`Chapter Three<chapter3>` we designed a keystroke interpreter for"
 " our Tiny Editor using a decision table:"
 msgstr ""
 
-#: ../../chapter4.rst:1037
+#: ../../chapter4.rst:1036
 msgid "Key"
 msgstr ""
 
-#: ../../chapter4.rst:1038
+#: ../../chapter4.rst:1037
 msgid "Not-Inserting"
 msgstr ""
 
-#: ../../chapter4.rst:1039
+#: ../../chapter4.rst:1038
 msgid "Inserting"
 msgstr ""
 
-#: ../../chapter4.rst:1040
+#: ../../chapter4.rst:1039
 msgid "Ctrl-D"
 msgstr ""
 
-#: ../../chapter4.rst:1041
+#: ../../chapter4.rst:1040
 msgid "DELETE"
 msgstr ""
 
-#: ../../chapter4.rst:1042 ../../chapter4.rst:1045
+#: ../../chapter4.rst:1041 ../../chapter4.rst:1044
 msgid "INSERT-OFF"
 msgstr ""
 
-#: ../../chapter4.rst:1043
+#: ../../chapter4.rst:1042
 msgid "Ctrl-I"
 msgstr ""
 
-#: ../../chapter4.rst:1044
+#: ../../chapter4.rst:1043
 msgid "INSERT-ON"
 msgstr ""
 
-#: ../../chapter4.rst:1046
+#: ../../chapter4.rst:1045
 msgid "backspace"
 msgstr ""
 
-#: ../../chapter4.rst:1047
+#: ../../chapter4.rst:1046
 msgid "BACKWARD"
 msgstr ""
 
-#: ../../chapter4.rst:1048
+#: ../../chapter4.rst:1047
 msgid "INSERT<"
 msgstr ""
 
-#: ../../chapter4.rst:1049
+#: ../../chapter4.rst:1048
 msgid "etc."
 msgstr ""
 
-#: ../../chapter4.rst:1053
+#: ../../chapter4.rst:1052
 msgid "We could have achieved this same result with logic:"
 msgstr ""
 
-#: ../../chapter4.rst:1067
+#: ../../chapter4.rst:1066
 msgid ""
 "but the logic is more confusing. And the use of logic to express such a "
 "multi-condition algorithm gets even more convoluted when a table was not "
 "used in the original design."
 msgstr ""
 
-#: ../../chapter4.rst:1071
+#: ../../chapter4.rst:1070
 msgid ""
 "The use of logic becomes advisable when the result is not calculable, or "
 "when the decision is not complicated enough to warrant a decision table. "
@@ -1533,25 +1641,25 @@ msgid ""
 "use of logic in your programs."
 msgstr ""
 
-#: ../../chapter4.rst:1078
+#: ../../chapter4.rst:1077
 msgid ""
 "In choosing which approach to apply towards solving a problem, give "
 "preference in the following order:"
 msgstr ""
 
-#: ../../chapter4.rst:1081
+#: ../../chapter4.rst:1080
 msgid "calculation (except when speed counts)"
 msgstr ""
 
-#: ../../chapter4.rst:1082
+#: ../../chapter4.rst:1081
 msgid "data structures"
 msgstr ""
 
-#: ../../chapter4.rst:1083
+#: ../../chapter4.rst:1082
 msgid "logic"
 msgstr ""
 
-#: ../../chapter4.rst:1085
+#: ../../chapter4.rst:1084
 msgid ""
 "Of course, one nice feature of modular languages such as Forth is that "
 "the actual implementation of a component—whether it uses calculation, "
@@ -1559,11 +1667,11 @@ msgid ""
 "application."
 msgstr ""
 
-#: ../../chapter4.rst:1091
+#: ../../chapter4.rst:1090
 msgid "Solving a Problem: Computing Roman Numerals"
 msgstr ""
 
-#: ../../chapter4.rst:1093
+#: ../../chapter4.rst:1092
 msgid ""
 "In this section we’ll attempt to demonstrate the process of designing a "
 "lexicon. Rather than merely present the problem and its solution, I’m "
@@ -1574,13 +1682,13 @@ msgid ""
 "reality."
 msgstr ""
 
-#: ../../chapter4.rst:1101
+#: ../../chapter4.rst:1100
 msgid ""
 "Here goes: The problem is to write a definition that consumes a number on"
 " the stack and displays it as a Roman numeral."
 msgstr ""
 
-#: ../../chapter4.rst:1104
+#: ../../chapter4.rst:1103
 msgid ""
 "This problem most likely represents a component of a larger system. We’ll"
 " probably end up defining several words in the course of solving this "
@@ -1589,74 +1697,74 @@ msgid ""
 "stack. (Other words will be internal to the component.)"
 msgstr ""
 
-#: ../../chapter4.rst:1110
+#: ../../chapter4.rst:1109
 msgid ""
 "Having thus decided on the external syntax, we can now proceed to devise "
 "the algorithms and data structures."
 msgstr ""
 
-#: ../../chapter4.rst:1113
+#: ../../chapter4.rst:1112
 msgid ""
 "We’ll follow the scientific method—we’ll observe reality, model a "
 "solution, test it against reality, modify the solution, and so on. We’ll "
 "begin by recalling what we know about Roman numerals."
 msgstr ""
 
-#: ../../chapter4.rst:1117
+#: ../../chapter4.rst:1116
 msgid ""
 "Actually, we don’t remember any formal rules about Roman numerals. But if"
 " you give us a number, we can make a Roman numeral out of it. We know how"
 " to do it—but we can’t yet state the procedure as an algorithm."
 msgstr ""
 
-#: ../../chapter4.rst:1121
+#: ../../chapter4.rst:1120
 msgid "So, let’s look at the first ten Roman numerals:"
 msgstr ""
 
-#: ../../chapter4.rst:1123 ../../chapter4.rst:1230 ../../chapter4.rst:1284
-#: ../../chapter4.rst:1551
+#: ../../chapter4.rst:1122 ../../chapter4.rst:1229 ../../chapter4.rst:1283
+#: ../../chapter4.rst:1550
 msgid "I"
 msgstr ""
 
-#: ../../chapter4.rst:1124 ../../chapter4.rst:1232
+#: ../../chapter4.rst:1123 ../../chapter4.rst:1231
 msgid "II"
 msgstr ""
 
-#: ../../chapter4.rst:1125 ../../chapter4.rst:1234
+#: ../../chapter4.rst:1124 ../../chapter4.rst:1233
 msgid "III"
 msgstr ""
 
-#: ../../chapter4.rst:1126 ../../chapter4.rst:1236
+#: ../../chapter4.rst:1125 ../../chapter4.rst:1235
 msgid "IV"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1127 ../../chapter4.rst:1238
-#: ../../chapter4.rst:1286 ../../chapter4.rst:1551
+#: ../../chapter4.rst:1 ../../chapter4.rst:1126 ../../chapter4.rst:1237
+#: ../../chapter4.rst:1285 ../../chapter4.rst:1550
 msgid "V"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1128 ../../chapter4.rst:1240
+#: ../../chapter4.rst:1 ../../chapter4.rst:1127 ../../chapter4.rst:1239
 msgid "VI"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1129 ../../chapter4.rst:1242
+#: ../../chapter4.rst:1 ../../chapter4.rst:1128 ../../chapter4.rst:1241
 msgid "VII"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1130 ../../chapter4.rst:1244
+#: ../../chapter4.rst:1 ../../chapter4.rst:1129 ../../chapter4.rst:1243
 msgid "VIII"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1131 ../../chapter4.rst:1246
+#: ../../chapter4.rst:1 ../../chapter4.rst:1130 ../../chapter4.rst:1245
 msgid "IX"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1132 ../../chapter4.rst:1230
-#: ../../chapter4.rst:1287 ../../chapter4.rst:1552
+#: ../../chapter4.rst:1 ../../chapter4.rst:1131 ../../chapter4.rst:1229
+#: ../../chapter4.rst:1286 ../../chapter4.rst:1551
 msgid "X"
 msgstr ""
 
-#: ../../chapter4.rst:1134
+#: ../../chapter4.rst:1133
 msgid ""
 "We make a few observations. First, there’s the idea of a tally, where we "
 "represent a number by making that many marks (3 = III). On the other "
@@ -1665,116 +1773,116 @@ msgid ""
 "symbol."
 msgstr ""
 
-#: ../../chapter4.rst:1140
+#: ../../chapter4.rst:1139
 msgid ""
 "Second, there’s a symmetry around five. There’s a symbol for five (V), "
 "and a symbol for ten (X). The pattern I, II, III repeats in the second "
 "half, but with a preceding V."
 msgstr ""
 
-#: ../../chapter4.rst:1144
+#: ../../chapter4.rst:1143
 msgid ""
 "One-less-than-five is written IV, and one-less-than-ten is written IX. It"
 " seems that putting an “I” in front of a larger-value symbol is like "
 "saying “one-less-than…”"
 msgstr ""
 
-#: ../../chapter4.rst:1148
+#: ../../chapter4.rst:1147
 msgid ""
 "These are vague, hazy observations. But that’s alright. We don’t have the"
 " whole picture yet."
 msgstr ""
 
-#: ../../chapter4.rst:1151
+#: ../../chapter4.rst:1150
 msgid "Let’s study what happens above ten:"
 msgstr ""
 
-#: ../../chapter4.rst:1153
+#: ../../chapter4.rst:1152
 msgid "XI"
 msgstr ""
 
-#: ../../chapter4.rst:1154
+#: ../../chapter4.rst:1153
 msgid "XII"
 msgstr ""
 
-#: ../../chapter4.rst:1155
+#: ../../chapter4.rst:1154
 msgid "XIII"
 msgstr ""
 
-#: ../../chapter4.rst:1156
+#: ../../chapter4.rst:1155
 msgid "XIV"
 msgstr ""
 
-#: ../../chapter4.rst:1157
+#: ../../chapter4.rst:1156
 msgid "XV"
 msgstr ""
 
-#: ../../chapter4.rst:1158
+#: ../../chapter4.rst:1157
 msgid "XVI"
 msgstr ""
 
-#: ../../chapter4.rst:1159
+#: ../../chapter4.rst:1158
 msgid "XVII"
 msgstr ""
 
-#: ../../chapter4.rst:1160
+#: ../../chapter4.rst:1159
 msgid "XVIII"
 msgstr ""
 
-#: ../../chapter4.rst:1161
+#: ../../chapter4.rst:1160
 msgid "XIX"
 msgstr ""
 
-#: ../../chapter4.rst:1162 ../../chapter4.rst:1232
+#: ../../chapter4.rst:1161 ../../chapter4.rst:1231
 msgid "XX"
 msgstr ""
 
-#: ../../chapter4.rst:1164
+#: ../../chapter4.rst:1163
 msgid ""
 "This is exactly the pattern as before, with an extra “X” in front. So "
 "there’s a repeating cycle of ten, as well."
 msgstr ""
 
-#: ../../chapter4.rst:1168
+#: ../../chapter4.rst:1167
 msgid ""
 "If we look at the twenties, they’re the same, with two “X”s; the thirties"
 " with three “X”s. In fact, the number of “X” is the same as the number in"
 " the tens column of the original decimal number."
 msgstr ""
 
-#: ../../chapter4.rst:1172
+#: ../../chapter4.rst:1171
 msgid ""
 "This seems like an important observation: we can decompose our decimal "
 "number into decimal digits, and treat each digit separately. For "
 "instance, 37 can be written as"
 msgstr ""
 
-#: ../../chapter4.rst:1176
+#: ../../chapter4.rst:1175
 msgid "XXX (thirty)"
 msgstr ""
 
-#: ../../chapter4.rst:1178
+#: ../../chapter4.rst:1177
 msgid "followed by"
 msgstr ""
 
-#: ../../chapter4.rst:1180
+#: ../../chapter4.rst:1179
 msgid "VII (seven)"
 msgstr ""
 
-#: ../../chapter4.rst:1182
+#: ../../chapter4.rst:1181
 msgid ""
 "It may be premature, but we can already see a method by which Forth will "
 "let us decompose a number into decimal digits—with modulo division by "
 "ten. For instance, if we say"
 msgstr ""
 
-#: ../../chapter4.rst:1190
+#: ../../chapter4.rst:1189
 msgid ""
 "we’ll get a 7 and a 3 on the stack (the three—being the quotient—is on "
 "top.)"
 msgstr ""
 
-#: ../../chapter4.rst:1193
+#: ../../chapter4.rst:1192
 msgid ""
 "But these observations raise a question: What about below ten, where "
 "there is no ten’s place? Is this a special case? Well, if we consider "
@@ -1783,7 +1891,7 @@ msgid ""
 "than ten."
 msgstr ""
 
-#: ../../chapter4.rst:1199
+#: ../../chapter4.rst:1198
 msgid ""
 "Let’s continue our observations, paying special attention to the cycles "
 "of ten. We notice that forty is “XL.” This is analogous to 4 being “IV,” "
@@ -1791,8 +1899,8 @@ msgid ""
 "than-fifty.” Similarly,"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1238 ../../chapter4.rst:1289
-#: ../../chapter4.rst:1552
+#: ../../chapter4.rst:1 ../../chapter4.rst:1237 ../../chapter4.rst:1288
+#: ../../chapter4.rst:1551
 msgid "L"
 msgstr ""
 
@@ -1804,11 +1912,11 @@ msgstr ""
 msgid "is analogous to"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1238
+#: ../../chapter4.rst:1 ../../chapter4.rst:1237
 msgid "5"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1240
+#: ../../chapter4.rst:1 ../../chapter4.rst:1239
 msgid "LX"
 msgstr ""
 
@@ -1816,11 +1924,11 @@ msgstr ""
 msgid "60"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1240
+#: ../../chapter4.rst:1 ../../chapter4.rst:1239
 msgid "6"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1242
+#: ../../chapter4.rst:1 ../../chapter4.rst:1241
 msgid "LXX"
 msgstr ""
 
@@ -1828,11 +1936,11 @@ msgstr ""
 msgid "70"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1242
+#: ../../chapter4.rst:1 ../../chapter4.rst:1241
 msgid "7"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1244
+#: ../../chapter4.rst:1 ../../chapter4.rst:1243
 msgid "LXXX"
 msgstr ""
 
@@ -1840,7 +1948,7 @@ msgstr ""
 msgid "80"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1246
+#: ../../chapter4.rst:1 ../../chapter4.rst:1245
 msgid "XC"
 msgstr ""
 
@@ -1848,11 +1956,11 @@ msgstr ""
 msgid "90"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1246
+#: ../../chapter4.rst:1 ../../chapter4.rst:1245
 msgid "9"
 msgstr ""
 
-#: ../../chapter4.rst:1 ../../chapter4.rst:1290 ../../chapter4.rst:1553
+#: ../../chapter4.rst:1 ../../chapter4.rst:1289 ../../chapter4.rst:1552
 msgid "C"
 msgstr ""
 
@@ -1864,57 +1972,57 @@ msgstr ""
 msgid "10"
 msgstr ""
 
-#: ../../chapter4.rst:1214
+#: ../../chapter4.rst:1213
 msgid ""
 "Apparently the same patterns apply for any decimal digit—only the symbols"
 " themselves change. Anyway, it’s clear now that we’re dealing with an "
 "essentially decimal system."
 msgstr ""
 
-#: ../../chapter4.rst:1218
+#: ../../chapter4.rst:1217
 msgid ""
 "If pressed to do so, we could even build a model for a system to display "
 "Roman numerals from 1 to 99, using a combination of algorithm and data "
 "structure."
 msgstr ""
 
-#: ../../chapter4.rst:1226
+#: ../../chapter4.rst:1225
 msgid "One`s Table"
 msgstr ""
 
-#: ../../chapter4.rst:1226
+#: ../../chapter4.rst:1225
 msgid "Ten`s Table"
 msgstr ""
 
-#: ../../chapter4.rst:1230
+#: ../../chapter4.rst:1229
 msgid "1"
 msgstr ""
 
-#: ../../chapter4.rst:1232
+#: ../../chapter4.rst:1231
 msgid "2"
 msgstr ""
 
-#: ../../chapter4.rst:1234
+#: ../../chapter4.rst:1233
 msgid "3"
 msgstr ""
 
-#: ../../chapter4.rst:1234
+#: ../../chapter4.rst:1233
 msgid "XXX"
 msgstr ""
 
-#: ../../chapter4.rst:1236
+#: ../../chapter4.rst:1235
 msgid "4"
 msgstr ""
 
-#: ../../chapter4.rst:1236
+#: ../../chapter4.rst:1235
 msgid "XL"
 msgstr ""
 
-#: ../../chapter4.rst:1251
+#: ../../chapter4.rst:1250
 msgid "Algorithm"
 msgstr ""
 
-#: ../../chapter4.rst:1253
+#: ../../chapter4.rst:1252
 msgid ""
 "Divide :math:`n` by 10. The quotient is the tens’ column digit; the "
 "remainder is the ones’ column digit. Look up the ten’s digit in the tens’"
@@ -1922,25 +2030,25 @@ msgid ""
 "digit in the one’s table and print that corresponding symbol pattern."
 msgstr ""
 
-#: ../../chapter4.rst:1259
+#: ../../chapter4.rst:1258
 msgid ""
 "For example, if the number is 72, the quotient is 7, the remainder is 2. "
 "7 in the tens’ table corresponds to “LXX,” so print that. 2 in the ones’ "
 "column corresponds to “II,” so print that. The result:"
 msgstr ""
 
-#: ../../chapter4.rst:1263
+#: ../../chapter4.rst:1262
 msgid "LXXII"
 msgstr ""
 
-#: ../../chapter4.rst:1265
+#: ../../chapter4.rst:1264
 msgid ""
 "We’ve just constructed a model that works for numbers from one to 99. Any"
 " higher number would require a hundreds’ table as well, along with an "
 "initial division by 100."
 msgstr ""
 
-#: ../../chapter4.rst:1269
+#: ../../chapter4.rst:1268
 msgid ""
 "The logical model just described might be satisfactory, as long as it "
 "does the job. But somehow it doesn’t seem we’ve fully solved the problem."
@@ -1950,7 +2058,7 @@ msgid ""
 " using a data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1276
+#: ../../chapter4.rst:1275
 msgid ""
 "Since this section deals with devising algorithms, let’s go all the way. "
 "Let’s look for a general algorithm for producing any digit, using only "
@@ -1958,15 +2066,15 @@ msgid ""
 "this much information:"
 msgstr ""
 
-#: ../../chapter4.rst:1292 ../../chapter4.rst:1553
+#: ../../chapter4.rst:1291 ../../chapter4.rst:1552
 msgid "D"
 msgstr ""
 
-#: ../../chapter4.rst:1293 ../../chapter4.rst:1554 ../../chapter4.rst:1575
+#: ../../chapter4.rst:1292 ../../chapter4.rst:1553 ../../chapter4.rst:1574
 msgid "M"
 msgstr ""
 
-#: ../../chapter4.rst:1297
+#: ../../chapter4.rst:1296
 msgid ""
 "In listing the symbols, we’ve also *organized* them in a way that seems "
 "right. The symbols in the left column are all multiples of ten; the "
@@ -1975,14 +2083,14 @@ msgid ""
 "above them."
 msgstr ""
 
-#: ../../chapter4.rst:1303
+#: ../../chapter4.rst:1302
 msgid ""
 "Another difference, the symbols in the first column can all be combined "
 "in multiples, as “XXXIII.” But you can’t have multiples of any of the "
 "right-column symbols, such as VVV. Is this observation useful? Who knows?"
 msgstr ""
 
-#: ../../chapter4.rst:1308
+#: ../../chapter4.rst:1307
 msgid ""
 "Let’s call the symbols in the left column ONERS and in the right column "
 "FIVERS. The ONERS represent the values 1, 10, 100, and 1,000; that is, "
@@ -1990,7 +2098,7 @@ msgid ""
 " 50, and 500; that is, the value of five in every possible decimal place."
 msgstr ""
 
-#: ../../chapter4.rst:1314
+#: ../../chapter4.rst:1313
 msgid ""
 "Using these terms, instead of the symbols themselves, we should be able "
 "to express the algorithm for producing any digit. (We’ve factored out the"
@@ -1998,39 +2106,39 @@ msgid ""
 "the following preliminary algorithm:"
 msgstr ""
 
-#: ../../chapter4.rst:1320
+#: ../../chapter4.rst:1319
 msgid ""
 "For any digit, print as many ``ONERS`` as necessary to add up to the "
 "value."
 msgstr ""
 
-#: ../../chapter4.rst:1323
+#: ../../chapter4.rst:1322
 msgid ""
 "Thus, for 300 we get “CCC,” for 20 we get “XX” for one we get “I.” And "
 "for 321 we get “CCCXXI.”"
 msgstr ""
 
-#: ../../chapter4.rst:1326
+#: ../../chapter4.rst:1325
 msgid ""
 "This algorithm works until the digit is 4. Now we’ll have to expand our "
 "algorithm to cover this exception:"
 msgstr ""
 
-#: ../../chapter4.rst:1329
+#: ../../chapter4.rst:1328
 msgid ""
 "Print as many ``ONERS`` as necessary to add up to the value, but if the "
 "digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is \"XL\"; 4 is "
 "\"IV.\""
 msgstr ""
 
-#: ../../chapter4.rst:1333
+#: ../../chapter4.rst:1332
 msgid ""
 "This new rule works until the digit is 5. As we noticed before, digits of"
 " five and above begin with a ``FIVER`` symbol. So we expand our rule "
 "again:"
 msgstr ""
 
-#: ../../chapter4.rst:1337
+#: ../../chapter4.rst:1336
 msgid ""
 "If the digit is 5 or more, begin with a ``FIVER`` and subtract five from "
 "the value; otherwise do nothing. Then print as many ``ONERS`` as "
@@ -2038,7 +2146,7 @@ msgid ""
 "``ONER`` and a ``FIVER``."
 msgstr ""
 
-#: ../../chapter4.rst:1342
+#: ../../chapter4.rst:1341
 msgid ""
 "This rule works until the digit is 9. In this case, we must print a "
 "``ONER`` preceding a—what? A ``ONER`` from the next higher decimal place "
@@ -2046,7 +2154,7 @@ msgid ""
 "then is:"
 msgstr ""
 
-#: ../../chapter4.rst:1346
+#: ../../chapter4.rst:1345
 msgid ""
 "If the digit is 5 or more, begin with a ``FIVER`` and subtract five from "
 "the value; otherwise do nothing. Then, print as many ``ONERS`` as "
@@ -2055,39 +2163,39 @@ msgid ""
 "``TENER``."
 msgstr ""
 
-#: ../../chapter4.rst:1352
+#: ../../chapter4.rst:1351
 msgid ""
 "We now have an English-language version of our algorithm. But we still "
 "have some steps to go before we can run it on our computer."
 msgstr ""
 
-#: ../../chapter4.rst:1356
+#: ../../chapter4.rst:1355
 msgid ""
 "In particular, we have to be more specific about the exceptions. We can’t"
 " just say,"
 msgstr ""
 
-#: ../../chapter4.rst:1359
+#: ../../chapter4.rst:1358
 msgid "Do a, b, and c. **But** in such and such a case, do something different."
 msgstr ""
 
-#: ../../chapter4.rst:1361
+#: ../../chapter4.rst:1360
 msgid "because the computer will do a, b, and c before it knows any better."
 msgstr ""
 
-#: ../../chapter4.rst:1363
+#: ../../chapter4.rst:1362
 msgid ""
 "Instead, we have to check whether the exceptions apply *before* we do "
 "anything else."
 msgstr ""
 
-#: ../../chapter4.rst:1368
+#: ../../chapter4.rst:1367
 msgid ""
 "In devising an algorithm, consider exceptions last. In writing code, "
 "handle exceptions first."
 msgstr ""
 
-#: ../../chapter4.rst:1371
+#: ../../chapter4.rst:1370
 msgid ""
 "This tells us something about the general structure of our digit-"
 "producing word. It will have to begin with a test for the 4/9 exceptions."
@@ -2096,7 +2204,7 @@ msgid ""
 "pseudocode, then:"
 msgstr ""
 
-#: ../../chapter4.rst:1382
+#: ../../chapter4.rst:1381
 msgid ""
 "An experienced Forth programmer would not actually write out this "
 "pseudocode, but would more likely form a mental image of the structure "
@@ -2105,7 +2213,7 @@ msgid ""
 "we’ve done here."
 msgstr ""
 
-#: ../../chapter4.rst:1388
+#: ../../chapter4.rst:1387
 msgid ""
 "In Forth we try to minimize our dependence on logic. But in this case we "
 "need the conditional ``IF`` because we have an exception we need to "
@@ -2113,28 +2221,28 @@ msgid ""
 " by limiting the number of ``IF``  ``THEN`` s in this definition to one."
 msgstr ""
 
-#: ../../chapter4.rst:1394
+#: ../../chapter4.rst:1393
 msgid ""
 "Yes, we still have to distinguish between the 4-case and the 9-case, but "
 "we’ve deferred that structural dimension to lower-level definitions—the "
 "test for 4-or-9 and the “special case” code."
 msgstr ""
 
-#: ../../chapter4.rst:1398
+#: ../../chapter4.rst:1397
 msgid ""
 "What our structure really says is that either the 4-exception or the "
 "9-exception must prohibit execution of the normal case. It’s not enough "
 "merely to test for each exception, as in this version:"
 msgstr ""
 
-#: ../../chapter4.rst:1408
+#: ../../chapter4.rst:1407
 msgid ""
 "because the normal case is never excluded. (There’s no way to put an "
 "``ELSE`` just before the normal case, because ``ELSE`` must appear "
 "between ``IF`` and ``THEN``.)"
 msgstr ""
 
-#: ../../chapter4.rst:1412
+#: ../../chapter4.rst:1411
 msgid ""
 "If we insist on handling the 4-exception and the 9-exception separately, "
 "we could arrange for each exception to pass an additional flag, "
@@ -2142,28 +2250,28 @@ msgid ""
 " then we can exclude the normal case:"
 msgstr ""
 
-#: ../../chapter4.rst:1423
+#: ../../chapter4.rst:1422
 msgid ""
 "But this approach needlessly complicates the definition by adding new "
 "control structures. We’ll leave it like it was."
 msgstr ""
 
-#: ../../chapter4.rst:1426
+#: ../../chapter4.rst:1425
 msgid "Now we have a general idea of the structure of our main definition."
 msgstr ""
 
-#: ../../chapter4.rst:1428
+#: ../../chapter4.rst:1427
 msgid ""
 "We stated, “If the digit is 5 or more, begin with a ``FIVER`` and "
 "subtract five from the value; otherwise do nothing. Then, print as many "
 "``ONERS`` as necessary to add up to the value.”"
 msgstr ""
 
-#: ../../chapter4.rst:1432
+#: ../../chapter4.rst:1431
 msgid "A direct translation of these rules into Forth would look like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1438
+#: ../../chapter4.rst:1437
 msgid ""
 "This is technically correct, but if we’re familiar with the technique of "
 "modulo division, we’ll see this as a natural situation for modulo "
@@ -2173,18 +2281,18 @@ msgid ""
 "want the leading ``FIVER`` :"
 msgstr ""
 
-#: ../../chapter4.rst:1449
+#: ../../chapter4.rst:1448
 msgid "The quotient/flag becomes the argument to ``IF``."
 msgstr ""
 
-#: ../../chapter4.rst:1451
+#: ../../chapter4.rst:1450
 msgid ""
 "Furthermore, the remainder of modulo 5 division is always a number "
 "between 0 and 4, which means that (except for our exception) we can use "
 "the remainder directly as the argument to ONERS. We revise our phrase to"
 msgstr ""
 
-#: ../../chapter4.rst:1459
+#: ../../chapter4.rst:1458
 msgid ""
 "Getting back to that exception, we now see that we can test for both 4 "
 "and 9 with a single test—namely, if the remainder is 4. This suggests "
@@ -2192,13 +2300,13 @@ msgid ""
 "Something like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1470
+#: ../../chapter4.rst:1469
 msgid ""
 "(Notice that we ``OVER`` ed the remainder so that we could compare it "
 "with 4 without consuming it.)"
 msgstr ""
 
-#: ../../chapter4.rst:1473
+#: ../../chapter4.rst:1472
 msgid ""
 "So it turns out we *do* have a doubly-nested ``IF THEN`` construct after "
 "all. But it seems justified because the ``IF THEN`` is handling the "
@@ -2207,39 +2315,39 @@ msgid ""
 "(But we won’t.)"
 msgstr ""
 
-#: ../../chapter4.rst:1480
+#: ../../chapter4.rst:1479
 msgid ""
 "Let’s focus on the code for the special case. To state its algorithm: “If"
 " the digit is four, print a ``ONER`` and a ``FIVER``. If the digit is "
 "nine, print a ``ONER`` and a ``TENER``.”"
 msgstr ""
 
-#: ../../chapter4.rst:1484
+#: ../../chapter4.rst:1483
 msgid ""
 "We can assume that the digit will be one or the other, or else we’d never"
 " be executing this definition. The question is, how do we tell which one?"
 msgstr ""
 
-#: ../../chapter4.rst:1488
+#: ../../chapter4.rst:1487
 msgid ""
 "Again, we can use the quotient of division by five. If the quotient is "
 "zero, the digit must have been four; otherwise it was nine. So we’ll play"
 " the same trick and use the quotient as a boolean flag. We’ll write:"
 msgstr ""
 
-#: ../../chapter4.rst:1497
+#: ../../chapter4.rst:1496
 msgid ""
 "In retrospect, we notice that we’re printing a ``ONER`` either way. We "
 "can simplify the definition to:"
 msgstr ""
 
-#: ../../chapter4.rst:1505
+#: ../../chapter4.rst:1504
 msgid ""
 "We’ve assumed that we have a quotient on the stack to use. Let’s go back "
 "to our definition of ``DIGIT`` and make sure that we do, in fact:"
 msgstr ""
 
-#: ../../chapter4.rst:1514
+#: ../../chapter4.rst:1513
 msgid ""
 "It turns out that we have not only a quotient, but a remainder underneath"
 " as well. We’re keeping both on the stack in the event we execute the "
@@ -2247,7 +2355,7 @@ msgid ""
 "So, for symmetry, we must ``DROP`` the remainder like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1526
+#: ../../chapter4.rst:1525
 msgid ""
 "There we have the complete, coded definition for producing a single digit"
 " of a Roman numeral. If we were desperate to try it out before writing "
@@ -2255,62 +2363,62 @@ msgid ""
 "of words to print one group of symbols, say the ``ONES`` row:"
 msgstr ""
 
-#: ../../chapter4.rst:1540
+#: ../../chapter4.rst:1539
 msgid "before loading our definitions of ``ALMOST`` and ``DIGIT``."
 msgstr ""
 
-#: ../../chapter4.rst:1542
+#: ../../chapter4.rst:1541
 msgid ""
 "But we’re not that desperate. No, we’re anxious to move on to the problem"
 " of defining the words ``ONER``, ``FIVER``, and ``TENER`` so that their "
 "symbols depend on which decimal digit we’re formatting."
 msgstr ""
 
-#: ../../chapter4.rst:1546
+#: ../../chapter4.rst:1545
 msgid "Let’s go back to the symbol table we drew earlier:"
 msgstr ""
 
-#: ../../chapter4.rst:1551 ../../chapter4.rst:1569
+#: ../../chapter4.rst:1550 ../../chapter4.rst:1568
 msgid "ones"
 msgstr ""
 
-#: ../../chapter4.rst:1552 ../../chapter4.rst:1571
+#: ../../chapter4.rst:1551 ../../chapter4.rst:1570
 msgid "tens"
 msgstr ""
 
-#: ../../chapter4.rst:1553 ../../chapter4.rst:1573
+#: ../../chapter4.rst:1552 ../../chapter4.rst:1572
 msgid "hundreds"
 msgstr ""
 
-#: ../../chapter4.rst:1554 ../../chapter4.rst:1575
+#: ../../chapter4.rst:1553 ../../chapter4.rst:1574
 msgid "thousands"
 msgstr ""
 
-#: ../../chapter4.rst:1558
+#: ../../chapter4.rst:1557
 msgid ""
 "We’ve observed that we also need a ``TENER`` —which is the ``ONER`` in "
 "the next row below. It’s as if the table should really be written:"
 msgstr ""
 
-#: ../../chapter4.rst:1565
+#: ../../chapter4.rst:1564
 msgid ""
 "But that seems redundant. Can we avoid it? Perhaps if we try a different "
 "model, perhaps a linear table, like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1569
+#: ../../chapter4.rst:1568
 msgid "I V"
 msgstr ""
 
-#: ../../chapter4.rst:1571
+#: ../../chapter4.rst:1570
 msgid "X L"
 msgstr ""
 
-#: ../../chapter4.rst:1573
+#: ../../chapter4.rst:1572
 msgid "C D"
 msgstr ""
 
-#: ../../chapter4.rst:1578
+#: ../../chapter4.rst:1577
 msgid ""
 "Now we can imagine that each column name (“ones,” “tens,” etc.) points to"
 " the ONER of that column. From there we can also get each column’s "
@@ -2318,18 +2426,18 @@ msgid ""
 "``TENER`` by reaching down two slots."
 msgstr ""
 
-#: ../../chapter4.rst:1583
+#: ../../chapter4.rst:1582
 msgid ""
 "It’s like building an arm with three hands. We can attach it to the "
 "``ONES`` column, as in  :numref:`fig4-8` a, or we can attach it to the "
 "tens’ column, as in  :numref:`fig4-8` b, or to any power of ten."
 msgstr ""
 
-#: ../../chapter4.rst:1591
+#: ../../chapter4.rst:1590
 msgid "A mechanical representation: accessing the data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1593
+#: ../../chapter4.rst:1592
 msgid ""
 "An experienced Forth programmer is not likely to imagine arms, hands, or "
 "things like that. But there must be a strong mental image—the stuff of "
@@ -2337,33 +2445,33 @@ msgid ""
 "with code."
 msgstr ""
 
-#: ../../chapter4.rst:1598
+#: ../../chapter4.rst:1597
 msgid ""
 "Beginners who are learning to think in this right-brain way might find "
 "the following tip helpful:"
 msgstr ""
 
-#: ../../chapter4.rst:1603
+#: ../../chapter4.rst:1602
 msgid ""
 "If you have trouble thinking about a conceptual model, visualize it---or "
 "draw it---as a mechanical device."
 msgstr ""
 
-#: ../../chapter4.rst:1606
+#: ../../chapter4.rst:1605
 msgid ""
 "Our table is simply an array of characters. Since a character requires "
 "only a byte, let’s make each “slot” one byte. We’ll call the table "
 "``ROMANS``:"
 msgstr ""
 
-#: ../../chapter4.rst:1617
+#: ../../chapter4.rst:1616
 msgid ""
 "Note: This use of ``ASCII`` requires that ``ASCII`` be “ ``STATE`` "
 "-dependent” (see :doc:`Appendix C<appendixc>`). If the word ``ASCII`` is "
 "not defined in your system, or if it is not state-dependent, use:"
 msgstr ""
 
-#: ../../chapter4.rst:1627
+#: ../../chapter4.rst:1626
 msgid ""
 "We can select a particular symbol from the table by applying two "
 "different offsets at the same time. One dimension represents the decimal "
@@ -2371,14 +2479,14 @@ msgid ""
 "is, its state stays the same until we change it."
 msgstr ""
 
-#: ../../chapter4.rst:1632
+#: ../../chapter4.rst:1631
 msgid ""
 "The other dimension represents the kind of symbol we want— ``ONER``, "
 "``FIVER``, ``TENER`` —within the current decimal column. This dimension "
 "is incidental, that is, we’ll specify which symbol we want each time."
 msgstr ""
 
-#: ../../chapter4.rst:1636
+#: ../../chapter4.rst:1635
 msgid ""
 "Let’s start by implementing the “current” dimension. We need some way to "
 "point to the current decimal column. Let’s create a variable called "
@@ -2386,63 +2494,63 @@ msgid ""
 "into the table:"
 msgstr ""
 
-#: ../../chapter4.rst:1649
+#: ../../chapter4.rst:1648
 msgid ""
 "Now we can find our way to any “arm position” by adding the contents of "
 "``COLUMN#`` to the beginning address of the table, given by ``ROMANS``:"
 msgstr ""
 
-#: ../../chapter4.rst:1656
+#: ../../chapter4.rst:1655
 msgid ""
 "Let’s see if we can implement one of the words to display a symbol. We’ll"
 " start with ``ONER``."
 msgstr ""
 
-#: ../../chapter4.rst:1659
+#: ../../chapter4.rst:1658
 msgid "The thing we want to do in ONER is ``EMIT`` a character."
 msgstr ""
 
-#: ../../chapter4.rst:1665
+#: ../../chapter4.rst:1664
 msgid ""
 "Working backward, ``EMIT`` requires the ASCII character on the stack. How"
 " do we get it there? With ``C@``."
 msgstr ""
 
-#: ../../chapter4.rst:1673
+#: ../../chapter4.rst:1672
 msgid ""
 "``C@`` requires the *address* of the slot that contains the symbol we "
 "want. How do we get that address?"
 msgstr ""
 
-#: ../../chapter4.rst:1676
+#: ../../chapter4.rst:1675
 msgid ""
 "The ``ONER`` is the first “hand” on the movable arm—the position that "
 "``COLUMN`` is already pointing to. So, the address we want is simply the "
 "address returned by ``COLUMN``:"
 msgstr ""
 
-#: ../../chapter4.rst:1684
+#: ../../chapter4.rst:1683
 msgid ""
 "Now let’s write ``FIVER``. It computes the same slot address, then adds "
 "one to get the next slot, before fetching the symbol and emitting it:"
 msgstr ""
 
-#: ../../chapter4.rst:1691
+#: ../../chapter4.rst:1690
 msgid "And ``TENER`` is:"
 msgstr ""
 
-#: ../../chapter4.rst:1697
+#: ../../chapter4.rst:1696
 msgid ""
 "These three definitions are redundant. Since the only difference between "
 "them is the incidental offset, we can factor the incidental offset out "
 "from the rest of the definitions:"
 msgstr ""
 
-#: ../../chapter4.rst:1705
+#: ../../chapter4.rst:1704
 msgid "Now we can define:"
 msgstr ""
 
-#: ../../chapter4.rst:1713
+#: ../../chapter4.rst:1712
 msgid ""
 "All that remains for us to do now is to decompose our complete decimal "
 "number into a series of decimal digits. Based on the observations we’ve "
@@ -2450,28 +2558,28 @@ msgid ""
 " listing."
 msgstr ""
 
-#: ../../chapter4.rst:1718
+#: ../../chapter4.rst:1717
 msgid "Voila! From problem, to conceptual model, to code."
 msgstr ""
 
-#: ../../chapter4.rst:1720
+#: ../../chapter4.rst:1719
 msgid ""
 "Note: this solution is not optimal. The present volume does not address "
 "the optimization phase."
 msgstr ""
 
-#: ../../chapter4.rst:1723
+#: ../../chapter4.rst:1722
 msgid ""
 "One more thought: Depending on who uses this application, we may want to "
 "add error-checking. Fact is, the highest symbol we know is M; the highest"
 " value we can represent is 3,999, or MMMCMXCIX."
 msgstr ""
 
-#: ../../chapter4.rst:1729
+#: ../../chapter4.rst:1728
 msgid "We might redefine ROMAN as follows:"
 msgstr ""
 
-#: ../../chapter4.rst:1737
+#: ../../chapter4.rst:1736
 msgid ""
 "There's a definite sense of rightness when you've done it right. It may "
 "be that feeling that distinguishes Forth from other languages, where you "
@@ -2479,27 +2587,27 @@ msgid ""
 " You want to run off and tell somebody."
 msgstr ""
 
-#: ../../chapter4.rst:1742
+#: ../../chapter4.rst:1741
 msgid "Of course, nobody will appreciate it like you do."
 msgstr ""
 
-#: ../../chapter4.rst:1744
+#: ../../chapter4.rst:1743
 msgid "Screen #20"
 msgstr ""
 
-#: ../../chapter4.rst:1763
+#: ../../chapter4.rst:1762
 msgid "Screen #21"
 msgstr ""
 
-#: ../../chapter4.rst:1781
+#: ../../chapter4.rst:1780
 msgid "Screen #22"
 msgstr ""
 
-#: ../../chapter4.rst:1792
+#: ../../chapter4.rst:1791
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter4.rst:1794
+#: ../../chapter4.rst:1793
 msgid ""
 "In this chapter we’ve learned to develop a single component, starting "
 "first with deciding on its syntax, then proceeding with determining its "
@@ -2507,30 +2615,30 @@ msgid ""
 " in Forth."
 msgstr ""
 
-#: ../../chapter4.rst:1799
+#: ../../chapter4.rst:1798
 msgid ""
 "With this chapter we complete our discussion of design. The remainder of "
 "the book will discuss style and programming techniques."
 msgstr ""
 
-#: ../../chapter4.rst:1803
+#: ../../chapter4.rst:1802
 msgid "For Further Thinking"
 msgstr ""
 
-#: ../../chapter4.rst:1805
+#: ../../chapter4.rst:1804
 msgid ""
 "Design the components and describe the algorithm(s) necessary to simulate"
 " shuffling a deck of cards. Your algorithm will produce an array of "
 "numbers, 0–51, arranged in random order."
 msgstr ""
 
-#: ../../chapter4.rst:1809
+#: ../../chapter4.rst:1808
 msgid ""
 "The special constraint of this problem, of course, is that no one card "
 "may appear twice in the array."
 msgstr ""
 
-#: ../../chapter4.rst:1812
+#: ../../chapter4.rst:1811
 msgid ""
 "You may assume you have a random-number generator called CHOOSE. It’s "
 "stack argument is “:math:`n`”; it produces a random number between zero "
@@ -2538,142 +2646,42 @@ msgid ""
 "Forth*.)"
 msgstr ""
 
-#: ../../chapter4.rst:1817
+#: ../../chapter4.rst:1816
 msgid ""
 "Can you design the card-shuffling algorithm so that it avoids the time-"
 "consuming burden of checking some undetermined number of slots on each "
 "pass of the loop? Can you do so using only the one array?"
 msgstr ""
 
-#: ../../chapter4.rst:1822
+#: ../../chapter4.rst:1821
 msgid "REFERNCES"
+msgstr "参考文献"
+
+#: ../../chapter4.rst:1823
+msgid ""
+"Polya, **How To Solve It: A New Aspect of Mathematical Method** "
+",(Princeton, New Jersey, Princeton University Press)."
 msgstr ""
+"Polya,  **How To Solve It: A New Aspect of Mathematical Method** , "
+"(Princeton, New Jersey, Princeton University   "
+"Press).(邦題「いかにして問題をとくか」,ジョージ・ポリア 著,柿内 賢信 訳,丸善出版,1975年04月,ISBN "
+"978-4-621-04593-0)"
 
 #: ../../chapter4.rst:1824
 msgid ""
-"Polya,  **How To Solve It: A New Aspect of   Mathematical Method** , "
-"(Princeton, New Jersey, Princeton University   Press).%!! (C) should be a"
-" nicer copyright sign"
+"Leslie A. Hart, **How the Brain Works** , (C) 1975 by Leslie A. Hart, "
+"(New York, Basic Books, Inc., 1975)."
 msgstr ""
 
 #: ../../chapter4.rst:1825
 msgid ""
-"Leslie A. Hart,  **How the Brain Works** ,   (C) 1975 by Leslie A. Hart, "
-"(New York, Basic Books, Inc.,   1975)."
+"Evan Rosen, \"High Speed, Low Memory Consumption Structures,\" 1982  "
+"**FORML Conference Proceedings** , p.191."
 msgstr ""
 
 #: ../../chapter4.rst:1826
 msgid ""
-"Evan Rosen, \"High Speed, Low Memory Consumption   Structures,\" 1982  "
-"**FORML Conference Proceedings** , p. 191."
+"Michael Stolowitz, \"A Compiler for Programmable Logic in FORTH,\" 1982 "
+"**FORML Conference Proceedings** , p.257."
 msgstr ""
-
-#: ../../chapter4.rst:1827
-msgid ""
-"Michael Stolowitz, \"A Compiler for Programmable   Logic in FORTH,\" 1982"
-"  **FORML Conference Proceedings** , p. 257."
-msgstr ""
-
-#~ msgid ""
-#~ "Know what you’re trying to accomplish."
-#~ " As we saw in Chapter Two, this"
-#~ " step can be detailed further:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Determine the rules; review all the "
-#~ "facts that you know. In Chapter "
-#~ "Two we described the rates for "
-#~ "computing the cost of a phone call"
-#~ " along with the rules for applying"
-#~ " the rates."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "we have several options. ``SHOW`` might"
-#~ " set a flag and ``INVENTORY`` would"
-#~ " act according to the flag. Such "
-#~ "an approach has certain disadvantages, "
-#~ "especially that ``INVENTORY`` must be "
-#~ "“smart” enough to know all the "
-#~ "possible actions that might be taken "
-#~ "on it. (We’ll treat these problems "
-#~ "in Chapters :doc:`chapter7` and "
-#~ ":doc:`chapter8` .)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Or, the recommended approach, ``SHOW`` "
-#~ "might set an “execution variable” that"
-#~ " INVENTORY will then execute. (We’ll "
-#~ "discuss vectored execution in Chapter "
-#~ "Seven.)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In Chapter Two we learned how to"
-#~ " describe a problem’s requirements in "
-#~ "terms of interfaces and rules. In "
-#~ "this section we’ll refine the conceptual"
-#~ " model for each component into "
-#~ "clearly defined algorithms and data "
-#~ "structures."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In Chapter Two we introduced the "
-#~ "telephone rate problem. In that problem"
-#~ " the rates appeared to be arbitrary,"
-#~ " so we designed a data structure:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In Chapter Three we designed a "
-#~ "keystroke interpreter for our Tiny "
-#~ "Editor using a decision table:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The use of logic becomes advisable "
-#~ "when the result is not calculable, "
-#~ "or when the decision is not "
-#~ "complicated enough to warrant a decision"
-#~ " table. Chapter Eight is devoted to"
-#~ " the issue of minimizing the use "
-#~ "of logic in your programs."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Note: This use of ``ASCII`` requires "
-#~ "that ``ASCII`` be “ ``STATE`` "
-#~ "-dependent” (see :doc:`appendixc`). If the "
-#~ "word ``ASCII`` is not defined in "
-#~ "your system, or if it is not "
-#~ "state-dependent, use:"
-#~ msgstr ""
-
-#~ msgid "4. Detailed Design/0Problem Solving"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Words that require a numeric argument"
-#~ " will naturally expect to find that"
-#~ " number on the stack. Syntactically "
-#~ "speaking, then, the number should "
-#~ "precede the name. For instance, the "
-#~ "syntax of the word SPACES, which "
-#~ "emits “:math:`n`” number of spaces, is"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "\\G. Polya has written several books "
-#~ "on problem solving, especially of the"
-#~ " mathematical problem. The most accessible"
-#~ " of these is *How to Solve It*"
-#~ " [polya]_ . Although solving a "
-#~ "mathematical problem isn’t quite the "
-#~ "same as solving a software problem, "
-#~ "you’ll find some valuable suggestions "
-#~ "there."
-#~ msgstr ""
 
