@@ -742,14 +742,14 @@ apparent when we visit this example again, later in the book):
    : LIGHT  ( precedes a color)  ( -- color value)
         ' EXECUTE  8 OR ;
 
-(in fig-Forth:
+in fig-Forth:
 
 .. code-block:: none
    
-   : LIGHT [COMPILE] '  CFA EXECUTE  8 OR ;&textrm{)}
+   : LIGHT [COMPILE] '  CFA EXECUTE  8 OR ;
 
 (For novices: The apostrophe in the definition of
-``LIGHT`` is a Forth word called “tick.” Tick is a dictionary-search word;
+``LIGHT`` is a Forth word called "tick." Tick is a dictionary-search word;
 it takes a name and looks it up in the dictionary, returning the address
 where the definition resides. Used in this definition, it will find the
 address of the word following ``LIGHT`` —for instance, ``BLUE`` —and pass this
@@ -830,7 +830,7 @@ The following tip is perhaps the most important in this chapter:
 
 .. hint::
 
-   Don't write your own interpreter/compiler when you can use {Forth}{}'s.
+   Don\'t write your own interpreter/compiler when you can use Forth\'s.
 
 One class of applications answers a need for a special purpose
 language—a self-contained set of commands for doing one particular
@@ -972,8 +972,8 @@ approach.
 
 Suppose we must write code to fulfill this specification:
 
-.. code-block:: none
-   
+::
+
    if the input argument is 1, the output is 10
    if the input argument is 2, the output is 12
    if the input argument is 3, the output is 14
@@ -1103,7 +1103,7 @@ on the stack and displays it as a Roman numeral.
 This problem most likely represents a component of a larger system.
 We’ll probably end up defining several words in the course of solving
 this problem, including data structures. But this particular lexicon
-will include only one name, ROMAN, and it will take its argument from
+will include only one name, ``ROMAN``, and it will take its argument from
 the stack. (Other words will be internal to the component.)
 
 Having thus decided on the external syntax, we can now proceed to devise
@@ -1119,16 +1119,18 @@ how to do it—but we can’t yet state the procedure as an algorithm.
 
 So, let’s look at the first ten Roman numerals:
 
-| I
-| II
-| III
-| IV
-| V
-| VI
-| VII
-| VIII
-| IX
-| X
+.. code-block:: none
+
+       I
+      II
+     III
+      IV
+       V
+      VI
+     VII
+    VIII
+      IX
+       X
 
 We make a few observations. First, there’s the
 idea of a tally, where we represent a number by making that many marks
@@ -1149,16 +1151,18 @@ the whole picture yet.
 
 Let’s study what happens above ten:
 
-| XI
-| XII
-| XIII
-| XIV
-| XV
-| XVI
-| XVII
-| XVIII
-| XIX
-| XX
+.. code-block:: none
+
+      XI
+     XII
+    XIII
+     XIV
+      XV
+     XVI
+    XVII
+   XVIII
+     XIX
+      XX
 
 This is exactly the pattern
 as before, with an extra “X” in front. So there’s a repeating cycle of
@@ -1200,15 +1204,14 @@ of ten. We notice that forty is “XL.” This is analogous to 4 being “IV,”
 only shifted by the value of ten. The “X” before the “L” says
 “ten-less-than-fifty.” Similarly,
 
-.. csv-table::
-   :widths: auto
+.. code-block:: none
    
-   "L",    50,  "is analogous to", "V",    5
-   "LX",   60,  "is analogous to", "VI",   6
-   "LXX",  70,  "is analogous to", "VII",  7
-   "LXXX", 80,  "is analogous to", "VIII", 8
-   "XC",   90,  "is analogous to", "IX",   9
-   "C",    100, "is analogous to", "X",    10
+      L  50 is analogous to    V  5
+     LX  60 is analogous to   VI  6
+    LXX  70 is analogous to  VII  7
+   LXXX  80 is analogous to VIII  8
+     XC  90 is analogous to   IX  9
+      C 100 is analogous to    X 10
 
 Apparently the same patterns apply for any decimal
 digit—only the symbols themselves change. Anyway, it’s clear now that
@@ -1221,30 +1224,29 @@ structure.
 Data Structure
 --------------
 
-+---+---------+------+---+---------+
-| One`s Table |      | Ten`s Table |  
-+---+---------+------+---+---------+
-| 0 |         |      | 0 |         |
-+---+---------+------+---+---------+
-| 1 |       I |      | 1 |       X |
-+---+---------+------+---+---------+
-| 2 |      II |      | 2 |      XX |
-+---+---------+------+---+---------+
-| 3 |     III |      | 3 |     XXX |
-+---+---------+------+---+---------+
-| 4 |      IV |      | 4 |      XL |
-+---+---------+------+---+---------+
-| 5 |       V |      | 5 |       L |
-+---+---------+------+---+---------+
-| 6 |      VI |      | 6 |      LX |
-+---+---------+------+---+---------+
-| 7 |     VII |      | 7 |     LXX |
-+---+---------+------+---+---------+
-| 8 |    VIII |      | 8 |    LXXX |
-+---+---------+------+---+---------+
-| 9 |      IX |      | 9 |      XC |
-+---+---------+------+---+---------+
-
++---+---------+---+---------+
+| One`s Table | Ten`s Table |  
++---+---------+---+---------+
+| 0 |         | 0 |         |
++---+---------+---+---------+
+| 1 |       I | 1 |       X |
++---+---------+---+---------+
+| 2 |      II | 2 |      XX |
++---+---------+---+---------+
+| 3 |     III | 3 |     XXX |
++---+---------+---+---------+
+| 4 |      IV | 4 |      XL |
++---+---------+---+---------+
+| 5 |       V | 5 |       L |
++---+---------+---+---------+
+| 6 |      VI | 6 |      LX |
++---+---------+---+---------+
+| 7 |     VII | 7 |     LXX |
++---+---------+---+---------+
+| 8 |    VIII | 8 |    LXXX |
++---+---------+---+---------+
+| 9 |      IX | 9 |      XC |
++---+---------+---+---------+
 
 Algorithm
 ---------
@@ -1259,7 +1261,9 @@ For example, if the number is 72, the quotient is 7, the remainder is 2.
 7 in the tens’ table corresponds to “LXX,” so print that. 2 in the ones’
 column corresponds to “II,” so print that. The result:
 
-    LXXII
+.. code-block:: none
+   
+   LXXII
 
 We’ve just constructed a model that works for numbers from one to 99.
 Any higher number would require a hundreds’ table as well, along with an
@@ -1304,9 +1308,9 @@ in multiples, as “XXXIII.” But you can’t have multiples of any of the
 right-column symbols, such as VVV. Is this observation useful? Who
 knows?
 
-Let’s call the symbols in the left column ONERS and in the right column
-FIVERS. The ONERS represent the values 1, 10, 100, and 1,000; that is,
-the value of one in every possible decimal place. The FIVERS represent
+Let’s call the symbols in the left column ``ONERS`` and in the right column
+``FIVERS``. The ``ONERS`` represent the values 1, 10, 100, and 1,000; that is,
+the value of one in every possible decimal place. The ``FIVERS`` represent
 5, 50, and 500; that is, the value of five in every possible decimal
 place.
 
@@ -1327,7 +1331,7 @@ algorithm to cover this exception:
 
     Print as many ``ONERS`` as necessary to add up to the value, but if
     the digit is 4, print a ``ONER`` then a ``FIVER``.
-    Hence, 40 is "XL"; 4 is "IV."
+    Hence, 40 is "XL"; 4 is "IV".
 
 This new rule works until the digit is 5. As we noticed before, digits
 of five and above begin with a ``FIVER`` symbol. So we expand our rule

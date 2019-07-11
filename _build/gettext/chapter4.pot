@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-10 04:51+0900\n"
+"POT-Creation-Date: 2019-07-12 07:47+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -589,8 +589,8 @@ msgid "0 × 8 ="
 msgstr ""
 
 #: ../../chapter4.rst:662
-#: ../../chapter4.rst:1227
-#: ../../chapter4.rst:1227
+#: ../../chapter4.rst:1230
+#: ../../chapter4.rst:1230
 msgid "0"
 msgstr ""
 
@@ -603,9 +603,8 @@ msgid "1 × 8 ="
 msgstr ""
 
 #: ../../chapter4.rst:665
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1243
-#: ../../chapter4.rst:1243
+#: ../../chapter4.rst:1246
+#: ../../chapter4.rst:1246
 msgid "8"
 msgstr ""
 
@@ -674,11 +673,11 @@ msgid "And then define ``LIGHT`` such that it looks for the next word in the inp
 msgstr ""
 
 #: ../../chapter4.rst:745
-msgid "(in fig-Forth:"
+msgid "in fig-Forth:"
 msgstr ""
 
 #: ../../chapter4.rst:751
-msgid "(For novices: The apostrophe in the definition of ``LIGHT`` is a Forth word called “tick.” Tick is a dictionary-search word; it takes a name and looks it up in the dictionary, returning the address where the definition resides. Used in this definition, it will find the address of the word following ``LIGHT`` —for instance, ``BLUE`` —and pass this address to the word ``EXECUTE``, which will execute ``BLUE``, pushing a one onto the stack. Having “sucked up” the operation of ``BLUE``, ``LIGHT`` now “or”s an 8 into the 1, producing a 9.)"
+msgid "(For novices: The apostrophe in the definition of ``LIGHT`` is a Forth word called \"tick.\" Tick is a dictionary-search word; it takes a name and looks it up in the dictionary, returning the address where the definition resides. Used in this definition, it will find the address of the word following ``LIGHT`` —for instance, ``BLUE`` —and pass this address to the word ``EXECUTE``, which will execute ``BLUE``, pushing a one onto the stack. Having “sucked up” the operation of ``BLUE``, ``LIGHT`` now “or”s an 8 into the 1, producing a 9.)"
 msgstr ""
 
 #: ../../chapter4.rst:760
@@ -754,7 +753,7 @@ msgid "The following tip is perhaps the most important in this chapter:"
 msgstr ""
 
 #: ../../chapter4.rst:833
-msgid "Don't write your own interpreter/compiler when you can use {Forth}{}'s."
+msgid "Don\\'t write your own interpreter/compiler when you can use Forth\\'s."
 msgstr ""
 
 #: ../../chapter4.rst:835
@@ -794,7 +793,7 @@ msgid "All of these examples can be coded in Forth as lexicons, using the normal
 msgstr ""
 
 #: ../../chapter4.rst:906
-#: ../../chapter4.rst:1741
+#: ../../chapter4.rst:1745
 msgid "**Moore**:"
 msgstr ""
 
@@ -888,7 +887,7 @@ msgid "Calculation"
 msgstr ""
 
 #: ../../chapter4.rst:992
-#: ../../chapter4.rst:1222
+#: ../../chapter4.rst:1225
 msgid "Data Structure"
 msgstr ""
 
@@ -1051,7 +1050,7 @@ msgid "Here goes: The problem is to write a definition that consumes a number on
 msgstr ""
 
 #: ../../chapter4.rst:1103
-msgid "This problem most likely represents a component of a larger system. We’ll probably end up defining several words in the course of solving this problem, including data structures. But this particular lexicon will include only one name, ROMAN, and it will take its argument from the stack. (Other words will be internal to the component.)"
+msgid "This problem most likely represents a component of a larger system. We’ll probably end up defining several words in the course of solving this problem, including data structures. But this particular lexicon will include only one name, ``ROMAN``, and it will take its argument from the stack. (Other words will be internal to the component.)"
 msgstr ""
 
 #: ../../chapter4.rst:1109
@@ -1070,739 +1069,635 @@ msgstr ""
 msgid "So, let’s look at the first ten Roman numerals:"
 msgstr ""
 
-#: ../../chapter4.rst:1122
-#: ../../chapter4.rst:1229
-#: ../../chapter4.rst:1283
-#: ../../chapter4.rst:1550
-msgid "I"
-msgstr ""
-
-#: ../../chapter4.rst:1123
-#: ../../chapter4.rst:1231
-msgid "II"
-msgstr ""
-
-#: ../../chapter4.rst:1124
-#: ../../chapter4.rst:1233
-msgid "III"
-msgstr ""
-
-#: ../../chapter4.rst:1125
-#: ../../chapter4.rst:1235
-msgid "IV"
-msgstr ""
-
-#: ../../chapter4.rst:1126
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1237
-#: ../../chapter4.rst:1285
-#: ../../chapter4.rst:1550
-msgid "V"
-msgstr ""
-
-#: ../../chapter4.rst:1127
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1239
-msgid "VI"
-msgstr ""
-
-#: ../../chapter4.rst:1128
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1241
-msgid "VII"
-msgstr ""
-
-#: ../../chapter4.rst:1129
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1243
-msgid "VIII"
-msgstr ""
-
-#: ../../chapter4.rst:1130
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1245
-msgid "IX"
-msgstr ""
-
-#: ../../chapter4.rst:1131
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1229
-#: ../../chapter4.rst:1286
-#: ../../chapter4.rst:1551
-msgid "X"
-msgstr ""
-
-#: ../../chapter4.rst:1133
+#: ../../chapter4.rst:1135
 msgid "We make a few observations. First, there’s the idea of a tally, where we represent a number by making that many marks (3 = III). On the other hand, special symbols are used to represent groups (5 = V). In fact, it seems we can’t have more than three I’s in a row before we use a larger symbol."
 msgstr ""
 
-#: ../../chapter4.rst:1139
+#: ../../chapter4.rst:1141
 msgid "Second, there’s a symmetry around five. There’s a symbol for five (V), and a symbol for ten (X). The pattern I, II, III repeats in the second half, but with a preceding V."
 msgstr ""
 
-#: ../../chapter4.rst:1143
+#: ../../chapter4.rst:1145
 msgid "One-less-than-five is written IV, and one-less-than-ten is written IX. It seems that putting an “I” in front of a larger-value symbol is like saying “one-less-than…”"
 msgstr ""
 
-#: ../../chapter4.rst:1147
+#: ../../chapter4.rst:1149
 msgid "These are vague, hazy observations. But that’s alright. We don’t have the whole picture yet."
 msgstr ""
 
-#: ../../chapter4.rst:1150
+#: ../../chapter4.rst:1152
 msgid "Let’s study what happens above ten:"
 msgstr ""
 
-#: ../../chapter4.rst:1152
-msgid "XI"
-msgstr ""
-
-#: ../../chapter4.rst:1153
-msgid "XII"
-msgstr ""
-
-#: ../../chapter4.rst:1154
-msgid "XIII"
-msgstr ""
-
-#: ../../chapter4.rst:1155
-msgid "XIV"
-msgstr ""
-
-#: ../../chapter4.rst:1156
-msgid "XV"
-msgstr ""
-
-#: ../../chapter4.rst:1157
-msgid "XVI"
-msgstr ""
-
-#: ../../chapter4.rst:1158
-msgid "XVII"
-msgstr ""
-
-#: ../../chapter4.rst:1159
-msgid "XVIII"
-msgstr ""
-
-#: ../../chapter4.rst:1160
-msgid "XIX"
-msgstr ""
-
-#: ../../chapter4.rst:1161
-#: ../../chapter4.rst:1231
-msgid "XX"
-msgstr ""
-
-#: ../../chapter4.rst:1163
+#: ../../chapter4.rst:1167
 msgid "This is exactly the pattern as before, with an extra “X” in front. So there’s a repeating cycle of ten, as well."
 msgstr ""
 
-#: ../../chapter4.rst:1167
+#: ../../chapter4.rst:1171
 msgid "If we look at the twenties, they’re the same, with two “X”s; the thirties with three “X”s. In fact, the number of “X” is the same as the number in the tens column of the original decimal number."
 msgstr ""
 
-#: ../../chapter4.rst:1171
+#: ../../chapter4.rst:1175
 msgid "This seems like an important observation: we can decompose our decimal number into decimal digits, and treat each digit separately. For instance, 37 can be written as"
 msgstr ""
 
-#: ../../chapter4.rst:1175
+#: ../../chapter4.rst:1179
 msgid "XXX (thirty)"
 msgstr ""
 
-#: ../../chapter4.rst:1177
+#: ../../chapter4.rst:1181
 msgid "followed by"
 msgstr ""
 
-#: ../../chapter4.rst:1179
+#: ../../chapter4.rst:1183
 msgid "VII (seven)"
 msgstr ""
 
-#: ../../chapter4.rst:1181
+#: ../../chapter4.rst:1185
 msgid "It may be premature, but we can already see a method by which Forth will let us decompose a number into decimal digits—with modulo division by ten. For instance, if we say"
 msgstr ""
 
-#: ../../chapter4.rst:1189
+#: ../../chapter4.rst:1193
 msgid "we’ll get a 7 and a 3 on the stack (the three—being the quotient—is on top.)"
 msgstr ""
 
-#: ../../chapter4.rst:1192
+#: ../../chapter4.rst:1196
 msgid "But these observations raise a question: What about below ten, where there is no ten’s place? Is this a special case? Well, if we consider that each “X” represents ten, then the absence of “X” represents zero. So it’s *not* a special case. Our algorithm works, even for numbers less than ten."
 msgstr ""
 
-#: ../../chapter4.rst:1198
+#: ../../chapter4.rst:1202
 msgid "Let’s continue our observations, paying special attention to the cycles of ten. We notice that forty is “XL.” This is analogous to 4 being “IV,” only shifted by the value of ten. The “X” before the “L” says “ten-less-than-fifty.” Similarly,"
 msgstr ""
 
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1237
-#: ../../chapter4.rst:1288
-#: ../../chapter4.rst:1551
-msgid "L"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "50"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1
-msgid "is analogous to"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1237
-#: ../../chapter4.rst:1237
-msgid "5"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1239
-msgid "LX"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "60"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1239
-#: ../../chapter4.rst:1239
-msgid "6"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1241
-msgid "LXX"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "70"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1241
-#: ../../chapter4.rst:1241
-msgid "7"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1243
-msgid "LXXX"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "80"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1245
-msgid "XC"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "90"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1245
-#: ../../chapter4.rst:1245
-msgid "9"
-msgstr ""
-
-#: ../../chapter4.rst:1
-#: ../../chapter4.rst:1289
-#: ../../chapter4.rst:1552
-msgid "C"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "100"
-msgstr ""
-
-#: ../../chapter4.rst:1
-msgid "10"
-msgstr ""
-
-#: ../../chapter4.rst:1213
+#: ../../chapter4.rst:1216
 msgid "Apparently the same patterns apply for any decimal digit—only the symbols themselves change. Anyway, it’s clear now that we’re dealing with an essentially decimal system."
 msgstr ""
 
-#: ../../chapter4.rst:1217
+#: ../../chapter4.rst:1220
 msgid "If pressed to do so, we could even build a model for a system to display Roman numerals from 1 to 99, using a combination of algorithm and data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1225
+#: ../../chapter4.rst:1228
 msgid "One`s Table"
 msgstr ""
 
-#: ../../chapter4.rst:1225
+#: ../../chapter4.rst:1228
 msgid "Ten`s Table"
 msgstr ""
 
-#: ../../chapter4.rst:1229
-#: ../../chapter4.rst:1229
+#: ../../chapter4.rst:1232
+#: ../../chapter4.rst:1232
 msgid "1"
 msgstr ""
 
-#: ../../chapter4.rst:1231
-#: ../../chapter4.rst:1231
+#: ../../chapter4.rst:1232
+#: ../../chapter4.rst:1287
+#: ../../chapter4.rst:1554
+msgid "I"
+msgstr ""
+
+#: ../../chapter4.rst:1232
+#: ../../chapter4.rst:1290
+#: ../../chapter4.rst:1555
+msgid "X"
+msgstr ""
+
+#: ../../chapter4.rst:1234
+#: ../../chapter4.rst:1234
 msgid "2"
 msgstr ""
 
-#: ../../chapter4.rst:1233
-#: ../../chapter4.rst:1233
+#: ../../chapter4.rst:1234
+msgid "II"
+msgstr ""
+
+#: ../../chapter4.rst:1234
+msgid "XX"
+msgstr ""
+
+#: ../../chapter4.rst:1236
+#: ../../chapter4.rst:1236
 msgid "3"
 msgstr ""
 
-#: ../../chapter4.rst:1233
+#: ../../chapter4.rst:1236
+msgid "III"
+msgstr ""
+
+#: ../../chapter4.rst:1236
 msgid "XXX"
 msgstr ""
 
-#: ../../chapter4.rst:1235
-#: ../../chapter4.rst:1235
+#: ../../chapter4.rst:1238
+#: ../../chapter4.rst:1238
 msgid "4"
 msgstr ""
 
-#: ../../chapter4.rst:1235
+#: ../../chapter4.rst:1238
+msgid "IV"
+msgstr ""
+
+#: ../../chapter4.rst:1238
 msgid "XL"
 msgstr ""
 
-#: ../../chapter4.rst:1250
-msgid "Algorithm"
+#: ../../chapter4.rst:1240
+#: ../../chapter4.rst:1240
+msgid "5"
+msgstr ""
+
+#: ../../chapter4.rst:1240
+#: ../../chapter4.rst:1289
+#: ../../chapter4.rst:1554
+msgid "V"
+msgstr ""
+
+#: ../../chapter4.rst:1240
+#: ../../chapter4.rst:1292
+#: ../../chapter4.rst:1555
+msgid "L"
+msgstr ""
+
+#: ../../chapter4.rst:1242
+#: ../../chapter4.rst:1242
+msgid "6"
+msgstr ""
+
+#: ../../chapter4.rst:1242
+msgid "VI"
+msgstr ""
+
+#: ../../chapter4.rst:1242
+msgid "LX"
+msgstr ""
+
+#: ../../chapter4.rst:1244
+#: ../../chapter4.rst:1244
+msgid "7"
+msgstr ""
+
+#: ../../chapter4.rst:1244
+msgid "VII"
+msgstr ""
+
+#: ../../chapter4.rst:1244
+msgid "LXX"
+msgstr ""
+
+#: ../../chapter4.rst:1246
+msgid "VIII"
+msgstr ""
+
+#: ../../chapter4.rst:1246
+msgid "LXXX"
+msgstr ""
+
+#: ../../chapter4.rst:1248
+#: ../../chapter4.rst:1248
+msgid "9"
+msgstr ""
+
+#: ../../chapter4.rst:1248
+msgid "IX"
+msgstr ""
+
+#: ../../chapter4.rst:1248
+msgid "XC"
 msgstr ""
 
 #: ../../chapter4.rst:1252
+msgid "Algorithm"
+msgstr ""
+
+#: ../../chapter4.rst:1254
 msgid "Divide :math:`n` by 10. The quotient is the tens’ column digit; the remainder is the ones’ column digit. Look up the ten’s digit in the tens’ table and print the corresponding symbol pattern. Look up the ones’ digit in the one’s table and print that corresponding symbol pattern."
 msgstr ""
 
-#: ../../chapter4.rst:1258
+#: ../../chapter4.rst:1260
 msgid "For example, if the number is 72, the quotient is 7, the remainder is 2. 7 in the tens’ table corresponds to “LXX,” so print that. 2 in the ones’ column corresponds to “II,” so print that. The result:"
 msgstr ""
 
-#: ../../chapter4.rst:1262
-msgid "LXXII"
-msgstr ""
-
-#: ../../chapter4.rst:1264
+#: ../../chapter4.rst:1268
 msgid "We’ve just constructed a model that works for numbers from one to 99. Any higher number would require a hundreds’ table as well, along with an initial division by 100."
 msgstr ""
 
-#: ../../chapter4.rst:1268
+#: ../../chapter4.rst:1272
 msgid "The logical model just described might be satisfactory, as long as it does the job. But somehow it doesn’t seem we’ve fully solved the problem. We avoided figuring out how to produce the basic pattern by storing all possible combinations in a series of tables. Earlier in this chapter we observed that calculating an answer, if it’s possible, can be easier than using a data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1275
+#: ../../chapter4.rst:1279
 msgid "Since this section deals with devising algorithms, let’s go all the way. Let’s look for a general algorithm for producing any digit, using only the elementary set of symbols. Our data structure should contain only this much information:"
 msgstr ""
 
-#: ../../chapter4.rst:1291
-#: ../../chapter4.rst:1552
+#: ../../chapter4.rst:1293
+#: ../../chapter4.rst:1556
+msgid "C"
+msgstr ""
+
+#: ../../chapter4.rst:1295
+#: ../../chapter4.rst:1556
 msgid "D"
 msgstr ""
 
-#: ../../chapter4.rst:1292
-#: ../../chapter4.rst:1553
-#: ../../chapter4.rst:1574
+#: ../../chapter4.rst:1296
+#: ../../chapter4.rst:1557
+#: ../../chapter4.rst:1578
 msgid "M"
 msgstr ""
 
-#: ../../chapter4.rst:1296
+#: ../../chapter4.rst:1300
 msgid "In listing the symbols, we’ve also *organized* them in a way that seems right. The symbols in the left column are all multiples of ten; the symbols in the right column are multiples of five. Furthermore, the symbols in each row have ten times the value of the symbols directly above them."
 msgstr ""
 
-#: ../../chapter4.rst:1302
+#: ../../chapter4.rst:1306
 msgid "Another difference, the symbols in the first column can all be combined in multiples, as “XXXIII.” But you can’t have multiples of any of the right-column symbols, such as VVV. Is this observation useful? Who knows?"
 msgstr ""
 
-#: ../../chapter4.rst:1307
-msgid "Let’s call the symbols in the left column ONERS and in the right column FIVERS. The ONERS represent the values 1, 10, 100, and 1,000; that is, the value of one in every possible decimal place. The FIVERS represent 5, 50, and 500; that is, the value of five in every possible decimal place."
+#: ../../chapter4.rst:1311
+msgid "Let’s call the symbols in the left column ``ONERS`` and in the right column ``FIVERS``. The ``ONERS`` represent the values 1, 10, 100, and 1,000; that is, the value of one in every possible decimal place. The ``FIVERS`` represent 5, 50, and 500; that is, the value of five in every possible decimal place."
 msgstr ""
 
-#: ../../chapter4.rst:1313
+#: ../../chapter4.rst:1317
 msgid "Using these terms, instead of the symbols themselves, we should be able to express the algorithm for producing any digit. (We’ve factored out the actual symbols from the *kind* of symbols.) For instance, we can state the following preliminary algorithm:"
 msgstr ""
 
-#: ../../chapter4.rst:1319
+#: ../../chapter4.rst:1323
 msgid "For any digit, print as many ``ONERS`` as necessary to add up to the value."
 msgstr ""
 
-#: ../../chapter4.rst:1322
+#: ../../chapter4.rst:1326
 msgid "Thus, for 300 we get “CCC,” for 20 we get “XX” for one we get “I.” And for 321 we get “CCCXXI.”"
 msgstr ""
 
-#: ../../chapter4.rst:1325
+#: ../../chapter4.rst:1329
 msgid "This algorithm works until the digit is 4. Now we’ll have to expand our algorithm to cover this exception:"
 msgstr ""
 
-#: ../../chapter4.rst:1328
-msgid "Print as many ``ONERS`` as necessary to add up to the value, but if the digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is \"XL\"; 4 is \"IV.\""
-msgstr ""
-
 #: ../../chapter4.rst:1332
-msgid "This new rule works until the digit is 5. As we noticed before, digits of five and above begin with a ``FIVER`` symbol. So we expand our rule again:"
+msgid "Print as many ``ONERS`` as necessary to add up to the value, but if the digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is \"XL\"; 4 is \"IV\"."
 msgstr ""
 
 #: ../../chapter4.rst:1336
+msgid "This new rule works until the digit is 5. As we noticed before, digits of five and above begin with a ``FIVER`` symbol. So we expand our rule again:"
+msgstr ""
+
+#: ../../chapter4.rst:1340
 msgid "If the digit is 5 or more, begin with a ``FIVER`` and subtract five from the value; otherwise do nothing. Then print as many ``ONERS`` as necessary to add up to the value. But if the digit is 4, print only a ``ONER`` and a ``FIVER``."
 msgstr ""
 
-#: ../../chapter4.rst:1341
+#: ../../chapter4.rst:1345
 msgid "This rule works until the digit is 9. In this case, we must print a ``ONER`` preceding a—what? A ``ONER`` from the next higher decimal place (the next row below). Let’s call this a ``TENER``. Our complete model, then is:"
 msgstr ""
 
-#: ../../chapter4.rst:1345
+#: ../../chapter4.rst:1349
 msgid "If the digit is 5 or more, begin with a ``FIVER`` and subtract five from the value; otherwise do nothing. Then, print as many ``ONERS`` as necessary to add up to the value. But if the digit is 4, print only a ``ONER`` and a ``FIVER``, or if it's 9, print only a ``ONER`` and a ``TENER``."
 msgstr ""
 
-#: ../../chapter4.rst:1351
+#: ../../chapter4.rst:1355
 msgid "We now have an English-language version of our algorithm. But we still have some steps to go before we can run it on our computer."
 msgstr ""
 
-#: ../../chapter4.rst:1355
+#: ../../chapter4.rst:1359
 msgid "In particular, we have to be more specific about the exceptions. We can’t just say,"
 msgstr ""
 
-#: ../../chapter4.rst:1358
+#: ../../chapter4.rst:1362
 msgid "Do a, b, and c. **But** in such and such a case, do something different."
 msgstr ""
 
-#: ../../chapter4.rst:1360
+#: ../../chapter4.rst:1364
 msgid "because the computer will do a, b, and c before it knows any better."
 msgstr ""
 
-#: ../../chapter4.rst:1362
+#: ../../chapter4.rst:1366
 msgid "Instead, we have to check whether the exceptions apply *before* we do anything else."
 msgstr ""
 
-#: ../../chapter4.rst:1367
+#: ../../chapter4.rst:1371
 msgid "In devising an algorithm, consider exceptions last. In writing code, handle exceptions first."
 msgstr ""
 
-#: ../../chapter4.rst:1370
+#: ../../chapter4.rst:1374
 msgid "This tells us something about the general structure of our digit-producing word. It will have to begin with a test for the 4/9 exceptions. In either of those cases, it will respond accordingly. If neither exception applies, it will follow the “normal” algorithm. Using pseudocode, then:"
 msgstr ""
 
-#: ../../chapter4.rst:1381
+#: ../../chapter4.rst:1385
 msgid "An experienced Forth programmer would not actually write out this pseudocode, but would more likely form a mental image of the structure for eliminating the special cases. A less experienced programmer might find it helpful to capture the structure in a diagram, or in code as we’ve done here."
 msgstr ""
 
-#: ../../chapter4.rst:1387
+#: ../../chapter4.rst:1391
 msgid "In Forth we try to minimize our dependence on logic. But in this case we need the conditional ``IF`` because we have an exception we need to eliminate. Still, we’ve minimized the complexity of the control structure by limiting the number of ``IF``  ``THEN`` s in this definition to one."
 msgstr ""
 
-#: ../../chapter4.rst:1393
+#: ../../chapter4.rst:1397
 msgid "Yes, we still have to distinguish between the 4-case and the 9-case, but we’ve deferred that structural dimension to lower-level definitions—the test for 4-or-9 and the “special case” code."
 msgstr ""
 
-#: ../../chapter4.rst:1397
+#: ../../chapter4.rst:1401
 msgid "What our structure really says is that either the 4-exception or the 9-exception must prohibit execution of the normal case. It’s not enough merely to test for each exception, as in this version:"
 msgstr ""
 
-#: ../../chapter4.rst:1407
+#: ../../chapter4.rst:1411
 msgid "because the normal case is never excluded. (There’s no way to put an ``ELSE`` just before the normal case, because ``ELSE`` must appear between ``IF`` and ``THEN``.)"
 msgstr ""
 
-#: ../../chapter4.rst:1411
+#: ../../chapter4.rst:1415
 msgid "If we insist on handling the 4-exception and the 9-exception separately, we could arrange for each exception to pass an additional flag, indicating that the exception occurred. If either of these flags is true, then we can exclude the normal case:"
 msgstr ""
 
-#: ../../chapter4.rst:1422
+#: ../../chapter4.rst:1426
 msgid "But this approach needlessly complicates the definition by adding new control structures. We’ll leave it like it was."
 msgstr ""
 
-#: ../../chapter4.rst:1425
+#: ../../chapter4.rst:1429
 msgid "Now we have a general idea of the structure of our main definition."
 msgstr ""
 
-#: ../../chapter4.rst:1427
+#: ../../chapter4.rst:1431
 msgid "We stated, “If the digit is 5 or more, begin with a ``FIVER`` and subtract five from the value; otherwise do nothing. Then, print as many ``ONERS`` as necessary to add up to the value.”"
 msgstr ""
 
-#: ../../chapter4.rst:1431
+#: ../../chapter4.rst:1435
 msgid "A direct translation of these rules into Forth would look like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1437
+#: ../../chapter4.rst:1441
 msgid "This is technically correct, but if we’re familiar with the technique of modulo division, we’ll see this as a natural situation for modulo division by 5. If we divide the number by five, the quotient will be zero (false) when the number is less than five, and one (true) when it’s between 5 and 9. We can use it as the boolean flag to tell whether we want the leading ``FIVER`` :"
 msgstr ""
 
-#: ../../chapter4.rst:1448
+#: ../../chapter4.rst:1452
 msgid "The quotient/flag becomes the argument to ``IF``."
 msgstr ""
 
-#: ../../chapter4.rst:1450
+#: ../../chapter4.rst:1454
 msgid "Furthermore, the remainder of modulo 5 division is always a number between 0 and 4, which means that (except for our exception) we can use the remainder directly as the argument to ONERS. We revise our phrase to"
 msgstr ""
 
-#: ../../chapter4.rst:1458
+#: ../../chapter4.rst:1462
 msgid "Getting back to that exception, we now see that we can test for both 4 and 9 with a single test—namely, if the remainder is 4. This suggests that we can do our 5 ``/MOD`` first, then test for the exception. Something like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1469
+#: ../../chapter4.rst:1473
 msgid "(Notice that we ``OVER`` ed the remainder so that we could compare it with 4 without consuming it.)"
 msgstr ""
 
-#: ../../chapter4.rst:1472
+#: ../../chapter4.rst:1476
 msgid "So it turns out we *do* have a doubly-nested ``IF THEN`` construct after all. But it seems justified because the ``IF THEN`` is handling the special case. The other is such a short phrase, ``IF FIVER THEN`` \", it’s hardly worth making into a separate definition. You could though. (But we won’t.)"
 msgstr ""
 
-#: ../../chapter4.rst:1479
+#: ../../chapter4.rst:1483
 msgid "Let’s focus on the code for the special case. To state its algorithm: “If the digit is four, print a ``ONER`` and a ``FIVER``. If the digit is nine, print a ``ONER`` and a ``TENER``.”"
 msgstr ""
 
-#: ../../chapter4.rst:1483
+#: ../../chapter4.rst:1487
 msgid "We can assume that the digit will be one or the other, or else we’d never be executing this definition. The question is, how do we tell which one?"
 msgstr ""
 
-#: ../../chapter4.rst:1487
+#: ../../chapter4.rst:1491
 msgid "Again, we can use the quotient of division by five. If the quotient is zero, the digit must have been four; otherwise it was nine. So we’ll play the same trick and use the quotient as a boolean flag. We’ll write:"
 msgstr ""
 
-#: ../../chapter4.rst:1496
+#: ../../chapter4.rst:1500
 msgid "In retrospect, we notice that we’re printing a ``ONER`` either way. We can simplify the definition to:"
 msgstr ""
 
-#: ../../chapter4.rst:1504
+#: ../../chapter4.rst:1508
 msgid "We’ve assumed that we have a quotient on the stack to use. Let’s go back to our definition of ``DIGIT`` and make sure that we do, in fact:"
 msgstr ""
 
-#: ../../chapter4.rst:1513
+#: ../../chapter4.rst:1517
 msgid "It turns out that we have not only a quotient, but a remainder underneath as well. We’re keeping both on the stack in the event we execute the ``ELSE`` clause. The word ``ALMOST``, however, only needs the quotient. So, for symmetry, we must ``DROP`` the remainder like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1525
+#: ../../chapter4.rst:1529
 msgid "There we have the complete, coded definition for producing a single digit of a Roman numeral. If we were desperate to try it out before writing the needed auxiliary definitions, we could very quickly define a lexicon of words to print one group of symbols, say the ``ONES`` row:"
 msgstr ""
 
-#: ../../chapter4.rst:1539
+#: ../../chapter4.rst:1543
 msgid "before loading our definitions of ``ALMOST`` and ``DIGIT``."
 msgstr ""
 
-#: ../../chapter4.rst:1541
+#: ../../chapter4.rst:1545
 msgid "But we’re not that desperate. No, we’re anxious to move on to the problem of defining the words ``ONER``, ``FIVER``, and ``TENER`` so that their symbols depend on which decimal digit we’re formatting."
 msgstr ""
 
-#: ../../chapter4.rst:1545
+#: ../../chapter4.rst:1549
 msgid "Let’s go back to the symbol table we drew earlier:"
 msgstr ""
 
-#: ../../chapter4.rst:1550
-#: ../../chapter4.rst:1568
+#: ../../chapter4.rst:1554
+#: ../../chapter4.rst:1572
 msgid "ones"
 msgstr ""
 
-#: ../../chapter4.rst:1551
-#: ../../chapter4.rst:1570
+#: ../../chapter4.rst:1555
+#: ../../chapter4.rst:1574
 msgid "tens"
 msgstr ""
 
-#: ../../chapter4.rst:1552
-#: ../../chapter4.rst:1572
+#: ../../chapter4.rst:1556
+#: ../../chapter4.rst:1576
 msgid "hundreds"
 msgstr ""
 
-#: ../../chapter4.rst:1553
-#: ../../chapter4.rst:1574
+#: ../../chapter4.rst:1557
+#: ../../chapter4.rst:1578
 msgid "thousands"
 msgstr ""
 
-#: ../../chapter4.rst:1557
+#: ../../chapter4.rst:1561
 msgid "We’ve observed that we also need a ``TENER`` —which is the ``ONER`` in the next row below. It’s as if the table should really be written:"
 msgstr ""
 
-#: ../../chapter4.rst:1564
+#: ../../chapter4.rst:1568
 msgid "But that seems redundant. Can we avoid it? Perhaps if we try a different model, perhaps a linear table, like this:"
 msgstr ""
 
-#: ../../chapter4.rst:1568
+#: ../../chapter4.rst:1572
 msgid "I V"
 msgstr ""
 
-#: ../../chapter4.rst:1570
+#: ../../chapter4.rst:1574
 msgid "X L"
 msgstr ""
 
-#: ../../chapter4.rst:1572
+#: ../../chapter4.rst:1576
 msgid "C D"
 msgstr ""
 
-#: ../../chapter4.rst:1577
+#: ../../chapter4.rst:1581
 msgid "Now we can imagine that each column name (“ones,” “tens,” etc.) points to the ONER of that column. From there we can also get each column’s ``FIVER`` by reaching down one slot below the current ``ONER``, and the ``TENER`` by reaching down two slots."
 msgstr ""
 
-#: ../../chapter4.rst:1582
+#: ../../chapter4.rst:1586
 msgid "It’s like building an arm with three hands. We can attach it to the ``ONES`` column, as in  :numref:`fig4-8` a, or we can attach it to the tens’ column, as in  :numref:`fig4-8` b, or to any power of ten."
 msgstr ""
 
-#: ../../chapter4.rst:1590
+#: ../../chapter4.rst:1594
 msgid "A mechanical representation: accessing the data structure."
 msgstr ""
 
-#: ../../chapter4.rst:1592
+#: ../../chapter4.rst:1596
 msgid "An experienced Forth programmer is not likely to imagine arms, hands, or things like that. But there must be a strong mental image—the stuff of right-brain thinking—before there’s any attempt to construct the model with code."
 msgstr ""
 
-#: ../../chapter4.rst:1597
+#: ../../chapter4.rst:1601
 msgid "Beginners who are learning to think in this right-brain way might find the following tip helpful:"
 msgstr ""
 
-#: ../../chapter4.rst:1602
+#: ../../chapter4.rst:1606
 msgid "If you have trouble thinking about a conceptual model, visualize it---or draw it---as a mechanical device."
 msgstr ""
 
-#: ../../chapter4.rst:1605
+#: ../../chapter4.rst:1609
 msgid "Our table is simply an array of characters. Since a character requires only a byte, let’s make each “slot” one byte. We’ll call the table ``ROMANS``:"
 msgstr ""
 
-#: ../../chapter4.rst:1616
+#: ../../chapter4.rst:1620
 msgid "Note: This use of ``ASCII`` requires that ``ASCII`` be “ ``STATE`` -dependent” (see :doc:`Appendix C<appendixc>`). If the word ``ASCII`` is not defined in your system, or if it is not state-dependent, use:"
 msgstr ""
 
-#: ../../chapter4.rst:1626
+#: ../../chapter4.rst:1630
 msgid "We can select a particular symbol from the table by applying two different offsets at the same time. One dimension represents the decimal place: ones, tens, hundreds, etc. This dimension is made “current,” that is, its state stays the same until we change it."
 msgstr ""
 
-#: ../../chapter4.rst:1631
+#: ../../chapter4.rst:1635
 msgid "The other dimension represents the kind of symbol we want— ``ONER``, ``FIVER``, ``TENER`` —within the current decimal column. This dimension is incidental, that is, we’ll specify which symbol we want each time."
 msgstr ""
 
-#: ../../chapter4.rst:1635
+#: ../../chapter4.rst:1639
 msgid "Let’s start by implementing the “current” dimension. We need some way to point to the current decimal column. Let’s create a variable called ``COLUMN#`` (pronounced “column-number”) and have it contain an offset into the table:"
 msgstr ""
 
-#: ../../chapter4.rst:1648
+#: ../../chapter4.rst:1652
 msgid "Now we can find our way to any “arm position” by adding the contents of ``COLUMN#`` to the beginning address of the table, given by ``ROMANS``:"
 msgstr ""
 
-#: ../../chapter4.rst:1655
+#: ../../chapter4.rst:1659
 msgid "Let’s see if we can implement one of the words to display a symbol. We’ll start with ``ONER``."
 msgstr ""
 
-#: ../../chapter4.rst:1658
+#: ../../chapter4.rst:1662
 msgid "The thing we want to do in ONER is ``EMIT`` a character."
 msgstr ""
 
-#: ../../chapter4.rst:1664
+#: ../../chapter4.rst:1668
 msgid "Working backward, ``EMIT`` requires the ASCII character on the stack. How do we get it there? With ``C@``."
 msgstr ""
 
-#: ../../chapter4.rst:1672
+#: ../../chapter4.rst:1676
 msgid "``C@`` requires the *address* of the slot that contains the symbol we want. How do we get that address?"
 msgstr ""
 
-#: ../../chapter4.rst:1675
+#: ../../chapter4.rst:1679
 msgid "The ``ONER`` is the first “hand” on the movable arm—the position that ``COLUMN`` is already pointing to. So, the address we want is simply the address returned by ``COLUMN``:"
 msgstr ""
 
-#: ../../chapter4.rst:1683
+#: ../../chapter4.rst:1687
 msgid "Now let’s write ``FIVER``. It computes the same slot address, then adds one to get the next slot, before fetching the symbol and emitting it:"
 msgstr ""
 
-#: ../../chapter4.rst:1690
+#: ../../chapter4.rst:1694
 msgid "And ``TENER`` is:"
 msgstr ""
 
-#: ../../chapter4.rst:1696
+#: ../../chapter4.rst:1700
 msgid "These three definitions are redundant. Since the only difference between them is the incidental offset, we can factor the incidental offset out from the rest of the definitions:"
 msgstr ""
 
-#: ../../chapter4.rst:1704
+#: ../../chapter4.rst:1708
 msgid "Now we can define:"
 msgstr ""
 
-#: ../../chapter4.rst:1712
+#: ../../chapter4.rst:1716
 msgid "All that remains for us to do now is to decompose our complete decimal number into a series of decimal digits. Based on the observations we’ve already made, this should be easy.  :numref:`fig4-9`  shows our completed listing."
 msgstr ""
 
-#: ../../chapter4.rst:1717
+#: ../../chapter4.rst:1721
 msgid "Voila! From problem, to conceptual model, to code."
 msgstr ""
 
-#: ../../chapter4.rst:1719
+#: ../../chapter4.rst:1723
 msgid "Note: this solution is not optimal. The present volume does not address the optimization phase."
 msgstr ""
 
-#: ../../chapter4.rst:1722
+#: ../../chapter4.rst:1726
 msgid "One more thought: Depending on who uses this application, we may want to add error-checking. Fact is, the highest symbol we know is M; the highest value we can represent is 3,999, or MMMCMXCIX."
 msgstr ""
 
-#: ../../chapter4.rst:1728
+#: ../../chapter4.rst:1732
 msgid "We might redefine ROMAN as follows:"
 msgstr ""
 
-#: ../../chapter4.rst:1736
+#: ../../chapter4.rst:1740
 msgid "There's a definite sense of rightness when you've done it right. It may be that feeling that distinguishes Forth from other languages, where you never feel you've really done well. In Forth, it's the \"Aha!\" reaction. You want to run off and tell somebody."
 msgstr ""
 
-#: ../../chapter4.rst:1741
+#: ../../chapter4.rst:1745
 msgid "Of course, nobody will appreciate it like you do."
 msgstr ""
 
-#: ../../chapter4.rst:1743
+#: ../../chapter4.rst:1747
 msgid "Screen #20"
 msgstr ""
 
-#: ../../chapter4.rst:1762
+#: ../../chapter4.rst:1766
 msgid "Screen #21"
 msgstr ""
 
-#: ../../chapter4.rst:1780
+#: ../../chapter4.rst:1784
 msgid "Screen #22"
 msgstr ""
 
-#: ../../chapter4.rst:1791
+#: ../../chapter4.rst:1795
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter4.rst:1793
+#: ../../chapter4.rst:1797
 msgid "In this chapter we’ve learned to develop a single component, starting first with deciding on its syntax, then proceeding with determining its algorithm(s) and data structure(s), and concluding with an implementation in Forth."
 msgstr ""
 
-#: ../../chapter4.rst:1798
+#: ../../chapter4.rst:1802
 msgid "With this chapter we complete our discussion of design. The remainder of the book will discuss style and programming techniques."
 msgstr ""
 
-#: ../../chapter4.rst:1802
+#: ../../chapter4.rst:1806
 msgid "For Further Thinking"
 msgstr ""
 
-#: ../../chapter4.rst:1804
+#: ../../chapter4.rst:1808
 msgid "Design the components and describe the algorithm(s) necessary to simulate shuffling a deck of cards. Your algorithm will produce an array of numbers, 0–51, arranged in random order."
 msgstr ""
 
-#: ../../chapter4.rst:1808
+#: ../../chapter4.rst:1812
 msgid "The special constraint of this problem, of course, is that no one card may appear twice in the array."
 msgstr ""
 
-#: ../../chapter4.rst:1811
+#: ../../chapter4.rst:1815
 msgid "You may assume you have a random-number generator called CHOOSE. It’s stack argument is “:math:`n`”; it produces a random number between zero and :math:`n-1` inclusive. (See the Handy Hint, Chapter Ten, *Starting Forth*.)"
 msgstr ""
 
-#: ../../chapter4.rst:1816
+#: ../../chapter4.rst:1820
 msgid "Can you design the card-shuffling algorithm so that it avoids the time-consuming burden of checking some undetermined number of slots on each pass of the loop? Can you do so using only the one array?"
 msgstr ""
 
-#: ../../chapter4.rst:1821
+#: ../../chapter4.rst:1825
 msgid "REFERNCES"
 msgstr ""
 
-#: ../../chapter4.rst:1823
+#: ../../chapter4.rst:1827
 msgid "Polya, **How To Solve It: A New Aspect of Mathematical Method** ,(Princeton, New Jersey, Princeton University Press)."
 msgstr ""
 
-#: ../../chapter4.rst:1824
+#: ../../chapter4.rst:1828
 msgid "Leslie A. Hart, **How the Brain Works** , (C) 1975 by Leslie A. Hart, (New York, Basic Books, Inc., 1975)."
 msgstr ""
 
-#: ../../chapter4.rst:1825
+#: ../../chapter4.rst:1829
 msgid "Evan Rosen, \"High Speed, Low Memory Consumption Structures,\" 1982  **FORML Conference Proceedings** , p.191."
 msgstr ""
 
-#: ../../chapter4.rst:1826
+#: ../../chapter4.rst:1830
 msgid "Michael Stolowitz, \"A Compiler for Programmable Logic in FORTH,\" 1982 **FORML Conference Proceedings** , p.257."
 msgstr ""
 

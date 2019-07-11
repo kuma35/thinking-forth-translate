@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-29 21:52+0900\n"
-"PO-Revision-Date: 2019-07-10 01:50+0900\n"
+"PO-Revision-Date: 2019-07-11 09:06+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -228,15 +228,15 @@ msgstr ""
 "高級言語は、各命令が数十の機械語命令をコンパイルするという意味で、アセンブリ言語より明らかに「強力」です。 "
 "しかしさらに重要なことに、高級言語はソースコードと結果として得られる機械語命令との間の直線形な対応を取り除きます。"
 
+# wikipediaでは syntax highlight を構文強調 としているので
+# syntax 文法→構文 とする 2019/07/11
 #: ../../chapter1.rst:144
 msgid ""
 "The actual instructions depend on each entire “statement” of source code "
 "taken as a whole. Operators such as :math:`+` and :math:`=` have no "
 "meaning by themselves. They are merely part of a complex symbology that "
 "depends upon syntax and the operator\\’s location in the statement."
-msgstr ""
-"実際の命令はソースコード全体の中にある各「ステートメント」に依存します。 :math:`+` や :math:`=` "
-"のような演算子はそれ自身では意味を持ちません。これらは文法と、ステートメントの演算子の位置によって意味が異なる複雑な記号の一部に過ぎません。"
+msgstr "実際の命令はソースコード全体の中にある各「ステートメント」に依存します。 :math:`+` や :math:`=` のような演算子はそれ自身では意味を持ちません。これらは構文と、ステートメントの演算子の位置によって意味が異なる複雑な記号の一部に過ぎません。"
 
 #: ../../chapter1.rst:149
 msgid ""
@@ -1534,7 +1534,7 @@ msgid ""
 "employs a single syntax, which makes it easy to learn and maintain. This "
 "is why I use the term “lexicon” and not “language.” Languages have unique"
 " syntaxes."
-msgstr "このアプローチの重要な結果は、アプリケーション全体が単一の構文を使用することです。これにより、習得および保守が容易になります。 「言語」ではなく「用語集」という用語を使用するのはこのためです。言語には独自の文法があります。"
+msgstr "このアプローチの重要な結果は、アプリケーション全体が単一の構文を使用することです。これにより、習得および保守が容易になります。 「言語」ではなく「用語集」という用語を使用するのはこのためです。言語には言語独自の構文があります。"
 
 #: ../../chapter1.rst:985
 msgid ""
@@ -1738,7 +1738,7 @@ msgstr ""
 msgid ""
 "We didn’t need to change the syntax of any existing code that uses "
 "``APPLES``. We can still say"
-msgstr "``APPLES`` を使う既存のコードの文法を変更する必要はありませんでした。私たちは依然として、"
+msgstr "``APPLES`` を使う既存のコードの構文を変更する必要はありませんでした。私たちは依然として、"
 
 #: ../../chapter1.rst:1153
 msgid "and"
@@ -1884,10 +1884,7 @@ msgid ""
 "executes them. If you add new words Forth will find and execute them as "
 "well. There’s no difference between existing words and words that you "
 "add."
-msgstr ""
-"プログラミング方法論の観点からは、Forthアプローチの利点は「新しい」ワードと「新しい」文法を簡単に追加できることです。 "
-"Forthはワードを「見つける」とは言えません。ワードを探し出して実行します。 "
-"新しいワードを追加すると、Forthはそれらも探し出して実行します。 既存のワードと追加したワードに違いはありません。"
+msgstr "プログラミング方法論の観点からは、Forthアプローチの利点は「新しい」ワードと「新しい」構文を簡単に追加できることです。 Forthはワードを「見つける」とは言えません。ワードを探し出して実行します。 新しいワードを追加すると、Forthはそれらも探し出して実行します。 既存のワードと追加したワードに違いはありません。"
 
 #: ../../chapter1.rst:1254
 msgid ""
@@ -1957,10 +1954,7 @@ msgid ""
 "order to provide the kind of freedom and flexibility we have described, "
 "it cannot tell you that you meant to type ``RED APPLES`` instead of "
 "``APPLES RED``. You have just invented syntax!"
-msgstr ""
-"Forthが高級言語と呼ばれるのに適していないと信じる純粋主義者にとって、Forthは問題をさらに悪化させます。強力な文法チェックとデータ型指定が現代のプログラミング言語の主要な推進力の1つになりつつありますが、Forthはほとんど文法チェックをしません。"
-" 説明した自由度と柔軟性の種類を説明するために、 ``APPLES RED`` の代わりに ``RED APPLES`` "
-"とタイプするつもりだったと言うことはできません。あなたはたった今、文法を発明したばかりなのですから。"
+msgstr "Forthが高級言語と呼ばれるのに適していないと信じる純粋主義者にとって、Forthは問題をさらに悪化させます。強力な構文チェックとデータ型指定が現代のプログラミング言語の主要な推進力の1つになりつつありますが、Forthはほとんど構文チェックをしません。 説明した自由度と柔軟性の種類を説明するために、 ``APPLES RED`` の代わりに ``RED APPLES`` とタイプするつもりだったと言うことはできません。たった今、あなたは構文を発明したばかりなのですから。"
 
 #: ../../chapter1.rst:1300
 msgid ""
@@ -1969,7 +1963,7 @@ msgid ""
 "discover your mistake soon enough when the definition doesn’t work. In "
 "addition, you can add appropriate syntax checking in your definitions if "
 "you want to."
-msgstr "それでも、Forthでは各定義を一度に一つづつ、秒単位のターンアラウンドでコンパイルさせることで、その抜け漏れを補う以上の効果があります。定義がうまくいかないときにはすぐに間違いを発見するでしょう。さらに必要に応じて、定義に適切な文法チェックを追加できます。"
+msgstr "それでも、Forthでは各定義を一度に一つづつ、秒単位のターンアラウンドでコンパイルさせることで、その抜け漏れを補う以上の効果があります。定義がうまくいかないときにはすぐに間違いを発見するでしょう。さらに必要に応じて、定義に適切な構文チェックを追加できます。"
 
 #: ../../chapter1.rst:1306
 msgid ""
@@ -1985,9 +1979,7 @@ msgid ""
 " strikes out. On the question of abstraction and power, it seems to be of"
 " *infinite* level—supporting everything from bit manipulation at an "
 "output port to business applications."
-msgstr ""
-"では、Forthは高級言語なのでしょうか？　"
-"文法チェックの問題ではそれは際立っています。抽象化とパワーの問題ではそれは「無限大」レベルのように思えます。出力ポートでのビット操作からビジネスアプリケーションまで全てをサポートします。"
+msgstr "では、Forthは高級言語なのでしょうか？　構文チェックの問題ではそれは際立っています。抽象化とパワーの問題ではそれは「無限大」レベルのように思えます。出力ポートでのビット操作からビジネスアプリケーションまで全てをサポートします。"
 
 #: ../../chapter1.rst:1317
 msgid "You decide. (Forth doesn’t care.)"
