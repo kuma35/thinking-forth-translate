@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-12 07:47+0900\n"
+"POT-Creation-Date: 2019-07-13 12:39+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1330,11 +1330,11 @@ msgid "Thus, for 300 we get “CCC,” for 20 we get “XX” for one we get “
 msgstr ""
 
 #: ../../chapter4.rst:1329
-msgid "This algorithm works until the digit is 4. Now we’ll have to expand our algorithm to cover this exception:"
+msgid "This algorithm works until the digit is 4. Now we’ll have to expand our algorithm to cover this exception\\:"
 msgstr ""
 
 #: ../../chapter4.rst:1332
-msgid "Print as many ``ONERS`` as necessary to add up to the value, but if the digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is \"XL\"; 4 is \"IV\"."
+msgid "Print as many ``ONERS`` as necessary to add up to the value, but if the digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is XL; 4 is IV."
 msgstr ""
 
 #: ../../chapter4.rst:1336
@@ -1430,7 +1430,7 @@ msgid "The quotient/flag becomes the argument to ``IF``."
 msgstr ""
 
 #: ../../chapter4.rst:1454
-msgid "Furthermore, the remainder of modulo 5 division is always a number between 0 and 4, which means that (except for our exception) we can use the remainder directly as the argument to ONERS. We revise our phrase to"
+msgid "Furthermore, the remainder of modulo 5 division is always a number between 0 and 4, which means that (except for our exception) we can use the remainder directly as the argument to ``ONERS``. We revise our phrase to"
 msgstr ""
 
 #: ../../chapter4.rst:1462
@@ -1442,7 +1442,7 @@ msgid "(Notice that we ``OVER`` ed the remainder so that we could compare it wit
 msgstr ""
 
 #: ../../chapter4.rst:1476
-msgid "So it turns out we *do* have a doubly-nested ``IF THEN`` construct after all. But it seems justified because the ``IF THEN`` is handling the special case. The other is such a short phrase, ``IF FIVER THEN`` \", it’s hardly worth making into a separate definition. You could though. (But we won’t.)"
+msgid "So it turns out we *do* have a doubly-nested ``IF THEN`` construct after all. But it seems justified because the ``IF THEN`` is handling the special case. The other is such a short phrase, ``IF FIVER THEN``, it’s hardly worth making into a separate definition. You could though. (But we won’t.)"
 msgstr ""
 
 #: ../../chapter4.rst:1483
@@ -1590,7 +1590,7 @@ msgid "``C@`` requires the *address* of the slot that contains the symbol we wan
 msgstr ""
 
 #: ../../chapter4.rst:1679
-msgid "The ``ONER`` is the first “hand” on the movable arm—the position that ``COLUMN`` is already pointing to. So, the address we want is simply the address returned by ``COLUMN``:"
+msgid "The ``ONER`` is the first \"hand\" on the movable arm—the position that ``COLUMN`` is already pointing to. So, the address we want is simply the address returned by ``COLUMN``:"
 msgstr ""
 
 #: ../../chapter4.rst:1687

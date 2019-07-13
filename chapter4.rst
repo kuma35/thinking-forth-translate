@@ -1327,11 +1327,11 @@ Thus, for 300 we get “CCC,” for 20 we get “XX” for one we get “I.” A
 for 321 we get “CCCXXI.”
 
 This algorithm works until the digit is 4. Now we’ll have to expand our
-algorithm to cover this exception:
+algorithm to cover this exception\:
 
     Print as many ``ONERS`` as necessary to add up to the value, but if
     the digit is 4, print a ``ONER`` then a ``FIVER``.
-    Hence, 40 is "XL"; 4 is "IV".
+    Hence, 40 is XL; 4 is IV.
 
 This new rule works until the digit is 5. As we noticed before, digits
 of five and above begin with a ``FIVER`` symbol. So we expand our rule
@@ -1453,11 +1453,11 @@ The quotient/flag becomes the argument to ``IF``.
 
 Furthermore, the remainder of modulo 5 division is always a number
 between 0 and 4, which means that (except for our exception) we can use
-the remainder directly as the argument to ONERS. We revise our phrase to
+the remainder directly as the argument to ``ONERS``. We revise our phrase to
 
 .. code-block:: none
    
-   ( n )  5 &poorbf{/MOD} IF FIVER THEN  &poorbf{ONERS}
+   ( n )  /MOD IF FIVER THEN ONERS
 
 Getting back to that exception, we now see that we can test for both 4
 and 9 with a single test—namely, if the remainder is 4. This suggests
@@ -1467,7 +1467,7 @@ exception. Something like this:
 .. code-block:: none
    
    : DIGIT  ( n )
-        5 /MOD  &poorbf{OVER 4 =  IF  special case  ELSE}
+        5 /MOD  OVER 4 =  IF  special case  ELSE
         IF FIVER THEN  ONERS  THEN ;
 
 (Notice that we ``OVER`` ed the remainder so that we
@@ -1476,7 +1476,7 @@ could compare it with 4 without consuming it.)
 So it turns out we *do* have a doubly-nested
 ``IF THEN`` construct after all. But it seems
 justified because the ``IF THEN`` is handling the
-special case. The other is such a short phrase, ``IF FIVER THEN`` ", it’s
+special case. The other is such a short phrase, ``IF FIVER THEN``, it’s
 hardly worth making into a separate definition. You could though. (But
 we won’t.)
 
@@ -1511,7 +1511,7 @@ to our definition of ``DIGIT`` and make sure that we do, in fact:
 .. code-block:: none
    
    : DIGIT  ( n )
-        5 /MOD  OVER 4 =  IF  &poorbf{ALMOST}  ELSE
+        5 /MOD  OVER 4 =  IF  ALMOST  ELSE
         IF FIVER THEN  ONERS  THEN ;
 
 It turns out that we have not only a quotient, but a remainder
@@ -1523,7 +1523,7 @@ symmetry, we must ``DROP`` the remainder like this:
 .. code-block:: none
    
    : DIGIT  ( n )
-        5 /MOD  OVER 4 =  IF  ALMOST  &poorbf{DROP}  ELSE
+        5 /MOD  OVER 4 =  IF  ALMOST DROP  ELSE
         IF FIVER THEN  ONERS  THEN ;
 
 There we have the complete, coded definition for producing a single
@@ -1676,9 +1676,9 @@ character on the stack. How do we get it there? With ``C@``.
 ``C@`` requires the *address* of the slot that
 contains the symbol we want. How do we get that address?
 
-The ``ONER`` is the first “hand” on the movable arm—the position that ``COLUMN``
-is already pointing to. So, the address we want is simply the address
-returned by ``COLUMN``:
+The ``ONER`` is the first "hand" on the movable arm—the position
+that ``COLUMN`` is already pointing to. So, the address we want is simply
+the address returned by ``COLUMN``:
 
 .. code-block:: none
    

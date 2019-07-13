@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-12 07:47+0900\n"
-"PO-Revision-Date: 2019-07-12 07:49+0900\n"
+"POT-Creation-Date: 2019-07-13 12:39+0900\n"
+"PO-Revision-Date: 2019-07-13 12:40+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -945,7 +945,7 @@ msgid ""
 "nor a predefined word, it will abort with an error message. For this "
 "reason, an undefined string must be preceded by a defined word."
 msgstr ""
-"Forthインタプリタが数字でも定義済みのワードでもないテキスト文字列を見つけると、エラーメッセージを表示して中断します。 "
+"Forthインタプリタが数字でも定義済みのワードでもないテキスト文字列を見つけると、エラーメッセージを出力して中断します。 "
 "このため、未定義の文字列の前には定義済みのワードを置かなければなりません。"
 
 #: ../../chapter4.rst:578
@@ -954,7 +954,7 @@ msgid ""
 "print. Another example is ``CREATE`` (as well as all defining words), "
 "which precedes the name that is, at the moment, still undefined."
 msgstr ""
-"例としては  ``.\"`` (ドット・クォート）があります。これはその後ろに続くプリントするテキストの前に置きます(訳注： ``.\"`` "
+"例としては  ``.\"`` (ドット・クォート）があります。これはその後ろに続く出力するテキストの前に置きます(訳注： ``.\"`` "
 "をワードとして認識させるために、その間に空白を置かねばならない。これが他言語と比べて間違いやすいところ)。もう1つの例は ``CREATE`` "
 "(そしてすべての定義語)です。 現時点ではまだ定義されていない名前の直前に置かれます(訳注：空白に関して ``.\"`` と同様)。"
 
@@ -1271,7 +1271,7 @@ msgstr "定義されていないワードであれば、それを数字に変換
 
 #: ../../chapter4.rst:808
 msgid "If it’s not a number, abort with an error message."
-msgstr "それが数値ではない場合は、エラーメッセージを表示して中止(アボート)します。"
+msgstr "それが数値ではない場合は、エラーメッセージを出力して中止(アボート)します。"
 
 #: ../../chapter4.rst:810
 msgid ""
@@ -1776,7 +1776,7 @@ msgstr ""
 msgid ""
 "Here goes: The problem is to write a definition that consumes a number on"
 " the stack and displays it as a Roman numeral."
-msgstr "さあ初めましょう。問題は、スタック上の数を消費し、それをローマ数字として表示する定義を書くことです。"
+msgstr "さあ初めましょう。問題は、スタック上の数を消費し、それをローマ数字として出力する定義を書くことです。"
 
 #: ../../chapter4.rst:1103
 msgid ""
@@ -1943,7 +1943,7 @@ msgid ""
 "If pressed to do so, we could even build a model for a system to display "
 "Roman numerals from 1 to 99, using a combination of algorithm and data "
 "structure."
-msgstr "これを押し進めれば、アルゴリズムとデータ構造の組み合わせを使用して、1から99までのローマ数字を表示するためのシステムのモデルを構築することさえ可能です。"
+msgstr "これを押し進めれば、アルゴリズムとデータ構造の組み合わせを使用して、1から99までのローマ数字を出力するためのシステムのモデルを構築することさえ可能です。"
 
 #: ../../chapter4.rst:1228
 msgid "One`s Table"
@@ -2069,8 +2069,8 @@ msgid ""
 "digit in the one’s table and print that corresponding symbol pattern."
 msgstr ""
 ":math:`n` を10で割ります。商は10の桁です。 余りは1の桁です。 "
-"10の位のテーブルで10の位の数字を検索し、対応する記号パターンを印刷します。 "
-"1の位のテーブルで1の位の数字を調べて、対応する記号パターンを印刷します。"
+"10の位のテーブルで10の位の数字を検索し、対応する記号パターンを出力します。 "
+"1の位のテーブルで1の位の数字を調べて、対応する記号パターンを出力します。"
 
 #: ../../chapter4.rst:1260
 msgid ""
@@ -2078,8 +2078,8 @@ msgid ""
 "7 in the tens’ table corresponds to “LXX,” so print that. 2 in the ones’ "
 "column corresponds to “II,” so print that. The result:"
 msgstr ""
-"例えば、数が72であれば、商は7で、余りは2です。10の位テーブルの7は「LXX」に対応するので、それを印刷します。 "
-"1の位のテーブルの2が「II」に対応するので、それを印刷してください。 その結果は以下です。"
+"例えば、数が72であれば、商は7で、余りは2です。10の位テーブルの7は「LXX」に対応するので、それを出力します。 "
+"1の位のテーブルの2が「II」に対応するので、それを出力してください。 その結果は以下です。"
 
 #: ../../chapter4.rst:1268
 msgid ""
@@ -2144,6 +2144,7 @@ msgstr ""
 "もう1つの違いは、最初の列の記号をすべて「XXXIII」のように倍数で組み合わせることができるということです。ただし、VVVのように、右の列の記号の倍数を指定することはできません。"
 " この観察は使えますか？ みんな分かってる？"
 
+# ONERS maybe one-roman s, FIVERS maybe five-roman s.
 #: ../../chapter4.rst:1311
 msgid ""
 "Let’s call the symbols in the left column ``ONERS`` and in the right "
@@ -2168,7 +2169,7 @@ msgstr "シンボル自体の代わりにこれらの語を使用して、任意
 msgid ""
 "For any digit, print as many ``ONERS`` as necessary to add up to the "
 "value."
-msgstr "どの桁でも、値を合計するのに必要なだけの数の ``ONERS`` をプリントします。"
+msgstr "どの桁でも、値を合計するのに必要なだけの数の ``ONERS`` を出力します。"
 
 #: ../../chapter4.rst:1326
 msgid ""
@@ -2179,19 +2180,18 @@ msgstr "したがって、300の場合は「CCC」、20の場合は「XX」、1�
 #: ../../chapter4.rst:1329
 msgid ""
 "This algorithm works until the digit is 4. Now we’ll have to expand our "
-"algorithm to cover this exception:"
+"algorithm to cover this exception\\:"
 msgstr "このアルゴリズムは、数字が4になるまで機能します。そして今や、以下の例外をカバーするようにアルゴリズムを拡張する必要があります。"
 
 #: ../../chapter4.rst:1332
-#, fuzzy
 msgid ""
 "Print as many ``ONERS`` as necessary to add up to the value, but if the "
-"digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is \"XL\"; 4 is "
-"\"IV\"."
+"digit is 4, print a ``ONER`` then a ``FIVER``. Hence, 40 is XL; 4 is IV."
 msgstr ""
-"値を足すために必要なだけ ``ONERS`` をプリントしますが、数字が4の場合は ``ONER`` をプリントしてから "
-"``FIVER``をプリントします。 したがって、40は「XL」です。4は「IV」です。"
+"値を足すために必要なだけ ``ONERS`` を出力しますが、数字が4の場合は ``ONER`` を出力してから ``FIVER`` "
+"を出力します。 したがって、40は「XL」です。 4は「IV」です。"
 
+# FIVER is five-roman
 #: ../../chapter4.rst:1336
 msgid ""
 "This new rule works until the digit is 5. As we noticed before, digits of"
@@ -2209,8 +2209,8 @@ msgid ""
 "``ONER`` and a ``FIVER``."
 msgstr ""
 "数字が5以上の場合、 ``FIVER`` で始めて値から5を引いてください。 それ以外の場合は何もしません。 "
-"それから値を合計するのに必要なだけ多くの ``ONERS`` をプリントします。 しかし、数字が4の場合、 ``ONER``と ``FIVER``"
-" だけをプリントします。"
+"それから値を合計するのに必要なだけ多くの ``ONERS`` を出力します。 しかし、数字が4の場合、 ``ONER``と ``FIVER`` "
+"だけを出力します。"
 
 #: ../../chapter4.rst:1345
 msgid ""
@@ -2220,7 +2220,7 @@ msgid ""
 "then is:"
 msgstr ""
 "この規則は、数字が9になるまで機能します。この場合、私たちは、より高い位(テーブルの次の行)の ``ONER`` の前に ``ONER`` "
-"をプリントしなければなりません。これを ``TENER`` と呼ぶことにしましょう。この規則の完全なモデルは以下です。"
+"を出力しなければなりません。これを ``TENER`` と呼ぶことにしましょう。この規則の完全なモデルは以下です。"
 
 #: ../../chapter4.rst:1349
 msgid ""
@@ -2231,8 +2231,8 @@ msgid ""
 "``TENER``."
 msgstr ""
 "数字が5以上の場合、 ``FIVER`` で始めて値から5を引いてください。 それ以外の場合は何もしません。 "
-"それから、値を合計するのに必要なだけ多くの ``ONERS`` をプリントします。 しかし、数字が4の場合は ``ONER`` と "
-"``FIVER`` だけをプリントし、9の場合は ``ONER`` と ``TENER`` だけをプリントします。"
+"それから、値を合計するのに必要なだけ多くの ``ONERS`` を出力します。 しかし、数字が4の場合は ``ONER`` と ``FIVER``"
+" だけを出力し、9の場合は ``ONER`` と ``TENER`` だけを出力します。"
 
 #: ../../chapter4.rst:1355
 msgid ""
@@ -2252,21 +2252,20 @@ msgstr "aとbとcをしてください。 **しかし** ある場合と、とあ
 
 # うーん意味分からん。
 #: ../../chapter4.rst:1364
-#, fuzzy
 msgid "because the computer will do a, b, and c before it knows any better."
-msgstr "なぜなら、コンピュータはそれ以上の知識がなくなる前にa、b、およびcを実行するからです。"
+msgstr "なぜなら、コンピュータはそれ以上を知る前にa、b、およびcを実行するからです。"
 
 #: ../../chapter4.rst:1366
 msgid ""
 "Instead, we have to check whether the exceptions apply *before* we do "
 "anything else."
-msgstr ""
+msgstr "代わりに、他のことをする前に例外が「適用されるかどうか」をチェックする必要があります。"
 
 #: ../../chapter4.rst:1371
 msgid ""
 "In devising an algorithm, consider exceptions last. In writing code, "
 "handle exceptions first."
-msgstr ""
+msgstr "アルゴリズムを考案する際は、例外を最後に考慮してください。 一方、コードを書く際には、まず例外を処理します。"
 
 #: ../../chapter4.rst:1374
 msgid ""
@@ -2276,6 +2275,9 @@ msgid ""
 "exception applies, it will follow the “normal” algorithm. Using "
 "pseudocode, then:"
 msgstr ""
+"これは、数字を生成するワードの一般的な構造について私たちに何かを伝えています。 4と9例外のためのテストから始めなければならないでしょう。 "
+"どちらの場合も、例外のテストに応じて対応します。 どちらの例外も適用されない場合は、「通常の」アルゴリズムに従います。 "
+"以下に疑似コードを示します。"
 
 #: ../../chapter4.rst:1385
 msgid ""
@@ -2285,6 +2287,8 @@ msgid ""
 "find it helpful to capture the structure in a diagram, or in code as "
 "we’ve done here."
 msgstr ""
+"経験豊富なForthプログラマは、実際にはこの疑似コードを書き出しませんでしたが、特別な場合を排除するため頭の中で構造を思い浮かべる可能性があります。"
+" 経験の浅いプログラマーであれば、ここで行ったように、ダイアグラムまたはコードで構造を捉えると便利な場合があります。"
 
 #: ../../chapter4.rst:1391
 msgid ""
@@ -2293,13 +2297,15 @@ msgid ""
 "eliminate. Still, we’ve minimized the complexity of the control structure"
 " by limiting the number of ``IF``  ``THEN`` s in this definition to one."
 msgstr ""
+"Forthでは、ロジックへの依存を最小限に抑える試みます。しかし、この場合、除外する必要がある例外があるため、条件付きの ``IF`` "
+"が必要です。 それでも、この定義の ``IF``  ``THEN`` の数を1つに制限することで、制御構造の複雑さを最小限に抑えました。"
 
 #: ../../chapter4.rst:1397
 msgid ""
 "Yes, we still have to distinguish between the 4-case and the 9-case, but "
 "we’ve deferred that structural dimension to lower-level definitions—the "
 "test for 4-or-9 and the “special case” code."
-msgstr ""
+msgstr "ええ、私たちはまだ4の場合と9の場合をを区別する必要がありますが、その構造上の次元は下位レベルの定義（4または9のテストおよび「特殊ケース」コード）に延期しました。"
 
 #: ../../chapter4.rst:1401
 msgid ""
@@ -2307,6 +2313,8 @@ msgid ""
 "9-exception must prohibit execution of the normal case. It’s not enough "
 "merely to test for each exception, as in this version:"
 msgstr ""
+"私たちの構造が本当に言っているのは、4の例外または9の例外が通常の場合の実行を禁止しなければならないということです。 "
+"以下のバージョンのように、単に各例外をテストするだけでは不十分です。"
 
 #: ../../chapter4.rst:1411
 msgid ""
@@ -2314,6 +2322,8 @@ msgid ""
 "``ELSE`` just before the normal case, because ``ELSE`` must appear "
 "between ``IF`` and ``THEN``.)"
 msgstr ""
+"なぜなら通常の場合が除外されることは決してないからです。（ ``ELSE`` は ``IF`` と ``THEN`` "
+"の間に現れなければならないので、通常の直前に ``ELSE`` を置く方法はありません。）"
 
 #: ../../chapter4.rst:1415
 msgid ""
@@ -2322,16 +2332,18 @@ msgid ""
 "indicating that the exception occurred. If either of these flags is true,"
 " then we can exclude the normal case:"
 msgstr ""
+"4の例外と9の例外を別々に処理することを主張する場合は、例外が発生したことを示す追加のフラグを渡すように各例外に手配することができます。 "
+"これらのフラグのどちらかが真であれば、通常の場合を除外することができます。"
 
 #: ../../chapter4.rst:1426
 msgid ""
 "But this approach needlessly complicates the definition by adding new "
 "control structures. We’ll leave it like it was."
-msgstr ""
+msgstr "しかし、このアプローチは不必要に新しい制御構造を追加することになり、定義を複雑にします。 そのままにしておきます。"
 
 #: ../../chapter4.rst:1429
 msgid "Now we have a general idea of the structure of our main definition."
-msgstr ""
+msgstr "これで、主な定義の構造についての一般的な考え方がわかりました。"
 
 #: ../../chapter4.rst:1431
 msgid ""
@@ -2339,10 +2351,12 @@ msgid ""
 "subtract five from the value; otherwise do nothing. Then, print as many "
 "``ONERS`` as necessary to add up to the value.”"
 msgstr ""
+"私たちは言いました。「数字が5以上の場合は、 ``FIVER`` で始め、値から5を引いてください。 それ以外の場合は何もしません。 "
+"それから、値を合計するのに必要なだけ多くの ``ONERS`` を出力してださい。」"
 
 #: ../../chapter4.rst:1435
 msgid "A direct translation of these rules into Forth would look like this:"
-msgstr ""
+msgstr "これらのルールをForthに直接変換すると、次のようになります。"
 
 #: ../../chapter4.rst:1441
 msgid ""
@@ -2353,17 +2367,22 @@ msgid ""
 "between 5 and 9. We can use it as the boolean flag to tell whether we "
 "want the leading ``FIVER`` :"
 msgstr ""
+"これは技法的には正しいですが、剰余除算の手法に精通している場合、これを剰余除算の5での自然な状況と見なすことができます。数値を5で除算すると、商は0（偽）になります。"
+" 数字は5未満で、5から9の間は1（真）です。これを先頭の ``FIVER`` が必要かどうかを示すためにブールフラグとして使用できます。"
 
 #: ../../chapter4.rst:1452
 msgid "The quotient/flag becomes the argument to ``IF``."
-msgstr ""
+msgstr "商(フラグ)は ``IF`` の引数になります。."
 
 #: ../../chapter4.rst:1454
 msgid ""
 "Furthermore, the remainder of modulo 5 division is always a number "
 "between 0 and 4, which means that (except for our exception) we can use "
-"the remainder directly as the argument to ONERS. We revise our phrase to"
+"the remainder directly as the argument to ``ONERS``. We revise our phrase"
+" to"
 msgstr ""
+"さらに、5を除数とする除算の剰余は常に0から4の間の数です。つまり、（例外を除くと） ``ONERS`` への引数として剰余を直接使用できます。 "
+"私達はフレーズを以下のように修正します。"
 
 #: ../../chapter4.rst:1462
 msgid ""
@@ -2372,21 +2391,27 @@ msgid ""
 "that we can do our 5 ``/MOD`` first, then test for the exception. "
 "Something like this:"
 msgstr ""
+"その例外にもどると、 ``4-OR-9?`` "
+"の名前の通り、4と9の両方を1回でテストできることが分かりました。以下のように、残りが4の場合、最初に5の ``/MOD`` "
+"を実行してから例外をテストすることができることを示唆しています。"
 
 #: ../../chapter4.rst:1473
 msgid ""
 "(Notice that we ``OVER`` ed the remainder so that we could compare it "
 "with 4 without consuming it.)"
-msgstr ""
+msgstr "(消費せずに4と比較できるように、剰余を ``OVER`` (訳注: 剰余 商 -- 剰余 商 剰余)しました。)"
 
 #: ../../chapter4.rst:1476
 msgid ""
 "So it turns out we *do* have a doubly-nested ``IF THEN`` construct after "
 "all. But it seems justified because the ``IF THEN`` is handling the "
-"special case. The other is such a short phrase, ``IF FIVER THEN`` \", "
-"it’s hardly worth making into a separate definition. You could though. "
-"(But we won’t.)"
+"special case. The other is such a short phrase, ``IF FIVER THEN``, it’s "
+"hardly worth making into a separate definition. You could though. (But we"
+" won’t.)"
 msgstr ""
+"結局、二重にネストされた ``IF THEN`` にしました。しかし、 ``IF THEN`` "
+"が特別な場合を扱っているので、それはもっともなことです。 もう1つ、短いフレーズ ``IF FIVER THEN`` "
+"は別の定義にする価値はほとんどありません。この辺りは好みです。分けても構いません。"
 
 #: ../../chapter4.rst:1483
 msgid ""
@@ -2394,12 +2419,16 @@ msgid ""
 " the digit is four, print a ``ONER`` and a ``FIVER``. If the digit is "
 "nine, print a ``ONER`` and a ``TENER``.”"
 msgstr ""
+"特別な場合のコードに注目しましょう。 そのアルゴリズムは、「数字が4の場合は ``ONER`` と ``FIVER`` "
+"を出力します。数字が9の場合は ``ONER`` と ``TENER`` を出力します。"
 
 #: ../../chapter4.rst:1487
 msgid ""
 "We can assume that the digit will be one or the other, or else we’d never"
 " be executing this definition. The question is, how do we tell which one?"
 msgstr ""
+"数字はどちらか一方になると仮定することができます。そうでなければ、この定義を実行することは決してありません。 "
+"問題は、それをどうやって見分けるのかということです。"
 
 #: ../../chapter4.rst:1491
 msgid ""
@@ -2407,18 +2436,21 @@ msgid ""
 "zero, the digit must have been four; otherwise it was nine. So we’ll play"
 " the same trick and use the quotient as a boolean flag. We’ll write:"
 msgstr ""
+"繰り返しになりますが、5の除算の商を使用できます。 "
+"商がゼロの場合、数字は4以下でなければなりません。商がゼロでなければ数字は9以下です。だから私たちは同じトリックを弄して、ブーリアンフラグとして商を使用します。"
+" 私たちは以下のように書きました。"
 
 #: ../../chapter4.rst:1500
 msgid ""
 "In retrospect, we notice that we’re printing a ``ONER`` either way. We "
 "can simplify the definition to:"
-msgstr ""
+msgstr "振り返ってみると、我々はどちらかの方法で ``ONER`` を出力していることに気づきます。 定義を次のように単純化することができます。"
 
 #: ../../chapter4.rst:1508
 msgid ""
 "We’ve assumed that we have a quotient on the stack to use. Let’s go back "
 "to our definition of ``DIGIT`` and make sure that we do, in fact:"
-msgstr ""
+msgstr "スタックには使用する商があると仮定しました。 ``DIGIT`` の定義に戻り、実際に行ったことを確認しましょう。"
 
 #: ../../chapter4.rst:1517
 msgid ""
@@ -2427,6 +2459,9 @@ msgid ""
 "``ELSE`` clause. The word ``ALMOST``, however, only needs the quotient. "
 "So, for symmetry, we must ``DROP`` the remainder like this:"
 msgstr ""
+"商だけでなく、その下にも余りがあることがわかります。 ``ELSE`` 句を実行した場合でも、両方をスタックに保持しています。 しかし、 "
+"``ALMOST`` というワードは商を必要とするだけです。 それで、対称性のために、剰余の部分を以下のように ``DROP`` (訳注: n "
+"-- ;スタックトップを単に捨てる)しなければなりません。"
 
 #: ../../chapter4.rst:1529
 msgid ""
@@ -2435,10 +2470,13 @@ msgid ""
 "the needed auxiliary definitions, we could very quickly define a lexicon "
 "of words to print one group of symbols, say the ``ONES`` row:"
 msgstr ""
+"ここに、ローマ数字の1桁の数字を生成するための完全なコード化定義があります。 "
+"必要な補助定義を書く前に試してみたかったら、1つのシンボルのグループを出力するためにワードの用語集をすぐに定義することができます。以下の "
+"``ONES`` の行をご覧下さい。"
 
 #: ../../chapter4.rst:1543
 msgid "before loading our definitions of ``ALMOST`` and ``DIGIT``."
-msgstr ""
+msgstr "これを ``ALMOST`` と ``DIGIT`` の定義を読み込む前に定義しておきます。"
 
 #: ../../chapter4.rst:1545
 msgid ""
@@ -2446,50 +2484,54 @@ msgid ""
 " of defining the words ``ONER``, ``FIVER``, and ``TENER`` so that their "
 "symbols depend on which decimal digit we’re formatting."
 msgstr ""
+"しかし、私たちはそれほどやけくそではありません。 いいえ、 ``ONER`` 、 ``FIVER`` 、 ``TENER`` "
+"というワードを定義するという問題に移ることを切望しているので、それらの記号はフォーマットしている10進数の数字に依存します。"
 
 #: ../../chapter4.rst:1549
 msgid "Let’s go back to the symbol table we drew earlier:"
-msgstr ""
+msgstr "先ほど作成したシンボルテーブルに戻りましょう。"
 
 #: ../../chapter4.rst:1554 ../../chapter4.rst:1572
 msgid "ones"
-msgstr ""
+msgstr "ones"
 
 #: ../../chapter4.rst:1555 ../../chapter4.rst:1574
 msgid "tens"
-msgstr ""
+msgstr "tens"
 
 #: ../../chapter4.rst:1556 ../../chapter4.rst:1576
 msgid "hundreds"
-msgstr ""
+msgstr "hundreds"
 
 #: ../../chapter4.rst:1557 ../../chapter4.rst:1578
 msgid "thousands"
-msgstr ""
+msgstr "thousands"
 
 #: ../../chapter4.rst:1561
 msgid ""
 "We’ve observed that we also need a ``TENER`` —which is the ``ONER`` in "
 "the next row below. It’s as if the table should really be written:"
 msgstr ""
+"下の行の ``OWNER`` である ``TENER`` も必要であることを私たちは観察しました。 "
+"テーブルとして実際に書かれるべきであるように思われます。"
 
 #: ../../chapter4.rst:1568
 msgid ""
 "But that seems redundant. Can we avoid it? Perhaps if we try a different "
 "model, perhaps a linear table, like this:"
-msgstr ""
+msgstr "しかし、それは冗長に思えます。 それを避けることができますか？ おそらく、次のように別のモデル、おそらく線形テーブルを試すとします。"
 
 #: ../../chapter4.rst:1572
 msgid "I V"
-msgstr ""
+msgstr "I V"
 
 #: ../../chapter4.rst:1574
 msgid "X L"
-msgstr ""
+msgstr "X L"
 
 #: ../../chapter4.rst:1576
 msgid "C D"
-msgstr ""
+msgstr "C D"
 
 #: ../../chapter4.rst:1581
 msgid ""
@@ -2498,6 +2540,9 @@ msgid ""
 "``FIVER`` by reaching down one slot below the current ``ONER``, and the "
 "``TENER`` by reaching down two slots."
 msgstr ""
+"これで、各列の名前（“ones” “tens” など）がその列の1つを指すことを想像できます。 そこから、現在の ``ONER`` "
+"の1つ下のスロットに到達することで各列の ``FIVER`` を、2つの下のスロットに到達することで ``TENER`` "
+"を取得することもできます。"
 
 #: ../../chapter4.rst:1586
 msgid ""
@@ -2505,10 +2550,13 @@ msgid ""
 "``ONES`` column, as in  :numref:`fig4-8` a, or we can attach it to the "
 "tens’ column, as in  :numref:`fig4-8` b, or to any power of ten."
 msgstr ""
+"3本の手で腕を組むようなものです。:numref:`fig4-8` (a)のようにそれを ``ONES`` "
+"列に取り付けることもできますし、:numref:`fig4-8` "
+"(b)のようにそれをtens列に取り付けることもできます。またはそれを任意の10のべき乗で取り付けられます。"
 
 #: ../../chapter4.rst:1594
 msgid "A mechanical representation: accessing the data structure."
-msgstr ""
+msgstr "データ構造へのアクセスの機械的表現(3本の腕、可動腕)"
 
 #: ../../chapter4.rst:1596
 msgid ""
@@ -2517,18 +2565,20 @@ msgid ""
 "right-brain thinking—before there’s any attempt to construct the model "
 "with code."
 msgstr ""
+"熟練したForthプログラマーは、腕、手、またはそのようなものを想像することはほとんどありません。 "
+"しかし、コードでモデルを構築しようとする前に、強い精神的イメージ―右脳思考のもの―がなければなりません。"
 
 #: ../../chapter4.rst:1601
 msgid ""
 "Beginners who are learning to think in this right-brain way might find "
 "the following tip helpful:"
-msgstr ""
+msgstr "この右脳思考を学んでいる初心者は、以下の助言が役に立つと思うかもしれません。"
 
 #: ../../chapter4.rst:1606
 msgid ""
 "If you have trouble thinking about a conceptual model, visualize it---or "
 "draw it---as a mechanical device."
-msgstr ""
+msgstr "概念モデルについて考えるのが難しい場合は、それを機械的な装置として視覚化する（または描画する）。"
 
 #: ../../chapter4.rst:1609
 msgid ""
@@ -2536,6 +2586,8 @@ msgid ""
 "only a byte, let’s make each “slot” one byte. We’ll call the table "
 "``ROMANS``:"
 msgstr ""
+"私たちのテーブルは単に文字の配列です。 文字は1バイトしか必要としないので、それぞれの「スロット」を1バイトにしましょう。 テーブルを "
+"``ROMANS`` と呼びます。"
 
 #: ../../chapter4.rst:1620
 msgid ""
@@ -2543,6 +2595,8 @@ msgid ""
 "-dependent” (see :doc:`Appendix C<appendixc>`). If the word ``ASCII`` is "
 "not defined in your system, or if it is not state-dependent, use:"
 msgstr ""
+"注意：この ``ASCII`` は ``STATE`` (訳注: -- f;コンパイル時なら0以外の値を返す)の状態にに依存します( "
+":doc:`付録C<appendixc>` 参照)。 またはそれが ``STATE`` の状態に依存しないようにするには、次のようにします。"
 
 #: ../../chapter4.rst:1630
 msgid ""
@@ -2551,6 +2605,8 @@ msgid ""
 "place: ones, tens, hundreds, etc. This dimension is made “current,” that "
 "is, its state stays the same until we change it."
 msgstr ""
+"2つの異なるオフセットを同時に適用することでテーブルから特定のシンボルを選択できます。 "
+"1つの次元は位取りを表します。1(ones)、10(tens)、100(hundreds)などです。この次元「現在(current)」になります。つまり、変更するまでその状態は変わりません。"
 
 #: ../../chapter4.rst:1635
 msgid ""
@@ -2558,6 +2614,8 @@ msgid ""
 "``FIVER``, ``TENER`` —within the current decimal column. This dimension "
 "is incidental, that is, we’ll specify which symbol we want each time."
 msgstr ""
+"もう1つの次元は、現在の位取りの中で、欲しいシンボルの種類( ``ONER`` 、 ``FIVER`` 、``TENER`` )を表します。 "
+"この次元は付随的なものです。つまり、毎回どのシンボルが必要かを指定します。"
 
 #: ../../chapter4.rst:1639
 msgid ""
@@ -2566,51 +2624,59 @@ msgid ""
 "``COLUMN#`` (pronounced “column-number”) and have it contain an offset "
 "into the table:"
 msgstr ""
+"「現在(current)」の次元を実装することから始めましょう。 現在の10進数桁位置を指すための何らかの方法が必要です。 `` "
+"COLUMN#`` (カラム・ナンバー(column-number)と発音する)という名前の変数を作成し、それにテーブルへのオフセットを含めます。"
 
 #: ../../chapter4.rst:1652
 msgid ""
 "Now we can find our way to any “arm position” by adding the contents of "
 "``COLUMN#`` to the beginning address of the table, given by ``ROMANS``:"
 msgstr ""
+"これで、 ``ROMANS`` で与えられる ``COLUMN#`` "
+"の内容をテーブルの先頭アドレスに追加することで、任意の「腕の位置」に進むことができます。"
 
 #: ../../chapter4.rst:1659
 msgid ""
 "Let’s see if we can implement one of the words to display a symbol. We’ll"
 " start with ``ONER``."
-msgstr ""
+msgstr "シンボルを表示するためのワードの1つを実装できるかどうか見てみましょう。 ``ONER`` から始めましょう。"
 
 #: ../../chapter4.rst:1662
 msgid "The thing we want to do in ONER is ``EMIT`` a character."
-msgstr ""
+msgstr "私たちがONERでやりたいことは文字を出す( ``EMIT``)ことです。"
 
 #: ../../chapter4.rst:1668
 msgid ""
 "Working backward, ``EMIT`` requires the ASCII character on the stack. How"
 " do we get it there? With ``C@``."
 msgstr ""
+"逆からたどって、 ``EMIT`` はスタック上にASCII文字コードを必要とします。 どうやってそれを得るのですか？ それには ``C@`` "
+"を使います。"
 
 #: ../../chapter4.rst:1676
 msgid ""
 "``C@`` requires the *address* of the slot that contains the symbol we "
 "want. How do we get that address?"
-msgstr ""
+msgstr "その ``C@`` は、欲しい文字コードを含むスロットの「アドレス」を必要とします。 そのアドレスはどうやって取得するのですか？"
 
 #: ../../chapter4.rst:1679
 msgid ""
-"The ``ONER`` is the first “hand” on the movable arm—the position that "
+"The ``ONER`` is the first \"hand\" on the movable arm—the position that "
 "``COLUMN`` is already pointing to. So, the address we want is simply the "
 "address returned by ``COLUMN``:"
-msgstr ""
+msgstr "``ONER`` は可動腕の最初の「手」、つまり ``COLUMN`` がすでに指している位置です。だから、私たちが欲しいアドレスは単に ``COLUMN`` によって返されるアドレスです。"
 
 #: ../../chapter4.rst:1687
 msgid ""
 "Now let’s write ``FIVER``. It computes the same slot address, then adds "
 "one to get the next slot, before fetching the symbol and emitting it:"
 msgstr ""
+"それでは ``FIVER`` を書きましょう。 "
+"それは同じスロットアドレスを計算し、それからシンボルを取得してそれを出力する前に、次のスロットを取得するために1を追加します。"
 
 #: ../../chapter4.rst:1694
 msgid "And ``TENER`` is:"
-msgstr ""
+msgstr "そして ``TENER`` は、"
 
 #: ../../chapter4.rst:1700
 msgid ""
@@ -2618,10 +2684,12 @@ msgid ""
 "them is the incidental offset, we can factor the incidental offset out "
 "from the rest of the definitions:"
 msgstr ""
+"これら3つの定義は重複しています。 "
+"それらの間の唯一の違いは付随的なオフセットであるので、我々は残りの定義から付随的なオフセットを除外することができます。"
 
 #: ../../chapter4.rst:1708
 msgid "Now we can define:"
-msgstr ""
+msgstr "いまや、私たちは以下のように定義できます。"
 
 #: ../../chapter4.rst:1716
 msgid ""
@@ -2630,16 +2698,18 @@ msgid ""
 "already made, this should be easy.  :numref:`fig4-9`  shows our completed"
 " listing."
 msgstr ""
+"私たちが今やるべきことは、完全な10進数値を一連の10進数数字に分解することだけです。 私たちがすでに行った観察に基づいて、これは簡単なはずです。"
+" :numref:`fig4-9` は完成したリストを示しています。"
 
 #: ../../chapter4.rst:1721
 msgid "Voila! From problem, to conceptual model, to code."
-msgstr ""
+msgstr "じゃーん！ 問題から概念モデル、そしてコーディングまでできました。"
 
 #: ../../chapter4.rst:1723
 msgid ""
 "Note: this solution is not optimal. The present volume does not address "
 "the optimization phase."
-msgstr ""
+msgstr "注意：この解決策は最適ではありません。 この章では最適化フェイズは取り扱いません。"
 
 #: ../../chapter4.rst:1726
 msgid ""
@@ -2647,10 +2717,12 @@ msgid ""
 "add error-checking. Fact is, the highest symbol we know is M; the highest"
 " value we can represent is 3,999, or MMMCMXCIX."
 msgstr ""
+"もう1つ考えるべきこととして、このアプリケーションを使用している人によっては、エラーチェックを追加することをお勧めします。 "
+"実際、私たちが知っている最高のシンボルはMです。 ここで表現できる最高値は3,999、つまりMMMCMXCIXです。"
 
 #: ../../chapter4.rst:1732
 msgid "We might redefine ROMAN as follows:"
-msgstr ""
+msgstr "私たちはROMANを次のように再定義するかもしれません。"
 
 #: ../../chapter4.rst:1740
 msgid ""
@@ -2659,26 +2731,28 @@ msgid ""
 "never feel you've really done well. In Forth, it's the \"Aha!\" reaction."
 " You want to run off and tell somebody."
 msgstr ""
+"あなたがそれを正しくやったときには、明確な正しい感覚があります。 Forthを他の言語と区別するのはそのような感覚かもしれません。 "
+"Forthでは、それは「なるほど！(Aha!)」反応です。 あなたは走り出して誰かに伝えたくなります。"
 
 #: ../../chapter4.rst:1745
 msgid "Of course, nobody will appreciate it like you do."
-msgstr ""
+msgstr "もちろん、誰もあなたのそのような感覚を理解出来ないでしょう。"
 
 #: ../../chapter4.rst:1747
 msgid "Screen #20"
-msgstr ""
+msgstr "Screen #20"
 
 #: ../../chapter4.rst:1766
 msgid "Screen #21"
-msgstr ""
+msgstr "Screen #21"
 
 #: ../../chapter4.rst:1784
 msgid "Screen #22"
-msgstr ""
+msgstr "Screen #22"
 
 #: ../../chapter4.rst:1795
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
 #: ../../chapter4.rst:1797
 msgid ""
@@ -2686,17 +2760,17 @@ msgid ""
 "first with deciding on its syntax, then proceeding with determining its "
 "algorithm(s) and data structure(s), and concluding with an implementation"
 " in Forth."
-msgstr ""
+msgstr "この章では、単一のコンポーネントを開発するために、まずその構文を決定し、それからにそのアルゴリズムとデータ構造を決定を進め、そしてForthでの実装を完結させました。"
 
 #: ../../chapter4.rst:1802
 msgid ""
 "With this chapter we complete our discussion of design. The remainder of "
 "the book will discuss style and programming techniques."
-msgstr ""
+msgstr "この章で私たちは設計の議論を終えました。 本の残りの部分では、スタイルとプログラミング手法について説明します。"
 
 #: ../../chapter4.rst:1806
 msgid "For Further Thinking"
-msgstr ""
+msgstr "更なる思考のために"
 
 #: ../../chapter4.rst:1808
 msgid ""
@@ -2704,12 +2778,14 @@ msgid ""
 " shuffling a deck of cards. Your algorithm will produce an array of "
 "numbers, 0–51, arranged in random order."
 msgstr ""
+"コンポーネントを設計し、カードのシャッフルをシミュレートするのに必要なアルゴリズムを記述します。 "
+"あなたのアルゴリズムは、ランダムな順序で配置された0から51の数字の配列を生成します。"
 
 #: ../../chapter4.rst:1812
 msgid ""
 "The special constraint of this problem, of course, is that no one card "
 "may appear twice in the array."
-msgstr ""
+msgstr "この問題の特別な制約は、もちろん、同じカードが配列内に2回現れることはないということです。"
 
 #: ../../chapter4.rst:1815
 msgid ""
@@ -2718,6 +2794,9 @@ msgid ""
 "and :math:`n-1` inclusive. (See the Handy Hint, Chapter Ten, *Starting "
 "Forth*.)"
 msgstr ""
+"あなたはCHOOSEと呼ばれる乱数発生器を持ってとしましょう。 スタック引数は :math:`n` です。 0から :math:`n-1` "
+"までの乱数を生成します(邦訳:Forth入門の第10章の「知っていると便利です  乱数発生器」P.314 を参照(See the Handy "
+"Hint, Chapter Ten, *Starting Forth* ))。"
 
 #: ../../chapter4.rst:1820
 msgid ""
@@ -2725,6 +2804,8 @@ msgid ""
 "consuming burden of checking some undetermined number of slots on each "
 "pass of the loop? Can you do so using only the one array?"
 msgstr ""
+"あなたはそれがループの各回で不定数のスロットをチェックするという時間のかかる負担を避けるようにカードシャッフリングアルゴリズムを設計することができますか？"
+" 1つの配列だけを使ってそうすることができますか？"
 
 #: ../../chapter4.rst:1825
 msgid "REFERNCES"
@@ -2763,4 +2844,30 @@ msgid ""
 msgstr ""
 "Michael Stolowitz, \"A Compiler for Programmable Logic in FORTH,\" 1982 "
 "**FORML Conference Proceedings** , p.257."
+
+#~ msgid ""
+#~ "The ``ONER`` is the first [hand] "
+#~ "on the movable arm --- the "
+#~ "position that ``COLUMN`` is already "
+#~ "pointing to. So, the address we "
+#~ "want is simply the address returned "
+#~ "by ``COLUMN``\\:"
+#~ msgstr ""
+#~ " ``ONER`` は可動腕の最初の「手」、つまり ``COLUMN`` "
+#~ "がすでに指している位置です。 だから、私たちが欲しいアドレスは単に ``COLUMN`` "
+#~ "によって返されるアドレスです。"
+
+#~ msgid ""
+#~ "The ``ONER`` is the first \"hand\" "
+#~ "on the movable arm .. --- the "
+#~ "position that ``COLUMN`` is already "
+#~ "pointing to. So, the address we "
+#~ "want is simply the address returned "
+#~ "by ``COLUMN``\\:"
+#~ msgstr ""
+
+#~ msgid "The ``ONER`` is the first \"hand\" on the movable arm"
+#~ msgstr ""
+#~ "``ONER`` は可動腕の最初の「手」、つまり ``COLUMN`` がすでに指している位置です。"
+#~ " だから、私たちが欲しいアドレスは単に ``COLUMN`` によって返されるアドレスです。"
 
