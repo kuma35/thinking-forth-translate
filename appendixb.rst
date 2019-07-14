@@ -202,7 +202,7 @@ followed by return, as many times as you like (you’ll get a different
 reason each time).
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    ( DOER/MAKE   Shadow screen                      LPB 12/05/83 )
    NOTHING   A no-opp
@@ -218,7 +218,7 @@ reason each time).
    UNDO      Usage:  UNDO doer-name ; makes it safe to execute
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    \ DOER/MAKE   FORTH-83 Laxen/Perry/Harris model  LPB 12/05/83 
    : NOTHING ;
@@ -236,7 +236,7 @@ reason each time).
    \ The code in this screen is in the public domain.
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    ( DOER/MAKE   FORTH-83 Lab. Micro PC/FORTH 2.0   LPB 12/05/83 )
    : NOTHING ;
@@ -254,7 +254,7 @@ reason each time).
    ( The code in this screen is in the public domain.)
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    ( DOER/MAKE   FIG model                          LPB 12/05/83 )
    : NOTHING   ;
@@ -273,7 +273,7 @@ reason each time).
    The code in this screen is in the public domain.
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    ( DOER/MAKE   79-Standard  MVP FORTH             LPB 12/05/83 )
    : NOTHING ;
@@ -291,7 +291,7 @@ reason each time).
    ( The code in this screen is in the public domain.)
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    ( TODDLER: Example of DOER/MAKE                      12/01/83 )
    DOER ANSWER

@@ -1013,7 +1013,7 @@ A solution to the phone rate problem.
 .. code-block:: none
    :caption: Screen #103
    :name: fig8-4
-   :linenos:
+   :lineno-start: 0
 
    \ Telephone rates                                       03/30/84
    CREATE FULL     30 , 20 , 12 ,
@@ -1030,7 +1030,7 @@ A solution to the phone rate problem.
 
 .. code-block:: none
    :caption: Screen #104
-   :linenos:
+   :lineno-start: 0
 
    \ Telephone rates                                       03/30/84
    VARIABLE OPERATOR?  \ 90 if operator assisted; else O
@@ -1135,7 +1135,7 @@ Implementation of the Tiny Editor.
 .. code-block:: none
    :caption: Screen #30
    :name: fig8-5
-   :linenos:
+   :lineno-start: 0
 
    \ Tiny Editor
    2 CONSTANT NORMAL     \ offset in FUNCTIONS
@@ -1151,7 +1151,7 @@ Implementation of the Tiny Editor.
 
 .. code-block:: none
    :caption: Screen #31
-   :linenos:
+   :lineno-start: 0
 
    \ Tiny Editor             function table             07/29/83
    : IS   ' , ;  \   function   ( -- )    ( for '83 standard)
@@ -1168,7 +1168,7 @@ Implementation of the Tiny Editor.
 
 .. code-block:: none
    :caption: Screen #32
-   :linenos:
+   :lineno-start: 0
 
    \ Tiny Editor cont'd                                 07/29/83
    VARIABLE MATCHED

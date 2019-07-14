@@ -114,6 +114,7 @@ Example of an application-load screen
 .. code-block:: none
    :caption: Screen #1
    :name: fig5-1
+   :lineno-start: 0
 
    \ QTF+ Load Screen                                      07/09/83
    : RELEASE#   ." 2.01" ;
@@ -177,10 +178,12 @@ Skip Commands
 Two commands make it easy to
 control what gets loaded in each screen and what gets ignored. They are:
 
-| ``\``
-| ``\`` S also called ``EXIT``
+.. code-block::
 
-\\ is pronounced “skip-line.” It causes the Forth
+   \
+   \S ( also called EXIT)
+
+``\`` is pronounced “skip-line.” It causes the Forth
 interpreter to ignore everything to the right of it on the same line.
 (Since ``\`` is a Forth word, it must be followed by a
 space.) It does not require a delimiter.
@@ -231,6 +234,7 @@ Example of a chapter-load screen.
 .. code-block:: none
    :name: fig5-2
    :caption: Screen #100
+   :lineno-start: 0
 
    \ GRAPHICS                 Chapter load                 07/11/83
    
@@ -308,6 +312,7 @@ Moore Products Co.'s format for chapter preambles.
 .. code-block:: none
    :name: fig5-3
    :caption: Screen #101
+   :lineno-start: 0
 
    CHAPTER 5  -  ORIGIN/DESTINATION - MULTILOOP BIT ROUTINES
    
@@ -324,6 +329,7 @@ Moore Products Co.'s format for chapter preambles.
 
 .. code-block:: none
    :caption: Screen #102
+   :lineno-start: 0
 
    CHAPTER NOTES - Whether or not a point originates from
                    a Regional Satellite is determined by
@@ -616,6 +622,7 @@ indented.
 .. code-block:: none
    :name: fig5-5
    :caption: The output of ``INDEX`` showing indented comment lines.
+   :lineno-start: 0
    
     90 \ Graphics           Chapter load               JPJ 06/10/83
     91    \ Dot-drawing primitives                     JPJ 06/10/83
@@ -1480,7 +1487,7 @@ in the manner of a well-commented assembly language listing. These
 line-by-line comments are called “narrative comments.”
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
    
    \ CRC Checksum                                      07/15/83
    : ACCUMULATE   ( oldcrc char -- newcrc)

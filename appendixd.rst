@@ -50,7 +50,7 @@ Chapter Four
 Our solution is as follows:
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
    \ CARDS Shuffle                              6-20-83
    52 CONSTANT #CARDS

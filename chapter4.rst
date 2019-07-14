@@ -1747,7 +1747,7 @@ We might redefine ROMAN as follows:
 .. code-block:: none
    :caption: Screen #20
    :name: fig4-9
-   :linenos:
+   :lineno-start: 0
    
    \ Roman numerals                                         8/18/83
    CREATE ROMANS    ( ones)  ASCII I  C,   ASCII V  C,
@@ -1765,7 +1765,7 @@ We might redefine ROMAN as follows:
 
 .. code-block:: none
    :caption: Screen #21
-   :linenos:
+   :lineno-start: 0
    
    \ Roman numerals cont'd                                  8/18/83
    : .SYMBOL  ( offset -- )  COLUMN +  C@ EMIT ;
@@ -1783,7 +1783,7 @@ We might redefine ROMAN as follows:
 
 .. code-block:: none
    :caption: Screen #22
-   :linenos:
+   :lineno-start: 0
    
    \ Roman numerals cont'd                                  8/18/83
    : ROMAN  ( number --)  1000 /MOD  THOUSANDS DIGIT
