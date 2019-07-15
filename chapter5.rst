@@ -778,7 +778,7 @@ The last position of each line should be blank except for:
 #. the end of a comment.
 
 A comment that begins with ``\`` may continue right to the
-end of the line. Also, a comment that begins with ( may have its
+end of the line. Also, a comment that begins with ``(`` may have its
 delimiting right parenthesis in the last column.
 
 Here are some common errors of spacing and indentation:
@@ -851,7 +851,7 @@ purpose comments and narrative comments.
 *An* input-stream comment
     indicates what strings
     the word expects to see in the input stream. For example, the Forth
-    word FORGET scans for the name of a dictionary entry in the input
+    word ``FORGET`` scans for the name of a dictionary entry in the input
     stream.
 
 *A* purpose comment
@@ -1147,7 +1147,7 @@ Data-Structure Comments
 -----------------------
 
 A “data-structure comment” depicts the elements in a data structure. For
-example, here’s the definition of an insert buffer called \|INSERT :
+example, here’s the definition of an insert buffer called ``|INSERT`` :
 
 .. code-block:: none
    

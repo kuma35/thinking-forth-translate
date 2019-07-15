@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-13 19:47+0900\n"
+"POT-Creation-Date: 2019-07-16 05:01+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -710,7 +710,7 @@ msgid "the end of a comment."
 msgstr ""
 
 #: ../../chapter5.rst:780
-msgid "A comment that begins with ``\\`` may continue right to the end of the line. Also, a comment that begins with ( may have its delimiting right parenthesis in the last column."
+msgid "A comment that begins with ``\\`` may continue right to the end of the line. Also, a comment that begins with ``(`` may have its delimiting right parenthesis in the last column."
 msgstr ""
 
 #: ../../chapter5.rst:784
@@ -766,7 +766,7 @@ msgid "*An* input-stream comment"
 msgstr ""
 
 #: ../../chapter5.rst:852
-msgid "indicates what strings the word expects to see in the input stream. For example, the Forth word FORGET scans for the name of a dictionary entry in the input stream."
+msgid "indicates what strings the word expects to see in the input stream. For example, the Forth word ``FORGET`` scans for the name of a dictionary entry in the input stream."
 msgstr ""
 
 #: ../../chapter5.rst:860
@@ -1159,7 +1159,7 @@ msgid "Data-Structure Comments"
 msgstr ""
 
 #: ../../chapter5.rst:1149
-msgid "A “data-structure comment” depicts the elements in a data structure. For example, here’s the definition of an insert buffer called \\|INSERT :"
+msgid "A “data-structure comment” depicts the elements in a data structure. For example, here’s the definition of an insert buffer called ``|INSERT`` :"
 msgstr ""
 
 #: ../../chapter5.rst:1156

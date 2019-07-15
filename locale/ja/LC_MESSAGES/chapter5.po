@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-13 19:47+0900\n"
-"PO-Revision-Date: 2019-07-15 07:43+0900\n"
+"POT-Creation-Date: 2019-07-16 05:01+0900\n"
+"PO-Revision-Date: 2019-07-16 05:03+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -294,14 +294,19 @@ msgid ""
 "ignore everything to the right of it on the same line. (Since ``\\`` is a"
 " Forth word, it must be followed by a space.) It does not require a "
 "delimiter."
-msgstr "``\\`` は「スキップ・ライン」(skip-line)と発音します。それはForthインタプリタに同じ行のそれの右側にあるすべてを無視させます( ``\\`` はForthのワードであるため、スペースを続ける必要があります)。(訳注: ``(`` … ``)`` と異なり)区切り文字は不要です。"
+msgstr ""
+"``\\`` は「スキップ・ライン」(skip-"
+"line)と発音します。それはForthインタプリタに同じ行のそれの右側にあるすべてを無視させます( ``\\`` "
+"はForthのワードであるため、スペースを続ける必要があります)。(訳注: ``(`` … ``)`` と異なり)区切り文字は不要です。"
 
 #: ../../chapter5.rst:191
 msgid ""
 "In :numref:`fig5-1` , you see ``\\`` used in two ways: to begin the "
 "screen-comment line (Line 0), and to begin comments on individual lines "
 "which have no more code to the right of the comment."
-msgstr ":numref:`fig5-1` では、``\\`` が2つの方法で使われているのがわかります。スクリーンコメント行(行0)の始めと、個々の行のコードの後ろのコメントの始まりとしてです。"
+msgstr ""
+":numref:`fig5-1` では、``\\`` "
+"が2つの方法で使われているのがわかります。スクリーンコメント行(行0)の始めと、個々の行のコードの後ろのコメントの始まりとしてです。"
 
 #: ../../chapter5.rst:195
 msgid ""
@@ -310,14 +315,19 @@ msgid ""
 "these two “skip-line”s keep the definition of ``NUTATE`` from being "
 "compiled without causing problems in encountering either right "
 "parenthesis:"
-msgstr "テスト中に、 ``\\`` は、すでに名前やコメントに右括弧が含まれている行を一時的にコメントアウトするのにも役立ちます。 例えば、以下の2つの「スキップ・ライン」は、右括弧に出くわすことによる問題を引き起こすことなく、 ``NUTATE`` の定義がコンパイルされるのを防ぎます。"
+msgstr ""
+"テスト中に、 ``\\`` は、すでに名前やコメントに右括弧が含まれている行を一時的にコメントアウトするのにも役立ちます。 "
+"例えば、以下の2つの「スキップ・ライン」は、右括弧に出くわすことによる問題を引き起こすことなく、 ``NUTATE`` "
+"の定義がコンパイルされるのを防ぎます。"
 
 #: ../../chapter5.rst:206
 msgid ""
 "``\\S`` is pronounced “skip-screen.” It causes the Forth interpreter to "
 "stop interpreting the screen entirely, as though there were nothing else "
 "in the screen beyond ``\\S``."
-msgstr "``\\S`` は「スキップ／スクリーン(skip-screen)」と発音します。これはForthインタプリタに、 ``\\S`` を超えて以降、そのスクリーンに何もなかったかのように、 ``\\S`` 以降のスクリーン内の解釈を完全に停止させます。"
+msgstr ""
+"``\\S`` は「スキップ／スクリーン(skip-screen)」と発音します。これはForthインタプリタに、 ``\\S`` "
+"を超えて以降、そのスクリーンに何もなかったかのように、 ``\\S`` 以降のスクリーン内の解釈を完全に停止させます。"
 
 #: ../../chapter5.rst:210
 msgid ""
@@ -325,7 +335,10 @@ msgid ""
 "the run-time routine for semicolon. In these systems the use of ``EXIT`` "
 "is acceptable. Some Forth systems, however, require for internal reasons "
 "a different routine for the “skip-screen” function."
-msgstr "多くのForthシステムでは、この機能はセミコロンのためのランタイムルーチンである ``EXIT`` と同じです。 これらのシステムでは ``EXIT`` の使用は受け付けられます。ただし、Forthシステムの中には、内部的な理由から「スクリーンのスキップ」機能に対して別のルーチンを必要とするものがあります。"
+msgstr ""
+"多くのForthシステムでは、この機能はセミコロンのためのランタイムルーチンである ``EXIT`` と同じです。 これらのシステムでは "
+"``EXIT`` "
+"の使用は受け付けられます。ただし、Forthシステムの中には、内部的な理由から「スクリーンのスキップ」機能に対して別のルーチンを必要とするものがあります。"
 
 #: ../../chapter5.rst:216
 msgid ""
@@ -342,7 +355,9 @@ msgid ""
 ":numref:`fig5-2`  illustrates a typical chapter-load screen. The screens "
 "loaded by this screen are referred to relatively, not absolutely as they "
 "were in the application-load screen."
-msgstr ":numref:`fig5-2` は典型的な章ロード・スクリーンを示しています。 ここでロードされるスクリーンは相対番号指定です。アプリケーション・ロード・スクリーンでの絶対番号指定とは異なります。"
+msgstr ""
+":numref:`fig5-2` は典型的な章ロード・スクリーンを示しています。 "
+"ここでロードされるスクリーンは相対番号指定です。アプリケーション・ロード・スクリーンでの絶対番号指定とは異なります。"
 
 #: ../../chapter5.rst:225
 msgid ""
@@ -352,7 +367,10 @@ msgid ""
 "the chapter-load screen are position-independent. All you have to change "
 "is the single number in the application-load screen that points to the "
 "beginning of the chapter."
-msgstr "これは、章ロード・スクリーンが章内の連続したスクリーン範囲の最初のスクリーンであるためです。 リスト内で章全体を前後に移動できます。 章ロード・スクリーンの相対ポインタは絶対位置に依存しません。 変更する必要があるのは、アプリケーション・ロード・スクリーンの1つの数字だけで、章の先頭を指しています。"
+msgstr ""
+"これは、章ロード・スクリーンが章内の連続したスクリーン範囲の最初のスクリーンであるためです。 リスト内で章全体を前後に移動できます。 "
+"章ロード・スクリーンの相対ポインタは絶対位置に依存しません。 "
+"変更する必要があるのは、アプリケーション・ロード・スクリーンの1つの数字だけで、章の先頭を指しています。"
 
 #: ../../chapter5.rst:232
 msgid "Example of a chapter-load screen."
@@ -366,7 +384,9 @@ msgstr "Screen #100"
 msgid ""
 "Use absolute screen numbers in the application-load screen.  Use relative"
 " screen numbers in the chapter- or section-load screens."
-msgstr "アプリケーション・ロード・スクリーンでは絶対スクリーン番号を使用してください。 章ロードまたは節ロード・スクリーンでは、相対的なスクリーン番号を使用してください。"
+msgstr ""
+"アプリケーション・ロード・スクリーンでは絶対スクリーン番号を使用してください。 "
+"章ロードまたは節ロード・スクリーンでは、相対的なスクリーン番号を使用してください。"
 
 #: ../../chapter5.rst:254
 msgid ""
@@ -382,7 +402,9 @@ msgstr "そして"
 msgid ""
 "My own way, which I submit as a more useful factoring, requires a single "
 "word, ``FH`` (see :doc:`Appendix C<appendixc>` for its definition)."
-msgstr "私流の、より有用な因数分解として提示する方法は、単一のワード ``FH`` を必要とします(その定義については :doc:`付録C<appendixc>` 参照)。"
+msgstr ""
+"私流の、より有用な因数分解として提示する方法は、単一のワード ``FH`` を必要とします(その定義については "
+":doc:`付録C<appendixc>` 参照)。"
 
 #: ../../chapter5.rst:271
 msgid "The phrase"
@@ -398,7 +420,9 @@ msgstr "同様に、"
 
 #: ../../chapter5.rst:285
 msgid "is read “2 from here, 5 from here ``THRU``.”"
-msgstr "「2 from here, 5 from here ``THRU`` 」(ここから1へだったったところから、ここから5へだたったところまで、通しで)と読みます。"
+msgstr ""
+"「2 from here, 5 from here ``THRU`` "
+"」(ここから1へだったったところから、ここから5へだたったところまで、通しで)と読みます。"
 
 #: ../../chapter5.rst:287
 msgid "Some programmers begin each chapter with a dummy word; e.g.,"
@@ -410,7 +434,9 @@ msgid ""
 "in the application-load screen. This permits selectively ``FORGET`` ting "
 "any chapter and reloading from that point on without having to look at "
 "the chapter itself."
-msgstr "アプリケーション・ロード・スクリーンで章がロードされている行のコメントにその名前をリストします。 これにより、章自体を見なくても、任意の章を選択して、 ``FORGET`` してその場所からリロードできます。"
+msgstr ""
+"アプリケーション・ロード・スクリーンで章がロードされている行のコメントにその名前をリストします。 "
+"これにより、章自体を見なくても、任意の章を選択して、 ``FORGET`` してその場所からリロードできます。"
 
 #: ../../chapter5.rst:298
 msgid ""
@@ -419,7 +445,9 @@ msgid ""
 "the chapter. Following that will come the lexicons, loaded in “uses” "
 "order. The final lines of the chapter-load screen normally invoke any "
 "needed initialization commands."
-msgstr "章の中では、最初のグループのスクリーンは通常、章の中でグローバルに必要とされるそれらの変数、定数、および他のデータ構造を定義します。 それに続いて「用途」順にロードされる用語集が来るでしょう。 章ロード・スクリーンの最後の行は、通常、必要な初期化コマンドを呼び出します。"
+msgstr ""
+"章の中では、最初のグループのスクリーンは通常、章の中でグローバルに必要とされるそれらの変数、定数、および他のデータ構造を定義します。 "
+"それに続いて「用途」順にロードされる用語集が来るでしょう。 章ロード・スクリーンの最後の行は、通常、必要な初期化コマンドを呼び出します。"
 
 # Forthwrights wright=職人
 #: ../../chapter5.rst:304
@@ -429,7 +457,9 @@ msgid ""
 "the components described in the chapter. :numref:`fig5-3`  is a sample "
 "preamble screen which demonstrates the format required at Moore Products "
 "Co."
-msgstr "よりスタイルを意識したForth職人の中には、各章の冒頭に、その章で説明されているコンポーネントの動作を一般的な用語で説明したものがあります。 :numref:`fig5-3` は、ムーアプロダクツ社書式の前書きスクリーンの例です。"
+msgstr ""
+"よりスタイルを意識したForth職人の中には、各章の冒頭に、その章で説明されているコンポーネントの動作を一般的な用語で説明したものがあります。 "
+":numref:`fig5-3` は、ムーアプロダクツ社書式の前書きスクリーンの例です。"
 
 #: ../../chapter5.rst:310
 msgid "Moore Products Co.'s format for chapter preambles."
@@ -462,7 +492,12 @@ msgid ""
 "**Starting Forth**, Chapter Nine].  As a result, the listing is much less"
 " carefully organized because I have ``LOCATE`` to find things for me.  I "
 "never look at listings."
-msgstr "私は ``LOCATE`` を使います( ``VIEW`` としても知られています。 **Starting Forth** のChapter 9 Handy Hint;邦訳 FORTH入門 第9章、「知っていると便利です ソース定義を ``LOCATE`` する方法」P.291)。 その結果、リストはそれほど慎重に整理されていません。なぜなら、``LOCATE`` が、私の探しているものを探し出してくれるからです。私はリストを見たことがありません(訳注: ``LOCATE`` は、指定のワードの定義箇所を、スクリーン群から検索)。"
+msgstr ""
+"私は ``LOCATE`` を使います( ``VIEW`` としても知られています。 **Starting Forth** のChapter 9 "
+"Handy Hint;邦訳 FORTH入門 第9章、「知っていると便利です ソース定義を ``LOCATE`` する方法」P.291)。 "
+"その結果、リストはそれほど慎重に整理されていません。なぜなら、``LOCATE`` "
+"が、私の探しているものを探し出してくれるからです。私はリストを見たことがありません(訳注: ``LOCATE`` "
+"は、指定のワードの定義箇所を、スクリーン群から検索)。"
 
 #: ../../chapter5.rst:358
 msgid "––> vs. THRU"
@@ -474,7 +509,10 @@ msgid ""
 "adjacent screens is with the word ``-->`` (pronounced “next block”). This"
 " word causes the interpreter to immediately cease interpreting the "
 "current screen and begin interpreting the next (higher-numbered) screen."
-msgstr "相対ロードの問題では、一連の隣接するスクリーンをロードするための一般的な方法の1つは、ワード ``-->`` (「ネクスト・ブロック(next-block)」と発音)を使用することです。 このワードにより、インタプリタは直ちに現在のスクリーンの解釈を中止し、次の(大きい番号の)スクリーンの解釈を開始します。"
+msgstr ""
+"相対ロードの問題では、一連の隣接するスクリーンをロードするための一般的な方法の1つは、ワード ``-->`` (「ネクスト・ブロック(next-"
+"block)」と発音)を使用することです。 "
+"このワードにより、インタプリタは直ちに現在のスクリーンの解釈を中止し、次の(大きい番号の)スクリーンの解釈を開始します。"
 
 #: ../../chapter5.rst:366
 msgid ""
@@ -483,7 +521,10 @@ msgid ""
 "screens, or linking each series together with the arrows and LOADing only"
 " the first in the series. (You can’t do both; you’d end up loading most "
 "of the screens more than once.)"
-msgstr "あなたのシステムが ``-->`` を提供している場合は、章ロード・スクリーンで ``THRU`` コマンドを使用して一連のスクリーンをロードするか、一連のスクリーンを ``-->`` でリンクして最初のものだけをロードするかを選択する必要があります(両方を行うことはできません。両方使うと、ほとんどのスクリーンを複数回読み込むことになります)。"
+msgstr ""
+"あなたのシステムが ``-->`` を提供している場合は、章ロード・スクリーンで ``THRU`` "
+"コマンドを使用して一連のスクリーンをロードするか、一連のスクリーンを ``-->`` "
+"でリンクして最初のものだけをロードするかを選択する必要があります(両方を行うことはできません。両方使うと、ほとんどのスクリーンを複数回読み込むことになります)。"
 
 #: ../../chapter5.rst:373
 msgid ""
@@ -491,14 +532,18 @@ msgid ""
 "the middle of a series, then reload the screen. The rest of the series "
 "will automatically get loaded. You don’t have to know what the last "
 "screen is."
-msgstr "``-->`` のいいところは、あなたが一連のシリーズの途中でスクリーンを変えて、それからスクリーンをリロードすると仮定してください。 残りスクリーンは自動的に再ロードされます。 最後のスクリーンが何であるかを知る必要がありません。"
+msgstr ""
+"``-->`` のいいところは、あなたが一連のシリーズの途中でスクリーンを変えて、それからスクリーンをリロードすると仮定してください。 "
+"残りスクリーンは自動的に再ロードされます。 最後のスクリーンが何であるかを知る必要がありません。"
 
 #: ../../chapter5.rst:378
 msgid ""
 "That’s also the nasty thing about the arrows: There’s no way to stop the "
 "loading process once it starts. You may compile a lot more screens than "
 "you need to test this one screen."
-msgstr "それは ``-->`` について厄介な事でもあります。いったんロードを開始すると一連のロードプロセスを止める方法はありません。 あなたは1つのスクリーンをテストするのに、必要な数よりもはるかに多くのスクリーンをコンパイルすることになります。"
+msgstr ""
+"それは ``-->`` について厄介な事でもあります。いったんロードを開始すると一連のロードプロセスを止める方法はありません。 "
+"あなたは1つのスクリーンをテストするのに、必要な数よりもはるかに多くのスクリーンをコンパイルすることになります。"
 
 #: ../../chapter5.rst:382
 msgid ""
@@ -534,7 +579,10 @@ msgid ""
 "level (colon) definition that occupies more than one screen, because "
 "``-->`` is “immediate.” But it’s *never* good style to let a colon "
 "definition cross screen boundaries. (They should never be that long!)"
-msgstr "何人かの人々は、定義がスクリーンの境界を越えることを可能にする ``-->`` 役に立つと考えています。 実は ``-->`` は、複数のスクリーンに渡る高水準(コロン)定義をコンパイルする唯一の方法です。なぜなら ``-->`` は「即実行(immediate)」だからです。しかし、コロン定義をスクリーン境界を越えさせるのは決して良いスタイルではありません(定義はそんなに長くなるべきではありません！）。"
+msgstr ""
+"何人かの人々は、定義がスクリーンの境界を越えることを可能にする ``-->`` 役に立つと考えています。 実は ``-->`` "
+"は、複数のスクリーンに渡る高水準(コロン)定義をコンパイルする唯一の方法です。なぜなら ``-->`` "
+"は「即実行(immediate)」だからです。しかし、コロン定義をスクリーン境界を越えさせるのは決して良いスタイルではありません(定義はそんなに長くなるべきではありません！）。"
 
 #: ../../chapter5.rst:402
 msgid ""
@@ -542,7 +590,10 @@ msgid ""
 "assembler coding might occupy several sequential screens. In this case, "
 "though, normal ``LOAD`` ing will do just as well, since the assembler "
 "does not use compilation mode, and therefore does not require immediacy."
-msgstr "一方、非常に複雑でタイムクリティカルなアセンブラコーディングは、いくつかの連続したスクリーンを占有する可能性があります。 ただしこの場合、アセンブラはコンパイルモードを使用せず、したがって即実行(immediate)は必要ないため、通常の ``LOAD`` 処理も同様に実行できます。"
+msgstr ""
+"一方、非常に複雑でタイムクリティカルなアセンブラコーディングは、いくつかの連続したスクリーンを占有する可能性があります。 "
+"ただしこの場合、アセンブラはコンパイルモードを使用せず、したがって即実行(immediate)は必要ないため、通常の ``LOAD`` "
+"処理も同様に実行できます。"
 
 #: ../../chapter5.rst:408
 msgid ""
@@ -569,7 +620,9 @@ msgid ""
 " by retaining control of discrete chunks of code. In developing an "
 "application, you spend a lot more time loading and reloading screens than"
 " you do rearranging their contents."
-msgstr "確かに、スクリーンのスペースを使い果たすことを心配しなくてもいいのですが、制限された領域に書くわずわらしさは、コードの塊に細心の注意を払って御し続けることで補われます。 アプリケーションの開発では、スクリーンの内容を並べ替えるよりもはるかに多くの時間をかけてスクリーンのロードと再ロードを行います。"
+msgstr ""
+"確かに、スクリーンのスペースを使い果たすことを心配しなくてもいいのですが、制限された領域に書くわずわらしさは、コードの塊に細心の注意を払って御し続けることで補われます。"
+" アプリケーションの開発では、スクリーンの内容を並べ替えるよりもはるかに多くの時間をかけてスクリーンのロードと再ロードを行います。"
 
 #: ../../chapter5.rst:426
 msgid ""
@@ -577,7 +630,10 @@ msgid ""
 "factoring. Definitions become longer without the discipline imposed by "
 "the 1K block boundaries. The tendency becomes to write a 20K file, or "
 "worse: a 20K definition."
-msgstr "「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪い因数分解を可能にします。 1Kブロック境界によって課される規律がないと、定義は長くなります。 20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
+msgstr ""
+"「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪い因数分解を可能にします。 "
+"1Kブロック境界によって課される規律がないと、定義は長くなります。 "
+"20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
 
 #: ../../chapter5.rst:431
 msgid ""
@@ -585,7 +641,9 @@ msgid ""
 " loading, and encourages the use of very small named files. Most likely, "
 "though, the more experienced Forth programmers would not use named files "
 "longer than 5K to 10K. So what’s the benefit?"
-msgstr "おそらく、妥協の余地があるのは、ネストされたロードを可能にし、非常に小さな名前付きファイルの使用を推奨するファイルベースのシステムでしょう。 もっとも、たぶん、経験豊富なForthプログラマは5Kから10Kより長い名前付きファイルを使用しないでしょう。 では、そのメリットは何でしょうか？"
+msgstr ""
+"おそらく、妥協の余地があるのは、ネストされたロードを可能にし、非常に小さな名前付きファイルの使用を推奨するファイルベースのシステムでしょう。 "
+"もっとも、たぶん、経験豊富なForthプログラマは5Kから10Kより長い名前付きファイルを使用しないでしょう。 では、そのメリットは何でしょうか？"
 
 #: ../../chapter5.rst:437
 msgid ""
@@ -691,7 +749,9 @@ msgid ""
 "In many Forth shops it’s considered desirable to begin sections of code "
 "on screen numbers that are evenly divisible by three. Major divisions on "
 "a disk should be made on boundaries evenly divisible by thirty."
-msgstr "多くのForthの会社では、3で割り切れるスクリーン番号でコード節を始めることが望ましいと考えられています。 ディスク上の主要な分割は、30スクリーン毎に行われるべきです。"
+msgstr ""
+"多くのForthの会社では、3で割り切れるスクリーン番号でコード節を始めることが望ましいと考えられています。 "
+"ディスク上の主要な分割は、30スクリーン毎に行われるべきです。"
 
 #: ../../chapter5.rst:499
 msgid ""
@@ -700,7 +760,10 @@ msgid ""
 "called a “triad;” most Forth systems include the word ``TRIAD`` to "
 "produce it, given as an argument the number of any of the three screens "
 "in the triad. For instance, if you type"
-msgstr "なぜか？ 慣例により、Forthのスクリーンは1ページに3つ出力され、出力時のトップスクリーンは常に3で均等に割り切れます。 そのようなページは「トライアド(triad)」と呼ばれます。ほとんどのForthシステムはトライアドの3つのスクリーンのうちのどれかの番号を引数として与えられてそれを生成するためのワード ``TRIAD`` を含んでいます。 例えば以下のようにタイプすると、"
+msgstr ""
+"なぜか？ 慣例により、Forthのスクリーンは1ページに3つ出力され、出力時のトップスクリーンは常に3で均等に割り切れます。 "
+"そのようなページは「トライアド(triad)」と呼ばれます。ほとんどのForthシステムはトライアドの3つのスクリーンのうちのどれかの番号を引数として与えられてそれを生成するためのワード"
+" ``TRIAD`` を含んでいます。 例えば以下のようにタイプすると、"
 
 #: ../../chapter5.rst:509
 msgid "you’ll get a page that includes 75, 76, and 77."
@@ -748,7 +811,9 @@ msgid ""
 "arithmetic, date and time support, ``CASE`` statements and the "
 "``DOER/MAKE`` construct (described later) are some of the features that "
 "Forth systems should offer as electives."
-msgstr "これらのユーザロード可能なルーチンは 「選択機能(electives)」と呼ばれます。倍長演算、日付と時刻のサポート、 ``CASE`` 文、 ``DOER/MAKE`` 組（後述）は、Forthシステムが選択機能として提供する機能の一部です。"
+msgstr ""
+"これらのユーザロード可能なルーチンは 「選択機能(electives)」と呼ばれます。倍長演算、日付と時刻のサポート、 ``CASE`` 文、 "
+"``DOER/MAKE`` 組（後述）は、Forthシステムが選択機能として提供する機能の一部です。"
 
 #: ../../chapter5.rst:543
 msgid "Screen Layout"
@@ -767,7 +832,9 @@ msgid ""
 "The comment line serves both as a heading for the screen, and also as a "
 "line in the disk ``INDEX``. It should describe the purpose of the screen "
 "(not list the words defined therein)."
-msgstr "コメント行は、スクリーンの見出しとしても、ディスクを``INDEX`` した時の行としても役立ちます。 それはスクリーンの目的を説明するべきです（そこに定義されたワードをリストしないでください）。"
+msgstr ""
+"コメント行は、スクリーンの見出しとしても、ディスクを``INDEX`` した時の行としても役立ちます。 "
+"それはスクリーンの目的を説明するべきです（そこに定義されたワードをリストしないでください）。"
 
 #: ../../chapter5.rst:555
 msgid ""
@@ -775,7 +842,9 @@ msgid ""
 "applications, you may also include both the chapter name and screen name."
 " If the screen is one of a series of screens implementing a lexicon, you "
 "should include a “page number” as well."
-msgstr "コメント行には、少なくともスクリーン名が含まれています。 大規模なアプリケーションでは、章名とスクリーン名の両方を含めることもできます。 スクリーンが用語集を実装する一連のスクリーンの1つである場合は、「ページ番号」も含める必要があります。"
+msgstr ""
+"コメント行には、少なくともスクリーン名が含まれています。 大規模なアプリケーションでは、章名とスクリーン名の両方を含めることもできます。 "
+"スクリーンが用語集を実装する一連のスクリーンの1つである場合は、「ページ番号」も含める必要があります。"
 
 #: ../../chapter5.rst:560
 msgid ""
@@ -817,7 +886,9 @@ msgstr "そして、どっちが日でどっちが月か混乱する可能性を
 msgid ""
 "If your system has ``\\`` (“skip-line”—see :doc:`Appendix C<appendixc>`),"
 " you can write the comment line like this:"
-msgstr "システムに ``\\`` (スキップ・ライン(skip-line) :doc:`付録C<appendixc>` 参照))がある場合は、次のようにコメント行を書くことができます。"
+msgstr ""
+"システムに ``\\`` (スキップ・ライン(skip-line) :doc:`付録C<appendixc>` "
+"参照))がある場合は、次のようにコメント行を書くことができます。"
 
 #: ../../chapter5.rst:610
 msgid ""
@@ -832,7 +903,10 @@ msgid ""
 " in screens that continue a lexicon.  :numref:`fig5-5` shows a portion of"
 " a list produced by ``INDEX`` in which the comment lines for the "
 "continuing screens are indented."
-msgstr "アプリケーションの索引でスクリーンの組織化に関する詳細を明確にする1つの方法は、用語集の継続するスクリーン内のコメント行を3つのスペースでインデントすることです。 :numref:`fig5-5` は ``INDEX`` によって生成されたリストの一部を示しており、そこでは継続しているスクリーンのコメント行がインデントされています。"
+msgstr ""
+"アプリケーションの索引でスクリーンの組織化に関する詳細を明確にする1つの方法は、用語集の継続するスクリーン内のコメント行を3つのスペースでインデントすることです。"
+" :numref:`fig5-5` は ``INDEX`` "
+"によって生成されたリストの一部を示しており、そこでは継続しているスクリーンのコメント行がインデントされています。"
 
 #: ../../chapter5.rst:622
 msgid "The output of ``INDEX`` showing indented comment lines."
@@ -862,7 +936,11 @@ msgid ""
 ":doc:`Appendix E<appendixe>`) This leaves room for an explanatory comment"
 " on the same line. The exception is a large “family” of words (defined by"
 " a common defining-word) which do not need unique comments:"
-msgstr "このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 ``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の 「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義ワードによって定義される）です。"
+msgstr ""
+"このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 "
+"``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の "
+"「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 "
+"例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義ワードによって定義される）です。"
 
 #: ../../chapter5.rst:675
 msgid "Leave lots of room at the bottom of the screen for later additions."
@@ -878,7 +956,11 @@ msgid ""
 " A new iteration may see a simplification of the code. Or a new "
 "complexity may really belong in another component and should be factored "
 "out, into another screen.)"
-msgstr "最初の試行で、各スクリーンを半分以下のコードで埋めます。 反復的なアプローチでは、最初にアプリケーションのコンポーネントをスケッチしてから、すべての要件が満たされるまでそれらを反復的に作成する必要があります。 通常これは、既存のスクリーンに新しいコマンドを追加すること、または特殊なケースの処理を追加することを意味します(常にではありませんが、新しい反復でコードが単純化されることもあります。または、新しい複雑さが別のコンポーネントに属しているため、別のスクリーンにまとめて表示する必要があったりします)。"
+msgstr ""
+"最初の試行で、各スクリーンを半分以下のコードで埋めます。 "
+"反復的なアプローチでは、最初にアプリケーションのコンポーネントをスケッチしてから、すべての要件が満たされるまでそれらを反復的に作成する必要があります。"
+" "
+"通常これは、既存のスクリーンに新しいコマンドを追加すること、または特殊なケースの処理を追加することを意味します(常にではありませんが、新しい反復でコードが単純化されることもあります。または、新しい複雑さが別のコンポーネントに属しているため、別のスクリーンにまとめて表示する必要があったりします)。"
 
 #: ../../chapter5.rst:686
 msgid ""
@@ -886,7 +968,10 @@ msgid ""
 " One writer recommends that on the initial pass, the screen should "
 "contain about 20–40 percent code and 80–60 percent whitespace "
 "[stevenson81]_ ."
-msgstr "最初に十分なスペースを残すことで、後で追加することがより快適になります。 ある作家は、最初のパスで、画面には20から40パーセントのコードと80から60パーセントの空白を含めることを推奨します。 [stevenson81]_"
+msgstr ""
+"最初に十分なスペースを残すことで、後で追加することがより快適になります。 "
+"ある作家は、最初のパスで、画面には20から40パーセントのコードと80から60パーセントの空白を含めることを推奨します。 "
+"[stevenson81]_"
 
 #: ../../chapter5.rst:691
 msgid ""
@@ -907,7 +992,11 @@ msgid ""
 "separately, for purposes of testing, without mucking up the state of "
 "affairs. Also, in reading the listing you know that values are in decimal"
 " unless the screen explicitly says ``HEX``."
-msgstr "コードが ``HEX`` で書かれている3つのスクリーンが並んでいる場合でも(例えば3つのスクリーンのアセンブラコード)、それぞれのスクリーンは ``BASE`` を ``HEX`` に設定しなければなりません。 そして底を一番下で ``DECIMAL`` に戻します。 このルールにより、テストの目的で、問題の状況を気にすることなく、各スクリーンを個別にロードできます。 また、リストを読むと、スクリーンに明示的に ``HEX`` と表示されていない限り、値は10進数であることがわかります。"
+msgstr ""
+"コードが ``HEX`` で書かれている3つのスクリーンが並んでいる場合でも(例えば3つのスクリーンのアセンブラコード)、それぞれのスクリーンは "
+"``BASE`` を ``HEX`` に設定しなければなりません。 そして底を一番下で ``DECIMAL`` に戻します。 "
+"このルールにより、テストの目的で、問題の状況を気にすることなく、各スクリーンを個別にロードできます。 また、リストを読むと、スクリーンに明示的に "
+"``HEX`` と表示されていない限り、値は10進数であることがわかります。"
 
 #: ../../chapter5.rst:707
 msgid ""
@@ -915,10 +1004,11 @@ msgid ""
 "base to ``DECIMAL`` at the end, they reset base to *whatever it was at "
 "the beginning.* This extra bit of insurance can be accomplished in this "
 "fashion:"
-msgstr "いくつかの会社はさらに以下のルールを設定しています。 最後に基数を ``DECIMAL`` にリセットするのではなく、何でも最初の基数にリセットします。この追加の保証は、次のようにして実現できます。"
+msgstr ""
+"いくつかの会社はさらに以下のルールを設定しています。 最後に基数を ``DECIMAL`` "
+"にリセットするのではなく、何でも最初の基数にリセットします。この追加の保証は、次のようにして実現できます。"
 
 #: ../../chapter5.rst:720
-#, fuzzy
 msgid ""
 "Sometimes an argument is passed on the stack from screen to screen, such "
 "as the value returned by ``BEGIN`` or ``IF`` in a multiscreen assembler "
@@ -926,20 +1016,28 @@ msgid ""
 "another—see “Compile-Time Factoring” in :doc:`Chapter Six<chapter6>`. In "
 "these cases, it’s best to save the value of ``BASE`` on the return stack "
 "like this:"
-msgstr "マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( :doc:`第6章<chapter6>` の「コンパイル時の因数分解」を参照)。 このような場合、以下のようにリターンスタックに ``BASE`` の値を保存するのが最善です。"
+msgstr ""
+"マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` "
+"によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( "
+":doc:`第6章<chapter6>` の「コンパイル時の因数分解」を参照)。 このような場合、以下のようにリターンスタックに ``BASE``"
+" の値を保存するのが最善です。"
 
 #: ../../chapter5.rst:733
 msgid ""
 "Some folks make it a policy to use this approach on any screen that "
 "changes ``BASE``, so they don’t have to worry about it."
-msgstr "何人かの人々は ``BASE`` を変えるどんなスクリーンでもこのアプローチを使うことを方針にしている、そうすることで彼らはそれについて心配する必要が無くなります。"
+msgstr ""
+"何人かの人々は ``BASE`` "
+"を変えるどんなスクリーンでもこのアプローチを使うことを方針にしている、そうすることで彼らはそれについて心配する必要が無くなります。"
 
 #: ../../chapter5.rst:736
 msgid ""
 "Moore prefers to define ``LOAD`` to invoke ``DECIMAL`` after loading. "
 "This approach simplifies the screen’s contents because you don’t have to "
 "worry about resetting."
-msgstr "ムーアはロード後に ``DECIMAL`` を呼び出ように ``LOAD`` を定義することを好みます。 リセットすることを心配する必要がないため、この方法だとスクリーンの内容が簡単になります。"
+msgstr ""
+"ムーアはロード後に ``DECIMAL`` を呼び出ように ``LOAD`` を定義することを好みます。 "
+"リセットすることを心配する必要がないため、この方法だとスクリーンの内容が簡単になります。"
 
 #: ../../chapter5.rst:741
 msgid "Spacing and Indentation"
@@ -956,6 +1054,8 @@ msgid ""
 "There’s no penalty for leaving space in source screens except disk "
 "memory, which is cheap."
 msgstr ""
+"本書の例では、広く受け入れられているスペースと字下げスタイルの規則を使用しています。 適切に使用される空白は読みやすさを向上させます。 "
+"安価なディスクメモリを除いて、ソース・スクリーンにスペースを空けることによるペナルティはありません。"
 
 #: ../../chapter5.rst:752
 msgid ""
@@ -963,99 +1063,105 @@ msgid ""
 ":numref:`tab-5-1` is a list of guidelines. (But remember, Forth’s "
 "interpreter couldn’t care less about spacing or indentation.)"
 msgstr ""
+"白黒はっきりした規約を好む人のために、表 :numref:`tab-5-1` "
+"はガイドラインの一覧です（ただし、Forthのインタプリタはスペースやインデントにあまり気を遣いません）。"
 
 #: ../../chapter5.rst:756
 msgid "Indentation and spacing guidelines"
-msgstr ""
+msgstr "字下げと空白のガイドライン"
 
 #: ../../chapter5.rst:759
 msgid "1 space between the colon and the name"
-msgstr ""
+msgstr "空白1つだけ空けるのはコロンと名前の間。"
 
 #: ../../chapter5.rst:760
 msgid "2 spaces between the name and the comment [#f1]_"
-msgstr ""
+msgstr "空白2つだけ空けるのは名前とコメントの間。 [#f1]_"
 
 #: ../../chapter5.rst:761
 msgid "2 spaces, or a carriage return, after the comment and"
-msgstr ""
+msgstr "2つの空白空か改行入れるのは、 コメントの後と、"
 
 #: ../../chapter5.rst:762
 msgid "before the definition [#f1]_"
-msgstr ""
+msgstr "定義の前。 [#f1]_"
 
 #: ../../chapter5.rst:763
 msgid "3 spaces between the name and definition if no comment is used"
-msgstr ""
+msgstr "3つの空白空けるのは、コメントが無い時の名前とその定義の間。"
 
 #: ../../chapter5.rst:764
 msgid ""
 "3 spaces indentation on each subsequent line (or multiples of 3 for "
 "nested indentation)"
-msgstr ""
+msgstr "3つの空白で字下げするのは後続の各行(入れ子になった場合は更に3の倍数)。"
 
 #: ../../chapter5.rst:766
 msgid "1 space between words/numbers within a phrase"
-msgstr ""
+msgstr "1つの空白空けるのは、句の中の、ワードや数字の間。"
 
 #: ../../chapter5.rst:767
 msgid "2 or 3 spaces between phrases"
-msgstr ""
+msgstr "2か3の空白空けるのは句と句の間。"
 
 #: ../../chapter5.rst:768
 msgid "1 space between the last word and the semicolon"
-msgstr ""
+msgstr "1つの空白空けるのは最後のワードとセミコロンの間。"
 
 #: ../../chapter5.rst:769
 msgid "1 space between semicolon and ``IMMEDIATE`` (if invoked)"
-msgstr ""
+msgstr "1つの空白空けるのは、(必要な場合、)セミコロンと ``IMMEDIATE`` の間。"
 
 #: ../../chapter5.rst:771
 msgid ""
 "No blank lines between definitions, except to separate distinct groups of"
 " definitions"
-msgstr ""
+msgstr "グループの異なる定義を区切る場合を除き、定義の間に空白行は挟みません。"
 
 #: ../../chapter5.rst:774
 msgid "The last position of each line should be blank except for:"
-msgstr ""
+msgstr "各行の最後は、以下を除いて空白にする必要があります。"
 
 #: ../../chapter5.rst:776
 msgid "quoted strings that continue onto the next line, or"
-msgstr ""
+msgstr "次の行に続く引用符付き文字列、または、"
 
 #: ../../chapter5.rst:778
 msgid "the end of a comment."
-msgstr ""
+msgstr "コメントの終了。"
 
 #: ../../chapter5.rst:780
 msgid ""
 "A comment that begins with ``\\`` may continue right to the end of the "
-"line. Also, a comment that begins with ( may have its delimiting right "
-"parenthesis in the last column."
+"line. Also, a comment that begins with ``(`` may have its delimiting "
+"right parenthesis in the last column."
 msgstr ""
+"``\\``で始まるコメントは、行末まで続きます。 また、 ``(`` で始まるコメントは、最後の桁で右丸括弧 ``)`` "
+"で区切ることができます(訳注： ``(`` はワードだが、右括弧 ``)`` は単なる区切り文字)。"
 
 #: ../../chapter5.rst:784
 msgid "Here are some common errors of spacing and indentation:"
-msgstr ""
+msgstr "以下は空白と字下げに関するよくある間違いです。"
 
 #: ../../chapter5.rst:786
 msgid "*Bad* (name not separated from the body of the definition):"
-msgstr ""
+msgstr "良くない例(名前がその定義本体と分けられていない)"
 
 #: ../../chapter5.rst:798
 msgid "*Bad* (subsequent lines not indented three spaces):"
-msgstr ""
+msgstr "良くない例(継続行が3つの空白で字下げされていない)"
 
 #: ../../chapter5.rst:812
 msgid "*Bad* (lack of phrasing):"
-msgstr ""
+msgstr "良くない例(句と句の間が分けられていない)"
 
 #: ../../chapter5.rst:824
 msgid ""
 "Phrasing is a subjective art; I’ve yet to see a useful set of formal "
 "rules. Simply strive for readability."
 msgstr ""
+"句と句の区切り(phrasing)は主観的な芸術です。 私はまだ役に立つ正式な規則のセットをみつけられていません。 "
+"あなたが読みやすくなるよう努力してください。"
 
 #: ../../chapter5.rst:828
 msgid ""
@@ -1064,31 +1170,37 @@ msgid ""
 "uses 3 spaces before and after the comment. Whatever you choose, be "
 "consistent."
 msgstr ""
+"よく見られる代替手段では、名前とコメントの間に1スペース、コメントと定義の間に3スペースが必要です。 "
+"より自由な手法では、コメントの前後に3つのスペースを使用します。 あなたは何を選んでも構いませんが、一貫性を保ってください。"
 
 #: ../../chapter5.rst:834
 msgid "Comment Conventions"
-msgstr ""
+msgstr "コメント規則"
 
+# narrative
+# 物語、物語文学、説話、話術、語り口、(本の会話の部分に対して)語りの部分
 #: ../../chapter5.rst:836
 msgid ""
 "Appropriate commenting is essential. There are five types of comments: "
 "stack-effect comments, data-structure comments, input-stream comments, "
 "purpose comments and narrative comments."
 msgstr ""
+"適切なコメントは不可欠です。 "
+"コメントは５種類あり、それは、スタック効果コメント、データ構造コメント、入力ストリームコメント、目的コメント、物語コメントです。"
 
 #: ../../chapter5.rst:843
 msgid "*A* stack-effect comment"
-msgstr ""
+msgstr "スタック効果コメント"
 
 #: ../../chapter5.rst:841
 msgid ""
 "shows the arguments that the definition consumes from the stack, and the "
 "arguments it returns to the stack, if any."
-msgstr ""
+msgstr "定義がスタックから消費する引数と、もしあれば、それがスタックに返す引数を表します。"
 
 #: ../../chapter5.rst:849
 msgid "*A* data-structure comment"
-msgstr ""
+msgstr "データ構造コメント"
 
 #: ../../chapter5.rst:846
 msgid ""
@@ -1096,61 +1208,65 @@ msgid ""
 "instance, a text buffer might contain a count in the first byte, and 63 "
 "free bytes for text."
 msgstr ""
+"データ構造内の要素の位置と意味を示します。 "
+"たとえば、テキストバッファの最初のバイトにはカウントが含まれ、テキストには63の空きバイトが含まれる可能性があります。"
 
 #: ../../chapter5.rst:855
 msgid "*An* input-stream comment"
-msgstr ""
+msgstr "入力ストリームコメント"
 
 #: ../../chapter5.rst:852
 msgid ""
 "indicates what strings the word expects to see in the input stream. For "
-"example, the Forth word FORGET scans for the name of a dictionary entry "
-"in the input stream."
+"example, the Forth word ``FORGET`` scans for the name of a dictionary "
+"entry in the input stream."
 msgstr ""
+"入力ストリームでワードがどの文字列を見ることを期待しているかを示します。 たとえば、Forthのワード ``FORGET`` "
+"は、入力ストリームから区切り文字によって切り出した文字列をワード名とみなして辞書エントリの名前をスキャンします。"
 
 #: ../../chapter5.rst:860
 msgid "*A* purpose comment"
-msgstr ""
+msgstr "目的コメント"
 
 #: ../../chapter5.rst:858
 msgid ""
 "describes, in as few words possible, what the definition does. How the "
 "definition works is not the concern of the purpose comment."
-msgstr ""
+msgstr "可能な限り少ない言葉で、定義が何をするのかを説明します。 定義がどのように機能するかは、目的のコメントの範疇ではありません。"
 
 #: ../../chapter5.rst:866
 msgid "*A* narrative comment"
-msgstr ""
+msgstr "物語コメント"
 
 #: ../../chapter5.rst:863
 msgid ""
 "appears amidst a definition to explain what is going on, usually line-by-"
 "line. Narrative comments are used only in the “vertical format,” which "
 "we’ll describe in a later section."
-msgstr ""
+msgstr "何が行われているのかを説明する定義の中に、通常は1行ずつ表示されます。 物語コメントは、後の節で説明する「垂直書式」でのみ使用されます。"
 
 #: ../../chapter5.rst:868
 msgid ""
 "Comments are usually typed in lower-case letters to distinguish them from"
 " source code. (Most Forth words are spelled with upper-case letters, but "
 "lower-case spellings are sometimes used in special cases.)"
-msgstr ""
+msgstr "コメントは通常、ソースコードと区別するために小文字で入力されます(ほとんどのFortワードは大文字でつづられていますが、小文字のスペルは特別な場合に使われることがあります)。"
 
 #: ../../chapter5.rst:872
 msgid ""
 "In the following sections we’ll summarize the standardized formats for "
 "these types of comments and give examples for each type."
-msgstr ""
+msgstr "次の節では、上記の種類のコメントの標準化された形式を要約し、それぞれの種類の例を示します。"
 
 #: ../../chapter5.rst:876
 msgid "Stack Notation"
-msgstr ""
+msgstr "スタック表記"
 
 #: ../../chapter5.rst:880
 msgid ""
 "Every colon or code definition that consumes and/or returns any arguments"
 " on the stack must include a stack-effect comment."
-msgstr ""
+msgstr "スタック上の引数を消費したりスタックに返したりする、全てのコロン定義やコード定義は、スタック効果のコメントを含める必要があります。"
 
 #: ../../chapter5.rst:883
 msgid ""
@@ -1158,10 +1274,12 @@ msgid ""
 "stack. Forms of stack notation include “stack pictures,” “stack effects,”"
 " and “stack-effect comments.”"
 msgstr ""
+"「スタック表記」とは、スタック上の内容を表すための規則を指します。 "
+"スタック表記の形式には、「スタック状態」、「スタック効果」、「スタック効果コメント」があります。"
 
 #: ../../chapter5.rst:889
 msgid "Stack Picture"
-msgstr ""
+msgstr "スタック状況"
 
 #: ../../chapter5.rst:891
 msgid ""
@@ -1170,26 +1288,28 @@ msgid ""
 "representing the bottom of the stack and the rightmost item representing "
 "the top."
 msgstr ""
+"スタック状況は、時系列に積み重ねられていると理解されているアイテムを表しています。 "
+"項目は左から右に向かってリストされ、一番左の項目がスタックの一番下(bottom)を表し、一番右の項目が一番上(top)を表します。"
 
 #: ../../chapter5.rst:896
 msgid "For instance, the stack picture"
-msgstr ""
+msgstr "スタック状況の例です。"
 
 #: ../../chapter5.rst:902
 msgid ""
 "indicates two numbers on the stack, with n2 on the top (the most "
 "accessible position)."
-msgstr ""
+msgstr "スタック上の2つの数字を示し、n2が一番上(top)（最もアクセスしやすい位置）"
 
 #: ../../chapter5.rst:905
 msgid ""
 "This is the same order that you would use to type these values in; i.e., "
 "if n1 is 100 and n2 is 5000, then you would type"
-msgstr ""
+msgstr "これは、これらの値を入力するのに使用するのと同じ順序です。 つまり、n1が100でn2が5000の場合は、以下の通りタイプします。"
 
 #: ../../chapter5.rst:912
 msgid "to place these values correctly on the stack."
-msgstr ""
+msgstr "これらの値をスタックに正確に配置します。"
 
 #: ../../chapter5.rst:914
 msgid ""
@@ -1199,6 +1319,9 @@ msgid ""
 " fully spelled-out words are used, each stack item should be separated by"
 " a space."
 msgstr ""
+"スタックピクチャには、「n1」などの省略形または完全な綴りの単語を含めることができます。 通常は略語が使用されます。 いくつかの標準的な略語が表 "
+":numref:`tab-5-2` にあります。 "
+"省略形または完全な綴りの単語のどちらを使用する場合でも、各スタック項目はスペースで区切る必要があります。"
 
 #: ../../chapter5.rst:920
 msgid ""
@@ -1206,14 +1329,16 @@ msgid ""
 "link”), the words in the phrase should be joined by hyphens. For example,"
 " the stack picture:"
 msgstr ""
+"スタック項目が句（「address-of-lastest-"
+"link」など）で記述されている場合は、フレーズ内の語をハイフンで結合する必要があります。 たとえば、以下のスタック状況のように。"
 
 #: ../../chapter5.rst:928
 msgid "shows three elements on the stack."
-msgstr ""
+msgstr "ここでは、スタック上に3つの要素があります。"
 
 #: ../../chapter5.rst:931
 msgid "Stack Effect"
-msgstr ""
+msgstr "スタック効果"
 
 #: ../../chapter5.rst:933
 msgid ""
@@ -1222,14 +1347,16 @@ msgid ""
 "*returned* by the definition. The “before” picture comes first, followed "
 "by two hyphens, then the “after” picture."
 msgstr ""
+"「スタック効果」は2つのスタック状況を示します。定義によって「消費」される可能性のあるアイテムの1つの状況、および定義によって「返される」任意のアイテムの別の状況です。"
+" 「前」の状況が最初に来て、その後に2つのハイフンが続き、次に「後」の状況が続きます。"
 
 #: ../../chapter5.rst:938
 msgid "For instance, the stack effect for Forth’s addition operator, ``+`` is"
-msgstr ""
+msgstr "例えば、Forthの加算演算子 ``+`` のスタック効果です。"
 
 #: ../../chapter5.rst:944
 msgid "where ``+`` consumes two numbers and returns their sum."
-msgstr ""
+msgstr "ここでは ``+`` は2つの数を消費し、それらの合計を返します。"
 
 #: ../../chapter5.rst:946
 msgid ""
@@ -1238,77 +1365,82 @@ msgid ""
 "beneath the arguments of interest don’t need to be shown. Nor do values "
 "that may appear or disappear while the operation is executing."
 msgstr ""
+"スタック効果は、スタックに対する操作の「最終結果」のみを記述するということを忘れないでください。 "
+"たまたま興味のある引数の下のスタックに存在する他の値を表示する必要はありません。 "
+"操作の実行中に表示されたり消えたりする可能性のある値を表示する必要もありません。"
 
 #: ../../chapter5.rst:951
 msgid ""
 "If the word returns any input arguments unchanged, they should be "
 "repeated in the output picture; e.g.,"
-msgstr ""
+msgstr "ワードが入力引数を変更せずに返す場合は、出力状況でそれらを繰り返す必要があります。 たとえば、以下のように。"
 
 #: ../../chapter5.rst:958
 msgid ""
 "Conversely, if the word changes any arguments, the stack comment must use"
 " a different descriptor:"
-msgstr ""
+msgstr "逆に、ワードが引数を変更する場合、スタックコメントは異なる記述子を使用しなければなりません。"
 
+# glossaryは訳すかカタカナか 用語集ではlexiconと混乱しないか。
+# とりあえず「ワード集」とする。
 #: ../../chapter5.rst:966
 msgid "A stack effect might appear in a formatted glossary."
-msgstr ""
+msgstr "スタック効果は、フォーマットされたグロッサリー(ワード集)に表示されることがあります。"
 
 #: ../../chapter5.rst:969
 msgid "Stack Effect Comment"
-msgstr ""
+msgstr "スタック効果コメント"
 
 #: ../../chapter5.rst:971
 msgid ""
 "A “stack-effect comment” is a stack effect that appears in source code "
 "surrounded by parentheses. Here’s the stack-effect comment for the word "
 "COUNT:"
-msgstr ""
+msgstr "「スタック効果コメント」は、括弧で囲まれたソースコードに現れるスタック効果です。 以下がCOUNTというワードに対するスタック効果のコメントです。"
 
 #: ../../chapter5.rst:979
 msgid "or:"
-msgstr ""
+msgstr "または"
 
 #: ../../chapter5.rst:985
 msgid "(The “count” is on top of the stack after the word has executed.)"
-msgstr ""
+msgstr "（「count」は、そのワードが実行された後のスタックの一番上にあります。）"
 
 #: ../../chapter5.rst:987
 msgid ""
 "If a definition has no effect on the stack (that is, no effect the user "
 "is aware of, despite what gyrations occur within the definition), it "
 "needs no stack-effect comment:"
-msgstr ""
+msgstr "定義がスタックに影響を与えない場合（つまり、定義内で、スタック上に既にある引数を一切使用せず、スタック上に何も返さない場合）、スタック効果コメントは不要です。"
 
 #: ../../chapter5.rst:995
 msgid "On the other hand, you may want to use an empty stack comment—i.e.,"
-msgstr ""
+msgstr "しかし、上記のように表記する代わりに、以下のように空のスタックコメントを使用することをおすすめします。"
 
 #: ../../chapter5.rst:1001
 msgid "to emphasize that the word has no effect on the stack."
-msgstr ""
+msgstr "こうして、ワードがスタックに影響を及ぼさないことを強調します。"
 
 #: ../../chapter5.rst:1003
 msgid ""
 "If a definition consumes arguments but returns none, the double-hyphen is"
 " optional. For instance,"
-msgstr ""
+msgstr "定義が引数を消費しても何も返さない場合、二連ハイフン「--」はオプションです。 例えば以下。"
 
 #: ../../chapter5.rst:1010
 msgid "can be shortened to"
-msgstr ""
+msgstr "以下のように短縮できます。"
 
 #: ../../chapter5.rst:1016
 msgid ""
 "The assumption behind this convention is this: There are many more colon "
 "definitions that consume arguments and return nothing than definitions "
 "that consume nothing and return arguments."
-msgstr ""
+msgstr "この規約の背後にある仮定は、引数を消費して何も返さないコロン定義は、何も消費せず引数を返す定義よりも多くあるというものです。"
 
 #: ../../chapter5.rst:1021
 msgid "Stack Abbreviation Standards"
-msgstr ""
+msgstr "スタック略語規格"
 
 #: ../../chapter5.rst:1023
 msgid ""
@@ -1320,10 +1452,14 @@ msgid ""
 "represents a 16-bit number; if the system uses a 32-bit cell, “n” "
 "represents a 32-bit number.)"
 msgstr ""
+"スタック表記で使用される略語は一貫しているべきです。 表 :numref:`tab-5-2` "
+"は一般的に使われる略語の大部分をリストしています(この表は :doc:`付録E<appendixe>` に再掲)。「1倍長(single-"
+"length)」、「2倍長(double-"
+"length)」などの用語は、特定のForthシステムにおける「セル(cell)」のサイズを表します（システムが16ビットのセルを使用している場合、「n」は16ビットの数を表し、システムが32ビットのセルを使用している場合、「n」は32ビットの数を表します）。"
 
 #: ../../chapter5.rst:1032
 msgid "Notation of Flags"
-msgstr ""
+msgstr "フラグの表記"
 
 #: ../../chapter5.rst:1034
 msgid ""
@@ -1331,213 +1467,217 @@ msgid ""
 "illustrate, here are three versions of the same stack comment for the "
 "word ``-TEXT``:"
 msgstr ""
+"表 :numref:`tab-5-2` にはブールフラグを表す3つの方法が示されています。ここでは例として、ワード ``-TEXT`` "
+"に対する同じスタックコメントの3つのバージョンを示します。"
 
 #: ../../chapter5.rst:1044
 msgid "Stack-comment abbreviations."
-msgstr ""
+msgstr "スタックコメントの略語"
 
 #: ../../chapter5.rst:1048
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: ../../chapter5.rst:1049
 msgid "single-length signed number"
-msgstr ""
+msgstr "1倍長 符号付整数"
 
 #: ../../chapter5.rst:1050
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #: ../../chapter5.rst:1051
 msgid "double-length signed number"
-msgstr ""
+msgstr "2倍長 符号付整数"
 
 #: ../../chapter5.rst:1052
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #: ../../chapter5.rst:1053
 msgid "single-length unsigned number"
-msgstr ""
+msgstr "1倍長 符号無整数"
 
 #: ../../chapter5.rst:1054
 msgid "ud"
-msgstr ""
+msgstr "ud"
 
 #: ../../chapter5.rst:1055
 msgid "double-length unsigned number"
-msgstr ""
+msgstr "2倍長 符号無整数"
 
 #: ../../chapter5.rst:1056
 msgid "t"
-msgstr ""
+msgstr "t"
 
 #: ../../chapter5.rst:1057
 msgid "triple-length"
-msgstr ""
+msgstr "3倍長(triple)"
 
 #: ../../chapter5.rst:1058
 msgid "q"
-msgstr ""
+msgstr "q"
 
 #: ../../chapter5.rst:1059
 msgid "quadruple-length"
-msgstr ""
+msgstr "4倍長(quadruple)"
 
 #: ../../chapter5.rst:1060 ../../chapter5.rst:1230
 msgid "c"
-msgstr ""
+msgstr "c"
 
 #: ../../chapter5.rst:1061
 msgid "7-bit character value"
-msgstr ""
+msgstr "7ビット キャラクタ値(訳注：ASCII表示文字の範囲)"
 
 #: ../../chapter5.rst:1062
 msgid "b"
-msgstr ""
+msgstr "b"
 
 #: ../../chapter5.rst:1063
 msgid "8-bit byte"
-msgstr ""
+msgstr "8ビット バイト値"
 
 #: ../../chapter5.rst:1064
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: ../../chapter5.rst:1065
 msgid "boolean flag; or;"
-msgstr ""
+msgstr "ブーリアンフラグ。左記または以下、"
 
 #: ../../chapter5.rst:1066
 msgid "t="
-msgstr ""
+msgstr "t="
 
 #: ../../chapter5.rst:1067
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #: ../../chapter5.rst:1068
 msgid "f="
-msgstr ""
+msgstr "f="
 
 #: ../../chapter5.rst:1069
 msgid "false"
-msgstr ""
+msgstr "false"
 
 #: ../../chapter5.rst:1070
 msgid "a or adr"
-msgstr ""
+msgstr "a or adr"
 
 #: ../../chapter5.rst:1071
 msgid "address"
-msgstr ""
+msgstr "アドレス"
 
 #: ../../chapter5.rst:1072
 msgid "acf"
-msgstr ""
+msgstr "acf"
 
 #: ../../chapter5.rst:1073
 msgid "address of code field"
-msgstr ""
+msgstr "コードフィールドのアドレス"
 
 #: ../../chapter5.rst:1074
 msgid "apf"
-msgstr ""
+msgstr "apf"
 
 #: ../../chapter5.rst:1075
 msgid "address of parameter field"
-msgstr ""
+msgstr "パラメータフィールドのアドレス"
 
 #: ../../chapter5.rst:1076
 msgid "\\'"
-msgstr ""
+msgstr "\\'"
 
 #: ../../chapter5.rst:1077
 msgid "(as prefix) address of"
-msgstr ""
+msgstr "((英語では)プレフィックスとして) …のアドレス"
 
 #: ../../chapter5.rst:1078
 msgid "s d"
-msgstr ""
+msgstr "s d"
 
 #: ../../chapter5.rst:1079
 msgid "(as a pair) source destination"
-msgstr ""
+msgstr "(ペアで使って）元(source)、先(destination)"
 
 #: ../../chapter5.rst:1080
 msgid "lo hi"
-msgstr ""
+msgstr "lo hi"
 
 #: ../../chapter5.rst:1081
 msgid "lower-limit upper-limit (inclusive)"
-msgstr ""
+msgstr "下限(lower-limit)、上限(upper-limit) (内包)"
 
 #: ../../chapter5.rst:1082
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ../../chapter5.rst:1083
 msgid "count"
-msgstr ""
+msgstr "カウント。"
 
 #: ../../chapter5.rst:1084
 msgid "o"
-msgstr ""
+msgstr "o"
 
 #: ../../chapter5.rst:1085
 msgid "offset"
-msgstr ""
+msgstr "オフセット"
 
 #: ../../chapter5.rst:1086
 msgid "i"
-msgstr ""
+msgstr "i"
 
 #: ../../chapter5.rst:1087
 msgid "index"
-msgstr ""
+msgstr "インデックス"
 
 #: ../../chapter5.rst:1088
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../../chapter5.rst:1089
 msgid "mask"
-msgstr ""
+msgstr "mask"
 
 #: ../../chapter5.rst:1090
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: ../../chapter5.rst:1091
 msgid "don\\'t care (data structure notation)"
-msgstr ""
+msgstr "詳細を気にしない何か(データ構造記法)"
 
 #: ../../chapter5.rst:1093
 msgid "An “offset” is a difference expressed in absolute units, such as bytes."
-msgstr ""
+msgstr "「オフセット」とは、バイトなどの絶対単位で表される差です。"
 
 #: ../../chapter5.rst:1094
 msgid ""
 "An “index” is a difference expressed in logical units, such as elements "
 "or records."
-msgstr ""
+msgstr "「インデックス」とは、要素やレコードなどの論理単位で表される違いです。"
 
+# The result-side of the second version would be read “true means no match".
+# 意味よくわからんので省略。falseの意味が人口にかいしゃくされてない時代だったのかも。
 #: ../../chapter5.rst:1096
 msgid ""
 "The equal sign after the symbols “t” and “f” equates the flag outcome "
 "with its meaning. The result-side of the second version would be read "
 "“true means no match.”"
-msgstr ""
+msgstr "記号「t」と「f」の後の等号「=」は、フラグの結果とその意味を表します。"
 
 #: ../../chapter5.rst:1101
 msgid "Notation of Variable Possibilities"
-msgstr ""
+msgstr "ありうる様々な結果の記法"
 
 #: ../../chapter5.rst:1103
 msgid ""
 "Some definitions yield a different stack effect under different "
 "circumstances."
-msgstr ""
+msgstr "定義によっては、状態によってスタック効果が異なります。"
 
 #: ../../chapter5.rst:1105
 msgid ""
@@ -1547,6 +1687,8 @@ msgid ""
 "word that returns either the address of a file or, if the requested file "
 "is not found, zero:"
 msgstr ""
+"スタック上の項目の数がすべての条件で同じままで、項目自体が変わる場合は、縦棒「|」を使って「または」を表すことができます。 "
+"以下は、ファイルのアドレス、または要求されたファイルが見つからない場合はゼロを返します。"
 
 #: ../../chapter5.rst:1114
 msgid ""
@@ -1554,38 +1696,44 @@ msgid ""
 " or “after” picture—you must write out both versions of the entire stack "
 "picture, along with the double-hyphen, separated by the “or” symbol. For "
 "instance:"
-msgstr ""
+msgstr "「前」または「後」のでスタック状況の項目数が異なる場合は、スタック状況全体の両方のバージョンを二連ハイフン「--」とともに「または」の記号で区切って書き出す必要があります。"
 
 #: ../../chapter5.rst:1123
 msgid ""
 "This comment indicates that if the word is found, three arguments are "
 "returned (with the flag on top); otherwise only a false flag is returned."
 msgstr ""
+"このコメントは、ワードが見つかった場合、3つの引数が返されることを示します（trueフラグがスタック・トップにあります）。 "
+"それ以外の場合はfalseフラグのみが返されます。"
 
 #: ../../chapter5.rst:1127
 msgid ""
 "Note the importance of the second “--”. Its omission would indicate that "
 "the definition always returned three arguments, the top one being a flag."
 msgstr ""
+"2番目の「--」の重要性に注意してください。 "
+"その省略は、定義が常に3つの引数を返すことを示します。スタックトップはフラグです(訳注：2番めの「--」を省略すると「-- apf len "
+"t=found | f=not-found」となり、これは「-- apf len t=found | -- apf len f=not-"
+"found」 という意味になってしまう)。"
 
 #: ../../chapter5.rst:1131
 msgid ""
 "If you prefer, you can write the entire stack effect twice, either on the"
 " same line, separated by three spaces:"
-msgstr ""
+msgstr "必要に応じて、スタック効果全体を3行のスペースで区切って同じ行に2回書き込むことができます。"
 
 #: ../../chapter5.rst:1139
 msgid "or listed vertically:"
-msgstr ""
+msgstr "または垂直書式だと、"
 
 #: ../../chapter5.rst:1147
 msgid "Data-Structure Comments"
-msgstr ""
+msgstr "データ構造コメント"
 
 #: ../../chapter5.rst:1149
 msgid ""
 "A “data-structure comment” depicts the elements in a data structure. For "
-"example, here’s the definition of an insert buffer called \\|INSERT :"
+"example, here’s the definition of an insert buffer called ``|INSERT`` :"
 msgstr ""
 
 #: ../../chapter5.rst:1156
