@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 05:01+0900\n"
+"POT-Creation-Date: 2019-07-16 21:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1367,7 +1367,7 @@ msgid "*Bad* (run-time comment includes apf):"
 msgstr ""
 
 #: ../../chapter5.rst:1407
-msgid "Words defined by this word ARRAY will exhibit the stack effect:"
+msgid "Words defined by this word ``ARRAY`` will exhibit the stack effect:"
 msgstr ""
 
 #: ../../chapter5.rst:1413

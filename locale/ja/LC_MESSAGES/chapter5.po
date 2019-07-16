@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 05:01+0900\n"
-"PO-Revision-Date: 2019-07-16 05:03+0900\n"
+"POT-Creation-Date: 2019-07-16 21:37+0900\n"
+"PO-Revision-Date: 2019-07-17 07:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -936,11 +936,7 @@ msgid ""
 ":doc:`Appendix E<appendixe>`) This leaves room for an explanatory comment"
 " on the same line. The exception is a large “family” of words (defined by"
 " a common defining-word) which do not need unique comments:"
-msgstr ""
-"このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 "
-"``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の "
-"「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 "
-"例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義ワードによって定義される）です。"
+msgstr "このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 ``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の 「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義用のワードによって定義される）です。"
 
 #: ../../chapter5.rst:675
 msgid "Leave lots of room at the bottom of the screen for later additions."
@@ -1734,7 +1730,7 @@ msgstr "データ構造コメント"
 msgid ""
 "A “data-structure comment” depicts the elements in a data structure. For "
 "example, here’s the definition of an insert buffer called ``|INSERT`` :"
-msgstr ""
+msgstr "「データ構造コメント」は、データ構造の要素を表します。 たとえば、 ``|INSERT`` という挿入バッファの定義は次のようになります。"
 
 #: ../../chapter5.rst:1156
 msgid ""
@@ -1743,13 +1739,15 @@ msgid ""
 "represent bytes per element. In the comment above, the first byte "
 "contains the count, and the remaining 63 bytes contain the text."
 msgstr ""
+"波括弧「{…}」(faces)は、構造コメントの開始と終了を表します。 縦棒は構造内のさまざまな要素を区切ります。 "
+"数字は要素ごとのバイト数を表します。 上記のコメントでは、最初のバイトにカウントが含まれ、残りの63バイトにテキストが含まれています。"
 
 #: ../../chapter5.rst:1161
 msgid ""
 "A “bit comment” uses the same format as a data-structure comment to "
 "depict the meaning of bits in a byte or cell. For instance, the bit "
 "comment"
-msgstr ""
+msgstr "「ビットコメント」は、データ構造のコメントと同じフォーマットを使用して、バイトまたはセル内のビットの意味を表します。 例えば、以下のビットコメント、"
 
 #: ../../chapter5.rst:1170
 msgid ""
@@ -1758,6 +1756,8 @@ msgid ""
 "and the final pair of six-bit fields indicate the input and output "
 "devices which this channel is connected to."
 msgstr ""
+"通信チャネルの16ビットステータスレジスタのフォーマットを記述します。 "
+"最初の2ビットはフラグ、2番目の2ビットは未使用、最後の6ビットフィールドのペアは、このチャネルが接続されている入力デバイスと出力デバイスを示します。"
 
 #: ../../chapter5.rst:1176
 msgid ""
@@ -1768,24 +1768,29 @@ msgid ""
 "“status” can be used in stack comments to indicate values with that "
 "pattern:"
 msgstr ""
+"複数のデータ構造が同じパターンの要素を使用している場合は、コメントを1回だけ（おそらく前書きに）書き出し、後続のスクリーン参照するためにパターンに名前を付けます。"
+" "
+"たとえば、前書き上記のビットパターンに「status」という名前を付ける場合は、スタックコメントで「status」を使用してそのパターンの値を示すことができます。"
 
 #: ../../chapter5.rst:1187
 msgid ""
 "If a ``2VARIABLE`` contains one double-length value, the comment should "
 "be a stack picture that indicates the contents:"
-msgstr ""
+msgstr "``2VARIABLE`` が1つの2倍長値を含む場合、コメントは内容を示すスタック状況になります。"
 
 #: ../../chapter5.rst:1194
 msgid ""
 "If a ``2VARIABLE`` contains two single-length data elements, it’s given a"
 " stack picture showing what would be on the stack after a ``2@``. Thus:"
 msgstr ""
+"``2VARIABLE`` に2つの1倍長データ要素が含まれる場合、 ``2@`` の後に何がスタックにあるのかを示すスタック状況を与えます。 "
+"したがって下記のようになります。"
 
 #: ../../chapter5.rst:1202
 msgid ""
 "This is different from the comment that would be used if ``MEASUREMENTS``"
 " were defined by ``CREATE``."
-msgstr ""
+msgstr "これは `` MEASUREMENTS`` が ``CREATE`` によって定義されている場合に使われるであろうコメントとは異なります。"
 
 #: ../../chapter5.rst:1209
 msgid ""
@@ -1797,10 +1802,14 @@ msgid ""
 "separately–thus we use a data structure comment. The item in the 0th "
 "position is listed to the left.)"
 msgstr ""
+"(どちらの文も辞書に同じ結果を生成しますが、 ``2VARIABLE`` "
+"の使用は値を通常「2-fetched」や「2-stored」する事になることを意味しますので、「スタックコメント」コメントを使います。 "
+"``CREATE`` を使うことは通常値が別々にフェッチされ格納されることを意味します。したがってデータ構造のコメントを使います。 "
+"左に0番目の位置が表示されます。"
 
 #: ../../chapter5.rst:1219
 msgid "Input-stream Comments"
-msgstr ""
+msgstr "入力ストリームコメント"
 
 #: ../../chapter5.rst:1221
 msgid ""
@@ -1808,34 +1817,36 @@ msgid ""
 " to be in the input stream. Table :numref:`tab-5-3` lists the "
 "designations used for input stream arguments."
 msgstr ""
+"入力ストリームコメントは、どのワードや文字列が入力ストリームにあると推定されるかを示します。表 :numref:`tab-5-3` "
+"は入力ストリーム引数に使われる指定をリストしています。"
 
 #: ../../chapter5.rst:1225
 msgid "Input-stream comment designations."
-msgstr ""
+msgstr "入力ストリームのコメント指定"
 
 #: ../../chapter5.rst:1230
 msgid "single character, blank-delimited"
-msgstr ""
+msgstr "空白で区切られた単一文字"
 
 #: ../../chapter5.rst:1231
 msgid "name"
-msgstr ""
+msgstr "name"
 
 #: ../../chapter5.rst:1231
 msgid "sequence of characters, blank delimited"
-msgstr ""
+msgstr "空白で区切られた文字の連なり"
 
 #: ../../chapter5.rst:1232
 msgid "text"
-msgstr ""
+msgstr "text"
 
 #: ../../chapter5.rst:1232
 msgid "sequence of characters, delimited by non-blank"
-msgstr ""
+msgstr "空白以外で区切られた文字の連なり"
 
 #: ../../chapter5.rst:1235
 msgid "Follow \"text\" with the actual delimiter required; e.g.: \"text\" or text"
-msgstr ""
+msgstr "実際の区切り文字をtextの後に続けます。 例: \"text\" または text"
 
 #: ../../chapter5.rst:1237
 msgid ""
@@ -1845,20 +1856,22 @@ msgid ""
 " definition of ``’`` (tick) showing first the input-stream comment, then "
 "the stack comment:"
 msgstr ""
+"入力ストリームコメントはスタックコメントの「前」に現れ、括弧で囲まれることなく、両側に3つのスペースで囲まれるだけです。以下に ``’`` "
+"(tick)の定義のコメントのやり方があります。それは最初に入力ストリームのコメントを表示し、それからスタックのコメントを表示します。"
 
 #: ../../chapter5.rst:1247
 msgid "If you prefer to use ``(`` , the comment would look like this:"
-msgstr ""
+msgstr "``(`` を使いたければ、コメントは次のようになります。"
 
 #: ../../chapter5.rst:1253
 msgid ""
 "Incidentally, there are three distinct ways to receive string input. To "
 "avoid confusion, here are the terms:"
-msgstr ""
+msgstr "ちなみに、文字列入力を受け取るには3種類の方法があります。 混乱を避けるために、以下に用語を示します。"
 
 #: ../../chapter5.rst:1260
 msgid "Scanning-for"
-msgstr ""
+msgstr "何それをスキャン(Scanning-for)"
 
 #: ../../chapter5.rst:1258
 msgid ""
@@ -1866,20 +1879,22 @@ msgid ""
 "in the case of tick, or for a delimiter as in the case of ``.\"`` and "
 "``(`` ."
 msgstr ""
+"``’`` (tick)の場合に単語のためか数字のためかのいずれか、または ``.\"`` や ``(`` "
+"の場合の区切り文字の為に、入力ストリームを先読みする事を意味します。"
 
 #: ../../chapter5.rst:1264
 msgid "Expecting"
-msgstr ""
+msgstr "期待して待つ(Expecting)"
 
 #: ../../chapter5.rst:1263
 msgid ""
 "means waiting for. ``EXPECT`` and ``KEY``, and definitions that invoke "
 "them, are ones that “expect” input."
-msgstr ""
+msgstr "待つことを意味します。``EXPECT`` や ``KEY`` およびそれらを呼び出す定義は、入力を「予期する」ものです。"
 
 #: ../../chapter5.rst:1269
 msgid "Presuming"
-msgstr ""
+msgstr "推定する(Presuming)"
 
 #: ../../chapter5.rst:1267
 msgid ""
@@ -1887,38 +1902,40 @@ msgid ""
 "for” the name to be defined, and “presumes” that a definition will "
 "follow."
 msgstr ""
+"通常の使用では何かが続くことを示します。 ワード：定義される名前を「スキャンする(scans-"
+"for)」、そして定義が続くことを「想定する(presumes)」。"
 
 #: ../../chapter5.rst:1271
 msgid "The input-stream comment is only appropriate for input being scanned-for."
-msgstr ""
+msgstr "入力ストリームのコメントは、スキャン対象(scanned-for)の入力にのみ適しています。"
 
 #: ../../chapter5.rst:1275
 msgid "Purpose Comments"
-msgstr ""
+msgstr "目的コメント"
 
 #: ../../chapter5.rst:1279
 msgid "Every definition should bear a purpose comment unless:"
-msgstr ""
+msgstr "以下の場合を除き、すべての定義に目的コメントを付ける必要があります。"
 
 #: ../../chapter5.rst:1281
 msgid "its purpose is clear from its name or its stack-effect comment, or"
-msgstr ""
+msgstr "その目的は、名前またはスタック効果コメントから明らか。または、"
 
 #: ../../chapter5.rst:1282
 msgid "if it consists of three or fewer words."
-msgstr ""
+msgstr "それが3つ以下のワードで構成されている場合。"
 
 #: ../../chapter5.rst:1284
 msgid ""
 "The purpose comment should be kept to a minimum-never more than a full "
 "line. For example:"
-msgstr ""
+msgstr "目的コメントは、最小限にとどめ、1行を超えないようにする必要があります。 たとえば以下のように。"
 
 #: ../../chapter5.rst:1292
 msgid ""
 "Use the imperative mood: “set Foreground color,” not “sets Foreground "
 "color.”"
-msgstr ""
+msgstr "命令文を使用してください。「前景色設定」ではなく「前景色を設定しろ」。"
 
 #: ../../chapter5.rst:1295
 msgid ""
@@ -1926,69 +1943,71 @@ msgid ""
 "its stack-effect comment. You rarely need both a stack comment and a "
 "purpose comment. For instance:"
 msgstr ""
+"反面、ワードの目的は、そのスタック効果コメントで説明することができます。 "
+"スタックコメントと目的コメントの両方が必要になることはめったにありません。 たとえば以下のように。"
 
 #: ../../chapter5.rst:1309
 msgid ""
 "This definition takes as its incoming argument a number that represents "
 "the number of spaces to type."
-msgstr ""
+msgstr "この定義は、入力引数として、入力するスペースの数を表す数値を取ります。"
 
 #: ../../chapter5.rst:1318
 msgid ""
 "This definition converts an index, which it consumes, into an address "
 "within a table of 2-byte elements corresponding to the indexed element."
-msgstr ""
+msgstr "この定義は、それが消費するインデックスを、インデックス付けされた要素に対応する2バイト要素のテーブル内のアドレスに変換します。"
 
 #: ../../chapter5.rst:1325
 msgid "This definition returns an address of a scratch region of memory."
-msgstr ""
+msgstr "この定義はメモリのスクラッチ領域のアドレスを返します。"
 
 #: ../../chapter5.rst:1327
 msgid ""
 "Occasionally, readability is best served by including both types of "
 "comment. In this case, the purpose comment should appear last. For "
 "instance:"
-msgstr ""
+msgstr "時々は、両方のタイプのコメントを含めることによってとても読みやすくなります。この場合、目的コメントは最後に現れます。 たとえば以下です。"
 
 #: ../../chapter5.rst:1337
 msgid ""
 "Indicate the type of comment by ordering: input-stream comments first, "
 "stack-effect comments second, purpose comments last."
-msgstr ""
+msgstr "コメントの種類を次の順序で示します。最初は入力ストリームのコメント、次はスタック効果のコメント、３番めは目的コメントです。"
 
 #: ../../chapter5.rst:1340
 msgid "For example:"
-msgstr ""
+msgstr "例えば"
 
 #: ../../chapter5.rst:1346
 msgid "If you prefer to use ``(``, then write:"
-msgstr ""
+msgstr "もし ``(`` を使いたければ、次のように書いてください。"
 
 #: ../../chapter5.rst:1352
 msgid "If necessary, you can put the purpose comment on a second line:"
-msgstr ""
+msgstr "必要に応じて、目的コメントを2行目に置く事ができます。"
 
 #: ../../chapter5.rst:1361
 msgid "Comments for Defining Words"
-msgstr ""
+msgstr "定義用のワードのコメント"
 
 #: ../../chapter5.rst:1363
 msgid "The definition of a defining word involves two behaviors:"
-msgstr ""
+msgstr "定義用のワードの定義は、2つの振る舞いを含んでいます。"
 
 #: ../../chapter5.rst:1366
 msgid ""
 "that of the defining word as it defines its “child” (compile-time "
 "behavior), and"
-msgstr ""
+msgstr "「定義用のワードの子供」を定義するときの定義用のワード（コンパイル時(compile-time)の振る舞い）、そして、"
 
 #: ../../chapter5.rst:1369
 msgid "that of the child itself (run-time behavior)."
-msgstr ""
+msgstr "子供それ自身のもの(実行時(run-time)の振る舞い)です。"
 
 #: ../../chapter5.rst:1371
 msgid "These two behaviors must be commented separately."
-msgstr ""
+msgstr "これら２つの振る舞いは別々にコメントしなければなりません。"
 
 #: ../../chapter5.rst:1375
 msgid ""
@@ -1996,10 +2015,12 @@ msgid ""
 " its run-time behavior separately, following the word ``DOES>`` (or "
 "``;CODE``)."
 msgstr ""
+"定義語のコンパイル時の動作を通常の方法でコメントします。 その実行時の振る舞いを ``DOES>`` (または ``;CODE`` "
+")の後にコメントします。"
 
 #: ../../chapter5.rst:1379
 msgid "For instance,"
-msgstr ""
+msgstr "例えば"
 
 #: ../../chapter5.rst:1386
 msgid ""
@@ -2008,51 +2029,53 @@ msgid ""
 "the address returned by ``DOES>,`` even though this address is on the "
 "stack when the run-time code begins."
 msgstr ""
+"(子供の)実行時の動作に対するスタック効果のコメントは、子供のワード実行時の正味のスタック効果を表します。 したがって、( ``DOES>`` "
+"のあとの)実行時コード開始時には ``DOES>`` によって返されるアドレスがスタック上にありますが、それは含めません。"
 
 #: ../../chapter5.rst:1391
 msgid "*Bad* (run-time comment includes apf):"
-msgstr ""
+msgstr "悪い例(実行時コメントがapf(パラメータフィールドアドレス)を含んでいる)"
 
 #: ../../chapter5.rst:1407
-msgid "Words defined by this word ARRAY will exhibit the stack effect:"
-msgstr ""
+msgid "Words defined by this word ``ARRAY`` will exhibit the stack effect:"
+msgstr "このワード ``ARRAY`` によって定義されたワードはスタック効果があります。"
 
 #: ../../chapter5.rst:1413
 msgid ""
 "If the defining word does not specify the run-time behavior, there still "
 "exists a run-time behavior, and it may be commented:"
-msgstr ""
+msgstr "定義語が実行時の振る舞いを指定していない場合でも、実行時の振る舞いが存在し、コメント化される可能性があります。"
 
 #: ../../chapter5.rst:1422
 msgid "Comments for Compiling Words"
-msgstr ""
+msgstr "コンパイル用のワードのコメント"
 
 #: ../../chapter5.rst:1424
 msgid "As with defining words, most compiling words involve two behaviors:"
-msgstr ""
+msgstr "定義用のワードと同様に、ほとんどのコンパイル用のワードには2つの振る舞いがあります。"
 
 #: ../../chapter5.rst:1426
 msgid ""
 "That of the compiling word as the definition in which it appears is "
 "compiled"
-msgstr ""
+msgstr "定義に現れるコンパイル用のワードはコンパイルされます。"
 
 #: ../../chapter5.rst:1429
 msgid ""
 "That of the run-time routine which will execute when we invoke the word "
 "being defined. Again we must comment each behavior separately."
-msgstr ""
+msgstr "それは、定義済のワードを呼び出す時に実行される実行時ルーチンです。繰り返しになりますが、それぞれの振る舞いは個別にコメントしなければなりません。"
 
 #: ../../chapter5.rst:1434
 msgid ""
 "Comment a compiling word's run-time behavior in the usual way; comment "
 "its compile-time behavior separately, beginning with the label "
 "\"Compile:\"."
-msgstr ""
+msgstr "コンパイル用のワードの実行時の振る舞いを通常の方法でコメントします。 コンパイル時のコメントは、ラベル「Compile:」に続いて書きます。"
 
 #: ../../chapter5.rst:1438
 msgid "For instance:"
-msgstr ""
+msgstr "例えば"
 
 #: ../../chapter5.rst:1446
 msgid ""
@@ -2060,28 +2083,28 @@ msgid ""
 "behavior, which is usually the *syntax for using* the word. The second "
 "comment describes what the word *actually does* in compiling (which is of"
 " less importance to the user)."
-msgstr ""
+msgstr "コンパイル用ワードの場合、最初のコメントは実行時の動作を記述します。これは通常、ワードを使用するための構文です。 2番目のコメントは、コンパイル時にワードが実際にどのように機能するのかを説明しています(これはユーザにとっては重要性は低いです）。"
 
 #: ../../chapter5.rst:1451
 msgid "Other examples:"
-msgstr ""
+msgstr "他の例"
 
 #: ../../chapter5.rst:1458
 msgid ""
 "Occasionally a compiling word may exhibit a different behavior when it is"
 " invoked *outside* a colon definition. Such words (to be fastidious about"
 " it) require three comments. For instance:"
-msgstr ""
+msgstr "時折、コンパイル用のワードがコロン定義の外で呼び出されると、異なる動作を示すことがあります。 そのようなワードは（それについて忠実になるために）3つのコメントを必要とします。 たとえば以下です。"
 
 #: ../../chapter5.rst:1469
 msgid ""
 ":doc:`Appendix E<appendixe>` includes two screens showing good commenting"
 " style."
-msgstr ""
+msgstr ":doc:`付録E<appendixe>` には、良いコメントスタイルを示す2つのスクリーンがあります。"
 
 #: ../../chapter5.rst:1472
 msgid "Vertical Format vs. Horizontal Format"
-msgstr ""
+msgstr "垂直書式 対 水平書式"
 
 #: ../../chapter5.rst:1474
 msgid ""
@@ -2089,15 +2112,15 @@ msgid ""
 "determine what’s going on. But how much commenting is necessary? To "
 "determine the level of commenting appropriate for your circumstances, you"
 " must ask yourself two questions:"
-msgstr ""
+msgstr "コメントする目的は、コードの読者が何が起こっているのかを簡単に判断できるようにすることです。 しかし、どれだけのコメントが必要ですか？ あなたの状況にふさわしいコメントのレベルを決定するために、あなたは自身に2つの問い掛けをしなければなりません。"
 
 #: ../../chapter5.rst:1479
 msgid "Who will be reading my code?"
-msgstr ""
+msgstr "私のコードを読むのは誰ですか？"
 
 #: ../../chapter5.rst:1481
 msgid "How readable are my definitions?"
-msgstr ""
+msgstr "私の定義はどのぐらい読みやすいですか？"
 
 #: ../../chapter5.rst:1483
 msgid ""
@@ -2105,13 +2128,13 @@ msgid ""
 " often called the “vertical format,” includes a step-by-step description "
 "of the process, in the manner of a well-commented assembly language "
 "listing. These line-by-line comments are called “narrative comments.”"
-msgstr ""
+msgstr "2つの基本的なスタイルのコメントを選択できます。しばしば「垂直書式」と呼ばれる最初のスタイルは、よくコメントされたアセンブリ言語のリストのように、プロセスのステップバイステップの説明を含みます。 これらの行ごとのコメントは「物語コメント」と呼ばれます。"
 
 #: ../../chapter5.rst:1506
 msgid ""
 "The other approach does not intersperse narrative comments between code "
 "phrases. This is called the “horizontal format.”"
-msgstr ""
+msgstr "もう1つの方法では、コード句間に物語のコメントが散在しません。 これは「水平書式」と呼ばれます。"
 
 #: ../../chapter5.rst:1515
 msgid ""
@@ -2123,33 +2146,33 @@ msgid ""
 "maintaining code you are usually interested in just one small section, "
 "and the more information written there the better your chances for a "
 "speedy fix.”"
-msgstr ""
+msgstr "大規模なプログラマチームがアプリケーションをコーディングおよび保守している場合は、垂直フォーマットが推奨されます。 通常、このようなチームには、小さな修正を担当する駆け出しレベルのプログラマが何人か含まれます。 そのような環境では、勤勉なコメントは多くの時間と動揺を節約することができます。ムーアプロダクツ社のジョンソン氏が言うように、「コードを保守するときには、たった1つの小さなセクションに関心があり、そこに書かれている情報が多ければ多いほど、迅速な修正が可能になります。」"
 
 #: ../../chapter5.rst:1524
 msgid ""
 "Here are several pertinent rules required of the Forth programmers at "
 "Moore Products Co. (I’m paraphrasing):"
-msgstr ""
+msgstr "以下がムーアプロダクツ社のForthプログラマに要求される、いくつかの適切とされる規則です（句と句の間隔取り）。"
 
 #: ../../chapter5.rst:1527
 msgid ""
 "A vertical format will be used. Comments will appear to the right of the "
 "source code, but may continue to engulf the next line totally if needed."
-msgstr ""
+msgstr "垂直書式を使用します。コメントはソースコードの右側に表示されますが、必要に応じて次行も使います。"
 
 #: ../../chapter5.rst:1531
 msgid ""
 "There should be more comment characters than source characters. (The "
 "company encourages long descriptive names, greater than ten characters, "
 "and allows the names to be counted as comment characters.)"
-msgstr ""
+msgstr "ソース文字よりも多くのコメント文字があるはずです(この会社は、10文字を超える長い説明的な名前を推奨し、名前をコメント文字として数えることを許可しています)。"
 
 #: ../../chapter5.rst:1536
 msgid ""
 "Any conditional structure or application word should appear on a separate"
 " line. “Noise words” can be grouped together. Indentation is used to show"
 " nested conditionals."
-msgstr ""
+msgstr "条件付き構造またはアプリケーション・ワードは、別の行に表示する必要があります。 「ノイズワード」はまとめてグループ化できます。 字下げは入れ子になった条件を示すために使用されます。"
 
 #: ../../chapter5.rst:1540
 msgid ""
@@ -2157,7 +2180,7 @@ msgid ""
 "line-by-line commenting is time-consuming, even with a good screen "
 "editor. Productivity can be stifled, especially when stopping to write "
 "the comments breaks your chain of thought."
-msgstr ""
+msgstr "ただし、この形式にはいくつかの問題があります。 1つには、優れたスクリーンエディタを使用したとしても、行ごとのコメントは時間がかかります。 特にコメントを書くのを中断すると思考の連鎖が崩れ、生産性が低下する可能性があります。"
 
 #: ../../chapter5.rst:1546
 msgid ""
@@ -2166,13 +2189,13 @@ msgid ""
 "works—and the programmer forgets to change the comments. The more "
 "comments there are, the more likely they are to be wrong. If they’re "
 "wrong, they’re worse than useless."
-msgstr ""
+msgstr "また、コメントが最新のものであることも慎重に確認する必要があります。 多くの場合、コードが修正され、改訂版がテストされ、変更が行われ、プログラマがコメントを変更するのを忘れます。 コメントが多いほど、それらは間違っている可能性が高くなります。 コメントが間違っているならば、それは役に立たないより悪いです。"
 
 #: ../../chapter5.rst:1552
 msgid ""
 "This problem can be alleviated if the project supervisor carefully "
 "reviews code and ensures the accuracy of comments."
-msgstr ""
+msgstr "プロジェクトの監督者がコードを慎重に確認し、コメントの正確さを保証すれば、この問題を軽減することができます。"
 
 #: ../../chapter5.rst:1555
 msgid ""
@@ -2182,21 +2205,21 @@ msgid ""
 "significant aspects of a definition’s operation. What, for instance, is "
 "the thinking behind the checksum algorithm used? Who knows, from the "
 "narrative comments?"
-msgstr ""
+msgstr "最後に、行ごとのコメントは誤った安心感を与える可能性があります。 「各行にコメントがあるので、アプリケーションはうまく機能している」とは思わないでください。 行ごとのコメントでは、定義の操作における重要な側面については説明されていません。 たとえば、使用されているチェックサムアルゴリズムの背後にある考え方は何ですか？ 物語のコメントから誰が知っているのですか？"
 
 #: ../../chapter5.rst:1563
 msgid ""
 "To properly describe, in prose, the implications of a given procedure "
 "usually requires many paragraphs, not a single phrase. Such descriptions "
 "properly belong in auxiliary documentation or in the chapter preamble."
-msgstr ""
+msgstr "正確に説明するために、概説では、与えられた手続きの意味は通常、単一の句ではなく多くの段落を必要とします。 そのような説明は、補助的な文書または章の前文に含めるのが適切です。"
 
 #: ../../chapter5.rst:1567
 msgid ""
 "Despite these cautions, many companies find the vertical format "
 "necessary. Certainly a team that is newly exposed to Forth should adopt "
 "it, as should any very large team."
-msgstr ""
+msgstr "これらの注意にもかかわらず、多くの企業は垂直s書式を必要としています。 確かに、Forthに初めて触れるチームは、他の大規模チームと同様にそれを採用する必要があります。"
 
 #: ../../chapter5.rst:1571
 msgid ""

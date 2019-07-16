@@ -1404,7 +1404,7 @@ address is on the stack when the run-time code begins.
       CREATE 2* ALLOT
        DOES>  ( i -- 'cell)  SWAP  2* + ;
 
-Words defined by this word ARRAY will exhibit the stack effect:
+Words defined by this word ``ARRAY`` will exhibit the stack effect:
 
 .. code-block:: none
    
