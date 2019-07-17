@@ -1757,8 +1757,8 @@ The choice of ``I'M`` is another invention of **Moore**, who says:
     If you have a wide recall vocabulary, you're in a better position to
     come up with the right word.
 
-Another of Moore’s favorite words
-is TH, which he uses as an array indexing word. For instance, the phrase
+Another of Moore’s favorite words is ``TH``,
+which he uses as an array indexing word. For instance, the phrase
 
 .. code-block:: none
    
@@ -1955,7 +1955,7 @@ is just as readable as
    ... DONE? IF CLOSE THEN ...
 
 and cleaner as well. It is therefore preferable, unless we need an
-additional word called DONE (as a flag, for instance).
+additional word called ``DONE`` (as a flag, for instance).
 
 A final tip on naming:
 
@@ -1964,7 +1964,7 @@ A final tip on naming:
    Begin all hex numbers with "0" (zero) to avoid potential collisions
    with names.
 
-For example, write 0ADD, not ADD.
+For example, write ``0ADD``, not ``ADD``.
 
 By the way, don’t expect your Forth system to necessarily conform to the
 above conventions. The conventions are meant to be used in new
@@ -2085,5 +2085,5 @@ REFERNCES
 
 .. [stevenson81]  Gregory Stevenson, "Documentation Priorities," **1981 FORML Conference Proceedings,**  p. 401.
 .. [lee81]  Joanne Lee, "Quality Assurance in a ForthEnvironment," (Appendix A),  **1981 FORML Proceedings,**  p. 363.
-.. [dijkstra82]  Edsger W. Dijkstra,  **Selected Writings onComputing: A Personal Perspective,**  New York, Springer Verlag, Inc.,1982.
+.. [dijkstra82]  Edsger W. Dijkstra,  **Selected Writings on Computing: A Personal Perspective,**  New York, Springer Verlag, Inc.,1982.
 .. [laxen]  Henry Laxen, "Choosing Names,"  **Forth Dimensions,** vol. 4, no.\ 4, Forth Interest Group.

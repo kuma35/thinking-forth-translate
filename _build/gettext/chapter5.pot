@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 21:37+0900\n"
+"POT-Creation-Date: 2019-07-18 01:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1663,7 +1663,7 @@ msgid "If you have a wide recall vocabulary, you're in a better position to come
 msgstr ""
 
 #: ../../chapter5.rst:1760
-msgid "Another of Moore’s favorite words is TH, which he uses as an array indexing word. For instance, the phrase"
+msgid "Another of Moore’s favorite words is ``TH``, which he uses as an array indexing word. For instance, the phrase"
 msgstr ""
 
 #: ../../chapter5.rst:1767
@@ -1827,7 +1827,7 @@ msgid "is just as readable as"
 msgstr ""
 
 #: ../../chapter5.rst:1957
-msgid "and cleaner as well. It is therefore preferable, unless we need an additional word called DONE (as a flag, for instance)."
+msgid "and cleaner as well. It is therefore preferable, unless we need an additional word called ``DONE`` (as a flag, for instance)."
 msgstr ""
 
 #: ../../chapter5.rst:1960
@@ -1839,7 +1839,7 @@ msgid "Begin all hex numbers with \"0\" (zero) to avoid potential collisions wit
 msgstr ""
 
 #: ../../chapter5.rst:1967
-msgid "For example, write 0ADD, not ADD."
+msgid "For example, write ``0ADD``, not ``ADD``."
 msgstr ""
 
 #: ../../chapter5.rst:1969
@@ -1939,7 +1939,7 @@ msgid "Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  *
 msgstr ""
 
 #: ../../chapter5.rst:2088
-msgid "Edsger W. Dijkstra,  **Selected Writings onComputing: A Personal Perspective,**  New York, Springer Verlag, Inc.,1982."
+msgid "Edsger W. Dijkstra,  **Selected Writings on Computing: A Personal Perspective,**  New York, Springer Verlag, Inc.,1982."
 msgstr ""
 
 #: ../../chapter5.rst:2089

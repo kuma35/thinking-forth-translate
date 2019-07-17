@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-16 21:37+0900\n"
-"PO-Revision-Date: 2019-07-17 07:36+0900\n"
+"POT-Creation-Date: 2019-07-18 01:26+0900\n"
+"PO-Revision-Date: 2019-07-18 04:28+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -936,7 +936,11 @@ msgid ""
 ":doc:`Appendix E<appendixe>`) This leaves room for an explanatory comment"
 " on the same line. The exception is a large “family” of words (defined by"
 " a common defining-word) which do not need unique comments:"
-msgstr "このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 ``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の 「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義用のワードによって定義される）です。"
+msgstr ""
+"このルールにより、リスト内で定義を見つけやすくなります(定義が複数の行にわたって続く場合は、後続の行は常に字下げされるべきです)。 "
+"``VARIABLE`` と ``CONSTANT`` も1行に1つ定義されるべきです( :doc:`付録E<appendixe>` の "
+"「良いコメントスタイルのサンプル」 を参照)。 これは同じ行に説明コメントを書く余地を残します。 "
+"例外は、ユニークなコメントを必要としない、大規模な「ファミリー」のワード（共通の定義用のワードによって定義される）です。"
 
 #: ../../chapter5.rst:675
 msgid "Leave lots of room at the bottom of the screen for later additions."
@@ -2083,7 +2087,9 @@ msgid ""
 "behavior, which is usually the *syntax for using* the word. The second "
 "comment describes what the word *actually does* in compiling (which is of"
 " less importance to the user)."
-msgstr "コンパイル用ワードの場合、最初のコメントは実行時の動作を記述します。これは通常、ワードを使用するための構文です。 2番目のコメントは、コンパイル時にワードが実際にどのように機能するのかを説明しています(これはユーザにとっては重要性は低いです）。"
+msgstr ""
+"コンパイル用ワードの場合、最初のコメントは実行時の動作を記述します。これは通常、ワードを使用するための構文です。 "
+"2番目のコメントは、コンパイル時にワードが実際にどのように機能するのかを説明しています(これはユーザにとっては重要性は低いです）。"
 
 #: ../../chapter5.rst:1451
 msgid "Other examples:"
@@ -2094,7 +2100,9 @@ msgid ""
 "Occasionally a compiling word may exhibit a different behavior when it is"
 " invoked *outside* a colon definition. Such words (to be fastidious about"
 " it) require three comments. For instance:"
-msgstr "時折、コンパイル用のワードがコロン定義の外で呼び出されると、異なる動作を示すことがあります。 そのようなワードは（それについて忠実になるために）3つのコメントを必要とします。 たとえば以下です。"
+msgstr ""
+"時折、コンパイル用のワードがコロン定義の外で呼び出されると、異なる動作を示すことがあります。 "
+"そのようなワードは（それについて忠実になるために）3つのコメントを必要とします。 たとえば以下です。"
 
 #: ../../chapter5.rst:1469
 msgid ""
@@ -2112,7 +2120,9 @@ msgid ""
 "determine what’s going on. But how much commenting is necessary? To "
 "determine the level of commenting appropriate for your circumstances, you"
 " must ask yourself two questions:"
-msgstr "コメントする目的は、コードの読者が何が起こっているのかを簡単に判断できるようにすることです。 しかし、どれだけのコメントが必要ですか？ あなたの状況にふさわしいコメントのレベルを決定するために、あなたは自身に2つの問い掛けをしなければなりません。"
+msgstr ""
+"コメントする目的は、コードの読者が何が起こっているのかを簡単に判断できるようにすることです。 しかし、どれだけのコメントが必要ですか？ "
+"あなたの状況にふさわしいコメントのレベルを決定するために、あなたは自身に2つの問い掛けをしなければなりません。"
 
 #: ../../chapter5.rst:1479
 msgid "Who will be reading my code?"
@@ -2128,7 +2138,9 @@ msgid ""
 " often called the “vertical format,” includes a step-by-step description "
 "of the process, in the manner of a well-commented assembly language "
 "listing. These line-by-line comments are called “narrative comments.”"
-msgstr "2つの基本的なスタイルのコメントを選択できます。しばしば「垂直書式」と呼ばれる最初のスタイルは、よくコメントされたアセンブリ言語のリストのように、プロセスのステップバイステップの説明を含みます。 これらの行ごとのコメントは「物語コメント」と呼ばれます。"
+msgstr ""
+"2つの基本的なスタイルのコメントを選択できます。しばしば「垂直書式」と呼ばれる最初のスタイルは、よくコメントされたアセンブリ言語のリストのように、プロセスのステップバイステップの説明を含みます。"
+" これらの行ごとのコメントは「物語コメント」と呼ばれます。"
 
 #: ../../chapter5.rst:1506
 msgid ""
@@ -2146,7 +2158,10 @@ msgid ""
 "maintaining code you are usually interested in just one small section, "
 "and the more information written there the better your chances for a "
 "speedy fix.”"
-msgstr "大規模なプログラマチームがアプリケーションをコーディングおよび保守している場合は、垂直フォーマットが推奨されます。 通常、このようなチームには、小さな修正を担当する駆け出しレベルのプログラマが何人か含まれます。 そのような環境では、勤勉なコメントは多くの時間と動揺を節約することができます。ムーアプロダクツ社のジョンソン氏が言うように、「コードを保守するときには、たった1つの小さなセクションに関心があり、そこに書かれている情報が多ければ多いほど、迅速な修正が可能になります。」"
+msgstr ""
+"大規模なプログラマチームがアプリケーションをコーディングおよび保守している場合は、垂直フォーマットが推奨されます。 "
+"通常、このようなチームには、小さな修正を担当する駆け出しレベルのプログラマが何人か含まれます。 "
+"そのような環境では、勤勉なコメントは多くの時間と動揺を節約することができます。ムーアプロダクツ社のジョンソン氏が言うように、「コードを保守するときには、たった1つの小さなセクションに関心があり、そこに書かれている情報が多ければ多いほど、迅速な修正が可能になります。」"
 
 #: ../../chapter5.rst:1524
 msgid ""
@@ -2172,7 +2187,9 @@ msgid ""
 "Any conditional structure or application word should appear on a separate"
 " line. “Noise words” can be grouped together. Indentation is used to show"
 " nested conditionals."
-msgstr "条件付き構造またはアプリケーション・ワードは、別の行に表示する必要があります。 「ノイズワード」はまとめてグループ化できます。 字下げは入れ子になった条件を示すために使用されます。"
+msgstr ""
+"条件付き構造またはアプリケーション・ワードは、別の行に表示する必要があります。 「ノイズワード」はまとめてグループ化できます。 "
+"字下げは入れ子になった条件を示すために使用されます。"
 
 #: ../../chapter5.rst:1540
 msgid ""
@@ -2180,7 +2197,9 @@ msgid ""
 "line-by-line commenting is time-consuming, even with a good screen "
 "editor. Productivity can be stifled, especially when stopping to write "
 "the comments breaks your chain of thought."
-msgstr "ただし、この形式にはいくつかの問題があります。 1つには、優れたスクリーンエディタを使用したとしても、行ごとのコメントは時間がかかります。 特にコメントを書くのを中断すると思考の連鎖が崩れ、生産性が低下する可能性があります。"
+msgstr ""
+"ただし、この形式にはいくつかの問題があります。 1つには、優れたスクリーンエディタを使用したとしても、行ごとのコメントは時間がかかります。 "
+"特にコメントを書くのを中断すると思考の連鎖が崩れ、生産性が低下する可能性があります。"
 
 #: ../../chapter5.rst:1546
 msgid ""
@@ -2189,7 +2208,10 @@ msgid ""
 "works—and the programmer forgets to change the comments. The more "
 "comments there are, the more likely they are to be wrong. If they’re "
 "wrong, they’re worse than useless."
-msgstr "また、コメントが最新のものであることも慎重に確認する必要があります。 多くの場合、コードが修正され、改訂版がテストされ、変更が行われ、プログラマがコメントを変更するのを忘れます。 コメントが多いほど、それらは間違っている可能性が高くなります。 コメントが間違っているならば、それは役に立たないより悪いです。"
+msgstr ""
+"また、コメントが最新のものであることも慎重に確認する必要があります。 "
+"多くの場合、コードが修正され、改訂版がテストされ、変更が行われ、プログラマがコメントを変更するのを忘れます。 "
+"コメントが多いほど、それらは間違っている可能性が高くなります。 コメントが間違っているならば、それは役に立たないより悪いです。"
 
 #: ../../chapter5.rst:1552
 msgid ""
@@ -2205,21 +2227,29 @@ msgid ""
 "significant aspects of a definition’s operation. What, for instance, is "
 "the thinking behind the checksum algorithm used? Who knows, from the "
 "narrative comments?"
-msgstr "最後に、行ごとのコメントは誤った安心感を与える可能性があります。 「各行にコメントがあるので、アプリケーションはうまく機能している」とは思わないでください。 行ごとのコメントでは、定義の操作における重要な側面については説明されていません。 たとえば、使用されているチェックサムアルゴリズムの背後にある考え方は何ですか？ 物語のコメントから誰が知っているのですか？"
+msgstr ""
+"最後に、行ごとのコメントは誤った安心感を与える可能性があります。 "
+"「各行にコメントがあるので、アプリケーションはうまく機能している」とは思わないでください。 "
+"行ごとのコメントでは、定義の操作における重要な側面については説明されていません。 "
+"たとえば、使用されているチェックサムアルゴリズムの背後にある考え方は何ですか？ 物語のコメントから誰が知っているのですか？"
 
 #: ../../chapter5.rst:1563
 msgid ""
 "To properly describe, in prose, the implications of a given procedure "
 "usually requires many paragraphs, not a single phrase. Such descriptions "
 "properly belong in auxiliary documentation or in the chapter preamble."
-msgstr "正確に説明するために、概説では、与えられた手続きの意味は通常、単一の句ではなく多くの段落を必要とします。 そのような説明は、補助的な文書または章の前文に含めるのが適切です。"
+msgstr ""
+"正確に説明するために、概説では、与えられた手続きの意味は通常、単一の句ではなく多くの段落を必要とします。 "
+"そのような説明は、補助的な文書または章の前文に含めるのが適切です。"
 
 #: ../../chapter5.rst:1567
 msgid ""
 "Despite these cautions, many companies find the vertical format "
 "necessary. Certainly a team that is newly exposed to Forth should adopt "
 "it, as should any very large team."
-msgstr "これらの注意にもかかわらず、多くの企業は垂直s書式を必要としています。 確かに、Forthに初めて触れるチームは、他の大規模チームと同様にそれを採用する必要があります。"
+msgstr ""
+"これらの注意にもかかわらず、多くの企業は垂直書式を必要としています。 "
+"確かに、Forthに初めて触れるチームは、他の大規模チームと同様にそれを採用する必要があります。"
 
 #: ../../chapter5.rst:1571
 msgid ""
@@ -2227,43 +2257,45 @@ msgid ""
 "practicality, but I feel compelled to defend the horizontal format as "
 "equally valid and in some ways superior."
 msgstr ""
+"水平書式はどうですか？ "
+"おそらくそれは芸術性と実用性の問題ですが、私は水平書式を同じように有効で、ある意味では優れていると擁護しなければならないと感じています。"
 
 #: ../../chapter5.rst:1575
 msgid ""
 "If Forth code is really well-written, there should be nothing ambiguous "
 "about it. This means that:"
-msgstr ""
+msgstr "Forthのコードが本当によく書かれていれば、それについてあいまいなものは何もないはずです。 つまり、以下の事が言えます。"
 
 #: ../../chapter5.rst:1578
 msgid "supporting lexicons have a well-designed syntax"
-msgstr ""
+msgstr "サポートしている用語集は、よく練られた構文を持ちます。"
 
 #: ../../chapter5.rst:1580
 msgid "stack inputs and outputs are commented"
-msgstr ""
+msgstr "スタックの入出力はコメント化されています。"
 
 #: ../../chapter5.rst:1582
 msgid ""
 "the purpose is commented (if it’s not clear from the name or stack "
 "comment)"
-msgstr ""
+msgstr "(名前やスタックコメントから明らかで無い場合)目的コメントがある。"
 
 #: ../../chapter5.rst:1585
 msgid "definitions are not too long"
-msgstr ""
+msgstr "定義は長すぎない"
 
 #: ../../chapter5.rst:1587
 msgid ""
 "not too many arguments are passed to a single definition via the stack "
 "(see “The Stylish Stack” in :doc:`Chapter Seven<chapter7>`)."
-msgstr ""
+msgstr "スタックを介して単一の定義に渡される引数が多すぎない( :doc:`第7章<chapter7>` の「スタイリッシュなスタック」参照)。"
 
 #: ../../chapter5.rst:1590
 msgid ""
 "Forth is simply not like other languages, in which line-by-line "
 "commenting is one of the few things you can do to make programs more "
 "readable."
-msgstr ""
+msgstr "Forthは、他の言語とは異なり、行ごとのコメント付けは、プログラムを読みやすくするためにできるいくつかのことの1つです。"
 
 #: ../../chapter5.rst:1594
 msgid ""
@@ -2273,21 +2305,24 @@ msgid ""
 "comment it. Design your application so that the code, not the comments, "
 "conveys the meaning."
 msgstr ""
+"巧みに書かれたForthコードは詩のように、プログラマと機械の両方が容易に読むことができる正確な意味を含んでいます。 "
+"あなたの目標は、あなたがコメントすることを選んだとしても、コメントを必要としないコードを書くことです。 "
+"コメントではなくコードが意味を伝えるようにアプリケーションを設計してください。"
 
 #: ../../chapter5.rst:1600
 msgid ""
 "If you succeed, then you can eliminate the clutter of excessive "
 "commenting, achieving a purity of expression without redundant "
 "explanations."
-msgstr ""
+msgstr "あなたが成功すれば、過度のコメントをする必要がなくなり、余分な説明をせずに純粋な表現を実現できます。"
 
 #: ../../chapter5.rst:1609
 msgid "Wiggins, proud of his commenting technique."
-msgstr ""
+msgstr "ウィギンス、彼のコメント・テクニックを誇りに思う。"
 
 #: ../../chapter5.rst:1613
 msgid "The most-accurate, least-expensive documentation is self-documenting code."
-msgstr ""
+msgstr "最も正確で安価な文書は、自己文書化コードです。"
 
 #: ../../chapter5.rst:1616
 msgid ""
@@ -2297,10 +2332,13 @@ msgid ""
 " you can verbally communicate, the horizontal format is ideal. Otherwise,"
 " consider the vertical format."
 msgstr ""
+"残念ながら、最高のプログラマでさえ、締め切りのプレッシャーを与えられて、コメントなしでは容易に読めない実用的なコードを書くかもしれません。 "
+"あなた自身のために、またはあなたが口頭でコミュニケーションをとることができる人と小さなグループのために書いているならば、水平書式は理想的です。 "
+"それ以外の場合は、垂直書式を検討してください。"
 
 #: ../../chapter5.rst:1624
 msgid "Choosing Names: The Art"
-msgstr ""
+msgstr "名前の選択、それは芸術"
 
 #: ../../chapter5.rst:1626
 msgid ""
@@ -2308,6 +2346,8 @@ msgid ""
 "one\\'s native tongue is the most vital asset of a competent programmer "
 "(**Prof.  Edsger W. Dijkstra** [dijkstra82]_ )."
 msgstr ""
+"数学的な下地に加えて、母国語への非常に優れた習熟は、有能なプログラマにとって最も重要な財産です( ** エドガー・ダイクストラ教授 ** "
+"[dijkstra82]_ )。"
 
 #: ../../chapter5.rst:1630
 msgid ""
@@ -2315,12 +2355,14 @@ msgid ""
 " objects in the application. The choosing of names turns out to be an "
 "important part of the design process."
 msgstr ""
+"私たちはアプリケーション内のアイデアやオブジェクトを象徴するために名前を使用することの意味について説明しました。 "
+"名前の選択は設計プロセスの重要な部分であることがわかりました。"
 
 #: ../../chapter5.rst:1635
 msgid ""
 "Newcomers tend to overlook the important of names. “After all,” they "
 "think, “the computer doesn’t care what names I choose.”"
-msgstr ""
+msgstr "新人は名前の重要性を見逃しがちです。 新人は「結局のところ、コンピュータは私が選んだ名前を気にしない」と考えます。"
 
 #: ../../chapter5.rst:1638
 msgid ""
@@ -2328,14 +2370,16 @@ msgid ""
 "exercise of summoning a one-word description bears a synergistic effect "
 "on your perceptions of what the entity should or should not do."
 msgstr ""
+"しかし、良い名前は読みやすさのために不可欠です。 "
+"さらに、一つの単語の説明を召喚するという精神的な運動は、実体が何を為すべきか何を為さないべきかというあなたの認識に相乗効果をもたらします。"
 
 #: ../../chapter5.rst:1642
 msgid "Here are some rules for choosing good names:"
-msgstr ""
+msgstr "良い名前を選択するためのいくつかの規則は次のとおりです。"
 
 #: ../../chapter5.rst:1646
 msgid "Choose names according to \"what,\" not \"how.\""
-msgstr ""
+msgstr "「どのように(how)」ではなく、「何をするのか(what)」に従って名前を選んで下さい。"
 
 #: ../../chapter5.rst:1648
 msgid ""
@@ -2343,7 +2387,7 @@ msgid ""
 "definitions which invoke it. The name, too, should hide the details of "
 "the procedure, and instead should describe the outward appearance or net "
 "effect."
-msgstr ""
+msgstr "定義はそれを呼び出す他の定義から実装の複雑さを隠すべきです。 名前も手順の詳細を隠し、代わりに外観または正味効果を説明する必要があります。"
 
 #: ../../chapter5.rst:1653
 msgid ""
@@ -2352,6 +2396,9 @@ msgid ""
 "is better than ``DP+!`` because the user is thinking of reserving space, "
 "not incrementing a pointer."
 msgstr ""
+"たとえば、Forthのワード ``ALLOT`` (訳注:割り当てる の意)は辞書ポインタ(ほとんどのシステムでは ``DP`` または "
+"``H`` と呼ばれる)をインクリメントだけです。しかし、ユーザはポインタをインクリメントするのではなく、スペースを確保することを考えているので、"
+" ``ALLOT`` という名前は ``DP+!`` よりも優れています。"
 
 #: ../../chapter5.rst:1659
 msgid ""
@@ -2362,10 +2409,13 @@ msgid ""
 "In the new name, the forwardness of the “what” supersedes the "
 "backwardness of the “how.”"
 msgstr ""
+"FORTH-83規格では、同じ機能に対して、以前の名前 ``<CMOVE`` の代わりに ``CMOVE>`` という名前を採用しました。 "
+"この操作により、メモリの前方領域を重複メモリにコピーすることができます。 最後のバイトから始めて後ろ向きに実行することでこれを実現します。 "
+"新しい名前では、「何をするのか(what)」の前向きさが「どうするのか(how)」の後向き性に優先します。"
 
 #: ../../chapter5.rst:1668
 msgid "Find the most expressive word."
-msgstr ""
+msgstr "最も表現力豊かな単語を見つけてください。"
 
 #: ../../chapter5.rst:1672
 msgid ""
@@ -2373,24 +2423,31 @@ msgid ""
 "intensely right words in a book or a newspaper the resulting effect is "
 "physical as well as spiritual, and electrically prompt **(Mark Twain)** ."
 msgstr ""
+"正しい単語は強力なエージェントです。 "
+"私たちが本や新聞の中でそれらの非常に正しい単語のうちの1つに遭遇するときはいつでも、結果として生じる効果は肉体的であると同時に霊的でもあり、そして稲妻に打たれたような啓示です。"
+" **マーク・トウェイン**"
 
 #: ../../chapter5.rst:1677
 msgid ""
 "The difference between the right word and the almost-right word is like "
 "the difference between lightning and the lightning bug **(Mark Twain)** ."
 msgstr ""
+"正しい単語とほぼ正しい単語の違いは、lightning(稲妻)とlightning bug(ほたる)の違いに似ています。  "
+"**マーク・トウェイン**"
 
 #: ../../chapter5.rst:1681
 msgid ""
 "Suit the action to the word, the word to the action **(Shakespeare, "
 "Hamlet, Act~III)** ."
-msgstr ""
+msgstr "しぐさは言葉に合わせ、言葉はしぐさに合わせるように(シェイクスピア ハムレット 第3幕)"
 
 #: ../../chapter5.rst:1684
 msgid ""
 "Henry Laxen, a Forth consultant and author, suggests that the most "
 "important Forth development tool is a good thesaurus [laxen]_ ."
 msgstr ""
+"Forthのコンサルタント兼作家であるHenry "
+"Laxenは、最も重要なForth開発ツールは優れたシソーラス(類語辞典)であることを示唆しています。 [laxen]_"
 
 #: ../../chapter5.rst:1688
 msgid ""
@@ -2401,6 +2458,10 @@ msgid ""
 "was ``4-0R-9``. That’s awkward, but it was much later that I thought of "
 "``ALMOST``."
 msgstr ""
+"定義にふさわしい言葉を考えることがあるかもしれませんが、それはまったく正しいとは言えません。 "
+"数カ月後になって、あなたが目標を達成できなかったことに気付くでしょう。 :doc:`第4章<chapter4>` "
+"のローマ数字の例では、次のシンボルのの値よりも1小さい値を表す言葉が必要でした。私の最初の選択は ``4-0R-9`` でした。厄介なことに、私が"
+" ``ALMOST`` を思いついたのはずっと後になってからでした。"
 
 #: ../../chapter5.rst:1694
 msgid ""
@@ -2410,6 +2471,9 @@ msgid ""
 "more pleasant by itself, it also works nicely with vocabulary names. For "
 "instance:"
 msgstr ""
+"ほとんどのfig-Forthシステムは、現在の語彙のすべての単語の名前をリストするワード ``VLIST`` を含みます。 "
+"何年もの後、誰かがより良い名前が ``WORDS`` であることに気づきました。 ``WORDS`` "
+"はそれ自体がより快適に聞こえるだけでなく、ボキャブラリ名に対してもうまく機能します。 たとえば以下のように。"
 
 #: ../../chapter5.rst:1710
 msgid ""
@@ -2419,30 +2483,33 @@ msgid ""
 "unreadable by deliberately choosing misleading names. Of course, "
 "maintenance becomes impossible."
 msgstr ""
+"反面、ムーアは、不適切な名前は暗号化のための単純な手法になる可能性があると指摘しています。 "
+"ソースの配布を強いられたときにセキュリティを確保する必要がある場合は、誤解を招くような名前を慎重に選択することで、コードを非常に読みにくくすることができます。"
+" もちろん、メンテナンスは不可能になります。"
 
 #: ../../chapter5.rst:1719
 msgid "Choose names that work in phrases."
-msgstr ""
+msgstr "その句の中で活きる名前を選択してください。"
 
 #: ../../chapter5.rst:1721
 msgid ""
 "Faced with a definition you don’t know what to call, think about how the "
 "word will be used in context. For instance:"
-msgstr ""
+msgstr "あなたが何を呼ぶべきかわからない定義に直面したら、文脈の中でその言葉がどのように使われるかについて考えて下さい。例えば以下のように。"
 
 #: ../../chapter5.rst:1726
 msgid "``SHUTTER OPEN``"
-msgstr ""
+msgstr "``SHUTTER OPEN``"
 
 #: ../../chapter5.rst:1725
 msgid ""
 "``OPEN`` is the appropriate name for a word that sets a bit in an I/O "
 "address identified with the name ``SHUTTER``."
-msgstr ""
+msgstr "``OPEN`` は、 ``SHUTTER`` という名前で識別されるI/Oアドレスにビットをセットするワードに適切な名前です。"
 
 #: ../../chapter5.rst:1732
 msgid "``3 BUTTON DOES IGNITION``"
-msgstr ""
+msgstr "``3 BUTTON DOES IGNITION``"
 
 #: ../../chapter5.rst:1729
 msgid ""
@@ -2450,10 +2517,12 @@ msgid ""
 "function ``IGNITION`` into a table of functions, so that ``IGNITION`` "
 "will be executed when Button 3 is pushed."
 msgstr ""
+"``DOES`` は、 ``IGNITION`` 機能のアドレスを機能の表にベクトル化するワードに適しています。そのため、ボタン3が押されると "
+"``IGNITION`` が実行されます。"
 
 #: ../../chapter5.rst:1739
 msgid "``SAY HELLO``"
-msgstr ""
+msgstr "``SAY HELLO``"
 
 #: ../../chapter5.rst:1735
 msgid ""
@@ -2462,20 +2531,24 @@ msgid ""
 "it ``VERSION``. Moore reviewed the manuscript and suggested ``SAY``, "
 "which is clearly much better.)"
 msgstr ""
+"``SAY`` は ``HELLO`` を実行変数にベクトル化するのに最適です(私が最初にこの例をForth入門(Starting "
+"Forth)用に書いたとき、私はそれを ``VERSION`` と呼びました。ムーアは原稿をレビューして ``SAY`` を提案しました)。"
 
 #: ../../chapter5.rst:1743
 msgid "``I'M HARRY``"
-msgstr ""
+msgstr "``I'M HARRY``"
 
 #: ../../chapter5.rst:1742
 msgid ""
 "The word ``I'M`` seems more natural than ``LOGON HARRY``, ``LOGIN HARRY``"
 " or ``SESSION HARRY``, as often seen."
 msgstr ""
+"よくあるように、``I'M`` という言葉は、 ``LOGON HARRY`` 、``LOGIN HARRY`` または ``SESSION "
+"HARRY`` よりも自然に見えます。"
 
 #: ../../chapter5.rst:1758
 msgid "The choice of ``I'M`` is another invention of **Moore**, who says:"
-msgstr ""
+msgstr "``I'M`` という選択は **ムーア** のまた別の発明であり、彼はこう言っています。"
 
 #: ../../chapter5.rst:1748
 msgid ""
@@ -2484,6 +2557,9 @@ msgid ""
 "stumbled across it.  Even though it's clumsy with that apostrophe, it has"
 " that sense of rightness."
 msgstr ""
+"私は ``LOGON`` という言葉を嫌います。 英語にそのような言葉はありません。 "
+"「私は…」という言葉を探していました。それは当たり前のことでした。 私はちょうどそれに出くわした。 "
+"たとえそれがそのアポストロフィで不器用であっても、それはその正当性の感覚を持ちます。"
 
 #: ../../chapter5.rst:1753
 msgid ""
@@ -2491,26 +2567,28 @@ msgid ""
 "reaction.  If you think of the right word, it is **obviously** the right "
 "word."
 msgstr ""
+"これらの小さな言葉はすべて、「なるほど！(Aha!)反応」 取得のための最良の方法です。 "
+"あなたが正しい言葉を考えれば、あたりまえに正しいワードになります。"
 
 #: ../../chapter5.rst:1757
 msgid ""
 "If you have a wide recall vocabulary, you're in a better position to come"
 " up with the right word."
-msgstr ""
+msgstr "あなたに幅広い連想ボキャブラリがあれば、正しい言葉を思いつきやすくなります。"
 
 #: ../../chapter5.rst:1760
 msgid ""
-"Another of Moore’s favorite words is TH, which he uses as an array "
+"Another of Moore’s favorite words is ``TH``, which he uses as an array "
 "indexing word. For instance, the phrase"
-msgstr ""
+msgstr "ムーアのもう1つのお気に入りのワードは ``TH`` です。彼はこれを配列インデックスワードとして使用します。 たとえば以下の句のように。"
 
 #: ../../chapter5.rst:1767
 msgid "returns the address of the “fifth” element of the array."
-msgstr ""
+msgstr "配列の5番目の要素のアドレスを返します。"
 
 #: ../../chapter5.rst:1772
 msgid "Spell names in full."
-msgstr ""
+msgstr "スペルに省略形を使わないで下さい。"
 
 #: ../../chapter5.rst:1774
 msgid ""
@@ -2520,6 +2598,8 @@ msgid ""
 "think that three characters magically says it all, coining ``LEN`` for "
 "“length.” Such practices reflect thinking from a bygone age."
 msgstr ""
+"私はかつて雑誌に掲載されたForthコードを見たことがあります。その作者は「display buffer」を表す「DSPL-"
+"BFR」のような目障りな名前を発明し、名前から全ての母音を追放することに必死なように見えました。他の作者共は「length」を意味する「LEN」をこねくり出して、3文字の呪文のように皆がそれを唱えてくれると思っているようです。そのような習慣は過ぎ去った時代からの思考を引きずっています。"
 
 #: ../../chapter5.rst:1780
 msgid ""
@@ -2528,29 +2608,35 @@ msgid ""
 "mean. The worst problem with abbreviating a word is that you forget just "
 "how you abbreviated it. Was that ``DSPL`` or ``DSPLY``?"
 msgstr ""
+"Forthのワードはフルスペルであるべきです。 ``INITIALIZE`` や ``TERMINAL`` や ``BUFFER`` "
+"のすべての文字を入力してください。 これらはあなたが意味する言葉です。 "
+"ワードを短縮することの最悪の問題は、あなたがそれをどのように短縮したかを忘れているということです。 それは ``DSPL`` 、それとも "
+"``DSPLY`` ですか？"
 
 #: ../../chapter5.rst:1786
 msgid ""
 "Another problem is that abbreviations hinder readability. Any programming"
 " language is hard enough to read without compounding the difficulty."
-msgstr ""
+msgstr "もう1つの問題は、省略形が読みやすさを妨げることです。 どんなプログラミング言語でも読み下す難易度が上がります。"
 
 #: ../../chapter5.rst:1790
 msgid "Still, there are exceptions. Here are a few:"
-msgstr ""
+msgstr "しかし、例外もあります。 "
 
 #: ../../chapter5.rst:1792
 msgid ""
 "Words that you use extremely frequently in code. Forth employs a handful "
 "of commands that get used over and over, but have little or no intrinsic "
 "meaning:"
-msgstr ""
+msgstr "コードで非常に頻繁に使用するワード。以下のように、Forthでは何度も繰り返し使われるが、本質的な意味をほとんど持たないか、または全く持たないコマンドがいくつかあります。"
 
 #: ../../chapter5.rst:1800
 msgid ""
 "But there are so few of them, and they’re used so often, they become old "
 "friends. I would never want to type, on a regular basis,"
 msgstr ""
+"しかし、それらの数はごくわずかであり、それらは頻繁に使用されているので、彼らは古くからの友達になります。 "
+"私はそれらをフルスペルでタイプしまくりたいとは思いません。"
 
 #: ../../chapter5.rst:1808
 msgid ""
@@ -2559,6 +2645,8 @@ msgid ""
 "say “*comma* a number into the dictionary” because it’s not exactly "
 "compiling, and there’s no other term.)"
 msgstr ""
+"（興味深いことに、これらのシンボルの大部分は言葉(英語)に対応するものを持っていません。他に用語がないので「コロン定義(colon "
+"definition)」という句を使用します。 他の用語はありません。）"
 
 #: ../../chapter5.rst:1813
 msgid ""
@@ -2566,13 +2654,15 @@ msgid ""
 "operation. These words should be spelled as single letters, as are line "
 "editor commands."
 msgstr ""
+"端末オペレータが操作を制御するために頻繁に使用する可能性のあるワード。 "
+"これらのワードは、ラインエディタのコマンドと同様に、1文字のスペルで入力できるようにすべきです。"
 
 #: ../../chapter5.rst:1817
 msgid ""
 "Words in which familiar usage implies that they be abbreviated. Forth "
 "assembler mnemonics are typically patterned after the manufacturer’s "
 "suggested mnemonics, which are abbreviations (such as JMP and MOV)."
-msgstr ""
+msgstr "皆が知っている略語。Forthアセンブラのニーモニックは通常、製造元が推奨するニーモニック（JMPやMOVなど）の略称に基づいてパターン化されています。"
 
 #: ../../chapter5.rst:1821
 msgid ""
@@ -2580,11 +2670,11 @@ msgid ""
 "try to discuss the program with other people. If the name is symbolic, "
 "invent a pronunciation (e.g., ``>R`` is called “to-r”; ``R>`` is called "
 "“r-from”)."
-msgstr ""
+msgstr "あなたの名前は発音できるはずです。 そうでなければ、他の人とプログラムについて話し合おうとしたときに、後悔するかもしれません。 名前がシンボリックである場合は、発音を考案してください（たとえば、 ``>R`` は「to-r」と呼ばれ、 ``R>`` は「r-from」と呼ばれます）。"
 
 #: ../../chapter5.rst:1828
 msgid "Favor short words."
-msgstr ""
+msgstr "短い言葉を好んで下さい。"
 
 #: ../../chapter5.rst:1830
 msgid ""
@@ -2593,20 +2683,25 @@ msgid ""
 "name than ``INTENSE``. ``ENABLE`` is a better name than ``ACTIVATE``; "
 "``GO``, ``RUN``, or ``ON`` may be better still."
 msgstr ""
+"同じことを意味する、3音節の単語と1音節の単語の選択を考えるなら、短い方を選択してください。 ``BRIGHT`` は ``INTENSE`` "
+"よりも良い名前です。 ``ENABLE``  は ``ACTIVATE`` よりもいい名前です。 ``GO`` 、 ``RUN`` 、``ON``"
+" の方がまだマシかもしれません。"
 
 #: ../../chapter5.rst:1834
 msgid ""
 "Shorter names are easier to type. They save space in the source screen. "
 "Most important, they make your code crisp and clean."
 msgstr ""
+"短い名前ほど入力が簡単です。 それらはソーススクリーンのスペースを節約します。 "
+"最も重要なのは、それらがあなたのコードをくっきりときれいにすることです。"
 
 #: ../../chapter5.rst:1839
 msgid "Hyphenated names may be a sign of bad factoring."
-msgstr ""
+msgstr "ハイフンで繋がれた名前は悪い因数分解の兆候かもしれません。"
 
 #: ../../chapter5.rst:1850
 msgid "**Moore**:"
-msgstr ""
+msgstr "ムーアは言います。"
 
 #: ../../chapter5.rst:1842
 msgid ""
@@ -2615,6 +2710,9 @@ msgid ""
 "string these big long words together and you get something that is quite "
 "readable."
 msgstr ""
+"Forthコミュニティには多様なプログラミングスタイルがあります。 "
+"そのワードが何をしているのかを言葉(英語)で表現するハイフン付きのワードを使用します。 "
+"あなたはこれらの大きな長い言葉を一緒につなぎ合わせると、かなり読みやすい何かを得ます。"
 
 #: ../../chapter5.rst:1847
 msgid ""
@@ -2623,10 +2721,13 @@ msgid ""
 "separately.  That isn't always possible, and it isn't always "
 "advantageous. But I suspect a hyphenated word of mixing two concepts."
 msgstr ""
+"しかし、私はいの一番に、プログラマが十分に慎重にワードを考えなかった、ハイフンは無くすべきであり、ワードは別々に定義されるべきであると思います。 "
+"それは必ずしも可能ではありません、そしてそれは常に有利ではありません。 "
+"しかし、私は2つの概念を混在させるという、ハイフンでつながれたワードを疑っています。"
 
 #: ../../chapter5.rst:1852
 msgid "Compare the following two strategies for saying the same thing:"
-msgstr ""
+msgstr "同じことを述べるための、以下の左右の戦略を比較してください。"
 
 #: ../../chapter5.rst:1865
 msgid ""
@@ -2636,16 +2737,21 @@ msgid ""
 "solenoid as well, you’d need only seven words to describe sixteen "
 "combinations."
 msgstr ""
+"左側の構文には8つの辞書エントリが必要です。 "
+"右側の構文は6つだけでよく、ワードのいくつかはアプリケーションの他の部分で再利用できる可能性もあります。 ``MIDDLE`` "
+"のモーターとソレノイドを使用している場合、16個の組み合わせを説明するのに7語しか必要ありません。"
 
 #: ../../chapter5.rst:1873
 msgid "Don't bundle numbers into names."
-msgstr ""
+msgstr "名前に数値をまとめないでください。"
 
 #: ../../chapter5.rst:1875
 msgid ""
 "Watch out for a series of names beginning or ending with numbers, such as"
 " ``1CHANNEL``, ``2CHANNEL``, ``3CHANNEL``, etc."
 msgstr ""
+"``1CHANNEL`` 、 ``2CHANNEL`` 、 ``3CHANNEL`` "
+"などのように、数値で始まる、または数値でわる名前のシリーズに注意してください。"
 
 #: ../../chapter5.rst:1878
 msgid ""
@@ -2653,10 +2759,12 @@ msgid ""
 " The crime is similar to hyphenation, except that what should be factored"
 " out is a number, not a word. A better factoring of the above would be"
 msgstr ""
+"名前と数値をこのようにまとめることは、因数分解が悪いことを示している可能性があります。 "
+"ハイフン犯罪に似ていますが、除外する必要があるのは単語ではなく数値である点が異なります。 上記のより良い因数分解は以下のようになるでしょう。"
 
 #: ../../chapter5.rst:1889
 msgid "In this case, the three words were reduced to one."
-msgstr ""
+msgstr "この場合、3つあったワードを1つ減らせました。"
 
 #: ../../chapter5.rst:1891
 msgid ""
@@ -2664,18 +2772,20 @@ msgid ""
 "above case, more descriptive names might indicate the purpose of the "
 "channels, as in"
 msgstr ""
+"多くの場合、名前と数値をまとめることはあいまいな命名を示します。 ``CHANNEL`` "
+"の例は、下記のように、よりわかりやすい名前でチャネルの目的を示すことができます。"
 
 #: ../../chapter5.rst:1899
 msgid "We’ll amplify on these ideas in the next chapter on “Factoring.”"
-msgstr ""
+msgstr "次の「因数分解」の章で、これらの考えを詳しく説明します。"
 
 #: ../../chapter5.rst:1902
 msgid "Naming Standards: The Science"
-msgstr ""
+msgstr "命名基準：その科学"
 
 #: ../../chapter5.rst:1906
 msgid "Learn and adopt Forth\\'s naming conventions."
-msgstr ""
+msgstr "Forthの命名規則を学び、採り入れて下さい。"
 
 #: ../../chapter5.rst:1908
 msgid ""
@@ -2683,12 +2793,14 @@ msgid ""
 "adopted certain naming conventions. :doc:`Appendix E<appendixe>` includes"
 " a list of the most useful conventions developed over the years."
 msgstr ""
+"短くても意味のある名前を探すために、Forthプログラマは特定の命名規則を採用しました。 :doc:`付録E<appendixe>` "
+"には、長年にわたって開発された最も有用な規約のリストがあります。"
 
 #: ../../chapter5.rst:1912
 msgid ""
 "An example of the power of naming conventions is the use of “dot” to mean"
 " “print” or “display.” Forth itself uses"
-msgstr ""
+msgstr "命名規則のパワーの一例は、「print」または「display」を意味するための「ドット(``.``)」の使用です。"
 
 #: ../../chapter5.rst:1919
 msgid ""
@@ -2696,6 +2808,8 @@ msgid ""
 "convention extends to application words as well. If you have a variable "
 "called ``DATE,`` and you want a word that displays the date, use the name"
 msgstr ""
+"さまざまな形式でさまざまな種類の数値を表示するためのものです。 この規約はアプリケーションのワードにも適用されます。 ``DATE`` "
+"という変数があり、日付を表示するワードが必要な場合は以下のようになります。"
 
 #: ../../chapter5.rst:1927
 msgid ""
@@ -2704,145 +2818,148 @@ msgid ""
 " its name alone. After all, a name is a symbol, not a shorthand for code."
 " Which is more readable and natural sounding?:"
 msgstr ""
+"注意：接頭辞と接尾辞を使いすぎると、ワードが曖昧になり、最終的に読みにくくなります。 "
+"その名前だけでワードがすることすべてを説明しようとしないでください。 結局、名前はシンボルであり、コードの省略形ではありません。 "
+"以下はどちらが読みやすく、自然に聞こえますか？"
 
 #: ../../chapter5.rst:1932
 msgid "Oedipus complex"
-msgstr ""
+msgstr "Oedipus complex"
 
 #: ../../chapter5.rst:1934
 msgid "(which bears no intrinsic meaning), or"
-msgstr ""
+msgstr "（本質的な意味はありません）、または"
 
 #: ../../chapter5.rst:1936
 msgid "subconscious-attachment-to-parent-of-opposite-sex complex"
-msgstr ""
+msgstr "subconscious-attachment-to-parent-of-opposite-sex complex"
 
 #: ../../chapter5.rst:1938
 msgid "Probably the former, even though it assumes you know the play."
-msgstr ""
+msgstr "あなたがそのプレイを知っていると仮定していても、おそらく前者です。"
 
 #: ../../chapter5.rst:1942
 msgid ""
 "Use prefixes and suffices to differentiate between like words rather than"
 " to cram details of meaning into the name itself."
-msgstr ""
+msgstr "意味の詳細を名前自体に詰め込むのではなく、同じ単語を区別するために接頭辞と接尾辞を使用して下さい。"
 
 #: ../../chapter5.rst:1945
 msgid "For instance, the phrase"
-msgstr ""
+msgstr "例えば、このフレーズ"
 
 #: ../../chapter5.rst:1951
 msgid "is just as readable as"
-msgstr ""
+msgstr "これより、以下の方が読みやすい"
 
 #: ../../chapter5.rst:1957
 msgid ""
 "and cleaner as well. It is therefore preferable, unless we need an "
-"additional word called DONE (as a flag, for instance)."
-msgstr ""
+"additional word called ``DONE`` (as a flag, for instance)."
+msgstr "そしてきれいになる。 したがって、 ``DONE`` と呼ばれる追加のワードが（フラグとして）必要でない限り、それが望ましいです。"
 
 #: ../../chapter5.rst:1960
 msgid "A final tip on naming:"
-msgstr ""
+msgstr "名前付けに関する最後のヒントです。"
 
 #: ../../chapter5.rst:1964
 msgid ""
 "Begin all hex numbers with \"0\" (zero) to avoid potential collisions "
 "with names."
-msgstr ""
+msgstr "名前との衝突を避けるために、すべての16進数を 0(ゼロ)で始めてください。"
 
 #: ../../chapter5.rst:1967
-msgid "For example, write 0ADD, not ADD."
-msgstr ""
+msgid "For example, write ``0ADD``, not ``ADD``."
+msgstr "例えば 「ADD」ではなく、「0ADD」と書いて下さい。"
 
 #: ../../chapter5.rst:1969
 msgid ""
 "By the way, don’t expect your Forth system to necessarily conform to the "
 "above conventions. The conventions are meant to be used in new "
 "applications."
-msgstr ""
+msgstr "ただし、あなたのForthシステムが必ずしも上記の規約に準拠することを期待しないでください。 規約は新しいアプリケーションで使用されることを意図しています。"
 
 #: ../../chapter5.rst:1973
 msgid ""
 "Forth was created and refined over many years by people who used it as a "
 "means to an end. At that time, it was neither reasonable nor possible to "
 "impose naming standards on a tool that was still growing and evolving."
-msgstr ""
+msgstr "Forthは何年にもわたってそれを最後の手段として使用した人々によって作成され洗練されました。 その当時、まだ成長し進化しているツールに命名基準を課すことは合理的でも可能でもありませんでした。"
 
 #: ../../chapter5.rst:1977
 msgid "Had Forth been designed by committee, we would not love it so."
-msgstr ""
+msgstr "Forthが政府の委員会で設計された代物だったら、私はForthをこんなには愛さなかったでしょう。"
 
 #: ../../chapter5.rst:1980
 msgid "More Tips for Readability"
-msgstr ""
+msgstr "より読みやすくするためのヒント"
 
 #: ../../chapter5.rst:1982
 msgid ""
 "Here are some final suggestions to make your code more readable. "
 "(Definitions appear in :doc:`Appendix C<appendixc>`.)"
-msgstr ""
+msgstr "ここに、コードを読みやすくするための最後の提案をいくつか示します(その定義は :doc:`付録C<appendixc>` にあります)。"
 
 #: ../../chapter5.rst:1985
 msgid ""
 "One constant that pays for itself in most applications is ``BL`` (the "
 "ASCII value for “blank-space”)."
-msgstr ""
+msgstr "ほとんどのアプリケーションでは、``BL`` (「空白(Blank-Space)」のASCII値)という代償があります。"
 
 #: ../../chapter5.rst:1988
 msgid ""
 "The word ``ASCII`` is used primarily within colon definitions to free you"
 " from having to know the literal value of an ASCII character. For "
 "instance, instead of writing:"
-msgstr ""
+msgstr "``ASCII`` というワードは、ASCII文字のリテラル値を知らなくても済むようにするために、主にコロンの定義内で使用されます。 "
 
 #: ../../chapter5.rst:1996
 msgid "where 41 is the ASCII representation for right-parenthesis, you can write"
-msgstr ""
+msgstr "ここで、41は右括弧 ``)`` のASCIIコードです。それは以下のように書く事ができます。"
 
 #: ../../chapter5.rst:2003
 msgid ""
 "A pair of words that can make dealing with booleans more readable are "
 "``TRUE`` and ``FALSE``. With these additions you can write phrases such "
 "as"
-msgstr ""
+msgstr "ブール値を扱いやすくするためのワードのペアは、 ``TRUE`` と ``FALSE`` です。 これらの追加を使うと、以下のようなフレーズを書くことができます。"
 
 #: ../../chapter5.rst:2012
 msgid "to set a flag or"
-msgstr ""
+msgstr "のようにフラグをセットしたり、"
 
 #: ../../chapter5.rst:2018
 msgid "to clear it."
-msgstr ""
+msgstr "のようにフラグをクリアします。"
 
 #: ../../chapter5.rst:2020
 msgid ""
 "(I once used ``T`` and ``F``, but the words are needed so rarely I now "
 "heed the injunction against abbreviations.)"
-msgstr ""
+msgstr "(私はかつて ``T`` と ``F`` を使ったことがありますが、そのワードが必要とされることはめったにないので、今では私は略語禁止規則に気をつける必要はありません。)"
 
 #: ../../chapter5.rst:2024
 msgid ""
 "As part of your application (not necessarily part of your Forth system), "
 "you can take this idea a step further and define:"
-msgstr ""
+msgstr "アプリケーションの一部として（必ずしもForthシステムの一部ではありませんが）、このアイデアをさらに一歩進めて次のように定義することができます。"
 
 #: ../../chapter5.rst:2032
 msgid "These words allow you to write:"
-msgstr ""
+msgstr "これらのワードによって、あなたは以下のように書く事ができます。"
 
 #: ../../chapter5.rst:2044
 msgid ""
 "Other names for these definitions include ``SET`` and ``RESET``, although"
 " ``SET`` and ``RESET`` most commonly use bit masks to manipulate "
 "individual bits."
-msgstr ""
+msgstr "これらの定義の他の名前には、 ``SET`` と ``RESET`` がありますが、 ``SET`` と ``RESET`` は個々のビットを操作するのに通常ビットマスクを使います。"
 
 #: ../../chapter5.rst:2047
 msgid ""
 "An often-used word is ``WITHIN``, which determines whether a given value "
 "lies within two other values. The syntax is:"
-msgstr ""
+msgstr "よく使われるワードは ``WITHIN`` です。これは与えられた値が他の2つの値の間にあるかどうかを決定します。 構文は次のとおりです。"
 
 #: ../../chapter5.rst:2055
 msgid ""
@@ -2850,18 +2967,18 @@ msgid ""
 "range. ``WITHIN`` returns true if “n” is *greater-than or equal-to* “lo” "
 "and *less-than* “hi.” This use of the non-inclusive upper limit parallels"
 " the syntax of ``DO``  ``LOOP`` s."
-msgstr ""
+msgstr "ここで、「n」はテストする値、「lo」と「hi」は範囲を表します。「n」が「lo」以上「hi」未満の場合、 ``WITHIN`` はtrueを返します。この包括的な上限の使用は、 ``DO LOOP`` の構文と同等です。"
 
 #: ../../chapter5.rst:2060
 msgid ""
 "Moore recommends the word ``UNDER+``. It’s useful for adding a value to "
 "the number just under the top stack item, instead of to the top stack "
 "item. It could be implemented in high level as:"
-msgstr ""
+msgstr "ムーアは、 ``UNDER+`` というワードを推奨しています。 一番上のスタック項目の代わりに一番上の項目の直下にある数値に値を追加するのに便利です。 それは以下のように高レベルで実装されるかもしれません。"
 
 #: ../../chapter5.rst:2070
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
 #: ../../chapter5.rst:2072
 msgid ""
@@ -2870,7 +2987,7 @@ msgid ""
 "policy of making our code as self-documenting as possible. Techniques "
 "include listing organization, spacing and indenting, commenting, name "
 "choices, and special words that enhance clarity."
-msgstr ""
+msgstr "保守性には読みやすさが必要です。 この章では、ソースリストを読みやすくするためのさまざまな方法を列挙しました。 私たちは自分たちのコードをできる限り自己文書化することを方針としています。 その技法には、リスト組織化、空白と字下げ、コメント、名前の選択、および明確さを高める特別なワードが含まれます。"
 
 #: ../../chapter5.rst:2078
 msgid ""
@@ -2878,7 +2995,7 @@ msgid ""
 "documentation apart from the listing itself. We won’t discuss auxiliary "
 "documentation further in this volume, but it remains an integral part of "
 "the software development process."
-msgstr ""
+msgstr "ここでは、リスト自体以外のすべてのドキュメントを含む、補助的なドキュメントについて簡単に説明しました。 このドキュメントでは、補足資料についてはこれ以上説明しませんが、それでもこれらはソフトウェア開発プロセスに不可欠な部分です。"
 
 #: ../../chapter5.rst:2084
 msgid "REFERNCES"
@@ -2902,11 +3019,11 @@ msgstr ""
 
 #: ../../chapter5.rst:2088
 msgid ""
-"Edsger W. Dijkstra,  **Selected Writings onComputing: A Personal "
+"Edsger W. Dijkstra,  **Selected Writings on Computing: A Personal "
 "Perspective,**  New York, Springer Verlag, Inc.,1982."
 msgstr ""
-"Edsger W. Dijkstra,  **Selected Writings onComputing: A Personal "
-"Perspective,**  New York, Springer Verlag, Inc.,1982."
+"エドガー・ダイクストラ(Edsger W. Dijkstra),  **Selected Writings on Computing: A "
+"Personal Perspective,**  New York, Springer Verlag, Inc.,1982."
 
 #: ../../chapter5.rst:2089
 msgid ""
