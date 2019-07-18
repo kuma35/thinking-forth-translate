@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-18 01:26+0900\n"
-"PO-Revision-Date: 2019-07-18 04:28+0900\n"
+"PO-Revision-Date: 2019-07-18 19:40+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -402,9 +402,7 @@ msgstr "そして"
 msgid ""
 "My own way, which I submit as a more useful factoring, requires a single "
 "word, ``FH`` (see :doc:`Appendix C<appendixc>` for its definition)."
-msgstr ""
-"私流の、より有用な因数分解として提示する方法は、単一のワード ``FH`` を必要とします(その定義については "
-":doc:`付録C<appendixc>` 参照)。"
+msgstr "私流の、より有用なファクタリング(要素分解)として提示する方法は、単一のワード ``FH`` を必要とします(その定義については :doc:`付録C<appendixc>` 参照)。"
 
 #: ../../chapter5.rst:271
 msgid "The phrase"
@@ -630,10 +628,7 @@ msgid ""
 "factoring. Definitions become longer without the discipline imposed by "
 "the 1K block boundaries. The tendency becomes to write a 20K file, or "
 "worse: a 20K definition."
-msgstr ""
-"「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪い因数分解を可能にします。 "
-"1Kブロック境界によって課される規律がないと、定義は長くなります。 "
-"20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
+msgstr "「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪いファクタリング(要素分解)を可能にします。 1Kブロック境界によって課される規律がないと、定義は長くなります。 20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
 
 #: ../../chapter5.rst:431
 msgid ""
@@ -1016,11 +1011,7 @@ msgid ""
 "another—see “Compile-Time Factoring” in :doc:`Chapter Six<chapter6>`. In "
 "these cases, it’s best to save the value of ``BASE`` on the return stack "
 "like this:"
-msgstr ""
-"マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` "
-"によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( "
-":doc:`第6章<chapter6>` の「コンパイル時の因数分解」を参照)。 このような場合、以下のようにリターンスタックに ``BASE``"
-" の値を保存するのが最善です。"
+msgstr "マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( :doc:`第6章<chapter6>` の「コンパイル時のファクタリング(要素分解)」を参照)。 このような場合、以下のようにリターンスタックに ``BASE`` の値を保存するのが最善です。"
 
 #: ../../chapter5.rst:733
 msgid ""
@@ -2697,7 +2688,7 @@ msgstr ""
 
 #: ../../chapter5.rst:1839
 msgid "Hyphenated names may be a sign of bad factoring."
-msgstr "ハイフンで繋がれた名前は悪い因数分解の兆候かもしれません。"
+msgstr "ハイフンで繋がれた名前は悪いファクタリング(要素分解)の兆候かもしれません。"
 
 #: ../../chapter5.rst:1850
 msgid "**Moore**:"
@@ -2758,9 +2749,7 @@ msgid ""
 "This bundling of names and numbers may be an indication of bad factoring."
 " The crime is similar to hyphenation, except that what should be factored"
 " out is a number, not a word. A better factoring of the above would be"
-msgstr ""
-"名前と数値をこのようにまとめることは、因数分解が悪いことを示している可能性があります。 "
-"ハイフン犯罪に似ていますが、除外する必要があるのは単語ではなく数値である点が異なります。 上記のより良い因数分解は以下のようになるでしょう。"
+msgstr "名前と数値をこのようにまとめることは、ファクタリング(要素分解)が悪いことを示している可能性があります。 ハイフン犯罪に似ていますが、括り出す必要があるのは単語ではなく数値である点が異なります。 上記のより良いファクタリング(要素分解)は以下のようになるでしょう。"
 
 #: ../../chapter5.rst:1889
 msgid "In this case, the three words were reduced to one."
@@ -2777,7 +2766,7 @@ msgstr ""
 
 #: ../../chapter5.rst:1899
 msgid "We’ll amplify on these ideas in the next chapter on “Factoring.”"
-msgstr "次の「因数分解」の章で、これらの考えを詳しく説明します。"
+msgstr "次の「ファクタリング(要素分解)」の章で、これらの考えを詳しく説明します。"
 
 #: ../../chapter5.rst:1902
 msgid "Naming Standards: The Science"

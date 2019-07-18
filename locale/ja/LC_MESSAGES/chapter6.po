@@ -4,15 +4,16 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 21:04+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-18 19:06+0900\n"
+"PO-Revision-Date: 2019-07-19 07:34+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,27 +21,27 @@ msgstr ""
 
 #: ../../chapter6.rst:4
 msgid "6. Factoring"
-msgstr ""
+msgstr "第６章 ファクタリング(要素分解)"
 
 #: ../../chapter6.rst:6
 msgid ""
 "In this chapter we’ll continue our study of the implementations phase, "
 "this time focusing on factoring."
-msgstr ""
+msgstr "私たちは実装フェイズについての研究を続けます。本章ではファクタリング(要素分解)に焦点を当てます。"
 
 #: ../../chapter6.rst:9
 msgid ""
 "Decomposition and factoring are chips off the same block. Both involve "
 "dividing and organizing. Decomposition occurs during preliminary design; "
 "factoring occurs during detailed design and implementation."
-msgstr ""
+msgstr "分解とファクタリング(要素分解)は、同じブロックから切り出されたものです。 どちらも分割と整理が関係しています。 分解は予備設計中に発生します。 ファクタリング(要素分解)は詳細な設計と実装の間に行われます。"
 
 #: ../../chapter6.rst:13
 msgid ""
 "Since every colon definition reflects decisions of factoring, an "
 "understanding of good factoring technique is perhaps the most important "
 "skill for a Forth programmer."
-msgstr ""
+msgstr "コロンの定義はすべてファクタリング(要素分解)の決定を反映しているので、優れたファクタリング(要素分解)手法を理解することは、おそらくForthプログラマにとって最も重要なスキルです。"
 
 #: ../../chapter6.rst:17
 msgid ""
@@ -48,25 +49,25 @@ msgid ""
 " To make a fragment useful, you often must separate reusable parts from "
 "non-reusable parts. The reusable parts become new definitions. The non-"
 "reusable parts become arguments or parameters to the definitions."
-msgstr ""
+msgstr "ファクタリング(要素分解)とは何でしょうか？ ファクタリング(要素分解)は、コードを有用な断片に整理することを意味します。 断片を有用とするには、再利用可能な部分と再利用不可能な部分を区別しなければならないことがよくあります。 再利用可能な部分は新しい定義になります。 再利用できない部分は、定義に対する引数またはパラメータになります。"
 
 #: ../../chapter6.rst:23
 msgid ""
 "Making this separation is usually referred to as “factoring out.” The "
 "first part of this chapter will discuss various “factoring-out” "
 "techniques."
-msgstr ""
+msgstr "この分離を行うことは、通常「括り出し(factoring out)」と呼ばれます。この章の最初の部分では、さまざまな「括り出し」手法について説明します。"
 
 #: ../../chapter6.rst:27
 msgid ""
 "Deciding how much should go into, or stay out of, a definition is another"
 " aspect of factoring. The second section will outline the criteria for "
 "useful factoring."
-msgstr ""
+msgstr "どの程度まで定義に入れるか、または定義から外れるかを決定することは、要素化のもう1つの側面です。 第2節では、有用なファクタリング(要素分解)の基準について概説します。"
 
 #: ../../chapter6.rst:32
 msgid "Factoring Techniques"
-msgstr ""
+msgstr "ファクタリング(要素分解)技法"
 
 #: ../../chapter6.rst:34
 msgid ""
@@ -74,7 +75,7 @@ msgid ""
 "the system, try to identify and isolate the useful subfunction. The "
 "remainder of the module might be incorporated in its original caller "
 "(from \"**Structured Design**\" [stevens74-6]_ )."
-msgstr ""
+msgstr "システム内で有用な箇所が２回以上現れる場合は、有用なサブ機能を識別して切り分けるようにしてください。モジュールの残りの部分は、元の呼び出し元に組み込まれる可能性があります( **Structured Design** [stevens74-6]_ )。"
 
 #: ../../chapter6.rst:39
 msgid ""
@@ -82,22 +83,24 @@ msgid ""
 "definition.What about the part that “isn’t quite useful”? That depends on"
 " what it is."
 msgstr ""
+"もちろん、「有用なサブ機能」が新しく定義された定義になります。「まったく有用ではない」という部分についてはどうでしょうか。 "
+"それはそれが何であるかによって異なります。"
 
 #: ../../chapter6.rst:44
 msgid "Factoring Out Data"
-msgstr ""
+msgstr "データの括り出し"
 
 #: ../../chapter6.rst:46
 msgid ""
 "The simplest thing to factor out is data, thanks to Forth’s data stack. "
 "For instance, to compute two-thirds of 1,000, we write"
-msgstr ""
+msgstr "Forthのデータスタックのおかげで、最も簡単に括り出せるのはデータです。 たとえば、1,000の3分の2を計算するには、次のように記述します。"
 
 #: ../../chapter6.rst:54
 msgid ""
 "To define a word that computes two-thirds of *any* number, we factor out "
 "the argument from the definition:"
-msgstr ""
+msgstr "任意の数の3分の2を計算するワードを定義するには、定義から引数を取り除きます。"
 
 #: ../../chapter6.rst:61
 msgid ""
@@ -105,12 +108,14 @@ msgid ""
 " stack manipulation. For instance, to center a piece of text ten "
 "characters long on an 80-column screen, we would write:"
 msgstr ""
+"データが有用な句の中央にくると、スタック操作を使用する必要があります。 "
+"たとえば、80桁の画面で長さ10文字のテキストを中央揃えにするには、次のように記述します。"
 
 #: ../../chapter6.rst:69
 msgid ""
 "But text isn’t always 10 characters long. To make the phrase useful for "
 "any string, you’d factor out the length by writing:"
-msgstr ""
+msgstr "しかし、テキストは必ずしも10文字の長さではありません。 フレーズをあらゆる文字列に役立つようにするには、次のように記述して長さを計算します。"
 
 #: ../../chapter6.rst:76
 msgid ""
@@ -119,105 +124,107 @@ msgid ""
 "The data can be numbers or even strings, and still be factored out "
 "through use of the stack."
 msgstr ""
+"データスタックはアドレスを渡すためにも使用できます。 そのため、データ自体ではなく、データへのポインタが除外される可能性があります。 "
+"データは数値でも文字列でもかまいませんが、それでもスタックを使用して除外することができます。"
 
 #: ../../chapter6.rst:81
 msgid ""
 "Sometimes the difference appears to be a function, but you can factor it "
 "out simply as a number on the stack. For instance:"
-msgstr ""
+msgstr "「差」は機能が違うように見える事もありますが、単純にスタック上の数値として括り出す事ができます。"
 
 #: ../../chapter6.rst:87 ../../chapter6.rst:106 ../../chapter6.rst:133
 #: ../../chapter6.rst:150 ../../chapter6.rst:164
 msgid "Segment 1:"
-msgstr ""
+msgstr "Segment 1:"
 
 #: ../../chapter6.rst:88 ../../chapter6.rst:89 ../../chapter6.rst:93
 msgid "WILLY"
-msgstr ""
+msgstr "WILLY"
 
 #: ../../chapter6.rst:91 ../../chapter6.rst:96
 msgid "PUDDIN’ PIE AND"
-msgstr ""
+msgstr "PUDDIN’ PIE AND"
 
 #: ../../chapter6.rst:92 ../../chapter6.rst:109 ../../chapter6.rst:139
 #: ../../chapter6.rst:153 ../../chapter6.rst:167
 msgid "Segment 2:"
-msgstr ""
+msgstr "Segment 2:"
 
 #: ../../chapter6.rst:94
 msgid "NILLY"
-msgstr ""
+msgstr "NILLY"
 
 #: ../../chapter6.rst:95
 msgid "8 \\*"
-msgstr ""
+msgstr "8 \\*"
 
 #: ../../chapter6.rst:98
 msgid ""
 "How can you factor out the “8 \\*” operation? By including “\\*” in the "
 "factoring and passing it a one or eight:"
-msgstr ""
+msgstr "どうやって ``8 *`` という操作を括り出せますか？ 以下のように、要素化に ``*`` を含め、それに1つまたは8つを渡すことによって可能です。"
 
 #: ../../chapter6.rst:106
 msgid "1 NEW"
-msgstr ""
+msgstr "1 NEW"
 
 #: ../../chapter6.rst:109
 msgid "8 NEW"
-msgstr ""
+msgstr "8 NEW"
 
 #: ../../chapter6.rst:111
 msgid ""
 "(Of course if WILLY NILLY changes the stack, you’ll need to add "
 "appropriate stack-manipulation operators.)"
-msgstr ""
+msgstr "（もちろん、 ``WILLY NILLY`` がスタックを変更する場合は、適切なスタック操作演算子を追加する必要があります。）"
 
 #: ../../chapter6.rst:114
 msgid "If the operation involves addition, you can nullify it by passing a zero."
-msgstr ""
+msgstr "操作に加算が含まれる場合は、ゼロを渡して無効にすることができます。"
 
 #: ../../chapter6.rst:119
 msgid ""
 "For simplicity, try to express the difference between similar fragments "
 "as a numeric difference (values or addresses), rather than as a "
 "procedural difference."
-msgstr ""
+msgstr "簡単にするために、類似の断片の差異を、手続き上の違いとしてではなく、数値の違い（値またはアドレス）として表すよう試みて下さい。"
 
 #: ../../chapter6.rst:124
 msgid "Factoring Out Functions"
-msgstr ""
+msgstr "機能の括り出し"
 
 #: ../../chapter6.rst:126
 msgid "On the other hand, the difference sometimes *is* a function. Witness:"
-msgstr ""
+msgstr "一方、機能はしばしば差異があります。こんなのを目撃しました。"
 
 #: ../../chapter6.rst:141
 msgid "Wrong approach:"
-msgstr ""
+msgstr "悪いアプローチ"
 
 #: ../../chapter6.rst:150
 msgid "TRUE BLETCHES"
-msgstr ""
+msgstr "TRUE BLETCHES"
 
 #: ../../chapter6.rst:153
 msgid "FALSE BLETCHES"
-msgstr ""
+msgstr "FALSE BLETCHES"
 
 #: ../../chapter6.rst:155
 msgid "A better approach:"
-msgstr ""
+msgstr "より良いアプローチ"
 
 #: ../../chapter6.rst:164
 msgid "BLETCH-AB BLETCH-C BLETCH-DEF"
-msgstr ""
+msgstr "BLETCH-AB BLETCH-C BLETCH-DEF"
 
 #: ../../chapter6.rst:167
 msgid "BLETCH-AB PERVERSITY BLETCH-DEF"
-msgstr ""
+msgstr "BLETCH-AB PERVERSITY BLETCH-DEF"
 
 #: ../../chapter6.rst:171
 msgid "Don't pass control flags downward."
-msgstr ""
+msgstr "制御フラグを下流へ渡さないで下さい。"
 
 #: ../../chapter6.rst:173
 msgid ""
@@ -226,16 +233,18 @@ msgid ""
 "reducing efficiency. Second, the terminology doesn’t match the conceptual"
 " model. What are ``TRUE BLETCHES`` as opposed to ``FALSE BLETCHES``?"
 msgstr ""
+"何故でしょうか？ まず、実行中のアプリケーションに、プログラム作成時に答えが判っている無意味な判定を下すように求めているため効率が低下します。 "
+"次に、用語は概念モデルと一致しません。``FALSE BLETCHES`` とは対照的に、 ``TRUE BLETCHES`` とは何ですか？"
 
 #: ../../chapter6.rst:179
 msgid "Factoring Out Code from Within Control Structures"
-msgstr ""
+msgstr "制御構造内からコードを括り出す"
 
 #: ../../chapter6.rst:181
 msgid ""
 "Be alert to repetitions on either side of an ``IF``  ``ELSE``  ``THEN`` "
 "statement. For instance:"
-msgstr ""
+msgstr "``IF`` ``ELSE`` ``THEN`` ステートメントの両側の繰り返しに注意してください。 たとえば以下のようなのです。"
 
 #: ../../chapter6.rst:190
 msgid ""
@@ -243,6 +252,8 @@ msgid ""
 "a control code, it emits a dot. Either way, an ``EMIT`` is performed. "
 "Factor ``EMIT`` out of the conditional structure, like this:"
 msgstr ""
+"この断片は通常ASCII文字を生成しますが、その文字が制御コードの場合はドットを生成します。 いずれにせよ、 ``EMIT`` が実行されます。 "
+"次のようにして条件付き構造から ``EMIT`` を取り除きます。"
 
 #: ../../chapter6.rst:199
 msgid ""
@@ -251,11 +262,11 @@ msgid ""
 "the half-fragments. In this case, use stack arguments, variables, or even"
 " vectoring. We’ll see how vectoring can be used in a section of "
 ":doc:`Chapter Seven<chapter7>` called “Using DOER/MAKE.”"
-msgstr ""
+msgstr "最も厄介な状況は、2つの定義の違いが構造内の機能である場合、断片の片割れを括り出すことは不可能です。この場合は、スタック引数、変数、更にはベクトル化を使って下さい。 :doc:`第7章<chapter7>` の「DOER/MAKEの使用」の章で、ベクトル化がどのように使われるのかを見ていきましょう。"
 
 #: ../../chapter6.rst:205
 msgid "Here’s a reminder about factoring code from out of a ``DO``  ``LOOP``:"
-msgstr ""
+msgstr "以下は ``DO LOOP`` からコードを括り出すことについての注意です。"
 
 #: ../../chapter6.rst:209
 msgid ""
@@ -263,16 +274,18 @@ msgid ""
 "definition, rework the code so that ``I`` (the index) is not referenced "
 "within the new definition, but rather passed as a stack argument to it."
 msgstr ""
+"``DO LOOP`` の内容を新しい定義に分解する際には、 ``I`` "
+"(インデックス)が新しい定義内で参照されず、スタック引数として渡されるようにコードを作り直してください。"
 
 #: ../../chapter6.rst:215
 msgid "Factoring Out Control Structures Themselves"
-msgstr ""
+msgstr "制御構造自体の括り出し"
 
 #: ../../chapter6.rst:217
 msgid ""
 "Here are two definitions whose differences lies within a ``IF``  ``THEN``"
 " construct:"
-msgstr ""
+msgstr "ここに ``IF THEN`` 構造の中が異なる２つの定義があります。"
 
 #: ../../chapter6.rst:225
 msgid ""
@@ -280,12 +293,14 @@ msgid ""
 "changes. Since you can’t factor the ``IF`` into one word and the ``THEN``"
 " into another, the simplest thing is to factor the condition:"
 msgstr ""
+"条件と制御構造は変わりません。イベントだけが違います。 ``IF`` や ``THEN`` "
+"を、それ以上分解することはできないので、最も簡単なのは条件を考慮することです。"
 
 #: ../../chapter6.rst:236
 msgid ""
 "Depending on the number of repetitions of the same condition and control "
 "structure, you may even want to factor out both. Watch this:"
-msgstr ""
+msgstr "同じ条件と制御構造の繰り返し数に応じて、その両方を括り出すこともできます。 以下を見てください。"
 
 #: ../../chapter6.rst:246
 msgid ""
@@ -294,6 +309,9 @@ msgid ""
 "skipped. This approach has certain disadvantages as well. We’ll discuss "
 "this technique—pros and cons—in :doc:`Chapter Eight<chapter8>`."
 msgstr ""
+"条件に応じて、ワード ``CONDITIONALLY`` "
+"は、各定義の残りのワードをスキップする制御フローを変更することがあります。この方法にもいくつかの欠点があります。 この技法の賛否両論については "
+":doc:`第８章<chapter8>` で議論します。"
 
 #: ../../chapter6.rst:251
 msgid ""
@@ -302,11 +320,11 @@ msgid ""
 "multiple exit loops  (the ``BEGIN``  ``WHILE``  ``WHILE``  ``WHILE`` "
 "``...``  ``REPEAT`` construct). We\\’ll also discuss these topics in "
 ":doc:`Chapter Eight<chapter8>`."
-msgstr ""
+msgstr "括り出す制御構造のより良性の例にはcaseステートメントがあります。それはネストされた ``IF…ELSE…THEN`` や、複数の出口を持つループ(``BEGIN…WHILE…WHILE…WHILE…REPEAT`` 構造)を取り除きます。これらのトピックについては :doc:`第８章<chapter8>` でも議論します。"
 
 #: ../../chapter6.rst:258
 msgid "Factoring Out Names"
-msgstr ""
+msgstr "名前の括り出し"
 
 #: ../../chapter6.rst:260
 msgid ""
@@ -314,13 +332,13 @@ msgid ""
 "quite, the same. Examine the following terrible example of code, which is"
 " meant to initialize three variables associated with each of eight "
 "channels:"
-msgstr ""
+msgstr "名前がほとんど同じだが、まったく同じではないと思われる場合は、名前を括り出すこともできます。 以下のひどいコード例を見てください。これは、8つのチャネルそれぞれに関連付けられた3つの変数を初期化することを意味しています。"
 
 #: ../../chapter6.rst:292
 msgid ""
 "First there’s a similarity among the names of the variables; then there’s"
 " a similarity in the code used in all the ``INIT-CH`` words."
-msgstr ""
+msgstr "まず、変数の名前には類似点があります。 それから、``INIT-CH`` 系ワードで使われているコードには類似性があります。"
 
 #: ../../chapter6.rst:295
 msgid ""
@@ -328,10 +346,12 @@ msgid ""
 "factored into three data structures, and the lengthy recital of ``INIT-"
 "CH`` words has been factored into a ``DO``  ``LOOP``:"
 msgstr ""
+"これが改良された表現です。 同様の変数名は3つのデータ構造にまとめられ、長い ``INIT-CH`` 系ワードの演奏会は ``DO…LOOP`` "
+"にまとめられました。"
 
 #: ../../chapter6.rst:309
 msgid "That’s all the code we need."
-msgstr ""
+msgstr "私たちに必要なコードはこれっきりです。"
 
 #: ../../chapter6.rst:311
 msgid ""
@@ -344,38 +364,43 @@ msgid ""
 "a string in memory, because you can copy the string *and* the count with "
 "a single ``CMOVE``."
 msgstr ""
+"最も他愛のない場合でさえ、小さなデータ構造は余分な名前を排除することができます。 "
+"慣例により、Forthはテキストを「文字数付き文字列」（すなわち、最初のバイトに文字数）で扱います。 "
+"「文字列のアドレス」を返す単語は、実際にはこの文字数格納先頭アドレスを返します。 "
+"この2要素のデータ構造を使用すると、「文字列」と「カウント」に別々の名前を使用する必要がなくなるだけでなく、文字列*とカウントを1つの "
+"``CMOVE`` でコピーできるため、文字列をメモリ内で移動しやすくなります。 "
 
 #: ../../chapter6.rst:321
 msgid ""
 "When you start finding the same awkwardness here and there, you can "
 "combine things and make the awkwardness go away."
-msgstr ""
+msgstr "あちこちで同じぎこちなさを見つけ始めたら、物事を組み合わせてぎこちなさを解消することができます。"
 
 #: ../../chapter6.rst:325
 msgid "Factoring Out Functions into Defining Words"
-msgstr ""
+msgstr "定義ワード内の機能の括り出し"
 
 #: ../../chapter6.rst:329
 msgid ""
 "If a series of definitions contains identical functions, with variation "
 "only in data, use a defining word."
-msgstr ""
+msgstr "定義のシリーズに同一の機能が含まれていて、データに違いがある場合は、定義ワードを使用してください。"
 
 #: ../../chapter6.rst:332
 msgid ""
 "Examine the structure of this code (without worrying about its "
 "purpose—you’ll see the same example later on):"
-msgstr ""
+msgstr "このコードの構造を調べてください(ここでは、その目的は気にしないでください。後でもう一度同じ例を出します)。"
 
 #: ../../chapter6.rst:349
 msgid ""
 "The above approach is technically correct, but less memory-efficient than"
 " the following approach using defining words:"
-msgstr ""
+msgstr "上記の方法は技法的には正しいですが、定義ワードを使用する次の方法よりもメモリ効率が低くなります。"
 
 #: ../../chapter6.rst:360
 msgid "(Defining words are explained in *Starting Forth*, Chapter Eleven)."
-msgstr ""
+msgstr "(定義ワードは *Starting Forth*, Chapter Eleven;邦訳 FORTH入門 第11章 に説明があります。)"
 
 #: ../../chapter6.rst:362
 msgid ""
@@ -387,12 +412,16 @@ msgid ""
 "bytes per definition. (If 1 and 2 are predefined constants, this costs "
 "another 10 bytes—24 total.)"
 msgstr ""
+"定義語を使用することによって、コンパイルされた各コロン定義は定義を終了するために ``EXIT`` "
+"のアドレスを必要とするのでメモリを節約します(8ワードを定義する場合、定義ワードを使用すると16ビットのForthで14バイト節約できます)。また、コロン定義では、数値リテラルを参照するたびに"
+" ``LIT`` (または ``literal`` "
+")をコンパイルする必要があります）、定義ごとにさらに2バイト(1と2が事前定義された定数の場合、これにはさらに10バイト、合計24バイトのコストがかかります)。"
 
 #: ../../chapter6.rst:370
 msgid ""
 "In terms of readability, the defining word makes it absolutely clear that"
 " all the colors it defines belong to the same family of words."
-msgstr ""
+msgstr "読みやすさの点では、定義するワードは、それが定義するすべての色が同じワードのグループに属することを絶対に明確にしています。"
 
 #: ../../chapter6.rst:373
 msgid ""
@@ -400,48 +429,52 @@ msgid ""
 " definitions share the same *compile-time* behavior. This topic is the "
 "subject of a later section, “Compile-Time Factoring.”"
 msgstr ""
+"しかし、定義ワードの最大の強みは、一連の定義が同じコンパイル時の動作を共有するときに生じます。 "
+"このトピックは、後節の「コンパイル時の除外」の主題です。"
 
 #: ../../chapter6.rst:378
 msgid "Factoring Criteria"
-msgstr ""
+msgstr "ファクタリング(要素分解)基準"
 
 #: ../../chapter6.rst:380
 msgid ""
 "Armed with an understanding of factoring techniques, let’s now discuss "
 "several of the criteria for factoring Forth definitions. They include:"
-msgstr ""
+msgstr "ファクタリング(要素分解)手法について理論武装したので、今度はForth定義をファクタリング(要素分解)するためのいくつかの基準について説明しましょう。 以下の内容が含まれます。"
 
 #: ../../chapter6.rst:384
 msgid "Limiting the size of definitions"
-msgstr ""
+msgstr "定義のサイズを制限する"
 
 #: ../../chapter6.rst:386
 msgid "Limiting repetition of code"
-msgstr ""
+msgstr "コードの繰り返しを制限する"
 
+# TODO:意味あってるか内容見て再検討する(2019/07/18)
 #: ../../chapter6.rst:388
 msgid "Nameability"
-msgstr ""
+msgstr "命名可能性"
 
 #: ../../chapter6.rst:390
 msgid "Information hiding"
-msgstr ""
+msgstr "情報隠蔽"
 
 #: ../../chapter6.rst:392
 msgid "Simplifying the command interface"
-msgstr ""
+msgstr "コマンドインターフェイスの単純化"
 
 #: ../../chapter6.rst:396
 msgid "Keep definitions short."
-msgstr ""
+msgstr "定義を短く保って下さい。"
 
 #: ../../chapter6.rst:406
 msgid "We asked **Moore**, \"How long should a Forth definition be?\""
-msgstr ""
+msgstr "私たちは **ムーア** に、「Forthの定義はどれくらいの長さであるべきですか？」と尋ねました。"
 
+# ここは「言葉」か？
 #: ../../chapter6.rst:399
 msgid "A word should be a line long. That's the target."
-msgstr ""
+msgstr "ワードは1行の長さであるべきです。それが目標です。"
 
 #: ../../chapter6.rst:401
 msgid ""
@@ -449,11 +482,11 @@ msgid ""
 "---perhaps in debugging or exploring, but inevitably there's a reason for"
 " their existence---you feel you've extracted the essence of the problem "
 "and that those words have expressed it."
-msgstr ""
+msgstr "あなたが、自身で有用とする正しい(おそらくデバッグや探索で必然的にそれらが存在する理由がある)ワードをたくさん持っているなら、あなたは問題の本質を抽出し、それらのワードで表現していると言えます。"
 
 #: ../../chapter6.rst:406
 msgid "Short words give you a good feeling."
-msgstr ""
+msgstr "短い言葉はあなたに良い感じを与えます。"
 
 #: ../../chapter6.rst:408
 msgid ""
@@ -461,7 +494,7 @@ msgid ""
 "averages seven references, including both words and numbers, per "
 "definition. These are remarkably short definitions. (Actually, his code "
 "was divided about 50–50 between one-line and two-line definitions.)"
-msgstr ""
+msgstr "ムーアのアプリケーションの1つを非公式に調べたところ、彼の定義は、ワードと数字が平均7つ含まれていました。これらは非常に短い定義です(実際、彼のコードは1行定義と2行定義の割合が半々でした)。"
 
 #: ../../chapter6.rst:413
 msgid ""
@@ -471,6 +504,8 @@ msgid ""
 "mind are subconsciously storing immense amounts of data, making "
 "connections and associations and solving problems."
 msgstr ""
+"心理テストでは、人間の心は意識的注意を一度に7つのこと、それか7±2つだけに集中させることができることが示されています。 [miller56]_ "
+"それでも、昼夜を問わず、心の膨大なリソースは潜在的に膨大な量のデータを保存し、つながりや関連付けをし、問題を解決しています。"
 
 #: ../../chapter6.rst:419
 msgid ""
@@ -479,6 +514,8 @@ msgid ""
 "of it at once. Beyond that, our grasp wavers. Short definitions match our"
 " mental capabilities."
 msgstr ""
+"潜在意識がアプリケーションの各部分を内側から知っていても、私たちの狭視野意識は一度にその7つの要素しか関連付けることができません。 "
+"それ以上だと、私たちの把握はゆらぎます。短い定義は私たちの精神的な能力と一致します。"
 
 #: ../../chapter6.rst:424
 msgid ""
@@ -486,7 +523,7 @@ msgid ""
 "definitions is the knowledge that headers take space in the dictionary. "
 "The coarser the factoring, the fewer the names, and the less memory that "
 "will be wasted."
-msgstr ""
+msgstr "多くのForthプログラマーが過度に長い定義を書きたくなるのは、ヘッダが辞書内のスペースを取るという知識です。 ファクタリング(要素分解)が粗いほど、名前が少なくなり、無駄になるメモリが少なくなります。"
 
 #: ../../chapter6.rst:429
 msgid ""
@@ -497,13 +534,15 @@ msgid ""
 "specific collision. (“Width” refers to a limit on the number of "
 "characters stored in the name field of each dictionary header.)"
 msgstr ""
+"より多くのメモリが使用されるのは事実ですが、テスト、デバッグ、コードとの対話など全てにに役立つものが「無駄」になるとは言い難い。アプリケーションが大きい場合は、各辞書ヘッダーの名前フィールドに格納される文字数のデフォルトを3文字で使用してみてください。"
+" 衝突を避けるために、特定の名前について長さ制限無しに切り替えます。"
 
 #: ../../chapter6.rst:436
 msgid ""
 "If the application is still too big, switch to a Forth with multiple "
 "dictionaries on a machine with extended memory, or better yet, a 32-bit "
 "Forth on a machine with 32-bit addressing."
-msgstr ""
+msgstr "それでもアプリケーションが大きすぎる場合は、拡張メモリを搭載したマシンで複数の辞書を含むForthに切り替えるか、32ビットアドレッシングを搭載したマシンで32ビットForthに切り替えます。"
 
 #: ../../chapter6.rst:440
 msgid ""
@@ -514,23 +553,27 @@ msgid ""
 "timings are that tight, the real solution is to translate something into "
 "assembler."
 msgstr ""
+"関連する恐怖は、Forthの内部インタプリタのオーバーヘッドのために過剰分解がパフォーマンスを低下させることです。 "
+"繰り返しますが、ネスティングの各レベルにはいくらかのペナルティがあります。 "
+"しかし、通常は、適切な分解による追加のネスティングに対するペナルティは目立ちません。 "
+"あなたの納期がそれほど厳しくないなら、本当の解決策はアセンブラに翻訳することです。"
 
 #: ../../chapter6.rst:449
 msgid ""
 "Factor at the point where you feel unsure about your code (where "
 "complexity approaches the conscious limit)."
-msgstr ""
+msgstr "分解するポイントは、あなたがあなたのコードがわけわかめと感じるポイントです（複雑さが意識的な限界に近づいていると感じるポイントです）。"
 
 #: ../../chapter6.rst:452
 msgid ""
 "Don’t let your ego take over with an “I can lick this!” attitude. Forth "
 "code should never feel uncomfortably complex. Factor!"
-msgstr ""
+msgstr "「オレはこれを征服してやる！」なんて態度で挑む必要はありません。Forthコードは不快で複雑に感じることはありません。分解せよ！"
 
 #: ../../chapter6.rst:463 ../../chapter6.rst:513 ../../chapter6.rst:593
 #: ../../chapter6.rst:1008 ../../chapter6.rst:1375
 msgid "**Moore**:"
-msgstr ""
+msgstr "**ムーア** は言います。"
 
 #: ../../chapter6.rst:456
 msgid ""
@@ -539,6 +582,9 @@ msgid ""
 "something's wrong because it will be hard to debug. Almost always take "
 "the inner ``DO``  ``LOOP`` and make a word."
 msgstr ""
+"あなたがバグを導入したかもしれないと感じることは除外化する理由の一つです。 二重にネストされた ``DO…LOOP`` "
+"を見たときはいつでも、それはデバッグが難しいので何かが間違っているというサインです。 ほとんどの場合、内側の ``DO…LOOP`` "
+"を取り出しワードを作ります。"
 
 #: ../../chapter6.rst:461
 msgid ""
@@ -546,117 +592,119 @@ msgid ""
 " it back. You found it useful in the first place. There's no guarantee "
 "you won't need it again."
 msgstr ""
+"テスト用のワードをまとめたら、元に戻す理由はありません。 あなたはそれがそもそも役に立つと思ったのです。 "
+"あなたが再びそれを必要としないという保証はありません。"
 
 #: ../../chapter6.rst:465
 msgid "Here’s another facet of the same principle:"
-msgstr ""
+msgstr "これは同じ原則の別の側面です。"
 
 #: ../../chapter6.rst:469
 msgid "Factor at the point where a comment seems necessary"
-msgstr ""
+msgstr "コメントが必要と思われる時点でのファクタリング(要素分解)"
 
 #: ../../chapter6.rst:471
 msgid ""
 "Particularly if you feel a need to remind yourself what’s on the stack, "
 "this may be a good time to “make a break.”"
-msgstr ""
+msgstr "特に、スタックの内容を思い出す必要があると感じた場合は、「休憩をとる」のがよいでしょう。"
 
 #: ../../chapter6.rst:474
 msgid "Suppose you have"
-msgstr ""
+msgstr "以下のようなのがあるとします。"
 
 #: ../../chapter6.rst:481
 msgid ""
 "which begins by computing the balance and ends by displaying it. In the "
 "meantime, several lines of code use the balance for purposes of their "
 "own. Since it’s difficult to see that the balance is still on the stack "
-"when SHOW executes, the programmer has interjected a stack picture."
-msgstr ""
+"when ``SHOW`` executes, the programmer has interjected a stack picture."
+msgstr "残高を計算することで始まり、それを表示することで終わります。 それまでの間、数行のコードでは、独自の目的で残高を使用しています。 ``SHOW`` を実行するときに残高がまだスタック上にあることを確認するのは困難なので、プログラマはスタック状況を差し挟みました。"
 
 #: ../../chapter6.rst:486
 msgid "This solution is generally a sign of bad factoring. Better to write:"
-msgstr ""
+msgstr "この解決策は一般的に悪いファクタリング(要素分解)の兆候です。 以下のように書くほうがよいです。"
 
 #: ../../chapter6.rst:494
 msgid ""
 "No narrative stack pictures are needed. Furthermore, the programmer now "
 "has a reusable, testable subset of the definition."
-msgstr ""
+msgstr "物語スタック状況は必要ありません。更に、 さらに、プログラマは現在、再利用可能でテスト可能な定義のサブセットを持っています。"
 
 #: ../../chapter6.rst:499
 msgid "Limit repetition of code."
-msgstr ""
+msgstr "コードの繰り返しを制限してください。"
 
 #: ../../chapter6.rst:501
 msgid ""
 "The second reason for factoring, to eliminate repeated fragments of code,"
 " is even more important than reducing the size of definitions."
-msgstr ""
+msgstr "ファクタリング(要素分解)の2番目の理由は、コードの繰り返しの断片を排除することです。それは定義のサイズを小さくすることよりもさらに重要です。"
 
 #: ../../chapter6.rst:506
 msgid ""
 "When a word is just a piece of something, it's useful for clarity or "
 "debugging, but not nearly as good as a word that is used multiple times. "
 "Any time a word is used only once you want to question its value."
-msgstr ""
+msgstr "ワードが単に何かの一部である場合、明瞭さやデバッグには役立ちますが、何度も使用されるワードほどではありません。いつでも、一度だけしか使われないワードはその価値を疑問視したくなります。"
 
 #: ../../chapter6.rst:511
 msgid ""
 "Many times when a program has gotten too big I will go back through it "
 "looking for phrases that strike my eye as candidates for factoring. The "
 "computer can't do this; there are too many variables."
-msgstr ""
+msgstr "プログラムが大きくなりすぎると、私はファクタリング(要素分解)のための候補として、目に止まるフレーズを探して何度も右往左往します。コンピュータはこれを行うことができません。 変数が多すぎます。"
 
 #: ../../chapter6.rst:515
 msgid ""
 "In looking over your work, you often find identical phrases or short "
 "passages duplicated several times. In writing an editor I found this "
 "phrase repeated several times:"
-msgstr ""
+msgstr "自分の作品を見てみると、同じフレーズや短い文章が何度か重複しているのがよくわかります。 エディタを書く際に、以下のフレーズが数回繰り返されているのがわかりました。"
 
 #: ../../chapter6.rst:523
 msgid ""
 "Because it appeared several times I factored it into a new word called "
 "``AT``."
-msgstr ""
+msgstr "それが何度か現れたので、私はそれを ``AT`` と呼ばれる新しいワードにまとめました。"
 
 #: ../../chapter6.rst:526
 msgid ""
 "It’s up to you to recognize fragments that are coded differently but "
 "functionally equivalent, such as:"
-msgstr ""
+msgstr "次のように、コーディング方法が異なるが機能的に同等の断片を認識するのは、あなた次第です。"
 
 #: ../../chapter6.rst:533
 msgid ""
 "The ``1-`` appears to make this phrase different from the one defined as "
 "``AT.`` But in fact, it can be written"
-msgstr ""
+msgstr "``1-`` は、このフレーズを ``AT`` の定義とは異なるもののように見せていますが、実際には以下のように ``AT`` を使って書くことができます。"
 
 #: ../../chapter6.rst:540
 msgid "On the other hand:"
-msgstr ""
+msgstr "その反面、"
 
 #: ../../chapter6.rst:544
 msgid ""
 "When factoring out duplicate code, make sure the factored code serves a "
 "single purpose."
-msgstr ""
+msgstr "重複するコードを括り出すときは、括り出されたコードが単一の目的を果たすことを確認してください。"
 
 #: ../../chapter6.rst:547
 msgid ""
 "Don’t blindly seize upon duplications that may not be useful. For "
 "instance, in several places in one application I used this phrase:"
-msgstr ""
+msgstr "役に立たないかもしれない重複を盲目的に掴まえないでください。 たとえば、1つのアプリケーションのいくつかの場所で以下のフレーズを使用しました。"
 
 #: ../../chapter6.rst:554
 msgid ""
 "I turned it into a new word and called it ``LETTER``, since it returned "
 "the letter being pointed to by the interpreter."
-msgstr ""
+msgstr "私はそれを新しいワードに変えて、それを ``LETTER`` と呼びました。なぜならそれはインタプリタが指し示す文字を返すからです。"
 
 #: ../../chapter6.rst:557
 msgid "In a later revision, I unexpectedly had to write:"
-msgstr ""
+msgstr "後の改訂では、予想外に、以下のように書かなければなりませんでした。"
 
 #: ../../chapter6.rst:563
 msgid ""
@@ -668,15 +716,15 @@ msgid ""
 "of ``LETTER`` to ``LETTER C@``. But I should have done that in the first "
 "place, separating the computation of the letter’s address from the "
 "operation to be performed on the address."
-msgstr ""
+msgstr "最後の ``C@`` のためではないのであれば、既存の ``LETTER`` を使用することができました。 新しいセクションでフレーズの大部分を複製するのではなく、私は ``LETTER`` をより細かい粒度にリファクタリングして ``C@`` を取り出すことを選びました。 そのときの用法は ``LETTER C@`` か ``LETTER C!`` のどちらかでした。 この変更により、リスト全体を検索して、 ``LETTER`` のすべてのインスタンスを ``LETTER C@`` に変更する必要がありました。 しかし、私は最初に文字の住所の計算と住所で実行される操作とを区別して、それを行うべきでした。"
 
 #: ../../chapter6.rst:573
 msgid "Similar to our injunction against repetition of code:"
-msgstr ""
+msgstr "以下のヒントは、私たちのコード繰り返し禁止令と同じ意味です。"
 
 #: ../../chapter6.rst:577
 msgid "Look for repetition of patterns."
-msgstr ""
+msgstr "パターンの繰り返しを探して下さい。"
 
 #: ../../chapter6.rst:579
 msgid ""
@@ -685,11 +733,11 @@ msgid ""
 "specific application. The part of the pattern you are copying perhaps can"
 " be factored out as an independent definition that can be used in all the"
 " similar cases."
-msgstr ""
+msgstr "プログラム内の既存のコードでワードのパターンをコピーするように参照している場合は、一般的なアイデアと特定のアプリケーションが混在している可能性があります(訳注:それは、詳細に分析しない限り、書いた人にしか分からない)。 あなたが自身がコピーしているパターンは、おそらくすべての同様の場合に使用できる独立した定義として括り出すことができます。"
 
 #: ../../chapter6.rst:587
 msgid "Be sure you can name what you factor."
-msgstr ""
+msgstr "自分が分解したものに名前を付けることができることを確認してください。"
 
 #: ../../chapter6.rst:590
 msgid ""
@@ -697,7 +745,7 @@ msgid ""
 "hyphenated name, but a name, it's not a well-formed concept. The ability "
 "to assign a name is a necessary part of decomposition. Certainly you get "
 "more confidence in the idea."
-msgstr ""
+msgstr "ハイフンで繋がれた名前でなく単一の名前を割り当てる事ができない概念がある場合は、それは名前ではなく、整形式の概念ではありません。名前を割り当てる能力は分解の主要な部分です。あなたはその考えに必ずや自信を持つようになります。"
 
 #: ../../chapter6.rst:595
 msgid ""
@@ -707,22 +755,22 @@ msgid ""
 "verified by describing its function in a single, non-compound, "
 "*sentence*. Forth’s “atom,” a *name*, is an order of magnitude more "
 "refined."
-msgstr ""
+msgstr "この見方と、:doc:`第１章<chapter1>` の中の構造化設計に基づくモジュールを分解する基準とを比較してください。 その方法によれば、モジュールは「機能的結合」を示すべきであり、それはその機能を単一の非複合的な「文」で記述することによって検証することができます。 Forthの「アトム」である「名前」は、さらに洗練された命令です。"
 
 #: ../../chapter6.rst:604
 msgid "Factor definitions to hide details that may change."
-msgstr ""
+msgstr "変化する可能性のある詳細を隠すために定義を分解して下さい。"
 
 #: ../../chapter6.rst:606
 msgid ""
 "We’ve seen the value of information hiding in earlier chapters, "
 "especially with regard to preliminary design. It’s useful to remember "
 "this criterion during the implementation stage as well."
-msgstr ""
+msgstr "特に予備設計に関しては、情報隠蔽の価値を前述しました。実装段階でもこの基準を覚えておくと便利です。"
 
 #: ../../chapter6.rst:610
 msgid "Here’s a very short definition that does little except hide information:"
-msgstr ""
+msgstr "以下は、非常に短い定義で、情報を隠すこと以外はほとんど何もしていません。"
 
 #: ../../chapter6.rst:616
 msgid ""
@@ -734,11 +782,11 @@ msgid ""
 "bodies. (This is one of a set of words suggested by Kim Harris, and "
 "included as an Experimental Proposal in the Forth-83 Standard "
 "[harris83]_.)"
-msgstr ""
+msgstr "この定義により、辞書定義の実際の構造に依存せずに、acf(コードフィールドのアドレス)をapf(パラメータフィールドのアドレス)に変換できます。 もし ``>BODY`` の代わりに ``2+`` を使ったら、ヘッダがボディから分離されているForthシステムに変換した時にポータビリティを失うでしょう(これは、キム・ハリスによって提案されたワード・セット1つであり、Forth-83標準の[実験的提案] [harris83]_ に含まれています)。"
 
 #: ../../chapter6.rst:626
 msgid "Here’s a group of definitions that might be used in writing an editor:"
-msgstr ""
+msgstr "以下は、エディタを書くのに使われるかもしれない定義のグループです。"
 
 #: ../../chapter6.rst:634
 msgid ""
@@ -746,26 +794,26 @@ msgid ""
 "addresses necessary for moving text around. Use of these three "
 "definitions completely separates your editing algorithms from a reliance "
 "on Forth blocks."
-msgstr ""
+msgstr "これら3つの定義は、テキストを動かすために必要なすべてのアドレス計算の基礎を形成することができます。 これら3つの定義を使用すると、編集アルゴリズムとForthブロックへの依存が完全に分離されます。"
 
 #: ../../chapter6.rst:639
 msgid ""
 "What good is that? If you should decide, during development, to create an"
 " editing buffer to protect the user from making errors that destroy a "
 "block, you merely have to redefine two of these words, perhaps like this:"
-msgstr ""
+msgstr "それの何がいいのでしょうか？ 開発中に、ユーザがブロックを破壊するようなエラーを起こさないようにするための編集バッファを作成することにした場合は、単に次の2つのワードを再定義するだけで済みます。"
 
 #: ../../chapter6.rst:649
 msgid "The rest of your code can remain intact."
-msgstr ""
+msgstr "あなたのコードの残りはそのままです。"
 
 #: ../../chapter6.rst:653
 msgid "Factor functions out of definitions that display results."
-msgstr ""
+msgstr "結果を表示する定義の機能を括り出して下さい。"
 
 #: ../../chapter6.rst:655
 msgid "This is really a question of decomposition."
-msgstr ""
+msgstr "これは本当に分解の問題です。"
 
 #: ../../chapter6.rst:657
 msgid ""
@@ -774,18 +822,18 @@ msgid ""
 " of people in a group. (This is a good thing for managers of programmer "
 "teams to know—the number of communication paths increases drastically "
 "with each new addition to the team.)"
-msgstr ""
+msgstr "ここに一例があります。以下で定義される「人々から経路へ(people-to-paths)」と発音されるワードは、グループ内の所与の数の人の間にいくつのコミュニケーション経路があるかを計算します(これは、プログラマチームの管理者にとって知っておくとよいことです。チームが新しく追加されるたびにコミュニケーション経路の数が劇的に増加します)。"
 
 #: ../../chapter6.rst:667
 msgid ""
 "This definition does the calculation only. Here’s the “user definition” "
 "that invokes ``PEOPLE>PATHS`` to perform the calculation, and then "
 "displays the result:"
-msgstr ""
+msgstr "この定義は計算のみを行います。 以下は、``PEOPLE>PATHS`` を呼び出して計算を実行し、その結果を表示する「ユーザ定義」です。"
 
 #: ../../chapter6.rst:676
 msgid "This produces:"
-msgstr ""
+msgstr "以下のようになります。"
 
 #: ../../chapter6.rst:685
 msgid ""
@@ -797,7 +845,7 @@ msgid ""
 "But you’ll always have to factor it, so you might as well do it right the"
 " first time. (The few times you might get away with it aren’t worth the "
 "trouble.)"
-msgstr ""
+msgstr "特定の計算を1回しか実行しないと思う場合でも、それを特定の方法で表示しようと思う場合でも、私を信じて下さい。あなたは間違っています。あなたは後で戻ってきて、計算部分を括り出す必要があります。 おそらく、情報を右寄せの列に表示する必要があるか、結果をデータベースに記録する必要があるでしょう。 しかし、あなたは常にそれを考慮に入れなければならないので、あなたはそれを最初から正しくやるかもしれません(あなたがそれを回避するかもしれない数回はトラブルに値しません)。"
 
 #: ../../chapter6.rst:694
 #, python-format
@@ -1572,7 +1620,7 @@ msgstr ""
 
 #: ../../chapter6.rst:1428
 msgid "REFERNCES"
-msgstr ""
+msgstr "参考文献"
 
 #: ../../chapter6.rst:1430
 msgid ""
@@ -1580,6 +1628,9 @@ msgid ""
 " vol. 13, no. 2, 1974, Copyright 1974 byInternational Business Machines "
 "Corporation."
 msgstr ""
+"W.P. Stevens, G.J. Myers,and L.L. Constantine, **IBM Systems Journal** , "
+"vol. 13, no. 2, 1974, Copyright 1974 byInternational Business Machines "
+"Corporation."
 
 #: ../../chapter6.rst:1431
 msgid ""
@@ -1587,90 +1638,15 @@ msgid ""
 " our Capacity for Processing Information,\" **Psychol. Rev** ., vol. 63, "
 "pp. 81-97, Mar. 1956."
 msgstr ""
+"G.A. Miller, \"The Magical Number Seven, Plus orMinus Two: Some Limits on"
+" our Capacity for Processing Information,\" **Psychol. Rev** ., vol. 63, "
+"pp. 81-97, Mar. 1956."
 
 #: ../../chapter6.rst:1432
 msgid ""
 "Kim R. Harris, \"Definition Field AddressConversion Operators,\"  **Forth"
 "--83 Standard** , Forth StandardsTeam."
 msgstr ""
-
-#~ msgid ""
-#~ "The messiest situation occurs when the"
-#~ " difference between two definitions is "
-#~ "a function within a structure that "
-#~ "makes it impossible to factor out "
-#~ "the half-fragments. In this case, "
-#~ "use stack arguments, variables, or even"
-#~ " vectoring. We’ll see how vectoring "
-#~ "can be used in a section of "
-#~ ":doc:`chapter7` called “Using DOER/MAKE.”"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The word ``CONDITIONALLY`` may—depending on"
-#~ " the condition—alter the control flow "
-#~ "so that the remaining words in "
-#~ "each definition will be skipped. This"
-#~ " approach has certain disadvantages as "
-#~ "well. We’ll discuss this technique—pros "
-#~ "and cons—in :doc:`chapter8`."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "More benign examples of factoring-out"
-#~ " control structures include case "
-#~ "statements, which eliminate nested ``IF``  "
-#~ "``ELSE``  ``THEN`` s, and multiple exit"
-#~ " loops  (the ``BEGIN``  ``WHILE``  "
-#~ "``WHILE``  ``WHILE`` ``...``  ``REPEAT`` "
-#~ "construct). We\\’ll also discuss these "
-#~ "topics in :doc:`chapter8`."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Compare this view with the criteria "
-#~ "for decomposing a module espoused by "
-#~ "structured design in :doc:`chapter1`. "
-#~ "According to that method, a module "
-#~ "should exhibit “functional binding,” which "
-#~ "can be verified by describing its "
-#~ "function in a single, non-compound, "
-#~ "*sentence*. Forth’s “atom,” a *name*, is"
-#~ " an order of magnitude more refined."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "We find another example of failing "
-#~ "to factor the output function from "
-#~ "the calculation function in our own "
-#~ "Roman numeral example in :doc:`chapter4` "
-#~ "Four. Given our solution, we can’t "
-#~ "store a Roman numeral in a buffer"
-#~ " or even center it in a field."
-#~ " (A better approach would have been"
-#~ " to use ``HOLD`` instead of "
-#~ "``EMIT``.)"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "It may seem paradoxical, but good "
-#~ "factoring can often yield *fewer* names."
-#~ " In :doc:`chapter5` we saw how six"
-#~ " simple names (``LEFT``, ``RIGHT``, "
-#~ "``MOTOR``, ``SOLENOID``, ``ON``, and ``OFF``)"
-#~ " could do the work of eight "
-#~ "badly-factored, hyphenated names."
-#~ msgstr ""
-
-#~ msgid "allowing the syntax"
-#~ msgstr ""
-
-#~ msgid "allowing the syntax(``CONTEXT IS`` :kbd:`Enter`)"
-#~ msgstr ""
-
-#~ msgid "or(``CURRENT IS`` :kbd:`Enter`)"
-#~ msgstr ""
-
-#~ msgid "latex"
-#~ msgstr ""
+"Kim R. Harris, \"Definition Field AddressConversion Operators,\"  **Forth"
+"--83 Standard** , Forth StandardsTeam."
 

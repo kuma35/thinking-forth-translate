@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 21:04+0900\n"
+"POT-Creation-Date: 2019-07-18 19:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -408,7 +408,7 @@ msgid "Suppose you have"
 msgstr ""
 
 #: ../../chapter6.rst:481
-msgid "which begins by computing the balance and ends by displaying it. In the meantime, several lines of code use the balance for purposes of their own. Since it’s difficult to see that the balance is still on the stack when SHOW executes, the programmer has interjected a stack picture."
+msgid "which begins by computing the balance and ends by displaying it. In the meantime, several lines of code use the balance for purposes of their own. Since it’s difficult to see that the balance is still on the stack when ``SHOW`` executes, the programmer has interjected a stack picture."
 msgstr ""
 
 #: ../../chapter6.rst:486

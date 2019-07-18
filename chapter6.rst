@@ -481,7 +481,7 @@ Suppose you have
 which begins by computing the balance and ends by displaying it. In the
 meantime, several lines of code use the balance for purposes of their
 own. Since it’s difficult to see that the balance is still on the stack
-when SHOW executes, the programmer has interjected a stack picture.
+when ``SHOW`` executes, the programmer has interjected a stack picture.
 
 This solution is generally a sign of bad factoring. Better to write:
 
@@ -677,10 +677,10 @@ This produces:
 
 .. code-block:: none
    
-   2 PEOPLE&underline{ = 1 PATHS}
-   3 PEOPLE&underline{ = 3 PATHS}
-   5 PEOPLE&underline{ = 10 PATHS}
-   10 PEOPLE&underline{ = 45 PATHS}
+   2 PEOPLE = 1 PATHS
+   3 PEOPLE = 3 PATHS
+   5 PEOPLE = 10 PATHS
+   10 PEOPLE = 45 PATHS
 
 Even if you think you’re going to perform a particular calculation only
 once, to display it in a certain way, believe me, you’re wrong. You will

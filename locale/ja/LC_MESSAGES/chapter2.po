@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-04 22:12+0900\n"
-"PO-Revision-Date: 2019-07-15 07:43+0900\n"
+"PO-Revision-Date: 2019-07-18 19:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1442,13 +1442,13 @@ msgid ""
 "software, any number of dimensions can be easily handled, as we’ll see."
 msgstr "紙に二次元を超える問題を描くのは少し難しいです。ご覧のように、これらの追加の次元は外側の次元の中のサブ次元として紙に描く事ができます。サブ次元の全ての条件は、外側の次元の全ての条件内に表示されます。ソフトウェアでは、ご存知のとおり、任意の数の次元を簡単に処理できます。"
 
-# factoring 因数分解 でいいやもう。
+# factoring 要素分解
 #: ../../chapter2.rst:891
 msgid ""
 "All the techniques we’ve described force you to analyze which conditions "
 "apply to which dimensions. In factoring these dimensions, two rules "
 "apply:"
-msgstr "私たちがこれまでに説明した全ての手法を使って、どの条件がどの次元に適用されるかを分析しなければなりません。これらの次元の因数分解には次の２つのルールが適用されます。"
+msgstr "私たちがこれまでに説明した全ての手法を使って、どの条件がどの次元に適用されるかを分析しなければなりません。これらの次元のファクタリング(要素分解)には次の２つのルールが適用されます。"
 
 #: ../../chapter2.rst:895
 msgid ""
