@@ -691,7 +691,7 @@ But you’ll always have to factor it, so you might as well do it right
 the first time. (The few times you might get away with it aren’t worth
 the trouble.)
 
-The word ``.`` (dot) is a prime example. Dot is great 99% of the time, but
+The word ``.`` (dot) is a prime example. Dot is great 99\% of the time, but
 occasionally it does too much. Here’s what it does, in fact (in
 Forth–83):
 
