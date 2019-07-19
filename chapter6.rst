@@ -769,7 +769,7 @@ purely instructional, to remind the programmer which vocabulary was
 
 .. code-block:: none
    
-   : .CONTEXT   CONTEXT @  8 -  NFA  ID.   ;
+   : .CONTEXT   CONTEXT @  8 -  NFA  ID.  ;
    : .CURRENT   CURRENT @  8 -  NFA  ID.  ;
 
 If you typed
