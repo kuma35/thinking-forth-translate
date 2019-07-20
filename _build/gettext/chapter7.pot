@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2019-07-20 16:56+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgid "Redesign"
 msgstr ""
 
 #: ../../chapter7.rst:92
-msgid "Let’s witness a case where a wrong-headed approach leads to a messy stack problem. Suppose we’re trying to write the definition of +THRU (see :doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative Loading” subsection). We’ve decided that our loop body will be"
+msgid "Let’s witness a case where a wrong-headed approach leads to a messy stack problem. Suppose we’re trying to write the definition of ``+THRU`` (see :doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative Loading” subsection). We’ve decided that our loop body will be"
 msgstr ""
 
 #: ../../chapter7.rst:100

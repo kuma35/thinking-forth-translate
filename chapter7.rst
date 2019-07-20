@@ -90,7 +90,7 @@ Redesign
 --------
 
 Let’s witness a case where a wrong-headed approach leads to a messy
-stack problem. Suppose we’re trying to write the definition of +THRU
+stack problem. Suppose we’re trying to write the definition of ``+THRU``
 (see :doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative Loading” subsection). We’ve decided that our loop body will be
 
 .. code-block:: none

@@ -4,34 +4,36 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-20 16:56+0900\n"
+"PO-Revision-Date: 2019-07-20 19:37+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
+# Statesに関してはステート(state)とすべきか？状態でいいか？
 #: ../../chapter7.rst:4
 msgid "7. Handling Data: Stacks and States"
-msgstr ""
+msgstr "第７章 データの取り扱い：スタックと状態"
 
 #: ../../chapter7.rst:6
 msgid ""
 "Forth handles data in one of two ways: either on the stack or in data "
 "structures. When to use which approach and how to manage both the stack "
 "and data structures are the topics of this chapter."
-msgstr ""
+msgstr "Forthは2つの方法のいずれかでデータを取扱います。それはスタックかデータ構造のいずれかです。この章の話題は、どのアプローチを使用するか、そしてスタックとデータ構造の両方をどのように管理するかです。"
 
 #: ../../chapter7.rst:12
 msgid "The Stylish Stack"
-msgstr ""
+msgstr "スタイリッシュ・スタック"
 
 #: ../../chapter7.rst:14
 msgid ""
@@ -39,10 +41,12 @@ msgid ""
 "the stack. The process is “simple” because all the work of pushing and "
 "popping values to and from the stack is implicit."
 msgstr ""
+"Forthのワードがお互いに引数を渡す最も簡単な方法はスタックを使うことです。 "
+"スタックとの間で値をプッシュしたりポップしたりする作業はすべて暗黙的であるため、このプロセスは「シンプル」です。"
 
 #: ../../chapter7.rst:23 ../../chapter7.rst:668
 msgid "**Moore**:"
-msgstr ""
+msgstr "ムーアは言います。"
 
 #: ../../chapter7.rst:19
 msgid ""
@@ -52,6 +56,8 @@ msgid ""
 "quite invisibly, even below the level of awareness of the programmer, "
 "simply because it doesn't have to be referred to explicitly."
 msgstr ""
+"データスタックは、この「隠し情報」の概念を使用しています。 サブルーチン間で渡される引数は、呼び出しシーケンスでは明示的ではありません。 "
+"プログラマの意識レベルを下回っていても、まったく同じワードがまったく目に見えないほどたくさんのワードに波及している可能性があります。これは、単に明示的に言及する必要がないからです。"
 
 #: ../../chapter7.rst:25
 msgid ""
@@ -60,22 +66,25 @@ msgid ""
 "for Forth’s elegance. At the same time it’s one of the reasons badly "
 "written Forth code can be unreadable. Let’s explore this paradox."
 msgstr ""
+"このアプローチの1つの重要な結果として、引数は名前が付けられていません。 それらは名前付き変数ではなく、スタック上にあります。 "
+"この効果はForthの優雅さの理由の1つです。 同時にそれは、不適切に書かれたForthコードが読めなくなる可能性がある理由の一つです。 "
+"この矛盾を探って見ましょう。"
 
 #: ../../chapter7.rst:30
 msgid ""
 "The invention of the stack is analogous to that of pronouns in English. "
 "Consider the passage:"
-msgstr ""
+msgstr "スタックの発明は、英語の代名詞の発明と似ています。その箇所について考えてみましょう。"
 
 #: ../../chapter7.rst:33
 msgid "Take this gift, wrap it in tissue paper and put it in a box."
-msgstr ""
+msgstr "Take this gift, wrap it in tissue paper and put it in a box."
 
 #: ../../chapter7.rst:35
 msgid ""
 "Notice the word “gift” is mentioned only once. The gift is referred to "
 "henceforth as “it.”"
-msgstr ""
+msgstr "「gift(贈り物)」という言葉が一度だけ述べられていることに注意してください。 gift(贈り物)は、以後「それ(it)」と呼ばれます。"
 
 #: ../../chapter7.rst:38
 msgid ""
@@ -84,6 +93,8 @@ msgid ""
 "passing of arguments makes code more readable. We emphasize the "
 "*processes*, not the *passing of arguments* to the processes."
 msgstr ""
+"「それ(it)」構文が形式が張らない構文なので、英語が読みやすくなります(「それit)」を参照するものが明確である場合)。 "
+"そのため、スタックでは、暗黙的に引数を渡すことでコードが読みやすくなります。 プロセスへの引数の受け渡しではなく、プロセスを重視します。"
 
 #: ../../chapter7.rst:43
 msgid ""
@@ -91,10 +102,12 @@ msgid ""
 "spoken language gets confusing when too many things are referred to with "
 "pronouns."
 msgstr ""
+"私たちの代名詞への類推は、なぜ悪いForthがそれほど読めなくなる可能性があるかを示唆しています。 "
+"あまりにも多くのことが代名詞で参照されている場合、話し言葉は混乱します。"
 
 #: ../../chapter7.rst:47
 msgid "Take off the wrapping and open the box. Remove the gift and throw it away."
-msgstr ""
+msgstr "Take off the wrapping and open the box. Remove the gift and throw it away."
 
 #: ../../chapter7.rst:50
 msgid ""
@@ -102,39 +115,45 @@ msgid ""
 "many things at once. There are two solutions to this error. The easiest "
 "solution is to supply a real name instead of “it”:"
 msgstr ""
+"この箇所の問題は、一度に多くのものを参照するために「それ(it)」を使用していることです。 このエラーには2つの解決策があります。 "
+"最も簡単な解決策は、「それ(it)」の代わりに実際の名前を指定することです。"
 
 #: ../../chapter7.rst:54
 msgid ""
 "Remove the wrapping and open the box. Take out the gift and throw **the "
 "box** away."
 msgstr ""
+"Remove the wrapping and open the box. Take out the gift and throw **the "
+"box** away."
 
 #: ../../chapter7.rst:57
 msgid ""
 "Or we can introduce the words “former” and “latter.” But the best "
 "solution is to redesign the passage:"
-msgstr ""
+msgstr "あるいは、「前者(former)」と「後者(latter)」という言葉を紹介することもできます。しかし、最良の解決策は、当該箇所を再設計することです。"
 
 #: ../../chapter7.rst:60
 msgid "Remove the wrapping and open the present. Throw away the box."
-msgstr ""
+msgstr "Remove the wrapping and open the present. Throw away the box."
 
 #: ../../chapter7.rst:62
 msgid "So in Forth we have analogous observations:"
-msgstr ""
+msgstr "Forthでは以下のような類似の観察結果があります。"
 
 #: ../../chapter7.rst:66
 msgid ""
 "Simplify code by using the stack. But don't stack too deeply within any "
 "single definition. Redesign, or, as a last resort, use a named variable."
 msgstr ""
+"スタックを使用してコードを単純化してください。しかし、どの定義内でも深く積み重ねないでください。 "
+"再設計するか、最後の手段として、名前付き変数を使用します。"
 
 #: ../../chapter7.rst:69
 msgid ""
 "Some newcomers to Forth view the stack the way a gymnast views a "
 "trampoline: as a fun place to bounce around on. But the stack is meant "
 "for data-passing, not acrobatics."
-msgstr ""
+msgstr "Forthの初心者の中には、体操選手が楽しく飛び跳ねるトランポリンのようにスタックをとらえる人が居ます。しかし、スタックはアクロバットではなくデータの受け渡しを目的としています。"
 
 #: ../../chapter7.rst:73
 msgid ""
@@ -144,6 +163,8 @@ msgid ""
 "treated as a single element by operators such as ``2DUP``, ``2OVER``, "
 "etc.)"
 msgstr ""
+"では、どのぐらいの深さが「深すぎる」のでしょうか？一般的に、スタック上の3つの要素が1つの定義内で管理できる最大の要素です(。2倍長演算では、各「要素」は2つのスタック位置を占めますが、"
+" ``2DUP`` 、 ``2OVER`` などの演算子によって論理的に単一の要素として扱われます)。"
 
 #: ../../chapter7.rst:79
 msgid ""
@@ -152,72 +173,75 @@ msgid ""
 "``ROLL`` (which we’ll comment on soon), there’s no easy way to get at "
 "anything below that."
 msgstr ""
+"通常のスタック演算子の用語集は、 ``ROT`` が3番目のスタック項目にアクセスできる唯一のものです。 ``PICK`` と ``ROLL`` "
+"(これについてはすぐに説明します）以外に、それより深いものを見つける簡単な方法はありません。"
 
+# どう訳すんだこんなの
 #: ../../chapter7.rst:85
 msgid ""
 "To stretch our analogy to the limit, perhaps three elements on the stack "
 "corresponds to the three English pronouns “this,” “that,” and “t’other.”"
-msgstr ""
+msgstr "私たちの類推を限界にまで広げると、スタック上の3つの要素は、3つの英語の代名詞「this(これ)」、「that(それ)」、および「t’other(その他)」に対応する可能性があります。"
 
 #: ../../chapter7.rst:90
 msgid "Redesign"
-msgstr ""
+msgstr "再設計"
 
 #: ../../chapter7.rst:92
 msgid ""
 "Let’s witness a case where a wrong-headed approach leads to a messy stack"
-" problem. Suppose we’re trying to write the definition of +THRU (see "
+" problem. Suppose we’re trying to write the definition of ``+THRU`` (see "
 ":doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative "
 "Loading” subsection). We’ve decided that our loop body will be"
-msgstr ""
+msgstr "間違った向きのアプローチが厄介なスタック問題につながるケースを見てみましょう。``+THRU`` の定義を書き込もうとしているとします( :doc:`第5章<chapter5>` の「リストの整理」の節の「相対ロード」の部分を参照)。 私たちはループ本体を以下のように定めました。"
 
 #: ../../chapter7.rst:100
 msgid ""
 "that is, we’ll put ``LOAD`` in a loop, then arrange for the index and "
 "limit to correspond to the absolute screens being loaded."
-msgstr ""
+msgstr "つまり、 ``LOAD`` をループに入れてから、ロードされる絶対スクリーンに対応するようにインデックスと制限を調整します。"
 
 #: ../../chapter7.rst:104
 msgid "On the stack initially we have:"
-msgstr ""
+msgstr "スタック上に最初にこれがあります。"
 
 #: ../../chapter7.rst:110
 msgid "where “lo” and “hi” are the *offsets* from ``BLK``."
-msgstr ""
+msgstr "ここで、「lo」と「hi」は ``BLK`` からのオフセットです。"
 
 #: ../../chapter7.rst:112
 msgid "We need to permute them for ``DO``, like this:"
-msgstr ""
+msgstr "私たちは、以下のようにこれらを ``DO`` の為に並べ替える必要があります。"
 
 #: ../../chapter7.rst:118
 msgid "Our biggest problem is adding the value of ``BLK`` to both offsets."
-msgstr ""
+msgstr "最大の問題は両方のオフセットに ``BLK`` の値を追加することです。"
 
 #: ../../chapter7.rst:120
 msgid ""
 "We’ve already taken a wrong turn but we don’t know it yet. So let’s "
 "proceed. We try:"
-msgstr ""
+msgstr "すでに間違った方向に進んでいますが、私たちはまだそれを知りません。なので引き続き進みましょう。 私たちは以下のように試してみます。"
 
 #: ../../chapter7.rst:141
 msgid "We made it, but what a mess!"
-msgstr ""
+msgstr "私たちははそれを作りました、しかし、酷いなコレ。"
 
 #: ../../chapter7.rst:143
 msgid ""
 "If we’re gluttons for punishment, we might make two more stabs at it "
 "arriving at:"
-msgstr ""
+msgstr "もし私たちが罪深き者なら、更に以下のコードを書いたでしょう。"
 
 #: ../../chapter7.rst:150
 msgid "and"
-msgstr ""
+msgstr "と"
 
 #: ../../chapter7.rst:156
 msgid ""
 "All three sequences do the same thing, but the code seems to be getting "
 "blurrier, not better."
-msgstr ""
+msgstr "3つのシーケンスはすべて同じことを行いますが、コードがぼやけているように見え、良くありません。"
 
 #: ../../chapter7.rst:159
 msgid ""
@@ -225,46 +249,46 @@ msgid ""
 "danger sign: the stack is too crowded. Without having to work out the "
 "alternates, we recognize the problem: once we make two copies of “blk,” "
 "we have four elements on the stack."
-msgstr ""
+msgstr "経験を重ねると、 ``ROT ROT`` の組み合わせを危険の兆候として認識することを学びます。つまり、スタックが混雑しすぎているためです。 代替案を考え出すまでもなく、私たちは問題を認識しています。「blk」のコピーを2つ作成すると、スタックには4つの要素ができます。"
 
 #: ../../chapter7.rst:164
 msgid "At this point, the first resort is usually the return stack:"
-msgstr ""
+msgstr "この時点では、最初の手段は通常リターンスタックです。"
 
 #: ../../chapter7.rst:171
 msgid ""
 "(See “The Stylish Return Stack,” coming up next.) Here we’ve ``DUP``\\ ed"
 " “blk,” saving one copy on the return stack and adding the other copy to "
 "“hi.”"
-msgstr ""
+msgstr "(スタイリッシュ・リターン・スタックについては次節参照) ここでは ``DUP`` を付けて “blk” し、コピーの一つをリターン・スタックに保存し、コピーのもう一つを「hi」に追加します。"
 
 #: ../../chapter7.rst:175
 msgid "Admittedly an improvement. But readable?"
-msgstr ""
+msgstr "これは確かに改善です。 しかし読めますかコレ？"
 
 #: ../../chapter7.rst:177
 msgid ""
 "Next we think, “Maybe we need a named variable.” Of course, we have one "
 "already: ``BLK``. So we try:"
-msgstr ""
+msgstr "次に私たちは、「名前付き変数が必要かもしれません」と思います。もちろん1つは既にあります。それは ``BLK`` です。だから私たちは以下を試みます。"
 
 #: ../../chapter7.rst:184
 msgid ""
 "Now it’s more readable, but it’s still rather long, and redundant too. "
 "``BLK @ +`` appears twice."
-msgstr ""
+msgstr "だいぶ読みやすくなりました。それでもまだ長く冗長です。 ``BLK @ +`` は2回現れています。"
 
 #: ../../chapter7.rst:187
 msgid "“``BLK @ +``”? That sounds familiar. Finally our neurons connect."
-msgstr ""
+msgstr "``BLK @ +`` がおなじみのようですね。最後に私たちの頭脳が閃きます。"
 
 #: ../../chapter7.rst:189
 msgid "We look back at the source for ``+LOAD`` just defined:"
-msgstr ""
+msgstr "私たちは、先ほど定義した ``+LOAD`` のソースを振り返ってみましょう。"
 
 #: ../../chapter7.rst:195
 msgid "This word, ``+LOAD``, should be doing the work. All we have to write is:"
-msgstr ""
+msgstr "このワード、 ``+LOAD`` は仕事を為しているはずです。 私達が書かなければならないのは以下の通りです。"
 
 #: ../../chapter7.rst:201
 msgid ""
@@ -273,43 +297,43 @@ msgid ""
 " cleaner, conceptually simpler, and more readable piece of code. In this "
 "case, the inefficiency is unnoticeable because it only occurs as each "
 "block is loaded."
-msgstr ""
+msgstr "ここではより効率的なバージョンを作成していません。なぜなら、 ``BLK @ +`` の作業はループのすべてのパスで行われるためです。 しかし、私たちは、よりクリーンで、概念的によりシンプルで、より読みやすいコードを作成しました。 この場合、非効率は各ブロックがロードされるときにのみ発生するため、目立ちません。"
 
 #: ../../chapter7.rst:207
 msgid ""
 "Redesigning, or rethinking the problem, was the path we should have taken"
 " as soon as things got ugly."
-msgstr ""
+msgstr "問題を再設計すること、つまり問題を再考することは、状況が悪くなったらすぐにすべき道でした。"
 
 #: ../../chapter7.rst:211
 msgid "Local Variables"
-msgstr ""
+msgstr "ローカル変数"
 
 #: ../../chapter7.rst:213
 msgid ""
 "Most of the time problems can be arranged so that only a few arguments "
 "are needed on the stack at any one time. Occasionally, however, there’s "
 "nothing you can do."
-msgstr ""
+msgstr "ほとんどの場合問題は、スタック上で一度にいくつかの引数しか必要とされないように調整することができます。 しかし時折、あなたができることが何もない事があります。"
 
 #: ../../chapter7.rst:217
 msgid ""
 "Here’s an example of a worst case. Assume you have a word called ``LINE``"
 " which draws a line between any two points, specified as coordinates in "
 "this order:"
-msgstr ""
+msgstr "以下がその最悪の例です。 以下の順番で座標として指定された、任意の2点間に線を引く ``LINE`` というワードがあるとします。"
 
 #: ../../chapter7.rst:225
 msgid ""
 "where :math:`x_1,y_1` represent the :math:`x,y` coordinates for the one "
 "end-point, and :math:`x_2,y_2` represent the opposite end-point."
-msgstr ""
+msgstr "ここで、 :math:`x_1,y_1` は始点の、 :math:`x_2,y_2` は終点の :math:`x,y` 座標をを表します。"
 
 #: ../../chapter7.rst:228
 msgid ""
 "Now you have to write a box-drawing word called ``[BOX]`` which takes "
 "four arguments in this order:"
-msgstr ""
+msgstr "続けて、この順番の4つの引数で、``[BOX]`` と呼ばれる箱を描くワードを書かなければなりません。"
 
 #: ../../chapter7.rst:235
 msgid ""
@@ -318,14 +342,14 @@ msgid ""
 "coordinates. Not only do you have four elements on the stack, they each "
 "have to be referred to more than once as you draw lines from point to "
 "point."
-msgstr ""
+msgstr "ここで ``x1 y1`` はボックスの左上隅の :math:`x,y` 座標を表し、``x2 y2`` は右下隅の座標を表します。 スタック上に4つの要素があるだけでなく、ポイントからポイントへと線を引くときにそれらをそれぞれ複数回参照する必要があります。"
 
 #: ../../chapter7.rst:241
 msgid ""
 "Although we’re using the stack to get the four arguments, the algorithm "
 "for drawing a box doesn’t lend itself to the nature of the stack. If "
 "you’re in a hurry, it would probably be best to take the easy way out:"
-msgstr ""
+msgstr "4つの引数を取得するためにスタックを使用していますが、ボックスを描画するためのアルゴリズムの為には、スタックの特長は役立ちません。 急いでいる場合は、簡単な方法で脱出することをお勧めします。"
 
 #: ../../chapter7.rst:257
 msgid ""
@@ -334,14 +358,14 @@ msgid ""
 " from the stack. Then the four lines are drawn, referencing the "
 "variables. Variables such as these that are used only within a definition"
 " (or in some cases, within a lexicon) are called “local variables.”"
-msgstr ""
+msgstr "私たちがここで行ったことは、各座標に1つずつ、4つの名前付き変数を作成することです。 ``[BOX]`` が最初に行うことは、これらの変数にスタックからの引数を入れることです。 次に、変数を参照して4本の線が描かれます。 これらのような定義内(または場合によっては用語集内)でのみ使用される変数は、「ローカル変数」と呼ばれます。"
 
 #: ../../chapter7.rst:264
 msgid ""
 "I’ve been guilty many times of playing hotshot, trying to do as much as "
 "possible on the stack rather than define a local variable. There are "
 "three reasons to avoid this cockiness."
-msgstr ""
+msgstr "私は、ローカル変数を定義するのではなく、スタック上で可能な限り多くのことを試みることで、名プレイヤーを演じるという罪を何度も犯してきました。 この生意気な行為を避けなければならない理由は以下の3つです。"
 
 #: ../../chapter7.rst:268
 msgid ""
@@ -350,25 +374,25 @@ msgid ""
 "necessary, and the order of two arguments changes on the stack. The "
 "``DUP``\\ s, ``OVER``\\ s and ``ROT``\\ s weren’t really solving the "
 "problem, just jockeying things into position."
-msgstr ""
+msgstr "第一に、そのようにコーディングするのは面倒です。 第二に、結果は読めたものではありません。第三に、設計変更が必要になり、2つの引数の順序がスタック上で変わると、このすべての作業が無駄になります。 ``DUP`` 、 ``OVER`` 、 ``ROT`` は、問題を解決するためのものではなく、モノの場所をあっちこっち組み替えているだけでした。"
 
 #: ../../chapter7.rst:274
 msgid "With this third reason in mind, I recommend the following:"
-msgstr ""
+msgstr "この第三の理由を念頭に置いて、私は次のことをお勧めします。"
 
 #: ../../chapter7.rst:278
 msgid ""
 "Especially in the design phase, keep on the stack only the arguments "
 "you're using immediately. Create local variables for any others. (If "
 "necessary, eliminate the variables during the optimization phase.)"
-msgstr ""
+msgstr "特に設計段階では、すぐに使用する引数だけをスタックに残してください。 他のためにはローカル変数を作成します(必要に応じて、最適化段階で変数を削除してください)。"
 
 #: ../../chapter7.rst:282
 msgid ""
 "Fourth, if the definition is extremely time-critical, those tricky stack "
 "manipulators, (e.g., ``ROT ROT``) can really eat up clock cycles. Direct "
 "access to variables is faster."
-msgstr ""
+msgstr "第四に、定義が非常に時間的にクリティカルな場合、それらの扱いにくいスタック演算子(例えば ``ROT ROT`` )は実際に、クロックサイクルを使い果たす可能性があります。 変数に直接アクセスする方が速いです。"
 
 #: ../../chapter7.rst:286
 msgid ""
@@ -378,7 +402,7 @@ msgid ""
 "through registers. Luckily, the definitions with the messiest stack "
 "arguments are often the ones written in code. Our ``[BOX]`` primitive is "
 "a case in point. ``CMOVE>`` is another."
-msgstr ""
+msgstr "それが「本当に」時間的にクリティカルな場合は、とにかくアセンブラに変換する必要があるかもしれません。 この場合、すべてのデータがレジスタ内または間接的にレジスタを介して参照されるため、スタックに関するすべての問題が発生します。 幸いなことに、最も扱いにくいスタック引数を持つ定義は、多くの場合機械語で書かれたものです。 我々の ``[BOX]`` プリミティブはその一例です。 ``CMOVE>`` がもう一つの例です。"
 
 #: ../../chapter7.rst:293
 msgid ""
@@ -1736,7 +1760,7 @@ msgstr ""
 
 #: ../../chapter7.rst:1477
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
 #: ../../chapter7.rst:1479
 msgid ""
@@ -1754,17 +1778,17 @@ msgstr ""
 
 #: ../../chapter7.rst:1489
 msgid "REFERNCES"
-msgstr ""
+msgstr "参考文献"
 
 #: ../../chapter7.rst:1491
 msgid ""
 "Michael Ham, \"Why Novices Use So Many Variables,\"    **Forth "
 "Dimensions** , vol. 5, no. 4, November/December 1983."
-msgstr ""
+msgstr "Michael Ham, \"Why Novices Use So Many Variables,\" **Forth Dimensions** , vol. 5, no. 4, November/December 1983."
 
 #: ../../chapter7.rst:1492
 msgid ""
 "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal "
 "of Forth Application and Research** ,   1, 1 (September 1983), 17."
-msgstr ""
+msgstr "Daniel Slater, \"A State Space Approach to Robotics,\"  **The Journal of Forth Application and Research** ,   1, 1 (September 1983), 17."
 

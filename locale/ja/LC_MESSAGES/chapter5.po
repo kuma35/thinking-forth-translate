@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-18 01:26+0900\n"
-"PO-Revision-Date: 2019-07-18 19:40+0900\n"
+"POT-Creation-Date: 2019-07-20 19:46+0900\n"
+"PO-Revision-Date: 2019-07-20 19:46+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -38,7 +38,7 @@ msgstr "この章では、Forthのコーディング規約について詳しく�
 
 #: ../../chapter5.rst:15
 msgid "listing organization"
-msgstr "リストの組織化"
+msgstr "リストの整理"
 
 #: ../../chapter5.rst:17
 msgid "screen layout, spacing and indentation"
@@ -73,7 +73,7 @@ msgstr "私は特に、この章で説明されている規約の多くを提案
 
 #: ../../chapter5.rst:39
 msgid "Listing Organization"
-msgstr "リストの組織化"
+msgstr "リストの整理"
 
 #: ../../chapter5.rst:41
 msgid ""
@@ -83,8 +83,8 @@ msgid ""
 "makes comprehension more difficult, and makes finding information later "
 "on nearly impossible."
 msgstr ""
-"よく組織化されている本には、明確に定義された章、明確に定義された節、および一目で構成を見るのに役立つ目次があります。 "
-"よく組織化されている本は読みやすいです。 本がよく組織化されていないと、理解が難しくなり、後で情報を見つけることがほぼ不可能になります。"
+"よく整理されている本には、明確に定義された章、明確に定義された節、および一目で構成を見るのに役立つ目次があります。 "
+"よく整理されている本は読みやすいです。 本がよく組織化されていないと、理解が難しくなり、後で情報を見つけることがほぼ不可能になります。"
 
 #: ../../chapter5.rst:52
 msgid "I still don't see how these programming conventions enhance readability."
@@ -94,7 +94,7 @@ msgstr "私はまだこれらのプログラミング規約がどのように読
 msgid ""
 "The necessity for good organization applies to an application listing as "
 "well. Good organization has three aspects:"
-msgstr "優れた組織化の必要性は、アプリケーションリストにも当てはまります。 良い組織化には3つの側面があります。"
+msgstr "優れた整理の必要性は、アプリケーションリストにも当てはまります。 良い整理には3つの側面があります。"
 
 #: ../../chapter5.rst:57 ../../chapter5.rst:64
 msgid "Decomposition"
@@ -115,7 +115,7 @@ msgid ""
 "should be sequenced in “uses” order. Lexicons being *used* should precede"
 " the lexicons which *use* them."
 msgstr ""
-"すでに見たように、リストの組織化はアプリケーションの用語集への分解に従うべきです。 一般に、これらの用語集は「使用」順に並べられるべきです。 "
+"すでに見たように、リストの整理はアプリケーションの用語集への分解に従うべきです。 一般に、これらの用語集は「使用」順に並べられるべきです。 "
 "使用されている用語集は、それらを使用している用語集の前に置くべきです。"
 
 #: ../../chapter5.rst:71
@@ -126,7 +126,7 @@ msgid ""
 "screens (i.e., not load them) and still have a self-sufficient, running "
 "application, working properly except for the lack of the more advanced "
 "features."
-msgstr "大規模では、リスト内の要素は複雑さの度合いによって組織されるべきであり、最も複雑なバリエーションはその終わりに現れます。最後の画面を表示せず（つまりロードしないで）、より高度な機能がないことを除けば適切に動作する自給自足のアプリケーションを使用できるようにすることをお勧めします。"
+msgstr "大規模では、リスト内の要素は複雑さの度合いによって整理されるべきであり、最も複雑なバリエーションはその終わりに現れます。最後の画面を表示せず（つまりロードしないで）、より高度な機能がないことを除けば適切に動作する自給自足のアプリケーションを使用できるようにすることをお勧めします。"
 
 #: ../../chapter5.rst:78
 msgid ""
@@ -402,7 +402,9 @@ msgstr "そして"
 msgid ""
 "My own way, which I submit as a more useful factoring, requires a single "
 "word, ``FH`` (see :doc:`Appendix C<appendixc>` for its definition)."
-msgstr "私流の、より有用なファクタリング(要素分解)として提示する方法は、単一のワード ``FH`` を必要とします(その定義については :doc:`付録C<appendixc>` 参照)。"
+msgstr ""
+"私流の、より有用なファクタリング(要素分解)として提示する方法は、単一のワード ``FH`` を必要とします(その定義については "
+":doc:`付録C<appendixc>` 参照)。"
 
 #: ../../chapter5.rst:271
 msgid "The phrase"
@@ -475,7 +477,9 @@ msgstr "Screen #102"
 msgid ""
 "**Charles Moore** (no relation to Moore Products Co.) places less "
 "importance on the well-organized hierarchical listing than I do. Moore:"
-msgstr "**チャールズ・ムーア** (ムーアプロダクツ社とは無関係です) は、私と違って、組織化された階層型リストをあまり重要視しません。ムーアは言います。"
+msgstr ""
+"**チャールズ・ムーア** (ムーアプロダクツ社とは無関係です) "
+"は、私と違って、yよく整理された階層型リストをあまり重要視しません。ムーアは言います。"
 
 #: ../../chapter5.rst:348
 msgid ""
@@ -628,7 +632,10 @@ msgid ""
 "factoring. Definitions become longer without the discipline imposed by "
 "the 1K block boundaries. The tendency becomes to write a 20K file, or "
 "worse: a 20K definition."
-msgstr "「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪いファクタリング(要素分解)を可能にします。 1Kブロック境界によって課される規律がないと、定義は長くなります。 20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
+msgstr ""
+"「長さ制限のない」ファイルは、ずさんな、無秩序な思考と悪いファクタリング(要素分解)を可能にします。 "
+"1Kブロック境界によって課される規律がないと、定義は長くなります。 "
+"20Kのファイルを書く、あるいはもっと悪いことに、20Kの定義を書くようになります。"
 
 #: ../../chapter5.rst:431
 msgid ""
@@ -677,7 +684,7 @@ msgid ""
 "arrangement for what goes where on the disk. These standards must be set "
 "by each shop, or department, or individual programmer, depending on the "
 "nature of the work."
-msgstr "よく組織化されたリストの最後の側面は、ディスクの何処に何を配置するかの標準化です。会社ごと・部門ごと・個々のプログラマーごと・作品の性質ごとに標準を設定する必要があります。"
+msgstr "よく整理されたリストの最後の側面は、ディスクの何処に何を配置するかの標準化です。会社ごと・部門ごと・個々のプログラマーごと・作品の性質ごとに標準を設定する必要があります。"
 
 #: ../../chapter5.rst:473
 msgid "Example of a disk-partitioning scheme within one department."
@@ -899,7 +906,7 @@ msgid ""
 " a list produced by ``INDEX`` in which the comment lines for the "
 "continuing screens are indented."
 msgstr ""
-"アプリケーションの索引でスクリーンの組織化に関する詳細を明確にする1つの方法は、用語集の継続するスクリーン内のコメント行を3つのスペースでインデントすることです。"
+"アプリケーションの索引でスクリーンの整理に関する詳細を明確にする1つの方法は、用語集の継続するスクリーン内のコメント行を3つのスペースでインデントすることです。"
 " :numref:`fig5-5` は ``INDEX`` "
 "によって生成されたリストの一部を示しており、そこでは継続しているスクリーンのコメント行がインデントされています。"
 
@@ -1011,7 +1018,11 @@ msgid ""
 "another—see “Compile-Time Factoring” in :doc:`Chapter Six<chapter6>`. In "
 "these cases, it’s best to save the value of ``BASE`` on the return stack "
 "like this:"
-msgstr "マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( :doc:`第6章<chapter6>` の「コンパイル時のファクタリング(要素分解)」を参照)。 このような場合、以下のようにリターンスタックに ``BASE`` の値を保存するのが最善です。"
+msgstr ""
+"マルチスクリーンアセンブラの定義で ``BEGIN`` や ``IF`` "
+"によって返される値、ある定義語から別の定義語に渡されるベースアドレスなど、引数がスクリーンからスクリーンに渡されることがあります( "
+":doc:`第6章<chapter6>` の「コンパイル時のファクタリング(要素分解)」を参照)。 このような場合、以下のようにリターンスタックに"
+" ``BASE`` の値を保存するのが最善です。"
 
 #: ../../chapter5.rst:733
 msgid ""
@@ -2661,7 +2672,10 @@ msgid ""
 "try to discuss the program with other people. If the name is symbolic, "
 "invent a pronunciation (e.g., ``>R`` is called “to-r”; ``R>`` is called "
 "“r-from”)."
-msgstr "あなたの名前は発音できるはずです。 そうでなければ、他の人とプログラムについて話し合おうとしたときに、後悔するかもしれません。 名前がシンボリックである場合は、発音を考案してください（たとえば、 ``>R`` は「to-r」と呼ばれ、 ``R>`` は「r-from」と呼ばれます）。"
+msgstr ""
+"あなたの名前は発音できるはずです。 そうでなければ、他の人とプログラムについて話し合おうとしたときに、後悔するかもしれません。 "
+"名前がシンボリックである場合は、発音を考案してください（たとえば、 ``>R`` は「to-r」と呼ばれ、 ``R>`` "
+"は「r-from」と呼ばれます）。"
 
 #: ../../chapter5.rst:1828
 msgid "Favor short words."
@@ -2749,7 +2763,10 @@ msgid ""
 "This bundling of names and numbers may be an indication of bad factoring."
 " The crime is similar to hyphenation, except that what should be factored"
 " out is a number, not a word. A better factoring of the above would be"
-msgstr "名前と数値をこのようにまとめることは、ファクタリング(要素分解)が悪いことを示している可能性があります。 ハイフン犯罪に似ていますが、括り出す必要があるのは単語ではなく数値である点が異なります。 上記のより良いファクタリング(要素分解)は以下のようになるでしょう。"
+msgstr ""
+"名前と数値をこのようにまとめることは、ファクタリング(要素分解)が悪いことを示している可能性があります。 "
+"ハイフン犯罪に似ていますが、括り出す必要があるのは単語ではなく数値である点が異なります。 "
+"上記のより良いファクタリング(要素分解)は以下のようになるでしょう。"
 
 #: ../../chapter5.rst:1889
 msgid "In this case, the three words were reduced to one."
@@ -2866,14 +2883,18 @@ msgid ""
 "By the way, don’t expect your Forth system to necessarily conform to the "
 "above conventions. The conventions are meant to be used in new "
 "applications."
-msgstr "ただし、あなたのForthシステムが必ずしも上記の規約に準拠することを期待しないでください。 規約は新しいアプリケーションで使用されることを意図しています。"
+msgstr ""
+"ただし、あなたのForthシステムが必ずしも上記の規約に準拠することを期待しないでください。 "
+"規約は新しいアプリケーションで使用されることを意図しています。"
 
 #: ../../chapter5.rst:1973
 msgid ""
 "Forth was created and refined over many years by people who used it as a "
 "means to an end. At that time, it was neither reasonable nor possible to "
 "impose naming standards on a tool that was still growing and evolving."
-msgstr "Forthは何年にもわたってそれを最後の手段として使用した人々によって作成され洗練されました。 その当時、まだ成長し進化しているツールに命名基準を課すことは合理的でも可能でもありませんでした。"
+msgstr ""
+"Forthは何年にもわたってそれを最後の手段として使用した人々によって作成され洗練されました。 "
+"その当時、まだ成長し進化しているツールに命名基準を課すことは合理的でも可能でもありませんでした。"
 
 #: ../../chapter5.rst:1977
 msgid "Had Forth been designed by committee, we would not love it so."
@@ -2911,7 +2932,9 @@ msgid ""
 "A pair of words that can make dealing with booleans more readable are "
 "``TRUE`` and ``FALSE``. With these additions you can write phrases such "
 "as"
-msgstr "ブール値を扱いやすくするためのワードのペアは、 ``TRUE`` と ``FALSE`` です。 これらの追加を使うと、以下のようなフレーズを書くことができます。"
+msgstr ""
+"ブール値を扱いやすくするためのワードのペアは、 ``TRUE`` と ``FALSE`` です。 "
+"これらの追加を使うと、以下のようなフレーズを書くことができます。"
 
 #: ../../chapter5.rst:2012
 msgid "to set a flag or"
@@ -2925,7 +2948,9 @@ msgstr "のようにフラグをクリアします。"
 msgid ""
 "(I once used ``T`` and ``F``, but the words are needed so rarely I now "
 "heed the injunction against abbreviations.)"
-msgstr "(私はかつて ``T`` と ``F`` を使ったことがありますが、そのワードが必要とされることはめったにないので、今では私は略語禁止規則に気をつける必要はありません。)"
+msgstr ""
+"(私はかつて ``T`` と ``F`` "
+"を使ったことがありますが、そのワードが必要とされることはめったにないので、今では私は略語禁止規則に気をつける必要はありません。)"
 
 #: ../../chapter5.rst:2024
 msgid ""
@@ -2942,7 +2967,9 @@ msgid ""
 "Other names for these definitions include ``SET`` and ``RESET``, although"
 " ``SET`` and ``RESET`` most commonly use bit masks to manipulate "
 "individual bits."
-msgstr "これらの定義の他の名前には、 ``SET`` と ``RESET`` がありますが、 ``SET`` と ``RESET`` は個々のビットを操作するのに通常ビットマスクを使います。"
+msgstr ""
+"これらの定義の他の名前には、 ``SET`` と ``RESET`` がありますが、 ``SET`` と ``RESET`` "
+"は個々のビットを操作するのに通常ビットマスクを使います。"
 
 #: ../../chapter5.rst:2047
 msgid ""
@@ -2956,14 +2983,18 @@ msgid ""
 "range. ``WITHIN`` returns true if “n” is *greater-than or equal-to* “lo” "
 "and *less-than* “hi.” This use of the non-inclusive upper limit parallels"
 " the syntax of ``DO``  ``LOOP`` s."
-msgstr "ここで、「n」はテストする値、「lo」と「hi」は範囲を表します。「n」が「lo」以上「hi」未満の場合、 ``WITHIN`` はtrueを返します。この包括的な上限の使用は、 ``DO LOOP`` の構文と同等です。"
+msgstr ""
+"ここで、「n」はテストする値、「lo」と「hi」は範囲を表します。「n」が「lo」以上「hi」未満の場合、 ``WITHIN`` "
+"はtrueを返します。この包括的な上限の使用は、 ``DO LOOP`` の構文と同等です。"
 
 #: ../../chapter5.rst:2060
 msgid ""
 "Moore recommends the word ``UNDER+``. It’s useful for adding a value to "
 "the number just under the top stack item, instead of to the top stack "
 "item. It could be implemented in high level as:"
-msgstr "ムーアは、 ``UNDER+`` というワードを推奨しています。 一番上のスタック項目の代わりに一番上の項目の直下にある数値に値を追加するのに便利です。 それは以下のように高レベルで実装されるかもしれません。"
+msgstr ""
+"ムーアは、 ``UNDER+`` というワードを推奨しています。 "
+"一番上のスタック項目の代わりに一番上の項目の直下にある数値に値を追加するのに便利です。 それは以下のように高レベルで実装されるかもしれません。"
 
 #: ../../chapter5.rst:2070
 msgid "Summary"
@@ -2976,7 +3007,10 @@ msgid ""
 "policy of making our code as self-documenting as possible. Techniques "
 "include listing organization, spacing and indenting, commenting, name "
 "choices, and special words that enhance clarity."
-msgstr "保守性には読みやすさが必要です。 この章では、ソースリストを読みやすくするためのさまざまな方法を列挙しました。 私たちは自分たちのコードをできる限り自己文書化することを方針としています。 その技法には、リスト組織化、空白と字下げ、コメント、名前の選択、および明確さを高める特別なワードが含まれます。"
+msgstr ""
+"保守性には読みやすさが必要です。 この章では、ソースリストを読みやすくするためのさまざまな方法を列挙しました。 "
+"私たちは自分たちのコードをできる限り自己文書化することを方針としています。 "
+"その技法には、リスト整理、空白と字下げ、コメント、名前の選択、および明確さを高める特別なワードが含まれます。"
 
 #: ../../chapter5.rst:2078
 msgid ""
@@ -2984,7 +3018,9 @@ msgid ""
 "documentation apart from the listing itself. We won’t discuss auxiliary "
 "documentation further in this volume, but it remains an integral part of "
 "the software development process."
-msgstr "ここでは、リスト自体以外のすべてのドキュメントを含む、補助的なドキュメントについて簡単に説明しました。 このドキュメントでは、補足資料についてはこれ以上説明しませんが、それでもこれらはソフトウェア開発プロセスに不可欠な部分です。"
+msgstr ""
+"ここでは、リスト自体以外のすべてのドキュメントを含む、補助的なドキュメントについて簡単に説明しました。 "
+"このドキュメントでは、補足資料についてはこれ以上説明しませんが、それでもこれらはソフトウェア開発プロセスに不可欠な部分です。"
 
 #: ../../chapter5.rst:2084
 msgid "REFERNCES"
@@ -3002,9 +3038,7 @@ msgstr ""
 msgid ""
 "Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  "
 "**1981 FORML Proceedings,**  p. 363."
-msgstr ""
-"Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  "
-"**1981 FORML Proceedings,**  p. 363."
+msgstr "Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  **1981 FORML Proceedings,**  p. 363."
 
 #: ../../chapter5.rst:2088
 msgid ""

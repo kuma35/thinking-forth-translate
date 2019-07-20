@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-20 10:36+0900\n"
-"PO-Revision-Date: 2019-07-20 12:47+0900\n"
+"PO-Revision-Date: 2019-07-21 02:32+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -264,9 +264,7 @@ msgid ""
 "This fragment normally emits an ASCII character, but if the character is "
 "a control code, it emits a dot. Either way, an ``EMIT`` is performed. "
 "Factor ``EMIT`` out of the conditional structure, like this:"
-msgstr ""
-"この断片は通常ASCII文字を生成しますが、その文字が制御コードの場合はドットを生成します。 いずれにせよ、 ``EMIT`` が実行されます。 "
-"次のようにして条件付き構造から ``EMIT`` を取り除きます。"
+msgstr "この断片は通常ASCII文字を生成しますが、その文字が制御コードの場合はドットを生成します。 いずれにせよ、 ``EMIT`` が実行されます。 次のようにして条件付き構造から ``EMIT`` を括り出します。"
 
 #: ../../chapter6.rst:199
 msgid ""
@@ -335,10 +333,7 @@ msgid ""
 "multiple exit loops  (the ``BEGIN``  ``WHILE``  ``WHILE``  ``WHILE`` "
 "``...``  ``REPEAT`` construct). We\\’ll also discuss these topics in "
 ":doc:`Chapter Eight<chapter8>`."
-msgstr ""
-"括り出す制御構造のより良性の例にはcaseステートメントがあります。それはネストされた ``IF…ELSE…THEN`` "
-"や、複数の出口を持つループ(``BEGIN…WHILE…WHILE…WHILE…REPEAT`` 構造)を取り除きます。これらのトピックについては"
-" :doc:`第８章<chapter8>` でも議論します。"
+msgstr "括り出す制御構造のより良い例にはcaseステートメントがあります。それはネストされた ``IF…ELSE…THEN`` や、複数の出口を持つループ(``BEGIN…WHILE…WHILE…WHILE…REPEAT`` 構造)を取り除きます。これらの話題については :doc:`第８章<chapter8>` でも議論します。"
 
 #: ../../chapter6.rst:258
 msgid "Factoring Out Names"
@@ -448,9 +443,7 @@ msgid ""
 "The greatest strength of defining words, however, arises when a series of"
 " definitions share the same *compile-time* behavior. This topic is the "
 "subject of a later section, “Compile-Time Factoring.”"
-msgstr ""
-"しかし、定義ワードの最大の強みは、一連の定義が同じコンパイル時の動作を共有するときに生じます。 "
-"このトピックは、後節の「コンパイル時ファクタリング(要素分解)」の主題です。"
+msgstr "しかし、定義ワードの最大の強みは、一連の定義が同じコンパイル時の動作を共有するときに生じます。 この話題は、後節の「コンパイル時ファクタリング(要素分解)」の主題です。"
 
 #: ../../chapter6.rst:378
 msgid "Factoring Criteria"
@@ -491,7 +484,7 @@ msgstr "定義を短く保って下さい。"
 
 #: ../../chapter6.rst:406
 msgid "We asked **Moore**, \"How long should a Forth definition be?\""
-msgstr "私たちは **ムーア** に、「Forthの定義はどれくらいの長さであるべきですか？」と尋ねました。"
+msgstr "私たちは **ムーア** に、「Forthの定義はどれくらいの長さであるべきですか？」と尋ねました。ムーアは言います。"
 
 # ここは「言葉」か？
 #: ../../chapter6.rst:399
@@ -605,10 +598,7 @@ msgid ""
 " Any time you see a doubly-nested ``DO``  ``LOOP``, that's a sign that "
 "something's wrong because it will be hard to debug. Almost always take "
 "the inner ``DO``  ``LOOP`` and make a word."
-msgstr ""
-"あなたがバグを導入したかもしれないと感じることは除外化する理由の一つです。 二重にネストされた ``DO…LOOP`` "
-"を見たときはいつでも、それはデバッグが難しいので何かが間違っているというサインです。 ほとんどの場合、内側の ``DO…LOOP`` "
-"を取り出しワードを作ります。"
+msgstr "あなたがファクタリング(要素分解)する理由の一つは、バグを導入したかもしれないと感じた時です。二重にネストされた ``DO…LOOP`` を見たときはいつでも、それはデバッグが難しいので何かが間違っているというサインです。 ほとんどの場合、内側の ``DO…LOOP`` を取り出しワードを作ります。"
 
 #: ../../chapter6.rst:461
 msgid ""
@@ -621,7 +611,7 @@ msgstr ""
 
 #: ../../chapter6.rst:465
 msgid "Here’s another facet of the same principle:"
-msgstr "これは同じ原則の別の側面です。"
+msgstr "以下は同じ原則の別の側面です。"
 
 #: ../../chapter6.rst:469
 msgid "Factor at the point where a comment seems necessary"
