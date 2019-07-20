@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-18 19:06+0900\n"
-"PO-Revision-Date: 2019-07-19 07:34+0900\n"
+"POT-Creation-Date: 2019-07-20 10:36+0900\n"
+"PO-Revision-Date: 2019-07-20 12:47+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -34,7 +34,9 @@ msgid ""
 "Decomposition and factoring are chips off the same block. Both involve "
 "dividing and organizing. Decomposition occurs during preliminary design; "
 "factoring occurs during detailed design and implementation."
-msgstr "分解とファクタリング(要素分解)は、同じブロックから切り出されたものです。 どちらも分割と整理が関係しています。 分解は予備設計中に発生します。 ファクタリング(要素分解)は詳細な設計と実装の間に行われます。"
+msgstr ""
+"分解とファクタリング(要素分解)は、同じブロックから切り出されたものです。 どちらも分割と整理が関係しています。 分解は予備設計中に発生します。 "
+"ファクタリング(要素分解)は詳細な設計と実装の間に行われます。"
 
 #: ../../chapter6.rst:13
 msgid ""
@@ -49,21 +51,28 @@ msgid ""
 " To make a fragment useful, you often must separate reusable parts from "
 "non-reusable parts. The reusable parts become new definitions. The non-"
 "reusable parts become arguments or parameters to the definitions."
-msgstr "ファクタリング(要素分解)とは何でしょうか？ ファクタリング(要素分解)は、コードを有用な断片に整理することを意味します。 断片を有用とするには、再利用可能な部分と再利用不可能な部分を区別しなければならないことがよくあります。 再利用可能な部分は新しい定義になります。 再利用できない部分は、定義に対する引数またはパラメータになります。"
+msgstr ""
+"ファクタリング(要素分解)とは何でしょうか？ ファクタリング(要素分解)は、コードを有用な断片に整理することを意味します。 "
+"断片を有用とするには、再利用可能な部分と再利用不可能な部分を区別しなければならないことがよくあります。 再利用可能な部分は新しい定義になります。 "
+"再利用できない部分は、定義に対する引数またはパラメータになります。"
 
 #: ../../chapter6.rst:23
 msgid ""
 "Making this separation is usually referred to as “factoring out.” The "
 "first part of this chapter will discuss various “factoring-out” "
 "techniques."
-msgstr "この分離を行うことは、通常「括り出し(factoring out)」と呼ばれます。この章の最初の部分では、さまざまな「括り出し」手法について説明します。"
+msgstr ""
+"この分離を行うことは、通常「括り出し(factoring "
+"out)」と呼ばれます。この章の最初の部分では、さまざまな「括り出し」手法について説明します。"
 
 #: ../../chapter6.rst:27
 msgid ""
 "Deciding how much should go into, or stay out of, a definition is another"
 " aspect of factoring. The second section will outline the criteria for "
 "useful factoring."
-msgstr "どの程度まで定義に入れるか、または定義から外れるかを決定することは、要素化のもう1つの側面です。 第2節では、有用なファクタリング(要素分解)の基準について概説します。"
+msgstr ""
+"どの程度まで定義に入れるか、または定義から外れるかを決定することは、要素化のもう1つの側面です。 "
+"第2節では、有用なファクタリング(要素分解)の基準について概説します。"
 
 #: ../../chapter6.rst:32
 msgid "Factoring Techniques"
@@ -75,7 +84,9 @@ msgid ""
 "the system, try to identify and isolate the useful subfunction. The "
 "remainder of the module might be incorporated in its original caller "
 "(from \"**Structured Design**\" [stevens74-6]_ )."
-msgstr "システム内で有用な箇所が２回以上現れる場合は、有用なサブ機能を識別して切り分けるようにしてください。モジュールの残りの部分は、元の呼び出し元に組み込まれる可能性があります( **Structured Design** [stevens74-6]_ )。"
+msgstr ""
+"システム内で有用な箇所が２回以上現れる場合は、有用なサブ機能を識別して切り分けるようにしてください。モジュールの残りの部分は、元の呼び出し元に組み込まれる可能性があります("
+" **Structured Design** [stevens74-6]_ )。"
 
 #: ../../chapter6.rst:39
 msgid ""
@@ -163,7 +174,9 @@ msgstr "8 \\*"
 msgid ""
 "How can you factor out the “8 \\*” operation? By including “\\*” in the "
 "factoring and passing it a one or eight:"
-msgstr "どうやって ``8 *`` という操作を括り出せますか？ 以下のように、要素化に ``*`` を含め、それに1つまたは8つを渡すことによって可能です。"
+msgstr ""
+"どうやって ``8 *`` という操作を括り出せますか？ 以下のように、要素化に ``*`` "
+"を含め、それに1つまたは8つを渡すことによって可能です。"
 
 #: ../../chapter6.rst:106
 msgid "1 NEW"
@@ -262,7 +275,9 @@ msgid ""
 "the half-fragments. In this case, use stack arguments, variables, or even"
 " vectoring. We’ll see how vectoring can be used in a section of "
 ":doc:`Chapter Seven<chapter7>` called “Using DOER/MAKE.”"
-msgstr "最も厄介な状況は、2つの定義の違いが構造内の機能である場合、断片の片割れを括り出すことは不可能です。この場合は、スタック引数、変数、更にはベクトル化を使って下さい。 :doc:`第7章<chapter7>` の「DOER/MAKEの使用」の章で、ベクトル化がどのように使われるのかを見ていきましょう。"
+msgstr ""
+"最も厄介な状況は、2つの定義の違いが構造内の機能である場合、断片の片割れを括り出すことは不可能です。この場合は、スタック引数、変数、更にはベクトル化を使って下さい。"
+" :doc:`第7章<chapter7>` の「DOER/MAKEの使用」の章で、ベクトル化がどのように使われるのかを見ていきましょう。"
 
 #: ../../chapter6.rst:205
 msgid "Here’s a reminder about factoring code from out of a ``DO``  ``LOOP``:"
@@ -320,7 +335,10 @@ msgid ""
 "multiple exit loops  (the ``BEGIN``  ``WHILE``  ``WHILE``  ``WHILE`` "
 "``...``  ``REPEAT`` construct). We\\’ll also discuss these topics in "
 ":doc:`Chapter Eight<chapter8>`."
-msgstr "括り出す制御構造のより良性の例にはcaseステートメントがあります。それはネストされた ``IF…ELSE…THEN`` や、複数の出口を持つループ(``BEGIN…WHILE…WHILE…WHILE…REPEAT`` 構造)を取り除きます。これらのトピックについては :doc:`第８章<chapter8>` でも議論します。"
+msgstr ""
+"括り出す制御構造のより良性の例にはcaseステートメントがあります。それはネストされた ``IF…ELSE…THEN`` "
+"や、複数の出口を持つループ(``BEGIN…WHILE…WHILE…WHILE…REPEAT`` 構造)を取り除きます。これらのトピックについては"
+" :doc:`第８章<chapter8>` でも議論します。"
 
 #: ../../chapter6.rst:258
 msgid "Factoring Out Names"
@@ -332,7 +350,9 @@ msgid ""
 "quite, the same. Examine the following terrible example of code, which is"
 " meant to initialize three variables associated with each of eight "
 "channels:"
-msgstr "名前がほとんど同じだが、まったく同じではないと思われる場合は、名前を括り出すこともできます。 以下のひどいコード例を見てください。これは、8つのチャネルそれぞれに関連付けられた3つの変数を初期化することを意味しています。"
+msgstr ""
+"名前がほとんど同じだが、まったく同じではないと思われる場合は、名前を括り出すこともできます。 "
+"以下のひどいコード例を見てください。これは、8つのチャネルそれぞれに関連付けられた3つの変数を初期化することを意味しています。"
 
 #: ../../chapter6.rst:292
 msgid ""
@@ -430,7 +450,7 @@ msgid ""
 "subject of a later section, “Compile-Time Factoring.”"
 msgstr ""
 "しかし、定義ワードの最大の強みは、一連の定義が同じコンパイル時の動作を共有するときに生じます。 "
-"このトピックは、後節の「コンパイル時の除外」の主題です。"
+"このトピックは、後節の「コンパイル時ファクタリング(要素分解)」の主題です。"
 
 #: ../../chapter6.rst:378
 msgid "Factoring Criteria"
@@ -440,7 +460,9 @@ msgstr "ファクタリング(要素分解)基準"
 msgid ""
 "Armed with an understanding of factoring techniques, let’s now discuss "
 "several of the criteria for factoring Forth definitions. They include:"
-msgstr "ファクタリング(要素分解)手法について理論武装したので、今度はForth定義をファクタリング(要素分解)するためのいくつかの基準について説明しましょう。 以下の内容が含まれます。"
+msgstr ""
+"ファクタリング(要素分解)手法について理論武装したので、今度はForth定義をファクタリング(要素分解)するためのいくつかの基準について説明しましょう。"
+" 以下の内容が含まれます。"
 
 #: ../../chapter6.rst:384
 msgid "Limiting the size of definitions"
@@ -523,7 +545,9 @@ msgid ""
 "definitions is the knowledge that headers take space in the dictionary. "
 "The coarser the factoring, the fewer the names, and the less memory that "
 "will be wasted."
-msgstr "多くのForthプログラマーが過度に長い定義を書きたくなるのは、ヘッダが辞書内のスペースを取るという知識です。 ファクタリング(要素分解)が粗いほど、名前が少なくなり、無駄になるメモリが少なくなります。"
+msgstr ""
+"多くのForthプログラマーが過度に長い定義を書きたくなるのは、ヘッダが辞書内のスペースを取るという知識です。 "
+"ファクタリング(要素分解)が粗いほど、名前が少なくなり、無駄になるメモリが少なくなります。"
 
 #: ../../chapter6.rst:429
 msgid ""
@@ -571,7 +595,7 @@ msgid ""
 msgstr "「オレはこれを征服してやる！」なんて態度で挑む必要はありません。Forthコードは不快で複雑に感じることはありません。分解せよ！"
 
 #: ../../chapter6.rst:463 ../../chapter6.rst:513 ../../chapter6.rst:593
-#: ../../chapter6.rst:1008 ../../chapter6.rst:1375
+#: ../../chapter6.rst:1008 ../../chapter6.rst:1377
 msgid "**Moore**:"
 msgstr "**ムーア** は言います。"
 
@@ -619,7 +643,9 @@ msgid ""
 "meantime, several lines of code use the balance for purposes of their "
 "own. Since it’s difficult to see that the balance is still on the stack "
 "when ``SHOW`` executes, the programmer has interjected a stack picture."
-msgstr "残高を計算することで始まり、それを表示することで終わります。 それまでの間、数行のコードでは、独自の目的で残高を使用しています。 ``SHOW`` を実行するときに残高がまだスタック上にあることを確認するのは困難なので、プログラマはスタック状況を差し挟みました。"
+msgstr ""
+"残高を計算することで始まり、それを表示することで終わります。 それまでの間、数行のコードでは、独自の目的で残高を使用しています。 ``SHOW``"
+" を実行するときに残高がまだスタック上にあることを確認するのは困難なので、プログラマはスタック状況を差し挟みました。"
 
 #: ../../chapter6.rst:486
 msgid "This solution is generally a sign of bad factoring. Better to write:"
@@ -653,14 +679,18 @@ msgid ""
 "Many times when a program has gotten too big I will go back through it "
 "looking for phrases that strike my eye as candidates for factoring. The "
 "computer can't do this; there are too many variables."
-msgstr "プログラムが大きくなりすぎると、私はファクタリング(要素分解)のための候補として、目に止まるフレーズを探して何度も右往左往します。コンピュータはこれを行うことができません。 変数が多すぎます。"
+msgstr ""
+"プログラムが大きくなりすぎると、私はファクタリング(要素分解)のための候補として、目に止まるフレーズを探して何度も右往左往します。コンピュータはこれを行うことができません。"
+" 変数が多すぎます。"
 
 #: ../../chapter6.rst:515
 msgid ""
 "In looking over your work, you often find identical phrases or short "
 "passages duplicated several times. In writing an editor I found this "
 "phrase repeated several times:"
-msgstr "自分の作品を見てみると、同じフレーズや短い文章が何度か重複しているのがよくわかります。 エディタを書く際に、以下のフレーズが数回繰り返されているのがわかりました。"
+msgstr ""
+"自分の作品を見てみると、同じフレーズや短い文章が何度か重複しているのがよくわかります。 "
+"エディタを書く際に、以下のフレーズが数回繰り返されているのがわかりました。"
 
 #: ../../chapter6.rst:523
 msgid ""
@@ -678,7 +708,9 @@ msgstr "次のように、コーディング方法が異なるが機能的に同
 msgid ""
 "The ``1-`` appears to make this phrase different from the one defined as "
 "``AT.`` But in fact, it can be written"
-msgstr "``1-`` は、このフレーズを ``AT`` の定義とは異なるもののように見せていますが、実際には以下のように ``AT`` を使って書くことができます。"
+msgstr ""
+"``1-`` は、このフレーズを ``AT`` の定義とは異なるもののように見せていますが、実際には以下のように ``AT`` "
+"を使って書くことができます。"
 
 #: ../../chapter6.rst:540
 msgid "On the other hand:"
@@ -716,7 +748,12 @@ msgid ""
 "of ``LETTER`` to ``LETTER C@``. But I should have done that in the first "
 "place, separating the computation of the letter’s address from the "
 "operation to be performed on the address."
-msgstr "最後の ``C@`` のためではないのであれば、既存の ``LETTER`` を使用することができました。 新しいセクションでフレーズの大部分を複製するのではなく、私は ``LETTER`` をより細かい粒度にリファクタリングして ``C@`` を取り出すことを選びました。 そのときの用法は ``LETTER C@`` か ``LETTER C!`` のどちらかでした。 この変更により、リスト全体を検索して、 ``LETTER`` のすべてのインスタンスを ``LETTER C@`` に変更する必要がありました。 しかし、私は最初に文字の住所の計算と住所で実行される操作とを区別して、それを行うべきでした。"
+msgstr ""
+"最後の ``C@`` のためではないのであれば、既存の ``LETTER`` を使用することができました。 "
+"新しいセクションでフレーズの大部分を複製するのではなく、私は ``LETTER`` をより細かい粒度にリファクタリングして ``C@`` "
+"を取り出すことを選びました。 そのときの用法は ``LETTER C@`` か ``LETTER C!`` のどちらかでした。 "
+"この変更により、リスト全体を検索して、 ``LETTER`` のすべてのインスタンスを ``LETTER C@`` に変更する必要がありました。 "
+"しかし、私は最初に文字の住所の計算と住所で実行される操作とを区別して、それを行うべきでした。"
 
 #: ../../chapter6.rst:573
 msgid "Similar to our injunction against repetition of code:"
@@ -733,7 +770,9 @@ msgid ""
 "specific application. The part of the pattern you are copying perhaps can"
 " be factored out as an independent definition that can be used in all the"
 " similar cases."
-msgstr "プログラム内の既存のコードでワードのパターンをコピーするように参照している場合は、一般的なアイデアと特定のアプリケーションが混在している可能性があります(訳注:それは、詳細に分析しない限り、書いた人にしか分からない)。 あなたが自身がコピーしているパターンは、おそらくすべての同様の場合に使用できる独立した定義として括り出すことができます。"
+msgstr ""
+"プログラム内の既存のコードでワードのパターンをコピーするように参照している場合は、一般的なアイデアと特定のアプリケーションが混在している可能性があります(訳注:それは、詳細に分析しない限り、書いた人にしか分からない)。"
+" あなたが自身がコピーしているパターンは、おそらくすべての同様の場合に使用できる独立した定義として括り出すことができます。"
 
 #: ../../chapter6.rst:587
 msgid "Be sure you can name what you factor."
@@ -755,7 +794,10 @@ msgid ""
 "verified by describing its function in a single, non-compound, "
 "*sentence*. Forth’s “atom,” a *name*, is an order of magnitude more "
 "refined."
-msgstr "この見方と、:doc:`第１章<chapter1>` の中の構造化設計に基づくモジュールを分解する基準とを比較してください。 その方法によれば、モジュールは「機能的結合」を示すべきであり、それはその機能を単一の非複合的な「文」で記述することによって検証することができます。 Forthの「アトム」である「名前」は、さらに洗練された命令です。"
+msgstr ""
+"この見方と、:doc:`第１章<chapter1>` の中の構造化設計に基づくモジュールを分解する基準とを比較してください。 "
+"その方法によれば、モジュールは「機能的結合」を示すべきであり、それはその機能を単一の非複合的な「文」で記述することによって検証することができます。"
+" Forthの「アトム」である「名前」は、さらに洗練された命令です。"
 
 #: ../../chapter6.rst:604
 msgid "Factor definitions to hide details that may change."
@@ -782,7 +824,11 @@ msgid ""
 "bodies. (This is one of a set of words suggested by Kim Harris, and "
 "included as an Experimental Proposal in the Forth-83 Standard "
 "[harris83]_.)"
-msgstr "この定義により、辞書定義の実際の構造に依存せずに、acf(コードフィールドのアドレス)をapf(パラメータフィールドのアドレス)に変換できます。 もし ``>BODY`` の代わりに ``2+`` を使ったら、ヘッダがボディから分離されているForthシステムに変換した時にポータビリティを失うでしょう(これは、キム・ハリスによって提案されたワード・セット1つであり、Forth-83標準の[実験的提案] [harris83]_ に含まれています)。"
+msgstr ""
+"この定義により、辞書定義の実際の構造に依存せずに、acf(コードフィールドのアドレス)をapf(パラメータフィールドのアドレス)に変換できます。 "
+"もし ``>BODY`` の代わりに ``2+`` "
+"を使ったら、ヘッダがボディから分離されているForthシステムに変換した時にポータビリティを失うでしょう(これは、キム・ハリスによって提案されたワード・セット1つであり、Forth-83標準の[実験的提案]"
+" [harris83]_ に含まれています)。"
 
 #: ../../chapter6.rst:626
 msgid "Here’s a group of definitions that might be used in writing an editor:"
@@ -794,14 +840,18 @@ msgid ""
 "addresses necessary for moving text around. Use of these three "
 "definitions completely separates your editing algorithms from a reliance "
 "on Forth blocks."
-msgstr "これら3つの定義は、テキストを動かすために必要なすべてのアドレス計算の基礎を形成することができます。 これら3つの定義を使用すると、編集アルゴリズムとForthブロックへの依存が完全に分離されます。"
+msgstr ""
+"これら3つの定義は、テキストを動かすために必要なすべてのアドレス計算の基礎を形成することができます。 "
+"これら3つの定義を使用すると、編集アルゴリズムとForthブロックへの依存が完全に分離されます。"
 
 #: ../../chapter6.rst:639
 msgid ""
 "What good is that? If you should decide, during development, to create an"
 " editing buffer to protect the user from making errors that destroy a "
 "block, you merely have to redefine two of these words, perhaps like this:"
-msgstr "それの何がいいのでしょうか？ 開発中に、ユーザがブロックを破壊するようなエラーを起こさないようにするための編集バッファを作成することにした場合は、単に次の2つのワードを再定義するだけで済みます。"
+msgstr ""
+"それの何がいいのでしょうか？ "
+"開発中に、ユーザがブロックを破壊するようなエラーを起こさないようにするための編集バッファを作成することにした場合は、単に次の2つのワードを再定義するだけで済みます。"
 
 #: ../../chapter6.rst:649
 msgid "The rest of your code can remain intact."
@@ -822,7 +872,9 @@ msgid ""
 " of people in a group. (This is a good thing for managers of programmer "
 "teams to know—the number of communication paths increases drastically "
 "with each new addition to the team.)"
-msgstr "ここに一例があります。以下で定義される「人々から経路へ(people-to-paths)」と発音されるワードは、グループ内の所与の数の人の間にいくつのコミュニケーション経路があるかを計算します(これは、プログラマチームの管理者にとって知っておくとよいことです。チームが新しく追加されるたびにコミュニケーション経路の数が劇的に増加します)。"
+msgstr ""
+"ここに一例があります。以下で定義される「人々から経路へ(people-to-"
+"paths)」と発音されるワードは、グループ内の所与の数の人の間にいくつのコミュニケーション経路があるかを計算します(これは、プログラマチームの管理者にとって知っておくとよいことです。チームが新しく追加されるたびにコミュニケーション経路の数が劇的に増加します)。"
 
 #: ../../chapter6.rst:667
 msgid ""
@@ -833,7 +885,7 @@ msgstr "この定義は計算のみを行います。 以下は、``PEOPLE>PATHS
 
 #: ../../chapter6.rst:676
 msgid "This produces:"
-msgstr "以下のようになります。"
+msgstr "以下のようになります( ``2 PEOPLE`` [ :kbd:`Enter` ] )"
 
 #: ../../chapter6.rst:685
 msgid ""
@@ -845,15 +897,19 @@ msgid ""
 "But you’ll always have to factor it, so you might as well do it right the"
 " first time. (The few times you might get away with it aren’t worth the "
 "trouble.)"
-msgstr "特定の計算を1回しか実行しないと思う場合でも、それを特定の方法で表示しようと思う場合でも、私を信じて下さい。あなたは間違っています。あなたは後で戻ってきて、計算部分を括り出す必要があります。 おそらく、情報を右寄せの列に表示する必要があるか、結果をデータベースに記録する必要があるでしょう。 しかし、あなたは常にそれを考慮に入れなければならないので、あなたはそれを最初から正しくやるかもしれません(あなたがそれを回避するかもしれない数回はトラブルに値しません)。"
+msgstr ""
+"特定の計算を1回しか実行しないと思う場合でも、それを特定の方法で表示しようと思う場合でも、私を信じて下さい。あなたは間違っています。あなたは後で戻ってきて、計算部分を括り出す必要があります。"
+" おそらく、情報を右寄せの列に表示する必要があるか、結果をデータベースに記録する必要があるでしょう。 "
+"しかし、あなたは常にそれを考慮に入れなければならないので、あなたはそれを最初から正しくやるかもしれません(あなたがそれを回避するかもしれない数回はトラブルに値しません)。"
 
 #: ../../chapter6.rst:694
-#, python-format
 msgid ""
-"The word ``.`` (dot) is a prime example. Dot is great 99% of the time, "
-"but occasionally it does too much. Here’s what it does, in fact (in "
+"The word ``.`` (dot) is a prime example. Dot is great 99％ of the time, "
+"but occasionally it does too much. Here\\’s what it does, in fact (in "
 "Forth–83):"
 msgstr ""
+"ワード ``.`` (ドット)はその代表的な例です。 ドットは99％の割合で素晴らしいですが、時々やり過ぎです。 "
+"これが実際には以下のようになります(Forth-83の場合）。"
 
 #: ../../chapter6.rst:702
 msgid ""
@@ -863,10 +919,13 @@ msgid ""
 "``10C`` (for “ten of clubs”). You can’t use dot to display the 10 because"
 " it prints a final space."
 msgstr ""
+"しかし、スタック上の数値をASCII文字列に変換し、後で入力するためにバッファに格納したいとします。ドットはそれを変換しますが、それもタイプします。または、トランプを"
+" ``10C`` 形式(10のクラブの場合)で書式出力したいとします。 "
+"ドットを使用して10を表示することはできません。最後にスペースが印刷されるからです。"
 
 #: ../../chapter6.rst:708
 msgid "Here’s a better factoring found in some Forth systems:"
-msgstr ""
+msgstr "以下はいくつかのForthシステムに見られる、より良いファクタリング(要素分解)です。"
 
 #: ../../chapter6.rst:715
 msgid ""
@@ -876,16 +935,19 @@ msgid ""
 "in a buffer or even center it in a field. (A better approach would have "
 "been to use ``HOLD`` instead of ``EMIT``.)"
 msgstr ""
+"計算関数から出力関数を分解できない例が、 :doc:`第４章<chapter4>` "
+"の私たち自身のローマ数字の例にありました。私たちの解決策では、ローマ数字をバッファに格納することも、フィールドの中央に配置することもできません(もっと良い方法は"
+" ``EMIT`` の代わりに ``HOLD`` を使うことでした)。"
 
 #: ../../chapter6.rst:721
 msgid ""
 "Information hiding can also be a reason *not* to factor. For instance, if"
 " you factor the phrase"
-msgstr ""
+msgstr "情報隠蔽もファクタリング(要素分解)しない理由になることがあります。例えば、もし以下のフレーズをファクタリング(要素分解)して、"
 
 #: ../../chapter6.rst:728
 msgid "into the definition"
-msgstr ""
+msgstr "定義にします"
 
 #: ../../chapter6.rst:734
 msgid ""
@@ -895,6 +957,9 @@ msgid ""
 "definition of ``FRAME`` and there will certainly be times when you really"
 " want ``SCR``  ``@``  ``BLOCK``."
 msgstr ""
+"編集フレームの位置を変更する必要があるかもしれないという理由だけで、そうしていることを覚えておいてください。 ``FRAME`` "
+"の定義を変更する可能性があり、また、 ``SCR @ BLOCK`` が本当に欲しい場合があるので、フレーズのすべての出現箇所を新しい単語 "
+"``FRAME`` で盲目的に置き換えないでください。"
 
 #: ../../chapter6.rst:742
 msgid ""
@@ -903,6 +968,8 @@ msgid ""
 "fragment is likely to change in more than one way, factor it into more "
 "than one definition."
 msgstr ""
+"場合によっては繰り返しコードの断片が変わる可能性があるが、そうでない場合は、変わる可能性のあるインスタンスだけを括り出します。 "
+"断片が複数の方法で変更される可能性がある場合は、それを複数の定義に分解します。"
 
 #: ../../chapter6.rst:747
 msgid ""
@@ -910,17 +977,19 @@ msgid ""
 "Having made many design changes in your career, you’ll learn the hard way"
 " which things will be most likely to change in the future."
 msgstr ""
+"情報を隠すタイミングを知るには、直感と経験が必要です。 "
+"あなたのキャリアに多くの設計変更を加えたので、あなたは物事が将来最も変わる可能性があるだろう難しい方法を学ぶでしょう。"
 
 #: ../../chapter6.rst:751
 msgid ""
 "You can never predict everything, though. It would be useless to try, as "
 "we’ll see in the upcoming section called “The Iterative Approach in "
 "Implementation.”"
-msgstr ""
+msgstr "しかし、すべてを予測することはできません。 次節の「実装における反復アプローチ」にあるように、試すのは無駄でしょう。"
 
 #: ../../chapter6.rst:757
 msgid "Simplify the command interface by reducing the number of commands."
-msgstr ""
+msgstr "コマンド数を減らしてコマンドインターフェイスを簡素化します。"
 
 #: ../../chapter6.rst:759
 msgid ""
@@ -929,6 +998,9 @@ msgid ""
 "(``LEFT``, ``RIGHT``, ``MOTOR``, ``SOLENOID``, ``ON``, and ``OFF``) could"
 " do the work of eight badly-factored, hyphenated names."
 msgstr ""
+"それは逆説的に見えるかもしれませんが、良いファクタリング(要素分解)はしばしば少ない名前で済みます。 :doc:`第5章<chapter5>` "
+"では、6つの単純な名前(``LEFT``, ``RIGHT``, ``MOTOR``, ``SOLENOID``, ``ON``, "
+"``OFF``)が、8つの悪い因果関係のあるハイフンで繋がれた名前と同じ仕事をすることができます。"
 
 #: ../../chapter6.rst:765
 msgid ""
@@ -937,20 +1009,22 @@ msgid ""
 "instructional, to remind the programmer which vocabulary was ``CURRENT``,"
 " and which was ``CONTEXT``:"
 msgstr ""
+"別の例として、私は最近Forthを導入したある部門で2つの定義が循環しているのを見つけました。純粋に教育的観点から、どちらの語彙が "
+"``CURRENT`` でどれが ``CONTEXT`` であるかをプログラマに思い出させるために、以下の説明をしました。"
 
 #: ../../chapter6.rst:775
 msgid "If you typed"
-msgstr ""
+msgstr "あなたが以下のようにタイプしたら、"
 
 #: ../../chapter6.rst:781
 msgid "the system would respond"
-msgstr ""
+msgstr "システムは以下のように応答します"
 
 #: ../../chapter6.rst:787
 msgid ""
 "(They worked—at least on the system used there—by backing up to the name "
 "field of the vocabulary definition, and displaying it.)"
-msgstr ""
+msgstr "(少なくともそこで使用されているシステムでは、それらは、ボキャブラリ語彙定義のネームフィールドにバックアップされりことによって動いた。)"
 
 #: ../../chapter6.rst:790
 msgid ""
@@ -958,10 +1032,12 @@ msgid ""
 "It would have been possible to consolidate the repeated passage into a "
 "third definition:"
 msgstr ""
+"コードが明らかに繰り返されていることが、悪いファクタリング(要素分解)の兆候として私の目を惹きました。 "
+"繰り返された箇所を第三の定義にまとめることは可能だったでしょう。"
 
 #: ../../chapter6.rst:798
 msgid "shortening the original definitions to:"
-msgstr ""
+msgstr "元の定義を次のように短くします。"
 
 #: ../../chapter6.rst:805
 msgid ""
@@ -971,46 +1047,49 @@ msgid ""
 "definition, and let it take as an argument either the word ``CONTEXT`` or"
 " the word ``CURRENT``."
 msgstr ""
+"しかし、このアプローチでは、2つの定義の唯一の違いは表示されるポインタです。 "
+"良いファクタリング(要素分解)の一部は、より多くの定義ではなく、より少ない定義を作成することであるため、定義を1つだけにして、それを引数として "
+"``CONTEXT`` または ``CURRENT`` というワードを取ることは論理的に思えます。"
 
 #: ../../chapter6.rst:811
 msgid "Applying the principles of good naming, I suggested:"
-msgstr ""
+msgstr "良い命名の原則を適用して、私は以下の提案をしました。"
 
 #: ../../chapter6.rst:817
 msgid "allowing the syntax(``CONTEXT IS`` \\[:kbd:`Enter`\\])"
-msgstr ""
+msgstr "これは以下の構文を許します( ``CONTEXT IS`` \\[:kbd:`Enter`\\] )"
 
 #: ../../chapter6.rst:823
 msgid "or(``CURRENT IS`` \\[:kbd:`Enter`\\])"
-msgstr ""
+msgstr "または ( ``CURRENT IS`` \\[:kbd:`Enter`\\] )"
 
 #: ../../chapter6.rst:829
 msgid ""
 "The initial clue was repetition of code, but the final result came from "
 "attempting to simplify the command interface."
-msgstr ""
+msgstr "最初の手がかりはコードの繰り返しでしたが、目的としてはコマンドインターフェイスを単純化しようとしました。"
 
 #: ../../chapter6.rst:832
 msgid ""
 "Here’s another example. The IBM PC has four modes four displaying text "
 "only:"
-msgstr ""
+msgstr "以下は別の例です。 IBM PCには、テキストのみを表示する4つのモードがあります。"
 
 #: ../../chapter6.rst:835
 msgid "40 column monochrome"
-msgstr ""
+msgstr "40桁モノクロ"
 
 #: ../../chapter6.rst:837
 msgid "40 column color"
-msgstr ""
+msgstr "40桁カラー"
 
 #: ../../chapter6.rst:839
 msgid "80 column monochrome"
-msgstr ""
+msgstr "80桁モノクロ"
 
 #: ../../chapter6.rst:841
 msgid "80 column color"
-msgstr ""
+msgstr "80桁カラー"
 
 #: ../../chapter6.rst:843
 msgid ""
@@ -1019,6 +1098,9 @@ msgid ""
 "the phrase 0 ``MODE`` or 1 ``MODE`` doesn’t help me remember which mode "
 "is which."
 msgstr ""
+" ``MODE`` というワードは私が使っているForthシステムで利用できます。 ``MODE`` "
+"は0から3の間の引数を取り、それに応じてモードを変更します。 もちろん、``0  MODE`` または ``1 MODE`` "
+"というフレーズ、どちらのモードがどれであるかを覚えておくのに役に立ちません。"
 
 #: ../../chapter6.rst:848
 msgid ""
@@ -1027,14 +1109,16 @@ msgid ""
 " also set a variable that contains the current number of columns—40 or "
 "80."
 msgstr ""
+"プレゼンテーションを行う際にはこれらのモードを切り替える必要があるので、変更を有効にするために便利なワードセットを用意する必要があります。 "
+"これらの語は、現在の桁数（40または80）を含む変数も設定する必要があります。"
 
 #: ../../chapter6.rst:853
 msgid "Here’s the most straightforward way to fulfill the requirements:"
-msgstr ""
+msgstr "以下は、要件を満たす最も簡単な方法です。"
 
 #: ../../chapter6.rst:862
 msgid "By factoring to eliminate the repetition, we come up with this version:"
-msgstr ""
+msgstr "繰り返しを排除するようにファクタリング(要素分解)することによって、私たちは以下のバージョンを思い付きます。"
 
 #: ../../chapter6.rst:872
 msgid ""
@@ -1042,21 +1126,21 @@ msgid ""
 " the injunctions against numerically-prefixed and hyphenated names, we "
 "realize that we can use the number of columns as a stack argument, and "
 "*calculate* the mode:"
-msgstr ""
+msgstr "しかし、コマンドの数を減らそうと試みることによって、そしてまた、数字のプレフィックスとハイフンで繋がれた名前に対する命令をたどることによって、列の数をスタック引数として使うことができ、そしてモードを計算することができることを悟ります。"
 
 #: ../../chapter6.rst:882
 msgid "This gives us this syntax:"
-msgstr ""
+msgstr "これは以下のような構文になります。"
 
 #: ../../chapter6.rst:891
 msgid "We’ve reduced the number of commands from four to two."
-msgstr ""
+msgstr "私たちはコマンド数を4つから2つに減らしました。"
 
 #: ../../chapter6.rst:893
 msgid ""
 "Once again, though, we have some duplicate code. If we factor out this "
 "code we get:"
-msgstr ""
+msgstr "繰り返しになりますが、コードが重複しています。 このコードを括り出すと、次のようになります。"
 
 #: ../../chapter6.rst:903
 msgid ""
@@ -1065,6 +1149,8 @@ msgid ""
 "the benefits may be marginal. But with larger sets of commands the "
 "benefits increase geometrically."
 msgstr ""
+"これで、より優れた構文が達成され、同時にオブジェクトコードのサイズも大幅に削減されました。 "
+"この例のようにコマンドが2つしかない場合、メリットはわずかです。 しかし、より多くのコマンドを使用すると、その利点は幾何学的に向上します。"
 
 #: ../../chapter6.rst:908
 msgid ""
@@ -1072,18 +1158,20 @@ msgid ""
 "system. Names like ``BLUE`` and ``RED`` are nicer than numbers. One "
 "solution might be to define:"
 msgstr ""
+"最後の例は、特定のシステムの色を表すためのワードのセットです。 ``BLUE`` や ``RED`` のような名前は数字よりも素敵です。 "
+"1つの解決策は、次のように定義することです。"
 
 #: ../../chapter6.rst:923
 msgid ""
-"These colors can be used with words such as BACKGROUND, FOREGROUND, and "
-"BORDER:"
-msgstr ""
+"These colors can be used with words such as ``BACKGROUND``, "
+"``FOREGROUND``, and ``BORDER``:"
+msgstr "これらの色は、 ``BACKGROUND`` 、 ``FOREGROUND`` 、``BORDER`` などのワードで使用できます。"
 
 #: ../../chapter6.rst:930
 msgid ""
 "But this solution requires 16 names, and many of them are hyphenated. Is "
 "there a way to simplify this?"
-msgstr ""
+msgstr "しかし、この解決策は16の名前を必要とし、それらの多くはハイフンを含んでいます。これを単純化する方法はあるでしょうか？"
 
 #: ../../chapter6.rst:933
 msgid ""
@@ -1092,71 +1180,77 @@ msgid ""
 " these two sets is the setting of the “intensity bit.”) If we factor out "
 "the “lightness,” we might come up with this solution:"
 msgstr ""
+"8から15の間の色は、すべて0から7の間の色の「より明るい」バージョンです（ハードウェアでは、これら2つの組の間の唯一の違いは「強度ビット」の設定です）。"
+" 「明るさ(lightness)」、私たちは以下の解決策を思いつきます。"
 
 #: ../../chapter6.rst:949
 msgid "With this syntax, the word"
-msgstr ""
+msgstr "その構文は以下のようになります。"
 
 #: ../../chapter6.rst:955
 msgid "by itself will return a “1” on the stack, but the phrase"
-msgstr ""
+msgstr "これは、それ自身によってスタックに1を返します。"
 
 #: ../../chapter6.rst:961
 msgid ""
-"will return a “9.” (The adjective LIGHT sets flag which is used by the "
-"hues, then cleared.)"
-msgstr ""
+"will return a “9.” (The adjective ``LIGHT`` sets flag which is used by "
+"the hues, then cleared.)"
+msgstr "これは、9を返します。(形容詞 ``LIGHT`` は色相(hues)によって使用されるフラグをセットし、その後クリアされます)。"
 
 #: ../../chapter6.rst:964
 msgid "If necessary for readability, we still might want to define:"
-msgstr ""
+msgstr "更に読みやすさが必要なら、私たちは以下のように定義したいです。"
 
 #: ../../chapter6.rst:971
 msgid ""
 "Again, through this approach we’ve achieved a more pleasant syntax and "
 "shorter object code."
-msgstr ""
+msgstr "繰り返しますが、このアプローチを通じて、より快適な構文とより短いオブジェクトコードを実現しました。"
 
 #: ../../chapter6.rst:976
-msgid "Don't factor for the sake of factoring. Use clich\\'es."
-msgstr ""
+msgid "Don\\'t factor for the sake of factoring. Use clich\\'es."
+msgstr "ファクタリング(要素分解)の為のファクタリング(要素分解)をしないでください。決まり文句を使って下さい。"
 
 #: ../../chapter6.rst:978
 msgid "The phrase"
-msgstr ""
+msgstr "以下のフレーズ"
 
 #: ../../chapter6.rst:984
 msgid ""
 "may be seen commonly in certain applications. (It converts an address and"
 " count into an ending address and starting address appropriate for a ``DO"
 " LOOP``.)"
-msgstr ""
+msgstr "これは、特定のアプリケーションでよく見られます(アドレスとカウントを ``DO‥LOOP`` に適した終了アドレスと開始アドレスに変換します)。"
 
 #: ../../chapter6.rst:988
 msgid "Another commonly seen phrase is"
-msgstr ""
+msgstr "他によく見られるフレーズが以下です。"
 
 #: ../../chapter6.rst:994
 msgid ""
 "(It rearranges a first-number and last-number into the last-number-plus-"
 "one and first-number order required by ``DO``.)"
-msgstr ""
+msgstr "（「最初の数値」と「最後の数値」を、``DO`` が必要とする「最後の数値+1」と「最初の数値」の順序に並べ替えます。）"
 
 #: ../../chapter6.rst:998
 msgid ""
 "It’s a little tempting to seize upon these phrases and turn them into "
 "words, such as (for the first phrase) ``RANGE``."
-msgstr ""
+msgstr "（最初のフレーズでは) これらのフレーズを ``RANGE`` のようなワードに変えるのは、ちょっと素敵に思えます。"
 
 #: ../../chapter6.rst:1002
 msgid ""
-"That particular phrase ``OVER``  ``+``   ``SWAP`` is one that's right on "
-"the margin of being a useful word. Often, though, if you define something"
-" as a word, it turns out you use it only once. If you name such a phrase,"
-" you have trouble knowing exactly what ``RANGE`` does. You can't see the "
-"manipulation in your mind. ``OVER``  ``+``   ``SWAP`` has greater "
-"mnemonic value than ``RANGE``."
+"That particular phrase ``OVER + SWAP`` is one that\\'s right on the "
+"margin of being a useful word. Often, though, if you define something as "
+"a word, it turns out you use it only once. If you name such a phrase, you"
+" have trouble knowing exactly what ``RANGE`` does. You can't see the "
+"manipulation in your mind. ``OVER + SWAP`` has greater mnemonic value "
+"than ``RANGE``."
 msgstr ""
+"その ``OVER + SWAP`` というフレーズは、有用なワードであることの限界を超えたものです。 "
+"ただし、何かをワードとして定義すると、1回しか使用されないことがよくあります。 あなたがそのようなフレーズに名前を付けると、 ``RANGE`` "
+"が何をするのかを正確に知ることが困難になります。 あなたはあなたの心の中で操作を見ることができません。 ``OVER + SWAP`` は "
+"``RANGE`` よりも覚えやすいです。"
 
 #: ../../chapter6.rst:1010
 msgid ""
@@ -1164,237 +1258,269 @@ msgid ""
 "functions. You don’t have to remember how the phrase works, just what it "
 "does. And you don’t have to remember an extra name."
 msgstr ""
-
-#: ../../chapter6.rst:1015
-msgid "Compile-Time Factoring"
-msgstr ""
+"私はこれらのフレーズを「決まり文句」と呼びます。それらは意味のある一つの機能としてまとめて扱います。 "
+"フレーズ内のどのようになっているか覚えておく必要はなく、それが為すことだけを覚えておけばいいのです。そして追加の名前を覚える必要はありません。"
 
 #: ../../chapter6.rst:1017
+msgid "Compile-Time Factoring"
+msgstr "コンパイル時のファクタリング(要素分解)"
+
+#: ../../chapter6.rst:1019
 msgid ""
 "In the last section we looked at many techniques for organizing code and "
 "data to reduce redundancy."
-msgstr ""
+msgstr "前節では、冗長性を減らすためにコードとデータを整理する多くの手法を調べました。"
 
-#: ../../chapter6.rst:1020
+#: ../../chapter6.rst:1022
 msgid ""
 "We can also apply limited redundancy during compilation, by letting Forth"
 " do some of out dirty work."
-msgstr ""
-
-#: ../../chapter6.rst:1025
-msgid "For maximum maintainability, limit redundancy even at compile time."
-msgstr ""
+msgstr "私たちは、Forthにいくつかの汚い作業をさせることで、コンパイル中に制限付き冗長性を適用することもできます。"
 
 #: ../../chapter6.rst:1027
+msgid "For maximum maintainability, limit redundancy even at compile time."
+msgstr "最大限の保守性を維持するために、コンパイル時でも冗長性を制限してください。"
+
+#: ../../chapter6.rst:1029
 msgid ""
 "Suppose in our application we must draw nine boxes as shown in "
 ":numref:`fig6-1` ."
-msgstr ""
+msgstr "我々のアプリケーションで、 :numref:`fig6-1` のように9つの箱を描かなければならないとしましょう。"
 
-#: ../../chapter6.rst:1030
+#: ../../chapter6.rst:1032
 msgid "What we\\'re supposed to display"
-msgstr ""
+msgstr "問題：９つの箱"
 
-#: ../../chapter6.rst:1052
+#: ../../chapter6.rst:1054
 msgid ""
 "In our design we need to have constants that represent values such as the"
 " size of each box, the size of the gap between boxes, and the left-most "
 "and top-most coordinates of the first box."
-msgstr ""
+msgstr "私たちの設計では、各箱の寸法、箱間の感覚の寸法、最初の箱の一番左と一番上の座標などの値を表す定数が必要です。"
 
-#: ../../chapter6.rst:1056
+#: ../../chapter6.rst:1058
 msgid "Naturally we can define:"
-msgstr ""
-
-#: ../../chapter6.rst:1065
-msgid "(Streets run east and west; avenues run north and south.)"
-msgstr ""
+msgstr "私たちは自然と、以下のように定義します。"
 
 #: ../../chapter6.rst:1067
+msgid "(Streets run east and west; avenues run north and south.)"
+msgstr "(ストリート(street)は東西で、アベニュー(avenue)は南北です。)"
+
+#: ../../chapter6.rst:1069
 msgid ""
 "Now, to define the left margin, we might compute it mentally, We want to "
 "center all these boxes on a screen 80 columns wide. To center something, "
 "we subtract its width from 80 and divide by two to determine the left "
 "margin. To figure the total width of all the boxes, we add"
 msgstr ""
+"さて、左マージンを定義するために、それを暗算するかもしれません。これらすべての箱を80カラム幅の画面の中央に置きたいと思います。 "
+"何かを中央に配置するには、80からその幅を引いて2で割り、左マージンを決定します。 "
+"すべての箱の合計幅を計算するために、私たちは以下の加算をします。"
 
-#: ../../chapter6.rst:1072
-msgid ""
-"8 + 4 + 8 + 4 + 8 = 32  (three widths and two avenues). :math:`(80-31) / "
-"2 = 24`."
-msgstr ""
+#: ../../chapter6.rst:1074
+msgid "8 + 4 + 8 + 4 + 8 = 32"
+msgstr "8 + 4 + 8 + 4 + 8 = 32"
 
 #: ../../chapter6.rst:1078
-msgid "So we could, crudely, define:"
-msgstr ""
+msgid "(three widths and two avenues). :math:`(80-32) / 2 = 24`."
+msgstr "(3箱の幅とその間の2つのアベニュー). :math:`(80-32) / 2 = 24`."
 
-#: ../../chapter6.rst:1084
-msgid "and use the same approach for ``TOPMARGIN``."
-msgstr ""
+#: ../../chapter6.rst:1080
+msgid "So we could, crudely, define:"
+msgstr "それで、私たちは大胆にも以下のように定義します。"
 
 #: ../../chapter6.rst:1086
+msgid "and use the same approach for ``TOPMARGIN``."
+msgstr "``TOPMARGIN`` にも同じアプローチを行います。"
+
+#: ../../chapter6.rst:1088
 msgid ""
 "But what if we should later redesign the pattern, so that the width "
-"changed, or perhaps the gap between the boxes? We’d have to recompute the"
-" left margin ourselves."
-msgstr ""
+"changed, or perhaps the gap between the boxes? We\\’d have to recompute "
+"the left margin ourselves."
+msgstr "しかし、後で幅を変えたり、箱の間の間隔を変えたりするために、後でパターンを再設計する必要がある場合はどうなるでしょうか？左マージンを自分で再計算する必要があります。"
 
-#: ../../chapter6.rst:1090
+#: ../../chapter6.rst:1092
 msgid ""
 "In the Forth environment, we can use the full power of Forth even when "
 "we’re compiling. Why not let Forth do the figuring?"
-msgstr ""
+msgstr "Forth環境では、コンパイルしているときでもForthの全機能を使用できます。なぜForthに考えさせないのですか？"
 
-#: ../../chapter6.rst:1100
+#: ../../chapter6.rst:1102
 msgid ""
-"If a constant's value depends on the value of an earlier constant, use "
+"If a constant\\'s value depends on the value of an earlier constant, use "
 "Forth to calculate the value of the second."
-msgstr ""
+msgstr "定数の値が以前の定数の値に依存する場合は、Forthを使用して2番目の値を計算します。"
 
-#: ../../chapter6.rst:1103
+#: ../../chapter6.rst:1105
 msgid ""
 "None of these computations are performed when the application is running,"
 " so run-time speed is not affected."
-msgstr ""
+msgstr "これらの計算はアプリケーションの実行時には実行されないため、実行速度は影響を受けません。"
 
-#: ../../chapter6.rst:1106
+#: ../../chapter6.rst:1108
 msgid ""
-"Here’s another example.  :numref:`fig6-2`  shows the code for a word that"
-" draws shapes. The word ``DRAW`` emits a star at every x–y coordinate "
-"listed in the table called ``POINTS``. (Note: the word ``XY`` positions "
+"Here\\’s another example.  :numref:`fig6-2`  shows the code for a word "
+"that draws shapes. The word ``DRAW`` emits a star at every x–y coordinate"
+" listed in the table called ``POINTS``. (Note: the word ``XY`` positions "
 "the cursor to the ( x y ) coordinate on the stack.)"
 msgstr ""
+"以下は別の例です。 :numref:`fig6-2` は形を描くワードのコードを示しています。ワード ``DRAW`` は ``POINTS`` "
+"と呼ばれるテーブルにリストされたすべてのxy座標で :kbd:`*` を表示します(注：ワード ``XY`` は、スタック上の(x "
+"y)座標にカーソルを移動します)。"
 
-#: ../../chapter6.rst:1111
+#: ../../chapter6.rst:1113
 msgid "Notice the line immediately following the list of points:"
-msgstr ""
+msgstr "``POINTS`` リストの直後の行に注目してください。"
 
-#: ../../chapter6.rst:1117
+#: ../../chapter6.rst:1119
 msgid "Another example of limiting compile-time redundancy."
-msgstr ""
+msgstr "コンパイル時の冗長性を制限するもう1つの例。"
 
-#: ../../chapter6.rst:1130
+#: ../../chapter6.rst:1132
 msgid ""
 "The phrase ``HERE POINTS -`` computes the number of x–y coordinates in "
 "the table: this value becomes the constant ``#POINTS``, used as the limit"
 " in ``DRAW`` \\’s ``DO``   ``LOOP``."
 msgstr ""
+" ``HERE POINTS -`` フレーズはテーブル内のxy座標の数を計算します。この値は定数 ``#POINTS`` になり、これは "
+"``DRAW's DO…LOOP`` の上限として使用されます。"
 
-#: ../../chapter6.rst:1134
+#: ../../chapter6.rst:1136
 msgid ""
 "This construct lets you add or subtract points from the table without "
 "worrying about the number of points there are. Forth computes this for "
 "you."
-msgstr ""
-
-#: ../../chapter6.rst:1139
-msgid "Compile-Time Factoring through Defining Words"
-msgstr ""
+msgstr "この構造により、アスタリスクの数を気にせずにテーブルにアスタリスクを追加または削除できます。 Forthがこれを計算します。"
 
 #: ../../chapter6.rst:1141
+msgid "Compile-Time Factoring through Defining Words"
+msgstr "定義ワードによるコンパイル時のファクタリング(要素分解)"
+
+#: ../../chapter6.rst:1143
 msgid ""
 "Let’s examine a series of approaches to the same problem—defining a group"
-" of related addresses. Here’s the first try:"
-msgstr ""
+" of related addresses. Here\\’s the first try:"
+msgstr "同じ問題に対する一連のアプローチを調べてみましょう。関連アドレスのグループを定義してみます。以下は最初の試行です。"
 
-#: ../../chapter6.rst:1153
+#: ../../chapter6.rst:1155
 msgid ""
 "The idea is right, but the implementation is ugly. The only elements that"
 " change from port to port are the numeric offset and the name of the port"
 " being defined; everything else repeats. This repetition suggests the use"
 " of a defining word."
 msgstr ""
+"アイデアは正しいですが、実装は醜いです。 ポートごとに変わる唯一の要素は、数値オフセットと定義されているポートの名前です。 "
+"他のすべてが繰り返されます。 この繰り返しは、定義ワードの使用を示唆しています。"
 
-#: ../../chapter6.rst:1158
+#: ../../chapter6.rst:1160
 msgid ""
 "The following approach, which is more readable, combines all the repeated"
 " code into the “does” part of a defining word:"
-msgstr ""
+msgstr "より読みやすい次のアプローチでは、繰り返されるすべてのコードを定義ワードの「する(does)」部分にまとめます。"
 
-#: ../../chapter6.rst:1170
+#: ../../chapter6.rst:1172
 msgid ""
-"In this solution we’re performing the offset calculation at *run*-time, "
-"every time we invoke one of these names. It would be more efficient to "
+"In this solution we\\’re performing the offset calculation at *run*-time,"
+" every time we invoke one of these names. It would be more efficient to "
 "perform the calculation at compile time, like this:"
 msgstr ""
+"このソリューションでは、これらの名前のいずれかを呼び出すたびに、「実行時に」オフセット計算を実行しています。 "
+"次のように、コンパイル時に計算を実行するほうが効率的です。"
 
-#: ../../chapter6.rst:1183
+#: ../../chapter6.rst:1185
 msgid ""
-"Here we’ve created a defining word, ``PORT``, that has a unique "
+"Here we\\’ve created a defining word, ``PORT``, that has a unique "
 "*compile*-time behavior, namely adding the offset to "
 "``BASE.PORT.ADDRESS`` and defining a ``CONSTANT``."
 msgstr ""
+"ここで私たちは独自の「コンパイル時」の振る舞いを持つ、定義ワード ``PORT`` を作成しました。すなわち、オフセットを "
+"``BASE.PORT.ADDRESS`` に追加して ``CONSTANT`` を定義します。"
 
-#: ../../chapter6.rst:1187
+#: ../../chapter6.rst:1189
 msgid ""
 "We might even go one step further. Suppose that all port addresses are "
 "two bytes apart. In this case there’s no reason we should have to specify"
 " these offsets. The numeric sequence"
 msgstr ""
-
-#: ../../chapter6.rst:1191
-msgid "0 2 4 6"
-msgstr ""
+"さらに一歩踏み込むこともあります。 すべてのポートアドレスが2バイト離れているとします。 "
+"この場合、これらのオフセットを指定しなければならない理由はありません。 以下の数値の並び"
 
 #: ../../chapter6.rst:1193
-msgid "is itself redundant."
-msgstr ""
+msgid "0 2 4 6"
+msgstr "0 2 4 6"
 
 #: ../../chapter6.rst:1195
+msgid "is itself redundant."
+msgstr "それ自体が冗長です。"
+
+#: ../../chapter6.rst:1197
 msgid ""
 "In the following version, we begin with the ``BASE.PORT.ADDRESS`` on the "
 "stack. The defining word ``PORT`` duplicates this address, makes a "
 "constant out of it, then adds 2 to the address still on the stack, for "
 "the next invocation of ``PORT``."
 msgstr ""
+"次のバージョンでは、スタックの ``BASE.PORT.ADDRESS`` から始めます。 定義ワード ``PORT`` "
+"はこのアドレスを複製し、そこから定数を作り、それからスタック上にまだ残っているアドレスに2を加えます。それは次の ``PORT`` "
+"の呼び出しのためです。"
 
-#: ../../chapter6.rst:1211
+#: ../../chapter6.rst:1213
 msgid ""
 "Notice we must supply the initial port address on the stack before "
 "defining the first port, then invoke ``DROP`` when we’ve finished "
 "defining all the ports to get rid of the port address that’s still on the"
 " stack."
 msgstr ""
+"最初のポートを定義する前にスタックの最初のポートアドレスを与えなければならないことに注意してください。そしてすべてのポートの定義を終えたら "
+"``DROP`` を呼び出してまだスタックにあるポートアドレスを取り除きます。"
 
-#: ../../chapter6.rst:1216
+#: ../../chapter6.rst:1218
 msgid ""
 "One final comment. The base-port address is very likely to change, and "
 "therefore should be defined in only one place. This does *not* mean it "
 "has to be defined as a constant. Provided that the base-port address "
-"won’t be used outside of this lexicon of port names, it’s just as well to"
-" refer to it by number here."
+"won’t be used outside of this lexicon of port names, it\\’s just as well "
+"to refer to it by number here."
 msgstr ""
-
-#: ../../chapter6.rst:1233
-msgid "The Iterative Approach in Implementation"
-msgstr ""
+"最後に一言。ベースポートアドレスは変更される可能性が非常に高いため、1か所だけで定義する必要があります。 "
+"これは定数として定義する必要があるという意味ではありません。 "
+"ベースポートアドレスがこのポート名の用語集の外側で使用されない場合は、ここで数値を使用して参照してください。"
 
 #: ../../chapter6.rst:1235
+msgid "The Iterative Approach in Implementation"
+msgstr "実装における反復アプローチ"
+
+#: ../../chapter6.rst:1237
 msgid ""
 "Earlier in the book we discussed the iterative approach, paying "
-"particular attention to its impact on the design phase. Now that we’re "
+"particular attention to its impact on the design phase. Now that we\\’re "
 "talking about implementation, let’s see how the approach is actually used"
 " in writing code."
 msgstr ""
-
-#: ../../chapter6.rst:1243
-msgid "Work on only one aspect of a problem at a time."
-msgstr ""
+"この本の最初の部分で、反復アプローチについて説明しました。設計フェーズへの影響に特に注意を払いました。 "
+"今、私たちは実装について議論しているので、コーディングにおいてこのアプローチが実際どのように使用されるのかを見てみましょう。"
 
 #: ../../chapter6.rst:1245
+msgid "Work on only one aspect of a problem at a time."
+msgstr "一度に問題の1つの側面のみに取り組むようにしてください。"
+
+#: ../../chapter6.rst:1247
 msgid ""
 "Suppose we’re entrusted with the job of coding a word to draw or erase a "
 "box at a given x–y coordinate. (This is the same problem we introduced in"
-" the section called “Compile-Time Factoring.”)"
+" the section called :ref:`compile-time-factoring` )"
 msgstr ""
+"与えられたxy座標で箱を描画または消去するためのワードをコーディングする仕事を委託されているとします(これは、「 :ref:`compile-"
+"time-factoring` 」という節で紹介したのと同じ問題です)。"
 
-#: ../../chapter6.rst:1249
+#: ../../chapter6.rst:1251
 msgid ""
 "At first we focus our attention on the problem of drawing a box—never "
 "mind erasing it. We might come up with this:"
-msgstr ""
+msgstr "私たちは、まずは箱を描く(draw)という問題に注意を集中します。箱を消すことは考えません。 私たちはこんなのを思い付くでしょう。"
 
-#: ../../chapter6.rst:1259
+#: ../../chapter6.rst:1261
 msgid ""
 "Having tested this to make sure it works correctly, we turn now to the "
 "problem of using the same code to *un*\\ draw a box. The solution is "
@@ -1403,120 +1529,132 @@ msgid ""
 " of a variable, and some readable words for setting the contents of the "
 "variable. So:"
 msgstr ""
+"これが正しく機能することを確認するためにこれをテストしたので、今度は同じコードを使って箱を消去(undraw)する問題に目を向けます。 "
+"解決策は簡単です。``ASCII *`` のようにハードコーディングするのではなく、出力文字をアスタリスクから空白に変更したいのです。 "
+"これには、変数の追加と、変数の内容を設定するための読みやすいワードが必要です。 そして私たちは以下のようにします。"
 
-#: ../../chapter6.rst:1273
+#: ../../chapter6.rst:1275
 msgid ""
 "The definition of ``BOX``, along with the remainder of the application, "
 "remains the same."
-msgstr ""
+msgstr "``BOX`` の定義はアプリケーションの残りと共に同じままです。"
 
-#: ../../chapter6.rst:1276
+#: ../../chapter6.rst:1278
 msgid "This approach allows the syntax"
-msgstr ""
+msgstr "このアプローチは以下の文法を許します。"
 
-#: ../../chapter6.rst:1282
+#: ../../chapter6.rst:1284
 msgid "or"
-msgstr ""
+msgstr "または"
 
-#: ../../chapter6.rst:1288
+#: ../../chapter6.rst:1290
 msgid ""
 "By switching from an explicit value to a variable that contains a value, "
 "we’ve added a level of indirection. In this case, we’ve added indirection"
 " “backwards,” adding a new level of complexity to the definition of "
 "``LAYER`` without substantially lengthening the definition."
 msgstr ""
+"明示的な値から値を含む変数に切り替えることで、間接的なレベルを追加しました。 "
+"この場合、定義を大幅に長くすることなく、「逆方向」の間接参照を追加し、 ``LAYER`` の定義に新しいレベルの複雑さを追加しました。"
 
-#: ../../chapter6.rst:1293
+#: ../../chapter6.rst:1295
 msgid ""
 "By concentrating on one dimension of the problem at a time, you can solve"
 " each dimension more efficiently. If there’s an error in your thinking, "
 "the problem will be easier to see if it’s not obscured by yet another "
 "untried, untested aspect of your code."
 msgstr ""
-
-#: ../../chapter6.rst:1300
-msgid "Don't change too much at once."
-msgstr ""
+"一度に問題の1側面に集中することで、各側面をより効率的に解決できます。 "
+"あなたの思考に誤りがあるならば、それがまだ別の未試行のものによって隠されてなくて、テストされてないコードの側面でなければその問題は簡単に判ります。"
 
 #: ../../chapter6.rst:1302
+msgid "Don\\'t change too much at once."
+msgstr "一度に沢山変更しないで下さい。"
+
+#: ../../chapter6.rst:1304
 msgid ""
 "While you’re editing your application—adding a new feature or fixing "
 "something—it’s often tempting to go and fix several other things at the "
 "same time. Our advice: Don’t."
 msgstr ""
+"新しい機能を追加したり何かを修正したりしながらアプリケーションを編集している間に、他のいくつかのものを同時に修正したくなることがよくあります。 "
+"私たちのアドバイスは「ダメ、絶対」です。"
 
-#: ../../chapter6.rst:1306
+#: ../../chapter6.rst:1308
 msgid ""
 "Make as few changes as you can each time you edit-compile. Be sure to "
 "test the results of each revision before going on. You’d be amazed how "
 "often you can make three innocent modifications, only to recompile and "
 "have nothing work!"
 msgstr ""
+"編集・コンパイルするたびに、できるだけ少ない変更を加えます。 次に進む前に、必ず各リビジョンの結果をテストしてください。 "
+"あなたは、とても短い間隔で何度も何度も編集・コンパイル・テストのサイクルが回せる事にびっくりすることでしょう。"
 
-#: ../../chapter6.rst:1311
+#: ../../chapter6.rst:1313
 msgid ""
 "Making changes one at a time ensures that when it stops working, you know"
 " why."
-msgstr ""
+msgstr "一度に1つずつ変更を加えることで、機能が停止したときにその理由がわかります。"
 
-#: ../../chapter6.rst:1316
-msgid "Don't try to anticipate ways to factor too early."
-msgstr ""
-
+# 意味分からん。直訳。
 #: ../../chapter6.rst:1318
+msgid "Don\\'t try to anticipate ways to factor too early."
+msgstr "ファクタリング(要素分解)の方法を先走って考えないで下さい。"
+
+#: ../../chapter6.rst:1320
 msgid ""
 "Some people wonder why most Forth systems don’t include the definition "
-"word ARRAY. This rule is the reason."
-msgstr ""
+"word ``ARRAY``. This rule is the reason."
+msgstr "一部の人々は、ほとんどのForthシステムが定義ワード ``ARRAY`` を含まないのはなぜだろうと疑問に思います。 この規則がその理由です。"
 
-#: ../../chapter6.rst:1323
+#: ../../chapter6.rst:1325
 msgid ""
 "I often have a class of things called arrays. The simplest array merely "
 "adds a subscript to an address and gives you back an address. You can "
 "define an array by saying"
-msgstr ""
+msgstr "私はしばしば配列と呼ばれるもののクラスを持っています。 最も単純な配列は単にアドレスに添字を追加してアドレスを返すだけです。 あなたは以下のように宣言することで配列を定義できます。"
 
-#: ../../chapter6.rst:1331
+#: ../../chapter6.rst:1333
 msgid "then saying"
-msgstr ""
+msgstr "それから、次のように言います。"
 
-#: ../../chapter6.rst:1337
+#: ../../chapter6.rst:1339
 msgid "Or you can say"
-msgstr ""
+msgstr "または、以下のように言うことも出来ます。"
 
-#: ../../chapter6.rst:1343
+#: ../../chapter6.rst:1345
 msgid ""
 "One of the problems that\\'s most frustrating for me is knowing whether "
 "it\\'s worth creating a defining word for a particular data structure. "
 "Will I have enough instances to justify it?"
-msgstr ""
+msgstr "私にとって最もイライラする問題の1つは、それに特定のデータ構造の定義ワードを作成する価値があるかどうかを知ることです。 それを正当化するのに十分な実例がありますか？"
 
-#: ../../chapter6.rst:1347
+#: ../../chapter6.rst:1349
 msgid ""
 "I rarely know in advance if I\\'m going to have more than one array. So I"
 " don't define the word ``ARRAY``."
-msgstr ""
-
-#: ../../chapter6.rst:1350
-msgid "After I discover I need two arrays, the question is marginal."
-msgstr ""
+msgstr "複数の配列を使用するかどうかを事前に知ることはめったにありません。 だから私は ``ARRAY`` という言葉を定義しません。"
 
 #: ../../chapter6.rst:1352
+msgid "After I discover I need two arrays, the question is marginal."
+msgstr "2つの配列が必要だと気付いたら、問題は限界を迎えます。"
+
+#: ../../chapter6.rst:1354
 msgid ""
 "If I need three then it\\'s clear. Unless they\\'re different. And odds "
 "are they will be different. You may want it to fetch it for you. You may "
 "want a byte array, or a bit array. You may want to do bounds checking, or"
 " store its current length so you can add things to the end."
-msgstr ""
+msgstr "3つ必要なら、問題の限界は明らかです。それらが異なる場合を除いて。そしてどのぐらい欲しいかは異なるでしょう。あなたこんなのが欲しいのかもしれません。例えば、あなたはバイト配列、またはビット配列が欲しいかもしれませし、境界チェックをしたいのかもしれませし、現在の長さを格納して最期に追加できるようにしたいのかもしれません。"
 
-#: ../../chapter6.rst:1358
+#: ../../chapter6.rst:1360
 msgid ""
 "I grit my teeth and say, \"Should I make the byte array into a cell "
 "array, just to fit the data structure into the word I already have "
 "available?\""
-msgstr ""
+msgstr "私は改まって、「そのデータ構造をすでに利用可能なワードに合わせるために、バイト配列でよいものをセル配列にする必要がありますか？」と問います。"
 
-#: ../../chapter6.rst:1362
+#: ../../chapter6.rst:1364
 msgid ""
 "The more complex the problem, the less likely it will be that you\\'ll "
 "find a universally applicable data structure. The number of instances in "
@@ -1524,105 +1662,107 @@ msgid ""
 "small. One example of a successful complex data structure is the Forth "
 "dictionary. Very firm structure, great versatility. It's used everywhere "
 "in Forth. But that\\s rare."
-msgstr ""
+msgstr "問題が複雑になればなるほど、普遍的に適用可能なデータ構造が見つかる可能性は低くなります。 本当に複雑なデータ構造が普遍的に利用されている例は非常に少ないです。 成功した複雑なデータ構造の一例はForth辞書です。 非常にしっかりした構造、素晴らしい汎用性、それはForthの至る所で使用されています。しかし、そういう例はまれです。"
 
-#: ../../chapter6.rst:1369
+#: ../../chapter6.rst:1371
 msgid ""
 "If you choose to define the word ``ARRAY``, you\\'ve done a decomposition"
-" step. You've factored out the concept of an array from all the words "
-"you\\'ll later back in. And you've gone to another level of abstraction."
-msgstr ""
+" step. You\\'ve factored out the concept of an array from all the words "
+"you\\'ll later back in. And you\\'ve gone to another level of "
+"abstraction."
+msgstr "あなたが ``ARRAY`` というワードを定義することを選択した場合は、分解ステップは完了です。 後に戻って、すべてのワードから配列の概念を括り出します。そして、あなたは別のレベルの抽象化に進みます。"
 
-#: ../../chapter6.rst:1374
+#: ../../chapter6.rst:1376
 msgid ""
 "Building levels of abstraction is a dynamic process, not one you can "
 "predict."
-msgstr ""
+msgstr "抽象化レベルの構築は動的プロセスであり、予測できるものではありません。"
 
-#: ../../chapter6.rst:1379
+#: ../../chapter6.rst:1381
 msgid "Today, make it work. Tomorrow, optimize it."
-msgstr ""
+msgstr "今日は機能させ、明日は最適化してください。"
 
-#: ../../chapter6.rst:1404
+#: ../../chapter6.rst:1406
 msgid ""
 "Again **Moore**. On the day of this interview, Moore had been completing "
 "work on the design of a board-level Forth computer, using commercially "
 "available ICs. As part of his toolkit for designing the board, he created"
 " a simulator in Forth, to test the board\\'s logic:"
-msgstr ""
+msgstr "このインタビューの日に、ムーアは市販のICを使ったボードレベルのForthコンピュータの設計作業を完了していました。 ボードを設計するためのツールキットの一部として、彼はボードのロジックをテストするためにForthでシミュレータを作成しました。ムーアは言います。"
 
-#: ../../chapter6.rst:1382
+#: ../../chapter6.rst:1384
 msgid ""
 "This morning I realized I\\'ve been mixing the descriptions of the chips "
 "with the placement of the chips on the board. This perfectly convenient "
 "for my purposes at the moment, but when I come up with another board that"
 " I want to use the same chips for, I have arranged things very badly."
-msgstr ""
+msgstr "今朝、私はチップの説明とボード上のチップの配置を混ぜ合わせていることに気づきました。 現時点ではこれは全然便利ですが、同じチップを使用したい別のボードを考えると非常によろしくない。"
 
-#: ../../chapter6.rst:1388
+#: ../../chapter6.rst:1390
 msgid ""
 "I should have factored it with the descriptions here and the uses there. "
 "I would then have had a chip description language. Okay. At the time I "
 "was doing this I was not interested in that level of optimization."
-msgstr ""
+msgstr "私はここでの説明とそこでの使用法でそれを考慮に入れるべきでした。 それから私はチップ記述言語を作ったでしょう。 ええ、これをしていた時、私はそのレベルの最適化には興味がありませんでした。"
 
-#: ../../chapter6.rst:1393
+#: ../../chapter6.rst:1395
 msgid ""
 "Even if the thought had occurred to me then, I probably would have said, "
-"\"All right, I'll do that later,\" then gone right ahead with what I was "
-"doing. Optimization wasn't the most important thing to me at the time."
-msgstr ""
+"\"All right, I\\'ll do that later,\" then gone right ahead with what I "
+"was doing. Optimization wasn\\'t the most important thing to me at the "
+"time."
+msgstr "そのときに思いついたとしても、「後にする」と言ってから、自分がしていたことを先に進めていたでしょう。 当時、最適化は私にとって最も重要なことではありませんでした。"
 
-#: ../../chapter6.rst:1398
+#: ../../chapter6.rst:1400
 msgid ""
-"Of course I try to factor things well. But if there doesn't seem to be a "
-"good way to do something, I say, \"Let's just make it work.\""
-msgstr ""
+"Of course I try to factor things well. But if there doesn\\'t seem to be "
+"a good way to do something, I say, \"Let\\'s just make it work.\""
+msgstr "もちろん、私は物事をよく考慮しようと試みています。しかし、何かをするのに良い方法が見つからないようであれば、「それをうまく機能させるようにしましょう」と言います。"
 
-#: ../../chapter6.rst:1401
+#: ../../chapter6.rst:1403
 msgid ""
-"My motivation isn't laziness, it's knowing that there are other things "
-"coming down the pike that are going to affect this decision in ways I "
-"can't predict. Trying to optimize this now is foolish. Until I get the "
-"whole picture in front of me, I can't know what the optimum is."
-msgstr ""
+"My motivation isn\\'t laziness, it\\'s knowing that there are other "
+"things coming down the pike that are going to affect this decision in "
+"ways I can\\'t predict. Trying to optimize this now is foolish. Until I "
+"get the whole picture in front of me, I can\\'t know what the optimum is."
+msgstr "私の動機は怠惰ではありません。私は現時点の予測に対して予想外のアクシデントが入るのを知っています。今これを最適化しようとするのはばかげています。 全体像が目の前に表れるまでは何が最適なのかは分かりません。"
 
-#: ../../chapter6.rst:1406
+#: ../../chapter6.rst:1408
 msgid ""
 "The observations in this section shouldn’t contradict what’s been said "
 "before about information hiding and about anticipating elements that may "
 "change. A good programmer continually tries to balance the expense of "
 "building-in changeability against the expense of changing things later if"
 " necessary."
-msgstr ""
+msgstr "この節の観察は、情報隠蔽や変更される可能性のある要素の予測についてこれまでに述べたことと矛盾しないようにする必要があります。 優れたプログラマは、組み込みの変更可能性の費用と、後で必要に応じてものを変更する費用のバランスを取ろうとし続けます。"
 
-#: ../../chapter6.rst:1412
+#: ../../chapter6.rst:1414
 msgid "These decisions take experience. But as a general rule:"
-msgstr ""
+msgstr "これらの決定には経験が必要です。 しかし以下の原則があります。"
 
-#: ../../chapter6.rst:1416
+#: ../../chapter6.rst:1418
 msgid ""
 "Anticipate things-that-may-change by organizing information, not by "
 "adding complexity. Add complexity only as necessary to make the current "
 "iteration work."
-msgstr ""
-
-#: ../../chapter6.rst:1421
-msgid "Summary"
-msgstr ""
+msgstr "複雑さを増すのではなく、情報を整理することで、変化する可能性があるものを予測します。 現在の反復を機能させるために必要な場合にのみ複雑さを追加してください。"
 
 #: ../../chapter6.rst:1423
+msgid "Summary"
+msgstr "要約"
+
+#: ../../chapter6.rst:1425
 msgid ""
 "In this chapter we’ve discussed various techniques and criteria for "
 "factoring. We also examined how the iterative approach applies to the "
 "implementation phase."
-msgstr ""
+msgstr "この章で、私たちはファクタリング(要素分解)のさまざまな手法と基準について議論しました。 また、反復アプローチが実装フェーズにどのように適用されるのかも調べました。"
 
-#: ../../chapter6.rst:1428
+#: ../../chapter6.rst:1430
 msgid "REFERNCES"
 msgstr "参考文献"
 
-#: ../../chapter6.rst:1430
+#: ../../chapter6.rst:1432
 msgid ""
 "W.P. Stevens, G.J. Myers,and L.L. Constantine, ** IBM Systems Journal** ,"
 " vol. 13, no. 2, 1974, Copyright 1974 byInternational Business Machines "
@@ -1632,7 +1772,7 @@ msgstr ""
 "vol. 13, no. 2, 1974, Copyright 1974 byInternational Business Machines "
 "Corporation."
 
-#: ../../chapter6.rst:1431
+#: ../../chapter6.rst:1433
 msgid ""
 "G.A. Miller, \"The Magical Number Seven, Plus orMinus Two: Some Limits on"
 " our Capacity for Processing Information,\" **Psychol. Rev** ., vol. 63, "
@@ -1642,7 +1782,7 @@ msgstr ""
 " our Capacity for Processing Information,\" **Psychol. Rev** ., vol. 63, "
 "pp. 81-97, Mar. 1956."
 
-#: ../../chapter6.rst:1432
+#: ../../chapter6.rst:1434
 msgid ""
 "Kim R. Harris, \"Definition Field AddressConversion Operators,\"  **Forth"
 "--83 Standard** , Forth StandardsTeam."

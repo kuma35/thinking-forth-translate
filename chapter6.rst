@@ -691,8 +691,8 @@ But you’ll always have to factor it, so you might as well do it right
 the first time. (The few times you might get away with it aren’t worth
 the trouble.)
 
-The word ``.`` (dot) is a prime example. Dot is great 99\% of the time, but
-occasionally it does too much. Here’s what it does, in fact (in
+The word ``.`` (dot) is a prime example. Dot is great 99％ of the time, but
+occasionally it does too much. Here\’s what it does, in fact (in
 Forth–83):
 
 .. code-block:: none
@@ -920,8 +920,8 @@ might be to define:
    12 CONSTANT LIGHT-RED            13 CONSTANT LIGHT-MAGENTA
    14 CONSTANT YELLOW               15 CONSTANT WHITE
 
-These colors can be used with words such as BACKGROUND, FOREGROUND, and
-BORDER:
+These colors can be used with words such as ``BACKGROUND``, ``FOREGROUND``, and
+``BORDER``:
 
 .. code-block:: none
    
@@ -958,7 +958,7 @@ by itself will return a “1” on the stack, but the phrase
    
    LIGHT BLUE
 
-will return a “9.” (The adjective LIGHT sets flag which is used by the
+will return a “9.” (The adjective ``LIGHT`` sets flag which is used by the
 hues, then cleared.)
 
 If necessary for readability, we still might want to define:
@@ -973,7 +973,7 @@ shorter object code.
 
 .. hint::
 
-   Don't factor for the sake of factoring. Use clich\'es.
+   Don\'t factor for the sake of factoring. Use clich\'es.
 
 The phrase
 
@@ -999,17 +999,19 @@ It’s a little tempting to seize upon these phrases and turn them into
 words, such as (for the first phrase) ``RANGE``.
 
 **Moore**:
-    That particular phrase ``OVER``  ``+``   ``SWAP`` is one
-    that's right on the margin of being a useful word. Often, though, if
+    That particular phrase ``OVER + SWAP`` is one
+    that\'s right on the margin of being a useful word. Often, though, if
     you define something as a word, it turns out you use it only once. If
     you name such a phrase, you have trouble knowing exactly what
     ``RANGE`` does. You can't see the manipulation in your
-    mind. ``OVER``  ``+``   ``SWAP`` has greater mnemonic
+    mind. ``OVER + SWAP`` has greater mnemonic
     value than ``RANGE``.
 
 I call these phrases “clich\'es.” They stick together as meaningful
 functions. You don’t have to remember how the phrase works, just what it
 does. And you don’t have to remember an extra name.
+
+.. _compile-time-factoring:
 
 Compile-Time Factoring
 ======================
@@ -1073,7 +1075,7 @@ margin. To figure the total width of all the boxes, we add
 
    8 + 4 + 8 + 4 + 8 = 32
 
- (three widths and two avenues). :math:`(80-31) / 2 = 24`.
+(three widths and two avenues). :math:`(80-32) / 2 = 24`.
 
 So we could, crudely, define:
 
@@ -1084,7 +1086,7 @@ So we could, crudely, define:
 and use the same approach for ``TOPMARGIN``.
 
 But what if we should later redesign the pattern, so that the width
-changed, or perhaps the gap between the boxes? We’d have to recompute
+changed, or perhaps the gap between the boxes? We\’d have to recompute
 the left margin ourselves.
 
 In the Forth environment, we can use the full power of Forth even when
@@ -1097,13 +1099,13 @@ we’re compiling. Why not let Forth do the figuring?
 
 .. hint::
 
-   If a constant's value depends on the value of an earlier constant, use
+   If a constant\'s value depends on the value of an earlier constant, use
    Forth to calculate the value of the second.
 
 None of these computations are performed when the application is
 running, so run-time speed is not affected.
 
-Here’s another example.  :numref:`fig6-2`  shows the code for a
+Here\’s another example.  :numref:`fig6-2`  shows the code for a
 word that draws shapes. The word ``DRAW`` emits a star at every x–y
 coordinate listed in the table called ``POINTS``. (Note: the word ``XY``
 positions the cursor to the ( x y ) coordinate on the stack.)
@@ -1139,7 +1141,7 @@ Compile-Time Factoring through Defining Words
 ---------------------------------------------
 
 Let’s examine a series of approaches to the same problem—defining a
-group of related addresses. Here’s the first try:
+group of related addresses. Here\’s the first try:
 
 .. code-block:: none
    
@@ -1167,7 +1169,7 @@ repeated code into the “does” part of a defining word:
    4 PORT FLIPPER-B
    6 PORT WIN-LIGHT
 
-In this solution we’re performing the offset calculation at *run*-time,
+In this solution we\’re performing the offset calculation at *run*-time,
 every time we invoke one of these names. It would be more efficient to
 perform the calculation at compile time, like this:
 
@@ -1180,7 +1182,7 @@ perform the calculation at compile time, like this:
    4 PORT FLIPPER-B
    6 PORT WIN-LIGHT
 
-Here we’ve created a defining word, ``PORT``, that has a unique
+Here we\’ve created a defining word, ``PORT``, that has a unique
 *compile*-time behavior, namely adding the offset to ``BASE.PORT.ADDRESS``
 and defining a ``CONSTANT``.
 
@@ -1216,7 +1218,7 @@ that’s still on the stack.
 One final comment. The base-port address is very likely to change, and
 therefore should be defined in only one place. This does *not* mean it
 has to be defined as a constant. Provided that the base-port address
-won’t be used outside of this lexicon of port names, it’s just as well
+won’t be used outside of this lexicon of port names, it\’s just as well
 to refer to it by number here.
 
 .. code-block:: none
@@ -1234,7 +1236,7 @@ The Iterative Approach in Implementation
 
 Earlier in the
 book we discussed the iterative approach, paying particular attention to
-its impact on the design phase. Now that we’re talking about
+its impact on the design phase. Now that we\’re talking about
 implementation, let’s see how the approach is actually used in writing
 code.
 
@@ -1244,7 +1246,7 @@ code.
 
 Suppose we’re entrusted with the job of coding a word to draw or erase a
 box at a given x–y coordinate. (This is the same problem we introduced
-in the section called “Compile-Time Factoring.”)
+in the section called :ref:`compile-time-factoring` )
 
 At first we focus our attention on the problem of drawing a box—never
 mind erasing it. We might come up with
@@ -1297,7 +1299,7 @@ another untried, untested aspect of your code.
 
 .. hint::
 
-   Don't change too much at once.
+   Don\'t change too much at once.
 
 While you’re editing your application—adding a new feature or fixing
 something—it’s often tempting to go and fix several
@@ -1313,10 +1315,10 @@ know why.
 
 .. hint::
 
-   Don't try to anticipate ways to factor too early.
+   Don\'t try to anticipate ways to factor too early.
 
 Some people wonder why most Forth
-systems don’t include the definition word ARRAY. This rule is the
+systems don’t include the definition word ``ARRAY``. This rule is the
 reason.
 
 **Moore**:
@@ -1367,8 +1369,8 @@ reason.
     everywhere in Forth. But that\s rare.
 
     If you choose to define the word ``ARRAY``, you\'ve done a
-    decomposition step. You've factored out the concept of an array from
-    all the words you\'ll later back in. And you've gone to another level
+    decomposition step. You\'ve factored out the concept of an array from
+    all the words you\'ll later back in. And you\'ve gone to another level
     of abstraction.
     
     Building levels of abstraction is a dynamic process, not one you can
@@ -1391,17 +1393,17 @@ Again **Moore**. On the day of this interview, Moore had been completing work on
     optimization.
     
     Even if the thought had occurred to me then, I probably would have
-    said, "All right, I'll do that later," then gone right ahead with
-    what I was doing. Optimization wasn't the most important thing to me
+    said, "All right, I\'ll do that later," then gone right ahead with
+    what I was doing. Optimization wasn\'t the most important thing to me
     at the time.
     
-    Of course I try to factor things well. But if there doesn't seem to be
-    a good way to do something, I say, "Let's just make it work."
+    Of course I try to factor things well. But if there doesn\'t seem to be
+    a good way to do something, I say, "Let\'s just make it work."
     
-    My motivation isn't laziness, it's knowing that there are other things
+    My motivation isn\'t laziness, it\'s knowing that there are other things
     coming down the pike that are going to affect this decision in ways I
-    can't predict. Trying to optimize this now is foolish. Until I get the
-    whole picture in front of me, I can't know what the optimum is.
+    can\'t predict. Trying to optimize this now is foolish. Until I get the
+    whole picture in front of me, I can\'t know what the optimum is.
 
 The observations in this section shouldn’t contradict what’s been said
 before about information hiding and about anticipating elements that may
