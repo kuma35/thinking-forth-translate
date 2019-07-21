@@ -327,7 +327,7 @@ where ``ORIGIN!`` sets a two-element pointer to the “origin,” the place
 where the box will start (the upper left-hand corner). Then ``30 30 BOX``
 draws a box 30 units high and 30 units wide, relative to the origin.
 
-This approach reduces the number of stack arguments to BOX as part of
+This approach reduces the number of stack arguments to ``BOX`` as part of
 the design.
 
 .. hint::

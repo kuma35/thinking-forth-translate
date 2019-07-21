@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-20 16:56+0900\n"
+"POT-Creation-Date: 2019-07-22 07:22+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,7 +286,7 @@ msgid "where ``ORIGIN!`` sets a two-element pointer to the “origin,” the pla
 msgstr ""
 
 #: ../../chapter7.rst:330
-msgid "This approach reduces the number of stack arguments to BOX as part of the design."
+msgid "This approach reduces the number of stack arguments to ``BOX`` as part of the design."
 msgstr ""
 
 #: ../../chapter7.rst:335
