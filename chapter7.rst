@@ -1041,7 +1041,7 @@ But a preferred technique involves creating a table, with each element
 of the table referred to by name. Then creating a second table of the
 same length. As you can see in :numref:`fig7-3`, we can save
 the state by copying the table, called ``POINTERS,`` into the second table,
-called SAVED.
+called ``SAVED``.
 
 .. figure:: fig7-3.png
    :name: fig7-3
@@ -1279,21 +1279,29 @@ They are:
    
    Consider the definition of a word called ``DUMP``, designed to reveal the
    contents of a specified region of memory.
-   
+
    .. code-block:: none
-   
+      :lineno-start: 0
+      :emphasize-lines: 4
+      
       : DUMP  ( a # )
          O DO  I 16 MOD O= IF  CR  DUP I +  5 U.R  2 SPACES  THEN
-         DUP I +  &poorbf{@ 6 U.R  2 +LOOP}  DROP ;
+         DUP I +
+	         @ 6 U.R  2 +LOOP
+		                  DROP ;
    
    The problem arises when you write a definition called ``CDUMP``, designed
    to format the output according to bytes, not cells:
-   
+
    .. code-block:: none
+      :lineno-start: 0
+      :emphasize-lines: 4
    
       : CDUMP  ( a # )
          O DO  I 16 MOD O= IF  CR  DUP I +  5 U.R  2 SPACES  THEN
-         DUP I +  &poorbf{C@  4 U.R  LOOP} DROP ;
+         DUP I +
+                 C@  4 U.R  LOOP
+                                 DROP ;
    
    The code within these two definitions is identical except for the
    fragments in boldface. But factoring is difficult because the
@@ -1309,7 +1317,7 @@ They are:
       DOER .UNIT ( a -- increment)  \ display byte or cell
       : <DUMP>  ( a # )
          O DO  I 16 MOD O= IF  CR  DUP I +  5 U.R  2 SPACES  THEN
-         DUP I + &poorbf{.UNIT}  +LOOP  DROP ;
+         DUP I + .UNIT +LOOP  DROP ;
       : DUMP   ( a #)  MAKE .UNIT  @  6 U.R  2 ;AND <DUMP> ;
       : CDUMP ( a #)   MAKE .UNIT C@  4 U.R  1 ;AND <DUMP> ;
    

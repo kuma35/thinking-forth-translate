@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-22 07:22+0900\n"
-"PO-Revision-Date: 2019-07-22 07:33+0900\n"
+"POT-Creation-Date: 2019-07-23 14:15+0900\n"
+"PO-Revision-Date: 2019-07-23 20:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -378,7 +378,7 @@ msgid ""
 msgstr ""
 "私たちがここで行ったことは、各座標に1つずつ、4つの名前付き変数を作成することです。 ``[BOX]`` "
 "が最初に行うことは、これらの変数にスタックからの引数を入れることです。 次に、変数を参照して4本の線が描かれます。 "
-"これらのような定義内(または場合によっては用語集内)でのみ使用される変数は、「ローカル変数」と呼ばれます。"
+"これらのような定義内(または場合によっては用語集内)でのみ使用される変数は、「ローカル変数」と呼ばれます(訳注：他の言語で言う、構文・スコープ上他からアクセスできない「局所的」な変数ではないので注意。意味的な区別に過ぎない。)。"
 
 #: ../../chapter7.rst:264
 msgid ""
@@ -530,7 +530,11 @@ msgid ""
 "the stack as an array, which it is not. If you have so many elements on "
 "the stack that you need ``PICK`` and ``ROLL``, those elements should be "
 "in an array instead."
-msgstr "``PICK`` や ``ROLL`` というワードが好きな人もいます。 彼らはこれらのワードを使ってスタックのどの深さの要素にでもにアクセスします。 私はお勧めしません。まず、 ``PICK`` と ``ROLL`` はプログラマがスタックを配列と考えることを奨励しますが、実際はそうではありません。スタックに非常に多くの要素があり、 ``PICK`` と ``ROLL`` が必要な場合は、それらの要素は代わりに配列に含まれるべきです。"
+msgstr ""
+"``PICK`` や ``ROLL`` というワードが好きな人もいます。 "
+"彼らはこれらのワードを使ってスタックのどの深さの要素にでもにアクセスします。 私はお勧めしません。まず、 ``PICK`` と ``ROLL`` "
+"はプログラマがスタックを配列と考えることを奨励しますが、実際はそうではありません。スタックに非常に多くの要素があり、 ``PICK`` と "
+"``ROLL`` が必要な場合は、それらの要素は代わりに配列に含まれるべきです。"
 
 #: ../../chapter7.rst:351
 msgid ""
@@ -539,6 +543,8 @@ msgid ""
 " explicitly *passed* as arguments. This makes the definition dependent on"
 " other definitions. That’s unstructured—and dangerous."
 msgstr ""
+"第二に、彼らは、目の前で引数として渡されたものに対して定義を呼び出すのではなく、より間接的なレベルでスタックに残されている引数を参照することをプログラマに奨励します。これにより、定義は他の定義に依存します。"
+" それは構造化されていない。危険です。"
 
 #: ../../chapter7.rst:356
 msgid ""
@@ -547,20 +553,22 @@ msgid ""
 "instance, if you have an address at the fourth stack position down, you "
 "can write"
 msgstr ""
+"最後に、スタック上の要素の位置は、その上にあるものによって異なり、その上にあるものの数は常に変化します。 "
+"たとえば、4番目のスタック位置の下にアドレスがある場合は以下のように書くことができます。"
 
 #: ../../chapter7.rst:365
 msgid "to fetch its contents. But you must write"
-msgstr ""
+msgstr "その内容を取得します。 しかし、あなたは以下のように書く必要があります。"
 
 #: ../../chapter7.rst:371
 msgid ""
 "because with “:math:`n`” on the stack, the address is now in the fifth "
 "position. Code like this is hard to read and harder to modify."
-msgstr ""
+msgstr "なぜなら、スタックに :math:`n` があると、アドレスは現在5番目の位置にあるからです。 このようなコードは読みにくく、修正が困難です。"
 
 #: ../../chapter7.rst:375
 msgid "Make Stack Drawings"
-msgstr ""
+msgstr "スタック図面の作成"
 
 #: ../../chapter7.rst:377
 msgid ""
@@ -570,14 +578,16 @@ msgid ""
 "back of your phone bill), stack commentaries serve as nice auxiliary "
 "documentation."
 msgstr ""
+"解決するのが面倒なスタック状況があるときは、紙と鉛筆で解決するのが最善です。 :numref:`fig7-1` のような書式を作る人もいます。 "
+"正式に（電話の請求書の裏面にではなく）このように行われている場合、スタック解説は素晴らしい補助資料として役立ちます。"
 
 #: ../../chapter7.rst:384
 msgid "Stack Tips"
-msgstr ""
+msgstr "スタックに関するヒント"
 
 #: ../../chapter7.rst:388
 msgid "Make sure that stack effects balance out under all possible control flows"
-msgstr ""
+msgstr "スタック効果がすべての可能な制御フローの下でバランスが取れていることを確認してください。"
 
 #: ../../chapter7.rst:390
 msgid ""
@@ -589,34 +599,38 @@ msgid ""
 "leftover element represents doesn’t matter, as symbolized by the “x” next"
 " to ``THEN``.)"
 msgstr ""
+":numref:`fig7-1` の ``CMOVE>`` のためのスタック解説では、内側の波括弧が ``DO…LOOP`` "
+"の内容を表しています。 ループから出るときのスタックの深さは、ループに入るときと同じです。1要素です。 外側の中括弧内では、 ``IF`` "
+"節のスタック結果は ``ELSE`` 節の結果と同じです。1つの要素が残ります( ``THEN`` "
+"のところに「x」が付くように、残りの要素が何を表しているかは問題ではありません)。"
 
 #: ../../chapter7.rst:404
 msgid "Example of a stack commentary."
-msgstr ""
+msgstr "スタック解説の例"
 
 #: ../../chapter7.rst:408
 msgid ""
 "When doing two things with the same number, perform the function that "
 "will go underneath first."
-msgstr ""
+msgstr "同じ数値で2つのことをするときは、最初にスタックの下に置く方の機能を実行してください。"
 
 #: ../../chapter7.rst:411
 msgid "For example:"
-msgstr ""
+msgstr "例えば以下のように。"
 
 #: ../../chapter7.rst:417
 msgid "(where you first get the count) is more efficiently written:"
-msgstr ""
+msgstr "（あなたが最初にカウント( ``1+`` )を得るなら）もっと効率的に書く事ができます。"
 
 #: ../../chapter7.rst:423
 msgid "(where you first compute the address)."
-msgstr ""
+msgstr "(あなたは最初にアドレスを計算します。)"
 
 #: ../../chapter7.rst:427
 msgid ""
 "Where possible, keep the number of return arguments the same in all "
 "possible cases."
-msgstr ""
+msgstr "可能な場合は、可能な限りすべての戻り引数の数を同じにしてください。"
 
 #: ../../chapter7.rst:430
 msgid ""
@@ -624,19 +638,21 @@ msgid ""
 " wrong, returns an error-code identifying the problem. Here’s one way the"
 " stack interface might be designed:"
 msgstr ""
+"あなたはしばしば何らかの仕事をする定義を見つけるでしょう、そして何かがうまくいかないなら、問題を特定するエラーコードを返します。 "
+"これがスタックインターフェースの設計方法の1つです。"
 
 #: ../../chapter7.rst:439
 msgid ""
 "If the flag is true, the operation was successful. If the flag is false, "
 "it was unsuccessful and there’s another value on the stack to indicate "
 "the nature of the error."
-msgstr ""
+msgstr "フラグがtrueの場合、操作は成功しました。 フラグがfalseの場合は失敗し、エラーの性質を示す別の値がスタックにあります。"
 
 #: ../../chapter7.rst:443
 msgid ""
 "You’ll find stack manipulation easier, though, if you redesign the "
 "interface to look like this:"
-msgstr ""
+msgstr "ただし、インターフェイスを以下のように設計し直すと、スタック操作が簡単になります。"
 
 #: ../../chapter7.rst:450
 msgid ""
@@ -644,16 +660,18 @@ msgid ""
 " Note that reverse-logic is used; non-zero indicates an error. You can "
 "use any values for the error codes except zero."
 msgstr ""
+"1つの値がフラグとしても（エラーの場合には）エラーコードとしても機能します。 逆論理が使用されていることに注意してください。 "
+"ゼロ以外はエラーを示します。 エラーコードには、ゼロ以外の任意の値を使用できます。"
 
 #: ../../chapter7.rst:456
 msgid "The Stylish Return Stack"
-msgstr ""
+msgstr "スタイリッシュ・リターン・スタック"
 
 #: ../../chapter7.rst:458
 msgid ""
 "What about this use of the return stack to hold temporary arguments? Is "
 "it good style or what?"
-msgstr ""
+msgstr "一時的な引数を保持するためのリターンスタックの使用についてはどうでしょうか？それは良いスタイルなのでしょうか？"
 
 #: ../../chapter7.rst:461
 msgid ""
@@ -661,6 +679,8 @@ msgid ""
 "the simplest solution to certain gnarly stack jams. Witness the "
 "definition of ``CMOVE>`` in the previous section."
 msgstr ""
+"何人かの人々はその使用に大いに立腹します。 しかし、リターンスタックは、特定のぎくしゃくしたスタックの詰まりに対して最も簡単な解決策を提供します。"
+" 前節の ``CMOVE>`` の定義を見てください。"
 
 #: ../../chapter7.rst:465
 msgid ""
@@ -668,24 +688,26 @@ msgid ""
 " are using a component of Forth for a purpose other than that intended. "
 "(See the section called “Sharing Components,” later in this chapter.)"
 msgstr ""
+"この目的でリターンスタックを使用することにした場合は、意図した以外の目的でForthのコンポーネントを使用していることに注意してください。 "
+"（この章で後述する「コンポーネントの共有」という節を参照してください。）"
 
 #: ../../chapter7.rst:470
 msgid "Here’s some suggestions to keep you from shooting yourself in the foot:"
-msgstr ""
+msgstr "ここで、あなたが自分の足を撃たないようにするためのいくつかの提案があります。"
 
 #: ../../chapter7.rst:474
 msgid "Keep return stack operators symmetrical."
-msgstr ""
+msgstr "リターンスタック演算子を対称に保って下さい。"
 
 #: ../../chapter7.rst:475
 msgid "Keep return stack operators symmetrical under all control flow conditions."
-msgstr ""
+msgstr "リターンスタック演算子は、すべての制御フロー条件下で対称に保って下さい。"
 
 #: ../../chapter7.rst:477
 msgid ""
 "In factoring definitions, watch out that one part doesn't contain one "
 "return stack operator, and the other its counterpart."
-msgstr ""
+msgstr "定義のファクタリング(要素分解)では、片方の部分にだけリターンスタック演算子が含まれてなかったり、対応が合ってないなんてことにならないように注意してください。"
 
 #: ../../chapter7.rst:479
 msgid ""
@@ -693,6 +715,8 @@ msgid ""
 "symmetrical within the loop, and ``I`` is no longer valid in code bounded"
 " by ``>R`` and ``R>``."
 msgstr ""
+"``DO…LOOP`` の中で使われる場合、リターンスタック演算子はループ内で対称的でなければなりません、そして ``I`` は ``>R`` と"
+" ``R>`` で囲まれたコードではもはや有効ではありません。 "
 
 #: ../../chapter7.rst:483
 msgid ""
@@ -700,6 +724,8 @@ msgid ""
 " the operators will appear to be symmetrical, but due to the control "
 "structure they aren’t. For instance:"
 msgstr ""
+"すべての ``>R`` に対して、同じ定義内に `` R> `` がなければなりません。 "
+"演算子は対称に見えることがありますが、それらは制御構造ではありません。 たとえば以下"
 
 #: ../../chapter7.rst:492
 msgid ""
@@ -708,10 +734,12 @@ msgid ""
 " suddenly blow up. The problem? The last time through the loop, the "
 "resolving ``R>`` has been skipped."
 msgstr ""
+"この構造がアプリケーションの外側のループで使用されている場合は、突然爆発して終了するまで（おそらく数時間後）、すべて正常に動作します。 "
+"何が問題なのでしょう？ 最後のループで ``R>`` はスキップされます。"
 
 #: ../../chapter7.rst:498
 msgid "The Problem With Variables"
-msgstr ""
+msgstr "変数に伴う問題"
 
 #: ../../chapter7.rst:500
 msgid ""
@@ -723,6 +751,9 @@ msgid ""
 "contents of a variable and use it without knowing where that value came "
 "from."
 msgstr ""
+"私たちはスタック上ですぐに関心のあるデータを処理しますが、変数に入れられた多くの情報に依存しており、繰り返しアクセスできるようになっています。 "
+"コードの一部は、そのデータがどのように使用されるのか、誰がそれを使用するのか、いつ使用されるのか、そしていつ使用されるのかについて必ずしも何かを知る必要なく、変数の内容を変更できます。"
+" 別のコードでは、変数の内容を取得して、その値がどこから来たのかを知らなくても使用できます。"
 
 #: ../../chapter7.rst:508
 msgid ""
@@ -730,17 +761,19 @@ msgid ""
 "consume that value. The stack gives us point-to-point communication, like"
 " the post office."
 msgstr ""
+"値をスタックにプッシュするワードごとに、別のワードがその値を消費する必要があります。 "
+"このスタックは、郵便局のように、ポイントツーポイントの通信を可能にします。"
 
 #: ../../chapter7.rst:512
 msgid ""
 "Variables, on the other hand, can be set by any command and accessed any "
 "number of times—or not at all—by any command. Variables are available for"
 " anyone who cares to look—like graffiti."
-msgstr ""
+msgstr "一方、変数は任意のコマンドで設定でき、任意のコマンドで何度でもアクセス(または、全くアクセスしない事が)できます。落書きのように、目に止めた人は誰でも変数を利用できます。"
 
 #: ../../chapter7.rst:516
 msgid "Thus variables can be used to reflect the current state of affairs."
-msgstr ""
+msgstr "したがって、変数は現在の状況を反映するために使用できます。"
 
 #: ../../chapter7.rst:518
 msgid ""
@@ -751,6 +784,10 @@ msgid ""
 "to display. We didn’t have to specify both descriptions every time, as in"
 " ``TENS ONER``, ``TENS FIVER``, etc."
 msgstr ""
+"現時性を利用すると問題を単純化できます。 :doc:`第４章<chapter4>` のローマ数字の例では、現在の桁位置を表すために変数 "
+"``COLUMN#`` を使いました。 ``ONER`` 、 ``FIVER`` 、``TENER`` "
+"というワード、どの種類のシンボルを表示するかを決定するためにこの情報に依存していました。 ``TENS ONER`` や ``TENS "
+"FIVER`` などのように、毎回両方の説明を指定する必要はありませんでした。"
 
 #: ../../chapter7.rst:526
 msgid ""
@@ -760,6 +797,8 @@ msgid ""
 "that part of our code will refer to it before another part has had a "
 "chance to set it."
 msgstr ""
+"一方で、現時性は新しいレベルの複雑さを追加します。 最新の情報にするには、最初に変数またはある種のデータ構造を定義する必要があります。 "
+"他の部分がそれを設定する機会がある前に、私たちのコードの部分がそれを参照する可能性があるならば、我々はそれを初期化することを忘れないでください。"
 
 #: ../../chapter7.rst:532
 msgid ""
@@ -768,13 +807,16 @@ msgid ""
 "must have its own copies. Forth’s ``USER`` variables serve this purpose. "
 "(See *Starting Forth*, Chapter Nine, “Forth Geography.”)"
 msgstr ""
+"変数に関するより深刻な問題は、それらが「再入可能(リエントラント)」ではないということです。マルチタスクのForthシステムでは、ローカル変数を必要とする各タスクはそれ自身のコピーを持たなければなりません。"
+" Forthの ``USER`` 変数はこの目的を果たします( *Starting Forth* Chapter 9、\"Forth "
+"Geography\";邦訳 FORTH入門 第９章「仮面の下に」参照)。"
 
 #: ../../chapter7.rst:538
 msgid ""
 "Even within a single task, a definition that refers to a variable is "
 "harder to test, verify, and reuse in a different situation than one in "
 "which arguments are passed via the stack."
-msgstr ""
+msgstr "単一のタスク内でも、変数を参照する定義は、引数がスタックを介して渡される場合とは異なる状況でテスト、検証、および再利用するのが困難です。"
 
 #: ../../chapter7.rst:542
 msgid ""
@@ -785,20 +827,22 @@ msgid ""
 " (``CURSOR @``) and ending at the zeroth position, searching for the line"
 " feed character."
 msgstr ""
+"ワープロ、エディタを実装しているとします。 現在のカーソル位置と前の改行文字との間の文字数を計算するルーチンが必要です。 そのため、現在位置( "
+"``CURSOR @`` )から始まり、0番目の位置まで、 ``DO…LOOP`` を使って改行文字を検索するワードを書きます。"
 
 #: ../../chapter7.rst:550
 msgid ""
 "Once the loop has found the character sequence, we subtract its relative "
 "address from our current cursor position"
-msgstr ""
+msgstr "ループが当該文字パターンを見つけたら、現在のカーソル位置からその相対アドレスを引きます。"
 
 #: ../../chapter7.rst:557
 msgid "to determine the distance between them."
-msgstr ""
+msgstr "それらの間の距離を決定します。"
 
 #: ../../chapter7.rst:559
 msgid "Our word’s stack effect is:"
-msgstr ""
+msgstr "私たちのワードのスタック効果は以下のようになります。"
 
 #: ../../chapter7.rst:565
 msgid ""
@@ -808,24 +852,27 @@ msgid ""
 "out the “``CURSOR @``” and allowing the starting address to be passed as "
 "an argument on the stack, resulting in:"
 msgstr ""
+"しかし、のちのコーディングで、現在のカーソル位置ではなく任意の文字から最初の前の改行文字までの距離を計算するための同様のワードが必要なことが分かりました。"
+" ``CURSOR @`` を取り除き、開始アドレスをスタックの引数として渡すことができるようすると、以下のようになります。"
 
 #: ../../chapter7.rst:575
 msgid ""
 "By factoring-out the reference to the variable, we made the definition "
 "more useful."
-msgstr ""
+msgstr "変数への参照を括り出すことで、定義をより便利にしました。"
 
 #: ../../chapter7.rst:580
 msgid ""
 "Unless it involves cluttering up the stack to the point of unreadability,"
 " try to pass arguments via the stack rather than pulling them out of "
 "variables."
-msgstr ""
+msgstr "読みにくくなるまでスタックを乱雑にしない限り、引数を変数から引き出すのではなく、スタックを介して引数を渡すようにしてください。"
 
 #: ../../chapter7.rst:597
 msgid "**Kogge**:"
-msgstr ""
+msgstr "Koggeは言います。"
 
+# 机の上の友人の下りはちと意味不明
 #: ../../chapter7.rst:585
 msgid ""
 "Most of the modularity of Forth comes from designing and treating Forth "
@@ -837,6 +884,11 @@ msgid ""
 "inputs a word will always give the same stack outputs regardless of the "
 "more global context in which it is executed."
 msgstr ""
+"Forthのモジュール性のほとんどは、Forthのワードを数学的な意味での「関数(function)」として設計および処理することによって得られます。"
+" "
+"私の経験では、Forthのプログラマは通常、最も重要なグローバル変数以外のものを定義しないようにします(机の上に「変数を打ち出すヘルプ」という書き込みのある友人が居ます）。"
+" "
+"つまり、参照透過性のあるワードを書こうとします。すなわち、同じスタック入力が与えられると、それが実行されるより大域的な文脈に関係なく、ワードは常に同じスタック出力を与えるでしょう。"
 
 #: ../../chapter7.rst:594
 msgid ""
@@ -845,13 +897,15 @@ msgid ""
 " to test. In a sense a \"named variable\" whose value changes frequently "
 "is the next worst thing to the now \"forbidden\" GOTO."
 msgstr ""
+"実際、この性質は、ワードを単独でテストするときに使用するものとまったく同じです。 この性質を持たないワードはテストするのがかなり難しいです。 "
+"ある意味では、値が頻繁に変わる「名前付き変数」は、今どきは「禁止されている」GOTOの次に良くない代物です。"
 
 #: ../../chapter7.rst:603
 msgid ""
 "\"Shot from a cannon on a fast-moving train, hurtling between the blades "
 "of a windmill, and expecting to grab a trapeze dangling from a hot-air "
 "balloon... I told you Ace, there were too many variables!\""
-msgstr ""
+msgstr "「高速移動する列車から大砲で撃ち出され、風車の羽根の間をくぐりぬけ、そして熱気球からぶら下がっているブランコをつかむ事を期待して…あなたはエースだけど、あまりにも変数が多すぎたわ」"
 
 #: ../../chapter7.rst:605
 msgid ""
@@ -863,6 +917,10 @@ msgid ""
 "variables are not referred to outside of this definition, and the word "
 "behaves safely as a function."
 msgstr ""
+"以前、スタック渋滞を排除するために、特に設計段階でローカル変数を使用することをお勧めしました。 "
+"その際、変数は1つの定義内でのみ参照されることに注意することが重要です。 私たちの例では、 ``[BOX]`` "
+"はスタックから4つの引数を受け取り、すぐにそれらをローカル変数にロードして使用します。 "
+"4つの変数はこの定義外では参照されず、ワードは関数として安全に動作します。"
 
 #: ../../chapter7.rst:613
 msgid ""
@@ -874,6 +932,9 @@ msgid ""
 " *what* might happen with all that thrashing about on the stack,” he "
 "felt."
 msgstr ""
+"暗黙のうちにデータを渡すことができる言語に慣れていないプログラマは、必要なだけスタックを利用するとは限りません。マイケル・ハムは、その理由はおそらくForthユーザがスタックを信頼していないことにあると示唆しています。"
+" [ham83]_ \n"
+"最初は値をスタックに残すことよりも、変数に値を格納することがより安全だと感じる事を、彼は認めています。「スタック上で転げ回っているすべてのことで何が起こるのかわからない」と彼は感じました。"
 
 #: ../../chapter7.rst:622
 msgid ""
@@ -883,11 +944,11 @@ msgid ""
 " I could put the count on the stack at the beginning of the loop, go "
 "through the complete routine for each group, and at the end the count "
 "would emerge, back on top of the stack, not a hair out of place.”"
-msgstr ""
+msgstr "「期待される入力と出力のためだけにスタックを使用し、自分自身が後でクリーンアップすることを、ワードそれ自身が正しく守れば、それらは封印されたシステムとみなすことができます…私はループの初めにスタックにカウントを置くことができます。各グループの為の完全なルーチンを実行させ、そしてそれが終わると、最後にスタックの先頭にはカウントがあります。髪の毛ほどもズレていません」彼がこれを理解するには少し時間がかかりました。"
 
 #: ../../chapter7.rst:631
 msgid "Local and Global Variables/Initialization"
-msgstr ""
+msgstr "ローカル、グローバル変数と、その初期化"
 
 #: ../../chapter7.rst:633
 msgid ""
@@ -898,12 +959,15 @@ msgid ""
 "that collectively describe a common interface between several lexicons is"
 " called an “interface lexicon.”"
 msgstr ""
+"前に見たように、他のコードから隠された、単一の定義（または単一の用語集）内で排他的に使用される変数は、ローカル変数と呼ばれます。 "
+"複数の用語集で使用される変数は、グローバル変数と呼ばれます。 "
+"前章で見たように、いくつかの用語集間の共通のインターフェースをまとめて記述するグローバル変数のセットは「インターフェース用語集」と呼ばれます。"
 
 #: ../../chapter7.rst:640
 msgid ""
 "Forth makes no distinction between local and global variables. But Forth "
 "programmers do."
-msgstr ""
+msgstr "Forthは、ローカル変数とグローバル変数を区別しません。 しかし、Forthプログラマはそうしています。"
 
 #: ../../chapter7.rst:644
 msgid ""
@@ -912,6 +976,8 @@ msgid ""
 "define it locally. It's handier to define it in the block where it's "
 "used, where you can see its comment."
 msgstr ""
+"私たちは読者のために書くべきです。 ローカルでのみ参照される場合、合計を累積するための一時的な変数である場合は、ローカルで定義する必要があります。"
+" それが使用されているブロック内でそれを定義するほうが便利で、あなたはそこにそれのコメントを見ることができます。"
 
 #: ../../chapter7.rst:649
 msgid ""
@@ -919,6 +985,8 @@ msgid ""
 "logical function, and define them together on a separate screen. One per "
 "line with a comment."
 msgstr ""
+"もしそれがグローバルに使われているのであれば、私達はそれらの論理的機能に従って物事を集め、そして別のスクリーン上でそれらを一緒に定義するべきです。"
+" 1行に１つ、コメント付きで。"
 
 #: ../../chapter7.rst:653
 msgid ""
@@ -927,6 +995,9 @@ msgid ""
 "and there isn't room for any decent comment. And it scatters the "
 "initialization all over the application."
 msgstr ""
+"問題は、どこでそれらを初期化するかです。その定義のすぐ後に、同じ行で、と言う人もいます。 "
+"しかし、それはコメントをめちゃめちゃにします、そしてまともなコメントの余地はありません。 "
+"そして、それはアプリケーション全体にわたって初期化を散乱させます。"
 
 #: ../../chapter7.rst:658
 msgid ""
@@ -935,12 +1006,14 @@ msgid ""
 "might also set up color lookup tables or execute some initialization "
 "code."
 msgstr ""
+"私は、初期化はすべてロード・スクリーンで行います。 すべてのブロックをロードしたら、初期化する必要があるものを初期化します。 "
+"カラールックアップテーブルを設定したり、初期化コードを実行したりする可能性もあります。"
 
 #: ../../chapter7.rst:662
 msgid ""
 "If your program is destined to be target compiled, then it's easy to "
 "write a word at the point that encompasses all the initialization."
-msgstr ""
+msgstr "あなたのプログラムがターゲットコンパイルされることになっているならば、すべての初期化を包含する場所にワードを書くのは簡単です。"
 
 #: ../../chapter7.rst:665
 msgid ""
@@ -950,10 +1023,13 @@ msgid ""
 " usually you're only initializing a few variables to anything other than "
 "zero."
 msgstr ""
+"もっと複雑になることがあります。 "
+"私は変数をROM内で定義しました。変数はすべてハイメモリの配列でオフになっていて、初期値はROM内にあります。初期値は初期化時にコピーします。 "
+"しかし、通常は、いくつかの変数をゼロ以外のものに初期化するだけです。"
 
 #: ../../chapter7.rst:671
 msgid "Saving and Restoring a State"
-msgstr ""
+msgstr "状態の保存と復元"
 
 #: ../../chapter7.rst:673
 msgid ""
@@ -961,13 +1037,15 @@ msgid ""
 "you clobber the value that was there before. Let’s look at some of the "
 "problems this can create, and some of the things we can do about them."
 msgstr ""
+"変数には、内容を変更すると以前に存在していた値が上書きされるという特性があります。 "
+"これが引き起こす問題と、それらについて我々ができることのいくつかを見てみましょう。"
 
 #: ../../chapter7.rst:677
 msgid ""
 "``BASE`` is a variable that indicates the current number radix for all "
 "numeric input and output. The following words are commonly found in Forth"
 " systems:"
-msgstr ""
+msgstr "``BASE`` は全ての数値入出力に対する現在の基数を示す変数です。 以下のワードは、Forthシステムで一般的に見られます。"
 
 #: ../../chapter7.rst:686
 msgid ""
@@ -975,6 +1053,8 @@ msgid ""
 "Ordinarily, we work in decimal mode, but we want the dump in hexadecimal."
 " So we write:"
 msgstr ""
+"メモリダンプを表示するワードを書いたとします。 通常、私たちは10進数モードで作業しますが、ダンプは16進数で行います。 "
+"だから私たちは以下ように書きます。"
 
 #: ../../chapter7.rst:695
 msgid ""
@@ -984,20 +1064,25 @@ msgid ""
 "``HEX``, we have to save its current value. When we’re done dumping, we "
 "restore it."
 msgstr ""
+"ほとんどの場合、これは機能します。 しかし、それらは10進数モードに戻りたいだろうという推測に基づいています。 "
+"16進数で機能していて、16進数に戻りたい場合はどうなりますか？ 基数を ``HEX`` に変更する前に、現在の値を保存する必要があります。 "
+"そしてダンプが完了したら復元します。"
 
 #: ../../chapter7.rst:701
 msgid ""
 "This means we have to tuck away the saved value temporarily, while we "
 "format the dump. The return stack is one place to do this:"
 msgstr ""
+"これは、ダンプをフォーマットしている間、保存した値を一時的に隠しておく必要があることを意味します。 "
+"リターンスタックはこれを行うための1つの場所です。"
 
 #: ../../chapter7.rst:710
 msgid "If things get too messy, we may have to define a temporary variable:"
-msgstr ""
+msgstr "面倒になりすぎる場合は、一時変数を定義する必要があります。"
 
 #: ../../chapter7.rst:719
 msgid "How quickly things get complicated."
-msgstr ""
+msgstr "物事はすぐに複雑になります。"
 
 #: ../../chapter7.rst:721
 msgid ""
@@ -1005,21 +1090,21 @@ msgid ""
 "belong only to your application (and not part of your system), and if "
 "this same situation comes up more than once, apply a technique of "
 "factoring:"
-msgstr ""
+msgstr "このような場合、現在のバージョンと古いバージョンの変数の両方が自分のアプリケーションだけに属していて（システムの一部ではない）、同じ状況が複数回発生する場合は、以下のようにファクタリング(要素分解)の手法を適用します。"
 
 #: ../../chapter7.rst:731
 msgid ""
 "Then instead of defining two variables, such as ``CONDITION`` and ``OLD-"
 "CONDITION``, define one double-length variable:"
-msgstr ""
+msgstr "それから ``CONDITION`` と ``OLD-CONDITION`` のように2つの変数を定義する代わりに、1つの2倍長変数を定義します。"
 
 #: ../../chapter7.rst:738
 msgid "Use ``BURY`` and ``EXHUME`` to save and restore the original value:"
-msgstr ""
+msgstr "元の値を保存し復元するには、 ``BURY`` と ``EXHUME`` を使います。"
 
 #: ../../chapter7.rst:745
 msgid "``BURY`` saves the “old” version of condition at ``CONDITION 2+``."
-msgstr ""
+msgstr "``BURY`` は ``CONDITION 2 +`` で条件の「古い」バージョンを保存します。"
 
 #: ../../chapter7.rst:747
 msgid ""
@@ -1029,12 +1114,17 @@ msgid ""
 "build the test for a key being pressed, and if so execute ``QUIT``. But "
 "what happens?"
 msgstr ""
+"あなたはまだ注意する必要があります。 私たちの ``DUMP`` の例に戻って、あなたが :kbd:`ESC` "
+"キーを押すことによっていつでもユーザーにダンプを終了させるという親しみやすい機能を追加することに決めたとしましょう。 "
+"それでループの中であなたは押されたキーのテストを構築し、もしそうなら ``QUIT`` を実行します。 しかし、そうすると何が起こるでしょうか？"
 
 #: ../../chapter7.rst:754
 msgid ""
 "The user starts in decimal, then types ``DUMP``. He exits ``DUMP`` midway"
 " through and finds himself, strangely, in hexadecimal."
 msgstr ""
+"ユーザは基数10進数で始めてから ``DUMP`` とタイプします。 彼が途中で ``DUMP`` "
+"終了させると、不思議なことに、基数は16進数になっているではありませんか。"
 
 #: ../../chapter7.rst:758
 msgid ""
@@ -1042,16 +1132,18 @@ msgid ""
 " rather a controlled exit from the loop (via ``LEAVE``, etc.) to the end "
 "of the definition where ``BASE`` is reset."
 msgstr ""
+"当面の単純な場合、最善の解決策は ``QUIT`` ではなく、 定義の末尾の ``BASE`` のリセットを行う場所へ( ``LEAVE`` "
+"などを介して)、ループからの制御された終了を使って脱出する事です。"
 
 #: ../../chapter7.rst:763
 msgid ""
 "In very complex applications a controlled exit is often impractical, yet "
 "many variables must somehow be restored to a natural condition."
-msgstr ""
+msgstr "非常に複雑なアプリケーションでは、制御された出口は実際には実用的ではありませんが、それでも多くの変数を何らかの方法で自然な状態に復元する必要があります。"
 
 #: ../../chapter7.rst:782
 msgid "**Moore** responds to this example:"
-msgstr ""
+msgstr "**ムーア** はこの例に対して、以下のように言います。"
 
 #: ../../chapter7.rst:767
 msgid ""
@@ -1060,6 +1152,9 @@ msgid ""
 " say ``DECIMAL``   ``DUMP``. I don't give ``DUMP`` the privilege of "
 "messing around with my environment."
 msgstr ""
+"あなたは自縄自縛に陥っています。あなたは自分自身のせいで問題を引き起こしています。 16進ダンプが欲しいのなら、私は ``HEX DUMP`` "
+"と言います。 10進数のダンプが欲しいなら、 ``DECIMAL DUMP`` と言います。 私は ``DUMP`` "
+"に自分の環境をいじり回す特権を与えません。"
 
 #: ../../chapter7.rst:772
 msgid ""
@@ -1069,6 +1164,9 @@ msgid ""
 "try to do that consistently everywhere. But it's hard to define "
 "\"everywhere.\" So now I tend to establish the state before I start."
 msgstr ""
+"あなたが終了したときに状況を回復することとあなたが開始したときに状況を確定することの間に哲学的な選択があります。 "
+"長い間、私はあなたが終わったときあなたが状況を回復するべきであると感じました。 そして私はそれをどこでも一貫してやろうとするでしょう。 "
+"しかし、「どこでも」を定義するのは困難です。 だから今、私は始める前に状態を確立する傾向があります。"
 
 #: ../../chapter7.rst:778
 msgid ""
@@ -1076,10 +1174,12 @@ msgid ""
 " somebody else changes them, they don't have to worry about resetting "
 "them."
 msgstr ""
+"物事がどこにあるかを気にするワードがあれば、それを設定したほうがよいでしょう。 "
+"他の誰かがそれらを変更しても、それらをリセットすることを心配する必要はありません。"
 
 #: ../../chapter7.rst:782
 msgid "There are more exits than there are entrances."
-msgstr ""
+msgstr "入り口よりも多くの出口の方が多いのです。"
 
 #: ../../chapter7.rst:784
 msgid ""
@@ -1087,18 +1187,20 @@ msgid ""
 "it useful to have a single word (which I call ``PRISTINE``) to perform "
 "this resetting. I invoke ``PRISTINE``:"
 msgstr ""
+"やり直す前にリセットを実行する必要がある場合は、このリセットを実行するために1つのワード( ``PRISTINE`` "
+"と呼びます)があると便利です。 以下のようにして ``PRISTINE`` を起動します。"
 
 #: ../../chapter7.rst:788
 msgid "at the normal exit point of the application"
-msgstr ""
+msgstr "アプリケーションの通常の出口で"
 
 #: ../../chapter7.rst:790
 msgid "at the point where the user may deliberately exit (just before ``QUIT``)"
-msgstr ""
+msgstr "ユーザが意図的に終了する可能性がある場所( ``QUIT`` の直前）"
 
 #: ../../chapter7.rst:792
 msgid "at any point where a fatal error may occur, causing an abort."
-msgstr ""
+msgstr "致命的なエラーが発生してアボートを引き起こす可能性がある場所で"
 
 #: ../../chapter7.rst:794
 msgid ""
@@ -1106,10 +1208,12 @@ msgid ""
 "value, make sure it’s not just a case of bad factoring. For example, "
 "suppose we have written:"
 msgstr ""
+"最後に、値を保存または復元しなければならないというこのような状況に遭遇したときには、それが単なる悪い要素ではないことを確認してください。 "
+"たとえば、次のように書いたとします。"
 
 #: ../../chapter7.rst:804
 msgid "The current ``GAME`` is either ``LONG`` or ``SHORT``."
-msgstr ""
+msgstr "現在の ``GAME`` は ``LONG`` か ``SHORT`` のどちらかです。"
 
 #: ../../chapter7.rst:806
 msgid ""
@@ -1117,6 +1221,8 @@ msgid ""
 "invoke ``GAME`` making sure not to clobber the current value of "
 "``#HOLES``:"
 msgstr ""
+"後になって、私たちは任意の数のホール(hole)をプレイするためのワードが必要だと決心しました。 そこで、 ``#HOLES`` "
+"の現在の値を上書きしないように ``GAME`` を起動します。"
 
 #: ../../chapter7.rst:813
 msgid ""
@@ -1124,16 +1230,18 @@ msgid ""
 "of greater complexity; we built ``HOLES`` around ``GAME``. But in "
 "fact—perhaps you see it already—rethinking is in order:"
 msgstr ""
+"``GAME`` を定義した後は ``HOLES`` が必要だったので、それはもっと複雑なように思えました。 私たちは ``GAME`` の周りに"
+" ``HOLES`` を作りました。 しかし、実際には、おそらくあなたはすでにそれを見ているはずですが、再考するのが正しいのです。"
 
 #: ../../chapter7.rst:822
 msgid ""
 "We can build ``GAME`` around ``HOLES`` and avoid all this "
 "saving/restoring nonsense."
-msgstr ""
+msgstr "私たちは ``HOLES`` の周囲に ``GAME`` を構築し、このような保存/復元のナンセンスをすべて回避することができます。"
 
 #: ../../chapter7.rst:826
 msgid "Application Stacks"
-msgstr ""
+msgstr "アプリケーションスタック"
 
 #: ../../chapter7.rst:828
 msgid ""
@@ -1142,12 +1250,14 @@ msgid ""
 "and restored. You may often find the best solution to this problem in "
 "defining your own stack."
 msgstr ""
+"前節では、単一の値を保存および復元する方法をいくつか検討しました。 一部のアプリケーションでは、複数値を保存および復元する必要があります。 "
+"自分のスタックを定義することで、この問題に対する最善の解決策が見つかることがよくあります。"
 
 #: ../../chapter7.rst:833
 msgid ""
 "Here is the code for a user stack including very simple error checking "
 "(an error clears the stack):"
-msgstr ""
+msgstr "以下は、非常に単純なエラーチェックを含むユーザスタックのコードです(エラー発生時はスタックをクリアする)。"
 
 #: ../../chapter7.rst:845
 msgid ""
@@ -1155,36 +1265,38 @@ msgid ""
 "it onto this new stack. ``POP`` is the opposite, “popping” a value from "
 "off the new stack, and onto Forth’s data stack."
 msgstr ""
+"``PUSH`` というワード、データスタックから値を取り出し、それをこの新しいスタックに「プッシュ」します。 ``POP`` "
+"は反対で、新しいスタックから値をForthのデータスタックに「ポップ」します。"
 
 #: ../../chapter7.rst:849
 msgid ""
 "In a real application you might want to change the names ``PUSH`` and "
 "``POP`` to better match their conceptual purposes."
-msgstr ""
+msgstr "実際のアプリケーションでは、概念的な目的に合うように ``PUSH`` と ``POP`` の名前を変更することをお勧めします。"
 
 #: ../../chapter7.rst:853
 msgid "Sharing Components"
-msgstr ""
+msgstr "共有コンポーネント"
 
 #: ../../chapter7.rst:857
 msgid ""
 "It's legal to use a component for an additional purpose besides its "
 "intended one, provided:"
-msgstr ""
+msgstr "以下の条件で、意図した目的以外に追加の目的でコンポーネントを使用することは合法です。"
 
 #: ../../chapter7.rst:860
 msgid "All uses of the component are mutually exclusive"
-msgstr ""
+msgstr "このコンポーネントの使用はすべて相互に排他的です。"
 
 #: ../../chapter7.rst:861
 msgid ""
 "Each interrupting use of the component restores the component to its "
 "previous state when finished."
-msgstr ""
+msgstr "コンポーネントの使用を中断するたびに、コンポーネントは終了時の前の状態に復元されます。"
 
 #: ../../chapter7.rst:864
 msgid "Otherwise you need an additional component or level of complexity."
-msgstr ""
+msgstr "それ以外の場合は、追加のコンポーネントまたは追加の複雑さのレベルが必要です。"
 
 #: ../../chapter7.rst:866
 msgid ""
@@ -1195,23 +1307,27 @@ msgid ""
 "values is possible, and in many cases desirable. Problems occur when one "
 "of the above restrictions is ignored."
 msgstr ""
+"私たちは前にリターンスタックを使ったこの原則の簡単な例を見ました。 "
+"リターンスタックは、リターンアドレスを保持するように設計されたForthシステムの構成要素であり、それによって、自分がどこにいて、どこに向かっているのかを示すものとして機能します。"
+" 戻り値のスタックを一時的な値を保持するものとして使用することは可能であり、多くの場合は望ましいことです。 "
+"但し、上記の制限の1つを無視すると問題が発生します。"
 
 #: ../../chapter7.rst:874
 msgid ""
 "In my text formatter the output can go invisible. This feature has two "
 "purposes:"
-msgstr ""
+msgstr "私のテキストフォーマッタでは、出力は見えなくすることができます。 この機能には2つの目的があります。"
 
 #: ../../chapter7.rst:877
 msgid "for looking ahead to see whether something will fit, and"
-msgstr ""
+msgstr "何かが合うかどうかを見るために先を見越して、そして"
 
 #: ../../chapter7.rst:879
 msgid ""
 "for formatting the table of contents (the entire document is formatted "
 "and page numbers are calculated without anything actually being "
 "displayed)."
-msgstr ""
+msgstr "目次をフォーマットするためのものです（実際には何も表示されずに文書全体がフォーマットされ、ページ番号が計算されます）。"
 
 #: ../../chapter7.rst:883
 msgid ""
@@ -1219,6 +1335,8 @@ msgid ""
 "output invisible, I could use this feature to serve both purposes. "
 "Unfortunately, the two purposes are not mutually exclusive."
 msgstr ""
+"出力を非表示にする機能を追加した後は、この機能を使用して両方の目的を果たすことができると思いがちでした。 "
+"残念ながら、この2つの目的は相互に排他的ではありません。"
 
 #: ../../chapter7.rst:887
 msgid ""
@@ -1227,6 +1345,9 @@ msgid ""
 "whether to be visible or invisible. The words ``VISIBLE`` and "
 "``INVISIBLE`` set the state respectively."
 msgstr ""
+"この規則に違反しようとするとどうなるか見てみましょう。 ``DISPLAY`` "
+"というワードが出力を行い、目に見えるか見えないかを判断するのには十分賢いです。 ``VISIBLE`` と ``INVISIBLE`` "
+"というワードはそれぞれ状態を設定します。"
 
 #: ../../chapter7.rst:892
 msgid ""
@@ -1234,10 +1355,12 @@ msgid ""
 "format the upcoming text to determine its length, and finally execute "
 "``VISIBLE`` to restore things to the normal state."
 msgstr ""
+"私の、先読みコードは、最初に ``INVISIBLE`` を実行し、次に来るテキストをテストフォーマットしてその長さを決定し、そして最後に "
+"``VISIBLE`` を実行して通常の状態に戻します。"
 
 #: ../../chapter7.rst:896
 msgid "This works fine."
-msgstr ""
+msgstr "これはうまくいきます。"
 
 #: ../../chapter7.rst:898
 msgid ""
@@ -1245,6 +1368,8 @@ msgid ""
 "VI-SI-BLE``, then runs through the document determining page numbers "
 "etc.; then finally executes ``VISIBLE`` to restore things to normal."
 msgstr ""
+"後で目次機能を追加します。 最初にコードは ``IN-VI-SI-BLE`` を実行し、それからページ番号などを決定するドキュメントを実行します。"
+" それから、最後に ``VISIBLE`` を実行して物事を通常の状態に戻します。"
 
 #: ../../chapter7.rst:903
 msgid ""
@@ -1253,10 +1378,12 @@ msgid ""
 "``VISIBLE``. Suddenly I start printing the document when I was supposed "
 "to be running the table of contents."
 msgstr ""
+"落とし穴は？目次を実行していて、先を見越している場所の1つにヒットしたとします。 先を見終わったら、 ``VISIBLE`` を実行します。 "
+"目次を実行しようとしていたときに、突然文書の印刷を開始しました。"
 
 #: ../../chapter7.rst:908
 msgid "The solution? There are several."
-msgstr ""
+msgstr "解決策は？ いくつかあります。"
 
 #: ../../chapter7.rst:910
 msgid ""
@@ -1265,6 +1392,8 @@ msgid ""
 "table-of-contents. Therefore, the lookahead code should be responsible "
 "for saving, and later restoring, the flag."
 msgstr ""
+"１つの解決策は、先読みコードが、目録によって予め設定されている可能性がある可視／不可視フラグを潰していることが問題です。 "
+"したがって、先読みコードはフラグを保存し、後で復元する責任があります。"
 
 #: ../../chapter7.rst:915
 msgid ""
@@ -1273,6 +1402,8 @@ msgid ""
 "contents. The word ``DISPLAY`` requires that both flags be false in order"
 " to actually display anything."
 msgstr ""
+"もう1つの解決策は、2つの別々の変数を保持することです。1つは先読みを示し、もう1つは目次を印刷していることを示します。 ``DISPLAY`` "
+"というワードは実際に何かを表示するために両方のフラグが偽であることを要求します。"
 
 #: ../../chapter7.rst:920
 msgid ""
@@ -1280,6 +1411,8 @@ msgid ""
 "you want to decompose the problem. First, we could nest one condition "
 "within the other:"
 msgstr ""
+"あなたが問題をどのように分解したいかに応じて、後者のアプローチを達成するための2つの方法があります。 "
+"まず、以下のように、ある条件を別の条件の中に入れ子にすることができます。"
 
 #: ../../chapter7.rst:933
 msgid ""
@@ -1287,6 +1420,8 @@ msgid ""
 "invokes ``<DISPLAY>``, which in turn checks that we’re not looking ahead "
 "and invokes ``[DISPLAY]``."
 msgstr ""
+"``DISPLAY`` は、目次を設定していないことを確認してから、 ``<DISPLAY>`` "
+"を呼び出します。これにより、先読みしていないことが確認され、 ``[DISPLAY]`` が呼び出されます。"
 
 #: ../../chapter7.rst:937
 msgid ""
@@ -1296,6 +1431,9 @@ msgid ""
 "renamed ``[DISPLAY]``, thus adding a level of complexity backward without"
 " changing any of the code that used ``DISPLAY``."
 msgstr ""
+"開発段階では、常に出力を行う ``[DISPLAY]`` というワードは、もともとは ``DISPLAY`` と呼ばれていました。 "
+"それから、先読みチェックを含むように新しい ``DISPLAY`` が定義され、元の定義は ``[DISPLAY]`` "
+"に改名されました。したがって、 ``DISPLAY`` を使用したコードを変更せずに後方レベルの複雑さを追加します。"
 
 #: ../../chapter7.rst:943
 msgid ""
@@ -1303,22 +1441,24 @@ msgid ""
 "was defined to include the table-of-contents check, and the previous "
 "``DISPLAY`` was renamed ``<DISPLAY>``."
 msgstr ""
+"最後に、目次機能が追加されたとき、目次チェックを含むように新しい ``DISPLAY`` が定義され、前の ``DISPLAY`` は "
+"``<DISPLAY>`` に改名されました。"
 
 #: ../../chapter7.rst:947
 msgid ""
 "That’s one approach to the use of two variables. Another is to include "
 "both tests within a single word:"
-msgstr ""
+msgstr "これは、2つの変数を使用するための1つの方法です。 もう1つの方法は、以下のように両方のテストを1つのワードに含めることです。"
 
 #: ../../chapter7.rst:954
 msgid ""
 "But in this particular case, yet another approach can simplify the whole "
 "mess. We can use a single variable not as a flag, but as a counter."
-msgstr ""
+msgstr "しかし、この特定のケースでは、さらに別の方法で全体の混乱を単純化できます。 フラグとしてではなく、カウンターとして単一の変数を使用できます。"
 
 #: ../../chapter7.rst:957
 msgid "We define:"
-msgstr ""
+msgstr "私たちは以下のように定義します。"
 
 #: ../../chapter7.rst:966
 msgid ""
@@ -1327,6 +1467,9 @@ msgid ""
 "output. After the lookahead, the code invokes ``VISIBLE`` which "
 "decrements the counter back to zero (“false”)."
 msgstr ""
+"246/5000\n"
+"先読みコードは、カウンタを1つ上げた ``INVISIBLE`` を呼び出すことで始まります。 ゼロ以外は true なので、 "
+"``DISPLAY`` は出力を行いません。 先読みの後、コードは ``VISIBLE`` を呼び出してカウンタをゼロ(false)に戻します。"
 
 #: ../../chapter7.rst:971
 msgid ""
@@ -1335,13 +1478,15 @@ msgid ""
 "upon a lookahead, the second invocation of ``VISIBLE`` raises the counter"
 " to two."
 msgstr ""
+"目次コードも ``VISIBLE`` で始まり ``IN-VI-SI-BLE`` で終わります。 先読みしている間に目次を実行していると、2回目の"
+" ``VISIBLE`` の呼び出しでカウンタが2になります。"
 
 #: ../../chapter7.rst:976
 msgid ""
 "The subsequent invocation of ``INVISIBLE`` decrements the counter to one,"
 " so we’re still invisible, and will remain invisible until the table of "
 "contents has been run."
-msgstr ""
+msgstr "その後の ``INVISIBLE`` の呼び出しでカウンタが1つ減ります。まだ見えないので、目次が実行されるまで見えません。"
 
 #: ../../chapter7.rst:980
 msgid ""
@@ -1349,23 +1494,28 @@ msgid ""
 "changed ``NOT`` to mean one’s complement, so that ``1 NOT`` yields true. "
 "By the way, I think this was a mistake.)"
 msgstr ""
+"( `'NOT=`` の代わりに ``0=`` を代入しなければならないことに注意してください。FORTH-83規格では、 "
+"1の補数を意味するように NOTが変更されました。 私はこれは間違いだと思います。）"
 
+# 意味不明
 #: ../../chapter7.rst:986
 msgid ""
 "This use of a counter may be dangerous, however. It requires parity of "
 "command usage: two ``VISIBLE``\\ s yields invisible. That is, unless "
 "``VISIBLE`` clips the counter:"
 msgstr ""
+"ただし、このカウンターの使用は危険な場合があります。 それはコマンド使用の同等性を必要とします。つまり、``VISIBLE`` "
+"がカウンターを刻まない限り、2つの ``VISIBLE`` を隠してしまいます。"
 
 #: ../../chapter7.rst:995
 msgid "The State Table"
-msgstr ""
+msgstr "状態テーブル"
 
 #: ../../chapter7.rst:997
 msgid ""
 "A single variable can express a single condition, either a flag, a value,"
 " or the address of a function."
-msgstr ""
+msgstr "単一の変数は、フラグ、値、または関数のアドレスのいずれかの単一の条件を表すことができます。"
 
 #: ../../chapter7.rst:1000
 msgid ""
@@ -1374,12 +1524,14 @@ msgid ""
 "require the ability to save a current state, then later restore it, or "
 "perhaps to have a number of alternating states."
 msgstr ""
+"条件の集まりは、アプリケーションまたは特定のコンポーネントの状態を表します。 [slater83]_ "
+"一部のアプリケーションでは、現在の状態を保存してから後で復元する機能、または複数の状態を交互に表示する機能が必要になります。"
 
 #: ../../chapter7.rst:1007
 msgid ""
 "When the application requires handling a group of conditions "
 "simultaneously, use a state table, not separate variables."
-msgstr ""
+msgstr "アプリケーションが条件のグループを同時に処理する必要がある場合は、変数を分離せずに状態テーブルを使用してください。"
 
 #: ../../chapter7.rst:1010
 msgid ""
@@ -1387,16 +1539,18 @@ msgid ""
 "initially have six variables representing the state of a particular "
 "component, as shown in :numref:`fig7-2`."
 msgstr ""
+"単純な場合としては、状態を保存して復元する必要があります。 :numref:`fig7-2` "
+"に示すように、最初に特定のコンポーネントの状態を表す6つの変数があるとします。"
 
 #: ../../chapter7.rst:1014
 msgid "A collection of related variables."
-msgstr ""
+msgstr "関連する変数のコレクション"
 
 #: ../../chapter7.rst:1025
 msgid ""
 "Now suppose that we need to save all of them, so that further processing "
 "can take place, and later restore all of them. We could define:"
-msgstr ""
+msgstr "ここで、それらすべてを保存する必要があるとします。保存後、さらに何かしら処理が行われ、後でそれらすべてが復元されます。 以下のように定義できます。"
 
 #: ../../chapter7.rst:1036
 msgid ""
@@ -1404,6 +1558,8 @@ msgid ""
 "them. Or, we might define alternate variables for each of the variables "
 "above, in which to save each value separately."
 msgstr ""
+"それにより、それらが復元される時までスタック上のすべての値を保存します。 "
+"または、上記の各変数に対して、各値を個別に保存するための代替変数を定義することもできます。"
 
 #: ../../chapter7.rst:1040
 msgid ""
@@ -1411,20 +1567,23 @@ msgid ""
 " the table referred to by name. Then creating a second table of the same "
 "length. As you can see in :numref:`fig7-3`, we can save the state by "
 "copying the table, called ``POINTERS,`` into the second table, called "
-"SAVED."
+"``SAVED``."
 msgstr ""
+"しかし、推奨される手法では、テーブルの各要素を名前で参照してテーブルを作成します。 次に、同じ長さの2番目のテーブルを作成します。 "
+":numref:`fig7-3` に見られるように、 ``POINTERS`` と呼ばれるテーブルを ``SAVED`` "
+"と呼ばれる2番目のテーブルにコピーすることで状態を保存することができます。"
 
 #: ../../chapter7.rst:1050
 msgid "Conceptual model for saving a state table."
-msgstr ""
+msgstr "状態テーブルを保存するための概念モデル。"
 
 #: ../../chapter7.rst:1052
 msgid "We’ve implemented this approach with the code in :numref:`fig7-4`."
-msgstr ""
+msgstr "このアプローチは  :numref:`fig7-4` のコードで実装しました。"
 
 #: ../../chapter7.rst:1054
 msgid "Implementation of save/restorable state table."
-msgstr ""
+msgstr "保存＆復元可能状態テーブルの実装"
 
 #: ../../chapter7.rst:1075
 msgid ""
@@ -1432,6 +1591,8 @@ msgid ""
 "``BOTTOM``, etc., always return the same address. There is only one "
 "location used to represent the current value of any state at any time."
 msgstr ""
+"この実装では、ポインタの名前、 ``TOP`` 、 ``BOTTOM`` などは常に同じアドレスを返すことに注意してください。 "
+"状態の現在値を表すために使用される場所はいつでも1つだけです。"
 
 #: ../../chapter7.rst:1079
 msgid ""
@@ -1441,6 +1602,9 @@ msgid ""
 "it’s not until after we’ve defined all the field names that we know how "
 "big the table must be and can actually ``ALLOT`` it."
 msgstr ""
+"また、 ``CREATE`` ではなく ``CONSTANT`` でダミーのゼロを使って ``POINTERS`` "
+"(テーブルの名前)を定義していることにも注意してください。 これは、定義ワード ``POSITION`` で ``POINTERS`` "
+"を参照しているためですが、すべてのフィールド名を定義した後で初めて、テーブルがどれだけの大きさでなければならないかを知ることができます。"
 
 #: ../../chapter7.rst:1085
 msgid ""
@@ -1452,18 +1616,23 @@ msgid ""
 "of the table allotted later, just as a name defined by ``CREATE`` returns"
 " the address of a table allotted directly below the name’s header."
 msgstr ""
+"私たちはフィールド名を作成したらすぐに、テーブルのサイズを定数 ``/POINTERS`` として定義します。 "
+"私たちは終にテーブル自身のためのスペースを確保したので、その先頭アドレス( ``HERE`` ）を定数 ``POINTERS`` にパッチします("
+" ``>BODY`` というワードは、ティック( ``'`` )によって返されたアドレスを定数の値のアドレスに変換します)。したがって "
+"``POINTERS`` は、 ``CREATE`` で定義された名前のように、後で割り当てられたテーブルのアドレスを返します。 "
+"名前のヘッダーのすぐ下に割り当てられているテーブルのアドレスを返します。"
 
 #: ../../chapter7.rst:1094
 msgid ""
 "Although it’s valid to patch the value of a ``CONSTANT`` at compile time,"
 " as we do here, there is a restriction of style:"
-msgstr ""
+msgstr "ここで行っているように、コンパイル時に ``CONSTANT`` の値にパッチを当てることは有効ですが、スタイルの制限があります。"
 
 #: ../../chapter7.rst:1099
 msgid ""
 "A ``CONSTANT``\\ s value should never be changed once the application is "
 "compiled."
-msgstr ""
+msgstr "アプリケーションがコンパイルされたら、 ``CONSTANT`` の値を変更しないでください。"
 
 #: ../../chapter7.rst:1102
 msgid ""
@@ -1473,10 +1642,13 @@ msgid ""
 " other state. :numref:`fig7-5` shows the conceptual model for this kind "
 "of state table."
 msgstr ""
+"交互の状態の場合はもう少し複雑です。 "
+"このような状況では、2つ（またはそれ以上）の状態を交互に切り替える必要があります。他の状態にジャンプしたときに、各状態の条件を変更することは決してありません。"
+" :numref:`fig7-5` はこの種の状態テーブルの概念モデルを示しています。"
 
 #: ../../chapter7.rst:1112
 msgid "Conceptual model for alternating-states tables."
-msgstr ""
+msgstr "交互状態テーブルの概念モデル"
 
 #: ../../chapter7.rst:1114
 msgid ""
@@ -1486,6 +1658,10 @@ msgid ""
 "``REAL`` table; by making the ``PSEUDO`` table current, they address the "
 "``PSEUDO`` table."
 msgstr ""
+"このモデルでは、 ``TOP`` 、 ``BOTTOM`` などの名前を、 ``REAL`` または ``PSEUDO`` "
+"の2つのテーブルのいずれかを指すようにすることができます。 ``REAL`` テーブルを現在のテーブルにすることで、すべてのポインタ名は "
+"``REAL`` テーブルのアドレスを参照します。 ``PSEUDO`` テーブルを最新にすることで、 ``PSEUDO`` "
+"テーブルをアドレス指定します。"
 
 #: ../../chapter7.rst:1120
 msgid ""
@@ -1493,10 +1669,12 @@ msgid ""
 "mechanism. The words ``WORKING`` and ``PRETENDING`` change the pointer "
 "appropriately. For instance:"
 msgstr ""
+":numref:`fig7-6` のコードはこの交互状態メカニズムを実装しています。 ``WORKING`` と ``PRETENDING`` "
+"というワードはポインタを適切に変更します。例えば以下の通り。"
 
 #: ../../chapter7.rst:1124
 msgid "Implementation of alternating-states mechanism."
-msgstr ""
+msgstr "交互状態メカニズムの実装"
 
 #: ../../chapter7.rst:1158
 msgid ""
@@ -1509,10 +1687,14 @@ msgid ""
 "approach, we have only to change a single pointer to change the current "
 "table."
 msgstr ""
+"後者のアプローチとの大きな違いは、名前が余分なレベルの間接参照を通過することです( ``POINTERS`` "
+"は定数からコロン定義に変更されました)。 フィールド名は、2つの状態テーブルのいずれかを指すようにすることができます。 "
+"したがって、それぞれの名前にはもう少し作業が必要です。 また、前者のアプローチでは、名前は固定位置を指します。 値を保存または復元するたびに "
+"``CMOVE`` が必要です。このアプローチでは、現在のテーブルを変更するために1つのポインタを変更するだけです。"
 
 #: ../../chapter7.rst:1168
 msgid "Vectored Execution"
-msgstr ""
+msgstr "ベクトル化実行"
 
 #: ../../chapter7.rst:1170
 msgid ""
@@ -1521,6 +1703,8 @@ msgid ""
 "variables, we can also save functions, because functions can be referred "
 "to by address."
 msgstr ""
+"ベクトル化実行は、データを超えた直接性と間接性の概念を機能にまで拡張します。 "
+"値やフラグを変数に保存できるのと同じように、機能はアドレスで参照できるため、機能を保存することもできます。"
 
 #: ../../chapter7.rst:1175
 msgid ""
@@ -1529,6 +1713,9 @@ msgid ""
 "discuss a new syntax which I invented and which I think can be used in "
 "many circumstances more elegantly than the traditional methods."
 msgstr ""
+"ベクトル化された実行を実装するための伝統的なテクニックは *Starting Forth*,Chapter Nine(邦訳:FORTH入門 "
+"第9章)で説明されています。 "
+"この節は、私が開発した新しい構文について説明します。これは、従来の方法よりもエレガントにさまざまな状況で使用できると思います。"
 
 #: ../../chapter7.rst:1180
 msgid ""
@@ -1537,36 +1724,48 @@ msgid ""
 " details.) It works like this: You define the word whose behavior will be"
 " vectorable with the defining word ``DOER``, as in"
 msgstr ""
+"その構文は ``DOER/MAKE`` と呼ばれます(システムにこれらのワードが含まれていない場合、コードと実装の詳細については "
+":doc:`付録B<appendixb>` 参照)。それは以下のように、動作をベクトル化可能なワード ``DOER`` で定義できます。"
 
 #: ../../chapter7.rst:1190
 msgid ""
 "Initially, the new word ``PLATFORM`` does nothing. Then you can write "
 "words that change what ``PLATFORM`` does by using the word ``MAKE``:"
 msgstr ""
+"最初は、 ``PLATFORM`` という新しいワードは何もしません。 その後、 ``MAKE`` というワードを使って、 "
+"``PLATFORM`` の動作を変更するワードを書くことができます。"
 
 #: ../../chapter7.rst:1198
 msgid ""
 "When you invoke ``LEFTWING``, the phrase ``MAKE PLATFORM`` changes what "
 "``PLATFORM`` will do. Now if you type ``PLATFORM``, you’ll see:"
 msgstr ""
+"``LEFTWING`` を起動すると、 ``MAKE PLATFORM`` というフレーズは ``PLATFORM`` の動作を変更します。 "
+"``PLATFORM`` と入力すると、次のようになります。"
 
+# PLATFORM 討論の場、演壇
+# proponent  提唱者・味方
+# opponet 対談者・敵方
 #: ../../chapter7.rst:1206
 msgid ""
 "``RIGHTWING`` will make ``PLATFORM`` display “opponent.” You can use "
 "``PLATFORM`` within another definition:"
 msgstr ""
+"``RIGHTWING`` は ``PLATFORM`` に「opponent.」を表示させます。他の定義の中で ``PLATFORM`` "
+"を使うことができます。"
 
+# SLOGAN スローガン
 #: ../../chapter7.rst:1214
 msgid "The statement"
-msgstr ""
+msgstr "その声明"
 
 #: ../../chapter7.rst:1220
 msgid "will display one campaign statement, while"
-msgstr ""
+msgstr "キャンペーン声明を1つ表示します。"
 
 #: ../../chapter7.rst:1226
 msgid "will display another."
-msgstr ""
+msgstr "もう一方の表示。"
 
 #: ../../chapter7.rst:1228
 msgid ""
@@ -1576,6 +1775,9 @@ msgid ""
 "``MAKE``. When ``MAKE`` redirects execution of the ``DOER`` word, it also"
 " *stops* execution of the word in which it appears."
 msgstr ""
+"``MAKE``コードは、任意のForthコードで、あなたが望むだけの長さで書くことが出来ます。但しそれをセミコロンで終わらせることを忘れないでください。"
+" ``LEFTWING`` の末尾のセミコロンは、``LEFTWING`` と、 ``MAKE`` の後のコードの、両方に使用されます。 "
+"``MAKE`` が ``DOER`` ワードの実行をリダイレクトすると、それを記述したワードの実行も「停止」します。"
 
 #: ../../chapter7.rst:1234
 msgid ""
@@ -1584,10 +1786,13 @@ msgid ""
 "to be printed. :numref:`fig7-7`  demonstrates this point, using a "
 "conceptualized illustration of the dictionary."
 msgstr ""
+"たとえば、``LEFTWING`` を起動すると、``MAKE`` は ``PLATFORM`` をリダイレクトして終了します。 "
+"``LEFTWING`` を起動しても「proponent」は表示されません。  :numref:`fig7-7` "
+"は辞書の概念図を使ってこの点を説明しています。"
 
 #: ../../chapter7.rst:1243
 msgid "``DOER`` and ``MAKE``."
-msgstr ""
+msgstr "``DOER`` と ``MAKE``"
 
 #: ../../chapter7.rst:1245
 msgid ""
@@ -1596,10 +1801,12 @@ msgid ""
 "points to, and resumes execution of the definition in which it appears, "
 "as you can see in :numref:`fig7-8` ."
 msgstr ""
+"実行を継続したい場合は、セミコロンの代わりにワード ``;AND`` を使用できます。 ``;AND`` は  :numref:`fig7-8` "
+"にあるように、 ``DOER`` ワードが指すコードを終了させ、それが現れる定義の実行を再開します。"
 
 #: ../../chapter7.rst:1255
 msgid "Multiple ``MAKE``\\ s in parallel using ``;AND``."
-msgstr ""
+msgstr "``;AND`` を使って複数の ``MAKE`` を並列に実行"
 
 #: ../../chapter7.rst:1257
 msgid ""
@@ -1607,20 +1814,22 @@ msgid ""
 "using ``;AND``. :numref:`fig7-9`  explains this better than I could write"
 " about it."
 msgstr ""
+"最後に、 ``;AND`` を使わないことで、 ``DOER`` のワードの「メイキング」を連鎖させることができます。 "
+":numref:`fig7-9` は、私が説明を書くよりもよりも上手く図示示しています。"
 
 #: ../../chapter7.rst:1265
 msgid "Multiple ``MAKE``\\ s in series."
-msgstr ""
+msgstr "複数の ``MAKE`` の連なり"
 
 #: ../../chapter7.rst:1268
 msgid "Using DOER/MAKE"
-msgstr ""
+msgstr "DOER/MAKEの使用"
 
 #: ../../chapter7.rst:1270
 msgid ""
 "There are many occasions when the ``DOER/MAKE`` construct proves "
 "beneficial. They are:"
-msgstr ""
+msgstr "``DOER/MAKE`` 組み立てが有益であることが証明される機会はたくさんあります。"
 
 #: ../../chapter7.rst:1273
 msgid ""
@@ -1628,207 +1837,209 @@ msgid ""
 "not necessary). The words ``LEFTWING`` and ``RIGHTWING`` change the state"
 " of the word ``PLATFORM``."
 msgstr ""
+"機能の状態を変更する(状態の外部テストが不要な場合)。 ``LEFTWING`` と ``RIGHTWING`` というワードは、 "
+"``PLATFORM`` というワードの状態を変更します。"
 
 #: ../../chapter7.rst:1277
 msgid ""
 "To factor out internal phrases from similar definitions, but within "
 "control structures such as loops."
-msgstr ""
+msgstr "内部フレーズを類似の定義から括り出します。しかし、それはループなどの制御構造の中に入っています。"
 
 #: ../../chapter7.rst:1280
 msgid ""
 "Consider the definition of a word called ``DUMP``, designed to reveal the"
 " contents of a specified region of memory."
-msgstr ""
+msgstr "指定されたメモリ領域の内容を表示するように設計された ``DUMP`` と呼ばれるワードの定義を考えてください。"
 
-#: ../../chapter7.rst:1289
+#: ../../chapter7.rst:1293
 msgid ""
 "The problem arises when you write a definition called ``CDUMP``, designed"
 " to format the output according to bytes, not cells:"
-msgstr ""
+msgstr "この問題は、セルではなくバイト数に従って出力をフォーマットするように設計された ``CDUMP`` と呼ばれる定義を書くときに起こります。"
 
-#: ../../chapter7.rst:1298
+#: ../../chapter7.rst:1306
 msgid ""
 "The code within these two definitions is identical except for the "
 "fragments in boldface. But factoring is difficult because the fragments "
 "occur inside the    ``DO``  ``LOOP``."
-msgstr ""
+msgstr "これら2つの定義内のコードは、3行目を除いて同一です。 しかし、ここは ``DO…LOOP`` の内部にあるため、ファクタリング(要素分解)は困難です。"
 
-#: ../../chapter7.rst:1302
+#: ../../chapter7.rst:1310
 msgid ""
 "Here’s a solution to this problem, using ``DOER/MAKE``. The code that "
 "changes has been replaced with the word ``.UNIT``, whose behavior is "
 "vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that “``1``  "
 "``+LOOP``” has the same effect as “``LOOP``”.)"
-msgstr ""
+msgstr "以下はこの問題に対する解決策です。 ``DOER/MAKE`` を使ってください。 変更されたコードはワード ``.UNIT`` に置き換えられました。その動作は ``DUMP`` と ``CDUMP`` のコードによって管理されています( ``1 +LOOP`` は ``LOOP`` と同じ効果があります)。"
 
-#: ../../chapter7.rst:1316
+#: ../../chapter7.rst:1324
 msgid ""
 "Notice how ``DUMP`` and ``CDUMP`` *set-up* the vector, then go on to "
 "*execute* the shell (the word ``<DUMP>``)."
-msgstr ""
+msgstr "``DUMP`` と ``CDUMP`` がベクトルを設定します。それから、実行シェル(ワード ``<DUMP>``)へ進みます。"
 
-#: ../../chapter7.rst:1319
+#: ../../chapter7.rst:1327
 msgid ""
 "To change the state of related functions by invoking a single command. "
 "For instance:"
-msgstr ""
+msgstr "単一のコマンドを呼び出して関連機能の状態を変更すること。 たとえば以下のように。"
 
-#: ../../chapter7.rst:1337
+#: ../../chapter7.rst:1345
 msgid ""
 "Here we’ve defined a vectorable set of output words, each name having a "
 "“prime” mark at the end. ``VISIBLE`` sets them to their expected "
 "functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that "
 "would normally be passed to them. Say ``INVISIBLE`` and any words defined"
 " in terms of these four output operators will *not* produce any output."
-msgstr ""
+msgstr "ここでは、各ワードの末尾に「プライム( ``'`` )」マークが付いた、わかりやすい一連の出力ワードを定義しました。 ``VISIBLE`` はそれらを期待される機能に設定します。 ``INVISIBLE`` はそれらを「何もしない(no-op)」に設定し、通常それらに渡される引数を単に食い尽くします。「 ``INVISIBLE`` 」と言うと、これら4つの出力操作ワードに対して定義されたワードは出力を生成しません。"
 
-#: ../../chapter7.rst:1344
+#: ../../chapter7.rst:1352
 msgid ""
 "To change the state for the next occurrence only, then change the state "
 "(or reset it) again."
-msgstr ""
+msgstr "次回の発生時のみ状態を変更するには、再度状態を変更（またはリセット）します。"
 
-#: ../../chapter7.rst:1347
+#: ../../chapter7.rst:1355
 msgid ""
 "Suppose we’re writing an adventure game. When the player first arrives at"
 " a particular room, the game will display a detailed description. If the "
 "player returns to the same room later, the game will show a shorter "
 "message."
-msgstr ""
+msgstr "アドベンチャーゲームを書いているとしましょう。 プレイヤーが最初に特定の部屋に到着すると、ゲームは詳細な説明を表示します。 後でプレイヤーが同じ部屋に戻った場合、ゲームは短いメッセージを表示します。"
 
-#: ../../chapter7.rst:1352
+#: ../../chapter7.rst:1360
 msgid "We write:"
-msgstr ""
+msgstr "私たちは以下のように書きます。"
 
-#: ../../chapter7.rst:1363
+#: ../../chapter7.rst:1371
 msgid ""
 "The word ``ANNOUNCE`` will display either message. First we say ``LONG``,"
 " to initialize ``ANNOUNCE`` to the long message. Now we can test "
 "``ANNOUNCE``, and find that it prints the long message. Having done that,"
 " however, it continues to “make” ``ANNOUNCE`` display the short message."
-msgstr ""
+msgstr "ワード  ``ANNOUNCE`` はいずれかのメッセージを表示します。最初に私たちは長いメッセージで ``ANNOUNCE`` を初期化するために ``LONG`` と言います。今や私たちは ``ANNOUNCE`` をテストする事ができ、それは長いメッセージを表示します。その後、続けて、短いメッセージを表示する処理で ``ANNOUNCE`` を書き換えます。"
 
-#: ../../chapter7.rst:1368
+#: ../../chapter7.rst:1376
 msgid ""
 "If we test ``ANNOUNCE`` a second time, it prints the short message. And "
 "it will for ever more, until we say ``LONG`` again."
-msgstr ""
+msgstr "私たちがもう一度 ``ANNOUNCE`` をテストすると、短いメッセージが表示されます。 そして ``LONG`` と再び言うまでは、それは短いメッセージの表示のままです。"
 
-#: ../../chapter7.rst:1371
+#: ../../chapter7.rst:1379
 msgid ""
 "In effect we’re queuing behaviors. We can queue any number of behaviors, "
 "letting each one set the next. The following example (though not terribly"
 " practical) illustrates the point."
-msgstr ""
+msgstr "事実上、私たちは行動を待ち行列に入れています。 各動作に次の動作を設定させて、動作をいくつでもキューに入れることができます。 次の例は(あんまり実用的ではありませんが)この動作を表しています。"
 
-#: ../../chapter7.rst:1392
+#: ../../chapter7.rst:1400
 msgid ""
 "In this code we’ve created a list of variables, then defined an ``ORDER``"
 " in which they are to be searched. The word ``HUNT`` looks through each "
 "of them, looking for the first one that contains a 17. ``HUNT`` returns "
 "either the address of the correct variable, or a zero if none have the "
 "value."
-msgstr ""
+msgstr "このコードでは変数のリストを作成し、それからそれらが検索されることになる ``ORDER`` を定義しました。 ワード ``HUNT`` はそれぞれを見て、17を含む最初のものを探します。 ``HUNT`` は正しい変数のアドレスを返します。値がない場合はゼロを返します。"
 
-#: ../../chapter7.rst:1398
+#: ../../chapter7.rst:1406
 msgid ""
 "It does this by simply executing ``WHERE`` five times. Each time, "
 "``WHERE`` returns a different address, as defined in ``ORDER``, then "
 "finally zero."
-msgstr ""
+msgstr "これは単に ``WHERE`` を5回実行することによって行われます。 毎回、 ``WHERE`` は ``ORDER`` で定義されているように異なるアドレスを返し、最後にゼロを返します。"
 
-#: ../../chapter7.rst:1401
+#: ../../chapter7.rst:1409
 msgid ""
 "We can even define a ``DOER`` word that toggles its own behavior "
 "endlessly:"
-msgstr ""
+msgstr "それ自身の振る舞いを際限なくON/OFFする ``DOER`` というワードを定義することさえできます。"
 
-#: ../../chapter7.rst:1412
+#: ../../chapter7.rst:1420
 msgid ""
 "To implement a forward reference. A forward reference is usually needed "
 "as a “hook,” that is, a word invoked in a low-level definition but "
 "reserved for use by a component defined later in the listing."
-msgstr ""
+msgstr "前方参照を実装します。 通常、前方参照は「フック(hook)」、つまり低レベルの定義で呼び出され、リストの後半で定義されているコンポーネントで使用するために予約されているワードとして必要です。"
 
-#: ../../chapter7.rst:1416
+#: ../../chapter7.rst:1424
 msgid ""
 "To implement a forward reference, build the header of the word with "
 "``DOER``, before invoking its name."
-msgstr ""
-
-#: ../../chapter7.rst:1423
-msgid "Later in the listing, use ``MAKE``;"
-msgstr ""
-
-#: ../../chapter7.rst:1429
-msgid "(Remember, ``MAKE`` can be used outside a colon definition.)"
-msgstr ""
+msgstr "前方参照を実装するには、その名前を呼び出す前に、ワードのヘッダを ``DOER`` で構築します。"
 
 #: ../../chapter7.rst:1431
-msgid "Recursion, direct or indirect."
-msgstr ""
+msgid "Later in the listing, use ``MAKE``;"
+msgstr "リストの後半で ``MAKE`` を使います。"
 
-#: ../../chapter7.rst:1433
+#: ../../chapter7.rst:1437
+msgid "(Remember, ``MAKE`` can be used outside a colon definition.)"
+msgstr "(覚えておいてください、 ``MAKE`` はコロン定義の外で使うことができます。)"
+
+#: ../../chapter7.rst:1439
+msgid "Recursion, direct or indirect."
+msgstr "直接的または間接的な再帰"
+
+#: ../../chapter7.rst:1441
 msgid ""
 "Direct recursion occurs when a word invokes itself. A good example is the"
 " recursive definition of greatest-common-denominator:"
-msgstr ""
+msgstr "ワードが自分自身を呼び出すときに直接再帰が発生します。 良い例は、以下のような最大公約数的再帰定義です。"
 
-#: ../../chapter7.rst:1441
+#: ../../chapter7.rst:1449
 msgid "This translates nicely into:"
-msgstr ""
+msgstr "これは以下のように素敵に変換できます。"
 
-#: ../../chapter7.rst:1448
+#: ../../chapter7.rst:1456
 msgid ""
 "Indirect recursion occurs when one word invokes a second word, while the "
 "second word invokes the first. This can be done using the form:"
-msgstr ""
+msgstr "間接再帰は、あるワードが別のワードを呼び出すときに発生し、2番目のワードが最初のワードを呼び出すときに発生します。 これは以下の形式で行えます。"
 
-#: ../../chapter7.rst:1457
+#: ../../chapter7.rst:1465
 msgid "Debugging. I often define:"
-msgstr ""
+msgstr "デバッグの為に、私はしばしば以下の定義をします。"
 
-#: ../../chapter7.rst:1463
+#: ../../chapter7.rst:1471
 msgid ""
 "(short for ``SNAPSHOT``), then edit ``SNAP`` into my application at a "
 "point where I want to see what’s going on. For instance, with ``SNAP`` "
 "invoked inside the main loop of a keystroke interpreter, I can set it up "
 "to let me watch what’s happening to a data structure as I enter keys. And"
 " I can change what SNAP does without having to recompile the loop."
-msgstr ""
+msgstr "( ``SNAPSHOT`` の略)それから、何が起こっているのか見たいところで ``SNAP`` を私のアプリケーションに編集してください。 たとえば、キーストロークインタプリタのメインループ内で ``SNAP`` を呼び出すと、キーを入力したときにデータ構造に何が起きているのかを確認できるように設定できます。 そして、ループを再コンパイルしなくても、SNAPの動作を変更できます。"
 
-#: ../../chapter7.rst:1471
+#: ../../chapter7.rst:1479
 msgid ""
 "The situations in which it’s preferable to use the tick-and-execute "
 "approach are those in which you need control over the address of the "
 "vector, such as when vectoring through an element in a decision table, or"
 " attempting to save/restore the contents of the vector."
-msgstr ""
+msgstr "tick-and-executeアプローチを使用するのが望ましい状況は、デシジョンテーブルの要素を介してベクトル化するとき、またはその内容を保存/復元しようとするときなど、ベクトルのアドレスを制御する必要がある場合です。"
 
-#: ../../chapter7.rst:1477
+#: ../../chapter7.rst:1485
 msgid "Summary"
 msgstr "要約"
 
-#: ../../chapter7.rst:1479
+#: ../../chapter7.rst:1487
 msgid ""
 "In this chapter we’ve examined the tradeoffs between using the stack and "
 "using variables and other data structures. Using the stack is preferable "
 "for testing and reusability, but too many values manipulated on the stack"
 " by a single definition hurts readability and writeability."
-msgstr ""
+msgstr "この章では、スタックを使用することと、変数や他のデータ構造を使用することとの間のトレードオフを調べました。 テストと再利用のためにはスタックを使用することをお勧めしますが、単一の定義によってスタック上で操作される値が多すぎると、読みやすさと書き込み性が低下します。"
 
-#: ../../chapter7.rst:1484
+#: ../../chapter7.rst:1492
 msgid ""
 "We also explored techniques for saving and restoring data structures, and"
 " concluded with a study of vectored execution using ``DOER/MAKE``."
-msgstr ""
+msgstr "また、データ構造を保存したり復元したりするためのテクニックも調べ、 ``DOER/MAKE`` を使ったベクトル実行の研究で締めくくりました。"
 
-#: ../../chapter7.rst:1489
+#: ../../chapter7.rst:1497
 msgid "REFERNCES"
 msgstr "参考文献"
 
-#: ../../chapter7.rst:1491
+#: ../../chapter7.rst:1499
 msgid ""
 "Michael Ham, \"Why Novices Use So Many Variables,\"    **Forth "
 "Dimensions** , vol. 5, no. 4, November/December 1983."
@@ -1836,7 +2047,7 @@ msgstr ""
 "Michael Ham, \"Why Novices Use So Many Variables,\" **Forth Dimensions** "
 ", vol. 5, no. 4, November/December 1983."
 
-#: ../../chapter7.rst:1492
+#: ../../chapter7.rst:1500
 msgid ""
 "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal "
 "of Forth Application and Research** ,   1, 1 (September 1983), 17."

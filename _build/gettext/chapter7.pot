@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-22 07:22+0900\n"
+"POT-Creation-Date: 2019-07-23 14:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -842,7 +842,7 @@ msgid "thereby saving all the values on the stack until it’s time to restore t
 msgstr ""
 
 #: ../../chapter7.rst:1040
-msgid "But a preferred technique involves creating a table, with each element of the table referred to by name. Then creating a second table of the same length. As you can see in :numref:`fig7-3`, we can save the state by copying the table, called ``POINTERS,`` into the second table, called SAVED."
+msgid "But a preferred technique involves creating a table, with each element of the table referred to by name. Then creating a second table of the same length. As you can see in :numref:`fig7-3`, we can save the state by copying the table, called ``POINTERS,`` into the second table, called ``SAVED``."
 msgstr ""
 
 #: ../../chapter7.rst:1050
@@ -989,131 +989,131 @@ msgstr ""
 msgid "Consider the definition of a word called ``DUMP``, designed to reveal the contents of a specified region of memory."
 msgstr ""
 
-#: ../../chapter7.rst:1289
+#: ../../chapter7.rst:1293
 msgid "The problem arises when you write a definition called ``CDUMP``, designed to format the output according to bytes, not cells:"
 msgstr ""
 
-#: ../../chapter7.rst:1298
+#: ../../chapter7.rst:1306
 msgid "The code within these two definitions is identical except for the fragments in boldface. But factoring is difficult because the fragments occur inside the    ``DO``  ``LOOP``."
 msgstr ""
 
-#: ../../chapter7.rst:1302
+#: ../../chapter7.rst:1310
 msgid "Here’s a solution to this problem, using ``DOER/MAKE``. The code that changes has been replaced with the word ``.UNIT``, whose behavior is vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that “``1``  ``+LOOP``” has the same effect as “``LOOP``”.)"
 msgstr ""
 
-#: ../../chapter7.rst:1316
+#: ../../chapter7.rst:1324
 msgid "Notice how ``DUMP`` and ``CDUMP`` *set-up* the vector, then go on to *execute* the shell (the word ``<DUMP>``)."
 msgstr ""
 
-#: ../../chapter7.rst:1319
+#: ../../chapter7.rst:1327
 msgid "To change the state of related functions by invoking a single command. For instance:"
 msgstr ""
 
-#: ../../chapter7.rst:1337
+#: ../../chapter7.rst:1345
 msgid "Here we’ve defined a vectorable set of output words, each name having a “prime” mark at the end. ``VISIBLE`` sets them to their expected functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that would normally be passed to them. Say ``INVISIBLE`` and any words defined in terms of these four output operators will *not* produce any output."
 msgstr ""
 
-#: ../../chapter7.rst:1344
+#: ../../chapter7.rst:1352
 msgid "To change the state for the next occurrence only, then change the state (or reset it) again."
 msgstr ""
 
-#: ../../chapter7.rst:1347
+#: ../../chapter7.rst:1355
 msgid "Suppose we’re writing an adventure game. When the player first arrives at a particular room, the game will display a detailed description. If the player returns to the same room later, the game will show a shorter message."
 msgstr ""
 
-#: ../../chapter7.rst:1352
+#: ../../chapter7.rst:1360
 msgid "We write:"
 msgstr ""
 
-#: ../../chapter7.rst:1363
+#: ../../chapter7.rst:1371
 msgid "The word ``ANNOUNCE`` will display either message. First we say ``LONG``, to initialize ``ANNOUNCE`` to the long message. Now we can test ``ANNOUNCE``, and find that it prints the long message. Having done that, however, it continues to “make” ``ANNOUNCE`` display the short message."
 msgstr ""
 
-#: ../../chapter7.rst:1368
+#: ../../chapter7.rst:1376
 msgid "If we test ``ANNOUNCE`` a second time, it prints the short message. And it will for ever more, until we say ``LONG`` again."
 msgstr ""
 
-#: ../../chapter7.rst:1371
+#: ../../chapter7.rst:1379
 msgid "In effect we’re queuing behaviors. We can queue any number of behaviors, letting each one set the next. The following example (though not terribly practical) illustrates the point."
 msgstr ""
 
-#: ../../chapter7.rst:1392
+#: ../../chapter7.rst:1400
 msgid "In this code we’ve created a list of variables, then defined an ``ORDER`` in which they are to be searched. The word ``HUNT`` looks through each of them, looking for the first one that contains a 17. ``HUNT`` returns either the address of the correct variable, or a zero if none have the value."
 msgstr ""
 
-#: ../../chapter7.rst:1398
+#: ../../chapter7.rst:1406
 msgid "It does this by simply executing ``WHERE`` five times. Each time, ``WHERE`` returns a different address, as defined in ``ORDER``, then finally zero."
 msgstr ""
 
-#: ../../chapter7.rst:1401
+#: ../../chapter7.rst:1409
 msgid "We can even define a ``DOER`` word that toggles its own behavior endlessly:"
 msgstr ""
 
-#: ../../chapter7.rst:1412
+#: ../../chapter7.rst:1420
 msgid "To implement a forward reference. A forward reference is usually needed as a “hook,” that is, a word invoked in a low-level definition but reserved for use by a component defined later in the listing."
 msgstr ""
 
-#: ../../chapter7.rst:1416
+#: ../../chapter7.rst:1424
 msgid "To implement a forward reference, build the header of the word with ``DOER``, before invoking its name."
 msgstr ""
 
-#: ../../chapter7.rst:1423
+#: ../../chapter7.rst:1431
 msgid "Later in the listing, use ``MAKE``;"
 msgstr ""
 
-#: ../../chapter7.rst:1429
+#: ../../chapter7.rst:1437
 msgid "(Remember, ``MAKE`` can be used outside a colon definition.)"
 msgstr ""
 
-#: ../../chapter7.rst:1431
+#: ../../chapter7.rst:1439
 msgid "Recursion, direct or indirect."
 msgstr ""
 
-#: ../../chapter7.rst:1433
+#: ../../chapter7.rst:1441
 msgid "Direct recursion occurs when a word invokes itself. A good example is the recursive definition of greatest-common-denominator:"
 msgstr ""
 
-#: ../../chapter7.rst:1441
+#: ../../chapter7.rst:1449
 msgid "This translates nicely into:"
 msgstr ""
 
-#: ../../chapter7.rst:1448
+#: ../../chapter7.rst:1456
 msgid "Indirect recursion occurs when one word invokes a second word, while the second word invokes the first. This can be done using the form:"
 msgstr ""
 
-#: ../../chapter7.rst:1457
+#: ../../chapter7.rst:1465
 msgid "Debugging. I often define:"
 msgstr ""
 
-#: ../../chapter7.rst:1463
+#: ../../chapter7.rst:1471
 msgid "(short for ``SNAPSHOT``), then edit ``SNAP`` into my application at a point where I want to see what’s going on. For instance, with ``SNAP`` invoked inside the main loop of a keystroke interpreter, I can set it up to let me watch what’s happening to a data structure as I enter keys. And I can change what SNAP does without having to recompile the loop."
 msgstr ""
 
-#: ../../chapter7.rst:1471
+#: ../../chapter7.rst:1479
 msgid "The situations in which it’s preferable to use the tick-and-execute approach are those in which you need control over the address of the vector, such as when vectoring through an element in a decision table, or attempting to save/restore the contents of the vector."
 msgstr ""
 
-#: ../../chapter7.rst:1477
+#: ../../chapter7.rst:1485
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter7.rst:1479
+#: ../../chapter7.rst:1487
 msgid "In this chapter we’ve examined the tradeoffs between using the stack and using variables and other data structures. Using the stack is preferable for testing and reusability, but too many values manipulated on the stack by a single definition hurts readability and writeability."
 msgstr ""
 
-#: ../../chapter7.rst:1484
+#: ../../chapter7.rst:1492
 msgid "We also explored techniques for saving and restoring data structures, and concluded with a study of vectored execution using ``DOER/MAKE``."
 msgstr ""
 
-#: ../../chapter7.rst:1489
+#: ../../chapter7.rst:1497
 msgid "REFERNCES"
 msgstr ""
 
-#: ../../chapter7.rst:1491
+#: ../../chapter7.rst:1499
 msgid "Michael Ham, \"Why Novices Use So Many Variables,\"    **Forth Dimensions** , vol. 5, no. 4, November/December 1983."
 msgstr ""
 
-#: ../../chapter7.rst:1492
+#: ../../chapter7.rst:1500
 msgid "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal of Forth Application and Research** ,   1, 1 (September 1983), 17."
 msgstr ""
 
