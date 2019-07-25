@@ -185,7 +185,7 @@ responsible for invoking the next test.
    :caption: Refactoring and/or eliminating conditionals.
    :name: fig8-3
 
-   AUTOMATIC-TELLER
+   \ AUTOMATIC-TELLER
    
    : RUN
         READ-CARD  CHECK-OWNER  CHECK-CODE  TRANSACT  ;
@@ -281,7 +281,7 @@ execute functions are hidden within the Forth system.
    
        1000.00 280 BILL TECHNITECH
 
-    ... One word for each situation. The dictionary is making the decision.\medskip
+    ... One word for each situation. The dictionary is making the decision.
 
 This notion pervades Forth itself. To add a pair of single-length
 numbers we use the command ``+``. To add a pair of double-length numbers we
@@ -326,7 +326,7 @@ primitives; in the second case it would ``TYPE`` it.
 
 ``."`` became two completely different words housed together in one
 definition with an ``IF ELSE THEN`` structure. The flag that indicates
-whether Forth is compiling or interpreting is called ``STATE``. Since the ."
+whether Forth is compiling or interpreting is called ``STATE``. Since the ``."``
 depends on ``STATE``, it is said to be “``STATE``\ -dependent,” literally.
 
 The command *appeared* to behave the same inside and outside a colon
@@ -342,7 +342,7 @@ in bright characters on her display, to be used like this:
    
    ." INSERT DISK IN "  B." LEFT "  ." DRIVE "
 
-She might expect to define ``B."`` as
+She might expect to define :literal:`B\."` as
 
 .. code-block:: none
    
@@ -355,8 +355,8 @@ She tries it. Immediately the illusion is destroyed; the deception is
 revealed; the definition won’t work.
 
 To solve her problem, the programmer will have to study the definition
-of ``(.")`` in her own system. I’m not going to get sidetracked here with
-explaining how ``(.")`` works—my point is that smartness isn’t all it
+of :literal:`(.")` in her own system. I’m not going to get sidetracked here with
+explaining how :literal:`(.")` works—my point is that smartness isn’t all it
 appears to be.
 
 Incidentally, there’s a different syntactical approach to our student’s
@@ -454,14 +454,14 @@ The logical “or” situation, when implemented with
 
 .. code-block:: none
    
-   : ?RISE    PHONE RINGS? IF  UP GET  THEN
-        ALARM-CLOCK RINGS?  IF UP GET THEN ;
+   : ?RISE    PHONE RINGS?  IF  UP GET  THEN
+        ALARM-CLOCK RINGS?  IF  UP GET  THEN ;
 
 This is much more elegantly written as
 
 .. code-block:: none
    
-   : ?RISE  PHONE RINGS?  ALARM RINGS? OR  IF  UP GET THEN ;
+   : ?RISE  PHONE RINGS?  ALARM RINGS? OR  IF  UP GET  THEN ;
 
 One exception to this rule arises when the speed penalty for checking
 some of the conditions is too great.
@@ -532,7 +532,7 @@ Case Statements
 
 A particular class of problem involves selecting one of several possible
 paths of execution according to a numeric argument. For instance, we
-want the word .SUIT to take a number representing a suit of playing
+want the word ``.SUIT`` to take a number representing a suit of playing
 cards, 0 through 3, and display the name of the suit. We might define
 this word using nested
 ``IF``  ``ELSE``  ``THEN``\ s,
@@ -843,7 +843,7 @@ I call these flags “hybrid values” because they are booleans (truth
 values) being applied as data (numeric values). Also, I don’t know what
 else to call them.
 
-We can eliminate numeric ELSE clauses as well (where both results are
+We can eliminate numeric ``ELSE`` clauses as well (where both results are
 non-zero), by factoring out the difference between the two results. For
 instance,
 
@@ -894,7 +894,7 @@ trick.
 
    Use ``MIN`` and ``MAX`` for clipping.
 
-Suppose we want to decrement the contents of the variable VALUE, but we
+Suppose we want to decrement the contents of the variable ``VALUE``, but we
 don’t want the value to go below zero:
 
 .. code-block:: none
@@ -1068,7 +1068,7 @@ The current charge, either first minute, additional minute, or per mile,
 is expressed as an offset into the table (0, 2, or 4).
 
 An optimization note: we’ve implemented the two-dimensional table as a
-set of three one-dimensional tables, each pointed to by RATE. This
+set of three one-dimensional tables, each pointed to by ``RATE``. This
 approach eliminates the need for a multiplication that would otherwise
 be needed to implement a two-dimensional structure. The multiplication
 can be prohibitively slow in certain
@@ -1114,7 +1114,7 @@ the last row of the table—the functions we want when *any* character is
 pressed.)
 
 The word ``ACTION`` invokes ``’FUNCTION``, then adds the contents of the
-variable ``MODE#``. Since MODE# will contain either a 2 or a 4, by adding
+variable ``MODE#``. Since ``MODE#`` will contain either a 2 or a 4, by adding
 this offset we’re now pointing into the table at the address of the
 routine we want to perform. A simple
 
@@ -1394,7 +1394,7 @@ to compute the character:
    : CHARACTER  ( -- graphics character)
       160   6 O DO  I PIXEL C@  I 2** AND  +  LOOP ;
 
-(We introduced 2\*\* a few tips back.)
+(We introduced :literal:`2**` a few tips back.)
 
 No decisions are necessary in the definition of ``CHARACTER``. The graphics
 character is simply computed.
@@ -1510,7 +1510,7 @@ readable.
                   2CONDITION IF ... EXIT THEN
                   3CONDITION IF ... EXIT THEN ;
     
-    SIMPLE handled the simple cases. SIMPLE ended up with ``R> DROP``.
+    ``SIMPLE`` handled the simple cases. ``SIMPLE`` ended up with ``R> DROP``.
     These other conditions were the more complex ones.
     
     Everyone exited at the same point without having to painfully match all

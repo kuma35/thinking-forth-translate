@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
+"POT-Creation-Date: 2019-07-25 15:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgid "The word ``FROM`` takes care of that situation. If you want to bill someo
 msgstr ""
 
 #: ../../chapter8.rst:284
-msgid "... One word for each situation. The dictionary is making the decision.\\medskip"
+msgid "... One word for each situation. The dictionary is making the decision."
 msgstr ""
 
 #: ../../chapter8.rst:286
@@ -227,7 +227,7 @@ msgid "To solve this problem, the FIG model added a test inside ``.\"`` that det
 msgstr ""
 
 #: ../../chapter8.rst:327
-msgid "``.\"`` became two completely different words housed together in one definition with an ``IF ELSE THEN`` structure. The flag that indicates whether Forth is compiling or interpreting is called ``STATE``. Since the .\" depends on ``STATE``, it is said to be “``STATE``\\ -dependent,” literally."
+msgid "``.\"`` became two completely different words housed together in one definition with an ``IF ELSE THEN`` structure. The flag that indicates whether Forth is compiling or interpreting is called ``STATE``. Since the ``.\"`` depends on ``STATE``, it is said to be “``STATE``\\ -dependent,” literally."
 msgstr ""
 
 #: ../../chapter8.rst:332
@@ -239,7 +239,7 @@ msgid "Suppose a student wants to write a new word called ``B.\"`` (for “brigh
 msgstr ""
 
 #: ../../chapter8.rst:345
-msgid "She might expect to define ``B.\"`` as"
+msgid "She might expect to define :literal:`B\\.\"` as"
 msgstr ""
 
 #: ../../chapter8.rst:351
@@ -251,7 +251,7 @@ msgid "She tries it. Immediately the illusion is destroyed; the deception is rev
 msgstr ""
 
 #: ../../chapter8.rst:357
-msgid "To solve her problem, the programmer will have to study the definition of ``(.\")`` in her own system. I’m not going to get sidetracked here with explaining how ``(.\")`` works—my point is that smartness isn’t all it appears to be."
+msgid "To solve her problem, the programmer will have to study the definition of :literal:`(.\")` in her own system. I’m not going to get sidetracked here with explaining how :literal:`(.\")` works—my point is that smartness isn’t all it appears to be."
 msgstr ""
 
 #: ../../chapter8.rst:362
@@ -371,7 +371,7 @@ msgid "Case Statements"
 msgstr ""
 
 #: ../../chapter8.rst:533
-msgid "A particular class of problem involves selecting one of several possible paths of execution according to a numeric argument. For instance, we want the word .SUIT to take a number representing a suit of playing cards, 0 through 3, and display the name of the suit. We might define this word using nested ``IF``  ``ELSE``  ``THEN``\\ s, like this:"
+msgid "A particular class of problem involves selecting one of several possible paths of execution according to a numeric argument. For instance, we want the word ``.SUIT`` to take a number representing a suit of playing cards, 0 through 3, and display the name of the suit. We might define this word using nested ``IF``  ``ELSE``  ``THEN``\\ s, like this:"
 msgstr ""
 
 #: ../../chapter8.rst:550
@@ -591,7 +591,7 @@ msgid "I call these flags “hybrid values” because they are booleans (truth v
 msgstr ""
 
 #: ../../chapter8.rst:846
-msgid "We can eliminate numeric ELSE clauses as well (where both results are non-zero), by factoring out the difference between the two results. For instance,"
+msgid "We can eliminate numeric ``ELSE`` clauses as well (where both results are non-zero), by factoring out the difference between the two results. For instance,"
 msgstr ""
 
 #: ../../chapter8.rst:854
@@ -635,7 +635,7 @@ msgid "Use ``MIN`` and ``MAX`` for clipping."
 msgstr ""
 
 #: ../../chapter8.rst:897
-msgid "Suppose we want to decrement the contents of the variable VALUE, but we don’t want the value to go below zero:"
+msgid "Suppose we want to decrement the contents of the variable ``VALUE``, but we don’t want the value to go below zero:"
 msgstr ""
 
 #: ../../chapter8.rst:904
@@ -751,7 +751,7 @@ msgid "The current charge, either first minute, additional minute, or per mile, 
 msgstr ""
 
 #: ../../chapter8.rst:1070
-msgid "An optimization note: we’ve implemented the two-dimensional table as a set of three one-dimensional tables, each pointed to by RATE. This approach eliminates the need for a multiplication that would otherwise be needed to implement a two-dimensional structure. The multiplication can be prohibitively slow in certain cases."
+msgid "An optimization note: we’ve implemented the two-dimensional table as a set of three one-dimensional tables, each pointed to by ``RATE``. This approach eliminates the need for a multiplication that would otherwise be needed to implement a two-dimensional structure. The multiplication can be prohibitively slow in certain cases."
 msgstr ""
 
 #: ../../chapter8.rst:1078
@@ -787,7 +787,7 @@ msgid "In the third screen, the word ``’FUNCTION`` takes a key value, searches
 msgstr ""
 
 #: ../../chapter8.rst:1116
-msgid "The word ``ACTION`` invokes ``’FUNCTION``, then adds the contents of the variable ``MODE#``. Since MODE# will contain either a 2 or a 4, by adding this offset we’re now pointing into the table at the address of the routine we want to perform. A simple"
+msgid "The word ``ACTION`` invokes ``’FUNCTION``, then adds the contents of the variable ``MODE#``. Since ``MODE#`` will contain either a 2 or a 4, by adding this offset we’re now pointing into the table at the address of the routine we want to perform. A simple"
 msgstr ""
 
 #: ../../chapter8.rst:1125
@@ -979,7 +979,7 @@ msgid "and assuming that each byte contains hex FF if the pixel is “on;” zer
 msgstr ""
 
 #: ../../chapter8.rst:1397
-msgid "(We introduced 2\\*\\* a few tips back.)"
+msgid "(We introduced :literal:`2**` a few tips back.)"
 msgstr ""
 
 #: ../../chapter8.rst:1399
@@ -1067,7 +1067,7 @@ msgid "Especially if your conditionals are getting elaborate, it's handy to jump
 msgstr ""
 
 #: ../../chapter8.rst:1513
-msgid "SIMPLE handled the simple cases. SIMPLE ended up with ``R> DROP``. These other conditions were the more complex ones."
+msgid "``SIMPLE`` handled the simple cases. ``SIMPLE`` ended up with ``R> DROP``. These other conditions were the more complex ones."
 msgstr ""
 
 #: ../../chapter8.rst:1516

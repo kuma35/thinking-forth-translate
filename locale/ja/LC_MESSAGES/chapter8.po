@@ -4,23 +4,24 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 09:29+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-25 15:37+0900\n"
+"PO-Revision-Date: 2019-07-25 21:59+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../chapter8.rst:4
 msgid "8. Minimizing Control Structures"
-msgstr ""
+msgstr "第８章 制御構造の最小化"
 
 #: ../../chapter8.rst:6
 msgid ""
@@ -28,48 +29,51 @@ msgid ""
 "languages. Forth programmers tend to write very complex applications in "
 "terms of short words, without much emphasis on ``IF THEN`` constructs."
 msgstr ""
+"Forthでは、制御構造は他の言語ほど重要ではありません。 Forthのプログラマは、 ``IF…THEN`` "
+"構造をあまり強調せずに、短いワードで非常に複雑なアプリケーションを書く傾向があります。"
 
 #: ../../chapter8.rst:11
 msgid ""
 "There are several techniques for minimizing control structures. They "
 "include:"
-msgstr ""
+msgstr "制御構造を最小化するためのいくつかの手法があります。 本章には以下の内容が含まれます。"
 
+# 後の解説を見て訳語修正。特に「コンピューティング」
 #: ../../chapter8.rst:14
 msgid "computing or calculating"
-msgstr ""
+msgstr "コンピューティング あるいは 計算"
 
 #: ../../chapter8.rst:16
 msgid "hiding conditionals through re-factoring"
-msgstr ""
+msgstr "リファクタリング(再要素分解)による条件文の非表示"
 
 #: ../../chapter8.rst:18
 msgid "using structured exits"
-msgstr ""
+msgstr "構造化された脱出の使用"
 
 #: ../../chapter8.rst:20
 msgid "vectoring"
-msgstr ""
+msgstr "ベクトル化"
 
 #: ../../chapter8.rst:22
 msgid "redesigning."
-msgstr ""
+msgstr "再設計"
 
 #: ../../chapter8.rst:24
 msgid ""
 "In this chapter we’ll examine these techniques for simplifying and "
 "eliminating control structures from your code."
-msgstr ""
+msgstr "この章では、コードから制御構造を、単純化および削除する、これらの手法について調査します。"
 
 #: ../../chapter8.rst:28
 msgid "What’s So Bad about Control Structures?"
-msgstr ""
+msgstr "制御構造の何がそんなに悪いの？"
 
 #: ../../chapter8.rst:30
 msgid ""
 "Before we begin reeling off our list of tips, let’s pause to examine why "
 "conditionals should be avoided in the first place."
-msgstr ""
+msgstr "ヒントのリストを読み始める前に、なぜ条件文を回避する必要があるのかを検討してみましょう。"
 
 #: ../../chapter8.rst:33
 msgid ""
@@ -78,10 +82,12 @@ msgid ""
 "maintain. The more parts a machine has, the greater are its chances of "
 "breaking down. And the harder it is for someone to fix."
 msgstr ""
+"条件付き構造を使用すると、コードが複雑になります。 コードが複雑になればなるほど、それを読んで保守するのは難しくなります。 "
+"機械の部品数が多いほど、故障する可能性が高くなります。 そして、誰かが直すのが難しくなります。"
 
 #: ../../chapter8.rst:84
 msgid "**Moore** tells this story:"
-msgstr ""
+msgstr "**ムーア** はこんなストーリーを語ります。"
 
 #: ../../chapter8.rst:39
 msgid ""
@@ -93,6 +99,10 @@ msgid ""
 "complicated.  \"If this, else if this, else if this\" ... and then the "
 "simple thing."
 msgstr ""
+"私は最近数年前に仕事をしていた会社に戻りました。 "
+"彼らのプログラムは5歳になり、とても複雑になったので、彼らは私に電話をかけてきました。プログラマは、状態変数と条件文を追加して、物事にパッチを当てていました。"
+" 私が5年前に単純なものであったことを思い出すすべてのステートメントは、今非常に複雑になっています。「もしならば コレ でなければ ソレ "
+"もしでなければ アレ…そしてそれからなにか単純な事をする」と言った具合です。"
 
 #: ../../chapter8.rst:47
 msgid ""
@@ -101,6 +111,8 @@ msgid ""
 "why it was relevant in this case, and then what was happening as a "
 "consequence of it---or not happening."
 msgstr ""
+"今や、そのステートメントを読んで、私はそれが何をしているのか、そしてその理由を理解することは不可能でした。 "
+"私は、各変数が何を示しているのか、なぜそれがこの場合に関連があるのか、そしてその結果として何が起こっていたのか、あるいは起こらなかったのかを覚えておかなければなりません。"
 
 #: ../../chapter8.rst:52
 msgid ""
@@ -110,6 +122,9 @@ msgid ""
 " few more. Each incremental step only added a little confusion to the "
 "program. Since they were the programmers, they were right on top of it."
 msgstr ""
+"それは無邪気に始まった。 彼らは心配する必要がある特別なケースを持っていました。 "
+"その特別なケースを処理するために、彼らはある場所に条件文を置きます。 それから彼らはまた、それらがここやそこでれを必要とすることを発見した。 "
+"そして、階段を登るようなステップでプログラムに少しづつ混乱を追加しました。 彼らはプログラマだったので、今や彼らは階段の頂上にいます。"
 
 #: ../../chapter8.rst:58
 msgid ""
@@ -119,6 +134,9 @@ msgid ""
 "out for. They created the logical equivalent of spaghetti code in spite "
 "of the opportunity for a structured program."
 msgstr ""
+"最終結果は悲惨でした。 "
+"結局、彼らは半ダースのフラグを抱え込んでいました。これをテストし、リセットし、設定しなければなりません。この状態の結果として、気をつけなければならない他の状態がやってくることを知っていました。"
+" 彼らは、構造化プログラムの可能性にもかかわらず、スパゲッティプログラムと論理的に同等なものを作成しました。"
 
 #: ../../chapter8.rst:64
 msgid ""
@@ -127,6 +145,9 @@ msgid ""
 "solution that would have made it all unnecessary---having two words "
 "instead of one. You either say ``GO`` or you say ``PRETEND``."
 msgstr ""
+"複雑さは彼らが今まで意図していたものをはるかに超えていました。 "
+"しかし、彼らはこの道を進むことを決心していました、そして彼らはそれをすべて不要にしたであろう単純な解決策を逃しました。それは "
+"1つではなく2つのワードを持つこと。あなたは ``GO`` と言うか、 ``PRETEND``  と言うかのどちらかです。"
 
 #: ../../chapter8.rst:69
 msgid ""
@@ -135,12 +156,14 @@ msgid ""
 "he presses Button A, then do this; if he presses Button B, then do "
 "something else.\" You don't go through that kind of logic."
 msgstr ""
+"ほとんどのアプリケーションでは、状態をテストする必要がある回数は著しく少ないです。たとえば、ビデオゲームでは、「ボタンAを押した場合はこれを行い、ボタンBを押した場合はそれ以外のことをします」と言っているのではありません。"
+" あなたはそのような論理を経験しません。"
 
 #: ../../chapter8.rst:74
 msgid ""
 "If he presses the button, you do something. What you do is associated "
 "with the button, not with the logic."
-msgstr ""
+msgstr "彼がボタンを押すと、あなたは何かをする。 あなたがすることはロジックではなくボタンに関連付けられています。"
 
 #: ../../chapter8.rst:77
 msgid ""
@@ -149,13 +172,15 @@ msgid ""
 "you can do is question each one. Every conditional should cause you to "
 "ask, \"What am I doing wrong?\""
 msgstr ""
+"条件文自体はそれほど悪くありません。それらは本質的な構成要素です。 しかし、多くの条件付きプログラムは不器用で読みにくいものです。 "
+"あなたができることは、それぞれ一つずつ質問することです。 どの条件文でも、「私は何を間違っているのですか？」と尋ねるべきです。"
 
 #: ../../chapter8.rst:82
 msgid ""
 "What you're trying to do with the conditional can be done in a different "
 "way. The long-term consequences of the different way are preferable to "
 "the long-term consequences of the conditional."
-msgstr ""
+msgstr "条件付きで試そうしていることは別の方法でも可能です。 さまざまな方法による長期的な結果は、条件式による長期的な結果よりも優先されます。"
 
 #: ../../chapter8.rst:86
 msgid ""
@@ -164,17 +189,19 @@ msgid ""
 ":numref:`fig8-1`, :numref:`fig8-2`, and :numref:`fig8-3` illustrate three"
 " versions of a design for an automatic teller machine."
 msgstr ""
+"いくつかの詳細なテクニックを紹介する前に、特定の例で条件文を使うための3つのアプローチを見てみましょう。 :numref:`fig8-1` 、 "
+":numref:`fig8-2` 、 :numref:`fig8-3` は現金自動預払機の3種類の設計を表しています。"
 
 #: ../../chapter8.rst:92
 msgid "The structured approach."
-msgstr ""
+msgstr "構造化アプローチ"
 
 #: ../../chapter8.rst:130
 msgid ""
 "The first example comes straight out of the School for Structured "
 "Programmers. The logic of the application depends on the correct nesting "
 "of IF statements."
-msgstr ""
+msgstr "最初の例は、構造化プログラミングスクールから直接得られたものです。 アプリケーションのロジックは、IFステートメントの正しいネストに依存します。"
 
 #: ../../chapter8.rst:134
 msgid ""
@@ -182,10 +209,12 @@ msgid ""
 " answer, you have to either count ELSEs from the bottom and match them "
 "with the same number of IFs from the top, or use a straightedge."
 msgstr ""
+"読みやすいですか？ じゃあ、ユーザのキャッシュカードがどのような状況で食べられちゃうのか私に教えてください。 "
+"答えるには、下からELSEを数えて上から同じ数のIFと一致させるか、定規を使用する必要があります。"
 
 #: ../../chapter8.rst:138
 msgid "Nesting conditionals within named procedures."
-msgstr ""
+msgstr "名前付き手続き内の入れ子の条件文"
 
 #: ../../chapter8.rst:174
 msgid ""
@@ -193,6 +222,8 @@ msgid ""
 "many small, named procedures can have on readability. The user’s card is "
 "eaten if the owner is not valid."
 msgstr ""
+"2番目のバージョン :numref:`fig8-2` は、名前付きの小さな手続きをたくさん使うことで読みやすさが向上することを示しています。 "
+"所有者が無効な場合は、ユーザのカードが食べられちゃいます。"
 
 #: ../../chapter8.rst:178
 msgid ""
@@ -202,10 +233,12 @@ msgid ""
 "worst-case, most trivial kind of event. And each test becomes responsible"
 " for invoking the next test."
 msgstr ""
+"しかし、この改善があっても、各ワードの設計はテストが実行されなければならないシーケンスに完全に依存します。 "
+"おそらく「最高」レベルの手順は、最悪の場合、最も簡単な種類のイベントを排除することに苦労します。そして各テストは次のテストを呼び出す責任を負います。"
 
 #: ../../chapter8.rst:184
 msgid "Refactoring and/or eliminating conditionals."
-msgstr ""
+msgstr "条件付きリファクタリング(再要素分解)か、またはその排除"
 
 #: ../../chapter8.rst:228
 msgid ""
@@ -215,6 +248,9 @@ msgid ""
 "cluttering the reading of the main word. One test does not have to invoke"
 " the next test."
 msgstr ""
+"3番目のバージョンはForthの約束に最も近いものです。 "
+"最高レベルのワードは、概念的に起こっていることを正確に表現しており、主要な経路のみを示しています。 "
+"従属ワードのそれぞれは、それ自体のエラー出口を持ち、主語の読みを乱雑にしません。 あるテストで次のテストを呼び出す必要はありません。"
 
 #: ../../chapter8.rst:234
 msgid ""
@@ -226,16 +262,20 @@ msgid ""
 "dependent on hardware. Details of the interface to the keypad may be "
 "hidden within the keypad lexicon, ``READ-BUTTON`` and ``BUTTON``.)"
 msgstr ""
+"また、 ``TRANSACT`` は、ユーザがキーパッドのボタンを押すことによって要求を出すという事実に基づいて設計されています。 "
+"条件文は必要ありません。 一つのボタンは引き出しを開始し、もう一つは預金を開始します。 "
+"このアプローチは、振込のための機能の追加など、後の設計変更に容易に対応します(そして、このアプローチはハードウェアに依存するようにはなりません。キーパッドへのインターフェースの詳細は、キーパッド用語集の"
+" ``READ-BUTTON`` と ``BUTTON`` の中に隠されるかもしれません）。"
 
 #: ../../chapter8.rst:242
 msgid ""
 "Of course, Forth will allow you to take any of the three approaches. "
 "Which do you prefer?"
-msgstr ""
+msgstr "もちろん、Forthはあなたが3つのアプローチのどれでも取ることを可能にするでしょう。 あなたはどれが好きですか？"
 
 #: ../../chapter8.rst:246
 msgid "How to Eliminate Control Structures"
-msgstr ""
+msgstr "制御構造を取り除く方法"
 
 #: ../../chapter8.rst:248
 msgid ""
@@ -246,14 +286,18 @@ msgid ""
 "Remember, therefore: Not all of the tips will be applicable in all "
 "situations."
 msgstr ""
+"この節では、条件を単純化または回避するための多数の技法を学びます。 "
+"それらのほとんどは、より読みやすく、より保守しやすく、そしてより効率的なコードを生成します。 "
+"いくつかの技法はより効率的なコードを生成しますが、いつも読みやすいとは限りません。 "
+"したがって、次の点に注意してください。すべてのヒントがすべての状況に適用できるわけではありません。"
 
 #: ../../chapter8.rst:256
 msgid "Using the Dictionary"
-msgstr ""
+msgstr "辞書(dictionary)の使用"
 
 #: ../../chapter8.rst:260
 msgid "Give each function its own definition."
-msgstr ""
+msgstr "各機能に独自の定義を与えて下さい。"
 
 #: ../../chapter8.rst:262
 msgid ""
@@ -262,18 +306,21 @@ msgid ""
 "The Forth dictionary is a giant string case statement. The match and "
 "execute functions are hidden within the Forth system."
 msgstr ""
+"Forth辞書を適切に使用することによって、実際には条件文を排除するわけではありません。 "
+"我々は単にそれらを我々のアプリケーションコードから除外しているだけです。 Forth辞書は巨大な文字列のcase文です。 "
+"match機能とexecute機能はForthシステム内に隠されています。"
 
 #: ../../chapter8.rst:284 ../../chapter8.rst:624 ../../chapter8.rst:840
 #: ../../chapter8.rst:1333 ../../chapter8.rst:1352 ../../chapter8.rst:1418
 #: ../../chapter8.rst:1460
 msgid "**Moore**:"
-msgstr ""
+msgstr "ムーアは言います。"
 
 #: ../../chapter8.rst:268
 msgid ""
 "In my accounting package, if you receive a check from somebody, you type "
 "the amount, the check number, the word ``FROM``, and the person's name:"
-msgstr ""
+msgstr "私の会計パッケージでは、誰かから小切手を受け取ったら、金額、小切手番号、ワード ``FROM`` 、そしてその人の名前を入力します。"
 
 #: ../../chapter8.rst:276
 msgid ""
@@ -281,12 +328,12 @@ msgid ""
 "someone, you type the amount, the invoice number, the word ``BILL`` and "
 "the person's name:"
 msgstr ""
+"``FROM`` というワードがその状況を処理します。 誰かに請求したい場合は、金額、請求書番号、ワード ``BILL`` "
+"、およびその人の名前を入力します。"
 
 #: ../../chapter8.rst:284
-msgid ""
-"... One word for each situation. The dictionary is making the "
-"decision.\\medskip"
-msgstr ""
+msgid "... One word for each situation. The dictionary is making the decision."
+msgstr "…それぞれの状況に１ワード。 辞書が決定を下しています。"
 
 #: ../../chapter8.rst:286
 msgid ""
@@ -296,6 +343,9 @@ msgid ""
 "single command that somehow “knows” which type of numbers are being "
 "added."
 msgstr ""
+"この概念はForth自体に広がっています。 一対の1倍長数を追加するためには、コマンド ``+`` を使います。 "
+"2倍長数のペアを追加するには、コマンド ``D+`` を使います。 "
+"効率が悪く、より複雑なアプローチは、どのタイプの数字が追加されているかをどうにかして「知る」単一のコマンドです。"
 
 #: ../../chapter8.rst:292
 msgid ""
@@ -303,10 +353,13 @@ msgid ""
 "``+`` and ``D+`` —can be implemented without any need for testing and "
 "branching."
 msgstr ""
+"``FROM`` と ``BILL`` と ``+`` と ``D+`` "
+"のすべてのワードをテストや分岐の必要なしに実装できるので、Forthは効率的です。"
 
+# 意味不明
 #: ../../chapter8.rst:297
 msgid "Use dumb words."
-msgstr ""
+msgstr "愚直なワードを使って下さい。"
 
 #: ../../chapter8.rst:299
 msgid ""
@@ -315,10 +368,12 @@ msgid ""
 "instead, has the same behavior all the time (“referentially "
 "transparent”)."
 msgstr ""
+"これはテレビ作家の為のアドバイスではありません。 辞書を使うのは別の例です。 "
+"「愚直な」ワードは、状態に依存しないワードですが、代わりに常に同じ動作をします(「参照透過性」)。"
 
 #: ../../chapter8.rst:304
 msgid "A dumb word is unambiguous, and therefore, more trustworthy."
-msgstr ""
+msgstr "愚直な言葉はあいまいさがないため、より信頼できるものです。"
 
 #: ../../chapter8.rst:306
 msgid ""
@@ -326,20 +381,22 @@ msgid ""
 "over this issue. One such word is ``.\"`` which prints a string. In its "
 "simplest form, it’s allowed only inside a colon definition:"
 msgstr ""
+"最近、この問題に関していくつかの一般的なForthの言葉が論争の的となっています。 そのようなワードの1つは、文字列を出力する ``.\"`` "
+"です。最も単純な形式では、コロン定義内でのみ使用できます。"
 
 #: ../../chapter8.rst:314
 msgid ""
 "Actually, this version of the word does *not* print a string. It "
 "*compiles* a string, along with the address of another definition that "
 "does the printing at run time."
-msgstr ""
+msgstr "実際には、このバージョンのワードは文字列を出力しません。 実行時に出力を行う別の定義のアドレスとともに、文字列を「コンパイル」します。"
 
 #: ../../chapter8.rst:318
 msgid ""
 "This is the dumb version of the word. If you use it outside a colon "
 "definition, it will uselessly compile the string, not at all what a "
 "beginner might expect."
-msgstr ""
+msgstr "これは愚直なワードです。 コロン定義の外で使用すると、文字列を無駄にコンパイルしてしまいます。初心者が期待することはまったく行いません。"
 
 #: ../../chapter8.rst:322
 msgid ""
@@ -348,15 +405,21 @@ msgid ""
 " the first case, ``.\"`` would compile the string and the address of the "
 "primitives; in the second case it would ``TYPE`` it."
 msgstr ""
+"この問題を解決するために、FIGモデルではシステムが現在コンパイルしているのか解釈しているのかを決定するテストを内部に追加しました。最初の場合、文字列とプリミティブのアドレスがコンパイルされます。そして2番目場合、それは"
+" ``TYPE``` です。"
 
 #: ../../chapter8.rst:327
 msgid ""
 "``.\"`` became two completely different words housed together in one "
 "definition with an ``IF ELSE THEN`` structure. The flag that indicates "
 "whether Forth is compiling or interpreting is called ``STATE``. Since the"
-" .\" depends on ``STATE``, it is said to be “``STATE``\\ -dependent,” "
-"literally."
+" ``.\"`` depends on ``STATE``, it is said to be “``STATE``\\ -dependent,”"
+" literally."
 msgstr ""
+"``.\"`` は、 ``IF…ELSE…THEN`` "
+"構造を持ち、2つのまったく異なるワードを1つに纏めたワードになりました。Forthがコンパイル時であるか実行時であるかを示すフラグは "
+"``STATE`` (状態)と呼ばれます。``.\"`` は ``STATE`` に依存するため、文字通り「状態依存(state-"
+"dependent)」と言われます。"
 
 #: ../../chapter8.rst:332
 msgid ""
@@ -364,6 +427,8 @@ msgid ""
 "definition. This duplicity proved useful in afternoon introductions to "
 "Forth, but the serious student soon learned there’s more to it than that."
 msgstr ""
+"コマンドは、コロン定義の内側と外側で同じ動作をするように見えました。 "
+"この重複は、Forthをてきとうに学ぶ学生には役立ちましたが、真面目な学生はすぐにそれ以上のものがあることを知りました。"
 
 #: ../../chapter8.rst:337
 msgid ""
@@ -371,30 +436,34 @@ msgid ""
 "dot-quote”) to display a string in bright characters on her display, to "
 "be used like this:"
 msgstr ""
+"生徒が自分のディスプレイに明るい文字で文字列を表示するために、 ``B.\"`` (bright-dot-"
+"quote)という新しいワードを書きたいとします。"
 
 #: ../../chapter8.rst:345
-msgid "She might expect to define ``B.\"`` as"
-msgstr ""
+msgid "She might expect to define :literal:`B\\.\"` as"
+msgstr "彼女は :literal:`B.\"` を以下のように定義することを期待するかもしれません。"
 
 #: ../../chapter8.rst:351
 msgid ""
 "that is, change the video mode to bright, print the string, then reset "
 "the mode to normal."
-msgstr ""
+msgstr "つまり、ビデオモードを「bright」に変更し、文字列を出力してから、モードを標準にリセットします。"
 
 #: ../../chapter8.rst:354
 msgid ""
 "She tries it. Immediately the illusion is destroyed; the deception is "
 "revealed; the definition won’t work."
-msgstr ""
+msgstr "彼女はそれを試します。 すぐに幻想は破壊されます。 まやかしが明らかになります。定義はうまくいきません。"
 
 #: ../../chapter8.rst:357
 msgid ""
 "To solve her problem, the programmer will have to study the definition of"
-" ``(.\")`` in her own system. I’m not going to get sidetracked here with "
-"explaining how ``(.\")`` works—my point is that smartness isn’t all it "
-"appears to be."
+" :literal:`(.\")` in her own system. I’m not going to get sidetracked "
+"here with explaining how :literal:`(.\")` works—my point is that "
+"smartness isn’t all it appears to be."
 msgstr ""
+"彼女の問題を解決するために、プログラマは自分のシステムで :literal:`(.\")` の定義を研究しなければならないでしょう。 "
+":literal:`(.\")` がどのように機能するかの説明はここではしません。ポイントは、そのスマートさがそれだけではないということです。"
 
 #: ../../chapter8.rst:362
 msgid ""
@@ -405,6 +474,10 @@ msgid ""
 "be normal most of the time. With this syntax, the programmer need merely "
 "precede the emphasized string with the simple word ``BRIGHT``."
 msgstr ""
+"ちなみに、私たちの生徒の問題に対する異なる構文的アプローチがあります。それは、文字列を印刷するために2つの別々のワード ``.\"`` と "
+"``B.\"`` を持つ必要がないというものです。 システムの ``(.\")`` "
+"を変更して、ほとんどの場合はすでに通常のモードになっていても、出力後は常にモードを通常に設定するようにします。この構文では、プログラマは強調文字列の前に"
+" ``BRIGHT`` というシンプルなワードを追加するだけです。"
 
 #: ../../chapter8.rst:373
 msgid ""
@@ -413,6 +486,8 @@ msgid ""
 "Happily, in this new standard we’re using the dictionary to make a "
 "decision by having two separate words."
 msgstr ""
+"FORTH-83規格では、現在、愚直な ``.\"`` "
+"を指定しています。そして、解釈版が必要な場合は、新しい単語を追加しています(幸せな事に、この新しい規格では、2つの別々のワードを持つ辞書を使う事ができます)。"
 
 #: ../../chapter8.rst:378
 msgid ""
@@ -422,6 +497,9 @@ msgid ""
 "either of these words in a higher-level definition and have them behave "
 "in the same way they do normally."
 msgstr ""
+"「``'``(ティック)」というワードにも同様の歴史があります。これはfig-Forthでは ``STATE`` 依存で、現在は "
+"FORTH-83規格では愚直(dumb)です。``'`` (ティック) は ``.\"`` "
+"(ドット・クォート)と、プログラマがこれらのワードのどちらかをより高いレベルの定義で再利用し、それらが通常と同じように振る舞わせることを望んでいるという特性を共有します。"
 
 #: ../../chapter8.rst:387
 msgid ""
@@ -429,24 +507,28 @@ msgid ""
 "invoke them from within a higher-level definition and expect them to "
 "behave as they do interpretively."
 msgstr ""
+"プログラマがより高水準の定義内からそれらを呼び出し、それらが解釈するように振る舞うと期待するかもしれないならば、ワードは ``STATE`` "
+"に依存すべきではありません。"
 
 #: ../../chapter8.rst:391
 msgid ""
 "``ASCII`` works well as a ``STATE``\\ -dependent word, and so does "
 "``MAKE``. (See :doc:`Appendix C<appendixc>`.)"
 msgstr ""
+"`` ASCII`` は ``STATE`` 依存ワードとしてうまく機能し、 ``MAKE`` も同様に機能します( "
+":doc:`付録C<appendixc>` 参照)。"
 
 #: ../../chapter8.rst:395
 msgid "Nesting and Combining Conditionals"
-msgstr ""
+msgstr "条件文の入れ子と結合"
 
 #: ../../chapter8.rst:399
 msgid "Don't test for something that has already been excluded."
-msgstr ""
+msgstr "既に除外されているものをテストしないでください。"
 
 #: ../../chapter8.rst:401
 msgid "Take this example, please:"
-msgstr ""
+msgstr "以下の例を見てください。"
 
 #: ../../chapter8.rst:411
 msgid ""
@@ -454,14 +536,16 @@ msgid ""
 "regardless of the outcome of any of them. If the key pressed was the "
 "left-arrow key, there’s no need to check if it was some other key."
 msgstr ""
+"このバージョンでは、4つのテストすべてをテストの結果に関係なく行わなければならないため、非効率的です。 "
+"押されたキーが左矢印キーであれば、それが他のキーであるかどうかを確認する必要はありません。"
 
 #: ../../chapter8.rst:415
 msgid "Instead, you can nest the conditionals, like this:"
-msgstr ""
+msgstr "代わりに、あなたは次のように条件文を入れ子にすることができます。"
 
 #: ../../chapter8.rst:428
 msgid "Combine booleans of similar weight."
-msgstr ""
+msgstr "同じ重みのブール値を組み合わせて下さい。"
 
 #: ../../chapter8.rst:430
 msgid ""
@@ -469,6 +553,8 @@ msgid ""
 "simplified by combining the flags with logical operators before making "
 "the decision. Here’s a doubly-nested test:"
 msgstr ""
+"二重に入れ子になった ``IF…THEN`` "
+"構造の多くの実例では、決定を下す前にフラグを論理演算子と組み合わせることによって単純化することができます。 以下はが二重入れ子のテストです。"
 
 #: ../../chapter8.rst:440
 msgid ""
@@ -476,30 +562,33 @@ msgid ""
 "Saturday and the chores are done before it boogies on down. Instead, "
 "let’s combine the conditions logically and make a single decision:"
 msgstr ""
+"上のコードは入れ子になった ``IF`` "
+"を使って、土曜日(saturday)と雑用(work)の両方が確実に終了する前に行われるようにしています。 "
+"代わりに、条件を論理的に組み合わせて単一の決定をしましょう。"
 
 #: ../../chapter8.rst:450
 msgid "It’s simpler and more readable."
-msgstr ""
+msgstr "よりシンプルで読みやすくなっています。"
 
 #: ../../chapter8.rst:452
 msgid ""
 "The logical “or” situation, when implemented with ``IF``  ``THEN``\\ s, "
 "is even clumsier:"
-msgstr ""
+msgstr "論理的な「or」の状況は、 ``IF…THEN`` で実装された場合、さらに厄介です。"
 
 #: ../../chapter8.rst:460
 msgid "This is much more elegantly written as"
-msgstr ""
+msgstr "これはもっとエレガントになります。"
 
 #: ../../chapter8.rst:466
 msgid ""
 "One exception to this rule arises when the speed penalty for checking "
 "some of the conditions is too great."
-msgstr ""
+msgstr "この規則の1つの例外は、いくつかの条件をチェックするための速度的なペナルティが大きすぎる場合です。"
 
 #: ../../chapter8.rst:469
 msgid "We might write"
-msgstr ""
+msgstr "私たちが以下のように書いたとします。"
 
 #: ../../chapter8.rst:476
 msgid ""
@@ -508,29 +597,31 @@ msgid ""
 "in undertaking the search if we have no bean sprouts in the fridge. It "
 "would be more efficient to write"
 msgstr ""
+"ただし、レシピファイルにそれがあるのかどうかを確認するために、レシピファイルを探すのに長い時間がかかるとします。 冷蔵庫にもやし(bean-"
+"sprouts)がなければ、検索を実行しても意味がありません。以下のように書くほうが効率的です。"
 
 #: ../../chapter8.rst:486
 msgid "We don’t bother looking for the recipe if there are no sprouts."
-msgstr ""
+msgstr "私たちはもやし(bean-sprouts)がなければ、レシピを探す必要はありません。"
 
 #: ../../chapter8.rst:488
 msgid ""
 "Another exception arises if any term is probably not true. By eliminating"
 " such a condition first, you avoid having to try the other conditions."
-msgstr ""
+msgstr "いずれかの語がおそらく正しくない場合は、別の例外が発生します。 最初にこのような条件を排除することで、他の条件を試す必要がなくなります。"
 
 #: ../../chapter8.rst:494
 msgid ""
 "When multiple conditions have dissimilar weights (in likelihood or "
 "calculation time) nest conditionals with the term that is least likely to"
 " be true or easiest to calculate on the outside."
-msgstr ""
+msgstr "複数の条件の重みが（ありそうな程度や計算時間で）異なる場合は、条件式を入れ子にします。条件が最も真実であるか、外側で計算するのが最も簡単であると考えます。"
 
 #: ../../chapter8.rst:498
 msgid ""
 "Trying to improve performance in this way is more difficult with the OR "
 "construct. For instance, in the definition"
-msgstr ""
+msgstr "このようにしてパフォーマンスを向上させようとするのは、OR構文ではより困難です。 "
 
 #: ../../chapter8.rst:505
 msgid ""
@@ -538,46 +629,51 @@ msgid ""
 "needs to ring for us to get up. Now suppose it were much more difficult "
 "to determine that the alarm clock was ringing. We could write"
 msgstr ""
+"電話と時計のアラームをテストしていますが、起動するために呼び出し音を鳴らす必要があるのはどちらか一方だけです。 "
+"目覚まし時計が鳴っていることを判断するのがはるかに困難であったとしましょう。 以下のように<書くことができます。"
 
 #: ../../chapter8.rst:514
 msgid ""
 "If the first condition is true, we don’t waste time evaluating the "
 "second. We have to get up to answer the phone anyway."
-msgstr ""
+msgstr "最初の条件が当てはまる場合、2番目の条件を評価するのに時間を無駄にしません。 とにかく電話に出なければならない。"
 
 #: ../../chapter8.rst:517
 msgid ""
 "The repetition of ``UP GET`` is ugly—not nearly as readable as the "
 "solution using ``OR``\\ —but in some cases desirable."
-msgstr ""
+msgstr "``UP GET`` の繰り返しは醜いです -  ``OR`` を使った解決策ほど読みやすくはありませんが、場合によっては望ましいことです。"
 
 #: ../../chapter8.rst:522
 msgid "Choosing Control Structures"
-msgstr ""
+msgstr "制御構造の選択"
 
 #: ../../chapter8.rst:526
 msgid ""
 "The most elegant code is that which most closely matches the problem. "
 "Choose the control structure that most closely matches the control-flow "
 "problem."
-msgstr ""
+msgstr "最も洗練されたコードは、問題に最も近いものです。 制御フローの問題に最も近い制御構造を選択してください。"
 
 #: ../../chapter8.rst:531
 msgid "Case Statements"
-msgstr ""
+msgstr "case文"
 
 #: ../../chapter8.rst:533
 msgid ""
 "A particular class of problem involves selecting one of several possible "
 "paths of execution according to a numeric argument. For instance, we want"
-" the word .SUIT to take a number representing a suit of playing cards, 0 "
-"through 3, and display the name of the suit. We might define this word "
-"using nested ``IF``  ``ELSE``  ``THEN``\\ s, like this:"
+" the word ``.SUIT`` to take a number representing a suit of playing "
+"cards, 0 through 3, and display the name of the suit. We might define "
+"this word using nested ``IF``  ``ELSE``  ``THEN``\\ s, like this:"
 msgstr ""
+"特定のクラスの問題は、数値引数に従っていくつかの可能な実行パスのうちの1つを選択することを含みます。 たとえば、ワード ``.SUIT`` "
+"にトランプのスートを表す数字（0から3まで）を付けて、そのスートの名前を表示させます。 以下の通り入れ子になった ``IF…ELSE…THEN``"
+" を使ってこのワードを定義することができます。"
 
 #: ../../chapter8.rst:550
 msgid "We can solve this problem more elegantly by using a “case statement.”"
-msgstr ""
+msgstr "「case文」を使用することで、この問題をよりエレガントに解決できます。"
 
 #: ../../chapter8.rst:552
 msgid ""
@@ -585,6 +681,9 @@ msgid ""
 "format, named after Dr. Charles E. Eaker, the gentleman who proposed it "
 "[eaker]_."
 msgstr ""
+"これは、同じ定義を「エーカーcase文(Eaker case "
+"statement)」書式を使用して書き直したもので、その名前は提案をした紳士のチャールズ・E・エーカー(Charles E. "
+"Eaker)博士にちなんで名付けられました。 [eaker]_"
 
 #: ../../chapter8.rst:565
 msgid ""
@@ -594,6 +693,9 @@ msgid ""
 " code as the nested ``IF``  ``THEN`` statements. A case statement is a "
 "good example of compile-time factoring."
 msgstr ""
+"case文の価値は、読みやすさと書きやすさだけにあります。 オブジェクトメモリでも実行速度でも効率の向上はありません。 "
+"事実、case文は入れ子になった ``IF…THEN`` 文とほとんど同じコードをコンパイルします。 "
+"case文、コンパイル時のファクタリング(要素分解)の好例です。"
 
 #: ../../chapter8.rst:571
 msgid ""
@@ -604,6 +706,10 @@ msgid ""
 " construct will work as well, though perhaps not as readably. If there "
 "are many cases, a decision table is more flexible."
 msgstr ""
+"すべてのForthシステムにそのようなケースステートメントを含めるべきでしょう？それは論争中問題です。 問題は2つあります。 "
+"第一に、case文が実際に必要とされる事例はまれであり、その価値に疑問を投げかけるほど稀です。 ごく少数のケースしかない場合、入れ子になった "
+"``IF…ELSE…THEN`` 構造も同様に動作しますが、おそらく読みやすくはありません。 "
+"多くのケースがある場合は、ディシジョン・テーブルの方が柔軟です。"
 
 #: ../../chapter8.rst:579
 msgid ""
@@ -613,40 +719,43 @@ msgid ""
 "have contiguous integers from zero to three. It’s more efficient to use "
 "the integer to calculate an offset and directly jump to the right code."
 msgstr ""
+"第二に、多くのcase風な問題はcase構造には全く適切ではありません。エーカーのcase文は、スタック上の数に対して同等かどうかをテストしていると仮定しています。"
+" ``.SUIT`` の場合、0から3までの連続した整数があります。 "
+"整数を使用してオフセットを計算し、正しいコードに直接ジャンプするほうが効率的です。"
 
 #: ../../chapter8.rst:585
 msgid ""
 "In the case of our Tiny Editor, later in this chapter, we have not one, "
 "but two, dimensions of possibilities. The case statement doesn’t match "
 "that problem either."
-msgstr ""
+msgstr "この章の後半のタイニー・エディタの場合、1つではなく2つの可能性の次元があります。 case文はその問題にも一致しません。"
 
 #: ../../chapter8.rst:589
 msgid ""
 "Personally, I consider the case statement an elegant solution to a "
 "misguided problem: attempting an algorithmic expression of what is more "
 "aptly described in a decision table."
-msgstr ""
+msgstr "個人的には、caseステートメントは、見当違いの問題に対する優雅な解決策であると考えています。それは、ディシジョン・テーブルにもっと適切に記述されているものをアルゴリズムで表現することです。"
 
 #: ../../chapter8.rst:593
 msgid ""
 "A case statement ought to be part of the application when useful, but not"
 " part of the system."
-msgstr ""
+msgstr "case文は、有用な場合はアプリケーションの一部であるべきですが、システムの一部ではありません。"
 
 #: ../../chapter8.rst:598
 msgid "Looping Structures"
-msgstr ""
+msgstr "ループ構造"
 
 #: ../../chapter8.rst:600
 msgid "The right looping structure can eliminate extra conditionals."
-msgstr ""
+msgstr "正しいループ構造により、余分な条件文を排除できます。"
 
 #: ../../chapter8.rst:603
 msgid ""
 "Many times conditionals are used to get out of loops. That particular use"
 " can be avoided by having loops with multiple exit points."
-msgstr ""
+msgstr "ループから抜け出すために条件文が使われることがよくあります。 そういう条件文の使用は、複数の出口をあらかじめ持つループを使うことで回避できます。"
 
 #: ../../chapter8.rst:606
 msgid ""
@@ -654,6 +763,8 @@ msgid ""
 "is in poly Forth but hasn't percolated up to Forth \\'83. It's a simple "
 "way of defining multiple ``WHILE``\\ s in the same ``REPEAT``."
 msgstr ""
+"poly ForthにはあるがForth-83までは浸透していない複数の ``WHILE`` 構造があるので、これは活きのいい話題です。 同じ "
+"``REPEAT`` の中に複数の ``WHILE`` を定義する簡単な方法です。"
 
 #: ../../chapter8.rst:610
 msgid ""
@@ -664,13 +775,17 @@ msgid ""
 "myself that I left the loop early. Then later I'll have an ``IF`` to see "
 "whether I left the loop early, and it's just clumsy."
 msgstr ""
+"また、(Forth社の)ディーン・サンダーソン(Dean Sanderson)は、2つの出口を ``…LOOP`` "
+"に導入する新しい構文を発明しました。 その構造を考えると、あなたはより少ないテストで済ませる事ができるでしょう。 "
+"私はスタックに真理値を残すことが非常に多く、早い時期にループを離れた場合は、早めにループを離れたことを思い出させるように真理値を変更します。 "
+"その後に、ループを早く抜けたかどうかを確認するための ``IF`` がありますが、それは不器用です。"
 
 #: ../../chapter8.rst:618
 msgid ""
 "Once you've made a decision, you shouldn't have to make it again. With "
 "the proper looping constructs you won't need to remember where you came "
 "from, so more conditionals will go away."
-msgstr ""
+msgstr "決断をしたら、もう一度決断する必要はありません。 適切なループ構造を使えば、あなたがどこから来たのか覚えておく必要はないでしょう。"
 
 #: ../../chapter8.rst:622
 msgid ""
@@ -678,6 +793,8 @@ msgid ""
 "perhaps it is elaborately structured. The value is that you get simpler "
 "programs. And it costs nothing."
 msgstr ""
+"構造化されていないため、これは完全には一般的ではありません。 ひょっとしたら、それは精巧に構造化されているかもしれません。 "
+"その価値は、あなたがより簡単なプログラムを手に入れられることです。 そしてそれは無料です。"
 
 #: ../../chapter8.rst:626
 msgid ""
@@ -687,6 +804,10 @@ msgid ""
 "structures. Or, depending on the needs of your application, consider "
 "adding your own conditional constructs. It’s not that hard in Forth."
 msgstr ""
+"確かに、これは活きのいい話題です。 これを書いている時点では、新しいループ構成について具体的な提案をするのは時期尚早です。 "
+"あなたのシステムのドキュメンテーションを調べて、それがエキゾチックなループ構造の仕方で何を提供しているかを確かめてください。 "
+"または、アプリケーションのニーズに応じて、独自の条件付き構成要素を追加することを検討してください。 "
+"Forthではそれほど難しいことではありません。"
 
 #: ../../chapter8.rst:632
 msgid ""
@@ -697,6 +818,10 @@ msgid ""
 "can exit the loop by jumping *past* the end of the loop, continuing at an"
 " ``ELSE``. There are two possible “continue” points."
 msgstr ""
+"このような複数の出口の使用が構造化プログラミングの原則に違反しないのかどうかさえ私にはわかりません。 複数の ``WHILE`` がある "
+"``BEGIN`` 、 ``WHILE`` 、 ``REPEAT`` ループでは、すべての出口が共通の「継続」ポイント、つまり "
+"``REPEAT`` に移動します。 しかし、サンダーソンの構文では、 ``ELSE`` "
+"を続けて、ループの最後を飛び越えてジャンプしてループから抜け出すことができます。 考えられる「継続」ポイントは2つあります。"
 
 #: ../../chapter8.rst:640
 msgid ""
@@ -705,6 +830,9 @@ msgid ""
 "word that invoked it. In that sense it is well-structured; the module has"
 " one entry point and one exit point."
 msgstr ""
+"私たちにそう言うことが許されるならば、これは「あまり構造化されていません」です。 "
+"それでも、定義は常にそのセミコロンで終わり、それを呼び出したワードに戻ります。 その意味でそれはうまく構成されています。 "
+"モジュールには1つの入口と1つの出口があります。"
 
 #: ../../chapter8.rst:645
 msgid ""
@@ -712,11 +840,11 @@ msgid ""
 "loop prematurely, this approach seems the most natural structure to use. "
 "(We’ll see an example of this in a later section, “Using Structured "
 "Exits.”)"
-msgstr ""
+msgstr "あなたが早めにループを去らなかった場合にのみ特別なコードを実行したいとき、このアプローチは使うべき最も自然な構造のようです(この例については、後の「構造化出口の使用」で説明します)。"
 
 #: ../../chapter8.rst:652
 msgid "Favor counts over terminators."
-msgstr ""
+msgstr "終端を示すモノよりもカウントを好んで下さい。"
 
 #: ../../chapter8.rst:654
 msgid ""
@@ -725,10 +853,12 @@ msgid ""
 " the string. With the address and count on the stack, the definition of "
 "``TYPE`` can be coded:"
 msgstr ""
+"Forthは文字列の長さを最初のバイトに保存することで文字列を処理します。 これにより、文字列の入力、移動、など実際何でも簡単になります。 "
+"スタック上のアドレスと数で、 ``TYPE`` の定義を書くことができます。"
 
 #: ../../chapter8.rst:663
 msgid "(Although ``TYPE`` really ought to be written in machine code.)"
-msgstr ""
+msgstr "( ``TYPE`` は実際には機械語で書かれるべきですが。)"
 
 #: ../../chapter8.rst:665
 msgid ""
@@ -736,18 +866,20 @@ msgid ""
 "conditional since each loop checks the index and returns to ``DO`` if it "
 "has not yet reached the limit."
 msgstr ""
+"この定義は明白な条件を使用しません。 各ループはインデックスをチェックし、まだ限界に達していない場合は ``DO`` に戻るので、 "
+"``LOOP`` は実際には条件を隠します。"
 
 #: ../../chapter8.rst:669
 msgid ""
 "If a delimiter were used, let’s say ASCII null (zero), the definition "
 "would have to be written:"
-msgstr ""
+msgstr "区切り文字を使用した場合、それを ASCII NUL（ゼロ）としましょう。定義は次のように書く必要があります。"
 
 #: ../../chapter8.rst:677
 msgid ""
 "An extra test is needed on each pass of the loop. (``WHILE`` is a "
 "conditional operator.)"
-msgstr ""
+msgstr "ループの各パスで追加のテストが必要です( ``WHILE`` は条件演算子です)。"
 
 #: ../../chapter8.rst:680
 msgid ""
@@ -755,12 +887,14 @@ msgid ""
 "terms of time because it contains an extra decision itself. A faster "
 "definition would be:"
 msgstr ""
+"最適化に関する注意：この解決法で ``?DUP`` を使うことはそれ自身が特別な決定を含んでいるので時間の点では高価です。 "
+"より速い定義は次のようになります。"
 
 #: ../../chapter8.rst:690
 msgid ""
 "The ’83 Standard applied this principle to ``INTERPRET``  which now "
 "accepts a count rather than looking for a terminator."
-msgstr ""
+msgstr "「FORTH-83規格」は、この原則を終端を示すモノを探すのではなくカウントを受け付ける「INTERPRET」に適用しました。"
 
 #: ../../chapter8.rst:694
 msgid ""
@@ -769,6 +903,8 @@ msgid ""
 " (or previous) record. The last (or first) record in the chain can be "
 "indicated with a zero in its link field."
 msgstr ""
+"このコインの裏側は、構造を「リンク」するのが最も簡単なデータ構造です。 各レコードは次の（または前の）レコードを指しています。 "
+"チェーン内の最後（または最初）のレコードは、そのリンクフィールドにゼロを付けて示すことができます。"
 
 #: ../../chapter8.rst:699
 msgid ""
@@ -778,14 +914,18 @@ msgid ""
 "making more work for yourself. (This is the technique used to implement "
 "Forth’s dictionary as a linked list.)"
 msgstr ""
+"リンクフィールドがある場合は、とにかくそれを取得する必要があります。 あなたは同様にゼロをテストするかもしれません。 "
+"レコードがいくつあるかのカウンタを保持する必要はありません。 "
+"終了するかどうかを決定するためにカウンターをデクリメントすると、自分で余計な作業を増やすはめになります。 "
+"（これは、Forthの辞書をリンクリストとして実装するための手法です。）"
 
 #: ../../chapter8.rst:707
 msgid "Calculating Results"
-msgstr ""
+msgstr "計算結果"
 
 #: ../../chapter8.rst:711
 msgid "Don't decide, calculate."
-msgstr ""
+msgstr "決定しないで計算して下さい。"
 
 #: ../../chapter8.rst:713
 msgid ""
@@ -795,10 +935,13 @@ msgid ""
 ":doc:`Chapter Four<chapter4>` see the section called “Calculations vs. "
 "Data Structures vs. Logic.”)"
 msgstr ""
+"結果の違いが数の違いから生じるような状況では、条件付き制御構造が誤って適用されることがよくあります。 "
+"数値が含まれている場合は、それらを計算できます。 ( :doc:`第4章<chapter4>` の「計算 対 データ構造 対 "
+"ロジック」の節を参照。）"
 
 #: ../../chapter8.rst:721
 msgid "Use booleans as hybrid values."
-msgstr ""
+msgstr "ハイブリッド値としてブール値を使用します。"
 
 #: ../../chapter8.rst:723
 msgid ""
@@ -807,6 +950,8 @@ msgid ""
 "numbers, can efficiently be used to effect numeric decisions. Here’s one "
 "example, found in many Forth systems:"
 msgstr ""
+"これは、ヒント「決定しないで計算してください」に対する興味深い結果です。コンピュータが数値として表すブール値は、数値的決定に効果的に使用できるということです。"
+" 以下は、多くのForthシステムに見られる1つの例です。"
 
 #: ../../chapter8.rst:733
 msgid ""
@@ -817,7 +962,7 @@ msgid ""
 "its high-order part. But converting a negative integer to double-length "
 "requires “sign extension;” that is, the high-order part should be all "
 "ones.)"
-msgstr ""
+msgstr "(この定義の目的は、1倍長の数値を2倍長に変換することです。2倍長の数値は、スタック上の2つの16ビット値(上位側がスタックトップ側にある)として表されます。正の整数からを2倍長に変換するには、その上位部分を表す為に単にスタックにゼロを追加することを意味します。ただし、負の整数値を倍長に変換するには「符号拡張」が必要です。つまり、高位部分はすべて1にする必要があります。）"
 
 #: ../../chapter8.rst:741
 msgid ""
@@ -826,38 +971,40 @@ msgid ""
 "notice that the outcome is merely arithmetic; there’s no change in "
 "process. We can take advantage of this fact by using the boolean itself:"
 msgstr ""
+"上記の定義は、1倍長の数が負かどうかをテストします。 そうであれば、負の値をスタックにプッシュします。 それ以外の場合はゼロです。 "
+"しかし、結果は単なる算術演算であることに注意してください。 プロセスに変更はありません。 この事実を利用するには、ブール値そのものを使用します。"
 
 #: ../../chapter8.rst:751
 msgid ""
 "This version pushes a zero or negative one onto the stack without a "
 "moment’s (in)decision."
-msgstr ""
+msgstr "このバージョンは、ちょっとした決断なしにゼロまたはマイナス1をスタックにプッシュします。"
 
 #: ../../chapter8.rst:754
 msgid "(In pre-1983 systems, the definition would be:"
-msgstr ""
+msgstr "(プレ1983年版のシステムでは、以下のように定義します。"
 
 #: ../../chapter8.rst:761
 msgid "See :doc:`Appendix C<appendixc>`.)"
-msgstr ""
+msgstr ":doc:`付録C<appendixc>` 参照)"
 
 #: ../../chapter8.rst:763
 msgid "We can do even more with “hybrid values”:"
-msgstr ""
+msgstr "「ハイブリッド値」を使えば、私たちはさらに多くのことができます。"
 
 #: ../../chapter8.rst:767
 msgid "To effect a decision with a numeric outcome, use ``AND``."
-msgstr ""
+msgstr "数値で結果を決定するには、 ``AND`` を使います。"
 
 #: ../../chapter8.rst:769
 msgid ""
 "In the case of a decision that produces either zero or a non-zero "
 "“:math:`n`,” the traditional phrase"
-msgstr ""
+msgstr "ゼロかゼロでない :math:`n` を生成する決定の場合、伝統的なフレーズは以下です。"
 
 #: ../../chapter8.rst:777
 msgid "is equivalent to the simpler statement"
-msgstr ""
+msgstr "以下のより単純な文と同等です。"
 
 #: ../../chapter8.rst:783
 msgid ""
@@ -866,18 +1013,21 @@ msgid ""
 "either produce “:math:`n`” (all bits intact) or “:math:`0`” (all bits "
 "cleared)."
 msgstr ""
+"繰り返しになりますが、その秘密は、「true」がFORTH-83システムでは :math:`-1` (全てのビットが1)で表されることです。 "
+"フラグと ``AND`` した :math:`n` は“ :math:`n` (全ビットがそのまま)または :math: `0` "
+"(全ビットがクリアされた)を生成します。"
 
 #: ../../chapter8.rst:788
 msgid "To restate with an example:"
-msgstr ""
+msgstr "言い換えると以下の通り。"
 
 #: ../../chapter8.rst:794
 msgid "is the same as"
-msgstr ""
+msgstr "以下とも同じです。"
 
 #: ../../chapter8.rst:800
 msgid "Take a look at this example:"
-msgstr ""
+msgstr "この例を見てください。"
 
 #: ../../chapter8.rst:806
 msgid ""
@@ -887,6 +1037,8 @@ msgid ""
 "outcomes is purely numeric. We can rid ourselves of a decision, and "
 "simply compute:"
 msgstr ""
+"このフレーズは、 :math:`a` と :math:`b` の相対サイズに応じて、 :math:`n` "
+"に45を加算するかしないかのどちらかです。 2つの結果の差は純粋に数値です。 私たちは決定を取り除き、単純に計算することができます。"
 
 #: ../../chapter8.rst:817
 msgid ""
@@ -895,6 +1047,8 @@ msgid ""
 "where you're calculating this value from that value, then usually by "
 "doing arithmetic on the logic you get the same result more cleanly."
 msgstr ""
+"``45 AND`` は ``IF`` よりも速く、明らかに優雅で簡単です。 "
+"その値からこの値を計算しているインスタンスを探す習慣がある場合は、通常、論理演算を実行することで、同じ結果がよりきれいに得られます。"
 
 #: ../../chapter8.rst:822
 msgid ""
@@ -902,20 +1056,22 @@ msgid ""
 " arithmetic with truth values. But it's perfectly valid, and someday "
 "boolean algebra and arithmetic expressions will accommodate it."
 msgstr ""
+"私はあなたがこれを何と呼ぶのかわかりません。 専門用語はありません。 それは単に真理値で算術をしているだけです。 "
+"しかし、それは完全に有効であり、いつかブール代数と算術式はそれを収容するでしょう。"
 
 #: ../../chapter8.rst:826
 msgid ""
 "In books you often see a lot of piece-wise linear approximations that "
 "fail to express things clearly. For instance the expression"
-msgstr ""
+msgstr "本の中では、物事をはっきりと表現するのに失敗する多くの区分的線形近似がよく見られます。 例えば、以下の式です。"
 
 #: ../../chapter8.rst:834
 msgid "This would be equivalent to"
-msgstr ""
+msgstr "これは下記と同等です。"
 
 #: ../../chapter8.rst:840
 msgid "as a single expression, not a piece-wise expression."
-msgstr ""
+msgstr "これは区分的な表現ではなく、単一の表現としてあります。"
 
 #: ../../chapter8.rst:842
 msgid ""
@@ -923,33 +1079,35 @@ msgid ""
 "values) being applied as data (numeric values). Also, I don’t know what "
 "else to call them."
 msgstr ""
+"私はこれらのフラグを「ハイブリッド値」と呼んでいます。なぜなら、それらはデータ（数値）として適用されるブール値（真理値）だからです。 "
+"そして私は他に何と呼ぶべきかもわかりません。"
 
 #: ../../chapter8.rst:846
 msgid ""
-"We can eliminate numeric ELSE clauses as well (where both results are "
-"non-zero), by factoring out the difference between the two results. For "
+"We can eliminate numeric ``ELSE`` clauses as well (where both results are"
+" non-zero), by factoring out the difference between the two results. For "
 "instance,"
-msgstr ""
+msgstr "2つの結果の差を考慮に入れることで、数値の ``ELSE`` 句も削除できます（両方の結果がゼロ以外の場合）。 例えば以下です。"
 
 #: ../../chapter8.rst:854
 msgid "can be simplified to"
-msgstr ""
+msgstr "これは以下のように単純化できます。"
 
 #: ../../chapter8.rst:860
 msgid ""
 "This approach works here because conceptually we want to either load "
 "Screen 150, or if testing, the next screen past it."
-msgstr ""
+msgstr "概念的にはスクリーン150をロードするか、テストする場合は次のスクリーンをロードしたいので、このアプローチはここで機能します。"
 
 #: ../../chapter8.rst:864
 msgid "A Note on Tricks"
-msgstr ""
+msgstr "トリックについて"
 
 #: ../../chapter8.rst:866
 msgid ""
 "This sort of approach is often labeled a “trick.” In the computing "
 "industry at large, tricks have a bad reputation."
-msgstr ""
+msgstr "この種のアプローチは「トリック」と呼ばれることがよくあります。コンピューティング業界全般では、トリックの評判はよくありません。"
 
 #: ../../chapter8.rst:869
 msgid ""
@@ -958,25 +1116,29 @@ msgid ""
 "smoke by taking advantage of the fact that heat rises. Automobile tires "
 "provide traction by taking advantage of gravity."
 msgstr ""
+"トリックは単に操作の特定の特性を利用しています。 トリックはエンジニアリングアプリケーションで広く使われています。 "
+"煙突は熱が上がるという事実を利用して煙を排除します。自動車タイヤは重力を利用して牽引力を発揮します。"
 
 #: ../../chapter8.rst:874
 msgid ""
 "Arithmetic Logic Units (ALUs) take advantage of the fact that subtracting"
 " a number is the same as adding its two’s complement."
-msgstr ""
+msgstr "算術論理演算装置(ALU)は、数値を減算することがその2の補数を追加することと同じであるという事実を利用します。"
 
 #: ../../chapter8.rst:877
 msgid ""
 "These tricks allow simpler, more efficient designs. What justifies their "
 "use is that the assumptions are certain to remain true."
 msgstr ""
+"これらのトリックは、よりシンプルで効率的なデザインを可能にします。 "
+"それらの使用を正当化するのは、仮定が真実であり続けることが確実であるということです。"
 
 #: ../../chapter8.rst:880
 msgid ""
 "The use of tricks becomes dangerous when a trick depends on something "
 "likely to change, or when the thing it depends on is not protected by "
 "information hiding."
-msgstr ""
+msgstr "トリックが変更される可能性があるものに依存している場合、またはそれが依存しているものが情報の隠蔽によって保護されていない場合、トリックの使用は危険になります。"
 
 #: ../../chapter8.rst:884
 msgid ""
@@ -988,32 +1150,35 @@ msgid ""
 "which data are arranged in a table, the listing must clearly document the"
 " assumption used by the trick."
 msgstr ""
+"また、トリックが基になっている前提が理解または説明されていない場合、トリックは読みにくくなります。 条件文を ``AND`` "
+"に置き換える場合、このテクニックがすべてのプログラマの語彙の一部になれば、コードはもっと読みやすくなるでしょう。 "
+"データがテーブルに配置される順序など、特定のアプリケーションに固有のトリックの場合、リストにはそのトリックで使用されている前提が明確に文書化されている必要があります。"
 
 #: ../../chapter8.rst:895
 msgid "Use ``MIN`` and ``MAX`` for clipping."
-msgstr ""
+msgstr "``MIN`` と ``MAX`` を切り取る為に使って下さい。"
 
 #: ../../chapter8.rst:897
 msgid ""
-"Suppose we want to decrement the contents of the variable VALUE, but we "
-"don’t want the value to go below zero:"
-msgstr ""
+"Suppose we want to decrement the contents of the variable ``VALUE``, but "
+"we don’t want the value to go below zero:"
+msgstr "変数 ``VALUE`` の内容を減算したいが、値がゼロ以下にならないようにしたいとします。"
 
 #: ../../chapter8.rst:904
 msgid "This is more simply written:"
-msgstr ""
+msgstr "これはもっとシンプルに書けます。"
 
 #: ../../chapter8.rst:910
 msgid "In this case the conditional is factored within the word ``MAX``."
-msgstr ""
+msgstr "この場合、条件はワード ``MAX`` の中でファクタリング(要素分解)されます。"
 
 #: ../../chapter8.rst:913
 msgid "Using Decision Tables"
-msgstr ""
+msgstr "ディシジョン・テーブルの使用"
 
 #: ../../chapter8.rst:917
 msgid "Use decision tables."
-msgstr ""
+msgstr "ディシジョン・テーブルを使って下さい。"
 
 #: ../../chapter8.rst:919
 msgid ""
@@ -1025,16 +1190,20 @@ msgid ""
 "intersection of the “true” states of each dimension lies the desired "
 "element: the piece of data or the function to be performed."
 msgstr ""
+"私たちは、それらを :doc:`第２章<chapter2>` で紹介しました。 "
+"ディシジョン・テーブルは、データ(「データ・テーブル」)）または機能のアドレス(「機能・テーブル」）のいずれかを任意の次元数に従って配置した構造です。"
+" 各次元は、問題の特定の側面のすべての可能な相互排他的な状態を表します。 "
+"各次元の「真」の状態の交差点に、目的の要素、つまり実行されるデータまたは機能があります。"
 
 #: ../../chapter8.rst:928
 msgid ""
 "A decision table is clearly a better choice than a conditional structure "
 "when the problem has multiple dimensions."
-msgstr ""
+msgstr "問題に複数の次元がある場合、ディシジョン・テーブルは明らかに条件付き構造よりも優れた選択です。"
 
 #: ../../chapter8.rst:932
 msgid "One-Dimensional Data Table"
-msgstr ""
+msgstr "1次元データ・テーブル"
 
 #: ../../chapter8.rst:934
 msgid ""
@@ -1042,42 +1211,44 @@ msgid ""
 "application has a flag called ``’FREEWAY?`` which is true when we’re "
 "referring to freeways, false when we’re referring to city streets."
 msgstr ""
+"これは、単純な1次元のデータテーブルの例です。 このアプリケーションには、 ``FREEWAY?`` "
+"というフラグがあります。これは、高速道路を参照している場合はtrue、一般道を参照している場合はfalseです。"
 
 #: ../../chapter8.rst:938
 msgid ""
 "Let’s construct the word ``SPEED-LIMIT``, which returns the speed limit "
 "depending on the current state. Using ``IF``  ``THEN`` we would write:"
-msgstr ""
+msgstr "現在の状態に応じて制限速度を返す ``SPEED-LIMIT`` というワードを作成しましょう。 ``IF…THEN`` を使って書きます。"
 
 #: ../../chapter8.rst:947
 msgid ""
 "We might eliminate the ``IF``  ``THEN`` by using a hybrid value with "
 "``AND``:"
-msgstr ""
+msgstr "私たちは ``AND`` とのハイブリッド値を使うことで ``IF…THEN`` を削除するかもしれません。"
 
 #: ../../chapter8.rst:954
 msgid ""
 "But this approach doesn’t match our conceptual model of the problem and "
 "therefore isn’t very readable."
-msgstr ""
+msgstr "しかし、このアプローチは問題の概念モデルと一致しないため、読みやいというわけではありません。"
 
 #: ../../chapter8.rst:957
 msgid ""
 "Let’s try a data table. This is a one-dimensional table, with only two "
 "elements, so there’s not much to it:"
-msgstr ""
+msgstr "データテーブルを試してみましょう。 以下は、2つの要素しかない1次元の表です。"
 
 #: ../../chapter8.rst:964
 msgid ""
 "The word ``SPEED-LIMIT?`` now must apply the boolean to offset into the "
 "data table:"
-msgstr ""
+msgstr "``SPEED-LIMIT?`` というワードは、データテーブルへのオフセットにブール値を適用する必要があります。"
 
 #: ../../chapter8.rst:972
 msgid ""
 "Have we gained anything over the ``IF``  ``THEN`` approach? Probably not,"
 " with so simple a problem."
-msgstr ""
+msgstr "私たちは ``IF…THEN`` アプローチを超える何かを得ましたか？たぶん無かったでしょう。この単純な問題では。"
 
 #: ../../chapter8.rst:976
 msgid ""
@@ -1085,26 +1256,30 @@ msgid ""
 "from the data itself. This becomes more cost-effective when we have more "
 "than one set of data related to the same decision. Suppose we also had"
 msgstr ""
+"ただし、これまでに行ったことは、データ自体から意思決定プロセスを括り出すことです。 "
+"同じ決定に関連するデータが複数ある場合、これはより費用対効果が高くなります。 また、私たちは以下のように、"
 
 #: ../../chapter8.rst:984
 msgid ""
 "representing the number of lanes on a city street and on a freeway. We "
 "can use identical code to compute the current number of lanes:"
-msgstr ""
+msgstr "一般道および高速道路の車線数を表します。 現在の車線数を計算するために同じコードを使うことができます。"
 
 #: ../../chapter8.rst:992
 msgid "Applying techniques of factoring, we simplify this to:"
-msgstr ""
+msgstr "ファクタリング(要素分解)の手法を適用して、これを次のように単純化します。"
 
 #: ../../chapter8.rst:1001
 msgid ""
 "Another example of the one-dimensional data table is the “superstring” "
 "(*Starting Forth*, Chapter Ten)."
 msgstr ""
+"一次元データテーブルの他の例は、「超文字列(superstring)」です( *Starting Forth*, Chapter Ten;邦訳 "
+"FORTH入門 第10章 P.309)。"
 
 #: ../../chapter8.rst:1005
 msgid "Two-Dimensional Data Table"
-msgstr ""
+msgstr "2次元データ・テーブル"
 
 #: ../../chapter8.rst:1007
 msgid ""
@@ -1112,18 +1287,20 @@ msgid ""
 ":numref:`fig8-4`  gives one solution to the problem, using a two-"
 "dimensional data structure."
 msgstr ""
+":doc:`第2章<chapter2>` では、電話料金の問題を紹介しました。 :numref:`fig8-4` "
+"は二次元データ構造を使った問題の解決法の一つです。"
 
 #: ../../chapter8.rst:1011
 msgid "A solution to the phone rate problem."
-msgstr ""
+msgstr "電話料金の問題に居対する解決策"
 
 #: ../../chapter8.rst:1013
 msgid "Screen #103"
-msgstr ""
+msgstr "Screen #103"
 
 #: ../../chapter8.rst:1031
 msgid "Screen #104"
-msgstr ""
+msgstr "Screen #104"
 
 #: ../../chapter8.rst:1046
 msgid ""
@@ -1132,6 +1309,8 @@ msgid ""
 "inadequate. Each dimension of this problem is implemented in a different "
 "way."
 msgstr ""
+"この問題では、データテーブルの各次元は3つの相互に排他的な状態で構成されています。 "
+"したがって、単純なブール値(true/false)では不十分です。 この問題の各次元は、異なる方法で実装されています。"
 
 #: ../../chapter8.rst:1051
 msgid ""
@@ -1139,39 +1318,44 @@ msgid ""
 "address, representing one of the three rate-structure sub-tables. We can "
 "say"
 msgstr ""
+"現在のレートは、時刻によって異なり、アドレスとして格納され、3つのレート構造サブテーブルのうちの1つを表します。 "
+"私たちは以下のように言う事ができます。"
 
 #: ../../chapter8.rst:1059
 msgid "or"
-msgstr ""
+msgstr "または"
 
 #: ../../chapter8.rst:1065
 msgid "etc."
-msgstr ""
+msgstr "など。"
 
 #: ../../chapter8.rst:1067
 msgid ""
 "The current charge, either first minute, additional minute, or per mile, "
 "is expressed as an offset into the table (0, 2, or 4)."
-msgstr ""
+msgstr "現在の料金は、最初の1分、追加の1分、またはマイルあたりのいずれかで、テーブルへのオフセットとして表されます(0、2、または4)。"
 
 #: ../../chapter8.rst:1070
 msgid ""
 "An optimization note: we’ve implemented the two-dimensional table as a "
-"set of three one-dimensional tables, each pointed to by RATE. This "
+"set of three one-dimensional tables, each pointed to by ``RATE``. This "
 "approach eliminates the need for a multiplication that would otherwise be"
 " needed to implement a two-dimensional structure. The multiplication can "
 "be prohibitively slow in certain cases."
 msgstr ""
+"最適化に関する注意：2次元テーブルを、それぞれ ``RATE`` が指す3つの1次元テーブルの組として実装しました。 "
+"このアプローチは、そうでなければ二次元構造を実施するために必要とされるであろう乗算の必要性を排除します。 "
+"ある場合には乗算が非常に遅くなることがあるためです。"
 
 #: ../../chapter8.rst:1078
 msgid "Two-Dimensional Decision Table"
-msgstr ""
+msgstr "2次元ディシジョン・テーブル"
 
 #: ../../chapter8.rst:1080
 msgid ""
 "We’ll hark back to our Tiny Editor example in :doc:`Chapter "
 "Three<chapter3>` to illustrate a two-dimensional decision table."
-msgstr ""
+msgstr "私たちは2次元のディシジョン・テーブルを説明するために、 :doc:`第３章<chapter3>` のタイニー・エディタの例に戻りましょう。"
 
 #: ../../chapter8.rst:1083
 msgid ""
@@ -1180,18 +1364,21 @@ msgid ""
 " a case statement, but there are two modes, Normal Mode and Insert Mode. "
 "Each key has a different behavior depending on the current mode."
 msgstr ""
+":numref:`fig8-5` では、さまざまなキーが押されたときに実行される機能のテーブルを作成しています。 "
+"効果はcaseステートメントの効果と似ていますが、2つのモード、通常モードと挿入モードがあります。 "
+"各キーは、現在のモードによって異なる動作をします。"
 
 #: ../../chapter8.rst:1089
 msgid "The first screen implements the change of the modes. If we invoke"
-msgstr ""
+msgstr "最初のスクリーンはモードの変更を実行します。以下を呼び出すと、"
 
 #: ../../chapter8.rst:1095
 msgid "we’ll go into Normal Mode."
-msgstr ""
+msgstr "通常モードに入ります。"
 
 #: ../../chapter8.rst:1101
 msgid "enters Inserting Mode."
-msgstr ""
+msgstr "で、挿入モードに入ります。"
 
 #: ../../chapter8.rst:1103
 msgid ""
@@ -1202,6 +1389,9 @@ msgid ""
 "pressed. Then comes the second key, followed by the next pair of "
 "addresses, and so on."
 msgstr ""
+"次のスクリーンは ``FUNCTIONS`` と呼ばれる機能テーブルを構築します。 "
+"このテーブルは、キーのASCII値と、それに続くノーマルモードのときに実行されるルーチンのアドレス、およびそのキーが押されたときに挿入モードのときに実行されるルーチンのアドレスで構成されます。"
+" 次に2番目のキーが続き、その後に次のアドレスのペアが続きます。"
 
 #: ../../chapter8.rst:1110
 msgid ""
@@ -1211,48 +1401,55 @@ msgid ""
 "point to the last row of the table—the functions we want when *any* "
 "character is pressed.)"
 msgstr ""
+"3つ目のスクリーンでは、 ``FUNCTION`` というワードがキー値を取り、 ``FUNCTIONS`` "
+"テーブルを検索して一致するものを探し、その一致を含むセルのアドレスを返します(テーブルの最後の行を指すように変数 ``MATCHED`` "
+"を設定しました。任意の文字が押されたときに必要な機能です)。"
 
 #: ../../chapter8.rst:1116
 msgid ""
 "The word ``ACTION`` invokes ``’FUNCTION``, then adds the contents of the "
-"variable ``MODE#``. Since MODE# will contain either a 2 or a 4, by adding"
-" this offset we’re now pointing into the table at the address of the "
-"routine we want to perform. A simple"
+"variable ``MODE#``. Since ``MODE#`` will contain either a 2 or a 4, by "
+"adding this offset we’re now pointing into the table at the address of "
+"the routine we want to perform. A simple"
 msgstr ""
+"``ACTION`` というワードは、 ``FUNCTION`` を呼び出し、次に変数 ``MODE#`` の内容を追加します。 "
+"``MODE#`` "
+"には2または4のいずれかが含まれるので、このオフセットを追加することで、実行したいルーチンのアドレスでテーブルを参照しています。 "
+"以下のようにシンプルに実行できます。"
 
 #: ../../chapter8.rst:1125
 msgid "will perform the routine (or ``@EXECUTE`` if you have it)."
-msgstr ""
+msgstr "こうしてルーチンを実行します(または、もしあれば ``@EXECUTE`` )。"
 
 #: ../../chapter8.rst:1127
 msgid "In fig-Forth, change the definition of ``IS`` to:"
-msgstr ""
+msgstr "fig-Forthでは、 ``IS`` の定義を次のように変更します。"
 
 #: ../../chapter8.rst:1133
 msgid "Implementation of the Tiny Editor."
-msgstr ""
+msgstr "タイニー・エディタの実装"
 
 #: ../../chapter8.rst:1135
 msgid "Screen #30"
-msgstr ""
+msgstr "Screen #30"
 
 #: ../../chapter8.rst:1152
 msgid "Screen #31"
-msgstr ""
+msgstr "Screen #31"
 
 #: ../../chapter8.rst:1169
 msgid "Screen #32"
-msgstr ""
+msgstr "Screen #32"
 
 #: ../../chapter8.rst:1182
 msgid "In 79-Standard Forths, use:"
-msgstr ""
+msgstr "FORTH-79規格では以下の定義を使います。"
 
 #: ../../chapter8.rst:1188
 msgid ""
 "We’ve also used non-redundancy at compile time in the definition just "
 "below the function table:"
-msgstr ""
+msgstr "私たちは、機能テーブル用の定義では、コンパイル時の非冗長性も使用しました。"
 
 #: ../../chapter8.rst:1195
 msgid ""
@@ -1261,10 +1458,12 @@ msgid ""
 "the last table entry has been filled in. Six bytes back is the last row.)"
 " We now have two words:"
 msgstr ""
+"機能テーブルの最後の行から定数を作ります(現時点では、 ``HERE`` "
+"を呼び出すと、最後のテーブルエントリが埋められた後、次の空きセルを指しています。最後の行はその6バイト前です)。私たちは今や2つのワードを持っています。"
 
 #: ../../chapter8.rst:1206
 msgid "We use these names to supply the addresses passed to ``DO``:"
-msgstr ""
+msgstr "これらの名前を使って、 ``DO`` に渡されるアドレスを提供します。"
 
 #: ../../chapter8.rst:1212
 msgid ""
@@ -1273,12 +1472,14 @@ msgid ""
 "delete a row or add a row to the table, without having to change any "
 "other piece of code, even the code that searches through the table."
 msgstr ""
+"テーブルの最初の行から最後の行まで実行するループを設定します。 テーブルに何行あるかを知る必要はありません。 "
+"テーブルを検索するコードであっても、他のコードを変更することなく、行を削除したりテーブルに行を追加したりすることさえ可能です。"
 
 #: ../../chapter8.rst:1217
 msgid ""
 "Similarly the constant ``/KEY`` hides information about the number of "
 "columns in the table."
-msgstr ""
+msgstr "同様に、定数 ``/KEY`` はテーブルの列数に関する情報を隠します。"
 
 #: ../../chapter8.rst:1220
 msgid ""
@@ -1286,16 +1487,18 @@ msgid ""
 "quick-and-dirty one; it uses a local variable to simplify stack "
 "manipulation. A simpler solution that uses no local variable is:"
 msgstr ""
+"ちなみに、リストの中で採用されている ``FUNCTION`` へのアプローチは、手早く簡便にやるためのものです。 "
+"スタック操作を簡単にするためにローカル変数を使用します。 ローカル変数を使用しない簡単な解決策は次のとおりです。"
 
 #: ../../chapter8.rst:1231
 msgid ""
 "(We’ll offer still another solution later in this chapter, under “Using "
 "Structured Exits.”)"
-msgstr ""
+msgstr "（この章の後半の「構造化出口の使用」で、さらに別の解決策を提案します）。"
 
 #: ../../chapter8.rst:1235
 msgid "Decision Tables for Speed"
-msgstr ""
+msgstr "スピードの為のディシジョン・テーブル"
 
 #: ../../chapter8.rst:1237
 msgid ""
@@ -1303,10 +1506,12 @@ msgid ""
 "in a table, you should do so. The exception is where the requirements for"
 " speed justify the extra complexity of a table."
 msgstr ""
+"テーブルで調べるのではなく、値を計算できる場合は、それを実行する必要があると述べました。 "
+"例外は、スピードに対する要求がテーブルの複雑さをさらに正当化する場合です。"
 
 #: ../../chapter8.rst:1241
 msgid "Here is an example that computes powers of two to 8-bit precision:"
-msgstr ""
+msgstr "以下に、2から8ビット精度の累乗を計算する例を示します。"
 
 #: ../../chapter8.rst:1250
 msgid ""
@@ -1315,14 +1520,16 @@ msgid ""
 "table. We can use simple addition to offset into the table and get the "
 "answer."
 msgstr ""
+"2を :math:`n` 回掛け算して答えを計算する代わりに、答えはすべて事前に計算されてテーブルに配置されます。 "
+"単純な加算を使用してテーブルにオフセットし、答えを得ることができます。"
 
 #: ../../chapter8.rst:1255
 msgid "In general, addition is much faster than multiplication."
-msgstr ""
+msgstr "一般に、加算は乗算よりもはるかに高速です。"
 
 #: ../../chapter8.rst:1265
 msgid "**Moore** provides another example:"
-msgstr ""
+msgstr "ムーアは別の例を示しています。"
 
 #: ../../chapter8.rst:1258
 msgid ""
@@ -1332,21 +1539,24 @@ msgid ""
 " to be able to do. For low-frequency function calculations, decision "
 "tables are great."
 msgstr ""
+"例えばグラフィックディスプレイのためにトリガ関数を計算したいのであれば、それほど解像度は必要ありません。 "
+"7ビットのトリガ関数はたぶんたくさんあります。 128の数字のテーブル検索は、あなたができるだろう他の何よりも速いです。 "
+"低頻度関数の計算には、ディシジョン・テーブルが最適です。"
 
 #: ../../chapter8.rst:1263
 msgid ""
 "But if you have to interpolate, you have to calculate a function anyway. "
 "You're probably better off calculating a slightly more complicated "
 "function and avoiding the table lookup."
-msgstr ""
+msgstr "しかし、補間しなければならない場合は、とにかく関数を計算する必要があります。 もう少し複雑な関数を計算し、テーブル検索を避けたほうがいいでしょう。"
 
 #: ../../chapter8.rst:1268
 msgid "Redesigning"
-msgstr ""
+msgstr "再設計"
 
 #: ../../chapter8.rst:1272
 msgid "One change at the bottom can save ten decisions at the top."
-msgstr ""
+msgstr "一番底の1つの変更は、一番上の10の決定を節約することができます。"
 
 #: ../../chapter8.rst:1274
 msgid ""
@@ -1355,13 +1565,15 @@ msgid ""
 "application if it had been redesigned so that there were two words "
 "instead of one: “You either say ``GO`` or you say ``PRETEND``.”"
 msgstr ""
+"この章の冒頭のムーアとのインタビューの中で、彼は1つではなく2つのワードがあるように再設計された場合、多くの条件付きテストがアプリケーションから削除される可能性があると述べました。"
+" 「あなたは ``GO`` と言うか、あるいは ``PRETEND`` と言うかです。」"
 
 #: ../../chapter8.rst:1280
 msgid ""
 "It’s easier to perform a simple, consistent algorithm while changing the "
 "context of your environment than to choose from several algorithms while "
 "keeping a fixed environment."
-msgstr ""
+msgstr "固定環境を維持しながら複数のアルゴリズムから選択するよりも、環境のコンテキストを変更しながら単純で一貫性のあるアルゴリズムを実行する方が簡単です。"
 
 #: ../../chapter8.rst:1284
 msgid ""
@@ -1371,6 +1583,9 @@ msgid ""
 "number of apples (when shipments arrive), decremented the number (when "
 "apples are sold), and checked the current number (for inventory control)."
 msgstr ""
+":doc:`第1章<chapter1>` の私たちのワード ``APPLES`` の例を思い出してください。 "
+"これはもともと変数として定義されていました。 "
+"アプリケーション全体で、出荷数が増えたときにリンゴの数を増やし、（リンゴが販売されたときに）数を減らし、在庫管理のために現在の数をチェックするというワードで、アプリケーションを通して何度も呼ばれました。"
 
 #: ../../chapter8.rst:1291
 msgid ""
@@ -1379,6 +1594,8 @@ msgid ""
 "shipment/sales/inventory words. The *right* approach was the one we took:"
 " to add the complexity “at the bottom”; that is, to APPLES itself."
 msgstr ""
+"2番目のタイプのリンゴを扱う必要があるとき、「間違った」アプローチはすべての出荷・販売・在庫のワードにその複雑さを加えることでした。 "
+"「正しい」アプローチは、私たちがとったアプローチでした。 つまり、APPLES自体にその複雑さを加えることでした。"
 
 #: ../../chapter8.rst:1297
 msgid ""
@@ -1390,14 +1607,19 @@ msgid ""
 " of ``TYPE’``, ``EMIT’``, ``SPACES’`` and ``CR’`` and thereby easily "
 "change all the formatting code that uses them."
 msgstr ""
+"この原則はさまざまな方法で実現できます。 :doc:`第7章<chapter7>` (「状態テーブル」)では、状態テーブルを使って、ワード "
+"``WORKING`` と ``PRETENDING`` を実装していましたが、変数のグループの意味が変わりました。 その章の後半では、 "
+"``TYPE`` 、 ``EMIT`` 、 ``SPACES`` 、 ``SPACES`` 、 ``CR`` の意味を変更するために、 "
+"``VISIBLE`` と ``INVISIBLE`` "
+"の定義でベクトル実行を使用しました。それにより、それを使うすべてのフォーマットコードを簡単に変更できます。"
 
 #: ../../chapter8.rst:1305
 msgid "Don't test for something that can't possibly happen."
-msgstr ""
+msgstr "起こり得ないことをテストしないでください。"
 
 #: ../../chapter8.rst:1307
 msgid "Many contemporary programmers are error-checking-happy."
-msgstr ""
+msgstr "同年代のプログラマの多くはエラーチェックに満足しています。"
 
 #: ../../chapter8.rst:1309
 msgid ""
@@ -1405,10 +1627,12 @@ msgid ""
 "component in the system. The calling program should bear the "
 "responsibility for not exceeding the limits of the called component."
 msgstr ""
+"システム内の他のコンポーネントによって渡された引数をチェックする機能は必要ありません。 "
+"呼び出し側プログラムは、呼び出されたコンポーネントの制限を超えないようにする責任を負うべきです。"
 
 #: ../../chapter8.rst:1315
 msgid "Reexamine the algorithm."
-msgstr ""
+msgstr "アルゴリズムを見直してください。"
 
 #: ../../chapter8.rst:1318
 msgid ""
@@ -1419,6 +1643,9 @@ msgid ""
 "decelerate mode; very close you're in hunt mode. You have to test how far"
 " you are to know which algorithm to apply."
 msgstr ""
+"問題についてのあいまいな思考から、多くの条件が発生します。 "
+"サーボ制御理論では、サーボのアルゴリズムは、距離の大小によって異なるはずであると考えられてています。 "
+"はるか遠くでは、slewモードです。ターゲットに近づくと減速モードです。直近に迫るとハントモードです。どのぐらいの距離でどのアルゴリズムを適用する必要があるか知るためのテストをする必要があります。"
 
 #: ../../chapter8.rst:1325
 msgid ""
@@ -1429,23 +1656,27 @@ msgid ""
 "empirically determine the transition points. And of course, you have a "
 "much simpler program with one algorithm instead of three."
 msgstr ""
+"私はフルレンジを処理する非線形サーボ制御アルゴリズムを考え出しました。 "
+"この手法は、一方のモードと他方のモードとの間の遷移点における不具合を解消する。 "
+"どのアルゴリズムを使用するかを決定するために必要なロジックを取り除きます。 経験的に遷移点を決定する必要がなくなります。 "
+"そしてもちろん、3つではなく1つのアルゴリズムを使った、はるかに単純なプログラムがあります。"
 
 #: ../../chapter8.rst:1332
 msgid ""
 "Instead of trying to get rid of conditionals, you're best to question the"
 " underlying theory that led to the conditionals."
-msgstr ""
+msgstr "条件文を取り除こうとする代わりに、条件文を導いた根底にある理論を疑問視するのが最善です。"
 
 #: ../../chapter8.rst:1337
 msgid "Avoid the need for special handling."
-msgstr ""
+msgstr "特別な取り扱いの必要性を避けて下さい。"
 
 #: ../../chapter8.rst:1339
 msgid ""
 "One example we mentioned earlier in the book: if you keep the user out of"
 " trouble you won’t have to continually test whether the user has gotten "
 "into trouble."
-msgstr ""
+msgstr "この本の最初の部分で例を挙げました。ユーザがトラブルに巻き込まれないようにするには、ユーザがトラブルに陥ったかどうかを継続的にテストする必要はありません。"
 
 #: ../../chapter8.rst:1344
 msgid ""
@@ -1456,22 +1687,26 @@ msgid ""
 "Just substitute zeros and keep on doing arithmetic that you might have "
 "avoided by testing for zero and not doing it."
 msgstr ""
+"別の良い例はアセンブラを書くことです。 "
+"オペコードにはレジスタが関連付けられていない場合でも、レジスタが0のように見せかけるとコードが単純化される可能性がよくあります。 "
+"存在する必要がないビットパターンを導入することによって算術演算を実行することは、解決策を単純化する。 "
+"ゼロを代入して、ゼロをテストしてそれを行わないことで避けた可能性がある算術を続けます。"
 
 #: ../../chapter8.rst:1351
 msgid ""
 "It's another instance of the \"don't care.\" If you don't care, then give"
 " it a dummy value and use it anyway."
-msgstr ""
+msgstr "それは「どうでもいい」の別の例です。 気にしない場合は、ダミーの値を指定してとにかく使用してください。"
 
 #: ../../chapter8.rst:1354
 msgid ""
 "Anytime you run into a special case, try to find an algorithm for which "
 "the special case becomes a normal case."
-msgstr ""
+msgstr "特別なケースに遭遇したときはいつでも、特別なケースが通常のケースになるようなアルゴリズムを見つけるようにしてください。"
 
 #: ../../chapter8.rst:1359
 msgid "Use properties of the component."
-msgstr ""
+msgstr "コンポーネントの性質を利用してください。"
 
 #: ../../chapter8.rst:1361
 msgid ""
@@ -1481,10 +1716,13 @@ msgid ""
 "illustrates the point well. :numref:`fig8-6` shows the graphics "
 "characters produced by the ASCII codes 160 to 223."
 msgstr ""
+"適切に設計されたコンポーネント（ハードウェアまたはソフトウェア）を使用すると、対応する用語集をクリーンで効率的な方法で実装できます。 "
+"古いエプソンMX-80プリンタ（現在は廃止されています）の文字グラフィックセットは、その点をよく表しています。  :numref:`fig8-6`"
+" はASCIIコード160から223で生成されたグラフィック文字を表示します。"
 
 #: ../../chapter8.rst:1371
 msgid "The Epson MX-80 graphics character set."
-msgstr ""
+msgstr "エプソンMX-80グラフィック文字"
 
 #: ../../chapter8.rst:1373
 msgid ""
@@ -1494,30 +1732,33 @@ msgid ""
 " want in each of the six positions—we must produce the appropriate ASCII "
 "character for the printer."
 msgstr ""
+"各グラフィック文字は、塗りつぶされているか空白のままになっている6つの小さなボックスの異なる組み合わせです。 "
+"私たちのアプリケーションで、デザインを作成するためにこれらの文字を使いたいとしましょう。 "
+"各文字について、6つの位置のそれぞれに何が必要かを知っています。プリンタに適切なASCII文字を送る必要があります。"
 
 #: ../../chapter8.rst:1379
 msgid ""
 "A little bit of looking will tell you there’s a very sensible pattern "
 "involved. Assuming we have a six-byte table in which each byte represents"
 " a pixel in the pattern:"
-msgstr ""
+msgstr "少し見てみると、非常に賢明なパターンであることがわかります。 各バイトがパターン内のピクセルを表す6バイトのテーブルがあるとします。"
 
 #: ../../chapter8.rst:1386
 msgid ""
 "and assuming that each byte contains hex FF if the pixel is “on;” zero if"
 " it is “off,” then here’s how little code it takes to compute the "
 "character:"
-msgstr ""
+msgstr "ピクセルが「オン」の場合、各バイトに16進数のFFが含まれ、「オフ」の場合はゼロになり、文字を計算するのに必要なコードは以下のようになります。"
 
 #: ../../chapter8.rst:1397
-msgid "(We introduced 2\\*\\* a few tips back.)"
-msgstr ""
+msgid "(We introduced :literal:`2**` a few tips back.)"
+msgstr "(私たちは :literal:`2**` をちょっと前に紹介しました。)"
 
 #: ../../chapter8.rst:1399
 msgid ""
 "No decisions are necessary in the definition of ``CHARACTER``. The "
 "graphics character is simply computed."
-msgstr ""
+msgstr "``CHARACTER`` の定義に決定は必要ありません。 グラフィック文字は単純に計算されます。"
 
 #: ../../chapter8.rst:1402
 msgid ""
@@ -1525,6 +1766,8 @@ msgid ""
 "pixels in a large grid, we can merely redefine PIXEL. That’s an example "
 "of adding indirection backwards, and of good decomposition."
 msgstr ""
+"注：同じグリッドを使用して大きなグリッド内の6つの隣接ピクセルのセットを変換するには、単にPIXELを再定義するだけです。 "
+"これは、間接参照を逆方向に追加し、優れた分解をした例です。"
 
 #: ../../chapter8.rst:1406
 msgid ""
@@ -1535,6 +1778,9 @@ msgid ""
 "only way to produce the ASCII value is by matching patterns in a lookup "
 "table."
 msgstr ""
+"残念ながら、外付け部品は必ずしもうまく設計されていません。 "
+"たとえば、IBMパーソナルコンピュータは、ビデオディスプレイ上のグラフィックス文字に同様のスキームを使用していますが、ASCII値とピクセルのパターンとの間に明確な対応はありません。"
+" ASCII値を生成する唯一の方法は、ルックアップテーブルのパターンを照合することです。"
 
 #: ../../chapter8.rst:1414
 msgid ""
@@ -1544,6 +1790,9 @@ msgid ""
 "people who designed the 68000 didn't have assemblers in mind. And they "
 "could have made things a lot easier, at no cost to themselves."
 msgstr ""
+"68000アセンブラは、最小限の演算子でこれらの命令コードを表現するための優れた方法を探して、あなたをひどく失望させるもう1つの例です。 "
+"すべての証拠は良い解決策がないことを示唆しています。 68000を設計した人々は、アセンブラを念頭に置いていませんでした。 "
+"そしてそれら自身にコストをかけずに、物事をはるかに簡単にすることができました。"
 
 #: ../../chapter8.rst:1420
 msgid ""
@@ -1552,20 +1801,22 @@ msgid ""
 "excusable, though, because all the dependent code is confined to a single"
 " lexicon, which can easily be changed if necessary."
 msgstr ""
+"このようにコンポーネントの性質を使用することで、コードはそれらの性質、つまりコンポーネント自体に依存するようになります。 "
+"ただし、すべての依存コードは1つの用語集に限定されているため、必要に応じて簡単に変更できます。"
 
 #: ../../chapter8.rst:1427
 msgid "Using Structured Exits"
-msgstr ""
+msgstr "構造化出口の使用"
 
 #: ../../chapter8.rst:1431
 msgid "Use the structured exit."
-msgstr ""
+msgstr "構造化された出口を使って下さい。"
 
 #: ../../chapter8.rst:1433
 msgid ""
 "In the chapter on factoring we demonstrated the possibility of factoring "
 "out a control structure using this technique:"
-msgstr ""
+msgstr "ファクタリング(要素分解)の章で、以下の手法を使って制御構造をファクタリング(要素分解)することの可能性を示しました。"
 
 #: ../../chapter8.rst:1442
 msgid ""
@@ -1576,6 +1827,10 @@ msgid ""
 "actually simplify code, and thereby improve readability and "
 "maintainability."
 msgstr ""
+"Forthでは、リターンスタックを直接操作することで制御フローを変更することができます(疑問がある場合は、*Starting Forth*, "
+"Chapter Nine;邦訳 FORTH入門 第9章 "
+"を参照してください)。このトリックを不当に適用すると、厄介な副作用を伴う構造化されていないコードが生成される可能性があります。 "
+"しかし、構造化出口の規則正しい使用は実際にコードを単純化し、それによって読みやすさと保守性を向上させることができます。"
 
 #: ../../chapter8.rst:1450
 msgid ""
@@ -1584,19 +1839,21 @@ msgid ""
 "``IF``  ``THEN`` built in it. But that's only one ``IF``  ``THEN`` in the"
 " system, not at every error."
 msgstr ""
+"私は制御の流れを変えるために ``R> DROP`` をますます支持するようになりました。 それは ``IF…THEN`` が組み込まれている "
+"``ABORT\"`` の効果に似ています。しかしそれはシステム内のただ一つの ``IF…THEN`` であり、全てのエラーではありません。"
 
 #: ../../chapter8.rst:1455
 msgid ""
 "I either abort or I don't abort. If I don't abort, I continue. If I do "
 "abort, I don't have to thread my way through the path. I short-circuit "
 "the whole thing."
-msgstr ""
+msgstr "アボートするかアボートしないかのどちらかです。 アボートしない場合は続行します。 中止しても、残りの経路を通る必要はありません。 全体を短絡します。"
 
 #: ../../chapter8.rst:1459
 msgid ""
 "The alternative is burdening the rest of the application with checking "
 "whether an error occurred. That's an inconvenience."
-msgstr ""
+msgstr "別の方法は、エラーが発生したかどうかをチェックすることで、アプリケーションの残りの部分に負担をかけることです。それは不便です。"
 
 #: ../../chapter8.rst:1462
 msgid ""
@@ -1604,12 +1861,14 @@ msgid ""
 "special conditions. Forth provides this capability with the words "
 "``ABORT\"`` and ``QUIT``."
 msgstr ""
+"「アボート・ルート」は、特別な条件下での制御フローの通常の経路を回避します。 Forthはこの機能を ``ABORT\"`` と ``QUIT``"
+" というワードで提供しています。"
 
 #: ../../chapter8.rst:1466
 msgid ""
 "The “structured exit” extends the concept by allowing the immediate "
 "termination of a single word, without quitting the entire application."
-msgstr ""
+msgstr "「構造化出口」は、アプリケーション全体を終了させることなく、単一のワードを即座に終了させることによって概念を拡張します。"
 
 #: ../../chapter8.rst:1469
 msgid ""
@@ -1623,16 +1882,22 @@ msgid ""
 "thus it has the same effect but can be used one level down. Here are some"
 " examples of both approaches."
 msgstr ""
+"この手法をGOTOの使用と混同しないでください。GOTOは極端には構造化されていません。 "
+"GOTOを使用すると、現在のモジュールの内側または外側のどこにでも移動できます。 "
+"このテクニックを使用すると、モジュールの最後の終了点（セミコロン）に直接ジャンプして呼び出し元のワードの実行を再開できます。 ``EXIT`` "
+"というワードは、そのワードを記述した定義を終了させます。 ``R> DROP`` "
+"というフレーズは、その句が現れる定義を呼び出した定義を終了させます。 したがって、同じ効果がありますが、1つ下のレベルで使用できます。 "
+"以下に両方のアプローチのいくつかの例があります。"
 
 #: ../../chapter8.rst:1480
 msgid ""
 "If you have an ``IF``  ``ELSE``  ``THEN`` phrase in which no code follows"
 " ``THEN``, like this:"
-msgstr ""
+msgstr "以下のように、コードが ``THEN`` に続かない ``IF…ELSE…THEN`` フレーズがあるとします。"
 
 #: ../../chapter8.rst:1487
 msgid "you can eliminate ``ELSE`` by using ``EXIT``:"
-msgstr ""
+msgstr "``EXIT`` を使うことで ``ELSE`` を消すことができます。"
 
 #: ../../chapter8.rst:1493
 msgid ""
@@ -1640,16 +1905,18 @@ msgid ""
 "semicolon. If the condition is false, we skip to ``THEN`` and ``FREEZE-"
 "IT``.)"
 msgstr ""
+"（条件が真であれば、``EAT-IT`` して ``EXIT`` します。 ``EXIT`` はセミコロンのように振る舞います。条件が偽であれば、"
+" ``THEN FREEZE-IT`` に遷移。）"
 
 #: ../../chapter8.rst:1497
 msgid ""
 "The use of ``EXIT`` here is more efficient, saving two bytes and extra "
 "code to perform, but it is not as readable."
-msgstr ""
+msgstr "ここでの ``EXIT`` の使用はより効率的で、実行するために2バイトと余分なコードを節約しますが、読みやすくはありません。"
 
 #: ../../chapter8.rst:1522
 msgid "**Moore** comments on the value, and danger, of this technique:"
-msgstr ""
+msgstr "ムーアはこのテクニックの価値と危険性についてコメントしています。"
 
 #: ../../chapter8.rst:1502
 msgid ""
@@ -1657,12 +1924,16 @@ msgid ""
 " out in the middle without having to match all your ``THEN``\\ s at the "
 "end. In one application I had a word that went like this:"
 msgstr ""
+"特にあなたの条件文が精巧になっているならば、最後にすべてのあなたの ``THEN`` にマッチする必要なしに真ん中から飛び出すのは便利です。 "
+"あるアプリケーションでは、私はこのようなワードを書いていました。"
 
 #: ../../chapter8.rst:1513
 msgid ""
-"SIMPLE handled the simple cases. SIMPLE ended up with ``R> DROP``. These "
-"other conditions were the more complex ones."
+"``SIMPLE`` handled the simple cases. ``SIMPLE`` ended up with ``R> "
+"DROP``. These other conditions were the more complex ones."
 msgstr ""
+"``SIMPLE`` 「単純」は単純なcaseを扱います。 ``SIMPLE`` は ``R> DROP`` で終わります。 "
+"これらの他の条件はより複雑なものでした。"
 
 #: ../../chapter8.rst:1516
 msgid ""
@@ -1670,6 +1941,8 @@ msgid ""
 "the ``IF``\\ s, ``ELSE``\\ s, and ``THEN``\\ s. The final result, if none"
 " of the conditions matched, was an error condition."
 msgstr ""
+"すべての ``IF`` 、 ``ELSE`` 、 ``THEN`` に完璧に一致させることなく、どれもが同じ時点で終了しました。 "
+"どの条件にも一致しない場合、最終結果はエラー条件でした。"
 
 #: ../../chapter8.rst:1520
 msgid ""
@@ -1677,6 +1950,8 @@ msgid ""
 "problem. There wasn't any better scheme to handle it. The ``EXIT`` and "
 "``R> DROP`` at least kept things manageable."
 msgstr ""
+"コードが悪く、デバッグが困難でした。 しかし、それは問題の本質を反映していました。 それを処理するためのより良い方式はありませんでした。 "
+"``EXIT`` と ``R> DROP`` は少なくとも物事を扱いやすくしています。"
 
 #: ../../chapter8.rst:1524
 msgid ""
@@ -1688,6 +1963,11 @@ msgid ""
 "the address where we found it; if we don’t find a match, we want the "
 "address of the last row of the functions table."
 msgstr ""
+"プログラマは時々複雑な ``BEGIN`` ループから抜け出すために ``EXIT`` を使うこともあります。 "
+"あるいは、この章の前半で、私たちのタイニー・エディタで ``FUNCTION`` のために書いた ``DO…LOOP`` "
+"の中で関連テクニックを使うかもしれません。 "
+"このワードでは、私たちは一致する箇所を見つける一連の場所を探索しています。一致が見つかった場合は、見つかった場所のアドレスを返します。 "
+"一致するものが見つからない場合は、機能テーブルの最後の行のアドレスが必要です。"
 
 #: ../../chapter8.rst:1534
 msgid ""
@@ -1695,6 +1975,8 @@ msgid ""
 "which will work like ``EXIT`` (it will simulate a semicolon). Now we can "
 "write:"
 msgstr ""
+"私たちは ``LEAP`` というワードを導入することができます( :doc:`付録C<appendixc>` 参照)、これは ``EXIT`` "
+"のように動作します(セミコロンをシミュレートします)。 今や私たちは以下の通り書くことができます。"
 
 #: ../../chapter8.rst:1544
 msgid ""
@@ -1702,18 +1984,20 @@ msgid ""
 "definition, leaving ``I`` (the address at which we found it) on the "
 "stack. If we don’t find a match, we fall through the loop and execute"
 msgstr ""
+"一致が見つかった場合は、 ``+LOOP`` ではなく ``LEAP`` になりますが、定義からはみ出して ``I`` "
+"(見つかったアドレス)がスタックに残ります。 一致が見つからない場合は、ループを抜けて実行します。"
 
 #: ../../chapter8.rst:1553
 msgid ""
 "which drops the key# being searched for, then leaves the address of the "
 "last row!"
-msgstr ""
+msgstr "これにより、検索されている key# (キー・ナンバー) スタックから捨てられ、最後の行のアドレスが残ります。"
 
 #: ../../chapter8.rst:1556
 msgid ""
 "As we’ve seen, there may be times when a premature exit is appropriate, "
 "even multiple exit points and multiple “continue” points."
-msgstr ""
+msgstr "これまで見てきたように、複数の出口ポイントや複数の「継続(continue)」ポイントであっても、早まった出口が適切な場合があります。"
 
 #: ../../chapter8.rst:1559
 msgid ""
@@ -1721,27 +2005,29 @@ msgid ""
 " with structured programming in the strictest sense, and requires great "
 "care."
 msgstr ""
+"ただし、この ``EXIT`` および ``R> DROP`` "
+"の使用は、最も厳密な意味での構造化プログラミングとは一貫していないので注意が必要です。"
 
 #: ../../chapter8.rst:1563
 msgid ""
 "For instance, you may have a value on the stack at the beginning of a "
 "definition which is consumed at the end. A premature ``EXIT`` will leave "
 "the unwanted value on the stack."
-msgstr ""
+msgstr "たとえば、定義の最初にスタックの値があり、それが最後に消費されることがあります。 早まった ``EXIT`` は、スタックに不要な値を残します。"
 
 #: ../../chapter8.rst:1567
 msgid ""
 "Fooling with the return stack is like playing with fire. You can get "
 "burned. But how convenient it is to have fire."
-msgstr ""
+msgstr "リターンスタックでふざけるのは火遊びするようなものです。 やけどをする可能性があります。 しかし、火はとても便利です。"
 
 #: ../../chapter8.rst:1572
 msgid "Employing Good Timing"
-msgstr ""
+msgstr "良いタイミングの採用"
 
 #: ../../chapter8.rst:1576
 msgid "Take the action when you know you need to, not later."
-msgstr ""
+msgstr "後でではなく、必要があるとわかったときに行動を起こしてください。"
 
 #: ../../chapter8.rst:1578
 msgid ""
@@ -1750,27 +2036,30 @@ msgid ""
 " you can do such-and-such *now*. A little restructuring can greatly "
 "simplify your design."
 msgstr ""
+"フラグを立てるときはいつでも、なぜフラグを立てるのかを自問してください。 "
+"答えが「そういうことを後でやることを知っている」と答えたら、あなたがそのようなことができるようになったかどうか自問してみましょう。 "
+"少し構造を変更するだけで、設計を大幅に簡素化できます。"
 
 #: ../../chapter8.rst:1585
 msgid "Don't put off till run time what you can compile today."
-msgstr ""
+msgstr "今日コンパイルできるものを実行時まで延期しないでください。"
 
 #: ../../chapter8.rst:1587
 msgid "Any time you can make a decision prior to compiling an application, do."
-msgstr ""
+msgstr "アプリケーションをコンパイルする前にあなたはいつでも決定を下すことができます。"
 
 #: ../../chapter8.rst:1589
 msgid ""
 "Suppose you had two versions of an array: one that did bounds checking "
 "for your protection during development and one that ran faster, though "
 "unprotected for the actual application."
-msgstr ""
+msgstr "2つのバージョンの配列があるとします。1つは開発中に境界チェックの保護を行ったもの、もう1つは実行速度が速いけど、実際のアプリケーションでは保護されていないものです。"
 
 #: ../../chapter8.rst:1593
 msgid ""
 "Keep the two versions in different screens. When you compile your "
 "application, load only the version you need."
-msgstr ""
+msgstr "2つのバージョンを別々のスクリーンに入れてください。 アプリケーションをコンパイルするときは、必要なバージョンだけをロードしてください。"
 
 #: ../../chapter8.rst:1596
 msgid ""
@@ -1780,67 +2069,70 @@ msgid ""
 "decisions for you. For instance (as already previewed in another "
 "context):"
 msgstr ""
+"ちなみに、この提案に従えば、毎回ロードされるバージョンを変更するためにロードブロックの内外に括弧 ``( …)`` "
+"を編集することになるかもしれません。 代わりに、あなたに代わって決定を下すための使い捨ての定義を書いてください。 "
+"例えば（既に別の文脈でプレビューされているように）以下の通り。"
 
 #: ../../chapter8.rst:1608
 msgid "``DUP`` a flag, don't recreate it."
-msgstr ""
+msgstr "``DUP`` はフラグです。再作成しないでください。"
 
 #: ../../chapter8.rst:1610
 msgid ""
 "Sometimes you need a flag to indicate whether or not a previous piece of "
 "code was invoked. The following definition leaves a flag which indicates "
 "that ``DO-IT`` was done:"
-msgstr ""
+msgstr "前のコードが呼び出されたかどうかを示すフラグが必要な場合があります。 次の定義は ``DO-IT`` が行われたことを示すフラグを残します。"
 
 #: ../../chapter8.rst:1619
 msgid "This can be simplified to:"
-msgstr ""
+msgstr "これは次のように単純化できます。"
 
 #: ../../chapter8.rst:1628
 msgid "Don't set a flag, set the data."
-msgstr ""
+msgstr "フラグを設定せずにデータを設定してください。"
 
 #: ../../chapter8.rst:1630
 msgid ""
 "If the only purpose to setting a flag is so that later some code can "
 "decide between one number and another, you’re better off saving the "
 "number itself."
-msgstr ""
+msgstr "フラグを設定する唯一の目的が、後で、ある数か別の数かを決定できるようにすることである場合は、その数自体を保存することをお勧めします。"
 
 #: ../../chapter8.rst:1634
 msgid ""
 "The “colors” example in :doc:`Chapter Six<chapter6>`\\’s section called "
 "“Factoring Criteria” illustrates this point."
-msgstr ""
+msgstr ":doc:`第6章<chapter6>` の「ファクタリング(要素分解)基準」節の「色の例」はこの点を示しています。"
 
 #: ../../chapter8.rst:1637
 msgid ""
 "The purpose of the word ``LIGHT`` is to set a flag which indicates "
 "whether we want the intensity bit to be set or not. While we could have "
 "written"
-msgstr ""
+msgstr "``LIGHT`` というワードの目的は、輝度ビットを設定するかどうかを示すフラグを設定することです。 私たちは以下のように書きます。"
 
 #: ../../chapter8.rst:1645
 msgid "to set the flag, and"
-msgstr ""
+msgstr "フラグをセットするために、そして"
 
 #: ../../chapter8.rst:1651
 msgid ""
 "to use the flag, this approach is not quite as simple as putting the "
 "intensity bit-mask itself in the variable:"
-msgstr ""
+msgstr "このフラグを使用するために、このアプローチは輝度ビットマスク自体を変数に入れるほど単純ではありません。"
 
 #: ../../chapter8.rst:1658
 msgid "and then simply writing"
-msgstr ""
+msgstr "それから単純にします。"
 
 #: ../../chapter8.rst:1664
 msgid "to use it."
-msgstr ""
+msgstr "それを使用する。"
 
 #: ../../chapter8.rst:1668
 msgid "Don't set a flag, set the function. (Vector.)"
-msgstr ""
+msgstr "フラグを設定しないで、機能(ベクトル)を設定してください。"
 
 #: ../../chapter8.rst:1670
 msgid ""
@@ -1848,37 +2140,37 @@ msgid ""
 "restriction. If the only purpose to setting a flag is so that later some "
 "code can decide between one function and another, you’re better off "
 "saving the address of the function itself."
-msgstr ""
+msgstr "このヒントは前のものと似ており、同じ制限の下にあります。 フラグを設定する唯一の目的が、後であるコードが、ある機能か別の機能かを決定できるようにすることである場合は、関数自体のアドレスを保存した方がよいでしょう。"
 
 #: ../../chapter8.rst:1675
 msgid ""
 "For instance, the code for transmitting a character to a printer is "
 "different than for slapping a character onto a video display. A poor "
 "implementation would define:"
-msgstr ""
+msgstr "たとえば、文字をプリンタに送信するためのコードは、文字をビデオディスプレイに表示するためのコードとは異なります。 不適切な実装では、次のように定義されます。"
 
 #: ../../chapter8.rst:1688
 msgid ""
 "This is bad because you’re deciding which function to perform every time "
 "you type a string."
-msgstr ""
+msgstr "文字列を入力するたびにどの機能を実行するかを決めているので、これは良くありません。"
 
 #: ../../chapter8.rst:1691
 msgid "A preferable implementation would use vectored execution. For instance:"
-msgstr ""
+msgstr "好ましい実装は、ベクトル実行を使用します。 たとえば以下の通りです。"
 
 #: ../../chapter8.rst:1699
 msgid ""
 "This is better because ``TYPE`` doesn’t have to decide which code to use,"
 " it already knows."
-msgstr ""
+msgstr "``TYPE`` はどのコードを使用するかを決定する必要がないので、これはより優れています、それはすでにどうするか知ってわけです。"
 
 #: ../../chapter8.rst:1702
 msgid ""
 "(On a multi-tasked system, the printer and monitor tasks would each have "
 "their own copies of an execution vector for ``TYPE`` stored in a user "
 "variable.)"
-msgstr ""
+msgstr "(マルチタスクシステムでは、プリンタータスクとモニタータスクはそれぞれ、ユーザー変数に格納されている ``TYPE`` の実行ベクトルの独自のコピーを持ちます。)"
 
 #: ../../chapter8.rst:1706
 msgid ""
@@ -1888,7 +2180,7 @@ msgid ""
 "instance, to decide whether to clear the screen or issue a formfeed. Then"
 " we’re making an additional use of the state, and our rule no longer "
 "applies."
-msgstr ""
+msgstr "上記の例もこのヒントの制限を示しています。 2番目のバージョンでは、現在のデバイスがプリンタなのかビデオスクリーンなのかを知る簡単な方法はありません。 たとえば、画面をクリアするか改ページを発行するかを判断する必要があるかもしれません。 それから私たちは状態(state)をさらに利用しており、私たちの規則はもはや適用されません。"
 
 #: ../../chapter8.rst:1713
 msgid ""
@@ -1897,13 +2189,13 @@ msgid ""
 "concerned about speed. We type strings so often, we can’t afford to waste"
 " time doing it. The best solution here might be to set the function of "
 "``TYPE`` and also set a flag:"
-msgstr ""
+msgstr "フラグは、実際には、追加の状態依存操作の最も簡単な実装を可能にします。 しかし、 ``TYPE`` の場合、スピードが心配です。 文字列は頻繁に入力するので、時間を無駄にする余裕はありません。 ここでの最善の解決策は、 ``TYPE`` の機能を設定し、さらにフラグを設定することです。"
 
 #: ../../chapter8.rst:1727
 msgid ""
 "Thus ``TYPE`` already knows which code to execute, but other definitions "
 "will refer to the flag."
-msgstr ""
+msgstr "これにより、 ``TYPE`` は実行するコードを既に知っていますが、他の定義はフラグを参照します。"
 
 #: ../../chapter8.rst:1730
 msgid ""
@@ -1912,30 +2204,31 @@ msgid ""
 "against the address of ``PRINTER``. If it’s less than the address of "
 "``PRINTER``, we’re using the ``VIDEO`` routine; otherwise we’re using the"
 " ``PRINTER`` routine."
-msgstr ""
+msgstr "他の可能性は、 ``DOER`` のワード ``TYPE`` のパラメータ(現在のコードへのポインタ)を取得し、それを ``PRINTER`` のアドレスと比較するワードを書くことです。 もしそれが ``PRINTER`` のアドレスより小さければ、 ``VIDEO`` ルーチンを使っています。 そうでなければ、 ``PRINTER`` ルーチンを使っています。"
 
+# shut off ???
 #: ../../chapter8.rst:1736
 msgid ""
 "If changing the state involves changing a small number of functions, you "
 "can still use ``DOER/MAKE``. Here are definitions of three memory-move "
 "operators that can be shut off together."
-msgstr ""
+msgstr "状態を変えることが少数の機能を変えることを含むなら、あなたはまだ ``DOER/MAKE`` を使うことができます。 以下は、一緒に遮断できる3つのメモリ移動演算子の定義です。"
 
 #: ../../chapter8.rst:1752
 msgid ""
 "But if a large number of functions need to be vectored, a state table "
 "would be preferable."
-msgstr ""
+msgstr "しかし、多数の関数をベクトル化する必要がある場合は、状態テーブルを使用することをお勧めします。"
 
 #: ../../chapter8.rst:1755
 msgid ""
 "A corollary to this rule introduces the “structured exit hook,” a "
 "``DOER`` word vectored to perform a structured exit."
-msgstr ""
+msgstr "この規則の当然の結果として、構造化終了を実行するようにベクトル化された「構造化終了フック( ``DOER`` )」が導入されています。"
 
 #: ../../chapter8.rst:1763
 msgid "(… Much later in the listing:)"
-msgstr ""
+msgstr "（…リストのかなり後の方にあります。）"
 
 #: ../../chapter8.rst:1769
 msgid ""
@@ -1943,7 +2236,7 @@ msgid ""
 "end up in court. But if we ``RELENT`` before we ``DISSOLVE``, we’ll send "
 "flowers, then jump clear to the semicolon, canceling that court order "
 "before our partner ever finds out."
-msgstr ""
+msgstr "デフォルトでは、 ``HESITATE`` は何もしません。 私たちが ``DISSOLVE`` を呼び出すと、法廷で終わることになります。 しかし、``DISSOLVE`` の前に ``RELENT``  を入力した場合は、花を送信してからセミコロンに移動し、パートナーがこれを見つける前にその裁判所の命令を取り消します。"
 
 #: ../../chapter8.rst:1774
 msgid ""
@@ -1951,11 +2244,11 @@ msgid ""
 "performed by a function defined much later in the listing (decomposition "
 "by sequential complexity). Increased complexity of the earlier code is "
 "limited solely to defining the hook and invoking it at the right spot."
-msgstr ""
+msgstr "このアプローチは、リストの最後の方で定義されている機能によって取り消しを実行する必要がある場合に特に適しています（順次複雑度による分解）。 以前のコードの複雑さが増すのは、フックを定義して適切な場所で呼び出すことだけに限られていました。"
 
 #: ../../chapter8.rst:1781
 msgid "Simplifying"
-msgstr ""
+msgstr "単純化"
 
 #: ../../chapter8.rst:1783
 msgid ""
@@ -1963,11 +2256,11 @@ msgid ""
 " for simplicity. While other tips concern maintainability, performance, "
 "compactness, etc., this tip relates to the sort of satisfaction that "
 "Thoreau sought at Walden Pond."
-msgstr ""
+msgstr "このヒントは、簡潔さを選択したことによる見返りを示しているので、最後にしました。他のヒントは保守性、パフォーマンス、コンパクトさなどに関係しますが、このヒントは思想家のソーローがウォールデン池に求めたある種の満足度に関連しています。"
 
 #: ../../chapter8.rst:1790
 msgid "Try to avoid altogether saving flags in memory."
-msgstr ""
+msgstr "フラグをメモリに完全に保存するのを避けることを試みて下さい。"
 
 #: ../../chapter8.rst:1792
 msgid ""
@@ -1975,85 +2268,85 @@ msgid ""
 "the stack can simply be determined (by reading the hardware, calculating,"
 " or whatever), pushed onto the stack, then consumed by the control "
 "structure. A short life with no complications."
-msgstr ""
+msgstr "スタック上のフラグは、メモリ内のフラグとはまったく異なります。 スタック上のフラグは（ハードウェアの読み取り、計算などによって）簡単に決定され、スタックにプッシュされてから、制御構造によって消費されます。曲折のない短い人生です。"
 
 #: ../../chapter8.rst:1797
 msgid ""
 "But save a flag in memory and watch what happens. In addition to having "
 "the flag itself, you now have the complexity of a location for the flag. "
 "The location must be:"
-msgstr ""
+msgstr "しかし、フラグをメモリに保存して何が起こるのか見てください。 フラグ自体を持っていることに加えて、あなたは今フラグのための場所の複雑さを持っています。 場所では以下のようにしなければなりません。"
 
 #: ../../chapter8.rst:1801
 msgid "created"
-msgstr ""
+msgstr "生成"
 
 #: ../../chapter8.rst:1803
 msgid "initialized (even before anything actually changes)"
-msgstr ""
+msgstr "初期化(実際に何かが変更されるじゅうぶん前に）"
 
 #: ../../chapter8.rst:1805
 msgid ""
 "reset (otherwise, passing a flag to a command leaves the flag in that "
 "current state)."
-msgstr ""
+msgstr "リセット（それ以外の場合、コマンドにフラグを渡すと、そのフラグは現在の状態のままになります）"
 
 #: ../../chapter8.rst:1808
 msgid "Because flags in memory are variables, they are not reentrant."
-msgstr ""
+msgstr "メモリ内のフラグは変数なので、再入可能ではありません。"
 
 #: ../../chapter8.rst:1810
 msgid ""
 "An example of a case in which we might reconsider the need for a flag is "
 "one we’ve seen several times already. In our “colors” example we made the"
 " assumption that the best syntax would be:"
-msgstr ""
+msgstr "フラグの必要性を再考する可能性がある場合の例としては、すでに数回見たことがあります。 「色」の例では、私たちは最良の構文は次のようになると仮定しました。"
 
 #: ../../chapter8.rst:1819
 msgid ""
 "that is, the adjective ``LIGHT`` preceding the color. Fine. But remember "
 "the code to implement that version? Compare it with the simplicity of "
 "this approach:"
-msgstr ""
+msgstr "つまり、色の前にある形容詞の ``LIGHT`` です。 いいですね。 しかし、そのバージョンを実装するためのコードを覚えていますか？ 以下のアプローチの単純さと比較してください。"
 
 #: ../../chapter8.rst:1830
 msgid "In this version we’ve reversed the syntax, so that we now say"
-msgstr ""
+msgstr "このバージョンでは、構文を逆にしたので、以下のようになります。"
 
 #: ../../chapter8.rst:1836
 msgid "We establish the color, then we modify the color."
-msgstr ""
+msgstr "私たちは色を設定してから色を変更します。"
 
 #: ../../chapter8.rst:1838
 msgid ""
 "We’ve eliminated the need for a variable, for code to fetch from the "
 "variable and more code to reset the variable when we’re done. And the "
 "code is so simple it’s impossible not to understand."
-msgstr ""
+msgstr "完了したら、変数からコードを取得し、変数をリセットするためのコードを追加する必要がなくなりました。 そしてコードはとても単純なので理解できないでいるのは不可能です。"
 
 #: ../../chapter8.rst:1842
 msgid ""
 "When I first wrote these commands, I took the English-like approach. "
 "“``BLUE LIGHT``” sounded backwards, not at all acceptable. That was "
 "before my conversations with Chuck Moore."
-msgstr ""
+msgstr "これらのコマンドを最初に書いたとき、私は英語として自然に見えるようなアプローチを取った。 ``BLUE LIGHT`` は後ろ向きに聞こえ、まったく受け入れられませんでした。それは私がチャック・ムーアと会話する前の話です。"
 
 #: ../../chapter8.rst:1852
 msgid "**Moore's philosophy is persuasive**:"
-msgstr ""
+msgstr "ムーアの哲学は説得力があります。"
 
 #: ../../chapter8.rst:1847
 msgid ""
 "I would distinguish between reading nicely in English and reading nicely."
 " In other languages such as Spanish, adjectives follow nouns. We should "
 "be independent of details like which language we're thinking in."
-msgstr ""
+msgstr "私は「英語で素敵に読めること」と「素敵に読めること」を区別します。 スペイン語などの他の言語では、形容詞は名詞に従います。 私たちは自分が考えている言語のような詳細からは独立しているべきです。"
 
 #: ../../chapter8.rst:1851
 msgid ""
 "It depends on your intention: simplicity, or emulation of English. "
 "English is not such a superb language that we should follow it slavishly."
-msgstr ""
+msgstr "それはあなたの意図によります。単純さ、または英語のエミュレーション。 英語は私たちが卑屈な態度で従うべきであるほど素晴らしい言語ではありません。"
 
 #: ../../chapter8.rst:1854
 msgid ""
@@ -2061,11 +2354,11 @@ msgid ""
 "would take the trouble to create the flag. But writing these words for my"
 " own use, if I had to do it over again, I’d favor the Moore-ish "
 "influence, and use “``BLUE LIGHT``.”"
-msgstr ""
+msgstr "グラフィックアーティスト向けのパッケージで私の「色」のワードを売っているのであれば、フラグを立てるのに手間を掛けてください。しかし、これらの言葉を自分のために書いて、もう一度やり直さなければならないのであれば、ムーア風に ``BLUE LIGHT`` を使ってください。"
 
 #: ../../chapter8.rst:1860
 msgid "Summary"
-msgstr ""
+msgstr "要約"
 
 #: ../../chapter8.rst:1862
 msgid ""
@@ -2073,7 +2366,7 @@ msgid ""
 "programming leads to overly-complicated, difficult-to-maintain, and "
 "inefficient code. In this chapter we’ve discussed several ways to "
 "minimize, optimize or eliminate unnecessary conditional structures."
-msgstr ""
+msgstr "プログラミングにおいて重要な構造要素として論理と条件を使用すると、過度に複雑で保守が困難で効率の悪いコードになります。 この章では、不要な条件付き構造を最小化、最適化、または削除するためのいくつかの方法について説明しました。"
 
 #: ../../chapter8.rst:1867
 msgid ""
@@ -2082,11 +2375,11 @@ msgid ""
 "fifth-generation computer project on a language called PROLOG—for "
 "PROgramming in LOGic—in which one programs entirely in logic. It will be "
 "interesting to see the battle-lines forming as we ponder the question:"
-msgstr ""
+msgstr "最後の注意として、Forthの条件文の軽視は現代のほとんどの言語で共有されていません。 実際、日本人は第5世代のコンピュータプロジェクトを、ロジックでのプログラミングのためのPROLOGと呼ばれる言語に基づいています。 私達が質問を熟考する時に戦線が形成されるのを見るのは面白いでしょう。"
 
 #: ../../chapter8.rst:1873
 msgid "To ``IF`` or not to ``IF``"
-msgstr ""
+msgstr "To ``IF`` or not to ``IF``"
 
 #: ../../chapter8.rst:1875
 msgid ""
@@ -2094,7 +2387,7 @@ msgid ""
 "development cycle, exploring both the philosophical questions of "
 "designing software and practical considerations of implementing robust, "
 "efficient, readable software."
-msgstr ""
+msgstr "この本では、ソフトウェア開発サイクルの最初の6つのステップを取り上げ、ソフトウェア設計の哲学的問題と、堅牢で効率的で読み取り可能なソフトウェアを実装する際の実際的な考慮事項の両方について説明しました。"
 
 #: ../../chapter8.rst:1880
 msgid ""
@@ -2102,63 +2395,30 @@ msgid ""
 "project management, Forth development tools, assembler definitions, uses "
 "and abuses of recursion, developing multiprogrammed applications, or "
 "target compilation."
-msgstr ""
+msgstr "最適化、検証、デバッグ、文書化、プロジェクト管理、Forth開発ツール、アセンブラ定義、再帰の使用と悪用、マルチプログラムアプリケーションの開発、またはターゲットコンパイルについては説明していません。"
 
 #: ../../chapter8.rst:1885
 msgid "But that’s another story."
-msgstr ""
+msgstr "しかし、それはまた別の話です。"
 
 #: ../../chapter8.rst:1888
 msgid "For Further Thinking"
-msgstr ""
+msgstr "さらなる思考のために"
 
 #: ../../chapter8.rst:1890
 msgid ""
 "Define the word ``DIRECTION``, which returns either 1, :math:`-1`, or 0, "
 "depending on whether the input argument is non-zero positive, negative, "
 "or zero, respectively."
-msgstr ""
+msgstr "入力引数がゼロ以外の正数、負数、またはゼロであるかどうかに応じて、それぞれ1、 :math:`-1`  または0を返すワード ``DIRECTION`` を定義してみましょう。"
 
 #: ../../chapter8.rst:1895
 msgid "REFERNCES"
-msgstr ""
+msgstr "参考文献"
 
 #: ../../chapter8.rst:1897
 msgid "Charles Eaker, \"Just in Case,\"  **ForthDimensions**  II/3, p. 37."
 msgstr ""
-
-#~ msgid ""
-#~ "We introduced these in Chapter Two. "
-#~ "A decision table is a structure "
-#~ "that contains either data (a “data "
-#~ "table”) or addresses of functions (a "
-#~ "“function table”) arranged according to "
-#~ "any number of dimensions. Each dimension"
-#~ " represents all the possible, mutually "
-#~ "exclusive states of a particular aspect"
-#~ " of the problem. At the intersection"
-#~ " of the “true” states of each "
-#~ "dimension lies the desired element: the"
-#~ " piece of data or the function "
-#~ "to be performed."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Recall from Chapter One our example "
-#~ "of the word ``APPLES``. This was "
-#~ "originally defined as a variable; it "
-#~ "was referred to many times throughout"
-#~ " the application by words that "
-#~ "incremented the number of apples (when"
-#~ " shipments arrive), decremented the number"
-#~ " (when apples are sold), and checked"
-#~ " the current number (for inventory "
-#~ "control)."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The “colors” example in Chapter Six’s"
-#~ " section called “Factoring Criteria” "
-#~ "illustrates this point."
-#~ msgstr ""
+"チャールズ・エーカー(Charles Eaker), \"Just in Case,\"  **ForthDimensions**  II/3, "
+"p. 37."
 
