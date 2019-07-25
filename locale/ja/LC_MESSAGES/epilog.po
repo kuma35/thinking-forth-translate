@@ -4,15 +4,15 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-07-25 22:59+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../epilog.rst:4
 msgid "EPILOGUE: Forth’s Effect on Thinking"
-msgstr ""
+msgstr "結び 思考に与えるForthの効果"
 
 #: ../../epilog.rst:6
 msgid ""
@@ -28,7 +28,7 @@ msgid ""
 "fragility is its strength; its simplicity is its direction *(Michael Ham "
 "winning entry in Mountain View Press\\'s contest to describe Forth in "
 "twenty-five words or less)*."
-msgstr ""
+msgstr "Forthはタオ(○○道)のようなものです。それは道であり、それに従うと実現されます。 その脆弱性はその強さです。 その単純さはその方向性です(マイケル・ハムはマウンテンビュー・プレスのコンテストで25単語以下でForthを説明するコンテストでエントリーを獲得しました(訳注:もちろん英語での話))。"
 
 #: ../../epilog.rst:11
 msgid ""
@@ -36,18 +36,18 @@ msgid ""
 "among several Forth users in which I asked, “How has Forth affected your "
 "thinking? Have you found yourself applying ‘Forth-like’ principles in "
 "other areas?”"
-msgstr ""
+msgstr "Forthの哲学の一部を抽出するために、私はいくつかのForthユーザに次のように質問しました。「あなたは他の分野で「Forthのような」原則を適用しているのを見つけましたか？」"
 
 #: ../../epilog.rst:16
 msgid "Here are some of the replies:"
-msgstr ""
+msgstr "ここにいくつかの回答があります。"
 
 #: ../../epilog.rst:62
 msgid ""
 "**Mark Bernstein** is president of Eastgate Systems Inc. @ in Cambridge, "
 "Massachusetts, and holds a doctorate from the department of chemistry at "
 "Harvard University."
-msgstr ""
+msgstr "**マーク・ バーンスタイン** は、マサチューセッツ州ケンブリッジにあるイーストゲート・システムズ社の社長であり、ハーバード大学の化学科で博士号を取得しています。"
 
 #: ../../epilog.rst:19
 msgid ""
@@ -57,7 +57,7 @@ msgid ""
 "Interface.  Nobody had built this particular kind of instrument before---"
 "that\\'s why we were doing it---and the list of things we wanted the "
 "computer to handle changed every couple of weeks."
-msgstr ""
+msgstr "私はレーザー化学の仕事をしている時に最初にForthに会いました。 私は新しいレーザー分光計用にかなり複雑なコントローラーを構築しようとしていました。 当初の計画では、電子機器でいっぱいの大きな緑色の箱、「ザ・インターフェイス」が必要でした。 これまでこの手の機器を製作したことのある人はいません(だからこそ私たちが製作していた訳ですが)。そして私たちがコンピュータに扱わせたいもののリストは２、３週間ごとに変わりました。"
 
 #: ../../epilog.rst:26
 msgid ""
@@ -66,7 +66,7 @@ msgid ""
 "System Bus. Day by day, everything got more fragile and harder to fix.  "
 "The wiring on the circuit boards frayed, the connectors got loose, the "
 "assembler code grew ever more tangled."
-msgstr ""
+msgstr "数ヵ月後、私は何百ページものアセンブリ言語ルーチン、3つの大きな回路基板（ICでいっぱい）、そして70個の奇数ピンのシステムバスを手にしていました。日々、すべてがより壊れやすくなり、修正が難しくなりました。 回路基板上の配線が擦り切れ、コネクタが外れ、アセンブラコードがさらに絡み合って成長しました。"
 
 #: ../../epilog.rst:32
 msgid ""
@@ -76,7 +76,7 @@ msgid ""
 "the art of factoring procedures into useful, free-standing words.  The "
 "idea of the Forth word had unexpected implications for laboratory "
 "hardware design."
-msgstr ""
+msgstr "Forthは、複雑で急速に変化するプログラムを構築し維持するための適切な環境を提供していたため、ソフトウェアの問題に対する明白な解決策でした。 しかし、優れたForthプログラミングの本質は、手続きを便利で自立したワードに分解することです。 Forthのワードというアイディアは、実験室のハードウェア設計に予期せぬ影響がありました。"
 
 #: ../../epilog.rst:39
 msgid ""
@@ -86,7 +86,7 @@ msgid ""
 "outputs, they performed just one function, they were designed to connect "
 "up to each other without much effort, and they were simple enough that "
 "you could tell what a box did just by looking at its label."
-msgstr ""
+msgstr "大きくてモノリシックな万能のインターフェースを構築する代わりに、私は自分自身が、標準入力と標準出力の固定されたセットを持ち、それらが1つの機能を実行していて、あまり手間をかけずに互いに接続するように設計されており、それらはラベルを見るだけでボックスが何をしたのかを判断できるほど単純でした。"
 
 #: ../../epilog.rst:46
 msgid ""
@@ -96,7 +96,7 @@ msgid ""
 "was written in C), understand it (since it was small), and modify it "
 "(since it was simple).  Forth shares these virtues, although it\\'s "
 "designed to tackle a different sort of problem."
-msgstr ""
+msgstr "「人間スケール」の考え方は、今日のソフトウェア設計における重要な概念です。 これはForthの開発に限りません。UNIXの最大の喜びは、少なくともその若さにおいて、それを(Cで書かれているので)読んで理解し、(それが小さいので)理解し、それを変更する(それが単純であったので)ことができたことです。 Forthはこれらの長所を共有していますが、異なる種類の問題に取り組むことを意図しています。"
 
 #: ../../epilog.rst:53
 msgid ""
@@ -106,41 +106,42 @@ msgid ""
 "\"twenty-questions\" with packaged software. Forth, used properly, lets a"
 " scientist instruct the computer instead of letting the computer instruct"
 " the scientist."
-msgstr ""
+msgstr "Forthは小さく、そしてForthはユーザに自分のマシンを制御させるので、Forthは人間に自分のアプリケーションを制御させます。 科学者がパッケージ化されたソフトウェアで「20の質問」をしているラボのコンピュータの前に座るのを期待するのは愚かなことです。 Forthは、正しく使用されると、コンピュータから科学者に指示させるようにするのではなく、科学者からコンピュータに指示するようにさせることができます。"
 
 #: ../../epilog.rst:60
 msgid ""
 "In the same sense that in baseball, a batter is supposed to feel the bat "
 "as an extension of himself, Forth is human-scaled, and helps convince you"
 " that the computer\\'s achievements, and its failures, are also your own."
-msgstr ""
+msgstr "野球では、打者はバットを自分自身の延長として感じると考えられているのと同じ意味で、Forthは人間スケールであり、コンピュータの成果とその失敗も自分のものであると納得させるのに役立ちます。"
 
 #: ../../epilog.rst:72
 msgid ""
 "**Raymond E. Dessy** is Professor of Chemistry at Virginia Polytechnic "
 "Institute and State University, Blacksburg, Virginia."
-msgstr ""
+msgstr "**レイモンド・Ｅ・ディシー** は、バージニア州ブラックスバーグにあるバージニア工科大学の化学教授です。"
 
+# high-fog-coefficient ってなんぞ？
 #: ../../epilog.rst:65
 msgid ""
 "As I attempted to understand the nature and structure of the language C, "
 "I found myself drawing upon the knowledge I had of the organization and "
 "approach of Forth.  This permitted me to understand convoluted, or high-"
 "fog-coefficient sections describing C."
-msgstr ""
+msgstr "C言語の性質と構造を理解しようとしたとき、私は自分がForthの組織とアプローチについて知っていた知識を利用していることに気づきました。 これは私がCを記述している入り組んだ、または高い霧係数の節を理解することを可能にしました。"
 
 #: ../../epilog.rst:70
 msgid ""
 "I have found the Forth approach is an ideal platform upon which to build "
 "an understanding and an educational framework for other languages and "
 "operating system concepts."
-msgstr ""
+msgstr "私は、Forthのアプローチが、他の言語やオペレーティングシステムの概念に対する理解と教育の枠組みを構築するための理想的なプラットフォームであることを発見しました。"
 
 #: ../../epilog.rst:88
 msgid ""
 "**Jerry Boutelle** is owner of Nautilus Systems in Santa Cruz, "
 "California, which markets the Nautilus Cross-compiler."
-msgstr ""
+msgstr "**ジェリー・ボウテール** は、カリフォルニア州サンタクルーズにあるノーチラス・システムズの所有者で、ノーチラス・クロスコンパイラを販売しています。"
 
 #: ../../epilog.rst:75
 msgid ""
@@ -150,14 +151,14 @@ msgid ""
 "sense of creating words and grouping them together.  For example, in "
 "handling strings I would define subroutines analogous to ``CMOVE``, "
 "``-TRAILING``, ``FILL``, etc."
-msgstr ""
+msgstr "Forthは私の考えをいろいろに変えました。 私はForthを学んで以来、アセンブラ、BASIC、FORTRANを含む他の言語でコーディングしてきました。 私は、単語を作成しそれらを一緒にグループ化するという意味で、Forthで行うのと同じ種類の分解を使用したことを発見しました。 例えば、文字列を扱う際には、 ``CMOVE`` 、 ``-TRAILING`` 、 ``FILL`` などに似たサブルーチンを定義します。"
 
 #: ../../epilog.rst:82
 msgid ""
 "More fundamentally, Forth has reaffirmed my faith in simplicity.  Most "
 "people go out and attack problems with complicated tools.  But simpler "
 "tools are available and more useful."
-msgstr ""
+msgstr "もっと基本的に、Forthは私の信念をその単純さで再確認させました。 ほとんどの人は出かけて複雑なツールで問題を攻撃します。 しかし、もっと簡単なツールが利用可能で、もっと便利です。"
 
 #: ../../epilog.rst:86
 msgid ""
@@ -165,5 +166,5 @@ msgid ""
 "from *Tao Te Ching* by the Chinese philosopher Lao Tzu: \"To attain "
 "knowledge, add things every day; to obtain wisdom, remove things every "
 "day.\""
-msgstr ""
+msgstr "私は私の人生のあらゆる面を単純化しようとしています。 中国の哲学者、老子の「老子道徳経」から私が好む引用があります。曰く「知識を得るために、毎日物事を追加します。知恵を得るために、毎日物事を取り除いてください。」"
 
