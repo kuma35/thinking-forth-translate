@@ -4,15 +4,15 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-07-26 23:13+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../appendixd.rst:4
 msgid "Appendix D: Answers to \"Further Thinking” Problems"
-msgstr ""
+msgstr "付録D 「さらなる思考の為に」問題解答"
 
 #: ../../appendixd.rst:7
 msgid "Chapter Three"
-msgstr ""
+msgstr "第３章"
 
 #: ../../appendixd.rst:9
 msgid ""
@@ -33,7 +33,7 @@ msgid ""
 "*not* be the case. The simpler, more compact form is therefore "
 "preferable. Also in the first version, to add a new key would require a "
 "change in two places."
-msgstr ""
+msgstr "答えは、他のコンポーネントが各キーに関連付けられている数値コードを知る必要があると信じるかどうかによって異なります。 通常これはそうではありません。 したがって、より単純でよりコンパクトな形態が好ましい。 また、最初のバージョンでは、新しいキーを追加するには、2か所で変更が必要になります。"
 
 #: ../../appendixd.rst:15
 msgid ""
@@ -42,31 +42,31 @@ msgid ""
 "solution then will be to devise an interface to the RAM allocation "
 "pointer that is not dependent on order; the way to do this is to have a "
 "*single* word which does both functions transparently."
-msgstr ""
+msgstr "``RAM-ALLOT`` と ``THERE`` というワードの問題は、それらが時間に依存しているということです。 私たちの解決策は、順番に依存しないRAM割り当てポインタへのインタフェースを考案することでしょう。 これを行う方法は、両方の機能を透過的に実行するただ一つのワードを持つことです。"
 
 #: ../../appendixd.rst:21
 msgid "Our word’s syntax will be"
-msgstr ""
+msgstr "私たちのワードのの構文は次のようになるでしょう。"
 
 #: ../../appendixd.rst:30
 msgid ""
 "This syntax will remain the same whether we define it to allocate growing"
 " upward:"
-msgstr ""
+msgstr "この構文は、上方向に成長するように割り当てるように定義しても変わりません。"
 
 #: ../../appendixd.rst:40
 msgid "or to allocate growing downward:"
-msgstr ""
+msgstr "または下向きに成長するように割り当てるには次のようにします。"
 
 #: ../../appendixd.rst:48
 msgid "Chapter Four"
-msgstr ""
+msgstr "第４章"
 
 #: ../../appendixd.rst:50
 msgid "Our solution is as follows:"
-msgstr ""
+msgstr "私たちの解決策は以下の通りです。"
 
 #: ../../appendixd.rst:68
 msgid "Chapter Eight"
-msgstr ""
+msgstr "第８章"
 
