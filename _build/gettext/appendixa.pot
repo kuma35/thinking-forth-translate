@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2019-07-25 23:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../appendixa.rst:4
-msgid "Appendix A: Overview of Forth (For Newcomers)"
+msgid "Appendix A: Overview of Forth (For Newcomers)"
 msgstr ""
 
 #: ../../appendixa.rst:7
@@ -37,7 +37,7 @@ msgid "All words, whether included with the system or user-defined, exist in the
 msgstr ""
 
 #: ../../appendixa.rst:34
-msgid "The ``;`` terminates the definition. The new word LIFT may now be used instead of the long sequence of words that comprise its definition."
+msgid "The ``;`` terminates the definition. The new word ``LIFT`` may now be used instead of the long sequence of words that comprise its definition."
 msgstr ""
 
 #: ../../appendixa.rst:38
@@ -57,15 +57,15 @@ msgid "Still another defining word is ``CONSTANT``, which is used like this:"
 msgstr ""
 
 #: ../../appendixa.rst:63
-msgid "The new word SEVENTEEN can now be used in place of the actual number 17."
+msgid "The new word ``SEVENTEEN`` can now be used in place of the actual number 17."
 msgstr ""
 
 #: ../../appendixa.rst:65
-msgid "The defining word VARIABLE creates a location for temporary data. VARIABLE is used like this:"
+msgid "The defining word ``VARIABLE`` creates a location for temporary data. ``VARIABLE`` is used like this:"
 msgstr ""
 
 #: ../../appendixa.rst:75
-msgid "This reserves a location which is identified by the name BANANAS."
+msgid "This reserves a location which is identified by the name ``BANANAS``."
 msgstr ""
 
 #: ../../appendixa.rst:77
@@ -73,7 +73,7 @@ msgid "Fetching the contents of this location is the job of the word ``@`` (pron
 msgstr ""
 
 #: ../../appendixa.rst:86
-msgid "fetches the contents of the variable BANANAS. Its counterpart is ``!`` (pronounced “store”), which stores a value into the location, as in:"
+msgid "fetches the contents of the variable ``BANANAS``. Its counterpart is ``!`` (pronounced “store”), which stores a value into the location, as in:"
 msgstr ""
 
 #: ../../appendixa.rst:96
@@ -117,7 +117,7 @@ msgid "The stack operates on a “last-in, first-out” (LIFO) basis. This means
 msgstr ""
 
 #: ../../appendixa.rst:149
-msgid "For instance, a definition called GRID might invoke the phrase 17 SPACES. This temporary activity on the stack will be transparent to any other definition that invokes GRID because the value placed on the stack is removed before the definition of GRID ends. The calling definition might have placed some numbers of its own on the stack prior to calling GRID. These will remain on the stack, unharmed, until GRID has been executed and the calling definition continues."
+msgid "For instance, a definition called ``GRID`` might invoke the phrase 17 ``SPACES``. This temporary activity on the stack will be transparent to any other definition that invokes ``GRID`` because the value placed on the stack is removed before the definition of ``GRID`` ends. The calling definition might have placed some numbers of its own on the stack prior to calling ``GRID``. These will remain on the stack, unharmed, until ``GRID`` has been executed and the calling definition continues."
 msgstr ""
 
 #: ../../appendixa.rst:158
@@ -133,7 +133,7 @@ msgid "The syntax of the ``IF THEN`` construct is as follows:"
 msgstr ""
 
 #: ../../appendixa.rst:172
-msgid "The “flag” is a value on the stack, consumed by IF. A non-zero value indicates true, zero indicates false. A true flag causes the code after ``IF`` (in this case, the word KNOCK) to be executed. The word ``THEN`` marks the end of the conditional phrase; execution resumes with the word OPEN. A false flag causes the code between ``IF`` and ``THEN`` to *not* be executed. In either case, OPEN will be performed."
+msgid "The “flag” is a value on the stack, consumed by IF. A non-zero value indicates true, zero indicates false. A true flag causes the code after ``IF`` (in this case, the word ``KNOCK`` ) to be executed. The word ``THEN`` marks the end of the conditional phrase; execution resumes with the word ``OPEN``. A false flag causes the code between ``IF`` and ``THEN`` to *not* be executed. In either case, ``OPEN`` will be performed."
 msgstr ""
 
 #: ../../appendixa.rst:181
@@ -141,7 +141,7 @@ msgid "The word ``ELSE`` allows an alternate phrase to be executed in the false 
 msgstr ""
 
 #: ../../appendixa.rst:190
-msgid "the word KNOCK will be performed if the flag is true, otherwise the word RING will be performed. Either way, execution will continue starting with OPEN."
+msgid "the word ``KNOCK`` will be performed if the flag is true, otherwise the word ``RING`` will be performed. Either way, execution will continue starting with ``OPEN``."
 msgstr ""
 
 #: ../../appendixa.rst:194

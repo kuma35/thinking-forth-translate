@@ -4,37 +4,38 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-25 23:38+0900\n"
+"PO-Revision-Date: 2019-07-26 00:14+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../appendixa.rst:4
-msgid "Appendix A: Overview of Forth (For Newcomers)"
-msgstr ""
+msgid "Appendix A: Overview of Forth (For Newcomers)"
+msgstr "付録A Forth概観(初心者向け)"
 
 #: ../../appendixa.rst:7
 msgid "The Dictionary"
-msgstr ""
+msgstr "辞書(dictionary)"
 
 #: ../../appendixa.rst:9
 msgid "Forth is expressed in words (and numbers) and is separated by spaces:"
-msgstr ""
+msgstr "Forthはワード(単語)(および数字)で表され、スペースで区切られています。"
 
 #: ../../appendixa.rst:18
 msgid ""
 "Such commands may be typed directly from the keyboard, or edited onto "
 "mass storage then “``LOAD``”ed."
-msgstr ""
+msgstr "そのようなコマンドはキーボードから直接タイプするか、または大容量記憶装置で編集してから ``LOAD`` します。"
 
 #: ../../appendixa.rst:21
 msgid ""
@@ -44,12 +45,15 @@ msgid ""
 " which is used to define a new word in terms of previously defined words."
 " Here is how one might define a new word called LIFT:"
 msgstr ""
+"システムに含まれているかユーザ定義であるかにかかわらず、すべてのワードは「辞書(dictionary)」(リンクリスト)に存在します。「定義ワード」は、辞書に新しい名前を追加するために使用されます。"
+" 定義ワードの1つに ``:`` (「コロン」と発音)があります。これは、以前に定義されたワードを使って新しいワードを定義するために使用されます。"
+" ``LIFT`` という新しいワードを定義する方法は次のとおりです。"
 
 #: ../../appendixa.rst:34
 msgid ""
-"The ``;`` terminates the definition. The new word LIFT may now be used "
-"instead of the long sequence of words that comprise its definition."
-msgstr ""
+"The ``;`` terminates the definition. The new word ``LIFT`` may now be "
+"used instead of the long sequence of words that comprise its definition."
+msgstr "``;`` は定義を終了させます。 その定義を構成する長い一連のワードの代わりに、今後は新しいワード ``LIFT`` を使用することができます。"
 
 #: ../../appendixa.rst:38
 msgid ""
@@ -57,6 +61,8 @@ msgid ""
 "application consists of building increasingly powerful definitions, such "
 "as this one, in terms of previously defined ones."
 msgstr ""
+"Forthのワードは、このように無期限に入れ子にできます。 "
+"Forthアプリケーションを書くことは、以前に定義されたものに関して、このようなますます強力な定義を構築することです。"
 
 #: ../../appendixa.rst:42
 msgid ""
@@ -66,61 +72,67 @@ msgid ""
 "from words defined with colon. ``CODE`` definitions are needed only for "
 "the most time-critical portions of an applications, if at all."
 msgstr ""
+"もう1つの定義ワードは ``CODE`` です。これはコロンの代わりに使用され、ネイティブプロセッサ用の機械語命令でコマンドを定義します。 "
+"``CODE`` で定義されたワードは、コロンで定義されたワードとユーザには区別できません。 ``CODE`` "
+"定義は、あるとしてもアプリケーションの中で最も実行時間的にクリティカルな部分にのみ必要です。"
 
 #: ../../appendixa.rst:51
 msgid "Data Structures"
-msgstr ""
+msgstr "データ構造"
 
 #: ../../appendixa.rst:53
 msgid "Still another defining word is ``CONSTANT``, which is used like this:"
-msgstr ""
+msgstr "さらに別の定義ワードは  ``CONSTANT`` (訳注:定数の意)で、これは次のように使用されます。"
 
 #: ../../appendixa.rst:63
-msgid "The new word SEVENTEEN can now be used in place of the actual number 17."
-msgstr ""
+msgid ""
+"The new word ``SEVENTEEN`` can now be used in place of the actual number "
+"17."
+msgstr "実際の数17の代わりに新しいワード ``SEVENTEEN`` を使用することができます。"
 
 #: ../../appendixa.rst:65
 msgid ""
-"The defining word VARIABLE creates a location for temporary data. "
-"VARIABLE is used like this:"
-msgstr ""
+"The defining word ``VARIABLE`` creates a location for temporary data. "
+"``VARIABLE`` is used like this:"
+msgstr "定義ワード ``VARIABLE`` (訳注:変数の意)は一時データ用の場所を作成します。 ``VARIABLE`` は次のように使われます。"
 
 #: ../../appendixa.rst:75
-msgid "This reserves a location which is identified by the name BANANAS."
-msgstr ""
+msgid "This reserves a location which is identified by the name ``BANANAS``."
+msgstr "これは ``BANANAS`` という名前で識別される場所を予約します。"
 
 #: ../../appendixa.rst:77
 msgid ""
 "Fetching the contents of this location is the job of the word ``@`` "
 "(pronounced “fetch”). For instance,"
-msgstr ""
+msgstr "この場所の内容を取得するのは、ワード ``@`` (フェッチと発音)の仕事です。 例えば、次の通りです。"
 
 #: ../../appendixa.rst:86
 msgid ""
-"fetches the contents of the variable BANANAS. Its counterpart is ``!`` "
-"(pronounced “store”), which stores a value into the location, as in:"
-msgstr ""
+"fetches the contents of the variable ``BANANAS``. Its counterpart is "
+"``!`` (pronounced “store”), which stores a value into the location, as "
+"in:"
+msgstr "このようにして変数 ``BANANAS`` の内容を取得します。 その反対は ``!`` (ストアと発音)で、値をその場所に格納します。"
 
 #: ../../appendixa.rst:96
 msgid ""
 "Forth also provides a word to increment the current value by the given "
 "value; for instance, the phrase"
-msgstr ""
+msgstr "Forthは現在の値を与えられた値で増加させるワードも提供します。 たとえば次のフレーズです。"
 
 #: ../../appendixa.rst:105
 msgid "increments the count by two, making it 102."
-msgstr ""
+msgstr "(先程 ``BANANA`` の格納場所に入れた数値100に)2を加え、102にします。"
 
 #: ../../appendixa.rst:107
 msgid ""
 "Forth provides many other data structure operators, but more importantly,"
 " it provides the tools necessary for the programmer to create any type of"
 " data structure needed for the application."
-msgstr ""
+msgstr "Forthは他にも多くのデータ構造演算子を提供しますが、さらに重要なことには、アプリケーションに必要なあらゆるタイプのデータ構造を作成するためにプログラマに必要なツールを提供します。"
 
 #: ../../appendixa.rst:114
 msgid "The Stack"
-msgstr ""
+msgstr "スタック"
 
 #: ../../appendixa.rst:116
 msgid ""
@@ -128,102 +140,103 @@ msgid ""
 "required by many other routines and/or at unpredictable times. They are "
 "*not* used for the local passing of data between the definitions. For "
 "this, Forth employs a much simpler mechanism: the data stack."
-msgstr ""
+msgstr "Forthでは、変数や配列は、他の多くのルーチンが必要とする可能性がある値や予期しないときに値を保存するために使用されます。 それらは定義間でのデータのローカルな受け渡しには使われません。 そのためには、Forthはもっと単純なメカニズムを採用しています。それはデータ・スタックです。"
 
 #: ../../appendixa.rst:122
 msgid ""
 "When you type a number, it goes on the stack. When you invoke a word "
 "which has numeric input, it will take it from the stack. Thus the phrase"
-msgstr ""
+msgstr "数字を入力すると、それはスタックに置かれます。 あなたが数値入力を持つワードを呼び出すとき、それはスタックからそれを取ります。 したがって以下のフレーズ"
 
 #: ../../appendixa.rst:131
 msgid ""
 "will display seventeen blanks on the current output device. “17” pushes "
 "the binary value 17 onto the stack; the word ``SPACES`` consumes it."
-msgstr ""
+msgstr "これは、現在の出力デバイスに17個の空白を出力します。 ``17`` はバイナリ値17をスタックにプッシュします。 ``SPACES`` というワードがそれを消費します。"
 
 #: ../../appendixa.rst:135
 msgid "A constant also pushes its value onto the stack; thus the phrase:"
-msgstr ""
+msgstr "定数もその値をスタックにプッシュします。 したがって、以下のフレーズ"
 
 #: ../../appendixa.rst:143
 msgid "has the same effect."
-msgstr ""
+msgstr "これは上記と同じ効果が得られます。"
 
 #: ../../appendixa.rst:145
 msgid ""
 "The stack operates on a “last-in, first-out” (LIFO) basis. This means "
 "that data can be passed between words in an orderly, modular way, "
 "consistent with the nesting of colon definitions."
-msgstr ""
+msgstr "スタックは、後入れ先出し(LIFO)方式で動作します。 これは、コロン定義の入れ子と一致して、データが整然としたモジュール形式でワード間で受け渡されることを意味します。"
 
 #: ../../appendixa.rst:149
 msgid ""
-"For instance, a definition called GRID might invoke the phrase 17 SPACES."
-" This temporary activity on the stack will be transparent to any other "
-"definition that invokes GRID because the value placed on the stack is "
-"removed before the definition of GRID ends. The calling definition might "
-"have placed some numbers of its own on the stack prior to calling GRID. "
-"These will remain on the stack, unharmed, until GRID has been executed "
-"and the calling definition continues."
-msgstr ""
+"For instance, a definition called ``GRID`` might invoke the phrase 17 "
+"``SPACES``. This temporary activity on the stack will be transparent to "
+"any other definition that invokes ``GRID`` because the value placed on "
+"the stack is removed before the definition of ``GRID`` ends. The calling "
+"definition might have placed some numbers of its own on the stack prior "
+"to calling ``GRID``. These will remain on the stack, unharmed, until "
+"``GRID`` has been executed and the calling definition continues."
+msgstr "例えば、 ``GRID`` と呼ばれる定義はフレーズ ``17 SPACES`` を呼び出すかもしれません。 スタック上のこの一時的な動作は、スタックに置かれた値が ``GRID`` の定義が終了する前に削除されるため、 ``GRID`` を呼び出す他の定義に対して透過的になります。 呼び出し元の定義は ``GRID`` を呼び出す前に自分自身のいくつかの数をスタックに置いたかもしれません。 これらは、 ``GRID`` が実行されて呼び出し元の定義が継続するまで、無傷のままスタックに残ります。"
 
 #: ../../appendixa.rst:158
 msgid "Control Structures"
-msgstr ""
+msgstr "制御構造"
 
 #: ../../appendixa.rst:160
 msgid ""
 "Forth provides all the control structures needed for structured, GOTO-"
 "less programming."
-msgstr ""
+msgstr "Forthは、構造化された、GOTO無しのプログラミングに必要なすべての制御構造を提供します。"
 
 #: ../../appendixa.rst:164
 msgid "The syntax of the ``IF THEN`` construct is as follows:"
-msgstr ""
+msgstr "``IF…THEN`` 構造の構文は以下のとおりです。"
 
 #: ../../appendixa.rst:172
 msgid ""
 "The “flag” is a value on the stack, consumed by IF. A non-zero value "
 "indicates true, zero indicates false. A true flag causes the code after "
-"``IF`` (in this case, the word KNOCK) to be executed. The word ``THEN`` "
-"marks the end of the conditional phrase; execution resumes with the word "
-"OPEN. A false flag causes the code between ``IF`` and ``THEN`` to *not* "
-"be executed. In either case, OPEN will be performed."
-msgstr ""
+"``IF`` (in this case, the word ``KNOCK`` ) to be executed. The word "
+"``THEN`` marks the end of the conditional phrase; execution resumes with "
+"the word ``OPEN``. A false flag causes the code between ``IF`` and "
+"``THEN`` to *not* be executed. In either case, ``OPEN`` will be "
+"performed."
+msgstr "「フラグ」は、 ``IF`` によって消費されるスタック上の値です。 ゼロ以外の値はtrueを示し、ゼロはfalseを示します。 trueのフラグは ``IF`` の後のコード(この場合は ``KNOCK`` というワード)を実行させます。 ワード ``THEN`` は条件付きフレーズの終わりを示します。 実行は ``OPEN`` というワードで再開されます。 falseフラグは ``IF`` と ``THEN`` の間のコードを実行しません。 どちらの場合も、 ``OPEN`` が実行されます。"
 
 #: ../../appendixa.rst:181
 msgid ""
 "The word ``ELSE`` allows an alternate phrase to be executed in the false "
 "case. In the phrase:"
-msgstr ""
+msgstr "``ELSE`` というワードは、falseの場合に代替フレーズを実行することを可能にします。 以下のフレーズをご覧ください。"
 
 #: ../../appendixa.rst:190
 msgid ""
-"the word KNOCK will be performed if the flag is true, otherwise the word "
-"RING will be performed. Either way, execution will continue starting with"
-" OPEN."
-msgstr ""
+"the word ``KNOCK`` will be performed if the flag is true, otherwise the "
+"word ``RING`` will be performed. Either way, execution will continue "
+"starting with ``OPEN``."
+msgstr "フラグがtrueならば、ワード ``KNOCK`` が実行され、そうでなければワード ``RING`` が実行されます。 いずれにせよ、続きの実行は ``OPEN`` からになります。"
 
 #: ../../appendixa.rst:194
 msgid "Forth also provides for indexed loops in the form"
-msgstr ""
+msgstr "Forthは以下の形でインデックス付きループも提供します。"
 
 #: ../../appendixa.rst:203
 msgid "and indefinite loops in the forms:"
-msgstr ""
+msgstr "そして不定ループ形式は以下。"
 
 #: ../../appendixa.rst:211
 msgid "and"
-msgstr ""
+msgstr "と"
 
 #: ../../appendixa.rst:220
 msgid "For the Whole Story"
-msgstr ""
+msgstr "全般が知りたい場合"
 
 #: ../../appendixa.rst:222
 msgid ""
 "For a complete introduction to the Forth command set, read *Starting "
 "Forth*, published by Prentice-Hall."
-msgstr ""
+msgstr "Forthコマンドセットの詳細については、Prentice-Hallが発行している *Starting Forth* を参照してください。(邦訳:「FORTH入門」原 道宏 訳 工学社 昭和59年4月30日 工学社)"
 

@@ -4,15 +4,15 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-07-26 22:45+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../appendixb.rst:4
 msgid "Appendix B: Defining DOER/MAKE"
-msgstr ""
+msgstr "付録B DOER/MAKEの定義"
 
 #: ../../appendixb.rst:6
 msgid ""
@@ -32,14 +32,14 @@ msgid ""
 "this section doesn’t give you enough information to get them running, you"
 " probably have an unusual system. Please don’t ask me for help; ask your "
 "Forth vendor."
-msgstr ""
+msgstr "あなたのシステムに ``DOER`` と ``MAKE`` がまだ定義されていない場合、この付録はそれらをインストールするのを助け、必要ならばそれらがどのように動作するかを理解するためのものです。 その性質上、この構造はシステムに依存するため、この付録の最後にいくつかの異なる実装を含めました。それらのうちの1つがあなたのために働くことを願っています。 もしこの節それらを実行するのに十分な情報をあなたに与えないなら、あなたのForthシステムがたぶん特殊なものです。私たちに助けを求めないで、あなたのForthベンダーに尋ねてください。"
 
 #: ../../appendixb.rst:16
 msgid ""
 "Here’s how it works. ``DOER`` is a defining word that creates an entry "
 "with one cell in its parameter field. That cell contains the vector "
 "address, and is initialized to point to a no-op word called ``NOTHING``."
-msgstr ""
+msgstr "その仕組みは次のとおりです。 ``DOER`` はパラメータフィールドに一つのセルを持つエントリを作成する定義語です。 そのセルはベクタアドレスを含み、 ``NOTHING`` と呼ばれる無操作ワードを指すように初期化されます。"
 
 #: ../../appendixb.rst:21
 msgid ""
@@ -48,35 +48,35 @@ msgid ""
 " stack. That’s all. Forth execution then continues with this address on "
 "the return stack, which will cause the vectored function to be performed."
 " It’s like saying (in ’83-Standard)"
-msgstr ""
+msgstr "``DOER`` の子はその ``DOES>`` の ``DOER`` コードを実行します。これは2つのことだけを行います。つまり、ベクトルアドレスを取得してリターンスタックに配置する。 それで全部です。 その後、Forthの実行(execution)がリターンスタックのこのアドレスで続行されます。これにより、ベクトル機能が実行されます。(FORTH-83規格に関して)言いたいことがあります。"
 
 #: ../../appendixb.rst:34
 msgid ""
 "which executes ``NOTHING`` . (This trick only works with colon "
 "definitions.)"
-msgstr ""
+msgstr "これは ``NOTHING`` を実行します(このトリックはコロンの定義でのみ機能します)。"
 
 #: ../../appendixb.rst:36
 msgid "Here’s an illustration of the dictionary entry created when we enter"
-msgstr ""
+msgstr "次のように入力したときに作成された辞書エントリの図です。"
 
 #: ../../appendixb.rst:40
 msgid "Now suppose we define:"
-msgstr ""
+msgstr "今、次のように定義したとします。"
 
 #: ../../appendixb.rst:48
 msgid "that is, we define a word that can vector ``JOE`` to do a carriage return."
-msgstr ""
+msgstr "つまり、キャリッジリターン ``CR`` するために ``JOE`` をベクトル化できるワードを定義します。"
 
 #: ../../appendixb.rst:50
 msgid "Here’s a picture of the compiled definition of ``TEST`` :"
-msgstr ""
+msgstr "以下はコンパイルされた ``TEST`` の定義の図です。"
 
 #: ../../appendixb.rst:54
 msgid ""
 "Let’s look at the code for ``MAKE``. Since we’re using ``MAKE`` inside a "
 "colon definition, ``STATE`` will be true, and we’ll execute the phrase:"
-msgstr ""
+msgstr "``MAKE`` のコードを見てみましょう。 コロンの定義の中で ``MAKE`` を使っているので、 ``STATE`` がtrueになり、その次のフレーズを実行します。"
 
 #: ../../appendixb.rst:65
 msgid ""
@@ -85,93 +85,93 @@ msgid ""
 " why we save its address in the variable ``MARKER``, later). Now let’s "
 "look at what ``(MAKE)`` does when we execute our new definition ``TEST`` "
 ":"
-msgstr ""
+msgstr "``MAKE`` がどのようにしてランタイムルーチンのアドレス ``(MAKE)`` をコンパイルし、その後にゼロが続いたかを見ることができます(ゼロの意味と、そのアドレスを変数 ``MARKER`` に保存する理由については後で説明します)。 新しい定義 ``TEST`` を実行したときの ``(MAKE)`` の動作を見てみましょう。"
 
 #: ../../appendixb.rst:75
 msgid "R>"
-msgstr ""
+msgstr "R>"
 
 #: ../../appendixb.rst:76
 msgid ""
 "Gets an address from the return stack. This address points to the cell "
 "just past ``(MAKE)`` , where the zero is."
-msgstr ""
+msgstr "リターンスタックからアドレスを取得します。 このアドレスは ``(MAKE)`` の直後の0を格納したセルを指しています。"
 
 #: ../../appendixb.rst:79 ../../appendixb.rst:82
 msgid "DUP 2+"
-msgstr ""
+msgstr "DUP 2+"
 
 #: ../../appendixb.rst:80
 msgid ""
 "Gets the address of the second cell after ``(MAKE)`` , where the address "
 "of ``JOE`` is."
-msgstr ""
+msgstr "``(MAKE)`` の後の2番目のセルのアドレスを取得します。ここで、 ``JOE`` のアドレスは…"
 
 #: ../../appendixb.rst:83
 msgid ""
 "Gets the address of the third cell after ``(MAKE)`` , where the code we "
 "want to execute begins.  The stack now has: ( 'marker, 'joe, 'code --- )"
-msgstr ""
+msgstr "実行したいコードが始まる、 ``(MAKE)`` の後の3番目のセルのアドレスを取得します。 スタックは次のようになりました。 ( 'marker 'joe 'code ---)"
 
 #: ../../appendixb.rst:87
 msgid "SWAP @ >BODY"
-msgstr ""
+msgstr "SWAP @ >BODY"
 
 #: ../../appendixb.rst:88
 msgid ""
 "Fetches the contents of the address pointing to ``JOE`` (i.e., gets the "
 "address ``JOE`` and computes ``JOE`` s pfa, where the vector address "
 "goes."
-msgstr ""
+msgstr "``JOE`` を指し示すアドレスの内容を取得します(すなわち、``JOE`` のアドレスを取得しそして、``JOE`` のpfaを計算し、そのベクトル・アドレスへ行きます)。"
 
 #: ../../appendixb.rst:92
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ../../appendixb.rst:93
 msgid ""
 "Stores the address where the new code ``CR`` , etc.) into the vector "
 "address of ``JOE`` ."
-msgstr ""
+msgstr "新しいコード( ``CR`` など)が格納されているアドレスを ``JOE`` のベクタアドレスに格納します。"
 
 #: ../../appendixb.rst:97
 msgid ""
 "Now ``JOE`` points inside the definition of ``TEST`` .  When we type "
 "``JOE`` , we'll do a carriage return."
-msgstr ""
+msgstr "今や ``JOE`` が ``TEST`` の定義の中を指しています。 ``JOE`` と打つと、改行します。"
 
 #: ../../appendixb.rst:100
 msgid "@ ?DUP IF >R THEN"
-msgstr ""
+msgstr "@ ?DUP IF >R THEN"
 
 #: ../../appendixb.rst:101
 msgid ""
 "Fetches the contents of the cell containing zero.  Since the cell does "
 "contain zero, the ``IF THEN`` statement is not performed."
-msgstr ""
+msgstr "ゼロを含むセルの内容を取得します。 セルにはゼロが含まれているので、 ``IF…THEN`` ステートメントは実行されません。"
 
 #: ../../appendixb.rst:106
 msgid ""
 "That’s the basic idea. But what about that cell containing zero? That’s "
 "for the use of ``;AND``. Suppose we changed TEST to read:"
-msgstr ""
+msgstr "それが基本的な考え方です。 しかし、ゼロを含むセルはどうでしょうか。 これは  ``;AND`` を使うためのものです。 TESTを以下の通り変更したとします。"
 
 #: ../../appendixb.rst:116
 msgid ""
 "That is, when we invoke TEST we’ll vector JOE to do a ``CR``, and we’ll "
 "do a ``SPACE`` right now. Here’s what this new version of TEST will look "
 "like:"
-msgstr ""
+msgstr "つまり、TESTを起動すると、JOEに ``CR`` を実行させ、今すぐ ``SPACE`` を実行させます。 この新しいバージョンのTESTは次のようになります。"
 
 #: ../../appendixb.rst:122
 msgid "Here’s the definition of ``;AND``:"
-msgstr ""
+msgstr "以下が ``;AND`` の定義です。"
 
 #: ../../appendixb.rst:130
 msgid ""
 "We can see that ``;AND`` has compiled an ``EXIT``, just as semicolon "
 "would."
-msgstr ""
+msgstr "セミコロンと同じように、 ``;AND`` が ``EXIT`` をコンパイルしたことがわかります。"
 
 #: ../../appendixb.rst:134
 msgid ""
@@ -180,7 +180,7 @@ msgid ""
 "second string of code beginning with ``SPACE``) into the cell previously "
 "containing zero. Now ``(MAKE)`` has a pointer to the place to resume "
 "execution. The phrase"
-msgstr ""
+msgstr "次に、 ``MAKE`` がそのセルのアドレスを ``MARKER`` という変数に保存したことを思い出してください。 これで ``;AND`` は ``HERE`` ( ``SPACE`` で始まるコードの2番目の文字列の場所)を、以前はゼロを含んでいたセルに格納します。 これで ``(MAKE)`` は実行を再開する場所へのポインタを持ちます。以下のフレーズをご覧ください。"
 
 #: ../../appendixb.rst:148
 msgid ""
@@ -188,13 +188,13 @@ msgid ""
 "``SPACE``. Thus execution will skip over the code between ``MAKE`` and "
 "``;AND`` and continue with the remainder of the definition up to "
 "semicolon."
-msgstr ""
+msgstr "``SPACE`` で始まるコードのアドレスをリターンスタックに残します。 したがって、実行は ``MAKE`` と ``;AND`` の間のコードをスキップして残りの定義をセミコロンまで続けます。"
 
 #: ../../appendixb.rst:153
 msgid ""
 "The word ``UNDO`` ticks the name of a ``DOER`` word, and stores the "
 "address of ``NOTHING`` into it."
-msgstr ""
+msgstr "``UNDO`` というワードは、 ``DOER`` というワードの名前を刻み(tick)、その中に ``NOTHING`` というアドレスを格納します。"
 
 #: ../../appendixb.rst:157
 msgid ""
@@ -202,7 +202,7 @@ msgid ""
 "``MAKE`` outside of a colon definition to create a forward reference, you"
 " may not be able to find the most recently defined word. For instance, if"
 " you have:"
-msgstr ""
+msgstr "最後の注意点：いくつかのシステムでは問題に遭遇するかもしれません。 前方参照を作成するためにコロンの定義の外側で ``MAKE`` を使うと、最近定義されたワードを見つけることができないかもしれません。 たとえば、次のようにします。"
 
 #: ../../appendixb.rst:169
 msgid ""
@@ -210,28 +210,28 @@ msgid ""
 " due to the placement of ``SMUDGE`` . As a solution, try rearranging the "
 "order of definitions or, if necessary, put ``MAKE`` code inside a "
 "definition which you then execute:"
-msgstr ""
+msgstr "あなたのシステムは、refrainが定義されていないと考えるかもしれません。 問題は ``SMUDGE`` の配置によるものです。 解決策として、定義の順番を並べ替えるか、必要ならば、 ``MAKE`` コードを定義の中に入れてから実行してください。"
 
 #: ../../appendixb.rst:180
 msgid ""
 "In Laboratory Microsystems PC/FORTH 2.0, the ``UNSMUDGE`` on line 9 "
 "handles the problem. This problem does not arise with the "
 "Laxen/Perry/Harris model."
-msgstr ""
+msgstr "Laboratory Microsystems PC / FORTH 2.0では、9行目の ``UNSMUDGE`` が問題を処理します。 この問題は、Laxen/Perry/ Harrisモデルでは発生しません。"
 
 #: ../../appendixb.rst:184
 msgid ""
 "The final screen is an example of using ``DOER/MAKE``. After loading the "
 "block, enter"
-msgstr ""
+msgstr "最後のスクリーン ``DOER/MAKE`` を使った例です。 ブロックをロードしたら、以下の通り入力します。"
 
 #: ../../appendixb.rst:193
 msgid "then enter"
-msgstr ""
+msgstr "それから入力"
 
 #: ../../appendixb.rst:201
 msgid ""
 "followed by return, as many times as you like (you’ll get a different "
 "reason each time)."
-msgstr ""
+msgstr "その後は、好きなだけ何度でも戻ります（毎回異なる理由が表示されます）。"
 

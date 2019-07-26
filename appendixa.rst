@@ -1,6 +1,6 @@
 
 *********************************************
-Appendix A: Overview of Forth (For Newcomers)
+Appendix A: Overview of Forth (For Newcomers)
 *********************************************
 
 The Dictionary
@@ -31,7 +31,7 @@ defined words. Here is how one might define a new word called LIFT:
 
 ..
 
-The ``;`` terminates the definition. The new word LIFT
+The ``;`` terminates the definition. The new word ``LIFT``
 may now be used instead of the long sequence of words that comprise its
 definition.
 
@@ -60,11 +60,11 @@ which is used like this:
 
 ..
 
-The new word SEVENTEEN can now be used in place of the actual number 17.
+The new word ``SEVENTEEN`` can now be used in place of the actual number 17.
 
 The defining word
-VARIABLE creates a location for temporary
-data. VARIABLE is used like this:
+``VARIABLE`` creates a location for temporary
+data. ``VARIABLE`` is used like this:
 
 .. code-block:: none
    
@@ -72,7 +72,7 @@ data. VARIABLE is used like this:
 
 ..
 
-This reserves a location which is identified by the name BANANAS.
+This reserves a location which is identified by the name ``BANANAS``.
 
 Fetching the contents of this location is the job of the word
 ``@`` (pronounced “fetch”). For instance,
@@ -83,7 +83,7 @@ Fetching the contents of this location is the job of the word
 
 ..
 
-fetches the contents of the variable BANANAS. Its counterpart is
+fetches the contents of the variable ``BANANAS``. Its counterpart is
 ``!`` (pronounced “store”), which stores a value into
 the location, as in:
 
@@ -146,12 +146,12 @@ The stack operates on a “last-in, first-out” (LIFO) basis. This means
 that data can be passed between words in an orderly, modular way,
 consistent with the nesting of colon definitions.
 
-For instance, a definition called GRID might invoke the phrase 17
-SPACES. This temporary activity on the stack will be transparent to any
-other definition that invokes GRID because the value placed on the stack
-is removed before the definition of GRID ends. The calling definition
+For instance, a definition called ``GRID`` might invoke the phrase 17
+``SPACES``. This temporary activity on the stack will be transparent to any
+other definition that invokes ``GRID`` because the value placed on the stack
+is removed before the definition of ``GRID`` ends. The calling definition
 might have placed some numbers of its own on the stack prior to calling
-GRID. These will remain on the stack, unharmed, until GRID has been
+``GRID``. These will remain on the stack, unharmed, until ``GRID`` has been
 executed and the calling definition continues.
 
 Control Structures
@@ -172,10 +172,10 @@ The syntax of the ``IF THEN`` construct is as follows:
 The “flag” is a value on the stack, consumed
 by IF. A non-zero value indicates true, zero indicates false. A true
 flag causes the code after ``IF`` (in this case, the
-word KNOCK) to be executed. The word ``THEN`` marks
-the end of the conditional phrase; execution resumes with the word OPEN.
+word ``KNOCK`` ) to be executed. The word ``THEN`` marks
+the end of the conditional phrase; execution resumes with the word ``OPEN``.
 A false flag causes the code between ``IF`` and
-``THEN`` to *not* be executed. In either case, OPEN
+``THEN`` to *not* be executed. In either case, ``OPEN``
 will be performed.
 
 The word ``ELSE`` allows an
@@ -187,9 +187,9 @@ alternate phrase to be executed in the false case. In the phrase:
 
 ..
 
-the word KNOCK will be performed if the flag is true, otherwise the word
-RING will be performed. Either way, execution will continue starting
-with OPEN.
+the word ``KNOCK`` will be performed if the flag is true, otherwise the word
+``RING`` will be performed. Either way, execution will continue starting
+with ``OPEN``.
 
 Forth also provides for indexed loops in the
 form
