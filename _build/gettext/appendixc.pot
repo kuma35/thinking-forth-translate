@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2019-07-26 22:56+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../appendixc.rst:4
-msgid "Appendix C: Other Utilities Described in This Book"
+msgid "Appendix C: Other Utilities Described in This Book"
 msgstr ""
 
 #: ../../appendixc.rst:6
@@ -37,11 +37,11 @@ msgid "From Chapter Five"
 msgstr ""
 
 #: ../../appendixc.rst:28
-msgid "The word ``\\bs`` can be defined as:"
+msgid "The word ``\\`` can be defined as:"
 msgstr ""
 
 #: ../../appendixc.rst:38
-msgid "If you decide not to use ``EXIT`` to terminate a screen, you can define ``\\bs S`` as:"
+msgid "If you decide not to use ``EXIT`` to terminate a screen, you can define ``\\S`` as:"
 msgstr ""
 
 #: ../../appendixc.rst:47

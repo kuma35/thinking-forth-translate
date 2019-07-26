@@ -1,6 +1,6 @@
 
 **************************************************
-Appendix C: Other Utilities Described in This Book
+Appendix C: Other Utilities Described in This Book
 **************************************************
 
 This appendix is here to help you define some of
@@ -25,7 +25,7 @@ that will work in ’83 Standard is:
 From Chapter Five
 =================
 
-The word ``\bs``
+The word ``\``
 can be defined as:
 
 .. code-block:: none
@@ -36,7 +36,7 @@ can be defined as:
 ..
 
 If you decide not to use ``EXIT`` to terminate a
-screen, you can define ``\bs S`` as:
+screen, you can define ``\S`` as:
 
 .. code-block:: none
    

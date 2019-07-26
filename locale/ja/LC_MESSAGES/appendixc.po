@@ -4,23 +4,24 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-26 22:56+0900\n"
+"PO-Revision-Date: 2019-07-26 23:06+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../appendixc.rst:4
-msgid "Appendix C: Other Utilities Described in This Book"
-msgstr ""
+msgid "Appendix C: Other Utilities Described in This Book"
+msgstr "付録C この本で説明されているその他のユーティリティ"
 
 #: ../../appendixc.rst:6
 msgid ""
@@ -28,55 +29,57 @@ msgid ""
 " this book that may not exist in your system. Definitions are given in "
 "Forth-83 Standard."
 msgstr ""
+"この付録は、本書に記載されているが、あなたのシステムに存在しない可能性があるいくつかのワードを定義するのに役立ちます。 "
+"定義はFORTH-83規格に準拠しています。"
 
 #: ../../appendixc.rst:11
 msgid "From Chapter Four"
-msgstr ""
+msgstr "第４章より"
 
 #: ../../appendixc.rst:13
 msgid "A definition of ``ASCII`` that will work in ’83 Standard is:"
-msgstr ""
+msgstr "FORTH-83規格で動作する ``ASCII`` の定義は次のとおりです。"
 
 #: ../../appendixc.rst:26
 msgid "From Chapter Five"
-msgstr ""
+msgstr "第５章より"
 
 #: ../../appendixc.rst:28
-msgid "The word ``\\bs`` can be defined as:"
-msgstr ""
+msgid "The word ``\\`` can be defined as:"
+msgstr "``\\`` というワードは次のように定義できます。"
 
 #: ../../appendixc.rst:38
 msgid ""
 "If you decide not to use ``EXIT`` to terminate a screen, you can define "
-"``\\bs S`` as:"
-msgstr ""
+"``\\S`` as:"
+msgstr "スクリーンを終了させるために ``EXIT`` を使わないことにした場合、 ``\\S`` を次のように定義することができます。"
 
 #: ../../appendixc.rst:47
 msgid "The word ``FH`` can be defined simply as:"
-msgstr ""
+msgstr "``FH`` というワードは、単に次のように定義できます。"
 
 #: ../../appendixc.rst:57
 msgid "This factoring allows you to use ``FH`` in many ways, e.g.:"
-msgstr ""
+msgstr "このファクタリング(要素分解)では、 ``FH`` をいろいろな意味で使うことができます。例えば以下の通り。"
 
 #: ../../appendixc.rst:65 ../../appendixc.rst:119
 msgid "or"
-msgstr ""
+msgstr "または"
 
 #: ../../appendixc.rst:73
 msgid ""
 "A slightly more complicated version of ``FH`` also lets you edit or load "
 "a screen with a phrase such as “14 FH LIST,” relative to the screen that "
 "you just listed ``(SCR)``:"
-msgstr ""
+msgstr "``FH`` のもう少し複雑なバージョンでは、 ``(SCR)`` の直前のスクリーンに関連して、 ``14 FH LIST`` のようなフレーズでスクリーンを編集またはロードすることもできます。"
 
 #: ../../appendixc.rst:84
 msgid "``BL`` is a simple constant:"
-msgstr ""
+msgstr "``BL`` は単純な定数です。"
 
 #: ../../appendixc.rst:93
 msgid "``TRUE`` and ``FALSE`` can be defined as:"
-msgstr ""
+msgstr "``TRUE`` と ``FALSE`` は次のように定義できます。"
 
 #: ../../appendixc.rst:104
 msgid ""
@@ -86,14 +89,16 @@ msgid ""
 "’83, however, “true” is indicated with hex FFFF, which is the signed "
 "number -1 (all bits set)."
 msgstr ""
+"( ``IF`` や ``UNTIL`` のようなForthの制御ワードは、ゼロをfalse、ゼロ以外の値をtrueと解釈します。 FORTH-83以前では、値1がtrueを表すという慣例でした。\n"
+"FORTH-83以降では、trueは16進数のFFFFで示されます。これは、符号付き数値-1(すべてのビットが設定されている)です。"
 
 #: ../../appendixc.rst:109
 msgid "``WITHIN`` can be defined in high level like this:"
-msgstr ""
+msgstr "``WITHIN`` は次のように高レベルで定義することができます。"
 
 #: ../../appendixc.rst:129
 msgid "From Chapter Eight"
-msgstr ""
+msgstr "第８章より"
 
 #: ../../appendixc.rst:131
 msgid ""
@@ -101,9 +106,9 @@ msgid ""
 "``DO`` ``LOOP`` s. If ``DO`` keeps two items on the return stack (the "
 "index and the limit), ``LEAP`` must drop both of them plus one more "
 "return-stack item to exit:"
-msgstr ""
+msgstr "``LEAP`` の実装はあなたのシステムが ``DO…LOOP`` をどのように実装しているかに依存します。 ``DO`` がリターンスタックに2つの項目(インデックスと制限)を保持している場合、 ``LEAP`` はそれら両方と1つのリターンスタック項目を削除する必要があります。"
 
 #: ../../appendixc.rst:144
 msgid "If ``DO`` keeps *three* items on the return stack, it must be defined:"
-msgstr ""
+msgstr "``DO`` がリターンスタックに3項目を保持する場合、以下の通り定義しなければなりません。"
 
