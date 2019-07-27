@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-13 12:39+0900\n"
-"PO-Revision-Date: 2019-07-17 23:38+0900\n"
+"PO-Revision-Date: 2019-07-27 20:44+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -141,7 +141,7 @@ msgid ""
 " Two<chapter2>` we described the rates for computing the cost of a phone "
 "call along with the rules for applying the rates."
 msgstr ""
-"ルールを決めます。 あなたが知っているすべての事実を確認してください。 :doc:`第２章<chapter2>` "
+"規則を決めます。 あなたが知っているすべての事実を確認してください。 :doc:`第２章<chapter2>` "
 "では、電話料金計算と料金を適用するための規則を説明しました。"
 
 # picture 風景、景色
@@ -168,7 +168,7 @@ msgid ""
 " air."
 msgstr ""
 "できるだけ多くの問題についての情報を頭に入れておくようにしてください。 "
-"一目で最大限の情報を確認するのに役立つように、単語、フレーズ、図、表、またはデータやルールの任意の種類のグラフィック表現を使用してください。 "
+"一目で最大限の情報を確認するのに役立つように、単語、フレーズ、図、表、またはデータや規則の任意の種類のグラフィック表現を使用してください。 "
 "あなたが息を大きく吸い込んで止めた時のように、解決する必要がある問題の要件を頭の中に詰め込んで、そして一気にはき出すようにアイデアの奔流を生み出して下さい。"
 
 #: ../../chapter4.rst:80
@@ -587,7 +587,7 @@ msgid ""
 "buck.\""
 msgstr ""
 "私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 "
-"私の最初のルールは、「不可能なことは何もない」です。 私の2番目のルールは、「忘れないでください、目的は支出することです」です。"
+"私の最初の規則は、「不可能なことは何もない」です。 私の2番目の規則は、「忘れないでください、目的は支出することです」です。"
 
 #: ../../chapter4.rst:351
 msgid ""
@@ -806,7 +806,7 @@ msgstr ""
 
 #: ../../chapter4.rst:465
 msgid "Here are some elementary rules of Forth’s natural syntax:"
-msgstr "Forthの自然な構文の基本的なルールは次のとおりです。"
+msgstr "Forthの自然な構文の基本的な規則は次のとおりです。"
 
 #: ../../chapter4.rst:469
 msgid "Let numbers precede names."
@@ -828,7 +828,7 @@ msgid ""
 "hearing. For instance, the Forth word ``+`` expects to be preceded by "
 "both arguments, as in"
 msgstr ""
-"です。時々、このルールは(英語圏の)私たちが聞き慣れている順番に違反します。 たとえば、Forthのワード ``+`` "
+"です。時々、この規則は(英語圏の)私たちが聞き慣れている順番に違反します。 たとえば、Forthのワード ``+`` "
 "の前には、以下ののように両方の引数が置かれることを想定しています。"
 
 #: ../../chapter4.rst:488
@@ -962,7 +962,7 @@ msgstr ""
 msgid ""
 "The rule also applies to defined words that you want to refer to, but not"
 " execute in the usual way. An example is ``FORGET`` , as in"
-msgstr "このルールは参照したい定義済ワードにも適用されますが、通常の方法では実行されません。その一つの例として以下の ``FORGET`` があります。"
+msgstr "この規則は参照したい定義済ワードにも適用されますが、通常の方法では実行されません。その一つの例として以下の ``FORGET`` があります。"
 
 #: ../../chapter4.rst:592
 msgid ""
@@ -978,7 +978,7 @@ msgstr "定義に引数を消費させます。"
 msgid ""
 "This syntax rule is more a convention of good Forth programming than a "
 "preference of Forth."
-msgstr "この構文ルールは、Forth的に必要というより、優れたForthプログラミングの規則です。"
+msgstr "この構文規則は、Forth的に必要というより、優れたForthプログラミングの規則です。"
 
 #: ../../chapter4.rst:602
 msgid ""
@@ -1035,12 +1035,12 @@ msgid ""
 "starting address, we add “0” to ``TABLE``. To compute the starting "
 "address of the “second” record, we add “8” to ``TABLE``."
 msgstr ""
-"例として、レコード長8バイトのテーブルがあるとします。 最初のレコードはテーブルの最初の8バイトを占めます。 その開始アドレスを計算するために、 "
+"例として、レコード長8バイトの表があるとします。 最初のレコードは表の最初の8バイトを占めます。 その開始アドレスを計算するために、 "
 "``TABLE`` に \"0\"を追加します。 「2番目」のレコードの開始アドレスを計算するには、「8」を ``TABLE`` に追加します。"
 
 #: ../../chapter4.rst:653
 msgid "A table of 8-byte records."
-msgstr "レコード長8バイトのテーブル"
+msgstr "レコード長8バイトの表"
 
 #: ../../chapter4.rst:655
 msgid "It’s easy to derive a formula to achieve these results:"
@@ -1114,7 +1114,7 @@ msgid ""
 "conventions are essential for readable code. You’ll find examples of this"
 " rule in the words ``TYPE``, ``ERASE``, and ``BLANK``."
 msgstr ""
-"繰り返しになりますが、これは規約であり、Forthの要求ではありませんが、そのような規約は読み取り可能なコードには不可欠です。 このルールの例は "
+"繰り返しになりますが、これは規約であり、Forthの要求ではありませんが、そのような規約は読み取り可能なコードには不可欠です。 この規則の例は "
 "``TYPE`` 、 ``ERASE`` 、そして ``BLANK`` の中にあります。"
 
 #: ../../chapter4.rst:702
@@ -1131,7 +1131,7 @@ msgstr "読みやすさに関するもう1つの規約。 例えば、いくつ�
 msgid ""
 "copies Screen 22 to Screen 37. The syntax of ``CMOVE`` incorporates both "
 "this convention and the previous convention:"
-msgstr "は、スクリーン22をスクリーン37にコピーします。以下の ``CMOVE`` の構文には、このルールと前のルールの両方が組み込まれています。"
+msgstr "は、スクリーン22をスクリーン37にコピーします。以下の ``CMOVE`` の構文には、この規則と前の規則の両方が組み込まれています。"
 
 #: ../../chapter4.rst:720
 msgid "Avoid expectations (in the input stream)."
@@ -1241,9 +1241,9 @@ msgid ""
 "compiler (the function that compiles colon definitions), caricatured in  "
 ":numref:`fig4-7` . It has very few rules:"
 msgstr ""
-"このルールは「期待を避ける」の必然的な結果です。ワードに独自の働きをさせることは、Forth哲学の奇妙なことの1つです。　"
+"この規則は「期待を避ける」の必然的な結果です。ワードに独自の働きをさせることは、Forth哲学の奇妙なことの1つです。　"
 ":numref:`fig4-7` の「FORTH COMPILER」(Forthコンパイラ、コロン定義をコンパイルする関数)を見てください。 "
-"ルールはほとんどありません。"
+"規則はほとんどありません。"
 
 #: ../../chapter4.rst:796
 msgid "The traditional compiler vs. the Forth compiler."
@@ -1450,7 +1450,7 @@ msgid ""
 "refine the conceptual model for each component into clearly defined "
 "algorithms and data structures."
 msgstr ""
-":doc:`第２章<chapter2>` では、インターフェースとルールの観点から問題の要件を記述する方法を学びました。 "
+":doc:`第２章<chapter2>` では、インターフェースと規則の観点から問題の要件を記述する方法を学びました。 "
 "このセクションでは、各コンポーネントの概念モデルを、明確に定義されたアルゴリズムとデータ構造に改良します。"
 
 # wikipediaより
@@ -1463,8 +1463,8 @@ msgid ""
 "guaranteed to terminate after a finite number of applications. (The word "
 "is named for the ninth century Persian mathematician al-Khowarizmi.)"
 msgstr ""
-"アルゴリズムは、特定のタスクを実行するための、有限数のルールとして記述された手順です。 "
-"ルールは明確で、有限数の適用後に終了することが保証されている必要があります（アルゴリズムという言葉は、9世紀のペルシャの数学者アル・フワーリズミーに由来します）。"
+"アルゴリズムは、特定のタスクを実行するための、有限数の規則として記述された手順です。 "
+"規則は明確で、有限数の適用後に終了することが保証されている必要があります（アルゴリズムという言葉は、9世紀のペルシャの数学者アル・フワーリズミーに由来します）。"
 
 #: ../../chapter4.rst:922
 msgid ""
@@ -1591,7 +1591,7 @@ msgid ""
 "using the data structure."
 msgstr ""
 "角度をサインとコサインに変換する問題は、データ構造を使用するよりも答えを計算することによって（少なくともコード行とオブジェクトサイズに関して）より簡単に実装できます。"
-" しかし、しょっちゅう変換が必要な多くのアプリケーションでは、メモリに格納されたテーブルで答えを調べる方が速いです。 "
+" しかし、しょっちゅう変換が必要な多くのアプリケーションでは、メモリに格納された表で答えを調べる方が速いです。 "
 "この場合、最もシンプルな「適切な」解決策はデータ構造を使用することです。"
 
 #: ../../chapter4.rst:1012
@@ -1650,13 +1650,13 @@ msgid ""
 " later. In this case, table-driven code is easier to maintain."
 msgstr ""
 "データ構造を使用することは、これらの値を計算することができる式を発明することを試みるよりも簡単でした。 "
-"そして式は後で不可である事が判明するかもしれません。 この場合、テーブル駆動型コードの方が保守が簡単です。"
+"そして式は後で不可である事が判明するかもしれません。 この場合、表駆動型コードの方が保守が簡単です。"
 
 #: ../../chapter4.rst:1029
 msgid ""
 "In :doc:`Chapter Three<chapter3>` we designed a keystroke interpreter for"
 " our Tiny Editor using a decision table:"
-msgstr ":doc:`第3章<chapter3>` では、ディシジョン・テーブルを使ってタイニー・エディタ用のキーストロークインタプリタを設計しました。"
+msgstr ":doc:`第3章<chapter3>` では、決定表を使ってタイニー・エディタ用のキーストロークインタプリタを設計しました。"
 
 #: ../../chapter4.rst:1036
 msgid "Key"
@@ -1717,7 +1717,7 @@ msgid ""
 "used in the original design."
 msgstr ""
 "しかしロジックはもっと混乱しています。 "
-"また、元の設計でテーブルが使用されていなかった場合、このような複数条件アルゴリズムを表現するためのロジックの使用はさらに複雑になります。"
+"また、元の設計で表が使用されていなかった場合、このような複数条件アルゴリズムを表現するためのロジックの使用はさらに複雑になります。"
 
 #: ../../chapter4.rst:1070
 msgid ""
@@ -1726,7 +1726,7 @@ msgid ""
 ":doc:`Chapter Eight<chapter8>` is devoted to the issue of minimizing the "
 "use of logic in your programs."
 msgstr ""
-"結果が計算できない場合、または決定がディシジョンテーブルを正当化するほど複雑でない場合は、ロジックの使用が推奨されます。:doc:`第８章<chapter8>`"
+"結果が計算できない場合、または決定が決定表を正当化するほど複雑でない場合は、ロジックの使用が推奨されます。:doc:`第８章<chapter8>`"
 " ではあなたのプログラムでのロジックの使用を最小限にするという問題に専念しています。"
 
 #: ../../chapter4.rst:1077
@@ -1811,7 +1811,7 @@ msgid ""
 " you give us a number, we can make a Roman numeral out of it. We know how"
 " to do it—but we can’t yet state the procedure as an algorithm."
 msgstr ""
-"実際、私たちはローマ数字に関する正式なルールは覚えていません。 "
+"実際、私たちはローマ数字に関する正式な規則は覚えていません。 "
 "しかし、あなたが私たちに数字を与えれば、私たちはそれからローマ数字を作ることができます。 "
 "その方法はわかっていますが、その手順をアルゴリズムとして述べることはできません。"
 
@@ -2069,8 +2069,8 @@ msgid ""
 "digit in the one’s table and print that corresponding symbol pattern."
 msgstr ""
 ":math:`n` を10で割ります。商は10の桁です。 余りは1の桁です。 "
-"10の位のテーブルで10の位の数字を検索し、対応する記号パターンを出力します。 "
-"1の位のテーブルで1の位の数字を調べて、対応する記号パターンを出力します。"
+"10の位の表で10の位の数字を検索し、対応する記号パターンを出力します。 "
+"1の位の表で1の位の数字を調べて、対応する記号パターンを出力します。"
 
 #: ../../chapter4.rst:1260
 msgid ""
@@ -2078,15 +2078,15 @@ msgid ""
 "7 in the tens’ table corresponds to “LXX,” so print that. 2 in the ones’ "
 "column corresponds to “II,” so print that. The result:"
 msgstr ""
-"例えば、数が72であれば、商は7で、余りは2です。10の位テーブルの7は「LXX」に対応するので、それを出力します。 "
-"1の位のテーブルの2が「II」に対応するので、それを出力してください。 その結果は以下です。"
+"例えば、数が72であれば、商は7で、余りは2です。10の位表の7は「LXX」に対応するので、それを出力します。 "
+"1の位の表の2が「II」に対応するので、それを出力してください。 その結果は以下です。"
 
 #: ../../chapter4.rst:1268
 msgid ""
 "We’ve just constructed a model that works for numbers from one to 99. Any"
 " higher number would require a hundreds’ table as well, along with an "
 "initial division by 100."
-msgstr "私たちは、1から99までの数字で機能するモデルを作成しました。それより大きい数字でも、100での最初の除算とともに、百の位のテーブルも必要になります。"
+msgstr "私たちは、1から99までの数字で機能するモデルを作成しました。それより大きい数字でも、100での最初の除算とともに、百の位の表も必要になります。"
 
 #: ../../chapter4.rst:1272
 msgid ""
@@ -2098,7 +2098,7 @@ msgid ""
 " using a data structure."
 msgstr ""
 "ここで説明した論理モデルは、それが仕事をしている限りは問題ないかもしれません。 しかし、なぜか私たちが問題を完全に解決したようには思えません。 "
-"一連のテーブルにすべての可能な組み合わせを格納することによって基本的なパターンを作成する方法を考え出すのを避けました。 "
+"一連の表にすべての可能な組み合わせを格納することによって基本的なパターンを作成する方法を考え出すのを避けました。 "
 "この章の前半では、可能であれば、データ構造を使用するよりも答えを計算する方が簡単であることを確認しました。"
 
 #: ../../chapter4.rst:1279
@@ -2198,8 +2198,8 @@ msgid ""
 " five and above begin with a ``FIVER`` symbol. So we expand our rule "
 "again:"
 msgstr ""
-"この新しいルールは、数字が5になるまで機能します。前に気づいたように、5以上の数字は ``FIVER`` 記号で始まります。 "
-"それでは、再びルールを拡張します。"
+"この新しい規則は、数字が5になるまで機能します。前に気づいたように、5以上の数字は ``FIVER`` 記号で始まります。 "
+"それでは、再び規則を拡張します。"
 
 #: ../../chapter4.rst:1340
 msgid ""
@@ -2219,7 +2219,7 @@ msgid ""
 "(the next row below). Let’s call this a ``TENER``. Our complete model, "
 "then is:"
 msgstr ""
-"この規則は、数字が9になるまで機能します。この場合、私たちは、より高い位(テーブルの次の行)の ``ONER`` の前に ``ONER`` "
+"この規則は、数字が9になるまで機能します。この場合、私たちは、より高い位(表の次の行)の ``ONER`` の前に ``ONER`` "
 "を出力しなければなりません。これを ``TENER`` と呼ぶことにしましょう。この規則の完全なモデルは以下です。"
 
 #: ../../chapter4.rst:1349
@@ -2356,7 +2356,7 @@ msgstr ""
 
 #: ../../chapter4.rst:1435
 msgid "A direct translation of these rules into Forth would look like this:"
-msgstr "これらのルールをForthに直接変換すると、次のようになります。"
+msgstr "これらの規則をForthに直接変換すると、次のようになります。"
 
 #: ../../chapter4.rst:1441
 msgid ""
@@ -2489,7 +2489,7 @@ msgstr ""
 
 #: ../../chapter4.rst:1549
 msgid "Let’s go back to the symbol table we drew earlier:"
-msgstr "先ほど作成したシンボルテーブルに戻りましょう。"
+msgstr "先ほど作成したシンボル表に戻りましょう。"
 
 #: ../../chapter4.rst:1554 ../../chapter4.rst:1572
 msgid "ones"
@@ -2513,13 +2513,13 @@ msgid ""
 "the next row below. It’s as if the table should really be written:"
 msgstr ""
 "下の行の ``OWNER`` である ``TENER`` も必要であることを私たちは観察しました。 "
-"テーブルとして実際に書かれるべきであるように思われます。"
+"表として実際に書かれるべきであるように思われます。"
 
 #: ../../chapter4.rst:1568
 msgid ""
 "But that seems redundant. Can we avoid it? Perhaps if we try a different "
 "model, perhaps a linear table, like this:"
-msgstr "しかし、それは冗長に思えます。 それを避けることができますか？ おそらく、次のように別のモデル、おそらく線形テーブルを試すとします。"
+msgstr "しかし、それは冗長に思えます。 それを避けることができますか？ おそらく、次のように別のモデル、おそらく線形表を試すとします。"
 
 #: ../../chapter4.rst:1572
 msgid "I V"
@@ -2586,7 +2586,7 @@ msgid ""
 "only a byte, let’s make each “slot” one byte. We’ll call the table "
 "``ROMANS``:"
 msgstr ""
-"私たちのテーブルは単に文字の配列です。 文字は1バイトしか必要としないので、それぞれの「スロット」を1バイトにしましょう。 テーブルを "
+"私たちの表は単に文字の配列です。 文字は1バイトしか必要としないので、それぞれの「スロット」を1バイトにしましょう。 表を "
 "``ROMANS`` と呼びます。"
 
 #: ../../chapter4.rst:1620
@@ -2605,7 +2605,7 @@ msgid ""
 "place: ones, tens, hundreds, etc. This dimension is made “current,” that "
 "is, its state stays the same until we change it."
 msgstr ""
-"2つの異なるオフセットを同時に適用することでテーブルから特定のシンボルを選択できます。 "
+"2つの異なるオフセットを同時に適用することで表から特定のシンボルを選択できます。 "
 "1つの次元は位取りを表します。1(ones)、10(tens)、100(hundreds)などです。この次元「現在(current)」になります。つまり、変更するまでその状態は変わりません。"
 
 #: ../../chapter4.rst:1635
@@ -2625,7 +2625,7 @@ msgid ""
 "into the table:"
 msgstr ""
 "「現在(current)」の次元を実装することから始めましょう。 現在の10進数桁位置を指すための何らかの方法が必要です。 `` "
-"COLUMN#`` (カラム・ナンバー(column-number)と発音する)という名前の変数を作成し、それにテーブルへのオフセットを含めます。"
+"COLUMN#`` (カラム・ナンバー(column-number)と発音する)という名前の変数を作成し、それに表へのオフセットを含めます。"
 
 #: ../../chapter4.rst:1652
 msgid ""
@@ -2633,7 +2633,7 @@ msgid ""
 "``COLUMN#`` to the beginning address of the table, given by ``ROMANS``:"
 msgstr ""
 "これで、 ``ROMANS`` で与えられる ``COLUMN#`` "
-"の内容をテーブルの先頭アドレスに追加することで、任意の「腕の位置」に進むことができます。"
+"の内容を表の先頭アドレスに追加することで、任意の「腕の位置」に進むことができます。"
 
 #: ../../chapter4.rst:1659
 msgid ""

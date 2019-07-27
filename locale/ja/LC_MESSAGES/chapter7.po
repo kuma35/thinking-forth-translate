@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-23 14:15+0900\n"
-"PO-Revision-Date: 2019-07-23 20:37+0900\n"
+"PO-Revision-Date: 2019-07-27 20:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1007,7 +1007,7 @@ msgid ""
 "code."
 msgstr ""
 "私は、初期化はすべてロード・スクリーンで行います。 すべてのブロックをロードしたら、初期化する必要があるものを初期化します。 "
-"カラールックアップテーブルを設定したり、初期化コードを実行したりする可能性もあります。"
+"カラールックアップ表を設定したり、初期化コードを実行したりする可能性もあります。"
 
 #: ../../chapter7.rst:662
 msgid ""
@@ -1509,7 +1509,7 @@ msgstr ""
 
 #: ../../chapter7.rst:995
 msgid "The State Table"
-msgstr "状態テーブル"
+msgstr "状態表"
 
 #: ../../chapter7.rst:997
 msgid ""
@@ -1531,7 +1531,7 @@ msgstr ""
 msgid ""
 "When the application requires handling a group of conditions "
 "simultaneously, use a state table, not separate variables."
-msgstr "アプリケーションが条件のグループを同時に処理する必要がある場合は、変数を分離せずに状態テーブルを使用してください。"
+msgstr "アプリケーションが条件のグループを同時に処理する必要がある場合は、変数を分離せずに状態表を使用してください。"
 
 #: ../../chapter7.rst:1010
 msgid ""
@@ -1569,13 +1569,13 @@ msgid ""
 "copying the table, called ``POINTERS,`` into the second table, called "
 "``SAVED``."
 msgstr ""
-"しかし、推奨される手法では、テーブルの各要素を名前で参照してテーブルを作成します。 次に、同じ長さの2番目のテーブルを作成します。 "
-":numref:`fig7-3` に見られるように、 ``POINTERS`` と呼ばれるテーブルを ``SAVED`` "
-"と呼ばれる2番目のテーブルにコピーすることで状態を保存することができます。"
+"しかし、推奨される手法では、表の各要素を名前で参照して表を作成します。 次に、同じ長さの2番目の表を作成します。 "
+":numref:`fig7-3` に見られるように、 ``POINTERS`` と呼ばれる表を ``SAVED`` "
+"と呼ばれる2番目の表にコピーすることで状態を保存することができます。"
 
 #: ../../chapter7.rst:1050
 msgid "Conceptual model for saving a state table."
-msgstr "状態テーブルを保存するための概念モデル。"
+msgstr "状態表を保存するための概念モデル。"
 
 #: ../../chapter7.rst:1052
 msgid "We’ve implemented this approach with the code in :numref:`fig7-4`."
@@ -1583,7 +1583,7 @@ msgstr "このアプローチは  :numref:`fig7-4` のコードで実装しま�
 
 #: ../../chapter7.rst:1054
 msgid "Implementation of save/restorable state table."
-msgstr "保存＆復元可能状態テーブルの実装"
+msgstr "保存＆復元可能状態表の実装"
 
 #: ../../chapter7.rst:1075
 msgid ""
@@ -1603,8 +1603,8 @@ msgid ""
 "big the table must be and can actually ``ALLOT`` it."
 msgstr ""
 "また、 ``CREATE`` ではなく ``CONSTANT`` でダミーのゼロを使って ``POINTERS`` "
-"(テーブルの名前)を定義していることにも注意してください。 これは、定義ワード ``POSITION`` で ``POINTERS`` "
-"を参照しているためですが、すべてのフィールド名を定義した後で初めて、テーブルがどれだけの大きさでなければならないかを知ることができます。"
+"(表の名前)を定義していることにも注意してください。 これは、定義ワード ``POSITION`` で ``POINTERS`` "
+"を参照しているためですが、すべてのフィールド名を定義した後で初めて、表がどれだけの大きさでなければならないかを知ることができます。"
 
 #: ../../chapter7.rst:1085
 msgid ""
@@ -1616,11 +1616,11 @@ msgid ""
 "of the table allotted later, just as a name defined by ``CREATE`` returns"
 " the address of a table allotted directly below the name’s header."
 msgstr ""
-"私たちはフィールド名を作成したらすぐに、テーブルのサイズを定数 ``/POINTERS`` として定義します。 "
-"私たちは終にテーブル自身のためのスペースを確保したので、その先頭アドレス( ``HERE`` ）を定数 ``POINTERS`` にパッチします("
+"私たちはフィールド名を作成したらすぐに、表のサイズを定数 ``/POINTERS`` として定義します。 "
+"私たちは終に表自身のためのスペースを確保したので、その先頭アドレス( ``HERE`` ）を定数 ``POINTERS`` にパッチします("
 " ``>BODY`` というワードは、ティック( ``'`` )によって返されたアドレスを定数の値のアドレスに変換します)。したがって "
-"``POINTERS`` は、 ``CREATE`` で定義された名前のように、後で割り当てられたテーブルのアドレスを返します。 "
-"名前のヘッダーのすぐ下に割り当てられているテーブルのアドレスを返します。"
+"``POINTERS`` は、 ``CREATE`` で定義された名前のように、後で割り当てられた表のアドレスを返します。 "
+"名前のヘッダーのすぐ下に割り当てられている表のアドレスを返します。"
 
 #: ../../chapter7.rst:1094
 msgid ""
@@ -1644,11 +1644,11 @@ msgid ""
 msgstr ""
 "交互の状態の場合はもう少し複雑です。 "
 "このような状況では、2つ（またはそれ以上）の状態を交互に切り替える必要があります。他の状態にジャンプしたときに、各状態の条件を変更することは決してありません。"
-" :numref:`fig7-5` はこの種の状態テーブルの概念モデルを示しています。"
+" :numref:`fig7-5` はこの種の状態表の概念モデルを示しています。"
 
 #: ../../chapter7.rst:1112
 msgid "Conceptual model for alternating-states tables."
-msgstr "交互状態テーブルの概念モデル"
+msgstr "交互状態表の概念モデル"
 
 #: ../../chapter7.rst:1114
 msgid ""
@@ -1659,9 +1659,9 @@ msgid ""
 "``PSEUDO`` table."
 msgstr ""
 "このモデルでは、 ``TOP`` 、 ``BOTTOM`` などの名前を、 ``REAL`` または ``PSEUDO`` "
-"の2つのテーブルのいずれかを指すようにすることができます。 ``REAL`` テーブルを現在のテーブルにすることで、すべてのポインタ名は "
-"``REAL`` テーブルのアドレスを参照します。 ``PSEUDO`` テーブルを最新にすることで、 ``PSEUDO`` "
-"テーブルをアドレス指定します。"
+"の2つの表のいずれかを指すようにすることができます。 ``REAL`` 表を現在の表にすることで、すべてのポインタ名は "
+"``REAL`` 表のアドレスを参照します。 ``PSEUDO`` 表を最新にすることで、 ``PSEUDO`` "
+"表をアドレス指定します。"
 
 #: ../../chapter7.rst:1120
 msgid ""
@@ -1688,9 +1688,9 @@ msgid ""
 "table."
 msgstr ""
 "後者のアプローチとの大きな違いは、名前が余分なレベルの間接参照を通過することです( ``POINTERS`` "
-"は定数からコロン定義に変更されました)。 フィールド名は、2つの状態テーブルのいずれかを指すようにすることができます。 "
+"は定数からコロン定義に変更されました)。 フィールド名は、2つの状態表のいずれかを指すようにすることができます。 "
 "したがって、それぞれの名前にはもう少し作業が必要です。 また、前者のアプローチでは、名前は固定位置を指します。 値を保存または復元するたびに "
-"``CMOVE`` が必要です。このアプローチでは、現在のテーブルを変更するために1つのポインタを変更するだけです。"
+"``CMOVE`` が必要です。このアプローチでは、現在の表を変更するために1つのポインタを変更するだけです。"
 
 #: ../../chapter7.rst:1168
 msgid "Vectored Execution"
@@ -2015,7 +2015,7 @@ msgid ""
 "approach are those in which you need control over the address of the "
 "vector, such as when vectoring through an element in a decision table, or"
 " attempting to save/restore the contents of the vector."
-msgstr "tick-and-executeアプローチを使用するのが望ましい状況は、デシジョンテーブルの要素を介してベクトル化するとき、またはその内容を保存/復元しようとするときなど、ベクトルのアドレスを制御する必要がある場合です。"
+msgstr "tick-and-executeアプローチを使用するのが望ましい状況は、決定表の要素を介してベクトル化するとき、またはその内容を保存/復元しようとするときなど、ベクトルのアドレスを制御する必要がある場合です。"
 
 #: ../../chapter7.rst:1485
 msgid "Summary"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-04 22:12+0900\n"
-"PO-Revision-Date: 2019-07-20 13:02+0900\n"
+"PO-Revision-Date: 2019-07-27 20:29+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -954,7 +954,7 @@ msgstr "インターフェイスの定義"
 
 #: ../../chapter2.rst:529
 msgid "defining the rules"
-msgstr "ルールの定義"
+msgstr "規則の定義"
 
 #: ../../chapter2.rst:531
 msgid "defining the data structures."
@@ -1256,23 +1256,21 @@ msgstr "私には不公平な優位があります。私は自身のプログラ
 # ルール　か　規則　か　悩む
 #: ../../chapter2.rst:718
 msgid "Defining the Rules"
-msgstr "ルールの定義"
+msgstr "規則の定義"
 
 #: ../../chapter2.rst:720
 msgid ""
 "Most of your efforts at defining a problem will center on describing the "
 "interface. Some applications will also require that you define the set of"
 " application rules."
-msgstr "問題を定義するための努力のほとんどはインターフェイスの説明に集中することになるでしょう。アプリケーションによってはアプリケーションルールの組を定義する必要があります。"
+msgstr "問題を定義するための努力のほとんどはインターフェイスの説明に集中することになるでしょう。アプリケーションによってはアプリケーション規則の組を定義する必要があります。"
 
 #: ../../chapter2.rst:724
 msgid ""
 "All programming involves rules. Usually these rules are so simple it "
 "hardly matters how you express them: “If someone pushes the button, ring "
 "the bell.”"
-msgstr ""
-"すべてのプログラミングはルールを含みます。 "
-"通常、これらのルールは非常にシンプルなので、どのように表現するかはほとんど問題になりません。例えば「誰かがボタンを押した場合は、ベルを鳴らしてください。」のように。"
+msgstr "すべてのプログラミングは規則を含みます。 通常、これらの規則は非常にシンプルなので、どのように表現するかはほとんど問題になりません。例えば「誰かがボタンを押した場合は、ベルを鳴らしてください。」のように。"
 
 # sentence 短文 でいいかな？
 #: ../../chapter2.rst:728
@@ -1360,10 +1358,7 @@ msgid ""
 "analysts use several techniques to simplify these statements: structured "
 "English, decision trees, and decision tables. Let’s study each of these "
 "techniques and evaluate their usefulness in the Forth environment."
-msgstr ""
-"しかし、これらの文章はまだ読みにくいです。 "
-"システム分析者、構造化された文章、ディシジョンツリー(決定木)、ディシジョンテーブル(決定表)など、これらの文章を単純化するためにいくつかの手法を使用します。"
-" これらの各技法を調べて、Forth環境におけるそれらの有用性を学びましょう。"
+msgstr "しかし、これらの文章はまだ読みにくいです。 システム分析者、構造化された文章、決定木、決定表など、これらの文章を単純化するためにいくつかの手法を使用します。 これらの各技法を調べて、Forth環境におけるそれらの有用性を学びましょう。"
 
 #: ../../chapter2.rst:782
 msgid "Structured English"
@@ -1384,21 +1379,20 @@ msgstr "これは単にめんどくさいだけです。読むのが難しく、
 
 #: ../../chapter2.rst:843
 msgid "The Decision Tree"
-msgstr "ディシジョン・ツリー"
+msgstr "決定木"
 
 #: ../../chapter2.rst:849
 msgid "Example of a decision tree."
-msgstr "ディシジョン・ツリーの例"
+msgstr "決定木の例"
 
+# decision tree 「決定木」wikipedia参照
 #: ../../chapter2.rst:853
 msgid ""
 ":numref:`fig2-4`  illustrates the telephone rate rules by means of a "
 "decision tree. The decision tree is the easiest method of any to “follow "
 "down” to determine the result of certain conditions. For this reason, it "
 "may be the best representation to show the customer."
-msgstr ""
-":numref:`fig2-4` "
-"は電話料金のルールを表すディシジョン・ツリー(決定木)です。ディシジョン・ツリーは、条件分岐に従って書くのが最も簡単な方法です。このため、顧客に見せる最も良い表現かもしれません。"
+msgstr ":numref:`fig2-4` は電話料金の規則を表す決定木(decision tree)です。決定木は、条件分岐に従って書くのが最も簡単な方法です。このため、顧客に見せる最も良い表現かもしれません。"
 
 #: ../../chapter2.rst:858
 msgid ""
@@ -1407,11 +1401,15 @@ msgid ""
 "inhibits seeing ways to simplify the problem. The tree obscures the fact "
 "that additional minutes cost the same, whether the operator assists or "
 "not. You can’t see the facts for the tree."
-msgstr "残念ながら、どの条件がどの条件を生み出すか決めるために、ディシジョン・ツリーで追跡するのは困難です。これが問題を単純化して見せる事を妨げます。このツリーは電話オペレータが補助しているかどうかにかかわらず、追加の分にかかる費用が同じであるという事実を覆い隠しています。あなたはツリーの事実を見ることはできません。"
+msgstr "残念ながら、どの条件がどの条件を生み出すか決めるために、決定木で追跡するのは困難です。これが問題を単純化して見せる事を妨げます。この「木」は電話オペレータが補助しているかどうかにかかわらず、追加の分にかかる費用が同じであるという事実を覆い隠しています。あなたは「木」の事実を見ることはできません。"
 
+# 日本工業規格（『JIS X 0125 ? 決定表』）,
+# ITmedia エンタープライズ 情報マネジメント用語辞典 ディシジョンテーブル（でぃしじょんてーぶる） ディシジョンテーブル（でぃしじょんてーぶる）
+# decision table / 決定表 / 判断表 / デシジョンテーブル
+# https://www.itmedia.co.jp/im/articles/1111/07/news138.html
 #: ../../chapter2.rst:866
 msgid "The Decision Table"
-msgstr "ディシジョンテーブル"
+msgstr "決定表"
 
 #: ../../chapter2.rst:868
 msgid ""
@@ -1419,13 +1417,11 @@ msgid ""
 "representation of compound rules for the programmer, and possibly for the"
 " customer as well.  :numref:`fig2-5`  shows our rate structure rules in "
 "decision-table form."
-msgstr ""
-"以下に説明するディシジョンテーブル(決定表)は、プログラマにとって、そして場合によっては顧客にとっても、最も有用な複合ルールの図表です。 "
-":numref:`fig2-5` は、ディシジョンテーブルの形で電話料金ルールの構造を表しています。"
+msgstr "以下に説明する決定表(decision table)は、プログラマにとって、そして場合によっては顧客にとっても、最も有用な複合規則の図表です。 :numref:`fig2-5` は、決定表の形で電話料金規則の構造を表しています。"
 
 #: ../../chapter2.rst:877
 msgid "The decision table."
-msgstr "ディシジョンテーブル(決定表)"
+msgstr "決定表"
 
 #: ../../chapter2.rst:881
 msgid ""
@@ -1448,7 +1444,7 @@ msgid ""
 "All the techniques we’ve described force you to analyze which conditions "
 "apply to which dimensions. In factoring these dimensions, two rules "
 "apply:"
-msgstr "私たちがこれまでに説明した全ての手法を使って、どの条件がどの次元に適用されるかを分析しなければなりません。これらの次元のファクタリング(要素分解)には次の２つのルールが適用されます。"
+msgstr "私たちがこれまでに説明した全ての手法を使って、どの条件がどの次元に適用されるかを分析しなければなりません。これらの次元のファクタリング(要素分解)には次の２つの規則が適用されます。"
 
 #: ../../chapter2.rst:895
 msgid ""
@@ -1462,16 +1458,14 @@ msgid ""
 "Second, all possibilities must be accounted for within each dimension. If"
 " there were another rate for calls made between 2 A.M. to 2:05 A.M., the "
 "table would have to be enlarged."
-msgstr ""
-"第二に、すべての可能性が各次元内で説明されなければなりません。 "
-"午前2時から午前2時5分間にかけられた通話に別の料金がある場合、テーブルを拡大する必要があります。"
+msgstr "第二に、すべての可能性が各次元内で説明されなければなりません。 午前2時から午前2時5分間にかけられた通話に別の料金がある場合、表を拡大する必要があります。"
 
 #: ../../chapter2.rst:903
 msgid ""
 "But our decision tables have other advantages all to themselves. The "
 "decision table not only reads well to the client but actually benefits "
 "the implementor in several ways:"
-msgstr "しかし、ディシジョンテーブルには他の利点もあります。ディシジョンテーブルは顧客が読みやすいだけでなく、以下の通り、実際に幾つかの点で実装者に利益をもたらします。"
+msgstr "しかし、決定表には他の利点もあります。決定表は顧客が読みやすいだけでなく、以下の通り、実際に幾つかの点で実装者に利益をもたらします。"
 
 #: ../../chapter2.rst:909
 msgid "Transferability to actual code."
@@ -1481,7 +1475,7 @@ msgstr "実際のコードに変換が容易"
 msgid ""
 "This is particularly true in Forth, where decision tables are easy to "
 "implement in a form very similar to the drawing."
-msgstr "これは、ディシジョンテーブルが、図表とよく似た形式で、簡単に実装出来るForthに特に当てはまります。"
+msgstr "これは、決定表が、図表とよく似た形式で、簡単に実装出来るForthに特に当てはまります。"
 
 #: ../../chapter2.rst:912
 msgid "Ability to trace the logic upwards."
@@ -1499,7 +1493,7 @@ msgstr "より明確な図絵的表現"
 msgid ""
 "Decision tables serve as a better tool for understanding, both for the "
 "implementor and the analyst."
-msgstr "ディシジョンテーブルは実装者にとっても分析者にとっても理解のための良いツールとして役に立ちます。"
+msgstr "決定表は実装者にとっても分析者にとっても理解のための良いツールとして役に立ちます。"
 
 #: ../../chapter2.rst:918
 msgid ""
@@ -1507,9 +1501,7 @@ msgid ""
 " in a graphically meaningful way. Visualization of ideas helps in "
 "understanding problems, particularly those problems that are too complex "
 "to perceive in a linear way."
-msgstr ""
-"ディシジョンツリーと異なり、ディシジョンテーブルは「結果」を図表的に意味のある方法でグループ化します。 "
-"考えを視覚化することで、問題、特に複雑すぎて直感的に認識することができない問題を理解するのに役立ちます。"
+msgstr "決定木と異なり、決定表は「結果」を図表的に意味のある方法でグループ化します。 考えを視覚化することで、問題、特に複雑すぎて直感的に認識することができない問題を理解するのに役立ちます。"
 
 #: ../../chapter2.rst:923
 msgid ""
@@ -1524,7 +1516,7 @@ msgstr ""
 
 #: ../../chapter2.rst:932
 msgid "A simplified decision table."
-msgstr "単純化したディシジョンテーブル"
+msgstr "単純化した決定表"
 
 #: ../../chapter2.rst:936
 msgid ""
@@ -1534,9 +1526,7 @@ msgid ""
 "books on structured analysis recommend. That approach only increases the "
 "amount of available detail. The problem solver must also try to simplify "
 "the problem."
-msgstr ""
-"問題について考えることを忘れるぐらい分析ツールに夢中になります。\n"
-"構造化分析に関する本の著者が推奨するように、分析者は問題の全ての可能性をｎ番目の程度まで実行する以上のことをしなければなりません。そのアプローチは詳細を増やしてまいます。また問題解決者は問題の単純化を試みねばなりません。"
+msgstr "問題について考えることを忘れるぐらい分析ツールに夢中になります。構造化分析に関する本の著者が推奨するように、分析者は問題の全ての可能性をｎ番目の程度まで実行する以上のことをしなければなりません。そのアプローチは詳細を増やしてまいます。また問題解決者は問題の単純化を試みねばなりません。"
 
 #: ../../chapter2.rst:945
 msgid "You don't understand a problem until you can simplify it."
@@ -1555,26 +1545,22 @@ msgid ""
 "other words, it’s subject to only one of the three dimensions shown in "
 "the table. What happens if we split this table into two tables, as in "
 ":numref:`fig2-7` ?"
-msgstr ""
-"私たちの修正されたディシジョンテーブル( :numref:`fig2-6` "
-")はマイルあたりの料金が料金が「full」か「lower」か「lowest」かによってのみ決まることを示しています。 "
-"つまり、テーブル示されている3つの次元のうちの1つだけが適用されます。 :numref:`fig2-7` "
-"のように、このテーブルを２つに分割するとどうなるでしょうか？"
+msgstr "私たちの修正された決定表( :numref:`fig2-6` )はマイルあたりの料金が料金が「full」か「lower」か「lowest」かによってのみ決まることを示しています。 つまり、表に示されている3つの次元のうちの1つだけが適用されます。 :numref:`fig2-7` のように、この表を２つに分割するとどうなるでしょうか？"
 
 #: ../../chapter2.rst:960
 msgid "The sectional decision table."
-msgstr "分割ディシジョンテーブル"
+msgstr "分割した決定表"
 
 #: ../../chapter2.rst:964
 msgid ""
 "Now we’re getting the answer through a combination of table look-up and "
 "calculation. The formula for the per-minute charge can be expressed as a "
 "pseudoForth definition:"
-msgstr "今度は、テーブルのルックアップと計算の組み合わせによって答えを得ています。 1分あたりの料金の式は、擬似Forth定義として表すことができます。"
+msgstr "今度は、表のルックアップと計算の組み合わせによって答えを得ています。 1分あたりの料金の式は、擬似Forth定義として表すことができます。"
 
 #: ../../chapter2.rst:975
 msgid "The “+” now appears once in the definition, not nine times in the table."
-msgstr "「+」は、テーブルに9回現れるのではなく、定義内に1回だけ表示されます。"
+msgstr "「+」は、表に9回現れるのではなく、定義内に1回だけ表示されます。"
 
 #: ../../chapter2.rst:977
 msgid ""
@@ -1595,14 +1581,14 @@ msgstr "(しかし思い出して下さい。この料金は最初の１分に�
 
 #: ../../chapter2.rst:998
 msgid "The decision table without operator involvement depicted."
-msgstr "電話オペレータ料金無しのディシジョンテーブル"
+msgstr "電話オペレータ料金無しの決定表"
 
 #: ../../chapter2.rst:1002
 msgid ""
 "This leaves us with the simplified table shown in :numref:`fig2-8` , and "
 "an increased reliance on expressing calculations. Now we’re getting "
 "somewhere."
-msgstr ":numref:`fig2-8` に示す単純化されたテーブルと、信頼できる計算表現が残りました。今、私たちはとりあえず何処かに到着しました。"
+msgstr ":numref:`fig2-8` に示す単純化された表と、信頼できる計算表現が残りました。今、私たちはとりあえず何処かに到着しました。"
 
 #: ../../chapter2.rst:1006
 msgid "Let’s go back to our definition of ``PER-MINUTE-CHARGE``:"
@@ -1612,7 +1598,7 @@ msgstr "話を ``PER-MINUTE-CHARGE`` に戻しましょう。"
 msgid ""
 "Let’s get more specific about the rules for the connection charge and for"
 " the mileage charge."
-msgstr "接続料金(connection charge)とマイレージ料金(mileage charge)のルールについてより具体的に説明しましょう。"
+msgstr "接続料金(connection charge)とマイレージ料金(mileage charge)の規則についてより具体的に説明しましょう。"
 
 #: ../../chapter2.rst:1018
 msgid ""
@@ -1632,7 +1618,7 @@ msgid ""
 "Both of these words will depend on the time of day to determine whether "
 "to use the full, lower, or lowest rates."
 msgstr ""
-"テーブルから適切な料金を取得するコンポーネントを作成するとしましょう。\n"
+"表から適切な料金を取得するコンポーネントを作成するとしましょう。\n"
 "``1MINUTE`` というワードは最初の1分間のレートを取得します。 ``+MINUTES`` は追加の分ごとに料金を得ます。 "
 "これらの語句は両方とも、fullレート、lowerレート、またはlowestレートのいずれかを使用するか決定するため、時刻に依存します。"
 
@@ -1648,7 +1634,7 @@ msgid ""
 "from the table:"
 msgstr ""
 "マイレージ(mileage)料金の規則は？　とてもシンプルです。それは料金レート(100マイル当たり) × "
-"(100マイル単位の)マイル数です。以下のように、テーブルからマイレージ料金レートを取得する、 ``MILEAGE-RATE`` "
+"(100マイル単位の)マイル数です。以下のように、表からマイレージ料金レートを取得する、 ``MILEAGE-RATE`` "
 "というワードを定義できるとしましょう。"
 
 #: ../../chapter2.rst:1052
@@ -1661,7 +1647,7 @@ msgstr "最後に、通話の合計分数がわかっている場合は、直通
 msgid ""
 "We’ve expressed the rules to this particular problem through a "
 "combination of simple tables and logical calculations."
-msgstr "最後に、この特定の問題に対するルールは、単純なテーブルと論理演算を組み合わせて表現しました。"
+msgstr "最後に、この特定の問題に対する規則は、単純な表と論理演算を組み合わせて表現しました。"
 
 #: ../../chapter2.rst:1068
 msgid ""
@@ -1691,9 +1677,7 @@ msgid ""
 "occasionally you’ll need to define certain data structures as well. We’re"
 " not referring here to the implementation of the data structures, but "
 "rather to a description of their conceptual model."
-msgstr ""
-"インターフェイスを定義し、しばしばルールを定義した後、ときには特定のデータ構造も定義する必要があります。 "
-"ここでは、データ構造の実装についてではなく、それらの概念モデルの説明について説明します。"
+msgstr "インターフェイスを定義し、しばしば規則を定義した後、ときには特定のデータ構造も定義する必要があります。 ここでは、データ構造の実装についてではなく、それらの概念モデルの説明について説明します。"
 
 #: ../../chapter2.rst:1086
 msgid ""
@@ -1719,9 +1703,7 @@ msgid ""
 "structure. In the library index example, you need to know not only *what*"
 " information the users need, but also how long they’re willing to *wait* "
 "to get it."
-msgstr ""
-"特定の制約はデータ構造の概念モデルにも影響します。 "
-"図書館蔵書検索の例では、ユーザーが必要とする情報だけでなく、ユーザーがそれを入手するのを待つ時間も知っておく必要があります。"
+msgstr "特定の制約はデータ構造の概念モデルにも影響します。 図書館蔵書検索の例では、ユーザが必要とする情報だけでなく、ユーザがそれを入手するのを待つ時間も知っておく必要があります。"
 
 #: ../../chapter2.rst:1107
 msgid ""
@@ -1804,9 +1786,7 @@ msgid ""
 " is reasonable?\" If your solution fills six screens, it may seem you've "
 "used a sledgehammer to kill a mosquito. Your mental image is out of "
 "proportion to the significance of the problem."
-msgstr ""
-"あなたが作業を終えたら、振り返りして「合理的な解決策を考え出しましたか」と問います。もしあなたの解決策が6スクリーンに渡るのなら、それはあなたが蚊を殺すために大ハンマーを使った事があるのかもしれません。あなたの頭の中のイメージは問題の重要性に比例していません。(訳注:スクリーン＝Forthの伝統的な、フロッピーディスク上の記録領域の単位"
-" 1screen=2000byteを80桁x25行の領域として扱う)"
+msgstr "あなたが作業を終えたら、振り返りして「合理的な解決策を考え出しましたか」と問います。もしあなたの解決策が6スクリーンに渡るのなら、それはあなたが蚊を殺すために大ハンマーを使った事があるのかもしれません。あなたの頭の中のイメージは問題の重要性に比例していません。(訳注:スクリーンとブロック＝Forthの伝統的な、フロッピーディスク上の記録領域の単位 1ブロック=1024バイト=1スクリーン(64桁x16行)。スクリーンはブロックをソースコード記述エリアとしてとらえる時の呼び方)"
 
 #: ../../chapter2.rst:1155
 msgid ""

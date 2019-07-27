@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-27 11:18+0900\n"
-"PO-Revision-Date: 2019-07-27 11:20+0900\n"
+"PO-Revision-Date: 2019-07-27 20:29+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -525,7 +525,7 @@ msgstr "**データ構造**"
 
 #: ../../appendixe.rst:209
 msgid "table or array"
-msgstr "テーブル(表)または配列"
+msgstr "表または配列"
 
 #: ../../appendixe.rst:210
 msgid "names"

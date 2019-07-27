@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-09 01:27+0900\n"
-"PO-Revision-Date: 2019-07-12 15:08+0900\n"
+"PO-Revision-Date: 2019-07-27 20:48+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -543,7 +543,7 @@ msgstr "「挿入」と「非挿入」の2つのモードがあるため、キ�
 msgid ""
 "We can write our keystroke interpreter as a decision table (worrying "
 "about the implementation later):"
-msgstr "キーストロークインタプリタを以下のようにデシジョンテーブルとして書くことができます（実装については後で考えますします）。"
+msgstr "キーストロークインタプリタを以下のように決定表として書くことができます（実装については後で考えますします）。"
 
 #: ../../chapter3.rst:1
 msgid "Key"
@@ -626,7 +626,7 @@ msgid ""
 "We’ve placed the possible types of keys in the left column, what they do "
 "normally in the middle column, and what they do in “insert mode” in the "
 "right column."
-msgstr "このディシジョンテーブルでは、可能な種類のキーを左側の列に配置し、それらが通常行う操作を中央の列に配置し、「挿入モード」で行う操作を右側の列に配置します。"
+msgstr "決定表では、可能な種類のキーを左側の列に配置し、それらが通常行う操作を中央の列に配置し、「挿入モード」で行う操作を右側の列に配置します。"
 
 #: ../../chapter3.rst:347
 msgid ""
@@ -645,13 +645,13 @@ msgid ""
 "This table seems to be the most logical expression of the problem at the "
 "current level. We’ll save the implementation for later ( :doc:`Chapter "
 "Eight<chapter8>`)."
-msgstr "このテーブルは現在のレベルでの問題の最も論理的な表現のように見えます。 後で実装します(  :doc:`第８章<chapter8>` )。"
+msgstr "この表は現在のレベルでの問題の最も論理的な表現のように見えます。 後で実装します(  :doc:`第８章<chapter8>` )。"
 
 #: ../../chapter3.rst:363
 msgid ""
 "Now we’ll demonstrate the tremendous value of this approach in terms of "
 "maintainability. We’ll throw ourselves a curve—a major change of plans!"
-msgstr "それでは、保守性の観点から、このアプローチの大きな価値を実証します。 私たちは我々自身にカーブ球を投げます。それは計画の大幅な変更です！"
+msgstr "それでは、保守性の観点から、このアプローチの大きな価値を実証します。 私たちは我々自身に変化球を投げます。それは計画の大幅な変更です！"
 
 #: ../../chapter3.rst:367
 msgid "Maintaining a Component-based Application"
@@ -1945,5 +1945,5 @@ msgid ""
 "You can look inside an object and its source code whenever you want. And "
 "table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd"
 " Paysan**"
-msgstr "編集者 Bernd Paysn より： :doc:`preface94` の1994年度版の序文の概説と、 :doc:`preface2004` の2004年度版の序文の説明を参照してください。Windows COMの「オブジェクト」やCORBAのようなものを考えてください。実際のオブジェクト指向プログラミングは、Smalltalkに由来するので、プログラマから情報を隠すことはありません。「卵マスターオブジェクト」に「スクランブルエッグ作成」メソッドを追加しても問題ありません。Smalltalkは既知のクラスにメソッドを追加することで機能します。それらをサブクラス化する必要はありません。あなたはいつでもオブジェクトとそのソースコードの内側を見ることができます。また、テーブル駆動によるメソッドのディスパッチは非常に効率的です。"
+msgstr "編集者 Bernd Paysn より： :doc:`preface94` の1994年度版の序文の概説と、 :doc:`preface2004` の2004年度版の序文の説明を参照してください。Windows COMの「オブジェクト」やCORBAのようなものを考えてください。実際のオブジェクト指向プログラミングは、Smalltalkに由来するので、プログラマから情報を隠すことはありません。「卵マスターオブジェクト」に「スクランブルエッグ作成」メソッドを追加しても問題ありません。Smalltalkは既知のクラスにメソッドを追加することで機能します。それらをサブクラス化する必要はありません。あなたはいつでもオブジェクトとそのソースコードの内側を見ることができます。また、表駆動によるメソッドのディスパッチは非常に効率的です。"
 
