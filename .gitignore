@@ -4,4 +4,5 @@
 _build/gettext/.doctrees/
 _build/doctrees/
 _build/html/
+_build/epub/
 venv
