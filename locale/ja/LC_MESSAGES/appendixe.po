@@ -4,1355 +4,1386 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-07-27 11:18+0900\n"
+"PO-Revision-Date: 2019-07-27 11:20+0900\n"
+"Last-Translator: kuma35\n"
+"Language: ja_JP\n"
+"Language-Team: Japanese\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: ../../appendixe.rst:4
 msgid "Appendix E: Summary of Style Conventions"
-msgstr ""
+msgstr "付録E Forthスタイル規則の要約"
 
 #: ../../appendixe.rst:6
 msgid ""
 "The contents of this Appendix are in the public domain. We encourage "
 "publication without restriction, provided that you credit the source."
-msgstr ""
+msgstr "この付録の内容はパブリックドメインです。 あなたが出典をクレジットするならば、我々は制限なしに出版を奨励します。"
 
 #: ../../appendixe.rst:11
 msgid "Spacing and Indentation Guidelines"
-msgstr ""
+msgstr "字下げと空白のガイドライン"
 
 #: ../../appendixe.rst:13
 msgid "1 space between the colon and the name"
-msgstr ""
+msgstr "空白1つだけ空けるのはコロンと名前の間。"
 
 #: ../../appendixe.rst:15
 msgid "2 spaces between the name and the comment [#f1]_"
-msgstr ""
+msgstr "空白2つだけ空けるのは名前とコメントの間。 [#f1]_"
 
 #: ../../appendixe.rst:17
 msgid ""
 "2 spaces, or a carriage return, after the comment and before the "
 "definition [#f1]_"
-msgstr ""
+msgstr "2つの空白か改行入れるのは、 コメントの後と、定義の前。 [#f1]_"
 
 #: ../../appendixe.rst:19
 msgid "3 spaces between the name and definition if no comment is used"
-msgstr ""
+msgstr "3つの空白空けるのは、コメントが無い時の名前とその定義の間。"
 
 #: ../../appendixe.rst:21
 msgid ""
 "3 spaces indentation on each subsequent line (or multiples of 3 for "
 "nested indentation)"
-msgstr ""
+msgstr "3つの空白で字下げするのは後続の各行(入れ子になった場合は更に3の倍数)。"
 
 #: ../../appendixe.rst:23
 msgid "1 space between words/numbers within a phrase"
-msgstr ""
+msgstr "1つの空白空けるのは、句の中の、ワードや数字の間。"
 
 #: ../../appendixe.rst:25
 msgid "2 or 3 spaces between phrases"
-msgstr ""
+msgstr "2か3の空白空けるのは句と句の間。"
 
 #: ../../appendixe.rst:27
 msgid "1 space between the last word and the semicolon"
-msgstr ""
+msgstr "1つの空白空けるのは最後のワードとセミコロンの間。"
 
 #: ../../appendixe.rst:29
 msgid "1 space between semicolon and ``IMMEDIATE`` (if invoked)"
-msgstr ""
+msgstr "1つの空白空けるのは、(必要な場合、)セミコロンと ``IMMEDIATE`` の間。"
 
 #: ../../appendixe.rst:31
 msgid ""
 "No blank lines between definitions, except to separate distinct groups of"
 " definitions"
-msgstr ""
+msgstr "グループの異なる定義を区切る場合を除き、定義の間に空白行は挟みません。"
 
-#: ../../appendixe.rst:35 ../../appendixe.rst:37
+#: ../../appendixe.rst:35
 msgid "Stack-Comment Abbreviations"
-msgstr ""
+msgstr "スタックコメントの略語"
+
+#: ../../appendixe.rst:37
+msgid "Stack Comment Abbreviations"
+msgstr "スタックコメントの略語"
 
 #: ../../appendixe.rst:40
 msgid "n"
-msgstr ""
+msgstr "n"
 
 #: ../../appendixe.rst:41
 msgid "single-length signed number"
-msgstr ""
+msgstr "1倍長 符号付整数"
 
 #: ../../appendixe.rst:42
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #: ../../appendixe.rst:43
 msgid "double-length signed number"
-msgstr ""
+msgstr "2倍長 符号付整数"
 
 #: ../../appendixe.rst:44
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #: ../../appendixe.rst:45
 msgid "single-length unsigned number"
-msgstr ""
+msgstr "1倍長 符号無整数"
 
 #: ../../appendixe.rst:46
 msgid "ud"
-msgstr ""
+msgstr "ud"
 
 #: ../../appendixe.rst:47
 msgid "double-length unsigned number"
-msgstr ""
+msgstr "2倍長 符号無整数"
 
 #: ../../appendixe.rst:48
 msgid "t"
-msgstr ""
+msgstr "t"
 
 #: ../../appendixe.rst:49
 msgid "triple-length"
-msgstr ""
+msgstr "3倍長(triple)"
 
 #: ../../appendixe.rst:50
 msgid "q"
-msgstr ""
+msgstr "q"
 
 #: ../../appendixe.rst:51
 msgid "quadruple-length"
-msgstr ""
+msgstr "4倍長(quadruple)"
 
 #: ../../appendixe.rst:52 ../../appendixe.rst:96
 msgid "c"
-msgstr ""
+msgstr "c"
 
 #: ../../appendixe.rst:53
 msgid "7-bit character value"
-msgstr ""
+msgstr "7ビット キャラクタ値(訳注：ASCII表示文字の範囲)"
 
 #: ../../appendixe.rst:54
 msgid "b"
-msgstr ""
+msgstr "b"
 
 #: ../../appendixe.rst:55
 msgid "8-bit byte"
-msgstr ""
+msgstr "8ビット バイト値"
 
-#: ../../appendixe.rst:56 ../../appendixe.rst:466
+#: ../../appendixe.rst:56
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #: ../../appendixe.rst:57
 msgid "boolean flag; or:"
-msgstr ""
+msgstr "ブーリアンフラグ。左記または以下、"
 
 #: ../../appendixe.rst:58
 msgid "t="
-msgstr ""
+msgstr "t="
 
 #: ../../appendixe.rst:59
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #: ../../appendixe.rst:60
 msgid "f="
-msgstr ""
+msgstr "f="
 
 #: ../../appendixe.rst:61
 msgid "false"
-msgstr ""
+msgstr "false"
 
 #: ../../appendixe.rst:62
 msgid "a or adr"
-msgstr ""
+msgstr "a or adr"
 
 #: ../../appendixe.rst:63
 msgid "address"
-msgstr ""
+msgstr "アドレス"
 
 #: ../../appendixe.rst:64
 msgid "acf"
-msgstr ""
+msgstr "acf"
 
 #: ../../appendixe.rst:65
 msgid "address of code field"
-msgstr ""
+msgstr "コードフィールドのアドレス"
 
 #: ../../appendixe.rst:66
 msgid "apf"
-msgstr ""
+msgstr "apf"
 
 #: ../../appendixe.rst:67
 msgid "address of parameter field"
-msgstr ""
+msgstr "パラメータフィールドのアドレス"
 
-#: ../../appendixe.rst:68 ../../appendixe.rst:446
+#: ../../appendixe.rst:68 ../../appendixe.rst:429
 msgid "\\`"
-msgstr ""
+msgstr "\\`"
 
 #: ../../appendixe.rst:69
 msgid "(as prefix) address of"
-msgstr ""
+msgstr "((英語では)プレフィックスとして) …のアドレス"
 
 #: ../../appendixe.rst:70
 msgid "s d"
-msgstr ""
+msgstr "s d"
 
 #: ../../appendixe.rst:71
 msgid "(as a pair) source destination"
-msgstr ""
+msgstr "(ペアで使って）元(source)、先(destination)"
 
 #: ../../appendixe.rst:72
 msgid "lo hi"
-msgstr ""
+msgstr "lo hi"
 
 #: ../../appendixe.rst:73
 msgid "lower-limit upper-limit (inclusive)"
-msgstr ""
+msgstr "下限(lower-limit)、上限(upper-limit) (内包)"
 
-#: ../../appendixe.rst:74 ../../appendixe.rst:420
+#: ../../appendixe.rst:74
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ../../appendixe.rst:75
 msgid "count"
-msgstr ""
+msgstr "カウント。"
 
 #: ../../appendixe.rst:76
 msgid "o"
-msgstr ""
+msgstr "o"
 
 #: ../../appendixe.rst:77
 msgid "offset"
-msgstr ""
+msgstr "オフセット"
 
 #: ../../appendixe.rst:78
 msgid "i"
-msgstr ""
+msgstr "i"
 
 #: ../../appendixe.rst:79
 msgid "index"
-msgstr ""
+msgstr "インデックス"
 
 #: ../../appendixe.rst:80
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #: ../../appendixe.rst:81
 msgid "mask"
-msgstr ""
+msgstr "マスク"
 
 #: ../../appendixe.rst:82
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: ../../appendixe.rst:83
 msgid "don't care (data structure notation)"
-msgstr ""
+msgstr "詳細を気にしない何か(データ構造記法)"
 
 #: ../../appendixe.rst:85
 msgid "An “offset” is a difference expressed in absolute units, such as bytes."
-msgstr ""
+msgstr "「オフセット」とは、バイトなどの絶対単位で表される差です。"
 
 #: ../../appendixe.rst:87
 msgid ""
 "An “index” is a difference expressed in logical units, such as elements "
 "or records."
-msgstr ""
+msgstr "「インデックス」とは、要素やレコードなどの論理単位で表される違いです。"
 
-#: ../../appendixe.rst:91 ../../appendixe.rst:93
+#: ../../appendixe.rst:91
 msgid "Input-Stream Comment Designations"
-msgstr ""
+msgstr "入力ストリームのコメント凡例"
+
+#: ../../appendixe.rst:93
+msgid "Input Stream Comment Designations"
+msgstr "入力ストリームのコメント凡例"
 
 #: ../../appendixe.rst:97
 msgid "single character, blank-delimited"
-msgstr ""
+msgstr "空白で区切られた単一文字"
 
-#: ../../appendixe.rst:98 ../../appendixe.rst:309
+#: ../../appendixe.rst:98 ../../appendixe.rst:298
 msgid "name"
-msgstr ""
+msgstr "name"
 
 #: ../../appendixe.rst:99
 msgid "sequence of characters, blank delimited"
-msgstr ""
+msgstr "空白で区切られた文字の連なり"
 
 #: ../../appendixe.rst:100
 msgid "text"
-msgstr ""
+msgstr "text"
 
 #: ../../appendixe.rst:101
 msgid "sequence of characters, delimited by non-blank"
-msgstr ""
+msgstr "空白以外で区切られた文字の連なり"
 
 #: ../../appendixe.rst:103
-msgid "Follow “text” with the actual delimiter required; e.g., text” or text)."
-msgstr ""
+msgid ""
+"Follow \"text\" with the actual delimiter required; e.g., text\\\" or "
+"text\\)."
+msgstr "実際の区切り文字をtextの後に続けます。 例: text\\\" または text\\)"
 
 #: ../../appendixe.rst:107
 msgid "Samples of Good Commenting Style"
-msgstr ""
+msgstr "良いコメントスタイルの例"
 
 #: ../../appendixe.rst:109
 msgid "Here are two sample screens to illustrate good commenting style."
-msgstr ""
+msgstr "以下は、優れたコメントスタイルを説明するための2つのスクリーン例です。"
 
-#: ../../appendixe.rst:146 ../../appendixe.rst:148
+#: ../../appendixe.rst:144
 msgid "Naming Conventions"
-msgstr ""
+msgstr "命名規則"
+
+#: ../../appendixe.rst:146
+msgid "Forth naming conventions"
+msgstr "命名規則"
+
+#: ../../appendixe.rst:150
+msgid "Meaning"
+msgstr "意味"
+
+#: ../../appendixe.rst:151
+msgid "Form"
+msgstr "形式"
 
 #: ../../appendixe.rst:152
-msgid "Meaning"
-msgstr ""
+msgid "Example"
+msgstr "例"
 
 #: ../../appendixe.rst:153
-msgid "Form"
-msgstr ""
-
-#: ../../appendixe.rst:154
-msgid "Example"
-msgstr ""
-
-#: ../../appendixe.rst:155
 msgid "**Arithmetic**"
-msgstr ""
+msgstr "**算術関係**"
+
+#: ../../appendixe.rst:156
+msgid "integer 1"
+msgstr "整数の１"
+
+#: ../../appendixe.rst:157
+msgid "1name"
+msgstr "1name"
 
 #: ../../appendixe.rst:158
-msgid "integer 1"
-msgstr ""
+msgid "1\\+"
+msgstr "1\\+"
 
 #: ../../appendixe.rst:159
-msgid "1name"
-msgstr ""
+msgid "integer 2"
+msgstr "整数の２"
 
 #: ../../appendixe.rst:160
-msgid "1\\+"
-msgstr ""
+msgid "2name"
+msgstr "2name"
 
 #: ../../appendixe.rst:161
-msgid "integer 2"
-msgstr ""
+msgid "2\\*"
+msgstr "2\\*"
 
 #: ../../appendixe.rst:162
-msgid "2name"
-msgstr ""
+msgid "takes relative input parameters"
+msgstr "増分入力パラメータを取る"
 
-#: ../../appendixe.rst:163
-msgid "2\\*"
-msgstr ""
+#: ../../appendixe.rst:163 ../../appendixe.rst:166 ../../appendixe.rst:295
+msgid "+name"
+msgstr "+name"
 
 #: ../../appendixe.rst:164
-msgid "takes relative input parameters"
-msgstr ""
-
-#: ../../appendixe.rst:165 ../../appendixe.rst:168 ../../appendixe.rst:306
-msgid "+name"
-msgstr ""
-
-#: ../../appendixe.rst:166
 msgid "+DRAW"
-msgstr ""
+msgstr "+DRAW"
+
+#: ../../appendixe.rst:165
+msgid "takes scaled input parameters"
+msgstr "乗算入力パラメータを取る"
 
 #: ../../appendixe.rst:167
-msgid "takes scaled input parameters"
-msgstr ""
-
-#: ../../appendixe.rst:169
 msgid "\\*DRAW"
-msgstr ""
+msgstr "\\*DRAW"
 
-#: ../../appendixe.rst:170
+#: ../../appendixe.rst:168
 msgid "**Compilation**"
-msgstr ""
+msgstr "**コンパイル時**"
+
+#: ../../appendixe.rst:171
+msgid "start of \"high-level\" code"
+msgstr "高レベル定義コードの開始"
+
+#: ../../appendixe.rst:172
+msgid "name:"
+msgstr "name:"
 
 #: ../../appendixe.rst:173
-msgid "start of \"high-level\" code"
-msgstr ""
+msgid "CASE:"
+msgstr "CASE:"
 
 #: ../../appendixe.rst:174
-msgid "name:"
-msgstr ""
+msgid "end of \"high-level\" code"
+msgstr "高レベル定義コードの終了"
 
 #: ../../appendixe.rst:175
-msgid "CASE:"
-msgstr ""
+msgid ";name"
+msgstr ";name"
 
 #: ../../appendixe.rst:176
-msgid "end of \"high-level\" code"
-msgstr ""
+msgid ";CODE"
+msgstr ";CODE"
 
 #: ../../appendixe.rst:177
-msgid ";name"
-msgstr ""
+msgid "put something into dictionary"
+msgstr "何かを辞書(dictionary)に書き込む"
 
 #: ../../appendixe.rst:178
-msgid ";CODE"
-msgstr ""
+msgid "name,"
+msgstr "name,"
 
 #: ../../appendixe.rst:179
-msgid "put something into dictionary"
-msgstr ""
+msgid "C,"
+msgstr "C,"
 
 #: ../../appendixe.rst:180
-msgid "name,"
-msgstr ""
+msgid "executes at compile time"
+msgstr "コンパイル時に実行される(訳注: IMMEDIATE)"
 
 #: ../../appendixe.rst:181
-msgid "C,"
-msgstr ""
+msgid "[name]"
+msgstr "[name]"
 
 #: ../../appendixe.rst:182
-msgid "executes at compile time"
-msgstr ""
+msgid "[COMPILE]"
+msgstr "[COMPILE]"
 
 #: ../../appendixe.rst:183
-msgid "[name]"
-msgstr ""
+msgid "slightly different"
+msgstr "ほんの少し違う"
 
 #: ../../appendixe.rst:184
-msgid "[COMPILE]"
-msgstr ""
+msgid "name\\' (prime)"
+msgstr "name\\' (prime)"
 
 #: ../../appendixe.rst:185
-msgid "slightly different"
-msgstr ""
+msgid "CR\\'"
+msgstr "CR\\'"
 
 #: ../../appendixe.rst:186
-msgid "name\\' (prime)"
-msgstr ""
-
-#: ../../appendixe.rst:187
-msgid "CR\\'"
-msgstr ""
-
-#: ../../appendixe.rst:188
 msgid "internal form or primitive"
-msgstr ""
+msgstr "何かの内部処理またはプリミティブ"
 
-#: ../../appendixe.rst:189 ../../appendixe.rst:249
+#: ../../appendixe.rst ../../appendixe.rst:240
 msgid "(name)"
-msgstr ""
+msgstr "(name)"
 
-#: ../../appendixe.rst:190
-msgid "(TYPE)"
-msgstr ""
-
-#: ../../appendixe.rst:192
+#: ../../appendixe.rst
 msgid "or <name>"
-msgstr ""
+msgstr "または <name>"
 
-#: ../../appendixe.rst:193
+#: ../../appendixe.rst
+msgid "(TYPE)"
+msgstr "(TYPE)"
+
+#: ../../appendixe.rst
 msgid "<TYPE>"
-msgstr ""
+msgstr "<TYPE>"
+
+#: ../../appendixe.rst:191
+msgid "compiling word run-time part:"
+msgstr "コンパイルワードの実行時部分:"
 
 #: ../../appendixe.rst:194
-msgid "compiling word run-time part:"
-msgstr ""
+msgid "systems with no folding"
+msgstr "括弧で囲んでない時"
+
+#: ../../appendixe.rst:195
+msgid "lower-case"
+msgstr "小文字"
+
+#: ../../appendixe.rst:196
+msgid "if"
+msgstr "if"
 
 #: ../../appendixe.rst:197
-msgid "systems with no folding"
-msgstr ""
+msgid "systems with folding"
+msgstr "括弧で囲んだ時"
 
 #: ../../appendixe.rst:198
-msgid "lower-case"
-msgstr ""
+msgid "(NAME)"
+msgstr "(NAME)"
 
 #: ../../appendixe.rst:199
-msgid "if"
-msgstr ""
+msgid "(IF)"
+msgstr "(IF)"
 
 #: ../../appendixe.rst:200
-msgid "systems with folding"
-msgstr ""
+msgid "defining word"
+msgstr "定義ワード"
 
-#: ../../appendixe.rst:201
-msgid "(NAME)"
-msgstr ""
+#: ../../appendixe.rst:201 ../../appendixe.rst:320
+msgid ":name"
+msgstr ":name"
 
 #: ../../appendixe.rst:202
-msgid "(IF)"
-msgstr ""
+msgid ":COLOR"
+msgstr ":COLOR"
 
 #: ../../appendixe.rst:203
-msgid "defining word"
-msgstr ""
+msgid "block-number where overlay begins"
+msgstr "オーバーレイが始まる場所のブロック番号"
 
-#: ../../appendixe.rst:204 ../../appendixe.rst:333
-msgid ":name"
-msgstr ""
+#: ../../appendixe.rst:204
+msgid "namING"
+msgstr "namING"
 
 #: ../../appendixe.rst:205
-msgid ":COLOR"
-msgstr ""
+msgid "DISKING"
+msgstr "DISKING"
 
 #: ../../appendixe.rst:206
-msgid "block-number where overlay begins"
-msgstr ""
-
-#: ../../appendixe.rst:207
-msgid "namING"
-msgstr ""
-
-#: ../../appendixe.rst:208
-msgid "DISKING"
-msgstr ""
+msgid "**Data Structures**"
+msgstr "**データ構造**"
 
 #: ../../appendixe.rst:209
-msgid "**Data Structures**"
-msgstr ""
+msgid "table or array"
+msgstr "テーブル(表)または配列"
+
+#: ../../appendixe.rst:210
+msgid "names"
+msgstr "names"
+
+#: ../../appendixe.rst:211
+msgid "EMPLOYEES"
+msgstr "EMPLOYEES"
 
 #: ../../appendixe.rst:212
-msgid "table or array"
-msgstr ""
+msgid "total number of elements"
+msgstr "要素の総数"
 
 #: ../../appendixe.rst:213
-msgid "names"
-msgstr ""
+msgid "#name"
+msgstr "#name"
 
 #: ../../appendixe.rst:214
-msgid "EMPLOYEES"
-msgstr ""
+msgid "#EMPLOYEES"
+msgstr "#EMPLOYEES"
 
 #: ../../appendixe.rst:215
-msgid "total number of elements"
-msgstr ""
+msgid "current item number (variable)"
+msgstr "現在の項目番号(添字番号)(変数)"
 
 #: ../../appendixe.rst:216
-msgid "#name"
-msgstr ""
+msgid "name#"
+msgstr "name#"
 
 #: ../../appendixe.rst:217
-msgid "#EMPLOYEES"
-msgstr ""
+msgid "EMPLOYEE#"
+msgstr "EMPLOYEE#"
 
 #: ../../appendixe.rst:218
-msgid "current item number (variable)"
-msgstr ""
+msgid "sets current item"
+msgstr "現在の項目をセットする"
 
 #: ../../appendixe.rst:219
-msgid "name#"
-msgstr ""
+msgid "( n) name"
+msgstr "( n) name"
 
 #: ../../appendixe.rst:220
-msgid "EMPLOYEE#"
-msgstr ""
+msgid "13 EMPLOYEE"
+msgstr "13 EMPLOYEE"
 
 #: ../../appendixe.rst:221
-msgid "sets current item"
-msgstr ""
+msgid "advance to next element"
+msgstr "次の要素へ進める"
 
 #: ../../appendixe.rst:222
-msgid "( n) name"
-msgstr ""
+msgid "\\+name"
+msgstr "\\+name"
 
 #: ../../appendixe.rst:223
-msgid "13 EMPLOYEE"
-msgstr ""
+msgid "\\+EMPLOYEE"
+msgstr "\\+EMPLOYEE"
 
-#: ../../appendixe.rst:224
-msgid "advance to next element"
-msgstr ""
+#: ../../appendixe.rst
+msgid "size of offset to item from"
+msgstr "構造体の先頭から"
 
-#: ../../appendixe.rst:225
-msgid "\\+name"
-msgstr ""
+#: ../../appendixe.rst
+msgid "beginning of structure"
+msgstr "アイテムまでのオフセット"
 
 #: ../../appendixe.rst:226
-msgid "\\+EMPLOYEE"
-msgstr ""
+msgid "name\\+"
+msgstr "name\\+"
 
 #: ../../appendixe.rst:227
-msgid "size of offset to item from"
-msgstr ""
-
-#: ../../appendixe.rst:228
-msgid "name\\+"
-msgstr ""
-
-#: ../../appendixe.rst:229
 msgid "DATE\\+"
-msgstr ""
+msgstr "DATE\\+"
 
-#: ../../appendixe.rst:230
-msgid "beginning of structure"
-msgstr ""
-
-#: ../../appendixe.rst:233
+#: ../../appendixe.rst
 msgid "size of (bytes per)"
-msgstr ""
+msgstr "サイズ(バイト単位)"
 
-#: ../../appendixe.rst:234 ../../appendixe.rst:279 ../../appendixe.rst:384
-msgid "/name"
-msgstr ""
-
-#: ../../appendixe.rst:235
-msgid "/EMPLOYEE"
-msgstr ""
-
-#: ../../appendixe.rst:236
+#: ../../appendixe.rst
 msgid "(short for BYTES/name)"
-msgstr ""
+msgstr "(BYTES÷nameの1倍長数)"
+
+#: ../../appendixe.rst:230 ../../appendixe.rst:270 ../../appendixe.rst:369
+msgid "/name"
+msgstr "/name"
+
+#: ../../appendixe.rst:231
+msgid "/EMPLOYEE"
+msgstr "/EMPLOYEE"
+
+#: ../../appendixe.rst:232
+msgid "index pointer"
+msgstr "インデックスポインタ"
+
+#: ../../appendixe.rst:233 ../../appendixe.rst:237 ../../appendixe.rst:261
+msgid ">name"
+msgstr ">name"
+
+#: ../../appendixe.rst:234
+msgid ">IN"
+msgstr ">IN"
+
+#: ../../appendixe.rst
+msgid "convert address of structure to"
+msgstr "構造体のアドレスから"
+
+#: ../../appendixe.rst
+msgid "address of item"
+msgstr "アイテムのアドレスに変換"
+
+#: ../../appendixe.rst:238
+msgid ">BODY"
+msgstr ">BODY"
 
 #: ../../appendixe.rst:239
-msgid "index pointer"
-msgstr ""
-
-#: ../../appendixe.rst:240 ../../appendixe.rst:243 ../../appendixe.rst:270
-msgid ">name"
-msgstr ""
+msgid "file index"
+msgstr "ファイルインデックス"
 
 #: ../../appendixe.rst:241
-msgid ">IN"
-msgstr ""
+msgid "(PEOPLE)"
+msgstr "(PEOPLE)"
 
 #: ../../appendixe.rst:242
-msgid "convert address of structure to"
-msgstr ""
+msgid "file pointer"
+msgstr "ファイルポインタ"
+
+#: ../../appendixe.rst:243
+msgid "-name"
+msgstr "-name"
 
 #: ../../appendixe.rst:244
-msgid ">BODY"
-msgstr ""
+msgid "-JOB"
+msgstr "-JOB"
 
 #: ../../appendixe.rst:245
-msgid "address of item"
-msgstr ""
+msgid "initialize structure"
+msgstr "構造体初期化"
+
+#: ../../appendixe.rst:246
+msgid "0name"
+msgstr "0name"
+
+#: ../../appendixe.rst:247
+msgid "0RECORD"
+msgstr "0RECORD"
 
 #: ../../appendixe.rst:248
-msgid "file index"
-msgstr ""
-
-#: ../../appendixe.rst:250
-msgid "(PEOPLE)"
-msgstr ""
+msgid "**Direction, Conversion**"
+msgstr "**方向、変換**"
 
 #: ../../appendixe.rst:251
-msgid "file pointer"
-msgstr ""
+msgid "backwards"
+msgstr "後方へ"
 
 #: ../../appendixe.rst:252
-msgid "-name"
-msgstr ""
+msgid "name<"
+msgstr "name<"
 
 #: ../../appendixe.rst:253
-msgid "-JOB"
-msgstr ""
+msgid "SLIDE<"
+msgstr "SLIDE<"
 
 #: ../../appendixe.rst:254
-msgid "initialize structure"
-msgstr ""
+msgid "forwards"
+msgstr "前方へ"
 
-#: ../../appendixe.rst:255
-msgid "0name"
-msgstr ""
+#: ../../appendixe.rst:255 ../../appendixe.rst:378
+msgid "name>"
+msgstr "name>"
 
 #: ../../appendixe.rst:256
-msgid "0RECORD"
-msgstr ""
+msgid "CMOVE>"
+msgstr "CMOVE>"
 
 #: ../../appendixe.rst:257
-msgid "**Direction, Conversion**"
-msgstr ""
+msgid "from"
+msgstr "何々から(from)"
+
+#: ../../appendixe.rst:258 ../../appendixe.rst:375
+msgid "<name"
+msgstr "<name"
+
+#: ../../appendixe.rst:259
+msgid "<TAPE"
+msgstr "<TAPE"
 
 #: ../../appendixe.rst:260
-msgid "backwards"
-msgstr ""
-
-#: ../../appendixe.rst:261
-msgid "name<"
-msgstr ""
+msgid "to"
+msgstr "何々へ(to)"
 
 #: ../../appendixe.rst:262
-msgid "SLIDE<"
-msgstr ""
+msgid ">TAPE"
+msgstr ">TAPE"
 
 #: ../../appendixe.rst:263
-msgid "forwards"
-msgstr ""
+msgid "convert to"
+msgstr "何々へ変換"
 
-#: ../../appendixe.rst:264 ../../appendixe.rst:393
-msgid "name>"
-msgstr ""
+#: ../../appendixe.rst:264
+msgid "name>name"
+msgstr "name>name"
 
 #: ../../appendixe.rst:265
-msgid "CMOVE>"
-msgstr ""
+msgid "FEET>METERS"
+msgstr "FEET>METERS"
 
 #: ../../appendixe.rst:266
-msgid "from"
-msgstr ""
+msgid "downward"
+msgstr "下方へ(downward)"
 
-#: ../../appendixe.rst:267 ../../appendixe.rst:390
-msgid "<name"
-msgstr ""
+# ＼は右下がり…
+#: ../../appendixe.rst:267
+msgid "\\\\name"
+msgstr "\\\\name"
 
 #: ../../appendixe.rst:268
-msgid "<TAPE"
-msgstr ""
+msgid "\\\\LINE"
+msgstr "\\\\LINE"
 
 #: ../../appendixe.rst:269
-msgid "to"
-msgstr ""
+msgid "upward"
+msgstr "上方向へ(upward)"
 
+# ／は右上がり…
 #: ../../appendixe.rst:271
-msgid ">TAPE"
-msgstr ""
+msgid "/LINE"
+msgstr "/LINE"
 
 #: ../../appendixe.rst:272
-msgid "convert to"
-msgstr ""
+msgid "open"
+msgstr "開く(open)"
 
 #: ../../appendixe.rst:273
-msgid "name>name"
-msgstr ""
+msgid "\\{name"
+msgstr "\\{name"
 
 #: ../../appendixe.rst:274
-msgid "FEET>METERS"
-msgstr ""
+msgid "\\{FILE"
+msgstr "\\{FILE"
 
 #: ../../appendixe.rst:275
-msgid "downward"
-msgstr ""
+msgid "close"
+msgstr "クローズ(close)"
 
 #: ../../appendixe.rst:276
-msgid "\\\\name"
-msgstr ""
+msgid "\\}name"
+msgstr "\\}name"
 
 #: ../../appendixe.rst:277
-msgid "\\\\LINE"
-msgstr ""
+msgid "\\}FILE"
+msgstr "\\}FILE"
 
 #: ../../appendixe.rst:278
-msgid "upward"
-msgstr ""
-
-#: ../../appendixe.rst:280
-msgid "/LINE"
-msgstr ""
+msgid "**Logic, Control**"
+msgstr "**ロジック、制御**"
 
 #: ../../appendixe.rst:281
-msgid "open"
-msgstr ""
+msgid "return boolean value"
+msgstr "ブール値を返す"
 
 #: ../../appendixe.rst:282
-msgid "\\{name"
-msgstr ""
+msgid "name?"
+msgstr "name?"
 
 #: ../../appendixe.rst:283
-msgid "\\{FILE"
-msgstr ""
+msgid "SHORT?"
+msgstr "SHORT?"
 
 #: ../../appendixe.rst:284
-msgid "close"
-msgstr ""
+msgid "returns reversed boolean"
+msgstr "負論理のブール値を返す"
 
 #: ../../appendixe.rst:285
-msgid "\\}name"
-msgstr ""
+msgid "-name?"
+msgstr "-name?"
 
 #: ../../appendixe.rst:286
-msgid "\\}FILE"
-msgstr ""
+msgid "-SHORT?"
+msgstr "-SHORT?"
 
 #: ../../appendixe.rst:287
-msgid "**Logic, Control**"
-msgstr ""
+msgid "address of boolean"
+msgstr "ブール値を格納したアドレスを指す"
+
+#: ../../appendixe.rst:288
+msgid "\\'name?"
+msgstr "\\'name?"
+
+#: ../../appendixe.rst:289
+msgid "\\'SHORT?"
+msgstr "\\'SHORT?"
 
 #: ../../appendixe.rst:290
-msgid "return boolean value"
-msgstr ""
+msgid "operates conditionally"
+msgstr "条件によっては当該の動作"
 
 #: ../../appendixe.rst:291
-msgid "name?"
-msgstr ""
+msgid "?name"
+msgstr "?name"
 
-#: ../../appendixe.rst:292
-msgid "SHORT?"
-msgstr ""
+#: ../../appendixe.rst
+msgid "?DUP"
+msgstr "?DUP"
 
-#: ../../appendixe.rst:293
-msgid "returns reversed boolean"
-msgstr ""
+#: ../../appendixe.rst
+msgid "(maybe DUP)"
+msgstr "(maybe DUP)"
 
 #: ../../appendixe.rst:294
-msgid "-name?"
-msgstr ""
-
-#: ../../appendixe.rst:295
-msgid "-SHORT?"
-msgstr ""
+msgid "enable"
+msgstr "許可(enable)"
 
 #: ../../appendixe.rst:296
-msgid "address of boolean"
-msgstr ""
+msgid "+CLOCK"
+msgstr "+CLOCK"
 
 #: ../../appendixe.rst:297
-msgid "\\'name?"
-msgstr ""
-
-#: ../../appendixe.rst:298
-msgid "\\'SHORT?"
-msgstr ""
+msgid "or, absence of symbol"
+msgstr "または記号無し版"
 
 #: ../../appendixe.rst:299
-msgid "operates conditionally"
-msgstr ""
+msgid "BLINKING"
+msgstr "BLINKING"
 
 #: ../../appendixe.rst:300
-msgid "?name"
-msgstr ""
+msgid "disable"
+msgstr "禁止(disable)"
 
 #: ../../appendixe.rst:301
-msgid "?DUP"
-msgstr ""
+msgid "\\-name"
+msgstr "\\-name"
+
+#: ../../appendixe.rst
+msgid "\\-CLOCK"
+msgstr "\\-CLOCK"
+
+#: ../../appendixe.rst
+msgid "\\-BLINKING"
+msgstr "\\-BLINKING"
 
 #: ../../appendixe.rst:304
-msgid "(maybe ``DUP``)"
-msgstr ""
-
-#: ../../appendixe.rst:305
-msgid "enable"
-msgstr ""
+msgid "**Memory**"
+msgstr "**メモリ**"
 
 #: ../../appendixe.rst:307
-msgid "+CLOCK"
-msgstr ""
+msgid "save value of"
+msgstr "値を保存(save value of)"
 
 #: ../../appendixe.rst:308
-msgid "or, absence of symbol"
-msgstr ""
+msgid "@name"
+msgstr "@name"
+
+#: ../../appendixe.rst:309
+msgid "@CURSOR"
+msgstr "@CURSOR"
 
 #: ../../appendixe.rst:310
-msgid "BLINKING"
-msgstr ""
+msgid "restore value of"
+msgstr "値を復元(restore value of)"
 
 #: ../../appendixe.rst:311
-msgid "disable"
-msgstr ""
+msgid "!name"
+msgstr "!name"
 
 #: ../../appendixe.rst:312
-msgid "\\-name"
-msgstr ""
+msgid "!CURSOR"
+msgstr "!CURSOR"
 
 #: ../../appendixe.rst:313
-msgid "\\-CLOCK"
-msgstr ""
+msgid "store into"
+msgstr "nameに格納"
+
+#: ../../appendixe.rst:314
+msgid "name!"
+msgstr "name!"
+
+#: ../../appendixe.rst:315
+msgid "SECONDS!"
+msgstr "SECONDS!"
 
 #: ../../appendixe.rst:316
-msgid "\\-BLINKING"
-msgstr ""
+msgid "fetch from"
+msgstr "nameから取得"
 
 #: ../../appendixe.rst:317
-msgid "**Memory**"
-msgstr ""
+msgid "name@"
+msgstr "name@"
 
-#: ../../appendixe.rst:320
-msgid "save value of"
-msgstr ""
+#: ../../appendixe.rst:318
+msgid "INDEX@"
+msgstr "INDEX@"
+
+#: ../../appendixe.rst:319
+msgid "name of buffer"
+msgstr "バッファーの名前"
 
 #: ../../appendixe.rst:321
-msgid "@name"
-msgstr ""
+msgid ":INSERT"
+msgstr ":INSERT"
 
 #: ../../appendixe.rst:322
-msgid "@CURSOR"
-msgstr ""
+msgid "address of name"
+msgstr "名前のアドレス"
 
-#: ../../appendixe.rst:323
-msgid "restore value of"
-msgstr ""
+#: ../../appendixe.rst:323 ../../appendixe.rst:326
+msgid "\\'name"
+msgstr "\\'name"
 
 #: ../../appendixe.rst:324
-msgid "!name"
-msgstr ""
+msgid "\\'S"
+msgstr "\\'S"
 
 #: ../../appendixe.rst:325
-msgid "!CURSOR"
-msgstr ""
-
-#: ../../appendixe.rst:326
-msgid "store into"
-msgstr ""
+msgid "address of pointer to name"
+msgstr "名前を指し示すアドレス"
 
 #: ../../appendixe.rst:327
-msgid "name!"
-msgstr ""
+msgid "\\'TYPE"
+msgstr "\\'TYPE"
 
 #: ../../appendixe.rst:328
-msgid "SECONDS!"
-msgstr ""
+msgid "exchange, especially bytes"
+msgstr "交換、特別なバイト達"
 
 #: ../../appendixe.rst:329
-msgid "fetch from"
-msgstr ""
+msgid ">name<"
+msgstr ">name<"
 
 #: ../../appendixe.rst:330
-msgid "name@"
-msgstr ""
+msgid ">MOVE<"
+msgstr ">MOVE<"
 
 #: ../../appendixe.rst:331
-msgid "INDEX@"
-msgstr ""
-
-#: ../../appendixe.rst:332
-msgid "name of buffer"
-msgstr ""
+msgid "**Numeric Types**"
+msgstr "**数値型**"
 
 #: ../../appendixe.rst:334
-msgid ":INSERT"
-msgstr ""
+msgid "byte length"
+msgstr "バイト長"
 
 #: ../../appendixe.rst:335
-msgid "address of name"
-msgstr ""
+msgid "Cname"
+msgstr "Cname"
 
-#: ../../appendixe.rst:336 ../../appendixe.rst:339
-msgid "\\'name"
-msgstr ""
+#: ../../appendixe.rst:336
+msgid "C@"
+msgstr "C@"
 
-#: ../../appendixe.rst:337
-msgid "\\'S"
-msgstr ""
+#: ../../appendixe.rst
+msgid "2 cell size, 2\\'s complement"
+msgstr "2セルサイズ、2コンポーネント"
 
-#: ../../appendixe.rst:338
-msgid "address of pointer to name"
-msgstr ""
+#: ../../appendixe.rst
+msgid "integer encoding"
+msgstr "の符号付き整数"
+
+#: ../../appendixe.rst:339
+msgid "Dname"
+msgstr "Dname"
 
 #: ../../appendixe.rst:340
-msgid "\\'TYPE"
-msgstr ""
+msgid "D+"
+msgstr "D+"
 
 #: ../../appendixe.rst:341
-msgid "exchange, especially bytes"
-msgstr ""
+msgid "mixed 16 and 32-bit operator"
+msgstr "16bit(1cell)と32bit(2cell)混在演算"
 
 #: ../../appendixe.rst:342
-msgid ">name<"
-msgstr ""
+msgid "Mname"
+msgstr "Mname"
 
 #: ../../appendixe.rst:343
-msgid ">MOVE<"
-msgstr ""
+msgid "M*"
+msgstr "M*"
 
 #: ../../appendixe.rst:344
-msgid "**Numeric Types**"
-msgstr ""
+msgid "3 cell size"
+msgstr "3セルサイズ"
+
+#: ../../appendixe.rst:345
+msgid "Tname"
+msgstr "Tname"
+
+#: ../../appendixe.rst:346
+msgid "T*"
+msgstr "T*"
 
 #: ../../appendixe.rst:347
-msgid "byte length"
-msgstr ""
+msgid "4 cell size"
+msgstr "4 cell size"
 
 #: ../../appendixe.rst:348
-msgid "Cname"
-msgstr ""
+msgid "Qname"
+msgstr "Qname"
 
 #: ../../appendixe.rst:349
-msgid "C@"
-msgstr ""
+msgid "Q*"
+msgstr "Q*"
 
 #: ../../appendixe.rst:350
-msgid "2 cell size, 2\\'s complement"
-msgstr ""
+msgid "unsigned encoding"
+msgstr "符号なし整数"
 
 #: ../../appendixe.rst:351
-msgid "Dname"
-msgstr ""
+msgid "Uname"
+msgstr "Uname"
 
 #: ../../appendixe.rst:352
-msgid "D+"
-msgstr ""
+msgid "U\\."
+msgstr "U\\."
 
 #: ../../appendixe.rst:353
-msgid "integer encoding"
-msgstr ""
+msgid "**Output, Printing**"
+msgstr "**出力、印刷**"
 
 #: ../../appendixe.rst:356
-msgid "mixed 16 and 32-bit operator"
-msgstr ""
+msgid "print item"
+msgstr "項目を出力"
 
 #: ../../appendixe.rst:357
-msgid "Mname"
-msgstr ""
+msgid ".name"
+msgstr ".name"
 
 #: ../../appendixe.rst:358
-msgid "M*"
-msgstr ""
+msgid ".S"
+msgstr ".S"
 
 #: ../../appendixe.rst:359
-msgid "3 cell size"
-msgstr ""
+msgid "print numeric (name denotes type)"
+msgstr "数値を出力(名前は型を表す)"
 
 #: ../../appendixe.rst:360
-msgid "Tname"
-msgstr ""
+msgid "name\\."
+msgstr "name\\."
 
 #: ../../appendixe.rst:361
-msgid "T*"
-msgstr ""
+msgid "D\\. , U\\."
+msgstr "D\\. , U\\."
 
 #: ../../appendixe.rst:362
-msgid "4 cell size"
-msgstr ""
+msgid "print right justified"
+msgstr "右詰めで出力"
 
 #: ../../appendixe.rst:363
-msgid "Qname"
-msgstr ""
+msgid "name.R"
+msgstr "name.R"
 
 #: ../../appendixe.rst:364
-msgid "Q*"
-msgstr ""
+msgid "U.R"
+msgstr "U.R"
 
 #: ../../appendixe.rst:365
-msgid "unsigned encoding"
-msgstr ""
-
-#: ../../appendixe.rst:366
-msgid "Uname"
-msgstr ""
+msgid "**Quantity**"
+msgstr "**数量**"
 
 #: ../../appendixe.rst:368
-msgid "**Output, Printing**"
-msgstr ""
+msgid "\"per\""
+msgstr "割った(割合)"
+
+#: ../../appendixe.rst:370
+msgid "/SIDE"
+msgstr "/SIDE"
 
 #: ../../appendixe.rst:371
-msgid "print item"
-msgstr ""
-
-#: ../../appendixe.rst:372
-msgid ".name"
-msgstr ""
-
-#: ../../appendixe.rst:373
-msgid ".S"
-msgstr ""
+msgid "**Sequencing**"
+msgstr "**シーケンス(連なり)**"
 
 #: ../../appendixe.rst:374
-msgid "print numeric (name denotes type)"
-msgstr ""
-
-#: ../../appendixe.rst:375
-msgid "name."
-msgstr ""
+msgid "start"
+msgstr "開始"
 
 #: ../../appendixe.rst:376
-msgid ", U."
-msgstr ""
+msgid "<#"
+msgstr "<#"
 
 #: ../../appendixe.rst:377
-msgid "print right justified"
-msgstr ""
-
-#: ../../appendixe.rst:378
-msgid "name.R"
-msgstr ""
+msgid "end"
+msgstr "終了"
 
 #: ../../appendixe.rst:379
-msgid "U.R"
-msgstr ""
+msgid "#>"
+msgstr "#>"
 
 #: ../../appendixe.rst:380
-msgid "**Quantity**"
-msgstr ""
+msgid "**Text**"
+msgstr "**テキスト**"
 
 #: ../../appendixe.rst:383
-msgid "\"per\""
-msgstr ""
+msgid "string follows delimited by \\\""
+msgstr "``\"`` で区切られた文字列が続く"
+
+#: ../../appendixe.rst:384
+msgid "name\\\""
+msgstr "name\\\""
 
 #: ../../appendixe.rst:385
-msgid "/SIDE"
-msgstr ""
+msgid "ABORT\\\" text\\\""
+msgstr "ABORT\\\" text\\\""
 
-#: ../../appendixe.rst:386
-msgid "**Sequencing**"
-msgstr ""
+#: ../../appendixe.rst
+msgid "text or string operator"
+msgstr "テキストまたは文字列演算子"
+
+#: ../../appendixe.rst
+msgid "(similar to $ prefix in BASIC)"
+msgstr "(BASICの$プレフィックスに似ています)"
+
+#: ../../appendixe.rst:388
+msgid "\\\"name"
+msgstr "\\\"name"
 
 #: ../../appendixe.rst:389
-msgid "start"
-msgstr ""
+msgid "\\\"COMPARE"
+msgstr "\\\"COMPARE"
+
+#: ../../appendixe.rst:390
+msgid "superstring array"
+msgstr "超文字列(superstring)配列"
 
 #: ../../appendixe.rst:391
-msgid "<#"
-msgstr ""
+msgid "\\\"name\\\""
+msgstr "\\\"name\\\""
 
 #: ../../appendixe.rst:392
-msgid "end"
-msgstr ""
+msgid "\\\"COLORS\\\""
+msgstr "\\\"COLORS\\\""
 
 #: ../../appendixe.rst:394
-msgid "#>"
-msgstr ""
+msgid "*How to Pronounce the Symbols*"
+msgstr "*記号の発音*"
 
-#: ../../appendixe.rst:395
-msgid "**Text**"
-msgstr ""
-
-#: ../../appendixe.rst:398
-msgid "string follows delimited by \\\""
-msgstr ""
+#: ../../appendixe.rst:396
+msgid "How to Pronounce the Symbols"
+msgstr "記号の発音"
 
 #: ../../appendixe.rst:399
-msgid "name\\\""
-msgstr ""
+msgid "!"
+msgstr "!"
 
 #: ../../appendixe.rst:400
-msgid "ABORT\\\" text\\\""
-msgstr ""
+msgid "store"
+msgstr "ストア(store;格納)"
 
 #: ../../appendixe.rst:401
-msgid "text or string operator"
-msgstr ""
+msgid "@"
+msgstr "@"
 
 #: ../../appendixe.rst:402
-msgid "\\\"name"
-msgstr ""
+msgid "fetch"
+msgstr "フェッチ(fetch;取得)"
 
 #: ../../appendixe.rst:403
-msgid "\\\"COMPARE"
-msgstr ""
+msgid "\\#"
+msgstr "#"
 
 #: ../../appendixe.rst:404
-msgid "(similar to $ prefix in BASIC)"
-msgstr ""
+msgid "sharp (or \"number\", as in #RECORDS)"
+msgstr "シャープ(sharp)、または #RECORDS 等における ナンバー(number)"
+
+#: ../../appendixe.rst:405
+msgid "$"
+msgstr "$"
+
+#: ../../appendixe.rst:406
+msgid "dollar"
+msgstr "ドル(dollar)"
 
 #: ../../appendixe.rst:407
-msgid "superstring array"
-msgstr ""
+msgid "%"
+msgstr "%"
 
 #: ../../appendixe.rst:408
-msgid "\\\"name\\\""
-msgstr ""
+msgid "percent"
+msgstr "パーセント(percent)"
 
 #: ../../appendixe.rst:409
-msgid "\\\"COLORS\\\""
-msgstr ""
+msgid "^"
+msgstr "^"
+
+#: ../../appendixe.rst:410
+msgid "caret"
+msgstr "カレット(caret)"
 
 #: ../../appendixe.rst:411
-msgid "*How to Pronounce the Symbols*"
-msgstr ""
+msgid "&"
+msgstr "&"
+
+#: ../../appendixe.rst:412
+msgid "ampersand"
+msgstr "アンバサンド(ampersand)"
 
 #: ../../appendixe.rst:413
-msgid "How to Pronounce the Symbols"
-msgstr ""
+msgid "\\*"
+msgstr "\\*"
+
+#: ../../appendixe.rst:414
+msgid "star"
+msgstr "スター(star)(訳注:日本ではアスタリスク)"
+
+#: ../../appendixe.rst:415
+msgid "("
+msgstr "("
 
 #: ../../appendixe.rst:416
-msgid "!"
-msgstr ""
+msgid "left paren; paren"
+msgstr "左パーレン(left paren; paren)(訳注:丸括弧)"
 
 #: ../../appendixe.rst:417
-msgid "store"
-msgstr ""
+msgid ")"
+msgstr ")"
 
 #: ../../appendixe.rst:418
-msgid "@"
-msgstr ""
+msgid "right paren; paren"
+msgstr "右パーレン(right paren; paren)(訳注:丸括弧)"
 
 #: ../../appendixe.rst:419
-msgid "fetch"
-msgstr ""
+msgid "\\-"
+msgstr "\\-"
+
+#: ../../appendixe.rst:420
+msgid "dash; not"
+msgstr "ダッシュ(dash)、(マイナス記号から類推して)ノット(not)"
 
 #: ../../appendixe.rst:421
-msgid "sharp (or \"number\", as in #RECORDS)"
-msgstr ""
+msgid "\\+"
+msgstr "\\+"
 
 #: ../../appendixe.rst:422
-msgid "$"
-msgstr ""
+msgid "plus"
+msgstr "プラス(plus)"
 
 #: ../../appendixe.rst:423
-msgid "dollar"
-msgstr ""
+msgid "="
+msgstr "="
 
 #: ../../appendixe.rst:424
-msgid "%"
-msgstr ""
+msgid "equals"
+msgstr "イコール(equals)"
 
 #: ../../appendixe.rst:425
-msgid "percent"
-msgstr ""
+msgid "{ }"
+msgstr "{ }"
 
 #: ../../appendixe.rst:426
-msgid "^"
-msgstr ""
+msgid "braces (traditionally called \"curly brackets\")"
+msgstr "ブレース(braces)(訳注:波括弧)"
 
 #: ../../appendixe.rst:427
-msgid "caret"
-msgstr ""
+msgid "[ ]"
+msgstr "[ ]"
 
 #: ../../appendixe.rst:428
-msgid "&"
-msgstr ""
-
-#: ../../appendixe.rst:429
-msgid "ampersand"
-msgstr ""
+msgid "square brackets"
+msgstr "スクエアブラケット(square brackets)(訳注：角括弧)"
 
 #: ../../appendixe.rst:430
-msgid "\\*"
-msgstr ""
+msgid "quote"
+msgstr "クォート(quote)"
 
 #: ../../appendixe.rst:431
-msgid "star"
-msgstr ""
+msgid "\\'"
+msgstr "\\'"
 
 #: ../../appendixe.rst:432
-msgid "("
-msgstr ""
+msgid "as prefix: tick; as suffix: prime"
+msgstr "プレフィックスとしてティック(tick)、サフィックスとしてプライム(prime)"
 
 #: ../../appendixe.rst:433
-msgid "left paren; paren"
-msgstr ""
+msgid "~"
+msgstr "~"
 
 #: ../../appendixe.rst:434
-msgid ")"
-msgstr ""
+msgid "tilde"
+msgstr "チルダ(tilde)"
 
 #: ../../appendixe.rst:435
-msgid "right paren; paren"
-msgstr ""
+msgid "\\|"
+msgstr "\\|"
 
 #: ../../appendixe.rst:436
-msgid "\\-"
-msgstr ""
+msgid "bar"
+msgstr "バー(bar)"
 
 #: ../../appendixe.rst:437
-msgid "dash; not"
-msgstr ""
+msgid "\\\\"
+msgstr "\\\\"
 
 #: ../../appendixe.rst:438
-msgid "\\+"
-msgstr ""
+msgid "backslash. (also \"under\", \"down\", and \"skip\")"
+msgstr "バックスラッシュ(アンダー(under)、ダウン(down)、スキップ(skip)とも言う)"
 
 #: ../../appendixe.rst:439
-msgid "plus"
-msgstr ""
+msgid "/"
+msgstr "/"
 
 #: ../../appendixe.rst:440
-msgid "="
-msgstr ""
+msgid "slash. (also \"up\")"
+msgstr "スラッシュ(slash)、またはアップ(up)"
 
 #: ../../appendixe.rst:441
-msgid "equals"
-msgstr ""
+msgid "<"
+msgstr "<"
 
 #: ../../appendixe.rst:442
-msgid "{ }"
-msgstr ""
-
-#: ../../appendixe.rst:443
-msgid "braces (traditionally called \"curly brackets\")"
-msgstr ""
+msgid "less-than"
+msgstr "未満"
 
 #: ../../appendixe.rst:444
-msgid "[ ]"
-msgstr ""
+msgid "left dart"
+msgstr "左矢印"
 
 #: ../../appendixe.rst:445
-msgid "square brackets"
-msgstr ""
+msgid ">"
+msgstr ">"
 
-#: ../../appendixe.rst:447
-msgid "quote"
-msgstr ""
+#: ../../appendixe.rst:446
+msgid "greater-than"
+msgstr "よりおおきい(等号含まず)"
 
 #: ../../appendixe.rst:448
-msgid "\\'"
-msgstr ""
+msgid "right dart"
+msgstr "右矢印"
 
 #: ../../appendixe.rst:449
-msgid "as prefix: tick; as suffix: prime"
-msgstr ""
+msgid "\\?"
+msgstr "?"
 
 #: ../../appendixe.rst:450
-msgid "~"
-msgstr ""
+msgid "question (some prefer \"query\")"
+msgstr "クエスチョン(question) (しばしば クエリー(query) の方が好ましい)"
 
 #: ../../appendixe.rst:451
-msgid "tilde"
-msgstr ""
+msgid ","
+msgstr ","
 
 #: ../../appendixe.rst:452
-msgid "\\|"
-msgstr ""
+msgid "comma"
+msgstr "コンマ(comma)"
 
 #: ../../appendixe.rst:453
-msgid "bar"
-msgstr ""
+msgid "."
+msgstr "."
 
 #: ../../appendixe.rst:454
-msgid "\\\\"
-msgstr ""
-
-#: ../../appendixe.rst:455
-msgid "backslash. (also \"under\", \"down\", and \"skip\")"
-msgstr ""
-
-#: ../../appendixe.rst:456
-msgid "/"
-msgstr ""
+msgid "dot"
+msgstr "ドット(dot)"
 
 #: ../../appendixe.rst:457
-msgid "slash. (also \"up\")"
-msgstr ""
+msgid "Footnotes"
+msgstr "脚注"
 
 #: ../../appendixe.rst:458
-msgid "<"
-msgstr ""
-
-#: ../../appendixe.rst:459
-msgid "less-than"
-msgstr ""
-
-#: ../../appendixe.rst:461
-msgid "left dart"
-msgstr ""
-
-#: ../../appendixe.rst:462
-msgid ">"
-msgstr ""
-
-#: ../../appendixe.rst:463
-msgid "greater-than"
-msgstr ""
-
-#: ../../appendixe.rst:465
-msgid "right dart"
-msgstr ""
-
-#: ../../appendixe.rst:467
-msgid "question (some prefer \"query\")"
-msgstr ""
-
-#: ../../appendixe.rst:468
-msgid ","
-msgstr ""
-
-#: ../../appendixe.rst:469
-msgid "comma"
-msgstr ""
-
-#: ../../appendixe.rst:470
-msgid "."
-msgstr ""
-
-#: ../../appendixe.rst:471
-msgid "dot"
-msgstr ""
-
-#: ../../appendixe.rst:474
-msgid "Footnotes"
-msgstr ""
-
-#: ../../appendixe.rst:475
 msgid ""
 "An often-seen alternative calls for 1 space between the name and comment "
 "and 3 between the comment and the definition. A more liberal technique "
 "uses 3 spaces before and after the comment. Whatever you choose, be "
 "consistent."
 msgstr ""
+"よく見られる代替手段では、名前とコメントの間に1スペース、コメントと定義の間に3スペースが必要です。 "
+"より自由な手法では、コメントの前後に3つのスペースを使用します。 あなたは何を選んでも構いませんが、一貫性を保ってください。"
 

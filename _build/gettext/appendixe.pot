@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2019-07-27 11:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,8 +69,11 @@ msgid "No blank lines between definitions, except to separate distinct groups of
 msgstr ""
 
 #: ../../appendixe.rst:35
-#: ../../appendixe.rst:37
 msgid "Stack-Comment Abbreviations"
+msgstr ""
+
+#: ../../appendixe.rst:37
+msgid "Stack Comment Abbreviations"
 msgstr ""
 
 #: ../../appendixe.rst:40
@@ -139,7 +142,6 @@ msgid "8-bit byte"
 msgstr ""
 
 #: ../../appendixe.rst:56
-#: ../../appendixe.rst:466
 msgid "?"
 msgstr ""
 
@@ -188,7 +190,7 @@ msgid "address of parameter field"
 msgstr ""
 
 #: ../../appendixe.rst:68
-#: ../../appendixe.rst:446
+#: ../../appendixe.rst:429
 msgid "\\`"
 msgstr ""
 
@@ -213,7 +215,6 @@ msgid "lower-limit upper-limit (inclusive)"
 msgstr ""
 
 #: ../../appendixe.rst:74
-#: ../../appendixe.rst:420
 msgid "#"
 msgstr ""
 
@@ -262,8 +263,11 @@ msgid "An “index” is a difference expressed in logical units, such as elemen
 msgstr ""
 
 #: ../../appendixe.rst:91
-#: ../../appendixe.rst:93
 msgid "Input-Stream Comment Designations"
+msgstr ""
+
+#: ../../appendixe.rst:93
+msgid "Input Stream Comment Designations"
 msgstr ""
 
 #: ../../appendixe.rst:97
@@ -271,7 +275,7 @@ msgid "single character, blank-delimited"
 msgstr ""
 
 #: ../../appendixe.rst:98
-#: ../../appendixe.rst:309
+#: ../../appendixe.rst:298
 msgid "name"
 msgstr ""
 
@@ -288,7 +292,7 @@ msgid "sequence of characters, delimited by non-blank"
 msgstr ""
 
 #: ../../appendixe.rst:103
-msgid "Follow “text” with the actual delimiter required; e.g., text” or text)."
+msgid "Follow \"text\" with the actual delimiter required; e.g., text\\\" or text\\)."
 msgstr ""
 
 #: ../../appendixe.rst:107
@@ -299,1063 +303,1078 @@ msgstr ""
 msgid "Here are two sample screens to illustrate good commenting style."
 msgstr ""
 
-#: ../../appendixe.rst:146
-#: ../../appendixe.rst:148
+#: ../../appendixe.rst:144
 msgid "Naming Conventions"
 msgstr ""
 
-#: ../../appendixe.rst:152
+#: ../../appendixe.rst:146
+msgid "Forth naming conventions"
+msgstr ""
+
+#: ../../appendixe.rst:150
 msgid "Meaning"
 msgstr ""
 
-#: ../../appendixe.rst:153
+#: ../../appendixe.rst:151
 msgid "Form"
 msgstr ""
 
-#: ../../appendixe.rst:154
+#: ../../appendixe.rst:152
 msgid "Example"
 msgstr ""
 
-#: ../../appendixe.rst:155
+#: ../../appendixe.rst:153
 msgid "**Arithmetic**"
 msgstr ""
 
-#: ../../appendixe.rst:158
+#: ../../appendixe.rst:156
 msgid "integer 1"
 msgstr ""
 
-#: ../../appendixe.rst:159
+#: ../../appendixe.rst:157
 msgid "1name"
 msgstr ""
 
-#: ../../appendixe.rst:160
+#: ../../appendixe.rst:158
 msgid "1\\+"
 msgstr ""
 
-#: ../../appendixe.rst:161
+#: ../../appendixe.rst:159
 msgid "integer 2"
 msgstr ""
 
-#: ../../appendixe.rst:162
+#: ../../appendixe.rst:160
 msgid "2name"
 msgstr ""
 
-#: ../../appendixe.rst:163
+#: ../../appendixe.rst:161
 msgid "2\\*"
 msgstr ""
 
-#: ../../appendixe.rst:164
+#: ../../appendixe.rst:162
 msgid "takes relative input parameters"
 msgstr ""
 
-#: ../../appendixe.rst:165
-#: ../../appendixe.rst:168
-#: ../../appendixe.rst:306
+#: ../../appendixe.rst:163
+#: ../../appendixe.rst:166
+#: ../../appendixe.rst:295
 msgid "+name"
 msgstr ""
 
-#: ../../appendixe.rst:166
+#: ../../appendixe.rst:164
 msgid "+DRAW"
 msgstr ""
 
-#: ../../appendixe.rst:167
+#: ../../appendixe.rst:165
 msgid "takes scaled input parameters"
 msgstr ""
 
-#: ../../appendixe.rst:169
+#: ../../appendixe.rst:167
 msgid "\\*DRAW"
 msgstr ""
 
-#: ../../appendixe.rst:170
+#: ../../appendixe.rst:168
 msgid "**Compilation**"
 msgstr ""
 
-#: ../../appendixe.rst:173
+#: ../../appendixe.rst:171
 msgid "start of \"high-level\" code"
 msgstr ""
 
-#: ../../appendixe.rst:174
+#: ../../appendixe.rst:172
 msgid "name:"
 msgstr ""
 
-#: ../../appendixe.rst:175
+#: ../../appendixe.rst:173
 msgid "CASE:"
 msgstr ""
 
-#: ../../appendixe.rst:176
+#: ../../appendixe.rst:174
 msgid "end of \"high-level\" code"
 msgstr ""
 
-#: ../../appendixe.rst:177
+#: ../../appendixe.rst:175
 msgid ";name"
 msgstr ""
 
-#: ../../appendixe.rst:178
+#: ../../appendixe.rst:176
 msgid ";CODE"
 msgstr ""
 
-#: ../../appendixe.rst:179
+#: ../../appendixe.rst:177
 msgid "put something into dictionary"
 msgstr ""
 
-#: ../../appendixe.rst:180
+#: ../../appendixe.rst:178
 msgid "name,"
 msgstr ""
 
-#: ../../appendixe.rst:181
+#: ../../appendixe.rst:179
 msgid "C,"
 msgstr ""
 
-#: ../../appendixe.rst:182
+#: ../../appendixe.rst:180
 msgid "executes at compile time"
 msgstr ""
 
-#: ../../appendixe.rst:183
+#: ../../appendixe.rst:181
 msgid "[name]"
 msgstr ""
 
-#: ../../appendixe.rst:184
+#: ../../appendixe.rst:182
 msgid "[COMPILE]"
 msgstr ""
 
-#: ../../appendixe.rst:185
+#: ../../appendixe.rst:183
 msgid "slightly different"
 msgstr ""
 
-#: ../../appendixe.rst:186
+#: ../../appendixe.rst:184
 msgid "name\\' (prime)"
 msgstr ""
 
-#: ../../appendixe.rst:187
+#: ../../appendixe.rst:185
 msgid "CR\\'"
 msgstr ""
 
-#: ../../appendixe.rst:188
+#: ../../appendixe.rst:186
 msgid "internal form or primitive"
 msgstr ""
 
-#: ../../appendixe.rst:189
-#: ../../appendixe.rst:249
+#: ../../appendixe.rst:0
+#: ../../appendixe.rst:240
 msgid "(name)"
 msgstr ""
 
-#: ../../appendixe.rst:190
-msgid "(TYPE)"
-msgstr ""
-
-#: ../../appendixe.rst:192
+#: ../../appendixe.rst:0
 msgid "or <name>"
 msgstr ""
 
-#: ../../appendixe.rst:193
+#: ../../appendixe.rst:0
+msgid "(TYPE)"
+msgstr ""
+
+#: ../../appendixe.rst:0
 msgid "<TYPE>"
 msgstr ""
 
-#: ../../appendixe.rst:194
+#: ../../appendixe.rst:191
 msgid "compiling word run-time part:"
 msgstr ""
 
-#: ../../appendixe.rst:197
+#: ../../appendixe.rst:194
 msgid "systems with no folding"
 msgstr ""
 
-#: ../../appendixe.rst:198
+#: ../../appendixe.rst:195
 msgid "lower-case"
 msgstr ""
 
-#: ../../appendixe.rst:199
+#: ../../appendixe.rst:196
 msgid "if"
 msgstr ""
 
-#: ../../appendixe.rst:200
+#: ../../appendixe.rst:197
 msgid "systems with folding"
 msgstr ""
 
-#: ../../appendixe.rst:201
+#: ../../appendixe.rst:198
 msgid "(NAME)"
 msgstr ""
 
-#: ../../appendixe.rst:202
+#: ../../appendixe.rst:199
 msgid "(IF)"
 msgstr ""
 
-#: ../../appendixe.rst:203
+#: ../../appendixe.rst:200
 msgid "defining word"
 msgstr ""
 
-#: ../../appendixe.rst:204
-#: ../../appendixe.rst:333
+#: ../../appendixe.rst:201
+#: ../../appendixe.rst:320
 msgid ":name"
 msgstr ""
 
-#: ../../appendixe.rst:205
+#: ../../appendixe.rst:202
 msgid ":COLOR"
 msgstr ""
 
-#: ../../appendixe.rst:206
+#: ../../appendixe.rst:203
 msgid "block-number where overlay begins"
 msgstr ""
 
-#: ../../appendixe.rst:207
+#: ../../appendixe.rst:204
 msgid "namING"
 msgstr ""
 
-#: ../../appendixe.rst:208
+#: ../../appendixe.rst:205
 msgid "DISKING"
 msgstr ""
 
-#: ../../appendixe.rst:209
+#: ../../appendixe.rst:206
 msgid "**Data Structures**"
 msgstr ""
 
-#: ../../appendixe.rst:212
+#: ../../appendixe.rst:209
 msgid "table or array"
 msgstr ""
 
-#: ../../appendixe.rst:213
+#: ../../appendixe.rst:210
 msgid "names"
 msgstr ""
 
-#: ../../appendixe.rst:214
+#: ../../appendixe.rst:211
 msgid "EMPLOYEES"
 msgstr ""
 
-#: ../../appendixe.rst:215
+#: ../../appendixe.rst:212
 msgid "total number of elements"
 msgstr ""
 
-#: ../../appendixe.rst:216
+#: ../../appendixe.rst:213
 msgid "#name"
 msgstr ""
 
-#: ../../appendixe.rst:217
+#: ../../appendixe.rst:214
 msgid "#EMPLOYEES"
 msgstr ""
 
-#: ../../appendixe.rst:218
+#: ../../appendixe.rst:215
 msgid "current item number (variable)"
 msgstr ""
 
-#: ../../appendixe.rst:219
+#: ../../appendixe.rst:216
 msgid "name#"
 msgstr ""
 
-#: ../../appendixe.rst:220
+#: ../../appendixe.rst:217
 msgid "EMPLOYEE#"
 msgstr ""
 
-#: ../../appendixe.rst:221
+#: ../../appendixe.rst:218
 msgid "sets current item"
 msgstr ""
 
-#: ../../appendixe.rst:222
+#: ../../appendixe.rst:219
 msgid "( n) name"
 msgstr ""
 
-#: ../../appendixe.rst:223
+#: ../../appendixe.rst:220
 msgid "13 EMPLOYEE"
 msgstr ""
 
-#: ../../appendixe.rst:224
+#: ../../appendixe.rst:221
 msgid "advance to next element"
 msgstr ""
 
-#: ../../appendixe.rst:225
+#: ../../appendixe.rst:222
 msgid "\\+name"
 msgstr ""
 
-#: ../../appendixe.rst:226
+#: ../../appendixe.rst:223
 msgid "\\+EMPLOYEE"
 msgstr ""
 
-#: ../../appendixe.rst:227
+#: ../../appendixe.rst:0
 msgid "size of offset to item from"
 msgstr ""
 
-#: ../../appendixe.rst:228
-msgid "name\\+"
-msgstr ""
-
-#: ../../appendixe.rst:229
-msgid "DATE\\+"
-msgstr ""
-
-#: ../../appendixe.rst:230
+#: ../../appendixe.rst:0
 msgid "beginning of structure"
 msgstr ""
 
-#: ../../appendixe.rst:233
+#: ../../appendixe.rst:226
+msgid "name\\+"
+msgstr ""
+
+#: ../../appendixe.rst:227
+msgid "DATE\\+"
+msgstr ""
+
+#: ../../appendixe.rst:0
 msgid "size of (bytes per)"
 msgstr ""
 
-#: ../../appendixe.rst:234
-#: ../../appendixe.rst:279
-#: ../../appendixe.rst:384
-msgid "/name"
-msgstr ""
-
-#: ../../appendixe.rst:235
-msgid "/EMPLOYEE"
-msgstr ""
-
-#: ../../appendixe.rst:236
+#: ../../appendixe.rst:0
 msgid "(short for BYTES/name)"
 msgstr ""
 
-#: ../../appendixe.rst:239
+#: ../../appendixe.rst:230
+#: ../../appendixe.rst:270
+#: ../../appendixe.rst:369
+msgid "/name"
+msgstr ""
+
+#: ../../appendixe.rst:231
+msgid "/EMPLOYEE"
+msgstr ""
+
+#: ../../appendixe.rst:232
 msgid "index pointer"
 msgstr ""
 
-#: ../../appendixe.rst:240
-#: ../../appendixe.rst:243
-#: ../../appendixe.rst:270
+#: ../../appendixe.rst:233
+#: ../../appendixe.rst:237
+#: ../../appendixe.rst:261
 msgid ">name"
 msgstr ""
 
-#: ../../appendixe.rst:241
+#: ../../appendixe.rst:234
 msgid ">IN"
 msgstr ""
 
-#: ../../appendixe.rst:242
+#: ../../appendixe.rst:0
 msgid "convert address of structure to"
 msgstr ""
 
-#: ../../appendixe.rst:244
-msgid ">BODY"
-msgstr ""
-
-#: ../../appendixe.rst:245
+#: ../../appendixe.rst:0
 msgid "address of item"
 msgstr ""
 
-#: ../../appendixe.rst:248
+#: ../../appendixe.rst:238
+msgid ">BODY"
+msgstr ""
+
+#: ../../appendixe.rst:239
 msgid "file index"
 msgstr ""
 
-#: ../../appendixe.rst:250
+#: ../../appendixe.rst:241
 msgid "(PEOPLE)"
 msgstr ""
 
-#: ../../appendixe.rst:251
+#: ../../appendixe.rst:242
 msgid "file pointer"
 msgstr ""
 
-#: ../../appendixe.rst:252
+#: ../../appendixe.rst:243
 msgid "-name"
 msgstr ""
 
-#: ../../appendixe.rst:253
+#: ../../appendixe.rst:244
 msgid "-JOB"
 msgstr ""
 
-#: ../../appendixe.rst:254
+#: ../../appendixe.rst:245
 msgid "initialize structure"
 msgstr ""
 
-#: ../../appendixe.rst:255
+#: ../../appendixe.rst:246
 msgid "0name"
 msgstr ""
 
-#: ../../appendixe.rst:256
+#: ../../appendixe.rst:247
 msgid "0RECORD"
 msgstr ""
 
-#: ../../appendixe.rst:257
+#: ../../appendixe.rst:248
 msgid "**Direction, Conversion**"
 msgstr ""
 
-#: ../../appendixe.rst:260
+#: ../../appendixe.rst:251
 msgid "backwards"
 msgstr ""
 
-#: ../../appendixe.rst:261
+#: ../../appendixe.rst:252
 msgid "name<"
 msgstr ""
 
-#: ../../appendixe.rst:262
+#: ../../appendixe.rst:253
 msgid "SLIDE<"
 msgstr ""
 
-#: ../../appendixe.rst:263
+#: ../../appendixe.rst:254
 msgid "forwards"
 msgstr ""
 
-#: ../../appendixe.rst:264
-#: ../../appendixe.rst:393
+#: ../../appendixe.rst:255
+#: ../../appendixe.rst:378
 msgid "name>"
 msgstr ""
 
-#: ../../appendixe.rst:265
+#: ../../appendixe.rst:256
 msgid "CMOVE>"
 msgstr ""
 
-#: ../../appendixe.rst:266
+#: ../../appendixe.rst:257
 msgid "from"
 msgstr ""
 
-#: ../../appendixe.rst:267
-#: ../../appendixe.rst:390
+#: ../../appendixe.rst:258
+#: ../../appendixe.rst:375
 msgid "<name"
 msgstr ""
 
-#: ../../appendixe.rst:268
+#: ../../appendixe.rst:259
 msgid "<TAPE"
 msgstr ""
 
-#: ../../appendixe.rst:269
+#: ../../appendixe.rst:260
 msgid "to"
 msgstr ""
 
-#: ../../appendixe.rst:271
+#: ../../appendixe.rst:262
 msgid ">TAPE"
 msgstr ""
 
-#: ../../appendixe.rst:272
+#: ../../appendixe.rst:263
 msgid "convert to"
 msgstr ""
 
-#: ../../appendixe.rst:273
+#: ../../appendixe.rst:264
 msgid "name>name"
 msgstr ""
 
-#: ../../appendixe.rst:274
+#: ../../appendixe.rst:265
 msgid "FEET>METERS"
 msgstr ""
 
-#: ../../appendixe.rst:275
+#: ../../appendixe.rst:266
 msgid "downward"
 msgstr ""
 
-#: ../../appendixe.rst:276
+#: ../../appendixe.rst:267
 msgid "\\\\name"
 msgstr ""
 
-#: ../../appendixe.rst:277
+#: ../../appendixe.rst:268
 msgid "\\\\LINE"
 msgstr ""
 
-#: ../../appendixe.rst:278
+#: ../../appendixe.rst:269
 msgid "upward"
 msgstr ""
 
-#: ../../appendixe.rst:280
+#: ../../appendixe.rst:271
 msgid "/LINE"
 msgstr ""
 
-#: ../../appendixe.rst:281
+#: ../../appendixe.rst:272
 msgid "open"
 msgstr ""
 
-#: ../../appendixe.rst:282
+#: ../../appendixe.rst:273
 msgid "\\{name"
 msgstr ""
 
-#: ../../appendixe.rst:283
+#: ../../appendixe.rst:274
 msgid "\\{FILE"
 msgstr ""
 
-#: ../../appendixe.rst:284
+#: ../../appendixe.rst:275
 msgid "close"
 msgstr ""
 
-#: ../../appendixe.rst:285
+#: ../../appendixe.rst:276
 msgid "\\}name"
 msgstr ""
 
-#: ../../appendixe.rst:286
+#: ../../appendixe.rst:277
 msgid "\\}FILE"
 msgstr ""
 
-#: ../../appendixe.rst:287
+#: ../../appendixe.rst:278
 msgid "**Logic, Control**"
 msgstr ""
 
-#: ../../appendixe.rst:290
+#: ../../appendixe.rst:281
 msgid "return boolean value"
 msgstr ""
 
-#: ../../appendixe.rst:291
+#: ../../appendixe.rst:282
 msgid "name?"
 msgstr ""
 
-#: ../../appendixe.rst:292
+#: ../../appendixe.rst:283
 msgid "SHORT?"
 msgstr ""
 
-#: ../../appendixe.rst:293
+#: ../../appendixe.rst:284
 msgid "returns reversed boolean"
 msgstr ""
 
-#: ../../appendixe.rst:294
+#: ../../appendixe.rst:285
 msgid "-name?"
 msgstr ""
 
-#: ../../appendixe.rst:295
+#: ../../appendixe.rst:286
 msgid "-SHORT?"
 msgstr ""
 
-#: ../../appendixe.rst:296
+#: ../../appendixe.rst:287
 msgid "address of boolean"
 msgstr ""
 
-#: ../../appendixe.rst:297
+#: ../../appendixe.rst:288
 msgid "\\'name?"
 msgstr ""
 
-#: ../../appendixe.rst:298
+#: ../../appendixe.rst:289
 msgid "\\'SHORT?"
 msgstr ""
 
-#: ../../appendixe.rst:299
+#: ../../appendixe.rst:290
 msgid "operates conditionally"
 msgstr ""
 
-#: ../../appendixe.rst:300
+#: ../../appendixe.rst:291
 msgid "?name"
 msgstr ""
 
-#: ../../appendixe.rst:301
+#: ../../appendixe.rst:0
 msgid "?DUP"
 msgstr ""
 
-#: ../../appendixe.rst:304
-msgid "(maybe ``DUP``)"
+#: ../../appendixe.rst:0
+msgid "(maybe DUP)"
 msgstr ""
 
-#: ../../appendixe.rst:305
+#: ../../appendixe.rst:294
 msgid "enable"
 msgstr ""
 
-#: ../../appendixe.rst:307
+#: ../../appendixe.rst:296
 msgid "+CLOCK"
 msgstr ""
 
-#: ../../appendixe.rst:308
+#: ../../appendixe.rst:297
 msgid "or, absence of symbol"
 msgstr ""
 
-#: ../../appendixe.rst:310
+#: ../../appendixe.rst:299
 msgid "BLINKING"
 msgstr ""
 
-#: ../../appendixe.rst:311
+#: ../../appendixe.rst:300
 msgid "disable"
 msgstr ""
 
-#: ../../appendixe.rst:312
+#: ../../appendixe.rst:301
 msgid "\\-name"
 msgstr ""
 
-#: ../../appendixe.rst:313
+#: ../../appendixe.rst:0
 msgid "\\-CLOCK"
 msgstr ""
 
-#: ../../appendixe.rst:316
+#: ../../appendixe.rst:0
 msgid "\\-BLINKING"
 msgstr ""
 
-#: ../../appendixe.rst:317
+#: ../../appendixe.rst:304
 msgid "**Memory**"
 msgstr ""
 
-#: ../../appendixe.rst:320
+#: ../../appendixe.rst:307
 msgid "save value of"
 msgstr ""
 
-#: ../../appendixe.rst:321
+#: ../../appendixe.rst:308
 msgid "@name"
 msgstr ""
 
-#: ../../appendixe.rst:322
+#: ../../appendixe.rst:309
 msgid "@CURSOR"
 msgstr ""
 
-#: ../../appendixe.rst:323
+#: ../../appendixe.rst:310
 msgid "restore value of"
 msgstr ""
 
-#: ../../appendixe.rst:324
+#: ../../appendixe.rst:311
 msgid "!name"
 msgstr ""
 
-#: ../../appendixe.rst:325
+#: ../../appendixe.rst:312
 msgid "!CURSOR"
 msgstr ""
 
-#: ../../appendixe.rst:326
+#: ../../appendixe.rst:313
 msgid "store into"
 msgstr ""
 
-#: ../../appendixe.rst:327
+#: ../../appendixe.rst:314
 msgid "name!"
 msgstr ""
 
-#: ../../appendixe.rst:328
+#: ../../appendixe.rst:315
 msgid "SECONDS!"
 msgstr ""
 
-#: ../../appendixe.rst:329
+#: ../../appendixe.rst:316
 msgid "fetch from"
 msgstr ""
 
-#: ../../appendixe.rst:330
+#: ../../appendixe.rst:317
 msgid "name@"
 msgstr ""
 
-#: ../../appendixe.rst:331
+#: ../../appendixe.rst:318
 msgid "INDEX@"
 msgstr ""
 
-#: ../../appendixe.rst:332
+#: ../../appendixe.rst:319
 msgid "name of buffer"
 msgstr ""
 
-#: ../../appendixe.rst:334
+#: ../../appendixe.rst:321
 msgid ":INSERT"
 msgstr ""
 
-#: ../../appendixe.rst:335
+#: ../../appendixe.rst:322
 msgid "address of name"
 msgstr ""
 
-#: ../../appendixe.rst:336
-#: ../../appendixe.rst:339
+#: ../../appendixe.rst:323
+#: ../../appendixe.rst:326
 msgid "\\'name"
 msgstr ""
 
-#: ../../appendixe.rst:337
+#: ../../appendixe.rst:324
 msgid "\\'S"
 msgstr ""
 
-#: ../../appendixe.rst:338
+#: ../../appendixe.rst:325
 msgid "address of pointer to name"
 msgstr ""
 
-#: ../../appendixe.rst:340
+#: ../../appendixe.rst:327
 msgid "\\'TYPE"
 msgstr ""
 
-#: ../../appendixe.rst:341
+#: ../../appendixe.rst:328
 msgid "exchange, especially bytes"
 msgstr ""
 
-#: ../../appendixe.rst:342
+#: ../../appendixe.rst:329
 msgid ">name<"
 msgstr ""
 
-#: ../../appendixe.rst:343
+#: ../../appendixe.rst:330
 msgid ">MOVE<"
 msgstr ""
 
-#: ../../appendixe.rst:344
+#: ../../appendixe.rst:331
 msgid "**Numeric Types**"
 msgstr ""
 
-#: ../../appendixe.rst:347
+#: ../../appendixe.rst:334
 msgid "byte length"
 msgstr ""
 
-#: ../../appendixe.rst:348
+#: ../../appendixe.rst:335
 msgid "Cname"
 msgstr ""
 
-#: ../../appendixe.rst:349
+#: ../../appendixe.rst:336
 msgid "C@"
 msgstr ""
 
-#: ../../appendixe.rst:350
+#: ../../appendixe.rst:0
 msgid "2 cell size, 2\\'s complement"
 msgstr ""
 
-#: ../../appendixe.rst:351
-msgid "Dname"
-msgstr ""
-
-#: ../../appendixe.rst:352
-msgid "D+"
-msgstr ""
-
-#: ../../appendixe.rst:353
+#: ../../appendixe.rst:0
 msgid "integer encoding"
 msgstr ""
 
-#: ../../appendixe.rst:356
+#: ../../appendixe.rst:339
+msgid "Dname"
+msgstr ""
+
+#: ../../appendixe.rst:340
+msgid "D+"
+msgstr ""
+
+#: ../../appendixe.rst:341
 msgid "mixed 16 and 32-bit operator"
 msgstr ""
 
-#: ../../appendixe.rst:357
+#: ../../appendixe.rst:342
 msgid "Mname"
 msgstr ""
 
-#: ../../appendixe.rst:358
+#: ../../appendixe.rst:343
 msgid "M*"
 msgstr ""
 
-#: ../../appendixe.rst:359
+#: ../../appendixe.rst:344
 msgid "3 cell size"
 msgstr ""
 
-#: ../../appendixe.rst:360
+#: ../../appendixe.rst:345
 msgid "Tname"
 msgstr ""
 
-#: ../../appendixe.rst:361
+#: ../../appendixe.rst:346
 msgid "T*"
 msgstr ""
 
-#: ../../appendixe.rst:362
+#: ../../appendixe.rst:347
 msgid "4 cell size"
 msgstr ""
 
-#: ../../appendixe.rst:363
+#: ../../appendixe.rst:348
 msgid "Qname"
 msgstr ""
 
-#: ../../appendixe.rst:364
+#: ../../appendixe.rst:349
 msgid "Q*"
 msgstr ""
 
-#: ../../appendixe.rst:365
+#: ../../appendixe.rst:350
 msgid "unsigned encoding"
 msgstr ""
 
-#: ../../appendixe.rst:366
+#: ../../appendixe.rst:351
 msgid "Uname"
 msgstr ""
 
-#: ../../appendixe.rst:368
+#: ../../appendixe.rst:352
+msgid "U\\."
+msgstr ""
+
+#: ../../appendixe.rst:353
 msgid "**Output, Printing**"
 msgstr ""
 
-#: ../../appendixe.rst:371
+#: ../../appendixe.rst:356
 msgid "print item"
 msgstr ""
 
-#: ../../appendixe.rst:372
+#: ../../appendixe.rst:357
 msgid ".name"
 msgstr ""
 
-#: ../../appendixe.rst:373
+#: ../../appendixe.rst:358
 msgid ".S"
 msgstr ""
 
-#: ../../appendixe.rst:374
+#: ../../appendixe.rst:359
 msgid "print numeric (name denotes type)"
 msgstr ""
 
-#: ../../appendixe.rst:375
-msgid "name."
+#: ../../appendixe.rst:360
+msgid "name\\."
 msgstr ""
 
-#: ../../appendixe.rst:376
-msgid ", U."
+#: ../../appendixe.rst:361
+msgid "D\\. , U\\."
 msgstr ""
 
-#: ../../appendixe.rst:377
+#: ../../appendixe.rst:362
 msgid "print right justified"
 msgstr ""
 
-#: ../../appendixe.rst:378
+#: ../../appendixe.rst:363
 msgid "name.R"
 msgstr ""
 
-#: ../../appendixe.rst:379
+#: ../../appendixe.rst:364
 msgid "U.R"
 msgstr ""
 
-#: ../../appendixe.rst:380
+#: ../../appendixe.rst:365
 msgid "**Quantity**"
 msgstr ""
 
-#: ../../appendixe.rst:383
+#: ../../appendixe.rst:368
 msgid "\"per\""
 msgstr ""
 
-#: ../../appendixe.rst:385
+#: ../../appendixe.rst:370
 msgid "/SIDE"
 msgstr ""
 
-#: ../../appendixe.rst:386
+#: ../../appendixe.rst:371
 msgid "**Sequencing**"
 msgstr ""
 
-#: ../../appendixe.rst:389
+#: ../../appendixe.rst:374
 msgid "start"
 msgstr ""
 
-#: ../../appendixe.rst:391
+#: ../../appendixe.rst:376
 msgid "<#"
 msgstr ""
 
-#: ../../appendixe.rst:392
+#: ../../appendixe.rst:377
 msgid "end"
 msgstr ""
 
-#: ../../appendixe.rst:394
+#: ../../appendixe.rst:379
 msgid "#>"
 msgstr ""
 
-#: ../../appendixe.rst:395
+#: ../../appendixe.rst:380
 msgid "**Text**"
 msgstr ""
 
-#: ../../appendixe.rst:398
+#: ../../appendixe.rst:383
 msgid "string follows delimited by \\\""
 msgstr ""
 
-#: ../../appendixe.rst:399
+#: ../../appendixe.rst:384
 msgid "name\\\""
 msgstr ""
 
-#: ../../appendixe.rst:400
+#: ../../appendixe.rst:385
 msgid "ABORT\\\" text\\\""
 msgstr ""
 
-#: ../../appendixe.rst:401
+#: ../../appendixe.rst:0
 msgid "text or string operator"
 msgstr ""
 
-#: ../../appendixe.rst:402
-msgid "\\\"name"
-msgstr ""
-
-#: ../../appendixe.rst:403
-msgid "\\\"COMPARE"
-msgstr ""
-
-#: ../../appendixe.rst:404
+#: ../../appendixe.rst:0
 msgid "(similar to $ prefix in BASIC)"
 msgstr ""
 
-#: ../../appendixe.rst:407
+#: ../../appendixe.rst:388
+msgid "\\\"name"
+msgstr ""
+
+#: ../../appendixe.rst:389
+msgid "\\\"COMPARE"
+msgstr ""
+
+#: ../../appendixe.rst:390
 msgid "superstring array"
 msgstr ""
 
-#: ../../appendixe.rst:408
+#: ../../appendixe.rst:391
 msgid "\\\"name\\\""
 msgstr ""
 
-#: ../../appendixe.rst:409
+#: ../../appendixe.rst:392
 msgid "\\\"COLORS\\\""
 msgstr ""
 
-#: ../../appendixe.rst:411
+#: ../../appendixe.rst:394
 msgid "*How to Pronounce the Symbols*"
 msgstr ""
 
-#: ../../appendixe.rst:413
+#: ../../appendixe.rst:396
 msgid "How to Pronounce the Symbols"
 msgstr ""
 
-#: ../../appendixe.rst:416
+#: ../../appendixe.rst:399
 msgid "!"
 msgstr ""
 
-#: ../../appendixe.rst:417
+#: ../../appendixe.rst:400
 msgid "store"
 msgstr ""
 
-#: ../../appendixe.rst:418
+#: ../../appendixe.rst:401
 msgid "@"
 msgstr ""
 
-#: ../../appendixe.rst:419
+#: ../../appendixe.rst:402
 msgid "fetch"
 msgstr ""
 
-#: ../../appendixe.rst:421
+#: ../../appendixe.rst:403
+msgid "\\#"
+msgstr ""
+
+#: ../../appendixe.rst:404
 msgid "sharp (or \"number\", as in #RECORDS)"
 msgstr ""
 
-#: ../../appendixe.rst:422
+#: ../../appendixe.rst:405
 msgid "$"
 msgstr ""
 
-#: ../../appendixe.rst:423
+#: ../../appendixe.rst:406
 msgid "dollar"
 msgstr ""
 
-#: ../../appendixe.rst:424
+#: ../../appendixe.rst:407
 msgid "%"
 msgstr ""
 
-#: ../../appendixe.rst:425
+#: ../../appendixe.rst:408
 msgid "percent"
 msgstr ""
 
-#: ../../appendixe.rst:426
+#: ../../appendixe.rst:409
 msgid "^"
 msgstr ""
 
-#: ../../appendixe.rst:427
+#: ../../appendixe.rst:410
 msgid "caret"
 msgstr ""
 
-#: ../../appendixe.rst:428
+#: ../../appendixe.rst:411
 msgid "&"
 msgstr ""
 
-#: ../../appendixe.rst:429
+#: ../../appendixe.rst:412
 msgid "ampersand"
 msgstr ""
 
-#: ../../appendixe.rst:430
+#: ../../appendixe.rst:413
 msgid "\\*"
 msgstr ""
 
-#: ../../appendixe.rst:431
+#: ../../appendixe.rst:414
 msgid "star"
 msgstr ""
 
-#: ../../appendixe.rst:432
+#: ../../appendixe.rst:415
 msgid "("
 msgstr ""
 
-#: ../../appendixe.rst:433
+#: ../../appendixe.rst:416
 msgid "left paren; paren"
 msgstr ""
 
-#: ../../appendixe.rst:434
+#: ../../appendixe.rst:417
 msgid ")"
 msgstr ""
 
-#: ../../appendixe.rst:435
+#: ../../appendixe.rst:418
 msgid "right paren; paren"
 msgstr ""
 
-#: ../../appendixe.rst:436
+#: ../../appendixe.rst:419
 msgid "\\-"
 msgstr ""
 
-#: ../../appendixe.rst:437
+#: ../../appendixe.rst:420
 msgid "dash; not"
 msgstr ""
 
-#: ../../appendixe.rst:438
+#: ../../appendixe.rst:421
 msgid "\\+"
 msgstr ""
 
-#: ../../appendixe.rst:439
+#: ../../appendixe.rst:422
 msgid "plus"
 msgstr ""
 
-#: ../../appendixe.rst:440
+#: ../../appendixe.rst:423
 msgid "="
 msgstr ""
 
-#: ../../appendixe.rst:441
+#: ../../appendixe.rst:424
 msgid "equals"
 msgstr ""
 
-#: ../../appendixe.rst:442
+#: ../../appendixe.rst:425
 msgid "{ }"
 msgstr ""
 
-#: ../../appendixe.rst:443
+#: ../../appendixe.rst:426
 msgid "braces (traditionally called \"curly brackets\")"
 msgstr ""
 
-#: ../../appendixe.rst:444
+#: ../../appendixe.rst:427
 msgid "[ ]"
 msgstr ""
 
-#: ../../appendixe.rst:445
+#: ../../appendixe.rst:428
 msgid "square brackets"
 msgstr ""
 
-#: ../../appendixe.rst:447
+#: ../../appendixe.rst:430
 msgid "quote"
 msgstr ""
 
-#: ../../appendixe.rst:448
+#: ../../appendixe.rst:431
 msgid "\\'"
 msgstr ""
 
-#: ../../appendixe.rst:449
+#: ../../appendixe.rst:432
 msgid "as prefix: tick; as suffix: prime"
 msgstr ""
 
-#: ../../appendixe.rst:450
+#: ../../appendixe.rst:433
 msgid "~"
 msgstr ""
 
-#: ../../appendixe.rst:451
+#: ../../appendixe.rst:434
 msgid "tilde"
 msgstr ""
 
-#: ../../appendixe.rst:452
+#: ../../appendixe.rst:435
 msgid "\\|"
 msgstr ""
 
-#: ../../appendixe.rst:453
+#: ../../appendixe.rst:436
 msgid "bar"
 msgstr ""
 
-#: ../../appendixe.rst:454
+#: ../../appendixe.rst:437
 msgid "\\\\"
 msgstr ""
 
-#: ../../appendixe.rst:455
+#: ../../appendixe.rst:438
 msgid "backslash. (also \"under\", \"down\", and \"skip\")"
 msgstr ""
 
-#: ../../appendixe.rst:456
+#: ../../appendixe.rst:439
 msgid "/"
 msgstr ""
 
-#: ../../appendixe.rst:457
+#: ../../appendixe.rst:440
 msgid "slash. (also \"up\")"
 msgstr ""
 
-#: ../../appendixe.rst:458
+#: ../../appendixe.rst:441
 msgid "<"
 msgstr ""
 
-#: ../../appendixe.rst:459
+#: ../../appendixe.rst:442
 msgid "less-than"
 msgstr ""
 
-#: ../../appendixe.rst:461
+#: ../../appendixe.rst:444
 msgid "left dart"
 msgstr ""
 
-#: ../../appendixe.rst:462
+#: ../../appendixe.rst:445
 msgid ">"
 msgstr ""
 
-#: ../../appendixe.rst:463
+#: ../../appendixe.rst:446
 msgid "greater-than"
 msgstr ""
 
-#: ../../appendixe.rst:465
+#: ../../appendixe.rst:448
 msgid "right dart"
 msgstr ""
 
-#: ../../appendixe.rst:467
+#: ../../appendixe.rst:449
+msgid "\\?"
+msgstr ""
+
+#: ../../appendixe.rst:450
 msgid "question (some prefer \"query\")"
 msgstr ""
 
-#: ../../appendixe.rst:468
+#: ../../appendixe.rst:451
 msgid ","
 msgstr ""
 
-#: ../../appendixe.rst:469
+#: ../../appendixe.rst:452
 msgid "comma"
 msgstr ""
 
-#: ../../appendixe.rst:470
+#: ../../appendixe.rst:453
 msgid "."
 msgstr ""
 
-#: ../../appendixe.rst:471
+#: ../../appendixe.rst:454
 msgid "dot"
 msgstr ""
 
-#: ../../appendixe.rst:474
+#: ../../appendixe.rst:457
 msgid "Footnotes"
 msgstr ""
 
-#: ../../appendixe.rst:475
+#: ../../appendixe.rst:458
 msgid "An often-seen alternative calls for 1 space between the name and comment and 3 between the comment and the definition. A more liberal technique uses 3 spaces before and after the comment. Whatever you choose, be consistent."
 msgstr ""
 

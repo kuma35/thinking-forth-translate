@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-20 19:46+0900\n"
-"PO-Revision-Date: 2019-07-20 19:46+0900\n"
+"POT-Creation-Date: 2019-07-27 04:49+0900\n"
+"PO-Revision-Date: 2019-07-27 04:50+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1081,12 +1081,10 @@ msgid "2 spaces between the name and the comment [#f1]_"
 msgstr "空白2つだけ空けるのは名前とコメントの間。 [#f1]_"
 
 #: ../../chapter5.rst:761
-msgid "2 spaces, or a carriage return, after the comment and"
-msgstr "2つの空白空か改行入れるのは、 コメントの後と、"
-
-#: ../../chapter5.rst:762
-msgid "before the definition [#f1]_"
-msgstr "定義の前。 [#f1]_"
+msgid ""
+"2 spaces, or a carriage return, after the comment and before the "
+"definition [#f1]_"
+msgstr "2つの空白か改行入れるのは、 コメントの後と、定義の前。 [#f1]_"
 
 #: ../../chapter5.rst:763
 msgid "3 spaces between the name and definition if no comment is used"
@@ -1828,7 +1826,7 @@ msgstr ""
 
 #: ../../chapter5.rst:1225
 msgid "Input-stream comment designations."
-msgstr "入力ストリームのコメント指定"
+msgstr "入力ストリームのコメント凡例"
 
 #: ../../chapter5.rst:1230
 msgid "single character, blank-delimited"
@@ -1851,8 +1849,11 @@ msgid "sequence of characters, delimited by non-blank"
 msgstr "空白以外で区切られた文字の連なり"
 
 #: ../../chapter5.rst:1235
-msgid "Follow \"text\" with the actual delimiter required; e.g.: \"text\" or text"
-msgstr "実際の区切り文字をtextの後に続けます。 例: \"text\" または text"
+#, fuzzy
+msgid ""
+"Follow \"text\" with the actual delimiter required; e.g.: text\\\" or "
+"text\\)"
+msgstr "実際の区切り文字をtextの後に続けます。 例: text\\\" または text\\)"
 
 #: ../../chapter5.rst:1237
 msgid ""
@@ -3038,7 +3039,9 @@ msgstr ""
 msgid ""
 "Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  "
 "**1981 FORML Proceedings,**  p. 363."
-msgstr "Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  **1981 FORML Proceedings,**  p. 363."
+msgstr ""
+"Joanne Lee, \"Quality Assurance in a ForthEnvironment,\" (Appendix A),  "
+"**1981 FORML Proceedings,**  p. 363."
 
 #: ../../chapter5.rst:2088
 msgid ""

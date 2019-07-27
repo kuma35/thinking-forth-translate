@@ -34,7 +34,7 @@ of definitions
 Stack-Comment Abbreviations
 ===========================
 
-.. list-table:: Stack-Comment Abbreviations
+.. list-table:: Stack Comment Abbreviations
    :widths: auto
 
    * - n
@@ -90,7 +90,7 @@ or records.
 Input-Stream Comment Designations
 =================================
 
-.. list-table:: Input-Stream Comment Designations
+.. list-table:: Input Stream Comment Designations
    :widths: auto
 
    * - c
@@ -100,8 +100,8 @@ Input-Stream Comment Designations
    * - text
      - sequence of characters, delimited by non-blank
 
-Follow “text” with the actual delimiter required;
-e.g., text” or text).
+Follow "text" with the actual delimiter required;
+e.g., text\" or text\).
 
 Samples of Good Commenting Style
 ================================
@@ -110,9 +110,8 @@ Here are two sample screens to illustrate good commenting
 style.
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
-   \begin{Screen}
    \ Formatter         Data Structures -- p.2             06/06/83
     6 CONSTANT TMARGIN \ line# where body of text begins
    55 CONSTANT BMARGIN \ line# where body of text ends
@@ -129,9 +128,8 @@ style.
    VARIABLE WALL-WAS \ WALL when curr. line started being formt'd
 
 .. code-block:: none
-   :linenos:
+   :lineno-start: 0
 
-   \begin{Screen}
    \ Formatter          positioning -- p.1               06/06/83
    : SKIP  ( n)  ACROSS +! ;
    : NEWLEFT  \ reset left margin
@@ -145,8 +143,8 @@ style.
 Naming Conventions
 ==================
 
-.. list-table:: Naming Conventions
-   :widths: auto
+.. list-table:: Forth naming conventions
+   :widths: 32 12 12
    :header-rows: 1
 
    * - Meaning
@@ -186,11 +184,10 @@ Naming Conventions
      - name\' (prime)
      - CR\'
    * - internal form or primitive
-     - (name)
-     - (TYPE)
-   * - 
-     - or <name>
-     - <TYPE>
+     - | (name)
+       | or <name>
+     - | (TYPE)
+       | <TYPE>
    * - compiling word run-time part:
      -
      -
@@ -224,27 +221,21 @@ Naming Conventions
    * - advance to next element
      - \+name
      - \+EMPLOYEE
-   * - size of offset to item from
+   * - | size of offset to item from
+       |   beginning of structure
      - name\+
      - DATE\+
-   * - 　beginning of structure
-     -
-     -
-   * - size of (bytes per)
+   * - | size of (bytes per)
+       |   (short for BYTES/name)
      - /name
      - /EMPLOYEE
-   * - 　(short for BYTES/name)
-     -
-     -
    * - index pointer
      - >name
      - >IN
-   * - convert address of structure to
+   * - | convert address of structure to
+       |   address of item
      - >name
      - >BODY
-   * - 　address of item
-     -
-     -
    * - file index
      - (name)
      - (PEOPLE)
@@ -298,10 +289,8 @@ Naming Conventions
      - \'SHORT?
    * - operates conditionally
      - ?name
-     - ?DUP
-   * -
-     -
-     - (maybe ``DUP``)
+     - | ?DUP
+       | (maybe DUP)
    * - enable
      - +name
      - +CLOCK
@@ -310,10 +299,8 @@ Naming Conventions
      - BLINKING
    * - disable
      - \-name
-     - \-CLOCK
-   * -
-     -
-     - \-BLINKING
+     - | \-CLOCK
+       | \-BLINKING
    * - **Memory**
      -
      -
@@ -347,12 +334,10 @@ Naming Conventions
    * - byte length
      - Cname
      - C@
-   * - 2 cell size, 2\'s complement
+   * - | 2 cell size, 2\'s complement
+       |   integer encoding
      - Dname
      - D+
-   * - 　integer encoding
-     -
-     -
    * - mixed 16 and 32-bit operator
      - Mname
      - M*
@@ -364,7 +349,7 @@ Naming Conventions
      - Q*
    * - unsigned encoding
      - Uname
-     - U.
+     - U\.
    * - **Output, Printing**
      -
      -
@@ -372,8 +357,8 @@ Naming Conventions
      - .name
      - .S
    * - print numeric (name denotes type)
-     - name.
-     - D. , U.
+     - name\.
+     - D\. , U\.
    * - print right justified
      - name.R
      - U.R
@@ -398,12 +383,10 @@ Naming Conventions
    * - string follows delimited by \"
      - name\"
      - ABORT\" text\"
-   * - text or string operator
+   * - | text or string operator
+       |   (similar to $ prefix in BASIC)
      - \"name
      - \"COMPARE
-   * -  (similar to $ prefix in BASIC)
-     -
-     -
    * - superstring array
      - \"name\"
      - \"COLORS\"
@@ -417,7 +400,7 @@ Naming Conventions
      - store
    * - @
      - fetch
-   * - #
+   * - \#
      - sharp (or "number", as in #RECORDS)
    * - $
      - dollar
@@ -463,7 +446,7 @@ Naming Conventions
      - greater-than
    * -
      - right dart
-   * - ?
+   * - \?
      - question (some prefer "query")
    * - ,
      - comma

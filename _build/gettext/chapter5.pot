@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-20 19:46+0900\n"
+"POT-Creation-Date: 2019-07-27 04:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -662,11 +662,7 @@ msgid "2 spaces between the name and the comment [#f1]_"
 msgstr ""
 
 #: ../../chapter5.rst:761
-msgid "2 spaces, or a carriage return, after the comment and"
-msgstr ""
-
-#: ../../chapter5.rst:762
-msgid "before the definition [#f1]_"
+msgid "2 spaces, or a carriage return, after the comment and before the definition [#f1]_"
 msgstr ""
 
 #: ../../chapter5.rst:763
@@ -1227,7 +1223,7 @@ msgid "sequence of characters, delimited by non-blank"
 msgstr ""
 
 #: ../../chapter5.rst:1235
-msgid "Follow \"text\" with the actual delimiter required; e.g.: \"text\" or text"
+msgid "Follow \"text\" with the actual delimiter required; e.g.: text\\\" or text\\)"
 msgstr ""
 
 #: ../../chapter5.rst:1237

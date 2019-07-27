@@ -758,8 +758,8 @@ Forth’s interpreter couldn’t care less about spacing or indentation.)
 
    * - 1 space between the colon and the name
    * - 2 spaces between the name and the comment [#f1]_ 
-   * - 2 spaces, or a carriage return, after the comment and
-   * - before the definition [#f1]_
+   * - 2 spaces, or a carriage return, after the comment and 
+       before the definition [#f1]_
    * - 3 spaces between the name and definition if no comment is used
    * - 3 spaces indentation on each subsequent line
        (or multiples of 3 for nested indentation)
@@ -1232,7 +1232,7 @@ lists the designations used for input stream arguments.
    text sequence of characters, delimited by non-blank
    ==== ==============================================
 
-Follow "text" with the actual delimiter required; e.g.: "text" or text
+Follow "text" with the actual delimiter required; e.g.: text\" or text\)
 
 The input-stream comment appears *before* the stack comment, and is
 *not* encapsulated between its own pair of parentheses, but simply
