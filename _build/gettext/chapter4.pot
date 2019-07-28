@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-13 12:39+0900\n"
+"POT-Creation-Date: 2019-07-29 05:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -453,7 +453,7 @@ msgid "Let numbers precede names."
 msgstr ""
 
 #: ../../chapter4.rst:471
-msgid "Words that require a numeric argument will naturally expect to find that number on the stack. Syntactically speaking, then, the number should precede the name. For instance, the syntax of the word ``SPACES``, which emits “:math:`n`” number of spaces, is"
+msgid "Words that require a numeric argument will naturally expect to find that number on the stack. Syntactically speaking, then, the number should precede the name. For instance, the syntax of the word ``SPACES``, which emits ``n`` number of spaces, is"
 msgstr ""
 
 #: ../../chapter4.rst:480
@@ -1270,7 +1270,7 @@ msgid "Algorithm"
 msgstr ""
 
 #: ../../chapter4.rst:1254
-msgid "Divide :math:`n` by 10. The quotient is the tens’ column digit; the remainder is the ones’ column digit. Look up the ten’s digit in the tens’ table and print the corresponding symbol pattern. Look up the ones’ digit in the one’s table and print that corresponding symbol pattern."
+msgid "Divide ``n`` by 10. The quotient is the tens’ column digit; the remainder is the ones’ column digit. Look up the ten’s digit in the tens’ table and print the corresponding symbol pattern. Look up the ones’ digit in the one’s table and print that corresponding symbol pattern."
 msgstr ""
 
 #: ../../chapter4.rst:1260
@@ -1674,7 +1674,7 @@ msgid "The special constraint of this problem, of course, is that no one card ma
 msgstr ""
 
 #: ../../chapter4.rst:1815
-msgid "You may assume you have a random-number generator called CHOOSE. It’s stack argument is “:math:`n`”; it produces a random number between zero and :math:`n-1` inclusive. (See the Handy Hint, Chapter Ten, *Starting Forth*.)"
+msgid "You may assume you have a random-number generator called CHOOSE. It’s stack argument is ``n``; it produces a random number between zero and ``n-1`` inclusive. (See the Handy Hint, Chapter Ten, *Starting Forth*.)"
 msgstr ""
 
 #: ../../chapter4.rst:1820

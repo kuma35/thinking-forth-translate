@@ -222,8 +222,8 @@ this order:
    
    ( x1 y1 x2 y2)
 
-where :math:`x_1,y_1` represent the :math:`x,y` coordinates for the one
-end-point, and :math:`x_2,y_2` represent the opposite end-point.
+where ``x1,y1`` represent the ``x,y`` coordinates for the one
+end-point, and ``x2,y2`` represent the opposite end-point.
 
 Now you have to write a box-drawing word called ``[BOX]`` which takes four
 arguments in this order:
@@ -232,7 +232,7 @@ arguments in this order:
    
    ( x1 y1 x2 y2)
 
-where x1 y1 represent the :math:`x,y` coordinates for the upper
+where x1 y1 represent the ``x,y`` coordinates for the upper
 left-hand corner of the box, and x2 y2 represent the lower right-hand
 corner coordinates. Not only do you have four elements on the stack,
 they each have to be referred to more than once as you draw lines from
@@ -368,7 +368,7 @@ to fetch its contents. But you must write
    
    ( n) 5 PICK !
 
-because with “:math:`n`” on the stack, the address is now in the fifth
+because with ``n`` on the stack, the address is now in the fifth
 position. Code like this is hard to read and harder to modify.
 
 Make Stack Drawings

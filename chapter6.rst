@@ -1071,11 +1071,11 @@ center all these boxes on a screen 80 columns wide. To center something,
 we subtract its width from 80 and divide by two to determine the left
 margin. To figure the total width of all the boxes, we add
 
-.. math::
+.. code-block:: none
 
    8 + 4 + 8 + 4 + 8 = 32
 
-(three widths and two avenues). :math:`(80-32) / 2 = 24`.
+(three widths and two avenues). ``(80-32) / 2 = 24``.
 
 So we could, crudely, define:
 

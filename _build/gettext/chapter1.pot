@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 00:00+0900\n"
+"POT-Creation-Date: 2019-07-29 05:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "High-level languages are clearly more “powerful” than assembly langua
 msgstr ""
 
 #: ../../chapter1.rst:144
-msgid "The actual instructions depend on each entire “statement” of source code taken as a whole. Operators such as :math:`+` and :math:`=` have no meaning by themselves. They are merely part of a complex symbology that depends upon syntax and the operator\\’s location in the statement."
+msgid "The actual instructions depend on each entire “statement” of source code taken as a whole. Operators such as ``+`` and ``=`` have no meaning by themselves. They are merely part of a complex symbology that depends upon syntax and the operator\\’s location in the statement."
 msgstr ""
 
 #: ../../chapter1.rst:149

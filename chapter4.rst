@@ -471,7 +471,7 @@ Here are some elementary rules of Forth’s natural syntax:
 Words that require a numeric argument will naturally expect to find that
 number on the stack. Syntactically speaking, then, the number should
 precede the name. For instance, the syntax of the word ``SPACES``, which
-emits “:math:`n`” number of spaces, is
+emits ``n`` number of spaces, is
 
 .. code-block:: none
    
@@ -1251,7 +1251,7 @@ Data Structure
 Algorithm
 ---------
 
-Divide :math:`n` by 10. The quotient is the tens’ column digit; the
+Divide ``n`` by 10. The quotient is the tens’ column digit; the
 remainder is the ones’ column digit. Look up the ten’s digit in the
 tens’ table and print the corresponding symbol pattern. Look up the
 ones’ digit in the one’s table and print that corresponding symbol
@@ -1813,8 +1813,8 @@ The special constraint of this problem, of course, is that no one card
 may appear twice in the array.
 
 You may assume you have a random-number generator called CHOOSE. It’s
-stack argument is “:math:`n`”; it produces a random number between zero
-and :math:`n-1` inclusive. (See the Handy Hint, Chapter Ten, *Starting
+stack argument is ``n``; it produces a random number between zero
+and ``n-1`` inclusive. (See the Handy Hint, Chapter Ten, *Starting
 Forth*.)
 
 Can you design the card-shuffling algorithm so that it avoids the

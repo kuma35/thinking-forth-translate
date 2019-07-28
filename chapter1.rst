@@ -142,7 +142,7 @@ significantly, high-level languages eliminate the linear correspondence
 between source code and the resulting machine instructions.
 
 The actual instructions depend on each entire “statement” of source code
-taken as a whole. Operators such as :math:`+` and :math:`=` have no
+taken as a whole. Operators such as ``+`` and ``=`` have no
 meaning by themselves. They are merely part of a complex symbology that
 depends upon syntax and the operator\’s location in the statement.
 

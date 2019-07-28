@@ -22,8 +22,6 @@ venv sphinx environment and output.
 3. python3 -m venv ./venv
 4. source ./venv/bin/activate
 5. pip install -r ./venv-pip-freeze.txt
-6. install texlive and set PATH.
-7. conf.py extensions sphinx.ext.imgmath
 
 # Build
 

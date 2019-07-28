@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 15:37+0900\n"
+"POT-Creation-Date: 2019-07-29 05:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -539,7 +539,7 @@ msgid "To effect a decision with a numeric outcome, use ``AND``."
 msgstr ""
 
 #: ../../chapter8.rst:769
-msgid "In the case of a decision that produces either zero or a non-zero “:math:`n`,” the traditional phrase"
+msgid "In the case of a decision that produces either zero or a non-zero ``n`` the traditional phrase"
 msgstr ""
 
 #: ../../chapter8.rst:777
@@ -547,7 +547,7 @@ msgid "is equivalent to the simpler statement"
 msgstr ""
 
 #: ../../chapter8.rst:783
-msgid "Again, the secret is that “true” is represented by :math:`-1` (all ones) in \\’83 Forth systems. ``AND``\\ ing “:math:`n`” with the flag will either produce “:math:`n`” (all bits intact) or “:math:`0`” (all bits cleared)."
+msgid "Again, the secret is that “true” is represented by -1 (all ones) in \\’83 Forth systems. ``AND``\\ ing ``n`` with the flag will either produce ``n`` (all bits intact) or ``0`` (all bits cleared)."
 msgstr ""
 
 #: ../../chapter8.rst:788
@@ -563,7 +563,7 @@ msgid "Take a look at this example:"
 msgstr ""
 
 #: ../../chapter8.rst:806
-msgid "This phrase either adds 45 to “:math:`n`” or doesn’t, depending on the relative sizes of “:math:`a`” and “:math:`b`.” Since “adding 45 or not” is the same as “adding 45 or adding 0,” the difference between the two outcomes is purely numeric. We can rid ourselves of a decision, and simply compute:"
+msgid "This phrase either adds 45 to ``n`` or doesn’t, depending on the relative sizes of ``a`` and ``b.`` Since “adding 45 or not” is the same as “adding 45 or adding 0,” the difference between the two outcomes is purely numeric. We can rid ourselves of a decision, and simply compute:"
 msgstr ""
 
 #: ../../chapter8.rst:817
@@ -859,7 +859,7 @@ msgid "Here is an example that computes powers of two to 8-bit precision:"
 msgstr ""
 
 #: ../../chapter8.rst:1250
-msgid "Instead of computing the answer by multiplying two times itself “:math:`n`” times, the answers are all pre-computed and placed in a table. We can use simple addition to offset into the table and get the answer."
+msgid "Instead of computing the answer by multiplying two times itself ``n`` times, the answers are all pre-computed and placed in a table. We can use simple addition to offset into the table and get the answer."
 msgstr ""
 
 #: ../../chapter8.rst:1255
@@ -1363,7 +1363,7 @@ msgid "For Further Thinking"
 msgstr ""
 
 #: ../../chapter8.rst:1890
-msgid "Define the word ``DIRECTION``, which returns either 1, :math:`-1`, or 0, depending on whether the input argument is non-zero positive, negative, or zero, respectively."
+msgid "Define the word ``DIRECTION``, which returns either 1, -1, or 0, depending on whether the input argument is non-zero positive, negative, or zero, respectively."
 msgstr ""
 
 #: ../../chapter8.rst:1895

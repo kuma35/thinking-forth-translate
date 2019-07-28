@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-23 14:15+0900\n"
+"POT-Creation-Date: 2019-07-29 05:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,7 +214,7 @@ msgid "Here’s an example of a worst case. Assume you have a word called ``LINE
 msgstr ""
 
 #: ../../chapter7.rst:225
-msgid "where :math:`x_1,y_1` represent the :math:`x,y` coordinates for the one end-point, and :math:`x_2,y_2` represent the opposite end-point."
+msgid "where ``x1,y1`` represent the ``x,y`` coordinates for the one end-point, and ``x2,y2`` represent the opposite end-point."
 msgstr ""
 
 #: ../../chapter7.rst:228
@@ -222,7 +222,7 @@ msgid "Now you have to write a box-drawing word called ``[BOX]`` which takes fou
 msgstr ""
 
 #: ../../chapter7.rst:235
-msgid "where x1 y1 represent the :math:`x,y` coordinates for the upper left-hand corner of the box, and x2 y2 represent the lower right-hand corner coordinates. Not only do you have four elements on the stack, they each have to be referred to more than once as you draw lines from point to point."
+msgid "where x1 y1 represent the ``x,y`` coordinates for the upper left-hand corner of the box, and x2 y2 represent the lower right-hand corner coordinates. Not only do you have four elements on the stack, they each have to be referred to more than once as you draw lines from point to point."
 msgstr ""
 
 #: ../../chapter7.rst:241
@@ -314,7 +314,7 @@ msgid "to fetch its contents. But you must write"
 msgstr ""
 
 #: ../../chapter7.rst:371
-msgid "because with “:math:`n`” on the stack, the address is now in the fifth position. Code like this is hard to read and harder to modify."
+msgid "because with ``n`` on the stack, the address is now in the fifth position. Code like this is hard to read and harder to modify."
 msgstr ""
 
 #: ../../chapter7.rst:375

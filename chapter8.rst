@@ -767,7 +767,7 @@ We can do even more with “hybrid values”:
    To effect a decision with a numeric outcome, use ``AND``.
 
 In the case of a decision that produces either zero or a non-zero
-“:math:`n`,” the traditional phrase
+``n`` the traditional phrase
 
 .. code-block:: none
    
@@ -780,9 +780,9 @@ is equivalent to the simpler statement
    
    ( ? )  n AND
 
-Again, the secret is that “true” is represented by :math:`-1` (all ones)
-in \’83 Forth systems. ``AND``\ ing “:math:`n`” with the
-flag will either produce “:math:`n`” (all bits intact) or “:math:`0`”
+Again, the secret is that “true” is represented by -1 (all ones)
+in \’83 Forth systems. ``AND``\ ing ``n`` with the
+flag will either produce ``n`` (all bits intact) or ``0``
 (all bits cleared).
 
 To restate with an example:
@@ -803,8 +803,8 @@ Take a look at this example:
    
    n  a b <  IF  45 +  THEN
 
-This phrase either adds 45 to “:math:`n`” or doesn’t, depending on the
-relative sizes of “:math:`a`” and “:math:`b`.” Since “adding 45 or not”
+This phrase either adds 45 to ``n`` or doesn’t, depending on the
+relative sizes of ``a`` and ``b.`` Since “adding 45 or not”
 is the same as “adding 45 or adding 0,” the difference between the two
 outcomes is purely numeric. We can rid ourselves of a decision, and
 simply compute:
@@ -1248,7 +1248,7 @@ Here is an example that computes powers of two to 8-bit precision:
       TWOS +  C@ ;
 
 Instead of computing the answer by multiplying two times itself
-“:math:`n`” times, the answers are all pre-computed and placed in a
+``n`` times, the answers are all pre-computed and placed in a
 table. We can use simple addition to offset into the table and get the
 answer.
 
@@ -1888,7 +1888,7 @@ For Further Thinking
 ====================
 
 Define the word ``DIRECTION``, which returns either 1,
-:math:`-1`, or 0, depending on whether the input argument is non-zero
+-1, or 0, depending on whether the input argument is non-zero
 positive, negative, or zero, respectively. 
 
 REFERNCES

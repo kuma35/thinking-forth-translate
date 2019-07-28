@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-23 14:15+0900\n"
-"PO-Revision-Date: 2019-07-27 20:50+0900\n"
+"POT-Creation-Date: 2019-07-29 05:55+0900\n"
+"PO-Revision-Date: 2019-07-29 06:01+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -338,9 +338,9 @@ msgstr "以下がその最悪の例です。 以下の順番で座標として�
 
 #: ../../chapter7.rst:225
 msgid ""
-"where :math:`x_1,y_1` represent the :math:`x,y` coordinates for the one "
-"end-point, and :math:`x_2,y_2` represent the opposite end-point."
-msgstr "ここで、 :math:`x_1,y_1` は始点の、 :math:`x_2,y_2` は終点の :math:`x,y` 座標をを表します。"
+"where ``x1,y1`` represent the ``x,y`` coordinates for the one end-point, "
+"and ``x2,y2`` represent the opposite end-point."
+msgstr "ここで、 ``x1,y1`` は始点の、 ``x2,y2`` は終点の ``x,y`` 座標をを表します。"
 
 #: ../../chapter7.rst:228
 msgid ""
@@ -350,14 +350,12 @@ msgstr "続けて、この順番の4つの引数で、``[BOX]`` と呼ばれる�
 
 #: ../../chapter7.rst:235
 msgid ""
-"where x1 y1 represent the :math:`x,y` coordinates for the upper left-hand"
-" corner of the box, and x2 y2 represent the lower right-hand corner "
+"where x1 y1 represent the ``x,y`` coordinates for the upper left-hand "
+"corner of the box, and x2 y2 represent the lower right-hand corner "
 "coordinates. Not only do you have four elements on the stack, they each "
 "have to be referred to more than once as you draw lines from point to "
 "point."
-msgstr ""
-"ここで ``x1 y1`` はボックスの左上隅の :math:`x,y` 座標を表し、``x2 y2`` は右下隅の座標を表します。 "
-"スタック上に4つの要素があるだけでなく、ポイントからポイントへと線を引くときにそれらをそれぞれ複数回参照する必要があります。"
+msgstr "ここで ``x1 y1`` はボックスの左上隅の ``x,y`` 座標を表し、``x2 y2`` は右下隅の座標を表します。 スタック上に4つの要素があるだけでなく、ポイントからポイントへと線を引くときにそれらをそれぞれ複数回参照する必要があります。"
 
 #: ../../chapter7.rst:241
 msgid ""
@@ -562,9 +560,9 @@ msgstr "その内容を取得します。 しかし、あなたは以下のよ�
 
 #: ../../chapter7.rst:371
 msgid ""
-"because with “:math:`n`” on the stack, the address is now in the fifth "
+"because with ``n`` on the stack, the address is now in the fifth "
 "position. Code like this is hard to read and harder to modify."
-msgstr "なぜなら、スタックに :math:`n` があると、アドレスは現在5番目の位置にあるからです。 このようなコードは読みにくく、修正が困難です。"
+msgstr "なぜなら、スタックに ``n`` があると、アドレスは現在5番目の位置にあるからです。 このようなコードは読みにくく、修正が困難です。"
 
 #: ../../chapter7.rst:375
 msgid "Make Stack Drawings"
@@ -1569,8 +1567,8 @@ msgid ""
 "copying the table, called ``POINTERS,`` into the second table, called "
 "``SAVED``."
 msgstr ""
-"しかし、推奨される手法では、表の各要素を名前で参照して表を作成します。 次に、同じ長さの2番目の表を作成します。 "
-":numref:`fig7-3` に見られるように、 ``POINTERS`` と呼ばれる表を ``SAVED`` "
+"しかし、推奨される手法では、表の各要素を名前で参照して表を作成します。 次に、同じ長さの2番目の表を作成します。 :numref:`fig7-3`"
+" に見られるように、 ``POINTERS`` と呼ばれる表を ``SAVED`` "
 "と呼ばれる2番目の表にコピーすることで状態を保存することができます。"
 
 #: ../../chapter7.rst:1050
@@ -1617,8 +1615,8 @@ msgid ""
 " the address of a table allotted directly below the name’s header."
 msgstr ""
 "私たちはフィールド名を作成したらすぐに、表のサイズを定数 ``/POINTERS`` として定義します。 "
-"私たちは終に表自身のためのスペースを確保したので、その先頭アドレス( ``HERE`` ）を定数 ``POINTERS`` にパッチします("
-" ``>BODY`` というワードは、ティック( ``'`` )によって返されたアドレスを定数の値のアドレスに変換します)。したがって "
+"私たちは終に表自身のためのスペースを確保したので、その先頭アドレス( ``HERE`` ）を定数 ``POINTERS`` にパッチします( "
+"``>BODY`` というワードは、ティック( ``'`` )によって返されたアドレスを定数の値のアドレスに変換します)。したがって "
 "``POINTERS`` は、 ``CREATE`` で定義された名前のように、後で割り当てられた表のアドレスを返します。 "
 "名前のヘッダーのすぐ下に割り当てられている表のアドレスを返します。"
 
@@ -1659,9 +1657,8 @@ msgid ""
 "``PSEUDO`` table."
 msgstr ""
 "このモデルでは、 ``TOP`` 、 ``BOTTOM`` などの名前を、 ``REAL`` または ``PSEUDO`` "
-"の2つの表のいずれかを指すようにすることができます。 ``REAL`` 表を現在の表にすることで、すべてのポインタ名は "
-"``REAL`` 表のアドレスを参照します。 ``PSEUDO`` 表を最新にすることで、 ``PSEUDO`` "
-"表をアドレス指定します。"
+"の2つの表のいずれかを指すようにすることができます。 ``REAL`` 表を現在の表にすることで、すべてのポインタ名は ``REAL`` "
+"表のアドレスを参照します。 ``PSEUDO`` 表を最新にすることで、 ``PSEUDO`` 表をアドレス指定します。"
 
 #: ../../chapter7.rst:1120
 msgid ""
@@ -1863,7 +1860,9 @@ msgid ""
 "The code within these two definitions is identical except for the "
 "fragments in boldface. But factoring is difficult because the fragments "
 "occur inside the    ``DO``  ``LOOP``."
-msgstr "これら2つの定義内のコードは、3行目を除いて同一です。 しかし、ここは ``DO…LOOP`` の内部にあるため、ファクタリング(要素分解)は困難です。"
+msgstr ""
+"これら2つの定義内のコードは、3行目を除いて同一です。 しかし、ここは ``DO…LOOP`` "
+"の内部にあるため、ファクタリング(要素分解)は困難です。"
 
 #: ../../chapter7.rst:1310
 msgid ""
@@ -1871,7 +1870,10 @@ msgid ""
 "changes has been replaced with the word ``.UNIT``, whose behavior is "
 "vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that “``1``  "
 "``+LOOP``” has the same effect as “``LOOP``”.)"
-msgstr "以下はこの問題に対する解決策です。 ``DOER/MAKE`` を使ってください。 変更されたコードはワード ``.UNIT`` に置き換えられました。その動作は ``DUMP`` と ``CDUMP`` のコードによって管理されています( ``1 +LOOP`` は ``LOOP`` と同じ効果があります)。"
+msgstr ""
+"以下はこの問題に対する解決策です。 ``DOER/MAKE`` を使ってください。 変更されたコードはワード ``.UNIT`` "
+"に置き換えられました。その動作は ``DUMP`` と ``CDUMP`` のコードによって管理されています( ``1 +LOOP`` は "
+"``LOOP`` と同じ効果があります)。"
 
 #: ../../chapter7.rst:1324
 msgid ""
@@ -1892,7 +1894,11 @@ msgid ""
 "functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that "
 "would normally be passed to them. Say ``INVISIBLE`` and any words defined"
 " in terms of these four output operators will *not* produce any output."
-msgstr "ここでは、各ワードの末尾に「プライム( ``'`` )」マークが付いた、わかりやすい一連の出力ワードを定義しました。 ``VISIBLE`` はそれらを期待される機能に設定します。 ``INVISIBLE`` はそれらを「何もしない(no-op)」に設定し、通常それらに渡される引数を単に食い尽くします。「 ``INVISIBLE`` 」と言うと、これら4つの出力操作ワードに対して定義されたワードは出力を生成しません。"
+msgstr ""
+"ここでは、各ワードの末尾に「プライム( ``'`` )」マークが付いた、わかりやすい一連の出力ワードを定義しました。 ``VISIBLE`` "
+"はそれらを期待される機能に設定します。 ``INVISIBLE`` はそれらを「何もしない(no-"
+"op)」に設定し、通常それらに渡される引数を単に食い尽くします。「 ``INVISIBLE`` "
+"」と言うと、これら4つの出力操作ワードに対して定義されたワードは出力を生成しません。"
 
 #: ../../chapter7.rst:1352
 msgid ""
@@ -1906,7 +1912,9 @@ msgid ""
 " a particular room, the game will display a detailed description. If the "
 "player returns to the same room later, the game will show a shorter "
 "message."
-msgstr "アドベンチャーゲームを書いているとしましょう。 プレイヤーが最初に特定の部屋に到着すると、ゲームは詳細な説明を表示します。 後でプレイヤーが同じ部屋に戻った場合、ゲームは短いメッセージを表示します。"
+msgstr ""
+"アドベンチャーゲームを書いているとしましょう。 プレイヤーが最初に特定の部屋に到着すると、ゲームは詳細な説明を表示します。 "
+"後でプレイヤーが同じ部屋に戻った場合、ゲームは短いメッセージを表示します。"
 
 #: ../../chapter7.rst:1360
 msgid "We write:"
@@ -1918,20 +1926,27 @@ msgid ""
 " to initialize ``ANNOUNCE`` to the long message. Now we can test "
 "``ANNOUNCE``, and find that it prints the long message. Having done that,"
 " however, it continues to “make” ``ANNOUNCE`` display the short message."
-msgstr "ワード  ``ANNOUNCE`` はいずれかのメッセージを表示します。最初に私たちは長いメッセージで ``ANNOUNCE`` を初期化するために ``LONG`` と言います。今や私たちは ``ANNOUNCE`` をテストする事ができ、それは長いメッセージを表示します。その後、続けて、短いメッセージを表示する処理で ``ANNOUNCE`` を書き換えます。"
+msgstr ""
+"ワード  ``ANNOUNCE`` はいずれかのメッセージを表示します。最初に私たちは長いメッセージで ``ANNOUNCE`` "
+"を初期化するために ``LONG`` と言います。今や私たちは ``ANNOUNCE`` "
+"をテストする事ができ、それは長いメッセージを表示します。その後、続けて、短いメッセージを表示する処理で ``ANNOUNCE`` を書き換えます。"
 
 #: ../../chapter7.rst:1376
 msgid ""
 "If we test ``ANNOUNCE`` a second time, it prints the short message. And "
 "it will for ever more, until we say ``LONG`` again."
-msgstr "私たちがもう一度 ``ANNOUNCE`` をテストすると、短いメッセージが表示されます。 そして ``LONG`` と再び言うまでは、それは短いメッセージの表示のままです。"
+msgstr ""
+"私たちがもう一度 ``ANNOUNCE`` をテストすると、短いメッセージが表示されます。 そして ``LONG`` "
+"と再び言うまでは、それは短いメッセージの表示のままです。"
 
 #: ../../chapter7.rst:1379
 msgid ""
 "In effect we’re queuing behaviors. We can queue any number of behaviors, "
 "letting each one set the next. The following example (though not terribly"
 " practical) illustrates the point."
-msgstr "事実上、私たちは行動を待ち行列に入れています。 各動作に次の動作を設定させて、動作をいくつでもキューに入れることができます。 次の例は(あんまり実用的ではありませんが)この動作を表しています。"
+msgstr ""
+"事実上、私たちは行動を待ち行列に入れています。 各動作に次の動作を設定させて、動作をいくつでもキューに入れることができます。 "
+"次の例は(あんまり実用的ではありませんが)この動作を表しています。"
 
 #: ../../chapter7.rst:1400
 msgid ""
@@ -1940,14 +1955,18 @@ msgid ""
 "of them, looking for the first one that contains a 17. ``HUNT`` returns "
 "either the address of the correct variable, or a zero if none have the "
 "value."
-msgstr "このコードでは変数のリストを作成し、それからそれらが検索されることになる ``ORDER`` を定義しました。 ワード ``HUNT`` はそれぞれを見て、17を含む最初のものを探します。 ``HUNT`` は正しい変数のアドレスを返します。値がない場合はゼロを返します。"
+msgstr ""
+"このコードでは変数のリストを作成し、それからそれらが検索されることになる ``ORDER`` を定義しました。 ワード ``HUNT`` "
+"はそれぞれを見て、17を含む最初のものを探します。 ``HUNT`` は正しい変数のアドレスを返します。値がない場合はゼロを返します。"
 
 #: ../../chapter7.rst:1406
 msgid ""
 "It does this by simply executing ``WHERE`` five times. Each time, "
 "``WHERE`` returns a different address, as defined in ``ORDER``, then "
 "finally zero."
-msgstr "これは単に ``WHERE`` を5回実行することによって行われます。 毎回、 ``WHERE`` は ``ORDER`` で定義されているように異なるアドレスを返し、最後にゼロを返します。"
+msgstr ""
+"これは単に ``WHERE`` を5回実行することによって行われます。 毎回、 ``WHERE`` は ``ORDER`` "
+"で定義されているように異なるアドレスを返し、最後にゼロを返します。"
 
 #: ../../chapter7.rst:1409
 msgid ""
@@ -1960,7 +1979,9 @@ msgid ""
 "To implement a forward reference. A forward reference is usually needed "
 "as a “hook,” that is, a word invoked in a low-level definition but "
 "reserved for use by a component defined later in the listing."
-msgstr "前方参照を実装します。 通常、前方参照は「フック(hook)」、つまり低レベルの定義で呼び出され、リストの後半で定義されているコンポーネントで使用するために予約されているワードとして必要です。"
+msgstr ""
+"前方参照を実装します。 "
+"通常、前方参照は「フック(hook)」、つまり低レベルの定義で呼び出され、リストの後半で定義されているコンポーネントで使用するために予約されているワードとして必要です。"
 
 #: ../../chapter7.rst:1424
 msgid ""
@@ -2007,7 +2028,11 @@ msgid ""
 "invoked inside the main loop of a keystroke interpreter, I can set it up "
 "to let me watch what’s happening to a data structure as I enter keys. And"
 " I can change what SNAP does without having to recompile the loop."
-msgstr "( ``SNAPSHOT`` の略)それから、何が起こっているのか見たいところで ``SNAP`` を私のアプリケーションに編集してください。 たとえば、キーストロークインタプリタのメインループ内で ``SNAP`` を呼び出すと、キーを入力したときにデータ構造に何が起きているのかを確認できるように設定できます。 そして、ループを再コンパイルしなくても、SNAPの動作を変更できます。"
+msgstr ""
+"( ``SNAPSHOT`` の略)それから、何が起こっているのか見たいところで ``SNAP`` を私のアプリケーションに編集してください。 "
+"たとえば、キーストロークインタプリタのメインループ内で ``SNAP`` "
+"を呼び出すと、キーを入力したときにデータ構造に何が起きているのかを確認できるように設定できます。 "
+"そして、ループを再コンパイルしなくても、SNAPの動作を変更できます。"
 
 #: ../../chapter7.rst:1479
 msgid ""
@@ -2015,7 +2040,9 @@ msgid ""
 "approach are those in which you need control over the address of the "
 "vector, such as when vectoring through an element in a decision table, or"
 " attempting to save/restore the contents of the vector."
-msgstr "tick-and-executeアプローチを使用するのが望ましい状況は、決定表の要素を介してベクトル化するとき、またはその内容を保存/復元しようとするときなど、ベクトルのアドレスを制御する必要がある場合です。"
+msgstr ""
+"tick-and-"
+"executeアプローチを使用するのが望ましい状況は、決定表の要素を介してベクトル化するとき、またはその内容を保存/復元しようとするときなど、ベクトルのアドレスを制御する必要がある場合です。"
 
 #: ../../chapter7.rst:1485
 msgid "Summary"
@@ -2027,7 +2054,9 @@ msgid ""
 "using variables and other data structures. Using the stack is preferable "
 "for testing and reusability, but too many values manipulated on the stack"
 " by a single definition hurts readability and writeability."
-msgstr "この章では、スタックを使用することと、変数や他のデータ構造を使用することとの間のトレードオフを調べました。 テストと再利用のためにはスタックを使用することをお勧めしますが、単一の定義によってスタック上で操作される値が多すぎると、読みやすさと書き込み性が低下します。"
+msgstr ""
+"この章では、スタックを使用することと、変数や他のデータ構造を使用することとの間のトレードオフを調べました。 "
+"テストと再利用のためにはスタックを使用することをお勧めしますが、単一の定義によってスタック上で操作される値が多すぎると、読みやすさと書き込み性が低下します。"
 
 #: ../../chapter7.rst:1492
 msgid ""
