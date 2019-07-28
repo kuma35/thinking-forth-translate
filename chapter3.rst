@@ -718,7 +718,7 @@ Alas, I was also using ``WALL`` inside the output component to determine how
 many characters to display. My reasoning was that this value would
 change depending on what type-width I was using.
 
-I was right--99\% of the time. But one day I discovered that, under a
+I was right--99％ of the time. But one day I discovered that, under a
 certain condition, a line of condensed text was being somehow cut short.
 The final couple of words were just missing. The reason turned out to be
 that ``WALL`` was getting changed before the output component had a chance
@@ -1078,7 +1078,7 @@ chapter.
 For Further Thinking
 ====================
 
-*(Answers appear in :doc:`Appendix D<appendixd>`.)*
+*(Answers appear in* :doc:`Appendix D<appendixd>` *)*
 
 #. Below are two approaches to defining an editor\’s keyboard
    interpreter. Which would you prefer? Why?

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 01:27+0900\n"
+"POT-Creation-Date: 2019-07-28 22:57+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -675,7 +675,7 @@ msgid "Alas, I was also using ``WALL`` inside the output component to determine 
 msgstr ""
 
 #: ../../chapter3.rst:721
-msgid "I was right--99\\% of the time. But one day I discovered that, under a certain condition, a line of condensed text was being somehow cut short. The final couple of words were just missing. The reason turned out to be that ``WALL`` was getting changed before the output component had a chance to use it."
+msgid "I was right--99％ of the time. But one day I discovered that, under a certain condition, a line of condensed text was being somehow cut short. The final couple of words were just missing. The reason turned out to be that ``WALL`` was getting changed before the output component had a chance to use it."
 msgstr ""
 
 #: ../../chapter3.rst:727
@@ -991,7 +991,7 @@ msgid "For Further Thinking"
 msgstr ""
 
 #: ../../chapter3.rst:1081
-msgid "*(Answers appear in :doc:`Appendix D<appendixd>`.)*"
+msgid "*(Answers appear in* :doc:`Appendix D<appendixd>` *)*"
 msgstr ""
 
 #: ../../chapter3.rst:1083

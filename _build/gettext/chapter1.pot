@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-29 21:52+0900\n"
+"POT-Creation-Date: 2019-07-29 00:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -841,7 +841,7 @@ msgid "We can store a number into this variable to indicate how many apples we c
 msgstr ""
 
 #: ../../chapter1.rst:1077
-msgid "We can display the contents of the variable(type ``APPLES ?`` \\[:kbd:`Enter`\\]):"
+msgid "We can display the contents of the variable(type ``APPLES ?`` [ :kbd:`Enter` ]):"
 msgstr ""
 
 #: ../../chapter1.rst:1085
@@ -1053,7 +1053,7 @@ msgid "Forth is optimized for the execution of words by means of a technique kno
 msgstr ""
 
 #: ../../chapter1.rst:1386
-msgid "It does not run as fast as assembler code because the inner interpreter (which interprets the list of addresses that comprise each colon definition) may consume up to 50\\% of the run time of primitive words, depending on the processor."
+msgid "It does not run as fast as assembler code because the inner interpreter (which interprets the list of addresses that comprise each colon definition) may consume up to 50％ of the run time of primitive words, depending on the processor."
 msgstr ""
 
 #: ../../chapter1.rst:1391
@@ -1065,7 +1065,7 @@ msgid "First and foremost, Forth is simple. Forth’s use of a data stack greatl
 msgstr ""
 
 #: ../../chapter1.rst:1400
-msgid "Second, Forth allows you to define words either in high-level or in machine language. Either way, no special calling sequence is needed. You can write a new definition in high level and, having verified that it is correct, rewrite it in assembler without changing any of the code that uses it. In a typical application, perhaps 20\\% of the code will be running 80\\% of the time. Only the most often used, time-critical routines need to be machine coded. The Forth system itself is largely implemented in machine-code definitions, so you’ll have few application words that need to be coded in assembler."
+msgid "Second, Forth allows you to define words either in high-level or in machine language. Either way, no special calling sequence is needed. You can write a new definition in high level and, having verified that it is correct, rewrite it in assembler without changing any of the code that uses it. In a typical application, perhaps 20％ of the code will be running 80％ of the time. Only the most often used, time-critical routines need to be machine coded. The Forth system itself is largely implemented in machine-code definitions, so you’ll have few application words that need to be coded in assembler."
 msgstr ""
 
 #: ../../chapter1.rst:1414
@@ -1153,7 +1153,7 @@ msgid "REFERNCES"
 msgstr ""
 
 #: ../../chapter1.rst:1520
-msgid "Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  London, Academic Press, 1972."
+msgid "O\\. J. Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  London, Academic Press, 1972."
 msgstr ""
 
 #: ../../chapter1.rst:1521
@@ -1161,7 +1161,7 @@ msgid "Niklaus Wirth, \"Program Development by StepwiseRefinement,\"  **Communic
 msgstr ""
 
 #: ../../chapter1.rst:1522
-msgid "Stevens, G. J. Myers, and L. L. Constantine,\"Structured Design,\"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974."
+msgid "W\\. P. Stevens, G. J. Myers, and L. L. Constantine,\"Structured Design,\"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974."
 msgstr ""
 
 #: ../../chapter1.rst:1523

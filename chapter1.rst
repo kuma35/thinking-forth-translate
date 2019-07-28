@@ -1074,7 +1074,7 @@ currently have:
 
 ..
 
-We can display the contents of the variable(type ``APPLES ?`` \[:kbd:`Enter`\]):
+We can display the contents of the variable(type ``APPLES ?`` [ :kbd:`Enter` ]):
 
 .. code-block:: none
    
@@ -1385,7 +1385,7 @@ modularizing into very small pieces of code is relatively slight.
 
 It does not run as fast as assembler code because the inner interpreter
 (which interprets the list of addresses that comprise each colon
-definition) may consume up to 50\% of the run time of primitive words,
+definition) may consume up to 50％ of the run time of primitive words,
 depending on the processor.
 
 But in large applications, Forth comes very close to the speed of
@@ -1401,8 +1401,8 @@ Second, Forth allows you to define words either in high-level or in
 machine language. Either way, no special calling sequence is needed. You
 can write a new definition in high level and, having verified that it is
 correct, rewrite it in assembler without changing any of the code that
-uses it. In a typical application, perhaps 20\% of the code will be
-running 80\% of the time. Only the most often used, time-critical
+uses it. In a typical application, perhaps 20％ of the code will be
+running 80％ of the time. Only the most often used, time-critical
 routines need to be machine coded. The Forth system itself is largely
 implemented in machine-code definitions, so you’ll have few application
 words that need to be coded in assembler.
@@ -1517,9 +1517,9 @@ language.
 REFERNCES
 =========
 
-.. [dahl72]  O. J. Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  London, Academic Press, 1972.
+.. [dahl72]  O\. J. Dahl, E. W. Dijkstra, and C. A. R. Hoare, **Structured Programming,**  London, Academic Press, 1972.
 .. [wirth71]  Niklaus Wirth, "Program Development by StepwiseRefinement,"  **Communications of ACM,**  14, No. 4 (1971), 221-27.
-.. [stevens74-1]  W. P. Stevens, G. J. Myers, and L. L. Constantine,"Structured Design,"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974.
+.. [stevens74-1]  W\. P. Stevens, G. J. Myers, and L. L. Constantine,"Structured Design,"  **IBM Systems Journal,**  Vol. 13, No. 2, 1974.
 .. [parnas72]  David L. Parnas, "On the Criteria To Be Used inDecomposing Systems into Modules,"  **Communications of the ACM,** December 1972.
 .. [liskov75]  Barbara H. Liskov and Stephen N. Zilles,"Specification Techniques for Data Abstractions,"  **IEEE Transactions on Software Engineering,**  March 1975.
 .. [parnas79]  David L. Parnas, "Designing Software for Ease ofExtension and Contraction,"  **IEEE Transactions on SoftwareEngineering,**  March 1979.
