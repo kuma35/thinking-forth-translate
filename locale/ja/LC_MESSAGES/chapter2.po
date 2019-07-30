@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-04 22:12+0900\n"
-"PO-Revision-Date: 2019-07-27 20:29+0900\n"
+"PO-Revision-Date: 2019-07-30 20:32+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -404,9 +404,7 @@ msgid ""
 "the job they want done. And they don't have the capital---or don't feel "
 "they do---to spend on good specs. Part of my job is to convince them it "
 "will end up costing more time and money not to."
-msgstr ""
-"私は、各プロジェクトでフェイズ1に時間をかけていることに気付きました。これは、私のクライアントの多くが最初はうろたえたことを意味します。限界要因はどのぐらいか、私はその時間を前もって費やす必要があることをクライアントに納得させることができます。顧客は一般的に彼らがやりたい仕事の仕様を知りません。そして、彼らは良い仕様に費やす為の資本を持ってない、あるいは彼らがそうしていているとは感じていません。"
-" 私の仕事の一部は、彼らを納得させるためは、もっと多くの時間とお金を費やすことになると、まず彼らに納得させることです。"
+msgstr "私は、各プロジェクトでフェイズ1に時間をかけていることに気付きました。これは、私の顧客の多くが最初は狼狽していた意味します。限界要因はどのぐらいか、私はその時間を前もって費やす必要があることを顧客に納得させることができます。顧客は一般的に彼らがやりたい仕事の仕様を知りません。そして、彼らは良い仕様を作る為に費やす為の資本を持ってない、または費やせるとは感じていません。 私の仕事の一部は、そのために資本を費やすことは、結局は、より多くの時間とお金を掛けないで済むことになると、彼らに納得させることです。"
 
 #: ../../chapter2.rst:212
 msgid ""
@@ -430,19 +428,14 @@ msgid ""
 "renegotiate. But I see it as the designer's responsibility to do whatever"
 " is necessary to generate an operational specification that will do the "
 "job to the customer's satisfaction."
-msgstr ""
-"仕様のもう一つの理由は私自身をカバーすることです。 アプリケーションが仕様どおりに機能しても顧客を完全には満足させない場合、それは顧客の責任です。"
-" "
-"顧客がもっと欲しいならば、我々は再交渉しなければならないでしょう。しかし、私はそれを設計者の責任であると考えています。それは、顧客の満足のいく仕事をするであろう操作上の仕様を生成するために必要なことは何でもすることです。"
+msgstr "仕様のもう一つの理由は私自身を守ることです。 アプリケーションが仕様どおりに機能しても顧客を完全には満足させない場合、それは顧客の責任です。顧客が更に要求するなら、私たちは再交渉しなければならないでしょう。しかし、私はそれを設計者の義務として考え、顧客が満足のいく仕事ができる運用仕様を生成するために必要なことは何でもします。"
 
 #: ../../chapter2.rst:226
 msgid ""
 "I think there are consultants who bow to client pressure and limit the "
 "time they spend on specs, for fear of losing the job. But in these "
 "situations nobody ends up happy."
-msgstr ""
-"仕事を失うことを恐れて、クライアントの圧力に屈し、仕様に費やす時間を制限するコンサルタントがいると思います。 "
-"しかし、このような状況では、だれも幸せにならない。"
+msgstr "仕事を失うことを恐れて、顧客の圧力に屈し、仕様に費やす時間を制限するコンサルタントがいると思います。 しかし、そんな状況では、だれも幸せになりません。"
 
 #: ../../chapter2.rst:230
 msgid "We’ll return to the Teleska interview momentarily."
@@ -566,7 +559,7 @@ msgid ""
 "displays. After working with the interactive graphics on the first "
 "version, users were applying arbitrary scales and coming up with oddball "
 "displays."
-msgstr "例えば、設計者は、元の使用では人を対象とした快適なグラフィックディスプレイを作成できないことに気付きませんでした。最初のバージョンでインタラクティブグラフィックを使って作業した後、ユーザは任意なスケールの適用と奇天烈な表示装置を見せてきました。"
+msgstr "例えば、設計者は、元の仕様では人を対象とした快適なグラフィックディスプレイを作成できないことに気付きませんでした。最初のバージョンでインタラクティブグラフィックを使って作業した後、ユーザは任意なスケールの適用と奇天烈な表示装置を見せてきました。"
 
 #: ../../chapter2.rst:297
 msgid ""
@@ -589,9 +582,7 @@ msgid ""
 "to the users' known requirements. Then we'd crank in the programmer's "
 "experience to improve it and determine what the users forgot they needed "
 "when they generated the specs."
-msgstr ""
-"この反復的なアプローチにより、コードがよりきれいになり、コードをよりよく考え出すことができました。 "
-"基本的な目標を設定し、ユーザの既知の要件に合わせて最小限のシステムを構築しました。それから、私たちはプログラマの経験により、改良したり、仕様作成時にユーザが必要なのに忘れていたもの確認したりします。"
+msgstr "この反復的なアプローチにより、よりきれいなコードになり、より良いコードを考え出すことができました。 基本的な目標を設定し、ユーザの既知の要件に合わせて最小限のシステムを構築しました。それから、私たちはプログラマの経験により、改良したり、仕様作成時にユーザが必要なのに忘れていたもの確認したりします。"
 
 #: ../../chapter2.rst:311
 msgid ""
@@ -600,10 +591,7 @@ msgid ""
 " two-way street. In some cases they got things they didn't know they "
 "could do on such a small computer, such as applying digital filters and "
 "signal processing to the data."
-msgstr ""
-"ユーザは新しいアイデアのほとんどを発明しませんでした。 プログラマはそうしました、そして、彼らはユーザからこれらの考えを跳ね返すでしょう。 "
-"問題の定義は双方向でした。 "
-"場合によっては、そのような小型コンピュータでは、デジタルフィルタの適用やデータへの信号処理などは実行できないことがわかっていました。"
+msgstr "ユーザは新しいアイデアのほとんどを考え出しませんでした。プログラマが考え出して、ユーザへこれらのアイディアを提示しました。問題の定義は双方向でした。 場合によっては、そのような小型コンピュータでは、デジタルフィルタの適用やデータへの信号処理などは実行できないことがわかっていました。"
 
 #: ../../chapter2.rst:317
 msgid ""
@@ -624,10 +612,7 @@ msgid ""
 "them involved in the design during the implementation, since they have "
 "the expertise in the application.  When they see the result, they feel "
 "good because they know their ideas were involved."
-msgstr ""
-"私のアプローチを要約します。私はユーザから、ユーザ必要とするものを見つけることを試みるが、同時にその不完全性を認識することを試みる。 "
-"それから、ユーザがアプリケーションの業務知識を持っているので、ユーザには実装の間、設計に関わってもらいます。 "
-"ユーザが結果を見たとき、ユーザは自分たちの考えが関わっていることを知っているので、気分が良い。"
+msgstr "私のアプローチを要約します。私はユーザから、ユーザ必要とするものを見つけることを試みるが、同時にその不完全性を認識することを試みます。 それから、ユーザがアプリケーションの業務知識を持っているので、ユーザには実装の間、設計に関わってもらいます。 ユーザが結果を見たとき、ユーザは自分たちの考えが関わっていることを知っているので、気分が良いです。"
 
 #: ../../chapter2.rst:329
 msgid ""
@@ -684,7 +669,7 @@ msgid ""
 "program. This enforced \"do-over\" almost always results in far simpler "
 "and more elegant final programs, even when those programs are written in "
 "something other than Forth."
-msgstr "私がこのように試作するときは、最終プログラムでは、試作のコードを単一行で使わないという強い制約のもとに作成します。これらのプログラムがForth以外で書かれている場合でも、この強制された「作り直し」は、ほとんどいつも、はるかに単純でより洗練された最終プログラムをもたらす。"
+msgstr "私がこのように試作するときは、最終プログラムでは、試作のコードを単一行で使わないという強い制約のもとに作成します。これらのプログラムがForth以外で書かれている場合でも、この強制された「作り直し」は、ほとんどいつも、はるかに単純でより洗練された最終プログラムをもたらします。"
 
 #: ../../chapter2.rst:358
 msgid ""
@@ -844,7 +829,7 @@ msgstr ""
 msgid ""
 "As we heard in our earlier interviews, finding out about *hardware* "
 "constraints often requires writing some test code and trying things out."
-msgstr "以前のインタビューで聞いたように、*ハードウェア* の制約について知るには、テストコードを書いて試してみることがよくあります。"
+msgstr "以前のインタビューで聞いたように、ハードウェアの制約について知るために、しばしばテストコードを書いて試してみる必要があります。"
 
 #: ../../chapter2.rst:454
 msgid ""
@@ -886,7 +871,7 @@ msgid ""
 "A conceptual model is not quite a design, however. A design begins to "
 "describe how the system *really* works. In design, the image of a step "
 "ladder would begin to emerge."
-msgstr "概念モデルは全然設計されていません。設計は、システムが実際にどのように動作する説明し始めます。設計していくと脚立のイメージが出始めます。"
+msgstr "ただし、概念モデルは全くもって設計と言えるものではありません。設計を始めてシステムが実際にどのように動作するか説明します。設計していくと脚立のイメージが現れ始めます。"
 
 #: ../../chapter2.rst:486
 msgid ""
@@ -914,7 +899,7 @@ msgid ""
 "Analysis consists of expanding the requirements definition into a "
 "conceptual model. The technique involves two-way communication with the "
 "customer in successive attempts to describe the model."
-msgstr "分析とは、要件定義の概念モデルへの拡張です。これには、モデル記述のための連続した試行における、顧客との双方向コミュニケーションを含みます。"
+msgstr "分析とは、要件定義の概念モデルへの拡張です。これには、モデル記述のための連続した試行の最中の、顧客との双方向コミュニケーションを含みます。"
 
 #: ../../chapter2.rst:504
 msgid ""
@@ -936,11 +921,7 @@ msgid ""
 "necessary—diagrams, tables, or cartoons—to convey your understanding to "
 "the customer and get the needed feedback. Even if you cycle through this "
 "loop a hundred times, it’s worth the effort."
-msgstr ""
-":numref:`fig2-2` は分析フェイズのための反復的アプローチを表しています。 "
-"最後のステップは最も重要なものの1つです。それは文書化されたモデルを顧客に見せることです。 "
-"あなたの理解を顧客に伝え、必要なフィードバックを得るために必要なコミュニケーション手段（図、表、または漫画）を使用してください。 "
-"この繰り返しを100回繰り返すことになっても努力する価値はあります。"
+msgstr ":numref:`fig2-2` は分析フェイズのための反復的アプローチを表しています。 最後のステップは最も重要なものの1つです。それは文書化されたモデルを顧客に見せることです。 あなたの理解を顧客に伝え、必要なフィードバックを得るために必要なコミュニケーション手段（図、表、またはイラスト）を使用してください。 この繰り返しを100回繰り返すことになっても努力する価値はあります。"
 
 #: ../../chapter2.rst:524
 msgid ""
@@ -983,9 +964,7 @@ msgid ""
 "job done. For instance, I'll include a whole error-action listing to show"
 " what happens when a particular error occurs. Oddly, this is the part "
 "that takes the most time to implement anyway."
-msgstr ""
-"「仕様」は基本的には「何か」を扱います。そのもっともすばらしい形で、それはシステムがユーザにどのように見えるかを説明します。あなたはそれをユーザマニュアルと呼ぶかもしれません。私は内部の仕事を成し遂げる部分よりも、外側から見える人間との対話について多くのメモを残しているのが判ります。たとえば、特定のエラーが発生したときに何が起こるかを示すために、エラーアクションリスト全体を含めます。"
-" 不思議なことに、これはとにかく実装に最も時間がかかる部分です。"
+msgstr "「仕様」は基本的には「何か」を扱います。そのもっともすばらしい形で、それはシステムがユーザにどのように見えるかを説明します。あなたはそれをユーザマニュアルと呼ぶかもしれません。私は内部の仕事を成し遂げる部分よりも、外側から見える人間との対話について多くのメモを残しているのが判ります。たとえば、特定のエラーが発生したときに何が起こるかを示すために、エラー対応表全体を含めます。 不思議なことに、これはとにかく実装に最も時間がかかる部分です。"
 
 #: ../../chapter2.rst:551
 msgid ""
@@ -1023,17 +1002,14 @@ msgid ""
 " implemented.  I'm evaluating whether I can do this efficiently. So to me"
 " it's not a black box, it's a gray box. The designer must be able to see "
 "inside the black boxes."
-msgstr ""
-"私は、製品が為すすべきことの説明を使用して、入力と出力がどのように見えるかを顧客に示すため、にあらゆるテクニック、図表などを利用します。 "
-"しかし並行して、私自身の頭の中では、それがどのように実装されるかを想像しています。 効率的にできるかどうかを評価しています。 "
-"だから私にはブラックボックスではなく、グレーのボックスです。 設計者はブラックボックスの内側を見ることができなければなりません。"
+msgstr "私は、製品が為すすべきことの説明を使用して、入力と出力がどのように見えるかを顧客に示すためにあらゆるテクニック、図表などを利用します。 しかし並行して、私自身の頭の中では、それがどのように実装されるかを想像しています。 効率的にできるかどうかを評価しています。 だから私にはブラックボックスではなく、グレーのボックスです。 設計者はブラックボックスの内側を見ることができなければなりません。"
 
 #: ../../chapter2.rst:572
 msgid ""
 "When I design a system that's got different modules, I try to make the "
 "coupling as rational and as little as possible. But there's always give "
 "and take, since you're compromising the ideal."
-msgstr "別個のモジュールを使ったシステムを設計するときは、連結が合理的かつ可能な限り少なくするようにします。あなたは理想を危うくしていますが、しかし、常にギブ＆テイクはあるものです。"
+msgstr "別個のモジュールを使ったシステムを設計するときは、連結が合理的かつ可能な限り少なくするようにします。あなたは自身の理想を危うくしていますが、しかし、常にギブ＆テイクはあるものです。"
 
 #: ../../chapter2.rst:576
 msgid ""
@@ -1069,7 +1045,7 @@ msgstr ""
 msgid ""
 "The reason it’s so important to decide on error-handling at this stage is"
 " the wide divergence in how errors can be treated. An error might be:"
-msgstr "この段階でエラー処理を決定する事がそんなに重要な理由はどのようにエラーを扱うかが広範囲に渡るためです。以下のエラーが発生するかもしれません。"
+msgstr "この段階でエラー処理を決定する事がそんなに重要な理由は、どのようにエラーを扱うかが広範囲に渡るためです。とあるエラーでは以下のような対処方法があります。"
 
 #: ../../chapter2.rst:598
 msgid "ignored"
@@ -1083,7 +1059,7 @@ msgstr "エラーが発生した事を示すフラグがセットされている
 
 #: ../../chapter2.rst:603
 msgid "made to halt the application immediately"
-msgstr "アプリケーションがアボート"
+msgstr "アプリケーションをアボートさせる"
 
 #: ../../chapter2.rst:605
 msgid ""
@@ -1221,18 +1197,14 @@ msgid ""
 " to leave out the so-called \"noise\" words: ``C@``, ``DUP``, ``OVER``, "
 "etc., and show only the basic flow. Most Forth people probably do that "
 "informally. We do it purposefully."
-msgstr ""
-"IBMでは厳密に文書化されたPDL(プログラム設計言語)を使用します。 "
-"私たちはここでもPDLを使います(なお、Forth設計言語ではFDLと呼びます)。これらの標準全ては持つ価値があるが、一度あなたがForthに慣れたら、Forth自身を設計言語にすることができます。あなたはForth設計言語から「ノイズ」と言われるワード、つまり"
-" ``C@``, ``DUP``, ``OVER``, "
-"等を省く必要があります。そして基本的な流れだけを表します。殆どのForth人はおそらくそれを非公式に行います。私たちはわざとやります。"
+msgstr "IBMでは厳密に文書化されたPDL(プログラム設計言語)を使用します。 私たちはここでもPDLを使います。なお、Forth設計言語はFDLと呼びます。これらの全ての規格には価値はありますが、一度あなたがForthに慣れたら、Forth自身を設計言語にすることができます。あなたはForth設計言語から「ノイズ」と言われるワード、つまり ``C@``, ``DUP``, ``OVER``, 等を省く必要があります。そして基本的な流れだけを表します。殆どのForthユーザはおそらくそれを非公式に行っています。私たちはそれを公に行います。"
 
 #: ../../chapter2.rst:715
 msgid ""
 "During one of our interviews I asked Moore if he used diagrams of any "
 "sort to plan out the conceptual model, or did he code straight into "
 "Forth? His reply:"
-msgstr "私たちはインタビューで、ムーアに、概念モデルを計画するために何らかの図表を使用したのか、それとも直接Forthでコーディングしたのかを尋ねました。彼の返事は、"
+msgstr "私たちはインタビューで、ムーアに、概念モデルを計画するために何らかの図表を使用したのか、それとも直接Forthでコーディングしたのかを尋ねました。彼の返事です。"
 
 #: ../../chapter2.rst:706
 msgid ""
@@ -1289,7 +1261,7 @@ msgid ""
 "charges on long-distance phone calls. Here’s the customer’s explanation "
 "of its rate structure. (I made this up; I have no idea how the phone "
 "company actually computes their rates except that they overcharge.)"
-msgstr "一例として、私たちが欲しいのは、長距離電話の通話料を計算するシステムです。以下がその料金体系の説明です（これを書いたのは私ですが、電話会社が客にふっかける料金の計算を、実際にどのように計算するのかは知りません）。"
+msgstr "一例として、私たちが欲しいのは、長距離電話の通話料金を計算するシステムです。以下がその料金体系の説明です（これを書いたのは私ですが、電話会社が客にふっかける料金の計算を、実際にどのように計算するのかは知りません）。"
 
 #: ../../chapter2.rst:738
 msgid ""
@@ -1358,7 +1330,7 @@ msgid ""
 "analysts use several techniques to simplify these statements: structured "
 "English, decision trees, and decision tables. Let’s study each of these "
 "techniques and evaluate their usefulness in the Forth environment."
-msgstr "しかし、これらの文章はまだ読みにくいです。 システム分析者、構造化された文章、決定木、決定表など、これらの文章を単純化するためにいくつかの手法を使用します。 これらの各技法を調べて、Forth環境におけるそれらの有用性を学びましょう。"
+msgstr "しかし、これらの文章はまだ読みにくいです。 システム分析者は、構造化された文章、決定木、決定表など、これらの文章を単純化するためにいくつかの手法を使用します。 これらの各技法を調べて、Forth環境におけるそれらの有用性を学びましょう。"
 
 #: ../../chapter2.rst:782
 msgid "Structured English"
@@ -1436,7 +1408,7 @@ msgid ""
 "subdimensions within an outer dimension. All of the subdimension’s "
 "conditions appear within every condition of the outer dimension. In "
 "software, any number of dimensions can be easily handled, as we’ll see."
-msgstr "紙に二次元を超える問題を描くのは少し難しいです。ご覧のように、これらの追加の次元は外側の次元の中のサブ次元として紙に描く事ができます。サブ次元の全ての条件は、外側の次元の全ての条件内に表示されます。ソフトウェアでは、ご存知のとおり、任意の数の次元を簡単に処理できます。"
+msgstr "紙に二次元を超える問題を描くのは少し難しいです。ご覧のように、これらの追加の次元は外側の次元の中のサブ次元として紙に描く事ができます。サブ次元の全ての条件は、外側の次元の全ての条件内に表示されます。ご存知のとおり、ソフトウェアでは、任意の数の次元を簡単に処理できます。"
 
 # factoring 要素分解
 #: ../../chapter2.rst:891
@@ -1530,7 +1502,7 @@ msgstr "問題について考えることを忘れるぐらい分析ツールに
 
 #: ../../chapter2.rst:945
 msgid "You don't understand a problem until you can simplify it."
-msgstr "あなたは問題を単純化できるまでは、問題を理解しません。"
+msgstr "問題を単純化できるまでは、あなたは問題を理解していません。"
 
 #: ../../chapter2.rst:947
 msgid ""
@@ -1657,9 +1629,7 @@ msgid ""
 "where the comments indicate. Also, we’ve used hyphenated names because "
 "they might be more readable for the customer. Short names are preferred "
 "in real code—see :doc:`Chapter Five<chapter5>`.)"
-msgstr ""
-"（この例に関する最後の注意点：実行中のForthアプリケーションに非常に近いものを書きました。ただし、これは疑似コードにすぎません。コメントが示す場所には値がスタックにあると仮定してスタック操作を避けました。"
-" 実際のコードでは短い名前が好まれます。 :doc:`第５章<chapter5>` 参照）。"
+msgstr "（この例に関する最後の注意：実行中のForthアプリケーションに非常に近いものを書きました。ただし、これは疑似コードにすぎません。コメントが示す場所には値がスタックにあると仮定してスタック操作を避けました。 実際のコードでは短い名前が好まれます。 :doc:`第５章<chapter5>` 参照）。"
 
 #: ../../chapter2.rst:1075
 msgid ""
@@ -1712,7 +1682,7 @@ msgid ""
 "they expect to get this information in the snap of a girdle, you’ll have "
 "to index on years and on topics. If they can wait a day, you might just "
 "let the computer search through all the books in the library."
-msgstr "たとえば、出版年ごとに話題のリストを要求することができるとします。例えば、1900年から1910年の間の女性のランジェリーに関するすべてとか。もしそれがガードルのホックについての情報を期待しているなら、あなたは何年も掛けて詳細に話題を索引化しなければなりません。もし、1日待つことができるのであれば、図書館にあるすべての本をコンピュータに検索させることもできます。"
+msgstr "たとえば、出版年ごとに話題のリストを要求することができるとします。例えば、1900年から1910年の間の女性のランジェリーに関するすべてとか。もしそれがガードルのホックについての情報を期待しているなら、あなたは何年も掛けて詳細に話題を索引化しなければなりません。もし、あなたがまる一日待つことができるのであれば、図書館にあるすべての本をコンピュータに検索させることもできます。"
 
 #: ../../chapter2.rst:1115
 msgid "Achieving Simplicity"
@@ -1736,7 +1706,7 @@ msgstr "２つの解決策が与えられた時は、正解は、よりシンプ
 msgid ""
 "This is especially true in software design. The simpler solution is often"
 " more difficult to discover, but once found, it is:"
-msgstr "これは特にソフトウェア設計に当てはまります。 よりシンプルな解決策は、発見が困難なことが多いですが、発見されると、以下のようになります。"
+msgstr "これは特にソフトウェア設計に当てはまります。 よりシンプルな解決策は、発見が困難なことが多いですが、発見できると様々な利点があります。"
 
 #: ../../chapter2.rst:1129
 msgid "easier to understand"
@@ -1776,9 +1746,7 @@ msgid ""
 "take to implement the thing? One block? Three? I think this is a very "
 "useful design tool. You want to gut-feel whether it's a trivial problem "
 "or a major problem, how much time and effort you should spend on it."
-msgstr ""
-"あなたは問題の大きさを感じる必要があります。モノを実装するのにどれぐらいのコードが必要ですか？１ブロック？それとも３ブロック？　"
-"そう感じる事は、とても便利な設計ツールだと考えます。それがささいな問題なのか、それとも大きな問題なのか、どれだけの時間と労力を費やすべきか、本質を感じる事を欲します。"
+msgstr "あなたは問題の大きさを感じる必要があります。モノを実装するのにどれぐらいのコードが必要ですか？１ブロック？それとも３ブロック？　そう感じる事は、とても便利な設計ツールだと考えます。それがささいな問題なのか、それとも大きな問題なのか、どれだけの時間と労力を費やすべきか、あなたが本質を感じる事を欲します。"
 
 #: ../../chapter2.rst:1150
 msgid ""
@@ -1786,7 +1754,7 @@ msgid ""
 " is reasonable?\" If your solution fills six screens, it may seem you've "
 "used a sledgehammer to kill a mosquito. Your mental image is out of "
 "proportion to the significance of the problem."
-msgstr "あなたが作業を終えたら、振り返りして「合理的な解決策を考え出しましたか」と問います。もしあなたの解決策が6スクリーンに渡るのなら、それはあなたが蚊を殺すために大ハンマーを使った事があるのかもしれません。あなたの頭の中のイメージは問題の重要性に比例していません。(訳注:スクリーンとブロック＝Forthの伝統的な、フロッピーディスク上の記録領域の単位 1ブロック=1024バイト=1スクリーン(64桁x16行)。スクリーンはブロックをソースコード記述エリアとしてとらえる時の呼び方)"
+msgstr "あなたが作業を終えたら、振り返りして「私は合理的な解決策を考え出しただろうか？」と自分に問いかけます。もしあなたの解決策が6スクリーンに渡るのなら、それはあなたが蚊を殺すために大ハンマーを使った事があるのかもしれません。あなたの頭の中のイメージは問題の重要性に比例していません。"
 
 #: ../../chapter2.rst:1155
 msgid ""
@@ -1796,7 +1764,7 @@ msgid ""
 " problem. They've solved a large problem of which their real needs are a "
 "subset. They have violated the principle that the solution should match "
 "the problem."
-msgstr "私はFORTRANで書かれた何十万行の各物理学プログラムを見たことがあります。そのコードが何するにしても、数十万行のコードを正当化する訳ではありません。おそらくそのプログラムの作者は問題を過度に一般化しています。彼らは大きな問題を解決しましたが、本当に必要なのはそのサブセットだけです。彼らは解決策が問題に一致するはずであるという原則に違反しています。"
+msgstr "私はFORTRANで書かれた何十万行の核物理学プログラムを見たことがあります。そのコードが何するにしても、数十万行のコードを正当化する訳ではありません。おそらくそのプログラムの作者は問題を過度に一般化しています。彼らは大きな問題を解決しましたが、本当に必要なのはそのサブセットだけです。彼らは解決策が問題に一致するはずであるという原則に違反しています。"
 
 #: ../../chapter2.rst:1164
 msgid ""
@@ -1870,7 +1838,7 @@ msgstr "再び、仕様を書く人は、電気機械的な解決策をモデル
 msgid ""
 "Go back to what the problem was before the customer tried to solve it. "
 "Exploit the \"don\\'t cares\"."
-msgstr "顧客がそれを解決しようとする前に問題が何であったかに戻ります。「心配しない」を悪用する。"
+msgstr "顧客がそれを解決しようとする前に、問題が何であったかに戻ってください。「気にしない」を利用します。"
 
 #: ../../chapter2.rst:1216
 msgid "An overgeneralized solution."
@@ -1924,14 +1892,14 @@ msgid ""
 "or \"Would you mind if I took off this page and replaced it with this "
 "expression?\" They get annoyed. They want you to do what they told you to"
 " do."
-msgstr "「本当にこれを意味しているのではない」または「このページを外してこの表現に置き換えてもよろしいですか」と言って戻るのは傲慢です。彼らはいらいらします。彼らは、あなたに言ったとおりに、あなたがするのを求めます。"
+msgstr "「本当はこの意味では言ってませんでした」または「このページを外してこの表現に置き換えてもよろしいですか」と言って戻るのは傲慢です。顧客はいらいらします。顧客は、あなたに言ったとおりに、あなたがするのを求めます。"
 
 #: ../../chapter2.rst:1253
 msgid ""
 "LaFarr Stuart took this attitude when he redesigned Forth [stuart80]_ . "
 "He didn't like the input buffer, so he implemented Forth without it, and "
 "discovered he didn't really need an input buffer."
-msgstr "LaFarr StuartはForthを再設計したときにこのような態度を取りました。 [stuart80]_ 彼は入力バッファが好きではなかったので、彼はそれなしでForthを実装し、そして彼は本当に、入力バッファが必要でないことを発見しました。"
+msgstr "ラハール・スチュアートはForthを再設計したときにこのような態度を取りました。 [stuart80]_ 彼は入力バッファが好きではなかったので、彼はそれなしでForthを実装し、そして彼は本当に、入力バッファが必要でないことを発見しました。"
 
 #: ../../chapter2.rst:1257
 msgid ""
@@ -2038,7 +2006,7 @@ msgstr "紋切り型の知恵は複雑さを崇拝する"
 msgid ""
 "The mean time for making a \"two-hour\" addition to an application is "
 "approximately 12 hours."
-msgstr "その意味は、アプリケーションに「2時間」追加する平均時間は約12時間です。"
+msgstr "アプリケーションにほんの「2時間」追加する作業は、おおよそ12時間に膨れ上がります。"
 
 #: ../../chapter2.rst:1334
 msgid ""
@@ -2166,7 +2134,7 @@ msgid ""
 "The final box on our iterative analytic wheel is labeled “Show Model to "
 "Customer.” With the tools we’ve outlined in this chapter, this job should"
 " be easy to do."
-msgstr "反復分析観覧車の最後のゴンドラには「モデルを顧客に見せる」というラベルが貼ってあります。この章で概説したツールを使用すると、この作業は簡単になります。"
+msgstr "反復分析観覧車の最後のゴンドラには「モデルを顧客に見せる」と貼ってあります。この章で概説したツールを使用すると、この作業は簡単になります。"
 
 #: ../../chapter2.rst:1416
 msgid ""
@@ -2205,13 +2173,11 @@ msgstr ""
 
 #: ../../chapter2.rst:1431
 msgid "LaFarr Stuart, \"LaFORTH,\"   **1980 FORML Proceedings,**  p. 78."
-msgstr "LaFarr Stuart, \"LaFORTH,\"   **1980 FORML Proceedings,**  p. 78."
+msgstr "ラハール・スチュアート(LaFarr Stuart), \"LaFORTH,\"   **1980 FORML Proceedings,**  p. 78."
 
 #: ../../chapter2.rst:1432
 msgid ""
 "Frederick P. Brooks, Jr.,  **The Mythical  Man-Month,**  Reading, "
 "Massachusetts, Addison-Wesley, 1975."
-msgstr ""
-"Frederick P. Brooks, Jr.,  **The Mythical  Man-Month,**  Reading, "
-"Massachusetts, Addison-Wesley, 1975."
+msgstr "人月の神話 新装版;滝沢　徹、牧野　祐子、富澤　昇 訳;丸善出版;2010.12;ISBN:978-4-621-06608-9(Frederick P. Brooks, Jr.,  **The Mythical  Man-Month,**  Reading, Massachusetts, Addison-Wesley, 1975.)"
 
