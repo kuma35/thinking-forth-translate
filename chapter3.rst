@@ -166,7 +166,6 @@ change the contents of input fields on their terminal screen. For
 instance, the screen might look like this:
 
 .. image:: chapter3-img1.png
-   :scale: 50%
 
 The editor will provide three modes for users to change the contents of
 the input field:

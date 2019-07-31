@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-28 22:57+0900\n"
-"PO-Revision-Date: 2019-07-28 22:58+0900\n"
+"PO-Revision-Date: 2019-08-01 07:11+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -240,7 +240,7 @@ msgstr "一方、コンポーネントの外部で値が必要になる場合、
 
 #: ../../chapter3.rst:149
 msgid "(The name ``/RECORD``, by convention, means “bytes per record.”)"
-msgstr "(Forthの慣習的に ``/RECORD`` と言う名前は、「レコード当たりのバイト(byotes per record)」を意味します。)"
+msgstr "(Forthの慣習的に ``/RECORD`` と言う名前は、「レコード当たりのバイト(bytes per record)」を意味します。)"
 
 #: ../../chapter3.rst:152
 msgid "Example: A Tiny Editor"
@@ -252,9 +252,7 @@ msgid ""
 "nice to design a large application right here in :doc:`Chapter "
 "Three<chapter3>`, but alas, we don’t have the room and besides, we’d get "
 "sidetracked in trying to understand the application."
-msgstr ""
-"実際の問題にコンポーネントによる分解を適用しましょう。:doc:`第３章<chapter3>` "
-"のここで大規模なアプリケーションを設計するのは素敵です。しかし、残念なことに、私たちは開発チームを持っていないし、アプリケーションを理解しようとして横道にそれてしまいます。"
+msgstr "実際の問題にコンポーネントによる分解を適用しましょう。 :doc:`本章<chapter3>` で大規模なアプリケーションを設計するのは素敵です。しかし、残念なことに、私たちは開発チームを持っていないし、アプリケーションを理解しようとして横道にそれてしまいます。"
 
 #: ../../chapter3.rst:160
 msgid ""
@@ -270,7 +268,7 @@ msgid ""
 "Imagine that we must create a tiny editor that will allow users to change"
 " the contents of input fields on their terminal screen. For instance, the"
 " screen might look like this:"
-msgstr "ユーザが端末画面の入力フィールドの内容を変更できるようにするちっこいエディタを作成する必要があるとします。 たとえば、画面は次のようになります。"
+msgstr "ユーザが端末画面の入力フィールドの内容を変更できるようにするタイニーエディタを作成する必要があるとします。 たとえば、画面は次のようになります。"
 
 #: ../../chapter3.rst:171
 msgid ""
@@ -454,7 +452,7 @@ msgstr "私たちは、3つの処理全てが「ポインタ」と呼ばれる�
 msgid ""
 "to get the pointer (if the pointer itself is relative, this function will"
 " perform some computation)."
-msgstr "ポインタを取得する(ポインタが相対位置指定の場合は、この関数は何らかの計算を実行します)。"
+msgstr "ポインタを取得する(ポインタが相対位置指定の場合は、この機能は何らかの計算を実行します)。"
 
 #: ../../chapter3.rst:275
 msgid "to advance the pointer"
@@ -495,12 +493,7 @@ msgid ""
 "tackle that aspect when we get to writing the third component. But look "
 "at what we found out already: we can describe “Insert” as simply ``SLIDE>"
 " OVERWRITE``."
-msgstr ""
-"テキストを左側方向に、あるいは右側方向にコピーするためには、私たちは２つの新しい名前 ``SLIDE<`` と ``SLIDE>`` (それぞれ"
-"「slide-backwards」、「slide-forwards」と発音します)をペアで考え出す必要がありました。それらの両方とも `` "
-"POSITION`` "
-"を使用します。しかし、それらは我々が考慮するのを延期した要素に依存します。それはフィールドの長さを「知る」方法です。3番目のコンポーネントを書くことになったら、その側面に取り組むことができます。しかし、すでに判った事もあります。「挿入」は単に"
-" ``SLIDE> OVERWRITE`` と記述することができます。"
+msgstr "テキストを左側方向に、あるいは右側方向にコピーするためには、私たちは２つの新しい名前 ``SLIDE<`` と ``SLIDE>`` (それぞれ「slide-backwards」、「slide-forwards」と発音します)をペアで考え出す必要がありました。それらの両方とも ``POSITION`` を使用します。しかし、それらは私たちが考慮するのを延期した要素に依存します。それはフィールドの長さを「知る」方法です。3番目のコンポーネントを書くことになったら、その側面に取り組むことができます。しかし、すでに判った事もあります。「挿入」は単に ``SLIDE> OVERWRITE`` と記述することができます。"
 
 #: ../../chapter3.rst:310
 msgid ""
@@ -632,7 +625,7 @@ msgstr "決定表では、可能な種類のキーを左側の列に配置し、
 msgid ""
 "To implement what happens when “backspace” is pressed while in Insert "
 "Mode, we add a new procedure:"
-msgstr "挿入モードで「backspace」が押されたときに何が起こるかを実装するために、我々は新しい手順を追加します。"
+msgstr "挿入モードで「backspace」が押されたときに何が起こるかを実装するために、私たちは新しい手順を追加します。"
 
 #: ../../chapter3.rst:356
 msgid ""
@@ -821,10 +814,7 @@ msgid ""
 "takes several attempts before we arrive at this configuration. Designing "
 "this level forces us to consider many things at once that we had deferred"
 " till later in the previous try."
-msgstr ""
-"連続した改良の概念を適用して、 :numref:`fig3-4` 「キーストローク処理」を拡張して描き直した、エディタの問題を表しています。 "
-"この設定にたどり着くまでに数回試行する必要があります。 "
-"このレベルを設計すると、以前の試行で後にすると延期していた多くのことを一度に検討する必要があります。"
+msgstr ":numref:`fig3-4` は、連続した改良の概念を適用して「キーストローク処理」を拡張して描き直したものです。この設定にたどり着くまでに数回試行する必要があります。 このレベルを設計すると、以前の試行で後にすると延期していた多くのことを一度に検討する必要があります。"
 
 #: ../../chapter3.rst:488
 msgid "A structure for \"Process a Keystroke.\""
@@ -919,7 +909,7 @@ msgid ""
 "Okay, everyone, now act surprised. We’ve just been told that this "
 "application won’t run on a memory-mapped display. What does this change "
 "do to our design structure?"
-msgstr "おまえら聞いて驚け、たった今、このアプリケーションはメモリマップドディスプレイ(訳注:現在一般的な、メモリの特定の番地と画面の特定の位置が対応しているディスプレイ)では実行されないと判明しました。この変更は私たちの設計構造に何をもたらすでしょうか？"
+msgstr "さて、おまえら聞いて驚け！たった今、このアプリケーションはメモリマップドディスプレイ(訳注:現在一般的な、メモリの特定の番地と画面の特定の位置が対応しているディスプレイ)では実行されないと判明しました。この変更は私たちの設計構造に何をもたらすでしょうか？"
 
 #: ../../chapter3.rst:549
 msgid "The same section, \"refined\" and \"optimized.\""
@@ -971,9 +961,7 @@ msgid ""
 "modules up before “Increment Pointer.” The point here is: How did we miss"
 " it? By getting preoccupied with control flow structure, a superficial "
 "element of program design."
-msgstr ""
-"はい、確かにこれは簡単に直せる問題です。 「ポインタ増加(Increment "
-"Pointer)」の前にリフレッシュモジュールを移動するだけです。ここでのポイントは、どうしてそれを見逃してしまったのかです。それはプログラム設計の表面的な要素である制御フロー構造に夢中になってしまったからです。"
+msgstr "はい、確かにこれは簡単に直せる問題です。 「ポインタの増加」前にリフレッシュモジュールを移動するだけです。ここでのポイントは、どうしてそれを見逃してしまったのかです。それはプログラム設計の表面的な要素である制御フロー構造に夢中になってしまったからです。"
 
 #: ../../chapter3.rst:584
 msgid "Adding refresh."
@@ -1070,9 +1058,7 @@ msgid ""
 "Let me give an example from my own recent experience. One of my hobbies "
 "is writing text formatter/editors. (I’ve written two of them, including "
 "the one on which I am writing this book.)"
-msgstr ""
-"私自身の最近の経験から例を挙げましょう。 "
-"私の趣味の1つは、テキストフォーマッタ・エディタを書くことです(この本を書くためのものを含むみ、２つ書きました)。"
+msgstr "私自身の最近の経験から例を挙げましょう。 私の趣味の1つは、テキストフォーマッタ・エディタを書くことです(この本を書くためのものを含み、２つ書きました)。"
 
 #: ../../chapter3.rst:649
 msgid ""
@@ -1134,18 +1120,14 @@ msgid ""
 "buffers are defined with ``CREATE``, the count is an ordinary "
 "``VARIABLE``, and the attribute patterns are defined as ``CONSTANT`` s, "
 "such as:"
-msgstr ""
-"Forthでは、これらの要素を1つの画面にまとめて定義しました。 バッファは ``CREATE`` で定義され、カウントは通常の "
-"``VARIABLE`` で、属性パターンは ``CONSTANT`` として定義されます。"
+msgstr "Forthでは、これらの要素を1つのスクリーンにまとめて定義しました。 バッファは ``CREATE`` で定義され、カウントは通常の ``VARIABLE`` で、属性パターンは ``CONSTANT`` として定義されます。"
 
 #: ../../chapter3.rst:689
 msgid ""
 "The formatting component uses phrases like ``UNDERNESS SET-FLAG`` to set "
 "bits in the attribute buffer. The output component uses phrases like "
 "``UNDERNESS AND`` to read the attribute buffer."
-msgstr ""
-"フォーマット化コンポーネントは、属性バッファのビットを設定するために ``UNDERNESS SET-FLAG`` のような句を使います。 "
-"出力コンポーネントは、属性バッファを読み込むために ``UNDERNESS AND`` のような句を使います。"
+msgstr "フォーマット化コンポーネントは、属性バッファのビットを設定するために ``UNDERNESS SET-FLAG`` のようなフレーズを使います。 出力コンポーネントは属性バッファを読み込むために ``UNDERNESS AND`` のようなフレーズを使います。"
 
 #: ../../chapter3.rst:694
 msgid "A Design Mistake"
@@ -1170,7 +1152,7 @@ msgid ""
 "I allow different type widths to be used: condensed, double width, etc. "
 "This means not only sending different signals to the printer, but "
 "changing the number of characters allowed per line."
-msgstr "異なる幅の文字を使用することを許可します。縮小文字や倍角など。これは、異なる信号をプリンタに送信するだけでなく、1行に許可される文字数を変更することを意味します。"
+msgstr "縮小文字や倍角など、異なる幅の文字を使用することを許可します。これは、異なる信号をプリンタに送信するだけでなく、1行に許可される文字数を変更することを意味します。"
 
 #: ../../chapter3.rst:709
 msgid ""
@@ -1193,9 +1175,7 @@ msgid ""
 "Alas, I was also using ``WALL`` inside the output component to determine "
 "how many characters to display. My reasoning was that this value would "
 "change depending on what type-width I was using."
-msgstr ""
-"残念ながら、私は表示する文字数を決めるためにoutputコンポーネントの中で ``WALL`` を使っていました。 "
-"私の推論は、この値は私が使っていたタイプ幅によって変わるだろうということでした。"
+msgstr "残念ながら、私は表示する文字数を決めるために出力コンポーネントの中で ``WALL`` を使っていました。 私の推論は、この値は私が使っていたタイプ幅によって変わるだろうということでした。"
 
 #: ../../chapter3.rst:721
 #, 
@@ -1290,9 +1270,7 @@ msgid ""
 "must possess. This sequence leads to a natural organization of the source"
 " listing. The powerful commands are simply added on top of the elementary"
 " application ( :numref:`fig3-10` a)."
-msgstr ""
-"Forthの規則の一つは、ワードが呼び出されたり参照される前に、必ず定義済でなければならないということです。通常、ワードが定義されている順序は、そのワードが持っていなければならない能力を増加させる順序と同じです。この順序は、ソースリストの自然な構成を導きます。強力なこまんどは基本的なアプリケーションの上に単純に追加されています("
-" :numref:`fig3-10` (a) )。"
+msgstr "Forthの規則の一つは、ワードが呼び出されたり参照される前に、必ず定義済でなければならないということです。通常、ワードが定義されている順序は、そのワードが持っていなければならない能力を増加させる順序と同じです。この順序は、ソースリストの自然な構成を導きます。強力なコマンドは基本的なアプリケーションの上に単純に追加されています( :numref:`fig3-10` (a) )。"
 
 #: ../../chapter3.rst:775
 msgid ""
@@ -1312,10 +1290,7 @@ msgid ""
 "elementary part of the application ( :numref:`fig3-10` b). By being able "
 "to change the root\\’s capability, the user can change the capability of "
 "all the commands that use the root."
-msgstr ""
-"しかし多くの大規模なアプリケーションでは、追加の機能はアプリケーションの基本部分にあるプライベートな根っこの機能の拡張として実装するのが一番です("
-" :numref:`fig3-10` (b))）。 "
-"根っこの機能を変更できるようにすることで、ユーザは根っこtを使用するすべてのコマンドの機能を変更できます。"
+msgstr "しかし多くの大規模なアプリケーションでは、追加の機能はアプリケーションの基本部分にあるプライベートな根っこの機能の拡張として実装するのが一番です( :numref:`fig3-10` (b))）。 根っこの機能を変更できるようにすることで、ユーザは根っこを使用するすべてのコマンドの機能を変更できます。"
 
 #: ../../chapter3.rst:793
 msgid ""
@@ -1326,11 +1301,7 @@ msgid ""
 "formats words on the line; when the next word won\\’t fit on the current "
 "line, we invoke ``NEWLINE`` . This “uses” hierarchy demands that we "
 "define ``NEWPAGE`` early in the application."
-msgstr ""
-"てワードプロセッサにの例戻って、かなり原始的なルーチンは新しいページを開始するものです。 改行するワードで使用されています。 "
-"行がなくなったら、新しいページを開始する必要があります。 改行するワードは、その行の語をフォーマットするルーチンによって使用されます。 "
-"次の語が現在の行に収まらない場合は、 ``NEWLINE`` を呼び出します。 この階層を「使う」ためには、アプリケーションの早い段階で "
-"``NEWPAGE`` を定義する必要があります。"
+msgstr "ワードプロセッサの例に話を戻すと、かなり原始的なルーチンとして新しいページを開始するものがあります。改行するワードで使用されています。 行がなくなったら新しいページを開始する必要があります。 この改行するワードは、その行の語をフォーマットするルーチンによって使用されます。 次の語が現在の行に収まらない場合は、 ``NEWLINE`` を呼び出します。 この階層を「使う」ためには、アプリケーションの早い段階で ``NEWPAGE`` を定義する必要があります。"
 
 #: ../../chapter3.rst:801
 msgid ""
@@ -1484,10 +1455,7 @@ msgid ""
 "approach on more immediate considerations such as impressing the "
 "customer, getting something to work, or showing other people how it\\'s "
 "going to work to get them interested."
-msgstr ""
-"自由精神に基づくやり方でそれをやっているということなら、それはイエスです。2日間でお客様にデモンストレーションを行った場合は、別の方法で行います。"
-" 最もおもしろいものではなく、最も目に見えるものから始めます。 しかしそれでも、階層的な順序ではありません。 "
-"私は、顧客への感動、何かを働かせる、他の人々に関心を引くためにどのように動くべきかを示すなど、より早急な検討を基本アプローチにしています。"
+msgstr "自由精神に基づくやり方でそれをやっているということなら、それはイエスです。2日間でお客様にデモンストレーションを行った場合は、別の方法で行います。 最もおもしろいものではなく、最も目に見えるものから始めます。 しかしそれでも、階層的な順序ではありません。 私は、顧客への感動、何か動くもの、他の人々に関心を引くためにどのように動くべきかを示すなど、より早急な検討を基本アプローチにしています。"
 
 #: ../../chapter3.rst:894
 msgid ""
@@ -1497,11 +1465,7 @@ msgid ""
 "metalanguages. To try and split hairs as to which level you are on---"
 "assembler level, first integration level, last integration level---it\\'s"
 " just tedious and not helpful. My levels get all mixed up hopelessly."
-msgstr ""
-"レベルを「ネスト」と定義した場合であれば、はい、それは問題を分解するための良い方法です。 "
-"しかし、私は「レベル」という概念が有用であるとは思いませんでした。 レベルのもう一つの側面は、言語、メタ言語、メタ - メタ言語です。 "
-"アセンブラレベル、最初の統合レベル、最後の統合レベル。髪の毛をより分けたりするように、どのレベルにいるのかを試してみたりするのは、単調で面倒です。"
-" 私のレベルはすべて絶望的に混ざりあっています。"
+msgstr "レベルを「入れ子」と定義した場合であれば、はい、それは問題を分解するための良い方法です。 しかし、私は「レベル」という概念が有用であるとは思いませんでした。 レベルのもう一つの側面は、言語、メタ言語、メタ―メタ言語です。 アセンブラレベル、最初の統合レベル、最後の統合レベル。髪の毛をより分けたりするように、どのレベルにいるのかを試してみたりするのは、単調で面倒です。 私のレベルはすべて絶望的に混ざりあっています。"
 
 #: ../../chapter3.rst:902
 msgid ""
@@ -1718,10 +1682,7 @@ msgid ""
 "not segregated modules but rather cumulative additions to the dictionary."
 " A video lexicon would, at the very least, give a name for the address of"
 " video memory."
-msgstr ""
-"プログラマを細部から「保護」することによって、分離は情報隠蔽の目的を破りました。 "
-"対照的に、コンポーネントは分離されたモジュールではなく、辞書への累積的な追加です。 "
-"ビデオ用語集は、少なくとも、ビデオメモリのアドレスに名前を付けます。"
+msgstr "プログラマを細部から「保護」することによって、分離は情報隠蔽の目的を打ち砕きます。対照的に、コンポーネントは分離されたモジュールではなく、辞書への累積的な追加です。 少なくとも、ビデオ用語集はビデオメモリのアドレスに名前を付けます。"
 
 #: ../../chapter3.rst:1024
 msgid ""
@@ -1741,7 +1702,7 @@ msgstr ""
 
 #: ../../chapter3.rst:1035
 msgid "Don\\'t bury your tools."
-msgstr "ツールを詰め込まないで下さい。"
+msgstr "あなたの道具を詰め込まないで下さい。"
 
 #: ../../chapter3.rst:1038
 msgid "The Tower of Babble"
@@ -1792,9 +1753,7 @@ msgid ""
 "Even machine code should be readable. A true Forth-based engine would "
 "enjoy a syntax and dictionary identical and continuous with the “high-"
 "level” dictionary we know today."
-msgstr ""
-"機械語でも充分読みやすいはずです。 "
-"真のForthベースのエンジンは、今日私たちが知っている「高レベル」辞書と同様で恒久的な、構文と辞書を享受するでしょう。"
+msgstr "機械語でも充分読みやすくあるべきです。 真のForthベースのエンジンは、今日私たちが知っている「高レベル」辞書と同様の、恒久的な構文と辞書を享受するでしょう。"
 
 #: ../../chapter3.rst:1065
 msgid "Summary"
@@ -1911,7 +1870,7 @@ msgid ""
 "address EFFF. In other words, we must start at the end, allocating arrays"
 " backwards. We still want each array name to return its *starting* "
 "address, however."
-msgstr "さて、今、どういうわけか私たちのシステムのアーキテクチャが変化し、私たちはそれがHEXアドレスEFFFで「終わる」ようにこのメモリを割り当てなければいけないことになりました。言い換えれば、最後から始めめて、配列を逆方向に割り当てなければなりません。ただし、各配列要素名は「開始」アドレスを返さなければなりません。"
+msgstr "さて、今、どういうわけか私たちのシステムのアーキテクチャが変化し、私たちはそれがHEXアドレスEFFFで「終わる」ようにこのメモリを割り当てなければいけないことになりました。言い換えれば、最後から始めて、配列を逆方向に割り当てなければなりません。ただし、各配列要素名は「開始」アドレスを返さなければなりません。"
 
 #: ../../chapter3.rst:1193
 msgid "To do this, we must now write:"
@@ -1934,10 +1893,7 @@ msgid ""
 "The words ``THERE`` and ``RAM-ALLOT`` are nice and friendly, but they "
 "didn’t succeed at hiding *how* the region is allocated. If they had, it "
 "wouldn’t matter which order we invoked them in."
-msgstr ""
-" ``THERE`` と ``RAM-ALLOT`` "
-"というワードは素晴らしくて親しみやすいものですが、領域の割当方法を隠すことには成功していません。 "
-"領域の割当方法を隠せていたなら、それを私たちがどの順序で呼び出したかは問題になりません。"
+msgstr "``THERE`` と ``RAM-ALLOT`` というワードは素晴らしくて親しみやすいものですが、領域の割当方法を隠すことには成功していません。 領域の割当方法を隠せていたなら、それを私たちがどの順序で呼び出したかは問題になりません。"
 
 #: ../../chapter3.rst:1214
 msgid ""
@@ -1964,8 +1920,5 @@ msgid ""
 "You can look inside an object and its source code whenever you want. And "
 "table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd"
 " Paysan**"
-msgstr ""
-"編集者 Bernd Paysn より： :doc:`preface94` の1994年度版の序文の概説と、 :doc:`preface2004` "
-"の2004年度版の序文の説明を参照してください。Windows "
-"COMの「オブジェクト」やCORBAのようなものを考えてください。実際のオブジェクト指向プログラミングは、Smalltalkに由来するので、プログラマから情報を隠すことはありません。「卵マスターオブジェクト」に「スクランブルエッグ作成」メソッドを追加しても問題ありません。Smalltalkは既知のクラスにメソッドを追加することで機能します。それらをサブクラス化する必要はありません。あなたはいつでもオブジェクトとそのソースコードの内側を見ることができます。また、表駆動によるメソッドのディスパッチは非常に効率的です。"
+msgstr "編集者 Bernd Paysn より： :doc:`preface94` の概説と、 :doc:`preface2004` の説明を参照してください。Windows COMの「オブジェクト」やCORBAのようなものを考えてください。実際のオブジェクト指向プログラミングは、Smalltalkに由来するので、プログラマから情報を隠すことはありません。「卵マスターオブジェクト」に「スクランブルエッグ作成」メソッドを追加しても問題ありません。Smalltalkは既知のクラスにメソッドを追加することで機能します。それらをサブクラス化する必要はありません。あなたはいつでもオブジェクトとそのソースコードの内側を見ることができます。また、表駆動によるメソッドのディスパッチは非常に効率的です。"
 
