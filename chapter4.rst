@@ -173,11 +173,11 @@ there? What was the state of our containers one step previously?
 
 There are only two possibilities ( :numref:`fig4-3` ):
 
-#. The four-gallon container was full, and we just added it to the large
+A. The four-gallon container was full, and we just added it to the large
    container. This implies that we already had two gallons in the large
    container. Or…
 
-#. The nine-gallon container was full, and we just poured off three
+B. The nine-gallon container was full, and we just poured off three
    gallons into the small container.
 
 Which choice? Let’s make a guess. The first choice requires a two-gallon
@@ -1419,8 +1419,8 @@ true, then we can exclude the normal case:
 
 .. code-block:: none
    
-   : DIGIT  ( n )  4-CASE? &poorbf{DUP} IF  ONER FIVER  THEN
-                   9-CASE? &poorbf{DUP} IF  ONER TENER  THEN
+   : DIGIT  ( n )  4-CASE? DUP IF  ONER FIVER  THEN
+                   9-CASE? DUP IF  ONER TENER  THEN
                    OR  NOT IF normal case THEN ;
 
 But this approach needlessly complicates the definition by adding new

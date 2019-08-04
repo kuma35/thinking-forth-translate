@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-29 05:55+0900\n"
-"PO-Revision-Date: 2019-07-29 06:07+0900\n"
+"PO-Revision-Date: 2019-08-05 04:49+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -39,11 +39,11 @@ msgstr "― 研究所で開発された運営哲学"
 
 #: ../../chapter4.rst
 msgid "*Automation and Instrumentation Design Group,*"
-msgstr "自動化・計測設計グループ"
+msgstr "ヴァージニア工科大学化学部"
 
 #: ../../chapter4.rst
 msgid "*Chemistry Dept., Virginia Polytechnic Institute and State University*"
-msgstr "ヴァージニア工科大学化学部"
+msgstr "自動化・計測設計グループ"
 
 #: ../../chapter4.rst:12
 msgid ""
@@ -53,10 +53,7 @@ msgid ""
 " the time for pure invention, the part that many of us find the most fun."
 " There’s a special satisfaction in going to the mat with a non-trivial "
 "problem and coming out the victor."
-msgstr ""
-"アプリケーションのコンポーネントを決定したら、次のステップはそれらのコンポーネントを設計することです。 "
-"この章では、問題解決の手法をForthアプリケーションの詳細設計に適用します。 "
-"これは純粋な発明のためのひとときです。私たちの多くが最も楽しいと思う部分です。 大きな問題でマットに向かい勝利した人には、特別な満足感があります。"
+msgstr "アプリケーションのコンポーネントを決定したら、次のステップはそれらのコンポーネントを設計することです。 この章では、問題解決の手法をForthアプリケーションの詳細設計に適用します。 これは純粋な発明のためのひとときです。私たちの多くが最も楽しいと思う部分です。 明白でない問題のもつれに立ち向かい、勝利した人には特別な満足感があります。"
 
 #: ../../chapter4.rst:19
 msgid ""
@@ -82,10 +79,7 @@ msgid ""
 "studying techniques of problem solving? To quicken the process. By "
 "thinking about the *ways* in which we solve problems, apart from the "
 "problems themselves, we enrich our subconscious storehouse of techniques."
-msgstr ""
-"初心者でも、問題解決技法に意識的な思考を注ぐことなくプログラミングの問題を解決できます。 "
-"では、問題解決技法を学習するメリットは何でしょうか？それは問題解決の速度を上げられます。 "
-"問題自体とは別に、問題を解決するための「方法」を考えることによって、私たちは自分の技法の引き出しを増やします。"
+msgstr "問題解決技法に意識的な思考を注がなくても、初心者でも、プログラミングの問題を解決はできます。 では、問題解決技法を学習するメリットとは何でしょうか？それは問題解決の速度を上げられることです。 問題自体とは別に、問題を解決するための「方法」を考えることによって、私たちは自分の技法の引き出しを増やします。"
 
 # いかにして問題をとくか
 # 原書名     How to Solve It: A New Aspect of Mathematical Method
@@ -154,9 +148,7 @@ msgid ""
 "In the *analysis* phase we separated the problem into its parts, to "
 "clarify our understanding of each piece. We are now entering the "
 "*synthesis* phase. We must visualize the problem as a whole."
-msgstr ""
-"「分析」フェーズでは、各部分の理解を明確にするために、問題を部分に分けました。 私たちは今や「合成」フェーズに入っています。 "
-"問題全体を視覚化する必要があります。"
+msgstr "「分析」フェイズでは、各部分の理解を明確にするために、問題を部分に分けました。 私たちは今や「合成」フェイズに入っています。 問題全体を視覚化する必要があります。"
 
 #: ../../chapter4.rst:73
 msgid ""
@@ -220,15 +212,12 @@ msgid ""
 "before? Figure out what parts of the problem are familiar, and in what "
 "ways this problem might differ. Try to remember how you solved it before,"
 " or how you solved something like it."
-msgstr ""
-"この問題はおなじみでしょうか。 あなたは前にそのような定義を書きましたか？ "
-"問題のどの部分がよく知られているのか、またこの問題がどのように異なるのかを理解します。 "
-"以前にそれをどのように解決しようと試みたか、またはどのようにしてそれを解決したかを覚えておくようにしてください。"
+msgstr "この問題は既におなじみのものでしょうか。 あなたは以前に同様の定義を書きましたか？ 問題のどの部分がよく知られているのか、またこの問題がどのように異なるのかを理解します。 以前にそれをどのように解決しようと試みたか、またはどのようにしてそれを解決したかを覚えておくようにしてください。"
 
 # 前方へ働く
 #: ../../chapter4.rst:113
 msgid "Work forward."
-msgstr "前進する"
+msgstr "処理の流れに沿って前進して下さい。"
 
 #: ../../chapter4.rst:115
 msgid ""
@@ -243,7 +232,7 @@ msgstr ""
 # 後方へ働く
 #: ../../chapter4.rst:122
 msgid "Work backward."
-msgstr "逆行する"
+msgstr "処理の結果から逆方向にさかのぼって下さい。"
 
 #: ../../chapter4.rst:124
 msgid ""
@@ -251,17 +240,15 @@ msgid ""
 "incoming data. How do you know which route will take you closer to the "
 "solution? You don’t. This class of problem is best solved by working "
 "backward ( :numref:`fig4-1` )."
-msgstr ""
-"より複雑な問題は、入ってくるデータを処理するための多くの可能な方法を提示します。 どのルートで解決策に近づくことができますか。 "
-"あなたは前進しません。 この種の問題は戻ることで最もよく解決されます( :numref:`fig4-1` )。"
+msgstr "より複雑な問題は、入ってくるデータを処理するための多くの可能な方法を提示します。 どのルートで進めば解決策に近づくことがでるでしょうか？いいえ進みません。この種の問題は結果から後ろ向きにさかのぼることで最もよく解決されます( :numref:`fig4-1` )。"
 
 #: ../../chapter4.rst:133
 msgid "A problem that is easier to solve backward than forward."
-msgstr "前方より後方へ解決するのがより簡単な問題。"
+msgstr "処理に沿って進むより結果かさかのぼる方ががより簡単な問題。"
 
 #: ../../chapter4.rst:139
 msgid "Believe."
-msgstr "信じる。"
+msgstr "信じ込んで下さい。"
 
 #: ../../chapter4.rst:141
 msgid ""
@@ -271,18 +258,15 @@ msgid ""
 "gallons and the other holds four gallons. Our task is to measure out "
 "exactly six gallons of water from the nearby stream in one of the "
 "containers ( :numref:`fig4-2` )."
-msgstr ""
-"信念は後方にうまく働くために必要な要素です。 私たちは有名な数学的問題で説明します。 2つのバケツがあるとします。 "
-"バケツには目盛りはありませんが、一方は9リットル入りで、、もう一方には4リットル入りです。 "
-"私たちの仕事は、小川から正確に6リットルの水を汲み上げることです( :numref:`fig4-2` ）。"
+msgstr "信じ込む事は、結果からさかのぼるために必要な要素です。 私たちは有名な数学的問題で説明します。 2つのバケツがあるとします。 バケツには目盛りはありませんが、一方は9リットル入りで、もう一方には4リットル入りです。 私たちの仕事は、小川から正確に6リットルの水を汲み上げることです( :numref:`fig4-2` ）。"
 
 #: ../../chapter4.rst:152
 msgid "Two containers."
-msgstr "2つのバケツ"
+msgstr "２つのバケツ"
 
 #: ../../chapter4.rst:156
 msgid "Try to solve this on your own before reading further."
-msgstr "さらに読む前に、これを自分で解決してみてください。"
+msgstr "さらに読み進む前に、これを自分で解決してみてください。"
 
 #: ../../chapter4.rst:158
 msgid ""
@@ -292,11 +276,7 @@ msgid ""
 "container, we’ll get eight gallons. If we fill the nine-gallon container "
 "to the brim, then empty enough water to fill the four-gallon container, "
 "we’ll have exactly five gallons in the large container."
-msgstr ""
-"どのようにして、「9」と「4」から「6」を得ることができますか？ "
-"私たちは、バケツから別のバケツへと水を移すことを想像することによって、前進し始めることができます。 "
-"たとえば、小さなバケツ(4リットル)で大きなバケツ(9リットル)に２回注ぐと、8リットルが得られます。 "
-"大きなバケツ(9リットル)をいっぱいにしてから、小さなバケツ(4リトル)を満たすと、大きなバケツ(9リットル)には正確に5リットルが余ります。"
+msgstr "どのようにして、「9」と「4」から「6」を得ることができますか？ 私たちは、バケツから別のバケツへと水を移すことを想像することによって、処理を進め始めることができます。 たとえば、小さなバケツ(4リットル)で大きなバケツ(9リットル)に２回注ぐと、8リットルが得られます。 大きなバケツ(9リットル)をいっぱいにしてから、小さなバケツ(4リトル)を満たすと、大きなバケツ(9リットル)には正確に5リットルが余ります。"
 
 #: ../../chapter4.rst:166
 msgid ""
@@ -310,10 +290,7 @@ msgid ""
 "water, and it’s sitting in the large container (it won’t fit in the small"
 " one!). Now, how did we get it there? What was the state of our "
 "containers one step previously?"
-msgstr ""
-"逆行してみましょう。 "
-"私たちは6リットルの水を測定したと仮定します、そしてそれは大きなバケツ(9)の中に入っています（それは小さなバケツ(9)には収まりません！） "
-"さて、どうやってそこに至りましたか？ 一歩前の私たちのバケツの状態はどうでしたか？"
+msgstr "結果からさかのぼってみましょう。 私たちは6リットルの水を測定したと仮定します、そしてそれは大きなバケツ(9)の中に入っています（それは小さなバケツ(9)には収まりません！） さて、どうやってそこに至りましたか？ 一歩前の私たちのバケツの状態はどうでしたか？"
 
 #: ../../chapter4.rst:174
 msgid "There are only two possibilities ( :numref:`fig4-3` ):"
@@ -338,10 +315,7 @@ msgid ""
 "measurement, the second requires a three-gallon measurement. In our "
 "initial playing around, we never saw a unit like two. But we did see a "
 "difference of one, and one from four is three. Let’s go with version b."
-msgstr ""
-"どちらの選択？ 推測しましょう。 最初の選択は2リットルの測定を必要とし、2番目は3リットルの測定を必要とします。 "
-"最初の試行では、この2つの結果はありませんでした。 しかし、1リットル差のパターンがありました。4引く1は3です。 ということで、VERSION "
-"Bから始めるとしましょう。"
+msgstr "どちらを選びますか？推測しましょう。VERSON Aは2リットルの測定を必要とし、VEERSON Bは3リットルの測定を必要とします。 最初の試行では、この2つの結果はありませんでした。 しかし、1リットル差のパターンがありました。4引く1は3です。 ということで、VERSION Bから始めるとしましょう。"
 
 #: ../../chapter4.rst:188
 msgid ""
@@ -349,9 +323,7 @@ msgid ""
 "that we have arrived at the situation described. We have just poured off "
 "three gallons into the small container. Suspending all disbelief, we "
 "concentrate on how we did it."
-msgstr ""
-"ここで本物の策を弄します。私たちは、説明した状況にたどり着いたことを疑う余地なく、自分自身を信じさせなければなりません。 "
-"私達はちょうど3リットルを小さなバケツ(4)に注いだところです。すべての不信を中断して、私たちはそれをどうやったかに集中します。"
+msgstr "ここで本物の策を弄します。私たちは、説明した状況にたどり着いたことを疑う余地なく、自分自身に信じ込ませなければなりません。 私達はちょうど3リットルを小さなバケツ(4)に注いだところです。すべての不信を中断して、私たちはそれをどうやったかに集中します。"
 
 #: ../../chapter4.rst:193
 msgid ""
@@ -378,7 +350,7 @@ msgstr "複雑な問題の目的"
 msgid ""
 "Our final step should be to check our logic by running the problem "
 "forwards again."
-msgstr "私たちの最後のステップは、問題を再び前進させてロジックをチェックすることです。"
+msgstr "私たちの最後のステップは、問題を再び処理に沿って進めてみてロジックをチェックすることです。"
 
 #: ../../chapter4.rst:215
 msgid ""
@@ -415,10 +387,7 @@ msgid ""
 "subproblem, we can assume it has a straightforward solution. Without "
 "stopping to determine what that solution might be, we forge ahead with "
 "our main problem."
-msgstr ""
-"「補助問題」と呼ばれることもあるこれらの小さな問題を認識することは、重要な問題解決手法です。 "
-"部分問題を特定することで、それが簡単な解決策であると仮定することができます。 "
-"その解決策が何であるかを判断するのをやめずに、私たちは主な問題とともに先に進みます。"
+msgstr "「補助問題」と呼ばれることもあるこれらの小さな問題を認識することは、重要な問題解決手法です。副問題を特定することで、それには簡単な解決策があると仮定することができます。 その解決策が何であるかを判断することを放棄せずに、私たちは主な問題とともに先に進みます。"
 
 #: ../../chapter4.rst:240
 msgid "(Forth is ideally suited to this technique, as we’ll see.)"
@@ -585,9 +554,7 @@ msgid ""
 "anything, to keep myself flexible. My first rule is, \"Nothing is "
 "impossible.\" My second rule is, \"Don't forget, the object is to make a "
 "buck.\""
-msgstr ""
-"私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 "
-"私の最初の規則は、「不可能なことは何もない」です。 私の2番目の規則は、「忘れないでください、目的は支出することです」です。"
+msgstr "私は自分自身を柔軟に保つために、何かを設計する上で長年にわたって私が有用だと思ったいくつかのテクニックを持っています。 私の最初の規則は、「不可能なことは何もない」です。 私の2番目の規則は、「忘れないでください、目的は出力することです」です。"
 
 #: ../../chapter4.rst:351
 msgid ""
@@ -665,12 +632,7 @@ msgid ""
 " my top word into two and transfer one of them to an earlier block so I "
 "can use it earlier. I run the hardware if I have it; otherwise I simulate"
 " it."
-msgstr ""
-"それから私は最初のコードの最終行から始めます。 できる限り文章に近いように、自分がやりたいことを説明します。 "
-"それから私はエディタを使ってこの定義を画面の下にスライドさせ、そして内部のワードのコーディングを始めます。 "
-"それから私はそれがそれをするためのお粗末な方法であることに気づきます。 "
-"一番上のワードを2つに分割し、そのうちの1つを以前のブロック(スクリーン)に転送して、それをmもっと早く使用できるようにするかもしれません。 "
-"ハードウェアがある場合は実行してみます。 それ以外の場合はシミュレートします。"
+msgstr "それから私は最初のコードの最終行から始めます。 できる限り文章に近いように、自分がやりたいことを説明します。 それから私はエディタを使ってこの定義を画面の下にスライドさせ、そして内部のワードのコーディングを始めます。 それから私はそれがそれをするためのお粗末な方法であることに気づきます。 一番上のワードを2つに分割し、そのうちの1つを以前のブロック(スクリーン)に転送して、それをもっと早く使用できるようにするかもしれません。 ハードウェアがある場合は実行してみます。 それ以外の場合はシミュレートします。"
 
 #: ../../chapter4.rst:390
 msgid ""
@@ -688,9 +650,7 @@ msgid ""
 "Forth lets you play. That's fine, chances are you'll get some ideas. As "
 "long as you keep yourself from playing as a habit. Your head is a whole "
 "lot better than the computer for inventing things."
-msgstr ""
-"Forthはあなたに遊ばせます。 それで結構です、あなたはいくつかのアイデアを得ることができるでしょう。 "
-"あなたがForthで遊ぶ習慣はあっても自分自身を保つ限り、あなたの頭は物事を生み出すコンピュータよりもはるかに優れています。"
+msgstr "Forthはあなたに遊ばせます。 それで結構です。あなたはそれでいくつかのアイデアを得ることができるでしょう。あなたがForthで遊ぶ習慣はあっても、あなたが自分自身を保つ限り、あなたの頭はコンピュータよりもはるかに優れています。"
 
 #: ../../chapter4.rst:400
 msgid "Detailed Design"
@@ -762,7 +722,7 @@ msgstr "強力な要素を持つ共通の名前が多く含まれている場合
 msgid ""
 "We’ll discuss the first two steps in depth. Then we’ll engage in an "
 "extended example of designing a lexicon."
-msgstr "私たちは最初の2つのステップについて深く掘り下げます。それから拡張の例として語彙を設計します。"
+msgstr "私たちは最初の2つのステップについて深く掘り下げます。それから拡張の例として用語集を設計します。"
 
 #: ../../chapter4.rst:444
 msgid "Forth Syntax"
@@ -800,9 +760,7 @@ msgid ""
 "certain syntax because it seems familiar, you may save yourself from "
 "writing a lot of unnecessary code by choosing a syntax that Forth can "
 "support without any special effort on your part."
-msgstr ""
-"同時に、Forthの自身の構文を観察してください。 "
-"あなたが親しんでいるという理由で特定の構文を主張するのではなく、Forthが特別な努力をしなくてもサポートできる構文を選択することで、不要なコードをたくさん書く必要がなくなります。"
+msgstr "同時に、Forth自身の構文を観察してください。 あなたが親しんでいるという理由で特定の構文を主張するのではなく、Forthが特別な努力をしなくてもサポートできる構文を選択することで、不要なコードをたくさん書く必要がなくなります。"
 
 #: ../../chapter4.rst:465
 msgid "Here are some elementary rules of Forth’s natural syntax:"
@@ -810,7 +768,7 @@ msgstr "Forthの自然な構文の基本的な規則は次のとおりです。"
 
 #: ../../chapter4.rst:469
 msgid "Let numbers precede names."
-msgstr "数字を名前の前に置く。"
+msgstr "数を名前の前に置く。"
 
 #: ../../chapter4.rst:471
 msgid ""
@@ -818,30 +776,24 @@ msgid ""
 "number on the stack. Syntactically speaking, then, the number should "
 "precede the name. For instance, the syntax of the word ``SPACES``, which "
 "emits ``n`` number of spaces, is"
-msgstr ""
-"数値引数を必要とするワードは、当然その番号をスタック上で見つけることを期待します。 構文としては、番号は名前の前に置きます。 たとえば、 "
-"n個のスペースを出力する ``SPACES`` というワードの構文は、"
+msgstr "数値引数を必要とするワードは、当然その数値をスタック上で見つけることを期待します。 構文としては、数値は名前の前に置きます。 たとえば、 n個のスペースを出力する ``SPACES`` というワードの構文は、"
 
 #: ../../chapter4.rst:480
 msgid ""
 "Sometimes this rule violates the order that our ear is accustomed to "
 "hearing. For instance, the Forth word ``+`` expects to be preceded by "
 "both arguments, as in"
-msgstr ""
-"です。時々、この規則は(英語圏の)私たちが聞き慣れている順番に違反します。 たとえば、Forthのワード ``+`` "
-"の前には、以下ののように両方の引数が置かれることを想定しています。"
+msgstr "です。時々、この規則は(英語圏の)私たちが聞き慣れている順番に違反します。 たとえば、Forthのワード ``+`` の前には、以下の通り両方の引数が置かれることを想定しています。"
 
 #: ../../chapter4.rst:488
 msgid "This ordering, in which values precede operators, is called “postfix.”"
-msgstr "値が演算子がに先行するこの順序付けは「後置」と呼ばれます。"
+msgstr "値が演算子に先行するこの順序付けは「後置」と呼ばれます。"
 
 #: ../../chapter4.rst:491
 msgid ""
 "Forth, in its magnanimity, won’t *insist* upon postfix notation. You "
 "could redefine ``+`` to expect one number in the input stream, like this:"
-msgstr ""
-"Forthは心が広いので、後置記法(訳注：しばしば「逆ポーランド記法」(RPN)とも言われる)を無理強いする事はありません。以下のように、入力ストリーム内で数の1つを期待するように"
-" ``+`` を再定義することもできます。"
+msgstr "Forthは心が広いので、後置記法(訳注：しばしば逆ポーランド記法とも言われる)を無理強いする事はありません。以下のように、入力ストリーム内で数の1つを期待するように ``+`` を再定義することもできます。"
 
 #: ../../chapter4.rst:498
 msgid "by defining it so:"
@@ -953,10 +905,7 @@ msgid ""
 "An example is ``.\"`` (dot-quote), which precedes the text it will later "
 "print. Another example is ``CREATE`` (as well as all defining words), "
 "which precedes the name that is, at the moment, still undefined."
-msgstr ""
-"例としては  ``.\"`` (ドット・クォート）があります。これはその後ろに続く出力するテキストの前に置きます(訳注： ``.\"`` "
-"をワードとして認識させるために、その間に空白を置かねばならない。これが他言語と比べて間違いやすいところ)。もう1つの例は ``CREATE`` "
-"(そしてすべての定義語)です。 現時点ではまだ定義されていない名前の直前に置かれます(訳注：空白に関して ``.\"`` と同様)。"
+msgstr "例としては  ``.\"`` (ドット・クォート）があります。これはその後ろに続く出力するテキストの前に置きます(訳注： ``.\"`` をワードとして認識させるために、その間に空白を置かねばならない。これが他言語と比べて間違いやすいところ)。もう1つの例は ``CREATE`` (そしてすべての定義ワード)です。 現時点ではまだ定義されていない名前の直前に置かれます(訳注：各々ワードとして認識させるために、定義ワードと名前の間に空白を置かねばならない)。"
 
 #: ../../chapter4.rst:583
 msgid ""
@@ -1006,13 +955,11 @@ msgid ""
 "By convention, the latter version is preferable, because ``LOAD`` and "
 "``AIM`` are cleaner. They do what you expect them to do. Should you have "
 "to define ``READY``, you can do it so:"
-msgstr ""
-"慣例により、後者の方が望ましいです、なぜなら ``LOAD``と ``AIM`` はきれいだからです。 "
-"それらはあなたがそれらに期待することをします。 あなたが ``READY`` を定義しなければならないなら、あなたはそうすることができます。"
+msgstr "慣例により、後者の方が望ましいです、なぜなら ``LOAD`` と ``AIM`` はきれいだからです。 それらはあなたがそれらに期待することをします。 あなたが ``READY`` を定義しなければならないなら、あなたはそうすることができます。"
 
 #: ../../chapter4.rst:628
 msgid "and not"
-msgstr "そうではなく、"
+msgstr "慣例に従わなかった場合、以下のようにするハメになります。"
 
 #: ../../chapter4.rst:636
 msgid "Use zero-relative numbering."
@@ -1100,9 +1047,7 @@ msgid ""
 " zero-relative numbering throughout your design and then, only in the "
 "“user lexicons” (the set of words that the end-user will use) include the"
 " conversion from zero-to one-relative numbering:"
-msgstr ""
-"あなたの要件が1から始まる番号付けを要求しても大丈夫です。 "
-"設計全体でゼロから始まる番号を使用してから、「ユーザー用語集」（エンドユーザーが使用する一連のワード）にのみ、ゼロから1への相対番号の変換を含めます。"
+msgstr "あなたの要件が1から始まる番号付けを要求しても大丈夫です。 設計全体でゼロから始まる番号を使用してから、「ユーザ用語集」（エンドユーザが使用する一連のワード）にのみ、ゼロから1への相対番号の変換を含めます。"
 
 #: ../../chapter4.rst:694
 msgid "Let addresses precede counts."
@@ -1280,12 +1225,7 @@ msgid ""
 "merely recognizes certain words as “immediate” and executes them, letting"
 " them do their own work. (See *Starting Forth*, Chapter Eleven, “How to "
 "Control the Colon Compiler.”)"
-msgstr ""
-"``IF``, ``ELSE``, ``THEN`` "
-"などのコンパイルワードについては何も言及されていません。コロンコンパイラはこれらのワードについて知りません。 "
-"それは単に特定のワードを「immediate」(即実行)として認識し、それらを実行して、それら自身に仕事をさせるだけです(*Starting "
-"Forth*, Chapter Eleven, “How to Control the Colon Compiler.” / "
-"邦訳は、FORTH入門 第11章 の コロンコンパイラの制御方法 P.358)"
+msgstr "``IF``, ``ELSE``, ``THEN`` などのコンパイルワードについては何も言及されていません。コロンコンパイラはこれらのワードについて知りません。 それは単に特定のワードを「immediate」(即実行)として認識し、それらを実行して、それら自身に仕事をさせるだけです(FORTH入門 第11章 の コロンコンパイラの制御方法 P.358 s参照; *Starting Forth*, Chapter Eleven, “How to Control the Colon Compiler.”)"
 
 #: ../../chapter4.rst:816
 msgid ""
@@ -1416,18 +1356,14 @@ msgid ""
 "a unique interpreter. But every time you see a unique interpreter, it "
 "implies that there is something particularly awkward about the problem. "
 "And that is almost never the case."
-msgstr ""
-"それは特殊なインタプリタです。しかし、あなたが特殊なインタプリタを見るたびに、それは問題に関して特に厄介な何かがあることを意味します。 "
-"しかしそういう場合はほとんどありません。"
+msgstr "それは特殊なインタプリタです。しかし、あなたが特殊なインタプリタを見るたびに、それは問題に関して特に厄介な何かがあることを意味します。厄介でない事はまずありません。"
 
 #: ../../chapter4.rst:899
 msgid ""
 "If you write your own interpreter, the interpreter is almost certainly "
 "the most complex, elaborate part of your entire application. You have "
 "switched from solving a problem to writing an interpreter."
-msgstr ""
-"あなたがあなた自身のインタプリタを書くのであれば、インタプリタはほぼ確実にあなたのアプリケーション全体の中で最も複雑で精巧な部分です。 "
-"あなたは問題解決よりもインタプリタを書くことへと切り替えました。"
+msgstr "あなたがあなた自身のインタプリタを書くのであれば、インタプリタはほぼ確実にあなたのアプリケーション全体の中で最も複雑で精巧な部分です。 あなたは問題解決よりもインタプリタを書くことへ集中します。"
 
 #: ../../chapter4.rst:903
 msgid ""
@@ -1435,9 +1371,7 @@ msgid ""
 "these elaborate difficult things. But there comes a time when the world "
 "is going to have to quit programming keypads and converting numbers to "
 "binary, and start solving problems."
-msgstr ""
-"プログラマはインタプリタを書くのが好きだと思います。 彼らはこの手の手の込んだ難しいことをやりたいのです。 "
-"しかし、世界がキーパッドのプログラミングと数値の2進数への変換をやめて問題を解決し始めなければならなくなる時が来ます。"
+msgstr "プログラマはインタプリタを書くのが好きだと思います。 彼らはこの手の手の込んだ難しいことをやりたいのです。 しかし、早晩、キーパッドのプログラミングや数値の2進数への変換をやめて、問題そのものを解決し始めなければならなくなる時が来ます。"
 
 #: ../../chapter4.rst:909
 msgid "Algorithms and Data Structures"
@@ -1449,9 +1383,7 @@ msgid ""
 "requirements in terms of interfaces and rules. In this section we\\’ll "
 "refine the conceptual model for each component into clearly defined "
 "algorithms and data structures."
-msgstr ""
-":doc:`第２章<chapter2>` では、インターフェースと規則の観点から問題の要件を記述する方法を学びました。 "
-"このセクションでは、各コンポーネントの概念モデルを、明確に定義されたアルゴリズムとデータ構造に改良します。"
+msgstr ":doc:`第２章<chapter2>` では、インターフェースと規則の観点から問題の要件を記述する方法を学びました。 この節では、各コンポーネントの概念モデルを、明確に定義されたアルゴリズムとデータ構造に改良します。"
 
 # wikipediaより
 # al-Khowarizmi アル＝フワーリズミー
@@ -1472,9 +1404,7 @@ msgid ""
 "speech, such as “Please sort these letters chronologically,” and the "
 "precise directives of computer language, such as ``BEGIN 2DUP < IF …`` "
 "etc. The algorithm for sorting letters chronologically might be this:"
-msgstr ""
-"「これらの文字を年代順に並べ替えてください」など、人間が言う不正確な指令と、 ``BEGIN 2DUP < IF …`` "
-"などのコンピュータ言語の正確な指令との中間に、以下のようにアルゴリズムがあります。 "
+msgstr "「これらの文字を年代順に並べ替えてください」など、人間が言う不正確な指令と、 ``BEGIN 2DUP < IF …`` などのコンピュータ言語の正確な指令との中間に、以下のようにアルゴリズムがあります。 "
 
 #: ../../chapter4.rst:927
 msgid "Take an unsorted letter and note its date."
@@ -1494,7 +1424,7 @@ msgstr "あなたの手元の手紙より後の日付の最初の手紙が見つ
 msgid ""
 "Insert your current letter just in front of the letter dated later. (If "
 "the folder is empty, just insert the letter.)"
-msgstr "あなたの手元の手紙をその手紙の直前に挿入します（フォルダが空の場合は、手紙を挿入するだけです。）"
+msgstr "あなたの手元の手紙をその手紙の直前に挿入します（フォルダが空の場合は、単に手紙をフォルダに入れるだけです。）"
 
 #: ../../chapter4.rst:937
 msgid ""
@@ -1502,9 +1432,7 @@ msgid ""
 "given above would work fine for folders containing ten or fewer letters, "
 "but for folders with a hundred letters, you’d probably resort to a more "
 "efficient algorithm, such as this:"
-msgstr ""
-"同じ仕事のためにいくつかの可能なアルゴリズムがあるかもしれません。 "
-"上記のアルゴリズムは、10通以下のフォルダではうまく機能しますが、100通入りのフォルダでは、おそらく次のようなより効率的なアルゴリズムに頼るでしょう。"
+msgstr "同じ仕事のためにいくつかの可能なアルゴリズムがあるかもしれません。 上記のアルゴリズムは、10通入りのフォルダではうまく機能しますが、100通入りのフォルダでは、おそらく次のようなより効率的なアルゴリズムに頼ることになるでしょう。"
 
 #: ../../chapter4.rst:942 ../../chapter4.rst:944
 msgid "(same)"
@@ -1811,9 +1739,8 @@ msgid ""
 " you give us a number, we can make a Roman numeral out of it. We know how"
 " to do it—but we can’t yet state the procedure as an algorithm."
 msgstr ""
-"実際、私たちはローマ数字に関する正式な規則は覚えていません。 "
-"しかし、あなたが私たちに数字を与えれば、私たちはそれからローマ数字を作ることができます。 "
-"その方法はわかっていますが、その手順をアルゴリズムとして述べることはできません。"
+"実際、私たちはローマ数字に関する正式な規則は覚えていません。 しかし、あなたが私たちに数字を与えれば、私たちはそれからローマ数字を作ることができます。\n"
+"私たちその方法を知っていますが、まだその手順をアルゴリズムとして述べることができません。"
 
 #: ../../chapter4.rst:1120
 msgid "So, let’s look at the first ten Roman numerals:"
@@ -1826,11 +1753,7 @@ msgid ""
 "hand, special symbols are used to represent groups (5 = V). In fact, it "
 "seems we can’t have more than three I’s in a row before we use a larger "
 "symbol."
-msgstr ""
-"いくつか観察します。 "
-"まず、tally(訳注:数え方の一つ。日本でいう正の字)というアイデアがあります。ここでは、その数を多くすることで数字を表します（3 = "
-"III）。 一方、特殊記号はグループを表すために使用されます（5 = V）。 "
-"実際、特殊シンボルを使用する前に、3つ以上の「I」が連続していることはできないようです。"
+msgstr "少々観察してみます。まず、tally(訳注:数え方の一つ。日本でいう正の字)というアイデアがあります。ここでは、その数を多くすることで数字を表します（3 = III）。 一方、特殊記号はグループを表すために使用されます（5 = V）。 実際、特殊シンボルを使用する前に、3つ以上の「I」が連続していることはできないようです。"
 
 #: ../../chapter4.rst:1141
 msgid ""
@@ -1905,7 +1828,7 @@ msgstr "時期尚早かもしれませんが、私たちはすでにForthが数�
 msgid ""
 "we’ll get a 7 and a 3 on the stack (the three—being the quotient—is on "
 "top.)"
-msgstr "スタックに7と3が得られます（商である3つが一番上になります）。"
+msgstr "スタックに7と3が得られます（商である3が一番上になります）。"
 
 #: ../../chapter4.rst:1196
 msgid ""
@@ -2167,7 +2090,7 @@ msgstr "どの桁でも、値を合計するのに必要なだけの数の ``ONE
 msgid ""
 "Thus, for 300 we get “CCC,” for 20 we get “XX” for one we get “I.” And "
 "for 321 we get “CCCXXI.”"
-msgstr "したがって、300の場合は「CCC」、20の場合は「XX」、1の場合は「I」になります。yゆえに、321の場合は「CCCXXI」になります。"
+msgstr "したがって、300の場合は「CCC」、20の場合は「XX」、1の場合は「I」になります。ゆえに、321の場合は「CCCXXI」になります。"
 
 #: ../../chapter4.rst:1329
 msgid ""
@@ -2199,10 +2122,7 @@ msgid ""
 "the value; otherwise do nothing. Then print as many ``ONERS`` as "
 "necessary to add up to the value. But if the digit is 4, print only a "
 "``ONER`` and a ``FIVER``."
-msgstr ""
-"数字が5以上の場合、 ``FIVER`` で始めて値から5を引いてください。 それ以外の場合は何もしません。 "
-"それから値を合計するのに必要なだけ多くの ``ONERS`` を出力します。 しかし、数字が4の場合、 ``ONER``と ``FIVER`` "
-"だけを出力します。"
+msgstr "数字が5以上の場合、 ``FIVER`` で始めて値から5を引いてください。 それ以外の場合は何もしません。 それから値を合計するのに必要なだけ多くの ``ONERS`` を出力します。 しかし、数字が4の場合、 ``ONER`` と ``FIVER`` だけを出力します。"
 
 #: ../../chapter4.rst:1345
 msgid ""
@@ -2245,7 +2165,7 @@ msgstr "aとbとcをしてください。 **しかし** ある場合と、とあ
 # うーん意味分からん。
 #: ../../chapter4.rst:1364
 msgid "because the computer will do a, b, and c before it knows any better."
-msgstr "なぜなら、コンピュータはそれ以上を知る前にa、b、およびcを実行するからです。"
+msgstr "けれども、コンピュータはそれ以降を調べる前に既にa、b、cを実行してしまっています。"
 
 #: ../../chapter4.rst:1366
 msgid ""
@@ -2288,9 +2208,7 @@ msgid ""
 "need the conditional ``IF`` because we have an exception we need to "
 "eliminate. Still, we’ve minimized the complexity of the control structure"
 " by limiting the number of ``IF``  ``THEN`` s in this definition to one."
-msgstr ""
-"Forthでは、ロジックへの依存を最小限に抑える試みます。しかし、この場合、除外する必要がある例外があるため、条件付きの ``IF`` "
-"が必要です。 それでも、この定義の ``IF``  ``THEN`` の数を1つに制限することで、制御構造の複雑さを最小限に抑えました。"
+msgstr "Forthでは、ロジックへの依存を最小限に抑えるよう試みます。しかし、この場合、除外する必要がある例外があるため、条件付きの ``IF`` が必要です。 それでも、この定義の ``IF``  ``THEN`` の数を1つに制限することで、制御構造の複雑さを最小限に抑えました。"
 
 #: ../../chapter4.rst:1397
 msgid ""
@@ -2596,9 +2514,7 @@ msgid ""
 "different offsets at the same time. One dimension represents the decimal "
 "place: ones, tens, hundreds, etc. This dimension is made “current,” that "
 "is, its state stays the same until we change it."
-msgstr ""
-"2つの異なるオフセットを同時に適用することで表から特定のシンボルを選択できます。 "
-"1つの次元は位取りを表します。1(ones)、10(tens)、100(hundreds)などです。この次元「現在(current)」になります。つまり、変更するまでその状態は変わりません。"
+msgstr "2つの異なるオフセットを同時に適用することで表から特定のシンボルを選択できます。 1つの次元は位取りを表します。1(ones)、10(tens)、100(hundreds)などです。この次元は「現在(current)」になります。つまり、変更するまでその状態は変わりません。"
 
 #: ../../chapter4.rst:1635
 msgid ""
