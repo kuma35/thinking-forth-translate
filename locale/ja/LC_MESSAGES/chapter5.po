@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-27 04:49+0900\n"
-"PO-Revision-Date: 2019-07-27 20:44+0900\n"
+"PO-Revision-Date: 2019-08-09 01:36+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -42,7 +42,7 @@ msgstr "リストの整理"
 
 #: ../../chapter5.rst:17
 msgid "screen layout, spacing and indentation"
-msgstr "画面レイアウト、間隔、字下げ"
+msgstr "スクリーンレイアウト、空白開け、字下げ"
 
 #: ../../chapter5.rst:19
 msgid "commenting"
@@ -69,7 +69,7 @@ msgid ""
 "I’d especially like to thank Kim Harris, who proposed many of the "
 "conventions described in this chapter, for his continuing efforts at "
 "unifying divergent views on good Forth style."
-msgstr "私は特に、この章で説明されている規約の多くを提案してくれたキム・ハリスに、素晴らしいForthスタイルについて、意見の相違を統一する努力を続けてくれたことに感謝します。"
+msgstr "私は特にキム・ハリスに感謝しています。彼は素晴らしいForthスタイルについて意見の相違を統一する努力を続け、この章で説明されている規約の多くを提案してくれました。"
 
 #: ../../chapter5.rst:39
 msgid "Listing Organization"
@@ -82,13 +82,12 @@ msgid ""
 "glance. A well-organized book is easy to read. A badly organized book "
 "makes comprehension more difficult, and makes finding information later "
 "on nearly impossible."
-msgstr ""
-"よく整理されている本には、明確に定義された章、明確に定義された節、および一目で構成を見るのに役立つ目次があります。 "
-"よく整理されている本は読みやすいです。 本がよく組織化されていないと、理解が難しくなり、後で情報を見つけることがほぼ不可能になります。"
+msgstr "よく整理されている本には、明確に定義された章、明確に定義された節、および一目で構成を見るのに役立つ目次があります。 よく整理されている本は読みやすいです。 本がよく整理されていないと、理解が難しくなり、後で情報を探すのはまず不可能になります。"
 
+# conventionには大会の意味もある。
 #: ../../chapter5.rst:52
 msgid "I still don't see how these programming conventions enhance readability."
-msgstr "私はまだこれらのプログラミング規約がどのように読みやすさを向上させるか分かりません。"
+msgstr "私は、これらのプログラミングコンベンションが一体どうして読みやすさを高めるのか未だに分かりませんなぁ。"
 
 #: ../../chapter5.rst:54
 msgid ""
@@ -126,7 +125,7 @@ msgid ""
 "screens (i.e., not load them) and still have a self-sufficient, running "
 "application, working properly except for the lack of the more advanced "
 "features."
-msgstr "大規模では、リスト内の要素は複雑さの度合いによって整理されるべきであり、最も複雑なバリエーションはその終わりに現れます。最後の画面を表示せず（つまりロードしないで）、より高度な機能がないことを除けば適切に動作する自給自足のアプリケーションを使用できるようにすることをお勧めします。"
+msgstr "大規模なアプリケーションでは、リスト内の要素は複雑さの度合いによって整理されるべきであり、最も複雑なバリエーションはその終わりに現れます。最後のスクリーンを表示せず（つまりロードしないで）、より高度な機能がないことを除けば適切に動作する自給自足のアプリケーションを使用できるようにすることをお勧めします。"
 
 #: ../../chapter5.rst:78
 msgid ""
@@ -148,10 +147,7 @@ msgid ""
 "chain every screen of code to the next, linking the entire listing "
 "together linearly like a lengthy parchment scroll. This is not a useful "
 "approach. Instead:"
-msgstr ""
-"Forthの現在の慣習の1つは、ソースコードが1Kの大容量記憶装置の「スクリーン(screen)」上にあるということです(「スクリーン」という用語は、ソースコード専用に使用されるブロック(block)を指します)。(。"
-" Forthでは、長い羊皮紙スクロールのようにリスト全体を線形にリンクすることで、コードのすべての画面を次の画面にチェインすることができます。 "
-"これは便利なアプローチではありません。 代わりに、"
+msgstr "Forthの現在の慣習の1つは、ソースコードが1Kの大容量記憶装置の「スクリーン(screen)」上にあるということです(「スクリーン」という用語は、ソースコード専用に使用されるブロック(block)を指します)。(。 Forthでは、長い羊皮紙スクロールのようにリスト全体を線形にリンクすることで、コードのすべてのスクリーンを次のスクリーンにチェインすることができます。 これは便利なアプローチではありません。 代わりに、"
 
 #: ../../chapter5.rst:95
 msgid "Structure your application listing like a book: hierarchically."
@@ -211,9 +207,7 @@ msgstr "アプリケーション・ロード・スクリーン"
 msgid ""
 ":numref:`fig5-1`  is an example of an application-load screen. Since it "
 "resides in Screen 1, you can load this entire application by entering"
-msgstr ""
-":numref:`fig5-1` アプリケーション・ロード・スクリーンの例です。 "
-"スクリーン1にあるので、以下のとおり入力してこのアプリケーション全体をロードできます。"
+msgstr ":numref:`fig5-1` は、アプリケーション・ロード・スクリーンの例です。 スクリーン1にあるので、以下のとおり入力してこのアプリケーション全体をロードできます。"
 
 #: ../../chapter5.rst:143
 msgid ""
@@ -229,15 +223,13 @@ msgid ""
 "As a reference tool, the application-load screen tells you where to find "
 "all of the chapters. For instance, if you want to look at the routines "
 "that do framing, you can see that the section starts at Screen 90."
-msgstr ""
-"参照ツールとして、アプリケーション・ロード・スクリーンでは、すべての章の場所がわかります。 "
-"たとえば、フレーミングを実行するルーチンを見たい場合は、そのセクションがスクリーン90から始まることがわかります。"
+msgstr "参照ツールとして、アプリケーション・ロード・スクリーンでは、すべての章の場所がわかります。 たとえば、フレーミングを実行するルーチンを見たい場合は、その節がスクリーン90から始まることがわかります。"
 
 #: ../../chapter5.rst:151
 msgid ""
 "Each chapter-load screen in turn, loads all of the screens comprising the"
 " chapter. We’ll study some formats for chapter-load screens shortly."
-msgstr "各章のロードスクリーンは、順番に章を構成するすべてのスクリーンをロードします。 章ロード画面のフォーマットについてはすぐ後で検討します。"
+msgstr "各章のロードスクリーンは、順番に章を構成するすべてのスクリーンをロードします。 章ロードスクリーンのフォーマットについてはすぐ後で検討します。"
 
 #: ../../chapter5.rst:154
 msgid ""
@@ -286,7 +278,7 @@ msgstr "スキップ・コマンド"
 msgid ""
 "Two commands make it easy to control what gets loaded in each screen and "
 "what gets ignored. They are:"
-msgstr "以下の2つのコマンドを使用すると、各画面に何をロードし、何を無視するかを簡単に制御できます。"
+msgstr "以下の2つのコマンドを使用すると、各スクリーンで何をロードし、何を無視するかを簡単に制御できます。"
 
 #: ../../chapter5.rst:186
 msgid ""
@@ -294,10 +286,7 @@ msgid ""
 "ignore everything to the right of it on the same line. (Since ``\\`` is a"
 " Forth word, it must be followed by a space.) It does not require a "
 "delimiter."
-msgstr ""
-"``\\`` は「スキップ・ライン」(skip-"
-"line)と発音します。それはForthインタプリタに同じ行のそれの右側にあるすべてを無視させます( ``\\`` "
-"はForthのワードであるため、スペースを続ける必要があります)。(訳注: ``(`` … ``)`` と異なり)区切り文字は不要です。"
+msgstr "``\\`` は「スキップ・ライン」(skip-line)と発音します。それはForthインタプリタに同じ行のそれの右側にあるすべてを無視させます( ``\\`` はForthのワードであるため、スペースを続ける必要があります)。末尾の区切り文字は不要です。"
 
 #: ../../chapter5.rst:191
 msgid ""
@@ -325,9 +314,7 @@ msgid ""
 "``\\S`` is pronounced “skip-screen.” It causes the Forth interpreter to "
 "stop interpreting the screen entirely, as though there were nothing else "
 "in the screen beyond ``\\S``."
-msgstr ""
-"``\\S`` は「スキップ／スクリーン(skip-screen)」と発音します。これはForthインタプリタに、 ``\\S`` "
-"を超えて以降、そのスクリーンに何もなかったかのように、 ``\\S`` 以降のスクリーン内の解釈を完全に停止させます。"
+msgstr "``\\S`` は「スキップ・スクリーン(skip-screen)」と発音します。これはForthインタプリタに、 ``\\S`` を超えて以降、そのスクリーンに何もなかったかのように、 ``\\S`` 以降のスクリーン内の解釈を完全に停止させます。"
 
 #: ../../chapter5.rst:210
 msgid ""
@@ -494,12 +481,7 @@ msgid ""
 "**Starting Forth**, Chapter Nine].  As a result, the listing is much less"
 " carefully organized because I have ``LOCATE`` to find things for me.  I "
 "never look at listings."
-msgstr ""
-"私は ``LOCATE`` を使います( ``VIEW`` としても知られています。 **Starting Forth** のChapter 9 "
-"Handy Hint;邦訳 FORTH入門 第9章、「知っていると便利です ソース定義を ``LOCATE`` する方法」P.291)。 "
-"その結果、リストはそれほど慎重に整理されていません。なぜなら、``LOCATE`` "
-"が、私の探しているものを探し出してくれるからです。私はリストを見たことがありません(訳注: ``LOCATE`` "
-"は、指定のワードの定義箇所を、スクリーン群から検索)。"
+msgstr "私は ``LOCATE`` を使います( ``VIEW`` としても知られています。 **Starting Forth** のChapter 9 Handy Hint;邦訳 FORTH入門 第9章、「知っていると便利です ソース定義を ``LOCATE`` する方法」P.291)。 その結果、リストはそれほど慎重に整理されていません。なぜなら、``LOCATE`` が、私の探しているものを探し出してくれるからです。私はリストを見たことがありません(訳注: ``LOCATE`` は、ソース・スクリーンからワードの定義を検索)。"
 
 #: ../../chapter5.rst:358
 msgid "––> vs. THRU"
@@ -601,7 +583,7 @@ msgstr ""
 msgid ""
 "Finally, the arrow wastes an extra line of each source screen. We don’t "
 "recommend it."
-msgstr "おまけに、 ``-->`` は、各ソーススクリーンの余分な行を無駄にします。 お勧めしません。"
+msgstr "おまけに、 ``-->`` は、それ以降のソーススクリーンの行を無駄にします。 お勧めしません。"
 
 #: ../../chapter5.rst:412
 msgid "An Alternative to Screens: Source in Named Files"
@@ -652,7 +634,7 @@ msgid ""
 "Some might answer that rhetorical question: “It’s easier to remember "
 "names than numbers.” If that’s so, then predefine those block numbers as "
 "constants, e.g.:"
-msgstr "そのような修辞的な質問に答える人もいるかもしれません。「数字よりも名前を覚える方が簡単だ」そうであれば、それらのブロック番号を定数として事前定義してください。"
+msgstr "そのような修辞的な質問に「数字よりも名前を覚える方が簡単だ」と答える人もいるかもしれません。そうしたいのなら、それらのブロック番号を定数として事前定義してください。"
 
 #: ../../chapter5.rst:445
 msgid "Then to load the “framing” section, enter"
@@ -751,9 +733,7 @@ msgid ""
 "In many Forth shops it’s considered desirable to begin sections of code "
 "on screen numbers that are evenly divisible by three. Major divisions on "
 "a disk should be made on boundaries evenly divisible by thirty."
-msgstr ""
-"多くのForthの会社では、3で割り切れるスクリーン番号でコード節を始めることが望ましいと考えられています。 "
-"ディスク上の主要な分割は、30スクリーン毎に行われるべきです。"
+msgstr "Forthを使っている会社の多くは、3で割り切れるスクリーン番号でコード節を始めることが望ましいと考えています。ディスク上の主要な分割は、30スクリーン毎に行われるべきです。"
 
 #: ../../chapter5.rst:499
 msgid ""
@@ -834,9 +814,7 @@ msgid ""
 "The comment line serves both as a heading for the screen, and also as a "
 "line in the disk ``INDEX``. It should describe the purpose of the screen "
 "(not list the words defined therein)."
-msgstr ""
-"コメント行は、スクリーンの見出しとしても、ディスクを``INDEX`` した時の行としても役立ちます。 "
-"それはスクリーンの目的を説明するべきです（そこに定義されたワードをリストしないでください）。"
+msgstr "コメント行は、スクリーンの見出しとしても、ディスクを ``INDEX`` した時の行としても役立ちます。 それはスクリーンの目的を説明するべきです（そこに定義されたワードを羅列しないでください）。"
 
 #: ../../chapter5.rst:555
 msgid ""
@@ -918,7 +896,7 @@ msgstr "インデントされたコメント行を示す ``INDEX`` の出力。"
 msgid ""
 "Begin all definitions at the left edge of the screen, and define only one"
 " word per line."
-msgstr "すべての定義を画面の左端から始めて、1行に1ワードだけ定義してください。"
+msgstr "すべての定義をスクリーンの左端から始めて、1行に1ワードだけ定義してください。"
 
 #: ../../chapter5.rst:646
 msgid "*Bad:*"
@@ -970,10 +948,7 @@ msgid ""
 " One writer recommends that on the initial pass, the screen should "
 "contain about 20–40 percent code and 80–60 percent whitespace "
 "[stevenson81]_ ."
-msgstr ""
-"最初に十分なスペースを残すことで、後で追加することがより快適になります。 "
-"ある作家は、最初のパスで、画面には20から40パーセントのコードと80から60パーセントの空白を含めることを推奨します。 "
-"[stevenson81]_"
+msgstr "最初に十分なスペースを残すことで、後で追加することがより快適になります。 ある作家は、最初のパスで、スクリーンには20から40パーセントのコードと80から60パーセントの空白を含めることを推奨します。 [stevenson81]_"
 
 #: ../../chapter5.rst:691
 msgid ""
@@ -1028,9 +1003,7 @@ msgstr ""
 msgid ""
 "Some folks make it a policy to use this approach on any screen that "
 "changes ``BASE``, so they don’t have to worry about it."
-msgstr ""
-"何人かの人々は ``BASE`` "
-"を変えるどんなスクリーンでもこのアプローチを使うことを方針にしている、そうすることで彼らはそれについて心配する必要が無くなります。"
+msgstr "何人かの人々は ``BASE`` を変更するどのスクリーンでもこのアプローチを使う方針にしています。そうすることで彼らはそれについて心配する必要が無くなります。"
 
 #: ../../chapter5.rst:736
 msgid ""
@@ -1074,11 +1047,11 @@ msgstr "字下げと空白のガイドライン"
 
 #: ../../chapter5.rst:759
 msgid "1 space between the colon and the name"
-msgstr "空白1つだけ空けるのはコロンと名前の間。"
+msgstr "1つだけ空白空けるのはコロンと名前の間。"
 
 #: ../../chapter5.rst:760
 msgid "2 spaces between the name and the comment [#f1]_"
-msgstr "空白2つだけ空けるのは名前とコメントの間。 [#f1]_"
+msgstr "2つだけ空白空けるのは名前とコメントの間。 [#f1]_"
 
 #: ../../chapter5.rst:761
 msgid ""
@@ -1098,11 +1071,11 @@ msgstr "3つの空白で字下げするのは後続の各行(入れ子になっ�
 
 #: ../../chapter5.rst:766
 msgid "1 space between words/numbers within a phrase"
-msgstr "1つの空白空けるのは、句の中の、ワードや数字の間。"
+msgstr "1つの空白空けるのは、フレーズの中の、ワードや数字の間。"
 
 #: ../../chapter5.rst:767
 msgid "2 or 3 spaces between phrases"
-msgstr "2か3の空白空けるのは句と句の間。"
+msgstr "2か3の空白空けるのはフレーズとフレーズの間。"
 
 #: ../../chapter5.rst:768
 msgid "1 space between the last word and the semicolon"
@@ -1135,9 +1108,7 @@ msgid ""
 "A comment that begins with ``\\`` may continue right to the end of the "
 "line. Also, a comment that begins with ``(`` may have its delimiting "
 "right parenthesis in the last column."
-msgstr ""
-"``\\``で始まるコメントは、行末まで続きます。 また、 ``(`` で始まるコメントは、最後の桁で右丸括弧 ``)`` "
-"で区切ることができます(訳注： ``(`` はワードだが、右括弧 ``)`` は単なる区切り文字)。"
+msgstr "``\\`` で始まるコメントは、行末まで続きます。 また、 ``(`` で始まるコメントは、最後の桁で右丸括弧 ``)`` で区切ることができます(訳注： ``(`` はワードだが、右括弧 ``)`` は単なる区切り文字)。"
 
 #: ../../chapter5.rst:784
 msgid "Here are some common errors of spacing and indentation:"
@@ -1153,15 +1124,13 @@ msgstr "良くない例(継続行が3つの空白で字下げされていない)
 
 #: ../../chapter5.rst:812
 msgid "*Bad* (lack of phrasing):"
-msgstr "良くない例(句と句の間が分けられていない)"
+msgstr "良くない例(フレーズとフレーズの間が分けられていない)"
 
 #: ../../chapter5.rst:824
 msgid ""
 "Phrasing is a subjective art; I’ve yet to see a useful set of formal "
 "rules. Simply strive for readability."
-msgstr ""
-"句と句の区切り(phrasing)は主観的な芸術です。 私はまだ役に立つ正式な規則のセットをみつけられていません。 "
-"あなたが読みやすくなるよう努力してください。"
+msgstr "フレーズとフレーズの区切り(phrasing)は主観的な芸術です。 私はまだ役に立つ正式な規則のセットをみつけられていません。 あなたが読みやすくなるよう努力してください。"
 
 #: ../../chapter5.rst:828
 msgid ""
@@ -1243,7 +1212,7 @@ msgid ""
 "appears amidst a definition to explain what is going on, usually line-by-"
 "line. Narrative comments are used only in the “vertical format,” which "
 "we’ll describe in a later section."
-msgstr "何が行われているのかを説明する定義の中に、通常は1行ずつ表示されます。 物語コメントは、後の節で説明する「垂直書式」でのみ使用されます。"
+msgstr "定義の中で何を行っているか説明するために、通常は1行ずつ表示されます。物語コメントは、後の節で説明する「垂直書式」でのみ使用されます。"
 
 #: ../../chapter5.rst:868
 msgid ""
@@ -1256,7 +1225,7 @@ msgstr "コメントは通常、ソースコードと区別するために小文
 msgid ""
 "In the following sections we’ll summarize the standardized formats for "
 "these types of comments and give examples for each type."
-msgstr "次の節では、上記の種類のコメントの標準化された形式を要約し、それぞれの種類の例を示します。"
+msgstr "次の節では、上記の種類のコメントの標準化された形式を要約し、それぞれの例を示します。"
 
 #: ../../chapter5.rst:876
 msgid "Stack Notation"
@@ -1273,9 +1242,7 @@ msgid ""
 "“Stack notation” refers to conventions for representing what’s on the "
 "stack. Forms of stack notation include “stack pictures,” “stack effects,”"
 " and “stack-effect comments.”"
-msgstr ""
-"「スタック表記」とは、スタック上の内容を表すための規則を指します。 "
-"スタック表記の形式には、「スタック状態」、「スタック効果」、「スタック効果コメント」があります。"
+msgstr "「スタック表記」とは、スタック上の内容を表すための規則を指します。 スタック表記の形式には、「スタック状況」、「スタック効果」、「スタック効果コメント」があります。"
 
 #: ../../chapter5.rst:889
 msgid "Stack Picture"
@@ -1287,9 +1254,7 @@ msgid ""
 "time. Items are listed from left to right, with the leftmost item "
 "representing the bottom of the stack and the rightmost item representing "
 "the top."
-msgstr ""
-"スタック状況は、時系列に積み重ねられていると理解されているアイテムを表しています。 "
-"項目は左から右に向かってリストされ、一番左の項目がスタックの一番下(bottom)を表し、一番右の項目が一番上(top)を表します。"
+msgstr "スタック状況は、時系列に積み重ねられていると理解されているアイテムを表しています。 項目は左から右に向かってリストされ、一番左の項目がスタックの一番下(bottom)を表し、一番右の項目が一番上(top)を表します。"
 
 #: ../../chapter5.rst:896
 msgid "For instance, the stack picture"
@@ -1309,7 +1274,7 @@ msgstr "これは、これらの値を入力するのに使用するのと同じ
 
 #: ../../chapter5.rst:912
 msgid "to place these values correctly on the stack."
-msgstr "これらの値をスタックに正確に配置します。"
+msgstr "値をこの通りにスタックに配置します。"
 
 #: ../../chapter5.rst:914
 msgid ""
@@ -1318,19 +1283,14 @@ msgid ""
 "abbreviations appear in Table :numref:`tab-5-2`. Whether abbreviations or"
 " fully spelled-out words are used, each stack item should be separated by"
 " a space."
-msgstr ""
-"スタックピクチャには、「n1」などの省略形または完全な綴りの単語を含めることができます。 通常は略語が使用されます。 いくつかの標準的な略語が表 "
-":numref:`tab-5-2` にあります。 "
-"省略形または完全な綴りの単語のどちらを使用する場合でも、各スタック項目はスペースで区切る必要があります。"
+msgstr "スタック状況には、「n1」などの省略形または完全な綴りの単語を含めることができます。 通常は略語が使用されます。 いくつかの標準的な略語が表 :numref:`tab-5-2` にあります。 省略形または完全な綴りの単語のどちらを使用する場合でも、各スタック項目はスペースで区切る必要があります。"
 
 #: ../../chapter5.rst:920
 msgid ""
 "If a stack item is described with a phrase (such as “address-of-latest-"
 "link”), the words in the phrase should be joined by hyphens. For example,"
 " the stack picture:"
-msgstr ""
-"スタック項目が句（「address-of-lastest-"
-"link」など）で記述されている場合は、フレーズ内の語をハイフンで結合する必要があります。 たとえば、以下のスタック状況のように。"
+msgstr "スタック項目がフレーズ（「address-of-lastest-link」など）で記述されている場合は、フレーズ内の語をハイフンで結合する必要があります。 たとえば、以下のスタック状況のように。"
 
 #: ../../chapter5.rst:928
 msgid "shows three elements on the stack."
@@ -1352,7 +1312,7 @@ msgstr ""
 
 #: ../../chapter5.rst:938
 msgid "For instance, the stack effect for Forth’s addition operator, ``+`` is"
-msgstr "例えば、Forthの加算演算子 ``+`` のスタック効果です。"
+msgstr "例えば、以下はForthの加算演算子 ``+`` のスタック効果です。"
 
 #: ../../chapter5.rst:944
 msgid "where ``+`` consumes two numbers and returns their sum."
@@ -1396,7 +1356,7 @@ msgid ""
 "A “stack-effect comment” is a stack effect that appears in source code "
 "surrounded by parentheses. Here’s the stack-effect comment for the word "
 "COUNT:"
-msgstr "「スタック効果コメント」は、括弧で囲まれたソースコードに現れるスタック効果です。 以下がCOUNTというワードに対するスタック効果のコメントです。"
+msgstr "「スタック効果コメント」は、ソースコードに書く、丸括弧で囲んだスタック効果です。 以下はCOUNTというワードのスタック効果コメントです。"
 
 #: ../../chapter5.rst:979
 msgid "or:"
@@ -1451,11 +1411,7 @@ msgid ""
 "particular Forth system. (If the system uses a 16-bit cell, “n” "
 "represents a 16-bit number; if the system uses a 32-bit cell, “n” "
 "represents a 32-bit number.)"
-msgstr ""
-"スタック表記で使用される略語は一貫しているべきです。 表 :numref:`tab-5-2` "
-"は一般的に使われる略語の大部分をリストしています(この表は :doc:`付録E<appendixe>` に再掲)。「1倍長(single-"
-"length)」、「2倍長(double-"
-"length)」などの用語は、特定のForthシステムにおける「セル(cell)」のサイズを表します（システムが16ビットのセルを使用している場合、「n」は16ビットの数を表し、システムが32ビットのセルを使用している場合、「n」は32ビットの数を表します）。"
+msgstr "スタック表記で使用される略語は一貫しているべきです。 :numref:`tab-5-2` は一般的に使われる略語の大部分をリストしています(この表は :doc:`付録E<appendixe>` に再掲しています)。「1倍長(single-length)」、「2倍長(double-length)」などの用語は、特定のForthシステムにおける「セル(cell)」のサイズを表します（システムが16ビットのセルを使用している場合、「n」は16ビットの数を表し、システムが32ビットのセルを使用している場合、「n」は32ビットの数を表します）。"
 
 #: ../../chapter5.rst:1032
 msgid "Notation of Flags"
@@ -1466,9 +1422,7 @@ msgid ""
 "Table :numref:`tab-5-2` shows three ways to represent a boolean flag. To "
 "illustrate, here are three versions of the same stack comment for the "
 "word ``-TEXT``:"
-msgstr ""
-"表 :numref:`tab-5-2` にはブールフラグを表す3つの方法が示されています。ここでは例として、ワード ``-TEXT`` "
-"に対する同じスタックコメントの3つのバージョンを示します。"
+msgstr ":numref:`tab-5-2` にはブールフラグを表す3つの方法が示されています。ここでは例として、ワード ``-TEXT`` に対する同じスタックコメントの3つのバージョンを示します。"
 
 #: ../../chapter5.rst:1044
 msgid "Stack-comment abbreviations."
@@ -1640,7 +1594,7 @@ msgstr "m"
 
 #: ../../chapter5.rst:1089
 msgid "mask"
-msgstr "mask"
+msgstr "ビットマスク"
 
 #: ../../chapter5.rst:1090
 msgid "x"
@@ -1794,7 +1748,7 @@ msgstr ""
 msgid ""
 "This is different from the comment that would be used if ``MEASUREMENTS``"
 " were defined by ``CREATE``."
-msgstr "これは `` MEASUREMENTS`` が ``CREATE`` によって定義されている場合に使われるであろうコメントとは異なります。"
+msgstr "これは ``MEASUREMENTS`` が ``CREATE`` によって定義されている場合に使われるであろうコメントとは異なります。"
 
 #: ../../chapter5.rst:1209
 msgid ""
@@ -1820,9 +1774,7 @@ msgid ""
 "The input-stream comment indicates what words and/or strings are presumed"
 " to be in the input stream. Table :numref:`tab-5-3` lists the "
 "designations used for input stream arguments."
-msgstr ""
-"入力ストリームコメントは、どのワードや文字列が入力ストリームにあると推定されるかを示します。表 :numref:`tab-5-3` "
-"は入力ストリーム引数に使われる指定をリストしています。"
+msgstr "入力ストリームコメントは、どのワードや文字列が入力ストリームにあると推定されるかを示します。 :numref:`tab-5-3` は入力ストリーム引数に使われる指定をリストしています。"
 
 #: ../../chapter5.rst:1225
 msgid "Input-stream comment designations."
@@ -1849,7 +1801,6 @@ msgid "sequence of characters, delimited by non-blank"
 msgstr "空白以外で区切られた文字の連なり"
 
 #: ../../chapter5.rst:1235
-#, fuzzy
 msgid ""
 "Follow \"text\" with the actual delimiter required; e.g.: text\\\" or "
 "text\\)"
@@ -1901,16 +1852,14 @@ msgstr "待つことを意味します。``EXPECT`` や ``KEY`` およびそれ�
 
 #: ../../chapter5.rst:1269
 msgid "Presuming"
-msgstr "推定する(Presuming)"
+msgstr "想定する(Presuming)"
 
 #: ../../chapter5.rst:1267
 msgid ""
 "indicates that in normal usage something will follow. The word: “scans-"
 "for” the name to be defined, and “presumes” that a definition will "
 "follow."
-msgstr ""
-"通常の使用では何かが続くことを示します。 ワード：定義される名前を「スキャンする(scans-"
-"for)」、そして定義が続くことを「想定する(presumes)」。"
+msgstr "通常の使用では何かが続くことを示します。 そのワードは、定義される名前を「スキャン(scans-for)する」、そして、定義される名前の後に定義が続くことを「想定する(presumes)」。"
 
 #: ../../chapter5.rst:1271
 msgid "The input-stream comment is only appropriate for input being scanned-for."
@@ -2149,7 +2098,7 @@ msgstr ""
 msgid ""
 "The other approach does not intersperse narrative comments between code "
 "phrases. This is called the “horizontal format.”"
-msgstr "もう1つの方法では、コード句間に物語のコメントが散在しません。 これは「水平書式」と呼ばれます。"
+msgstr "もう1つの方法では、コードのフレーズ間に物語コメントが散在しません。 これは「水平書式」と呼ばれます。"
 
 #: ../../chapter5.rst:1515
 msgid ""
@@ -2161,16 +2110,13 @@ msgid ""
 "maintaining code you are usually interested in just one small section, "
 "and the more information written there the better your chances for a "
 "speedy fix.”"
-msgstr ""
-"大規模なプログラマチームがアプリケーションをコーディングおよび保守している場合は、垂直フォーマットが推奨されます。 "
-"通常、このようなチームには、小さな修正を担当する駆け出しレベルのプログラマが何人か含まれます。 "
-"そのような環境では、勤勉なコメントは多くの時間と動揺を節約することができます。ムーアプロダクツ社のジョンソン氏が言うように、「コードを保守するときには、たった1つの小さなセクションに関心があり、そこに書かれている情報が多ければ多いほど、迅速な修正が可能になります。」"
+msgstr "大規模なプログラマチームがアプリケーションをコーディングおよび保守している場合は、垂直書式が推奨されます。 通常、このようなチームには、小さな修正を担当する駆け出しレベルのプログラマが何人か含まれます。 そのような環境では、勤勉なコメントは時間を無駄にしたり混乱せずに済みます。ムーアプロダクツ社のジョンソン氏が言うように、「コードを保守するときには、たった1つの小さな節に関心があり、そこに書かれている情報が多ければ多いほど、迅速な修正が可能になります。」"
 
 #: ../../chapter5.rst:1524
 msgid ""
 "Here are several pertinent rules required of the Forth programmers at "
 "Moore Products Co. (I’m paraphrasing):"
-msgstr "以下がムーアプロダクツ社のForthプログラマに要求される、いくつかの適切とされる規則です（句と句の間隔取り）。"
+msgstr "以下がムーアプロダクツ社のForthプログラマに要求される、いくつかの適切とされる規則です（フレーズとフレーズの間隔取り）。"
 
 #: ../../chapter5.rst:1527
 msgid ""
@@ -2241,9 +2187,7 @@ msgid ""
 "To properly describe, in prose, the implications of a given procedure "
 "usually requires many paragraphs, not a single phrase. Such descriptions "
 "properly belong in auxiliary documentation or in the chapter preamble."
-msgstr ""
-"正確に説明するために、概説では、与えられた手続きの意味は通常、単一の句ではなく多くの段落を必要とします。 "
-"そのような説明は、補助的な文書または章の前文に含めるのが適切です。"
+msgstr "正確に説明するために、概説では、与えられた手続きの意味は通常、単一のフレーズではなく多くの段落を必要とします。 そのような説明は、補助的な文書または章の前文に含めるのが適切です。"
 
 #: ../../chapter5.rst:1567
 msgid ""
@@ -2348,9 +2292,7 @@ msgid ""
 "Besides a mathematical inclination, an exceptionally good mastery of "
 "one\\'s native tongue is the most vital asset of a competent programmer "
 "(**Prof.  Edsger W. Dijkstra** [dijkstra82]_ )."
-msgstr ""
-"数学的な下地に加えて、母国語への非常に優れた習熟は、有能なプログラマにとって最も重要な財産です( ** エドガー・ダイクストラ教授 ** "
-"[dijkstra82]_ )。"
+msgstr "数学的な下地に加えて、母国語への非常に優れた習熟は、有能なプログラマにとって最も重要な財産です(エドガー・ダイクストラ教授 [dijkstra82]_ )。"
 
 #: ../../chapter5.rst:1630
 msgid ""
@@ -2473,10 +2415,7 @@ msgid ""
 "realized that a nicer name is ``WORDS``. Not only does ``WORDS`` sound "
 "more pleasant by itself, it also works nicely with vocabulary names. For "
 "instance:"
-msgstr ""
-"ほとんどのfig-Forthシステムは、現在の語彙のすべての単語の名前をリストするワード ``VLIST`` を含みます。 "
-"何年もの後、誰かがより良い名前が ``WORDS`` であることに気づきました。 ``WORDS`` "
-"はそれ自体がより快適に聞こえるだけでなく、ボキャブラリ名に対してもうまく機能します。 たとえば以下のように。"
+msgstr "ほとんどのfig-Forthシステムは、現在のボキャブラリのすべての単語の名前をリストするワード ``VLIST`` を含みます。 何年もの後、誰かがより良い名前が ``WORDS`` であることに気づきました。 ``WORDS`` はそれ自体がより快適に聞こえるだけでなく、ボキャブラリ名に対してもうまく機能します。 たとえば以下のように。"
 
 #: ../../chapter5.rst:1710
 msgid ""
@@ -2492,7 +2431,7 @@ msgstr ""
 
 #: ../../chapter5.rst:1719
 msgid "Choose names that work in phrases."
-msgstr "その句の中で活きる名前を選択してください。"
+msgstr "そのフレーズの中で活きる名前を選択してください。"
 
 #: ../../chapter5.rst:1721
 msgid ""
@@ -2583,7 +2522,7 @@ msgstr "あなたに幅広い連想ボキャブラリがあれば、正しい言
 msgid ""
 "Another of Moore’s favorite words is ``TH``, which he uses as an array "
 "indexing word. For instance, the phrase"
-msgstr "ムーアのもう1つのお気に入りのワードは ``TH`` です。彼はこれを配列インデックスワードとして使用します。 たとえば以下の句のように。"
+msgstr "ムーアのもう1つのお気に入りのワードは ``TH`` です。彼はこれを配列インデックスワードとして使用します。 たとえば以下のフレーズのように。"
 
 #: ../../chapter5.rst:1767
 msgid "returns the address of the “fifth” element of the array."
@@ -2647,9 +2586,7 @@ msgid ""
 " use the phrase “*colon* definition” because there’s no other term; we "
 "say “*comma* a number into the dictionary” because it’s not exactly "
 "compiling, and there’s no other term.)"
-msgstr ""
-"（興味深いことに、これらのシンボルの大部分は言葉(英語)に対応するものを持っていません。他に用語がないので「コロン定義(colon "
-"definition)」という句を使用します。 他の用語はありません。）"
+msgstr "（興味深いことに、これらのシンボルの大部分は言葉(英語)に対応するものを持っていません。他に用語がないので「コロン定義(colon definition)」という成語を使用します。 他の用語はありません。）"
 
 #: ../../chapter5.rst:1813
 msgid ""
@@ -3019,9 +2956,7 @@ msgid ""
 "documentation apart from the listing itself. We won’t discuss auxiliary "
 "documentation further in this volume, but it remains an integral part of "
 "the software development process."
-msgstr ""
-"ここでは、リスト自体以外のすべてのドキュメントを含む、補助的なドキュメントについて簡単に説明しました。 "
-"このドキュメントでは、補足資料についてはこれ以上説明しませんが、それでもこれらはソフトウェア開発プロセスに不可欠な部分です。"
+msgstr "ここでは、リスト自体以外のすべてのドキュメントを含む、補助的なドキュメントについて簡単に説明しました。 本書では、補足資料についてはこれ以上説明しませんが、それでもこれらはソフトウェア開発プロセスに不可欠な部分です。"
 
 #: ../../chapter5.rst:2084
 msgid "REFERNCES"

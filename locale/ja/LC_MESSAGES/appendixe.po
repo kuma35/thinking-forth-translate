@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-27 11:18+0900\n"
-"PO-Revision-Date: 2019-07-27 20:29+0900\n"
+"PO-Revision-Date: 2019-08-08 04:12+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -35,11 +35,11 @@ msgstr "字下げと空白のガイドライン"
 
 #: ../../appendixe.rst:13
 msgid "1 space between the colon and the name"
-msgstr "空白1つだけ空けるのはコロンと名前の間。"
+msgstr "1つだけ空白空けるのはコロンと名前の間。"
 
 #: ../../appendixe.rst:15
 msgid "2 spaces between the name and the comment [#f1]_"
-msgstr "空白2つだけ空けるのは名前とコメントの間。 [#f1]_"
+msgstr "2つだけ空白空けるのは名前とコメントの間。 [#f1]_"
 
 #: ../../appendixe.rst:17
 msgid ""
@@ -59,11 +59,11 @@ msgstr "3つの空白で字下げするのは後続の各行(入れ子になっ�
 
 #: ../../appendixe.rst:23
 msgid "1 space between words/numbers within a phrase"
-msgstr "1つの空白空けるのは、句の中の、ワードや数字の間。"
+msgstr "1つの空白空けるのは、フレーズの中の、ワードや数字の間。"
 
 #: ../../appendixe.rst:25
 msgid "2 or 3 spaces between phrases"
-msgstr "2か3の空白空けるのは句と句の間。"
+msgstr "2か3の空白空けるのはフレーズとフレーズの間。"
 
 #: ../../appendixe.rst:27
 msgid "1 space between the last word and the semicolon"
