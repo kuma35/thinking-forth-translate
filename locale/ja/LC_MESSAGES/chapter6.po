@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-29 06:17+0900\n"
-"PO-Revision-Date: 2019-08-08 04:15+0900\n"
+"PO-Revision-Date: 2019-08-11 04:42+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -34,9 +34,7 @@ msgid ""
 "Decomposition and factoring are chips off the same block. Both involve "
 "dividing and organizing. Decomposition occurs during preliminary design; "
 "factoring occurs during detailed design and implementation."
-msgstr ""
-"分解とファクタリング(要素分解)は、同じブロックから切り出されたものです。 どちらも分割と整理が関係しています。 分解は予備設計中に発生します。 "
-"ファクタリング(要素分解)は詳細な設計と実装の間に行われます。"
+msgstr "分解とファクタリング(要素分解)は、同じブロックから切り出されたものです。 どちらも分割と整理が関係しています。 分解は予備設計中に発生します。 ファクタリング(要素分解)は詳細設計と実装の間に行われます。"
 
 #: ../../chapter6.rst:13
 msgid ""
@@ -70,9 +68,7 @@ msgid ""
 "Deciding how much should go into, or stay out of, a definition is another"
 " aspect of factoring. The second section will outline the criteria for "
 "useful factoring."
-msgstr ""
-"どの程度まで定義に入れるか、または定義から外れるかを決定することは、要素化のもう1つの側面です。 "
-"第2節では、有用なファクタリング(要素分解)の基準について概説します。"
+msgstr "どの程度まで定義に入れるか、または定義から外れるかを決定することは、ファクタリング(要素分解)のもう1つの側面です。 第2節では、有用なファクタリング(要素分解)の基準について概説します。"
 
 #: ../../chapter6.rst:32
 msgid "Factoring Techniques"
@@ -132,15 +128,13 @@ msgid ""
 "factored out may be a *pointer* to data rather than the data themselves. "
 "The data can be numbers or even strings, and still be factored out "
 "through use of the stack."
-msgstr ""
-"データスタックはアドレスを渡すためにも使用できます。 そのため、データ自体ではなく、データへのポインタが除外される可能性があります。 "
-"データは数値でも文字列でもかまいませんが、それでもスタックを使用して除外することができます。"
+msgstr "データスタックはアドレスを渡すためにも使用できます。 そのため、データ自体ではなく、データへのポインタが括り出される可能性があります。 データは数値でも文字列でもかまいませんが、それでもスタックを使用して括り出すことができます。"
 
 #: ../../chapter6.rst:81
 msgid ""
 "Sometimes the difference appears to be a function, but you can factor it "
 "out simply as a number on the stack. For instance:"
-msgstr "「差」は機能が違うように見える事もありますが、単純にスタック上の数値として括り出す事ができます。"
+msgstr "「数の差異」は機能の違いのように見える事もありますが、単純にスタック上の数値として括り出す事ができます。"
 
 #: ../../chapter6.rst:87 ../../chapter6.rst:106 ../../chapter6.rst:133
 #: ../../chapter6.rst:150 ../../chapter6.rst:164
@@ -172,9 +166,7 @@ msgstr "8 \\*"
 msgid ""
 "How can you factor out the “8 \\*” operation? By including “\\*” in the "
 "factoring and passing it a one or eight:"
-msgstr ""
-"どうやって ``8 *`` という操作を括り出せますか？ 以下のように、要素化に ``*`` "
-"を含め、それに1つまたは8つを渡すことによって可能です。"
+msgstr "どうやって ``8 *`` という操作を括り出せますか？ 以下のように、ファクタリング(要素分解)に ``*`` を含め、それに1つまたは8つを渡すことによって可能です。"
 
 #: ../../chapter6.rst:106
 msgid "1 NEW"
@@ -273,9 +265,7 @@ msgid ""
 "the half-fragments. In this case, use stack arguments, variables, or even"
 " vectoring. We’ll see how vectoring can be used in a section of "
 ":doc:`Chapter Seven<chapter7>` called “Using DOER/MAKE.”"
-msgstr ""
-"最も厄介な状況は、2つの定義の違いが構造内の機能である場合、断片の片割れを括り出すことは不可能です。この場合は、スタック引数、変数、更にはベクトル化を使って下さい。"
-" :doc:`第7章<chapter7>` の「DOER/MAKEの使用」の章で、ベクトル化がどのように使われるのかを見ていきましょう。"
+msgstr "最も厄介な状況は、2つの定義の違いが制御構造内の機能である場合です。この場合断片の片割れだけを括り出すことは不可能です。この場合は、スタック引数、変数、更にはベクトル化を使って下さい。 ベクトル化をどのように使うのかは :doc:`chapter7` を参照下さい。"
 
 #: ../../chapter6.rst:205
 msgid "Here’s a reminder about factoring code from out of a ``DO``  ``LOOP``:"
@@ -321,10 +311,7 @@ msgid ""
 "control flow so that the remaining words in each definition will be "
 "skipped. This approach has certain disadvantages as well. We’ll discuss "
 "this technique—pros and cons—in :doc:`Chapter Eight<chapter8>`."
-msgstr ""
-"条件に応じて、ワード ``CONDITIONALLY`` "
-"は、各定義の残りのワードをスキップする制御フローを変更することがあります。この方法にもいくつかの欠点があります。 この技法の賛否両論については "
-":doc:`第８章<chapter8>` で議論します。"
+msgstr "条件に応じて、ワード ``CONDITIONALLY`` は、各定義の残りのワードをスキップする制御フローを変更することがあります。この方法にもいくつかの欠点があります。 この技法の賛否については :doc:`第８章<chapter8>` で議論します。"
 
 #: ../../chapter6.rst:251
 msgid ""
@@ -381,12 +368,7 @@ msgid ""
 "for separate names for string and count, it also makes it easier to move "
 "a string in memory, because you can copy the string *and* the count with "
 "a single ``CMOVE``."
-msgstr ""
-"最も他愛のない場合でさえ、小さなデータ構造は余分な名前を排除することができます。 "
-"慣例により、Forthはテキストを「文字数付き文字列」（すなわち、最初のバイトに文字数）で扱います。 "
-"「文字列のアドレス」を返す単語は、実際にはこの文字数格納先頭アドレスを返します。 "
-"この2要素のデータ構造を使用すると、「文字列」と「カウント」に別々の名前を使用する必要がなくなるだけでなく、文字列*とカウントを1つの "
-"``CMOVE`` でコピーできるため、文字列をメモリ内で移動しやすくなります。 "
+msgstr "最も他愛のない場合でさえ、小さなデータ構造は余分な名前を排除することができます。 慣例により、Forthはテキストを「文字数付き文字列」（すなわち、最初のバイトに文字数）で扱います。 「文字列のアドレス」を返す単語は、実際にはこの文字数格納先頭アドレスを返します。 この2要素のデータ構造を使用すると、「文字列」と「カウント」に別々の名前を使用する必要がなくなるだけでなく、文字列とカウントを1つの ``CMOVE`` でコピーできるため、文字列をメモリ内で移動しやすくなります。 "
 
 #: ../../chapter6.rst:321
 msgid ""
@@ -429,17 +411,13 @@ msgid ""
 "literal requires the compilation of ``LIT`` (or ``literal``), another 2 "
 "bytes per definition. (If 1 and 2 are predefined constants, this costs "
 "another 10 bytes—24 total.)"
-msgstr ""
-"定義語を使用することによって、コンパイルされた各コロン定義は定義を終了するために ``EXIT`` "
-"のアドレスを必要とするのでメモリを節約します(8ワードを定義する場合、定義ワードを使用すると16ビットのForthで14バイト節約できます)。また、コロン定義では、数値リテラルを参照するたびに"
-" ``LIT`` (または ``literal`` "
-")をコンパイルする必要があります）、定義ごとにさらに2バイト(1と2が事前定義された定数の場合、これにはさらに10バイト、合計24バイトのコストがかかります)。"
+msgstr "コンパイルされた各コロン定義は定義を終了するために ``EXIT`` のアドレスを必要とするので、定義ワードを使用するとメモリを節約します(8ワードを定義する場合、定義ワードを使用すると16ビットのForthで14バイト節約できます)。また、コロン定義では、数値リテラルを参照するたびに ``LIT`` (または ``literal`` )をコンパイルする必要があります）、定義ごとにさらに2バイト(1と2が事前定義された定数の場合、これにはさらに10バイト、合計24バイトのコストがかかります)。"
 
 #: ../../chapter6.rst:370
 msgid ""
 "In terms of readability, the defining word makes it absolutely clear that"
 " all the colors it defines belong to the same family of words."
-msgstr "読みやすさの点では、定義するワードは、それが定義するすべての色が同じワードのグループに属することを絶対に明確にしています。"
+msgstr "読みやすさの点では、定義ワードは、それが定義するすべての色が同じワードのグループに属することを直接的に明確にしています。"
 
 #: ../../chapter6.rst:373
 msgid ""
@@ -543,9 +521,7 @@ msgid ""
 "definitions is the knowledge that headers take space in the dictionary. "
 "The coarser the factoring, the fewer the names, and the less memory that "
 "will be wasted."
-msgstr ""
-"多くのForthプログラマーが過度に長い定義を書きたくなるのは、ヘッダが辞書内のスペースを取るという知識です。 "
-"ファクタリング(要素分解)が粗いほど、名前が少なくなり、無駄になるメモリが少なくなります。"
+msgstr "多くのForthプログラマが過度に長い定義を書きたくなるのは、ヘッダが辞書内のスペースを取るという知識です。 ファクタリング(要素分解)が粗いほど、名前が少なくなり、無駄になるメモリが少なくなります。"
 
 #: ../../chapter6.rst:429
 msgid ""
@@ -555,9 +531,7 @@ msgid ""
 "three, with the ability to switch to a full-length name to avoid a "
 "specific collision. (“Width” refers to a limit on the number of "
 "characters stored in the name field of each dictionary header.)"
-msgstr ""
-"より多くのメモリが使用されるのは事実ですが、テスト、デバッグ、コードとの対話など全てにに役立つものが「無駄」になるとは言い難い。アプリケーションが大きい場合は、各辞書ヘッダーの名前フィールドに格納される文字数のデフォルトを3文字で使用してみてください。"
-" 衝突を避けるために、特定の名前について長さ制限無しに切り替えます。"
+msgstr "より多くのメモリが使用されるのは事実ですが、テスト、デバッグ、コードとの対話など全てに役立つものが「無駄」であるとは言い難いです。アプリケーションが大きい場合は、各辞書ヘッダーの名前フィールドに格納される文字数のデフォルトを3文字で使用してみてください。 衝突を避けるために、特定の名前について長さ制限無しに切り替えます。"
 
 #: ../../chapter6.rst:436
 msgid ""
@@ -590,7 +564,7 @@ msgstr "分解するポイントは、あなたがあなたのコードがわけ
 msgid ""
 "Don’t let your ego take over with an “I can lick this!” attitude. Forth "
 "code should never feel uncomfortably complex. Factor!"
-msgstr "「オレはこれを征服してやる！」なんて態度で挑む必要はありません。Forthコードは不快で複雑に感じることはありません。分解せよ！"
+msgstr "「オレはこれを征服してやる！」なんて態度で挑む必要はありません。Forthコードは不快で複雑に感じることはありません。ファクタリング(要素分解)して下さい。"
 
 #: ../../chapter6.rst:463 ../../chapter6.rst:513 ../../chapter6.rst:593
 #: ../../chapter6.rst:1008 ../../chapter6.rst:1377
@@ -623,7 +597,7 @@ msgstr "以下は同じ原則の別の側面です。"
 
 #: ../../chapter6.rst:469
 msgid "Factor at the point where a comment seems necessary"
-msgstr "コメントが必要と思われる時点でのファクタリング(要素分解)"
+msgstr "コメントが必要に見える箇所はファクタリング(要素分解)して下さい。"
 
 #: ../../chapter6.rst:471
 msgid ""
@@ -663,7 +637,7 @@ msgstr "コードの繰り返しを制限してください。"
 msgid ""
 "The second reason for factoring, to eliminate repeated fragments of code,"
 " is even more important than reducing the size of definitions."
-msgstr "ファクタリング(要素分解)の2番目の理由は、コードの繰り返しの断片を排除することです。それは定義のサイズを小さくすることよりもさらに重要です。"
+msgstr "ファクタリング(要素分解)の2番目の理由は、コードの断片の繰り返しを取り除くことです。それは定義のサイズを小さくすることよりもさらに重要です。"
 
 #: ../../chapter6.rst:506
 msgid ""
@@ -712,7 +686,7 @@ msgstr ""
 
 #: ../../chapter6.rst:540
 msgid "On the other hand:"
-msgstr "その反面、"
+msgstr "その一方で、"
 
 #: ../../chapter6.rst:544
 msgid ""
@@ -746,12 +720,7 @@ msgid ""
 "of ``LETTER`` to ``LETTER C@``. But I should have done that in the first "
 "place, separating the computation of the letter’s address from the "
 "operation to be performed on the address."
-msgstr ""
-"最後の ``C@`` のためではないのであれば、既存の ``LETTER`` を使用することができました。 "
-"新しいセクションでフレーズの大部分を複製するのではなく、私は ``LETTER`` をより細かい粒度にリファクタリングして ``C@`` "
-"を取り出すことを選びました。 そのときの用法は ``LETTER C@`` か ``LETTER C!`` のどちらかでした。 "
-"この変更により、リスト全体を検索して、 ``LETTER`` のすべてのインスタンスを ``LETTER C@`` に変更する必要がありました。 "
-"しかし、私は最初に文字の住所の計算と住所で実行される操作とを区別して、それを行うべきでした。"
+msgstr "最後の ``C@`` のためではないのであれば、既存の ``LETTER`` を使用することができました。 新しい区間でフレーズの大部分を複製するのではなく、私は ``LETTER`` をより細かい粒度にリファクタリングして ``C@`` を取り出すことを選びました。 そのときの用法は ``LETTER C@`` か ``LETTER C!`` のどちらかでした。 この変更により、リスト全体を検索して、 ``LETTER`` のすべてのインスタンスを ``LETTER C@`` に変更する必要がありました。 しかし、私は最初に文字の住所の計算と住所で実行される操作とを区別して、それを行うべきでした。"
 
 #: ../../chapter6.rst:573
 msgid "Similar to our injunction against repetition of code:"
@@ -895,19 +864,14 @@ msgid ""
 "But you’ll always have to factor it, so you might as well do it right the"
 " first time. (The few times you might get away with it aren’t worth the "
 "trouble.)"
-msgstr ""
-"特定の計算を1回しか実行しないと思う場合でも、それを特定の方法で表示しようと思う場合でも、私を信じて下さい。あなたは間違っています。あなたは後で戻ってきて、計算部分を括り出す必要があります。"
-" おそらく、情報を右寄せの列に表示する必要があるか、結果をデータベースに記録する必要があるでしょう。 "
-"しかし、あなたは常にそれを考慮に入れなければならないので、あなたはそれを最初から正しくやるかもしれません(あなたがそれを回避するかもしれない数回はトラブルに値しません)。"
+msgstr "その計算を1回しか実行しないと思うのも、その表示を1回しかしない思うのも、あなたは間違っています。あなたは後で戻ってきて、計算部分を括り出す必要があります。 おそらく、情報を右寄せの列に表示する必要があるか、結果をデータベースに記録する必要があるでしょう。 しかし、あなたは常にそれを考慮に入れなければならないので、あなたはそれを最初からちゃんと記述するかもしれません。(あなたはそれで何回かは逃れる事ができるかもしれませんが、ファクタリング(要素分解)をやっておくのは悪いことではありません)。"
 
 #: ../../chapter6.rst:694
 msgid ""
 "The word ``.`` (dot) is a prime example. Dot is great 99％ of the time, "
 "but occasionally it does too much. Here\\’s what it does, in fact (in "
 "Forth–83):"
-msgstr ""
-"ワード ``.`` (ドット)はその代表的な例です。 ドットは99％の割合で素晴らしいですが、時々やり過ぎです。 "
-"これが実際には以下のようになります(Forth-83の場合）。"
+msgstr "ワード ``.`` (ドット)はその代表的な例です。 ドットは99％の割合で素晴らしいですが、時々やり過ぎです。 実際には以下のようになります(Forth-83の場合）。"
 
 #: ../../chapter6.rst:702
 msgid ""
@@ -965,9 +929,7 @@ msgid ""
 "others, factor out only those instances that might change. If the "
 "fragment is likely to change in more than one way, factor it into more "
 "than one definition."
-msgstr ""
-"場合によっては繰り返しコードの断片が変わる可能性があるが、そうでない場合は、変わる可能性のあるインスタンスだけを括り出します。 "
-"断片が複数の方法で変更される可能性がある場合は、それを複数の定義に分解します。"
+msgstr "場合によっては繰り返しコードの断片が変わる可能性があるが、そうでない場合は、変わる可能性のある実体だけを括り出します。 断片が複数の方法で変更される可能性がある場合は、それを複数の定義に分解します。"
 
 #: ../../chapter6.rst:747
 msgid ""
@@ -983,7 +945,7 @@ msgid ""
 "You can never predict everything, though. It would be useless to try, as "
 "we’ll see in the upcoming section called “The Iterative Approach in "
 "Implementation.”"
-msgstr "しかし、すべてを予測することはできません。 次節の「実装における反復アプローチ」にあるように、試すのは無駄でしょう。"
+msgstr "しかし、すべてを予測することはできません。 次節の「実装における反復アプローチ」にあるように、試行は無駄になるでしょう。"
 
 #: ../../chapter6.rst:757
 msgid "Simplify the command interface by reducing the number of commands."
@@ -1022,7 +984,7 @@ msgstr "システムは以下のように応答します"
 msgid ""
 "(They worked—at least on the system used there—by backing up to the name "
 "field of the vocabulary definition, and displaying it.)"
-msgstr "(少なくともそこで使用されているシステムでは、それらは、ボキャブラリ語彙定義のネームフィールドにバックアップされりことによって動いた。)"
+msgstr "(少なくともそのシステムでは、それらは、ボキャブラリ定義のネームフィールドにバックアップされたのを表示しました。)"
 
 #: ../../chapter6.rst:790
 msgid ""
@@ -1095,10 +1057,7 @@ msgid ""
 "an argument between 0 and 3 and changes the mode accordingly. Of course, "
 "the phrase 0 ``MODE`` or 1 ``MODE`` doesn’t help me remember which mode "
 "is which."
-msgstr ""
-" ``MODE`` というワードは私が使っているForthシステムで利用できます。 ``MODE`` "
-"は0から3の間の引数を取り、それに応じてモードを変更します。 もちろん、``0  MODE`` または ``1 MODE`` "
-"というフレーズ、どちらのモードがどれであるかを覚えておくのに役に立ちません。"
+msgstr "``MODE`` というワードは私が使っているForthシステムで利用できます。 ``MODE`` は0から3の間の引数を取り、それに応じてモードを変更します。 もちろん、``0  MODE`` または ``1 MODE`` というフレーズ、どちらのモードがどれであるかを覚えておくのに役に立ちません。"
 
 #: ../../chapter6.rst:848
 msgid ""
@@ -1555,9 +1514,7 @@ msgid ""
 " each dimension more efficiently. If there’s an error in your thinking, "
 "the problem will be easier to see if it’s not obscured by yet another "
 "untried, untested aspect of your code."
-msgstr ""
-"一度に問題の1側面に集中することで、各側面をより効率的に解決できます。 "
-"あなたの思考に誤りがあるならば、それがまだ別の未試行のものによって隠されてなくて、テストされてないコードの側面でなければその問題は簡単に判ります。"
+msgstr "一度に問題の1側面に集中することで、各側面をより効率的に解決できます。 それがまだ別の未試行のものによって隠されてなくて、テストされてないコードの側面でなければ、あなたの思考に誤りのある問題は簡単に判ります。"
 
 #: ../../chapter6.rst:1302
 msgid "Don\\'t change too much at once."
@@ -1641,7 +1598,7 @@ msgid ""
 "are they will be different. You may want it to fetch it for you. You may "
 "want a byte array, or a bit array. You may want to do bounds checking, or"
 " store its current length so you can add things to the end."
-msgstr "3つ必要なら、問題の限界は明らかです。それらが異なる場合を除いて。そしてどのぐらい欲しいかは異なるでしょう。あなたこんなのが欲しいのかもしれません。例えば、あなたはバイト配列、またはビット配列が欲しいかもしれませし、境界チェックをしたいのかもしれませし、現在の長さを格納して最期に追加できるようにしたいのかもしれません。"
+msgstr "3つ必要なら、それらがそれぞれ異なる問題である場合を除いて、問題の限界は明らかです。そして何がどのぐらい欲しいかは異なるでしょう。あなたはバイト配列、またはビット配列が欲しいのかもしれませし、境界チェックをしたいのかもしれませし、現在の長さを格納して最後に追加できるようにしたいのかもしれません。"
 
 #: ../../chapter6.rst:1360
 msgid ""
