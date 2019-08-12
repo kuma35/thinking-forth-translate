@@ -1054,6 +1054,7 @@ We’ve implemented this approach with the code in :numref:`fig7-4`.
 .. code-block:: none
    :caption: Implementation of save/restorable state table.
    :name: fig7-4
+   :lineno-start: 0
    
    0 CONSTANT POINTERS  \ address of state table PATCHED LATER
    : POSITION   ( o -- o+2 ) CREATE DUP ,  2+
@@ -1124,6 +1125,7 @@ appropriately. For instance:
 .. code-block:: none
    :caption: Implementation of alternating-states mechanism.
    :name: fig7-6
+   :lineno-start: 0
    
    VARIABLE 'POINTERS  \ pointer to state table
    : POINTERS ( -- adr of current table)   'POINTERS @ ;
@@ -1143,17 +1145,18 @@ appropriately. For instance:
    : PRETENDING   PSEUDO 'POINTERS ! ;
 
 .. code-block:: none
+   :emphasize-lines: 3,6,8,10
    
    WORKING
    10 TOP !
-   TOP &underline{? 10}
+   TOP ? 10
    PRETENDING
    20 TOP !
-   TOP &underline{? 20}
+   TOP ? 20
    WORKING
-   TOP &underline{? 10}
+   TOP ? 10
    PRETENDING
-   TOP &underline{? 20}
+   TOP ? 20
 
 The major difference with this latter approach is that names go through
 an extra level of indirection (``POINTERS`` has been changed from a constant
@@ -1328,6 +1331,7 @@ They are:
    command. For instance:
 
    .. code-block:: none
+      :lineno-start: 0
    
       DOER TYPE'
       DOER EMIT'
@@ -1381,6 +1385,7 @@ They are:
    (though not terribly practical) illustrates the point.
 
    .. code-block:: none
+      :lineno-start: 0
    
       DOER WHERE
       VARIABLE SHIRT

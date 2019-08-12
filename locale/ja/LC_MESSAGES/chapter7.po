@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-29 05:55+0900\n"
-"PO-Revision-Date: 2019-07-29 06:01+0900\n"
+"PO-Revision-Date: 2019-08-13 08:56+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -74,7 +74,7 @@ msgstr ""
 msgid ""
 "The invention of the stack is analogous to that of pronouns in English. "
 "Consider the passage:"
-msgstr "スタックの発明は、英語の代名詞の発明と似ています。その箇所について考えてみましょう。"
+msgstr "スタックの発明は、英語の代名詞の発明と似ています。以下の一節について考えてみましょう。"
 
 #: ../../chapter7.rst:33
 msgid "Take this gift, wrap it in tissue paper and put it in a box."
@@ -92,9 +92,7 @@ msgid ""
 "(provided the reference is unambiguous). So with the stack, the implicit "
 "passing of arguments makes code more readable. We emphasize the "
 "*processes*, not the *passing of arguments* to the processes."
-msgstr ""
-"「それ(it)」構文が形式が張らない構文なので、英語が読みやすくなります(「それit)」を参照するものが明確である場合)。 "
-"そのため、スタックでは、暗黙的に引数を渡すことでコードが読みやすくなります。 プロセスへの引数の受け渡しではなく、プロセスを重視します。"
+msgstr "「それ(it)」構文が形式が張らない構文なので、英語が読みやすくなります(「それ(it)」を参照するものが明確である場合)。 そのため、スタックでは、暗黙的に引数を渡すことでコードが読みやすくなります。 プロセスへの引数の受け渡しではなく、プロセスを重視します。"
 
 #: ../../chapter7.rst:43
 msgid ""
@@ -176,7 +174,8 @@ msgstr ""
 "通常のスタック演算子の用語集は、 ``ROT`` が3番目のスタック項目にアクセスできる唯一のものです。 ``PICK`` と ``ROLL`` "
 "(これについてはすぐに説明します）以外に、それより深いものを見つける簡単な方法はありません。"
 
-# どう訳すんだこんなの
+# Originally preceded by the. The spelling t'other arose from the misconception of being a contraction of the other.
+#
 #: ../../chapter7.rst:85
 msgid ""
 "To stretch our analogy to the limit, perhaps three elements on the stack "
@@ -473,9 +472,7 @@ msgid ""
 "Can we change the design? First, ``LINE`` may be *too* primitive a "
 "primitive. It requires four arguments because it can draw lines between "
 "any two points, diagonally, if necessary."
-msgstr ""
-"デザインを変更できるでしょうか？ まず、 ``LINE`` はあまりに原始的なプリミティブ・ワードなのかもしれません。 "
-"必要に応じて任意の2点間に斜めに線を引くことができるので、4つの引数が必要です。"
+msgstr "設計を変更できるでしょうか？ まず、 ``LINE`` はあまりに原始的なプリミティブ・ワードなのかもしれません。 必要に応じて任意の2点間に斜めに線を引くことができるので、4つの引数が必要です。"
 
 #: ../../chapter7.rst:314
 msgid ""
@@ -492,7 +489,7 @@ msgstr ""
 
 #: ../../chapter7.rst:320
 msgid "Or we might discover that this syntax feels more natural to the user:"
-msgstr "または、以下の構文がユーザーにとってより自然に感じられることを発見するかもしれません。"
+msgstr "または、以下の構文がユーザにとってより自然に感じられることを発見するかもしれません。"
 
 #: ../../chapter7.rst:326
 msgid ""
@@ -657,9 +654,7 @@ msgid ""
 "One value serves both as a flag and (in case of an error) the error code."
 " Note that reverse-logic is used; non-zero indicates an error. You can "
 "use any values for the error codes except zero."
-msgstr ""
-"1つの値がフラグとしても（エラーの場合には）エラーコードとしても機能します。 逆論理が使用されていることに注意してください。 "
-"ゼロ以外はエラーを示します。 エラーコードには、ゼロ以外の任意の値を使用できます。"
+msgstr "1つの値がフラグとしても（エラーの場合には）エラーコードとしても機能します。 負論理が使用されていることに注意してください。 ゼロ以外はエラーを示します。 エラーコードには、ゼロ以外の任意の値を使用できます。"
 
 #: ../../chapter7.rst:456
 msgid "The Stylish Return Stack"
@@ -721,9 +716,7 @@ msgid ""
 "For every ``>R`` there must be a ``R>`` in the same definition. Sometimes"
 " the operators will appear to be symmetrical, but due to the control "
 "structure they aren’t. For instance:"
-msgstr ""
-"すべての ``>R`` に対して、同じ定義内に `` R> `` がなければなりません。 "
-"演算子は対称に見えることがありますが、それらは制御構造ではありません。 たとえば以下"
+msgstr "すべての ``>R`` に対して、同じ定義内に ``R>`` がなければなりません。 演算子は対称に見えることがありますが、それらは制御構造ではありません。 たとえば以下"
 
 #: ../../chapter7.rst:492
 msgid ""
@@ -781,11 +774,7 @@ msgid ""
 "``TENER`` depended on this information to determine which type of symbol "
 "to display. We didn’t have to specify both descriptions every time, as in"
 " ``TENS ONER``, ``TENS FIVER``, etc."
-msgstr ""
-"現時性を利用すると問題を単純化できます。 :doc:`第４章<chapter4>` のローマ数字の例では、現在の桁位置を表すために変数 "
-"``COLUMN#`` を使いました。 ``ONER`` 、 ``FIVER`` 、``TENER`` "
-"というワード、どの種類のシンボルを表示するかを決定するためにこの情報に依存していました。 ``TENS ONER`` や ``TENS "
-"FIVER`` などのように、毎回両方の説明を指定する必要はありませんでした。"
+msgstr "その時点での状態を利用する事にすると問題を単純化できます。 :doc:`第４章<chapter4>` のローマ数字の例では、現在の桁位置を表すために変数 ``COLUMN#`` を使いました。 ``ONER`` 、 ``FIVER`` 、``TENER`` というワード、どの種類のシンボルを表示するかを決定するためにこの情報に依存していました。 ``TENS ONER`` や ``TENS FIVER`` などのように、毎回両方の説明を指定する必要はありませんでした。"
 
 #: ../../chapter7.rst:526
 msgid ""
@@ -794,9 +783,7 @@ msgid ""
 "structure. We also must remember to initialize it, if there’s any chance "
 "that part of our code will refer to it before another part has had a "
 "chance to set it."
-msgstr ""
-"一方で、現時性は新しいレベルの複雑さを追加します。 最新の情報にするには、最初に変数またはある種のデータ構造を定義する必要があります。 "
-"他の部分がそれを設定する機会がある前に、私たちのコードの部分がそれを参照する可能性があるならば、我々はそれを初期化することを忘れないでください。"
+msgstr "一方で、その時点の状態を利用する事は新しいレベルの複雑さを追加します。 最新の情報にするには、最初に変数またはある種のデータ構造を定義する必要があります。 他の部分がそれを設定する機会がある前に、私たちのコードの部分がそれを参照する可能性があるならば、それを初期化することを忘れないでください。"
 
 #: ../../chapter7.rst:532
 msgid ""
@@ -814,7 +801,7 @@ msgid ""
 "Even within a single task, a definition that refers to a variable is "
 "harder to test, verify, and reuse in a different situation than one in "
 "which arguments are passed via the stack."
-msgstr "単一のタスク内でも、変数を参照する定義は、引数がスタックを介して渡される場合とは異なる状況でテスト、検証、および再利用するのが困難です。"
+msgstr "変数を参照する定義は、単一のタスク内でも、引数がスタックを介して渡される場合と異なり、テスト・検証・再利用するのが困難です。"
 
 #: ../../chapter7.rst:542
 msgid ""
@@ -903,7 +890,7 @@ msgid ""
 "\"Shot from a cannon on a fast-moving train, hurtling between the blades "
 "of a windmill, and expecting to grab a trapeze dangling from a hot-air "
 "balloon... I told you Ace, there were too many variables!\""
-msgstr "「高速移動する列車から大砲で撃ち出され、風車の羽根の間をくぐりぬけ、そして熱気球からぶら下がっているブランコをつかむ事を期待して…あなたはエースだけど、あまりにも変数が多すぎたわ」"
+msgstr "「高速移動する列車から大砲で撃ち出され、風車の羽根の間をくぐりぬけ、更に熱気球からぶら下がっているブランコをつかむなんて…あなたはエースだけど、あまりにも変数が多すぎたわ」"
 
 #: ../../chapter7.rst:605
 msgid ""
@@ -914,11 +901,7 @@ msgid ""
 "immediately loads them into local variables for its own use. The four "
 "variables are not referred to outside of this definition, and the word "
 "behaves safely as a function."
-msgstr ""
-"以前、スタック渋滞を排除するために、特に設計段階でローカル変数を使用することをお勧めしました。 "
-"その際、変数は1つの定義内でのみ参照されることに注意することが重要です。 私たちの例では、 ``[BOX]`` "
-"はスタックから4つの引数を受け取り、すぐにそれらをローカル変数にロードして使用します。 "
-"4つの変数はこの定義外では参照されず、ワードは関数として安全に動作します。"
+msgstr "以前、スタック渋滞を排除するために、特に設計段階でローカル変数を使用することをお勧めしました。 その際、変数は1つの定義内でのみ参照されることに注意することが重要です。 私たちの例では、 ``[BOX]`` はスタックから4つの引数を受け取り、すぐにそれらをローカル変数にロードして使用します。 4つの変数はこの定義外では参照されず、ワードは単一の機能として安全に動作します。"
 
 #: ../../chapter7.rst:613
 msgid ""
@@ -946,7 +929,7 @@ msgstr "「期待される入力と出力のためだけにスタックを使用
 
 #: ../../chapter7.rst:631
 msgid "Local and Global Variables/Initialization"
-msgstr "ローカル、グローバル変数と、その初期化"
+msgstr "ローカル変数とグローバル変数と、その初期化"
 
 #: ../../chapter7.rst:633
 msgid ""
@@ -956,16 +939,13 @@ msgid ""
 "variable. As we’ve seen in an earlier chapter, a set of global variables "
 "that collectively describe a common interface between several lexicons is"
 " called an “interface lexicon.”"
-msgstr ""
-"前に見たように、他のコードから隠された、単一の定義（または単一の用語集）内で排他的に使用される変数は、ローカル変数と呼ばれます。 "
-"複数の用語集で使用される変数は、グローバル変数と呼ばれます。 "
-"前章で見たように、いくつかの用語集間の共通のインターフェースをまとめて記述するグローバル変数のセットは「インターフェース用語集」と呼ばれます。"
+msgstr "既に見たように、他のコードから隠された、単一の定義（または単一の用語集）内で排他的に使用される変数は、ローカル変数と呼ばれます。 複数の用語集で使用される変数は、グローバル変数と呼ばれます。 前章で見たように、いくつかの用語集間の共通のインターフェースをまとめて記述するグローバル変数のセットは「インターフェース用語集」と呼ばれます。"
 
 #: ../../chapter7.rst:640
 msgid ""
 "Forth makes no distinction between local and global variables. But Forth "
 "programmers do."
-msgstr "Forthは、ローカル変数とグローバル変数を区別しません。 しかし、Forthプログラマはそうしています。"
+msgstr "Forthはローカル変数とグローバル変数を区別しません。 しかしForthプログラマは区別します。"
 
 #: ../../chapter7.rst:644
 msgid ""
@@ -1171,14 +1151,13 @@ msgid ""
 "If I have a word which cares where things are, it had better set them. If"
 " somebody else changes them, they don't have to worry about resetting "
 "them."
-msgstr ""
-"物事がどこにあるかを気にするワードがあれば、それを設定したほうがよいでしょう。 "
-"他の誰かがそれらを変更しても、それらをリセットすることを心配する必要はありません。"
+msgstr "私が、どこかにある物事を気にかけるワードがあるならば、私がその物事を設定するようにしたほうがよいでしょう。 そうすれば、他の誰かがそれらを変更しても、それらをリセットすることを心配する必要はありません。"
 
 #: ../../chapter7.rst:782
 msgid "There are more exits than there are entrances."
 msgstr "入り口よりも多くの出口の方が多いのです。"
 
+# pristine:素朴な、清純な、汚れていない、きれいな、初期の、原始時代の
 #: ../../chapter7.rst:784
 msgid ""
 "In cases in which I need to do the resetting before I’m done, I’ve found "
@@ -1280,7 +1259,7 @@ msgstr "共有コンポーネント"
 msgid ""
 "It's legal to use a component for an additional purpose besides its "
 "intended one, provided:"
-msgstr "以下の条件で、意図した目的以外に追加の目的でコンポーネントを使用することは合法です。"
+msgstr "以下の条件であれば、意図した目的以外に追加の目的でコンポーネントを使用することは適正です。"
 
 #: ../../chapter7.rst:860
 msgid "All uses of the component are mutually exclusive"
@@ -1464,10 +1443,7 @@ msgid ""
 "counter up one. Non-zero is “true,” so ``DISPLAY`` will not do the "
 "output. After the lookahead, the code invokes ``VISIBLE`` which "
 "decrements the counter back to zero (“false”)."
-msgstr ""
-"246/5000\n"
-"先読みコードは、カウンタを1つ上げた ``INVISIBLE`` を呼び出すことで始まります。 ゼロ以外は true なので、 "
-"``DISPLAY`` は出力を行いません。 先読みの後、コードは ``VISIBLE`` を呼び出してカウンタをゼロ(false)に戻します。"
+msgstr "先読みコードは、カウンタを1つ上げた ``INVISIBLE`` を呼び出すことで始まります。 ゼロ以外は true なので、 ``DISPLAY`` は出力を行いません。 先読みの後、コードは ``VISIBLE`` を呼び出してカウンタをゼロ(false)に戻します。"
 
 #: ../../chapter7.rst:971
 msgid ""
@@ -1491,9 +1467,7 @@ msgid ""
 "(Note that we must substitute ``0=`` for ``NOT``. The ’83 Standard has "
 "changed ``NOT`` to mean one’s complement, so that ``1 NOT`` yields true. "
 "By the way, I think this was a mistake.)"
-msgstr ""
-"( `'NOT=`` の代わりに ``0=`` を代入しなければならないことに注意してください。FORTH-83規格では、 "
-"1の補数を意味するように NOTが変更されました。 私はこれは間違いだと思います。）"
+msgstr "( ``NOT=`` の代わりに ``0=`` を代入しなければならないことに注意してください。FORTH-83規格では、 1の補数を意味するように NOTが変更されました。 私はこれは間違いだと思います。）"
 
 # 意味不明
 #: ../../chapter7.rst:986
@@ -1771,10 +1745,7 @@ msgid ""
 "``LEFTWING`` serves for both ``LEFTWING`` and for the bit of code after "
 "``MAKE``. When ``MAKE`` redirects execution of the ``DOER`` word, it also"
 " *stops* execution of the word in which it appears."
-msgstr ""
-"``MAKE``コードは、任意のForthコードで、あなたが望むだけの長さで書くことが出来ます。但しそれをセミコロンで終わらせることを忘れないでください。"
-" ``LEFTWING`` の末尾のセミコロンは、``LEFTWING`` と、 ``MAKE`` の後のコードの、両方に使用されます。 "
-"``MAKE`` が ``DOER`` ワードの実行をリダイレクトすると、それを記述したワードの実行も「停止」します。"
+msgstr "``MAKE`` コードは、任意のForthコードで、あなたが望むだけの長さで書くことが出来ます。但しそれをセミコロンで終わらせることを忘れないでください。 ``LEFTWING`` の末尾のセミコロンは、 ``LEFTWING`` と、 ``MAKE`` の後のコードの、両方に使用されます。 ``MAKE`` が ``DOER`` ワードの実行をリダイレクトすると、それを記述したワードの実行も「停止」します。"
 
 #: ../../chapter7.rst:1234
 msgid ""
@@ -1894,11 +1865,7 @@ msgid ""
 "functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that "
 "would normally be passed to them. Say ``INVISIBLE`` and any words defined"
 " in terms of these four output operators will *not* produce any output."
-msgstr ""
-"ここでは、各ワードの末尾に「プライム( ``'`` )」マークが付いた、わかりやすい一連の出力ワードを定義しました。 ``VISIBLE`` "
-"はそれらを期待される機能に設定します。 ``INVISIBLE`` はそれらを「何もしない(no-"
-"op)」に設定し、通常それらに渡される引数を単に食い尽くします。「 ``INVISIBLE`` "
-"」と言うと、これら4つの出力操作ワードに対して定義されたワードは出力を生成しません。"
+msgstr "ここでは、各ワードの末尾に「プライム( ``'`` )」マークが付いた、わかりやすい一連の出力ワードを定義しました。 ``VISIBLE`` はそれらのワードを名前から期待される機能に設定します。 ``INVISIBLE`` はそれらを「何もしない(no-op)」ワードに設定し、通常それらのワードに渡される引数を単に食い尽くします。よって「 ``INVISIBLE`` 」と言うと、これら4つの出力操作ワードに対して定義されたワードは出力を生成しません。"
 
 #: ../../chapter7.rst:1352
 msgid ""
@@ -2005,7 +1972,7 @@ msgstr "直接的または間接的な再帰"
 msgid ""
 "Direct recursion occurs when a word invokes itself. A good example is the"
 " recursive definition of greatest-common-denominator:"
-msgstr "ワードが自分自身を呼び出すときに直接再帰が発生します。 良い例は、以下のような最大公約数的再帰定義です。"
+msgstr "ワードが自分自身を呼び出すときに直接再帰が発生します。 良い例は、以下のような最大公約数用の再帰定義です。"
 
 #: ../../chapter7.rst:1449
 msgid "This translates nicely into:"
@@ -2054,9 +2021,7 @@ msgid ""
 "using variables and other data structures. Using the stack is preferable "
 "for testing and reusability, but too many values manipulated on the stack"
 " by a single definition hurts readability and writeability."
-msgstr ""
-"この章では、スタックを使用することと、変数や他のデータ構造を使用することとの間のトレードオフを調べました。 "
-"テストと再利用のためにはスタックを使用することをお勧めしますが、単一の定義によってスタック上で操作される値が多すぎると、読みやすさと書き込み性が低下します。"
+msgstr "この章では、スタックを使用することと、変数や他のデータ構造を使用することとの間のトレードオフを調べました。 テストと再利用のためにはスタックを使用することをお勧めしますが、単一の定義によってスタック上で操作される値が多すぎると、読みやすさと書きやすさが低下します。"
 
 #: ../../chapter7.rst:1492
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 05:55+0900\n"
+"POT-Creation-Date: 2019-08-13 08:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -857,263 +857,263 @@ msgstr ""
 msgid "Implementation of save/restorable state table."
 msgstr ""
 
-#: ../../chapter7.rst:1075
+#: ../../chapter7.rst:1076
 msgid "Notice in this implementation that the names of the pointers, ``TOP``, ``BOTTOM``, etc., always return the same address. There is only one location used to represent the current value of any state at any time."
 msgstr ""
 
-#: ../../chapter7.rst:1079
+#: ../../chapter7.rst:1080
 msgid "Also notice that we define ``POINTERS`` (the name of the table) with ``CON-STANT``, not with ``CREATE``, using a dummy value of zero. This is because we refer to ``POINTERS`` in the defining word ``POSITION``, but it’s not until after we’ve defined all the field names that we know how big the table must be and can actually ``ALLOT`` it."
 msgstr ""
 
-#: ../../chapter7.rst:1085
+#: ../../chapter7.rst:1086
 msgid "As soon as we create the field names, we define the size of the table as a constant ``/POINTERS``. At last we reserve room for the table itself, patching its beginning address (``HERE``) into the constant ``POINTERS``. (The word ``>BODY`` converts the address returned by tick into the address of the constant’s value.) Thus ``POINTERS`` returns the address of the table allotted later, just as a name defined by ``CREATE`` returns the address of a table allotted directly below the name’s header."
 msgstr ""
 
-#: ../../chapter7.rst:1094
+#: ../../chapter7.rst:1095
 msgid "Although it’s valid to patch the value of a ``CONSTANT`` at compile time, as we do here, there is a restriction of style:"
 msgstr ""
 
-#: ../../chapter7.rst:1099
+#: ../../chapter7.rst:1100
 msgid "A ``CONSTANT``\\ s value should never be changed once the application is compiled."
 msgstr ""
 
-#: ../../chapter7.rst:1102
+#: ../../chapter7.rst:1103
 msgid "The case of alternating states is slightly more involved. In this situation we need to alternate back and forth between two (or more) states, never clobbering the conditions in each state when we jump to the other state. :numref:`fig7-5` shows the conceptual model for this kind of state table."
 msgstr ""
 
-#: ../../chapter7.rst:1112
+#: ../../chapter7.rst:1113
 msgid "Conceptual model for alternating-states tables."
 msgstr ""
 
-#: ../../chapter7.rst:1114
+#: ../../chapter7.rst:1115
 msgid "In this model, the names ``TOP``, ``BOTTOM``, etc., can be made to point into either of two tables, ``REAL`` or ``PSEUDO``. By making the ``REAL`` table the current one, all the pointer names reference addresses in the ``REAL`` table; by making the ``PSEUDO`` table current, they address the ``PSEUDO`` table."
 msgstr ""
 
-#: ../../chapter7.rst:1120
+#: ../../chapter7.rst:1121
 msgid "The code in :numref:`fig7-6` implements this alternating states mechanism. The words ``WORKING`` and ``PRETENDING`` change the pointer appropriately. For instance:"
 msgstr ""
 
-#: ../../chapter7.rst:1124
+#: ../../chapter7.rst:1125
 msgid "Implementation of alternating-states mechanism."
 msgstr ""
 
-#: ../../chapter7.rst:1158
+#: ../../chapter7.rst:1161
 msgid "The major difference with this latter approach is that names go through an extra level of indirection (``POINTERS`` has been changed from a constant to a colon definition). The field names can be made to point to either of two state tables. Thus each name has slightly more work to do. Also, in the former approach the names refer to fixed locations; a ``CMOVE`` is required each time we save or restore the values. In this approach, we have only to change a single pointer to change the current table."
 msgstr ""
 
-#: ../../chapter7.rst:1168
+#: ../../chapter7.rst:1171
 msgid "Vectored Execution"
 msgstr ""
 
-#: ../../chapter7.rst:1170
+#: ../../chapter7.rst:1173
 msgid "Vectored execution extends the ideas of currentness and indirection beyond data, to functions. Just as we can save values and flags in variables, we can also save functions, because functions can be referred to by address."
 msgstr ""
 
-#: ../../chapter7.rst:1175
+#: ../../chapter7.rst:1178
 msgid "The traditional techniques for implementing vectored execution are described in *Starting Forth*, Chapter Nine. In this section we’ll discuss a new syntax which I invented and which I think can be used in many circumstances more elegantly than the traditional methods."
 msgstr ""
 
-#: ../../chapter7.rst:1180
+#: ../../chapter7.rst:1183
 msgid "The syntax is called ``DOER/MAKE``. (If your system doesn’t include these words, refer to :doc:`Appendix B<appendixb>` for code and implementation details.) It works like this: You define the word whose behavior will be vectorable with the defining word ``DOER``, as in"
 msgstr ""
 
-#: ../../chapter7.rst:1190
+#: ../../chapter7.rst:1193
 msgid "Initially, the new word ``PLATFORM`` does nothing. Then you can write words that change what ``PLATFORM`` does by using the word ``MAKE``:"
 msgstr ""
 
-#: ../../chapter7.rst:1198
+#: ../../chapter7.rst:1201
 msgid "When you invoke ``LEFTWING``, the phrase ``MAKE PLATFORM`` changes what ``PLATFORM`` will do. Now if you type ``PLATFORM``, you’ll see:"
 msgstr ""
 
-#: ../../chapter7.rst:1206
+#: ../../chapter7.rst:1209
 msgid "``RIGHTWING`` will make ``PLATFORM`` display “opponent.” You can use ``PLATFORM`` within another definition:"
 msgstr ""
 
-#: ../../chapter7.rst:1214
+#: ../../chapter7.rst:1217
 msgid "The statement"
 msgstr ""
 
-#: ../../chapter7.rst:1220
+#: ../../chapter7.rst:1223
 msgid "will display one campaign statement, while"
 msgstr ""
 
-#: ../../chapter7.rst:1226
+#: ../../chapter7.rst:1229
 msgid "will display another."
 msgstr ""
 
-#: ../../chapter7.rst:1228
+#: ../../chapter7.rst:1231
 msgid "The ``MAKE`` code can be any Forth code, as much or as long as you want; just remember to conclude it with semicolon. The semicolon at the end of ``LEFTWING`` serves for both ``LEFTWING`` and for the bit of code after ``MAKE``. When ``MAKE`` redirects execution of the ``DOER`` word, it also *stops* execution of the word in which it appears."
 msgstr ""
 
-#: ../../chapter7.rst:1234
+#: ../../chapter7.rst:1237
 msgid "When you invoke ``LEFTWING``, for example, ``MAKE`` redirects ``PLATFORM`` and exits. Invoking ``LEFTWING`` does not cause “proponent” to be printed. :numref:`fig7-7`  demonstrates this point, using a conceptualized illustration of the dictionary."
 msgstr ""
 
-#: ../../chapter7.rst:1243
+#: ../../chapter7.rst:1246
 msgid "``DOER`` and ``MAKE``."
 msgstr ""
 
-#: ../../chapter7.rst:1245
+#: ../../chapter7.rst:1248
 msgid "If you want to *continue* execution, you can use the word ``;AND`` in place of semicolon. ``;AND`` terminates the code that the ``DOER`` word points to, and resumes execution of the definition in which it appears, as you can see in :numref:`fig7-8` ."
 msgstr ""
 
-#: ../../chapter7.rst:1255
+#: ../../chapter7.rst:1258
 msgid "Multiple ``MAKE``\\ s in parallel using ``;AND``."
 msgstr ""
 
-#: ../../chapter7.rst:1257
+#: ../../chapter7.rst:1260
 msgid "Finally, you can chain the “making” of ``DOER`` words in series by not using ``;AND``. :numref:`fig7-9`  explains this better than I could write about it."
 msgstr ""
 
-#: ../../chapter7.rst:1265
+#: ../../chapter7.rst:1268
 msgid "Multiple ``MAKE``\\ s in series."
 msgstr ""
 
-#: ../../chapter7.rst:1268
+#: ../../chapter7.rst:1271
 msgid "Using DOER/MAKE"
 msgstr ""
 
-#: ../../chapter7.rst:1270
+#: ../../chapter7.rst:1273
 msgid "There are many occasions when the ``DOER/MAKE`` construct proves beneficial. They are:"
 msgstr ""
 
-#: ../../chapter7.rst:1273
+#: ../../chapter7.rst:1276
 msgid "To change the state of a function (when external testing of the state is not necessary). The words ``LEFTWING`` and ``RIGHTWING`` change the state of the word ``PLATFORM``."
 msgstr ""
 
-#: ../../chapter7.rst:1277
+#: ../../chapter7.rst:1280
 msgid "To factor out internal phrases from similar definitions, but within control structures such as loops."
 msgstr ""
 
-#: ../../chapter7.rst:1280
+#: ../../chapter7.rst:1283
 msgid "Consider the definition of a word called ``DUMP``, designed to reveal the contents of a specified region of memory."
 msgstr ""
 
-#: ../../chapter7.rst:1293
+#: ../../chapter7.rst:1296
 msgid "The problem arises when you write a definition called ``CDUMP``, designed to format the output according to bytes, not cells:"
 msgstr ""
 
-#: ../../chapter7.rst:1306
+#: ../../chapter7.rst:1309
 msgid "The code within these two definitions is identical except for the fragments in boldface. But factoring is difficult because the fragments occur inside the    ``DO``  ``LOOP``."
 msgstr ""
 
-#: ../../chapter7.rst:1310
+#: ../../chapter7.rst:1313
 msgid "Here’s a solution to this problem, using ``DOER/MAKE``. The code that changes has been replaced with the word ``.UNIT``, whose behavior is vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that “``1``  ``+LOOP``” has the same effect as “``LOOP``”.)"
 msgstr ""
 
-#: ../../chapter7.rst:1324
+#: ../../chapter7.rst:1327
 msgid "Notice how ``DUMP`` and ``CDUMP`` *set-up* the vector, then go on to *execute* the shell (the word ``<DUMP>``)."
 msgstr ""
 
-#: ../../chapter7.rst:1327
+#: ../../chapter7.rst:1330
 msgid "To change the state of related functions by invoking a single command. For instance:"
 msgstr ""
 
-#: ../../chapter7.rst:1345
+#: ../../chapter7.rst:1349
 msgid "Here we’ve defined a vectorable set of output words, each name having a “prime” mark at the end. ``VISIBLE`` sets them to their expected functions. ``INVISIBLE`` makes them no-ops, eating up the arguments that would normally be passed to them. Say ``INVISIBLE`` and any words defined in terms of these four output operators will *not* produce any output."
 msgstr ""
 
-#: ../../chapter7.rst:1352
+#: ../../chapter7.rst:1356
 msgid "To change the state for the next occurrence only, then change the state (or reset it) again."
 msgstr ""
 
-#: ../../chapter7.rst:1355
+#: ../../chapter7.rst:1359
 msgid "Suppose we’re writing an adventure game. When the player first arrives at a particular room, the game will display a detailed description. If the player returns to the same room later, the game will show a shorter message."
 msgstr ""
 
-#: ../../chapter7.rst:1360
+#: ../../chapter7.rst:1364
 msgid "We write:"
 msgstr ""
 
-#: ../../chapter7.rst:1371
+#: ../../chapter7.rst:1375
 msgid "The word ``ANNOUNCE`` will display either message. First we say ``LONG``, to initialize ``ANNOUNCE`` to the long message. Now we can test ``ANNOUNCE``, and find that it prints the long message. Having done that, however, it continues to “make” ``ANNOUNCE`` display the short message."
 msgstr ""
 
-#: ../../chapter7.rst:1376
+#: ../../chapter7.rst:1380
 msgid "If we test ``ANNOUNCE`` a second time, it prints the short message. And it will for ever more, until we say ``LONG`` again."
 msgstr ""
 
-#: ../../chapter7.rst:1379
+#: ../../chapter7.rst:1383
 msgid "In effect we’re queuing behaviors. We can queue any number of behaviors, letting each one set the next. The following example (though not terribly practical) illustrates the point."
 msgstr ""
 
-#: ../../chapter7.rst:1400
+#: ../../chapter7.rst:1405
 msgid "In this code we’ve created a list of variables, then defined an ``ORDER`` in which they are to be searched. The word ``HUNT`` looks through each of them, looking for the first one that contains a 17. ``HUNT`` returns either the address of the correct variable, or a zero if none have the value."
 msgstr ""
 
-#: ../../chapter7.rst:1406
+#: ../../chapter7.rst:1411
 msgid "It does this by simply executing ``WHERE`` five times. Each time, ``WHERE`` returns a different address, as defined in ``ORDER``, then finally zero."
 msgstr ""
 
-#: ../../chapter7.rst:1409
+#: ../../chapter7.rst:1414
 msgid "We can even define a ``DOER`` word that toggles its own behavior endlessly:"
 msgstr ""
 
-#: ../../chapter7.rst:1420
+#: ../../chapter7.rst:1425
 msgid "To implement a forward reference. A forward reference is usually needed as a “hook,” that is, a word invoked in a low-level definition but reserved for use by a component defined later in the listing."
 msgstr ""
 
-#: ../../chapter7.rst:1424
+#: ../../chapter7.rst:1429
 msgid "To implement a forward reference, build the header of the word with ``DOER``, before invoking its name."
 msgstr ""
 
-#: ../../chapter7.rst:1431
+#: ../../chapter7.rst:1436
 msgid "Later in the listing, use ``MAKE``;"
 msgstr ""
 
-#: ../../chapter7.rst:1437
+#: ../../chapter7.rst:1442
 msgid "(Remember, ``MAKE`` can be used outside a colon definition.)"
 msgstr ""
 
-#: ../../chapter7.rst:1439
+#: ../../chapter7.rst:1444
 msgid "Recursion, direct or indirect."
 msgstr ""
 
-#: ../../chapter7.rst:1441
+#: ../../chapter7.rst:1446
 msgid "Direct recursion occurs when a word invokes itself. A good example is the recursive definition of greatest-common-denominator:"
 msgstr ""
 
-#: ../../chapter7.rst:1449
+#: ../../chapter7.rst:1454
 msgid "This translates nicely into:"
 msgstr ""
 
-#: ../../chapter7.rst:1456
+#: ../../chapter7.rst:1461
 msgid "Indirect recursion occurs when one word invokes a second word, while the second word invokes the first. This can be done using the form:"
 msgstr ""
 
-#: ../../chapter7.rst:1465
+#: ../../chapter7.rst:1470
 msgid "Debugging. I often define:"
 msgstr ""
 
-#: ../../chapter7.rst:1471
+#: ../../chapter7.rst:1476
 msgid "(short for ``SNAPSHOT``), then edit ``SNAP`` into my application at a point where I want to see what’s going on. For instance, with ``SNAP`` invoked inside the main loop of a keystroke interpreter, I can set it up to let me watch what’s happening to a data structure as I enter keys. And I can change what SNAP does without having to recompile the loop."
 msgstr ""
 
-#: ../../chapter7.rst:1479
+#: ../../chapter7.rst:1484
 msgid "The situations in which it’s preferable to use the tick-and-execute approach are those in which you need control over the address of the vector, such as when vectoring through an element in a decision table, or attempting to save/restore the contents of the vector."
 msgstr ""
 
-#: ../../chapter7.rst:1485
+#: ../../chapter7.rst:1490
 msgid "Summary"
 msgstr ""
 
-#: ../../chapter7.rst:1487
+#: ../../chapter7.rst:1492
 msgid "In this chapter we’ve examined the tradeoffs between using the stack and using variables and other data structures. Using the stack is preferable for testing and reusability, but too many values manipulated on the stack by a single definition hurts readability and writeability."
 msgstr ""
 
-#: ../../chapter7.rst:1492
+#: ../../chapter7.rst:1497
 msgid "We also explored techniques for saving and restoring data structures, and concluded with a study of vectored execution using ``DOER/MAKE``."
 msgstr ""
 
-#: ../../chapter7.rst:1497
+#: ../../chapter7.rst:1502
 msgid "REFERNCES"
 msgstr ""
 
-#: ../../chapter7.rst:1499
+#: ../../chapter7.rst:1504
 msgid "Michael Ham, \"Why Novices Use So Many Variables,\"    **Forth Dimensions** , vol. 5, no. 4, November/December 1983."
 msgstr ""
 
-#: ../../chapter7.rst:1500
+#: ../../chapter7.rst:1505
 msgid "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal of Forth Application and Research** ,   1, 1 (September 1983), 17."
 msgstr ""
 
