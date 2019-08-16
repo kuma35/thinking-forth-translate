@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: 2019-07-25 22:59+0900\n"
+"PO-Revision-Date: 2019-08-17 08:17+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../epilog.rst:4
 msgid "EPILOGUE: Forth’s Effect on Thinking"
-msgstr "結び 思考に与えるForthの効果"
+msgstr "エピローグ 思考に与えるForthの効果"
 
 #: ../../epilog.rst:6
 msgid ""
@@ -36,11 +36,11 @@ msgid ""
 "among several Forth users in which I asked, “How has Forth affected your "
 "thinking? Have you found yourself applying ‘Forth-like’ principles in "
 "other areas?”"
-msgstr "Forthの哲学の一部を抽出するために、私はいくつかのForthユーザに次のように質問しました。「あなたは他の分野で「Forthのような」原則を適用しているのを見つけましたか？」"
+msgstr "Forthの哲学の一部を抽出するために、私はいくつかのForthユーザに次のように質問しました。「あなたは他の分野でForth流の原則を適用しているのを見た事がありますか？」"
 
 #: ../../epilog.rst:16
 msgid "Here are some of the replies:"
-msgstr "ここにいくつかの回答があります。"
+msgstr "以下にいくつかの回答があります。"
 
 #: ../../epilog.rst:62
 msgid ""
@@ -128,7 +128,7 @@ msgid ""
 "I found myself drawing upon the knowledge I had of the organization and "
 "approach of Forth.  This permitted me to understand convoluted, or high-"
 "fog-coefficient sections describing C."
-msgstr "C言語の性質と構造を理解しようとしたとき、私は自分がForthの組織とアプローチについて知っていた知識を利用していることに気づきました。 これは私がCを記述している入り組んだ、または高い霧係数の節を理解することを可能にしました。"
+msgstr "C言語の性質と構造を理解しようとしたとき、私は自分がForthの機構とアプローチについて知っていた知識を利用していることに気づきました。 これは私がCを記述している入り組んだ、または高い霧係数の節を理解することを可能にしました。"
 
 #: ../../epilog.rst:70
 msgid ""
