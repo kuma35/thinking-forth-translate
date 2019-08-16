@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-29 05:55+0900\n"
-"PO-Revision-Date: 2019-08-08 04:15+0900\n"
+"PO-Revision-Date: 2019-08-17 08:07+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -506,17 +506,13 @@ msgid ""
 "Words should not depend on ``STATE`` if a programmer might ever want to "
 "invoke them from within a higher-level definition and expect them to "
 "behave as they do interpretively."
-msgstr ""
-"プログラマがより高水準の定義内からそれらを呼び出し、それらが解釈するように振る舞うと期待するかもしれないならば、ワードは ``STATE`` "
-"に依存すべきではありません。"
+msgstr "より高水準の定義内からそのワードを呼び出し、そのワードが名前の通りの解釈に従って振る舞うと期待するなら、そのワードは ``STATE`` に依存すべきではありません。"
 
 #: ../../chapter8.rst:391
 msgid ""
 "``ASCII`` works well as a ``STATE``\\ -dependent word, and so does "
 "``MAKE``. (See :doc:`Appendix C<appendixc>`.)"
-msgstr ""
-"`` ASCII`` は ``STATE`` 依存ワードとしてうまく機能し、 ``MAKE`` も同様に機能します( "
-":doc:`付録C<appendixc>` 参照)。"
+msgstr "``ASCII`` は ``STATE`` 依存ワードとしてうまく機能し、 ``MAKE`` も同様に機能します( :doc:`付録C<appendixc>` 参照)。"
 
 #: ../../chapter8.rst:395
 msgid "Nesting and Combining Conditionals"
@@ -608,7 +604,7 @@ msgstr "私たちはもやし(bean-sprouts)がなければ、レシピを探す�
 msgid ""
 "Another exception arises if any term is probably not true. By eliminating"
 " such a condition first, you avoid having to try the other conditions."
-msgstr "いずれかの語がおそらく正しくない場合は、別の例外が発生します。 最初にこのような条件を排除することで、他の条件を試す必要がなくなります。"
+msgstr "いずれかの語がtrueでない場合は、別の例外が発生します。 最初にこのような条件を排除することで、他の条件を試す必要がなくなります。"
 
 #: ../../chapter8.rst:494
 msgid ""
@@ -642,7 +638,7 @@ msgstr "最初の条件が当てはまる場合、2番目の条件を評価す�
 msgid ""
 "The repetition of ``UP GET`` is ugly—not nearly as readable as the "
 "solution using ``OR``\\ —but in some cases desirable."
-msgstr "``UP GET`` の繰り返しは醜いです -  ``OR`` を使った解決策ほど読みやすくはありませんが、場合によっては望ましいことです。"
+msgstr "``UP GET`` の繰り返しは醜いです。それは ``OR`` を使った解決策ほど読みやすくはありませんが、場合によってはその方が好ましいです。"
 
 #: ../../chapter8.rst:522
 msgid "Choosing Control Structures"
@@ -692,10 +688,7 @@ msgid ""
 "or in execution speed. In fact, the case statement compiles much the same"
 " code as the nested ``IF``  ``THEN`` statements. A case statement is a "
 "good example of compile-time factoring."
-msgstr ""
-"case文の価値は、読みやすさと書きやすさだけにあります。 オブジェクトメモリでも実行速度でも効率の向上はありません。 "
-"事実、case文は入れ子になった ``IF…THEN`` 文とほとんど同じコードをコンパイルします。 "
-"case文、コンパイル時のファクタリング(要素分解)の好例です。"
+msgstr "case文の価値は、読みやすさと書きやすさだけにあります。 オブジェクトメモリでも実行速度でも効率の向上はありません。 事実、case文は入れ子になった ``IF…THEN`` 文とほとんど同じコードをコンパイルします。 case文はコンパイル時のファクタリング(要素分解)の好例です。"
 
 #: ../../chapter8.rst:571
 msgid ""
@@ -734,7 +727,7 @@ msgid ""
 "Personally, I consider the case statement an elegant solution to a "
 "misguided problem: attempting an algorithmic expression of what is more "
 "aptly described in a decision table."
-msgstr "個人的には、case文は、見当違いの問題に対する優雅な解決策であると考えています。それは、決定表にもっと適切に記述されているものをアルゴリズムで表現することです。"
+msgstr "個人的には、case文は、見当違いの問題に対する優雅な解決策であると考えています。それは、決定表でもっと適切に記述できるものをアルゴリズムで表現することです。"
 
 #: ../../chapter8.rst:593
 msgid ""
@@ -754,16 +747,14 @@ msgstr "正しいループ構造により、余分な条件文を排除できま
 msgid ""
 "Many times conditionals are used to get out of loops. That particular use"
 " can be avoided by having loops with multiple exit points."
-msgstr "ループから抜け出すために条件文が使われることがよくあります。 そういう条件文の使用は、複数の出口をあらかじめ持つループを使うことで回避できます。"
+msgstr "ループから抜け出すために条件文が使われることがよくあります。 複数の出口を持つループを使うことで、そういう条件文の使用を回避できます。"
 
 #: ../../chapter8.rst:606
 msgid ""
 "This is a live topic, because of the multiple ``WHILE`` construct which "
 "is in poly Forth but hasn't percolated up to Forth \\'83. It's a simple "
 "way of defining multiple ``WHILE``\\ s in the same ``REPEAT``."
-msgstr ""
-"poly ForthにはあるがForth-83までは浸透していない複数の ``WHILE`` 構造があるので、これは活きのいい話題です。 同じ "
-"``REPEAT`` の中に複数の ``WHILE`` を定義する簡単な方法です。"
+msgstr "poly ForthにはあるがForth-83までは浸透していない複数 ``WHILE`` 構造があるので、これは活きのいい話題です。 同じ ``REPEAT`` の中に複数 ``WHILE`` を定義する簡単な方法です。"
 
 #: ../../chapter8.rst:610
 msgid ""
@@ -773,11 +764,7 @@ msgid ""
 "and if I'm leaving a loop early, I change the truth value to remind "
 "myself that I left the loop early. Then later I'll have an ``IF`` to see "
 "whether I left the loop early, and it's just clumsy."
-msgstr ""
-"また、(Forth社の)ディーン・サンダーソン(Dean Sanderson)は、2つの出口を ``…LOOP`` "
-"に導入する新しい構文を発明しました。 その構造を考えると、あなたはより少ないテストで済ませる事ができるでしょう。 "
-"私はスタックに真理値を残すことが非常に多く、早い時期にループを離れた場合は、早めにループを離れたことを思い出させるように真理値を変更します。 "
-"その後に、ループを早く抜けたかどうかを確認するための ``IF`` がありますが、それは不器用です。"
+msgstr "また、(Forth社の)ディーン・サンダーソン(Dean Sanderson)は、2つの出口を ``DO…LOOP`` に導入する新しい構文を発明しました。 その構造を考えると、あなたはより少ないテストで済ませる事ができるでしょう。 私はスタックに真理値を残すことが非常に多く、早い時期にループを離れた場合は、早めにループを離れたことを思い出させるように真理値を変更します。 その後に、ループを早く抜けたかどうかを確認するための ``IF`` がありますが、それは不器用です。"
 
 #: ../../chapter8.rst:618
 msgid ""
@@ -839,7 +826,7 @@ msgid ""
 "loop prematurely, this approach seems the most natural structure to use. "
 "(We’ll see an example of this in a later section, “Using Structured "
 "Exits.”)"
-msgstr "あなたが早めにループを去らなかった場合にのみ特別なコードを実行したいとき、このアプローチは使うべき最も自然な構造のようです(この例については、後の「構造化出口の使用」で説明します)。"
+msgstr "あなたが途中でループを去らなかった場合だけ特別なコードを実行したいとき、このアプローチは使うべき最も自然な構造のようです(この例については、後の「構造化出口の使用」で説明します)。"
 
 #: ../../chapter8.rst:652
 msgid "Favor counts over terminators."
@@ -1038,9 +1025,7 @@ msgid ""
 "graceful. It's simpler. If you form a habit of looking for instances "
 "where you're calculating this value from that value, then usually by "
 "doing arithmetic on the logic you get the same result more cleanly."
-msgstr ""
-"``45 AND`` は ``IF`` よりも速く、明らかに優雅で簡単です。 "
-"その値からこの値を計算しているインスタンスを探す習慣がある場合は、通常、論理演算を実行することで、同じ結果がよりきれいに得られます。"
+msgstr "``45 AND`` は ``IF`` よりも速く、明らかに優雅で簡単です。 その値からこの値を計算している実体を探す習慣がある場合は、通常、論理演算を実行することで、同じ結果がよりきれいに得られます。"
 
 #: ../../chapter8.rst:822
 msgid ""
@@ -1063,7 +1048,7 @@ msgstr "これは下記と同等です。"
 
 #: ../../chapter8.rst:840
 msgid "as a single expression, not a piece-wise expression."
-msgstr "これは区分的な表現ではなく、単一の表現としてあります。"
+msgstr "断片ではなく、これで完結した単一の表現です。"
 
 #: ../../chapter8.rst:842
 msgid ""
@@ -1141,10 +1126,7 @@ msgid ""
 "a trick that is specific to a specific application, such as the order in "
 "which data are arranged in a table, the listing must clearly document the"
 " assumption used by the trick."
-msgstr ""
-"また、トリックが基になっている前提が理解または説明されていない場合、トリックは読みにくくなります。 条件文を ``AND`` "
-"に置き換える場合、このテクニックがすべてのプログラマの語彙の一部になれば、コードはもっと読みやすくなるでしょう。 "
-"データがテーブルに配置される順序など、特定のアプリケーションに固有のトリックの場合、リストにはそのトリックで使用されている前提が明確に文書化されている必要があります。"
+msgstr "また、トリックが基になっている前提が理解または説明されていない場合、トリックは読みにくくなります。 条件文を ``AND`` に置き換える場合、この技法がすべてのプログラマの常識になれば、コードはもっと読みやすくなるでしょう。 データがテーブルに配置される順序など、特定のアプリケーションに固有のトリックの場合、リストにはそのトリックで使用されている前提が明確に文書化されている必要があります。"
 
 #: ../../chapter8.rst:895
 msgid "Use ``MIN`` and ``MAX`` for clipping."
@@ -1535,7 +1517,7 @@ msgid ""
 "But if you have to interpolate, you have to calculate a function anyway. "
 "You're probably better off calculating a slightly more complicated "
 "function and avoiding the table lookup."
-msgstr "しかし、補間しなければならない場合は、とにかく関数を計算する必要があります。 もう少し複雑な関数を計算し、表検索を避けたほうがいいでしょう。"
+msgstr "しかし、補間しなければならない場合は、とにかく関数を計算する必要があります。 少々複雑でも関数を計算し、表検索を避ける方がマシでしょう。"
 
 #: ../../chapter8.rst:1268
 msgid "Redesigning"
@@ -1885,9 +1867,7 @@ msgid ""
 "(If the condition is true, we eat and run; ``EXIT`` acts like a "
 "semicolon. If the condition is false, we skip to ``THEN`` and ``FREEZE-"
 "IT``.)"
-msgstr ""
-"（条件が真であれば、``EAT-IT`` して ``EXIT`` します。 ``EXIT`` はセミコロンのように振る舞います。条件が偽であれば、"
-" ``THEN FREEZE-IT`` に遷移。）"
+msgstr "（条件が真であれば、``EAT-IT`` して ``EXIT`` します。 ``EXIT`` はセミコロンのように振る舞います。条件が偽であれば、 ``THEN FREEZE-IT`` に遷移します。）"
 
 #: ../../chapter8.rst:1497
 msgid ""
@@ -2148,7 +2128,7 @@ msgstr "好ましい実装は、ベクトル実行を使用します。 たと�
 msgid ""
 "This is better because ``TYPE`` doesn’t have to decide which code to use,"
 " it already knows."
-msgstr "``TYPE`` はどのコードを使用するかを決定する必要がないので、これはより優れています、それはすでにどうするか知ってわけです。"
+msgstr "``TYPE`` はどのコードを使用するかを決定する必要がないので、これはより優れています、それはすでにどうするか知っているわけです。"
 
 #: ../../chapter8.rst:1702
 msgid ""
@@ -2227,7 +2207,7 @@ msgstr "この規則の当然の結果として、構造化終了を実行する
 
 #: ../../chapter8.rst:1763
 msgid "(… Much later in the listing:)"
-msgstr "（…リストのかなり後の方にあります。）"
+msgstr "（…それを ``MAKE`` する部分はリストのかなり後の方にあります。）"
 
 #: ../../chapter8.rst:1769
 msgid ""
@@ -2397,10 +2377,7 @@ msgid ""
 "fifth-generation computer project on a language called PROLOG—for "
 "PROgramming in LOGic—in which one programs entirely in logic. It will be "
 "interesting to see the battle-lines forming as we ponder the question:"
-msgstr ""
-"最後の注意として、Forthの条件文の軽視は現代のほとんどの言語で共有されていません。 "
-"実際、日本人は第5世代のコンピュータプロジェクトを、ロジックでのプログラミングのためのPROLOGと呼ばれる言語に基づいています。 "
-"私達が質問を熟考する時に戦線が形成されるのを見るのは面白いでしょう。"
+msgstr "最後の注意として、Forthの条件文の軽視は現代のほとんどの言語で共有されていません。 実際、日本人は第5世代のコンピュータプロジェクトを、ロジックでのプログラミングのためのPROLOGと呼ばれる言語に基づいています。 私たちが質問を熟考する間に共同戦線が張られるのを見るのは面白そうです。"
 
 #: ../../chapter8.rst:1873
 msgid "To ``IF`` or not to ``IF``"

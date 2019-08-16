@@ -828,8 +828,8 @@ simply compute:
 
     .. code-block:: none
    
-       x = O for t < O
-       x = 1 for t &(&ge&) O
+       x = O for t ＜ O
+       x = 1 for t ≧ O
 
     This would be equivalent to
     
