@@ -14,9 +14,9 @@ and other Forth thinkers
 
 With illustrations by the author
 
-.. include:: copyright.rst
-.. include:: bio.rst
-.. include:: quotation.rst
+.. include:: copyright.txt
+.. include:: bio.txt
+.. include:: quotation.txt
 
 .. toctree::
    :maxdepth: 2

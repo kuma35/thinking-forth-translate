@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-29 09:33+0900\n"
+"POT-Creation-Date: 2019-08-20 19:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,87 +37,87 @@ msgstr ""
 msgid "With illustrations by the author"
 msgstr ""
 
-#: ../../copyright.rst:3
+#: ../../copyright.txt:3
 msgid "©1984, 1994, and 2004 by Leo Brodie, preprint version 1.0"
 msgstr ""
 
-#: ../../copyright.rst:12
+#: ../../copyright.txt:12
 msgid "**Attribution-NonCommercial-ShareAlike 2.0**"
 msgstr ""
 
-#: ../../copyright.rst:14
+#: ../../copyright.txt:14
 msgid "**You are free:**"
 msgstr ""
 
-#: ../../copyright.rst:16
+#: ../../copyright.txt:16
 msgid "to copy, distribute, display, and perform the work"
 msgstr ""
 
-#: ../../copyright.rst:18
+#: ../../copyright.txt:18
 msgid "to make derivative works"
 msgstr ""
 
-#: ../../copyright.rst:20
+#: ../../copyright.txt:20
 msgid "**Under the following conditions:**"
 msgstr ""
 
-#: ../../copyright.rst:23
+#: ../../copyright.txt:23
 msgid "|Attribution| Attribution."
 msgstr ""
 
-#: ../../copyright.rst:23
+#: ../../copyright.txt:23
 msgid "You must give the original author credit."
 msgstr ""
 
-#: ../../copyright.rst:26
+#: ../../copyright.txt:26
 msgid "|Noncommercial| Noncommercial."
 msgstr ""
 
-#: ../../copyright.rst:26
+#: ../../copyright.txt:26
 msgid "You may not use this work for commercial purposes."
 msgstr ""
 
-#: ../../copyright.rst:31
+#: ../../copyright.txt:31
 msgid "|ShareAlike| Share Alike."
 msgstr ""
 
-#: ../../copyright.rst:29
+#: ../../copyright.txt:29
 msgid "If you alter, transform, or build upon this work, you may distribute the resulting work only under a license identical to this one."
 msgstr ""
 
-#: ../../copyright.rst:42
+#: ../../copyright.txt:42
 msgid "For any reuse or distribution, you must make clear to others the license terms of this work."
 msgstr ""
 
-#: ../../copyright.rst:45
+#: ../../copyright.txt:45
 msgid "Any of these conditions can be waived if you get permission from the copyright holder."
 msgstr ""
 
-#: ../../copyright.rst:48
+#: ../../copyright.txt:48
 msgid "**Your fair use and other rights are in no way affected by the above.**"
 msgstr ""
 
-#: ../../copyright.rst:50
+#: ../../copyright.txt:50
 msgid "This is a human-readable summary of the Legal Code"
 msgstr ""
 
-#: ../../copyright.rst:52
+#: ../../copyright.txt:52
 msgid "http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode"
 msgstr ""
 
-#: ../../copyright.rst:54
+#: ../../copyright.txt:54
 msgid "You can download the electronic version from http://thinking-forth.sourceforge.net/"
 msgstr ""
 
-#: ../../bio.rst:3
+#: ../../bio.txt:3
 msgid "Leo Brodie has been thinking professionally about software development since 1980, when he joined Forth, Inc. as a technical writer. He has also served as a consultant, author, developer and program manager for companies including IBM, NCR, Digalog Corp., Microsoft, and Real Networks. He is also the owner of Punch & Brodie productions, which occasionally provides puppet characters for corporate videos and company meetings. He is married and the father of three children. He also authored *Starting Forth* (Prentice-Hall, 1981)."
 msgstr ""
 
-#: ../../quotation.rst:2
+#: ../../quotation.txt:2
 msgid "*It is impossible to disassociate language from science or science from language, because every natural science always involves three things: the sequence of phenomena on which the science is based, the abstract concepts which call these phenomena to mind, and the words in which the concepts are expressed. To call forth a concept, a word is needed; to portray a phenomenon, a concept is needed. All three mirror one and the same reality.*"
 msgstr ""
 
-#: ../../quotation.rst:10
+#: ../../quotation.txt:10
 msgid "\\-\\-\\- Antoine Lavoisier, 1789"
 msgstr ""
 
