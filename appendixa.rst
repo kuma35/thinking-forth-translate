@@ -165,7 +165,7 @@ The syntax of the ``IF THEN`` construct is as follows:
 
 .. code-block:: none
    
-   ... ( flag ) IF  KNOCK  THEN  OPEN ...
+   ... ( フラグ ) IF  KNOCK  THEN  OPEN ...
 
 ..
 

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-25 23:38+0900\n"
-"PO-Revision-Date: 2019-07-26 00:14+0900\n"
+"PO-Revision-Date: 2019-08-20 09:37+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -29,7 +29,7 @@ msgstr "辞書(dictionary)"
 
 #: ../../appendixa.rst:9
 msgid "Forth is expressed in words (and numbers) and is separated by spaces:"
-msgstr "Forthはワード(単語)(および数字)で表され、スペースで区切られています。"
+msgstr "Forthはワード(および数値)で表され、空白で区切られています。"
 
 #: ../../appendixa.rst:18
 msgid ""
@@ -60,9 +60,7 @@ msgid ""
 "Forth words can be nested like this indefinitely. Writing a Forth "
 "application consists of building increasingly powerful definitions, such "
 "as this one, in terms of previously defined ones."
-msgstr ""
-"Forthのワードは、このように無期限に入れ子にできます。 "
-"Forthアプリケーションを書くことは、以前に定義されたものに関して、このようなますます強力な定義を構築することです。"
+msgstr "Forthのワードは、このように無限に入れ子にできます。 Forthアプリケーションを書くことは、以前に定義されたものに関して、このようなますます強力な定義を構築することです。"
 
 #: ../../appendixa.rst:42
 msgid ""
@@ -146,7 +144,7 @@ msgstr "Forthでは、変数や配列は、他の多くのルーチンが必要�
 msgid ""
 "When you type a number, it goes on the stack. When you invoke a word "
 "which has numeric input, it will take it from the stack. Thus the phrase"
-msgstr "数字を入力すると、それはスタックに置かれます。 あなたが数値入力を持つワードを呼び出すとき、それはスタックからそれを取ります。 したがって以下のフレーズ"
+msgstr "数値を入力すると、それはスタックに置かれます。 あなたが数値入力のあるワードを呼び出すとき、それはスタックからそれを取ります。 したがって以下のフレーズ"
 
 #: ../../appendixa.rst:131
 msgid ""
