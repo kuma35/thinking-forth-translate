@@ -163,7 +163,7 @@ Naming Conventions
      - +name
      - +DRAW
    * - takes scaled input parameters
-     - +name
+     - \*name
      - \*DRAW
    * - **Compilation**
      -

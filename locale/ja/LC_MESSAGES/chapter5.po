@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-27 04:49+0900\n"
-"PO-Revision-Date: 2019-08-20 09:25+0900\n"
+"PO-Revision-Date: 2019-08-20 20:55+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -1055,7 +1055,7 @@ msgstr "3つの空白で字下げするのは後続の各行(入れ子になっ�
 
 #: ../../chapter5.rst:766
 msgid "1 space between words/numbers within a phrase"
-msgstr "1つの空白空けるのは、フレーズの中の、ワードや数字の間。"
+msgstr "1つの空白空けるのは、フレーズの中の、ワードや数値の間。"
 
 #: ../../chapter5.rst:767
 msgid "2 or 3 spaces between phrases"

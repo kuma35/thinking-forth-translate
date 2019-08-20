@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: 2019-07-26 22:45+0900\n"
+"PO-Revision-Date: 2019-08-20 20:49+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -39,7 +39,7 @@ msgid ""
 "Here’s how it works. ``DOER`` is a defining word that creates an entry "
 "with one cell in its parameter field. That cell contains the vector "
 "address, and is initialized to point to a no-op word called ``NOTHING``."
-msgstr "その仕組みは次のとおりです。 ``DOER`` はパラメータフィールドに一つのセルを持つエントリを作成する定義語です。 そのセルはベクタアドレスを含み、 ``NOTHING`` と呼ばれる無操作ワードを指すように初期化されます。"
+msgstr "その仕組みは次のとおりです。 ``DOER`` はパラメータフィールドに一つのセルを持つエントリを作成する定義ワードです。 そのセルはベクタアドレスを含み、 ``NOTHING`` と呼ばれる無操作ワードを指すように初期化されます。"
 
 #: ../../appendixb.rst:21
 msgid ""
@@ -48,7 +48,7 @@ msgid ""
 " stack. That’s all. Forth execution then continues with this address on "
 "the return stack, which will cause the vectored function to be performed."
 " It’s like saying (in ’83-Standard)"
-msgstr "``DOER`` の子はその ``DOES>`` の ``DOER`` コードを実行します。これは2つのことだけを行います。つまり、ベクトルアドレスを取得してリターンスタックに配置する。 それで全部です。 その後、Forthの実行(execution)がリターンスタックのこのアドレスで続行されます。これにより、ベクトル機能が実行されます。(FORTH-83規格に関して)言いたいことがあります。"
+msgstr "``DOER`` の子はその ``DOES>`` の ``DOER`` コードを実行します。これは2つのことだけを行います。つまり、ベクトルアドレスを取得してリターンスタックに配置する。 それで全部です。 その後、Forthの実行(execution)がリターンスタックのこのアドレスで続行されます。これにより、ベクトル機能が実行されます。FORTH-83規格に関してはそれだけです。"
 
 #: ../../appendixb.rst:34
 msgid ""
@@ -105,7 +105,7 @@ msgstr "DUP 2+"
 msgid ""
 "Gets the address of the second cell after ``(MAKE)`` , where the address "
 "of ``JOE`` is."
-msgstr "``(MAKE)`` の後の2番目のセルのアドレスを取得します。ここで、 ``JOE`` のアドレスは…"
+msgstr "``(MAKE)`` の後の2番目のセルのアドレスを取得します。そこには ``JOE`` のアドレスが格納されています。"
 
 #: ../../appendixb.rst:83
 msgid ""
@@ -217,13 +217,13 @@ msgid ""
 "In Laboratory Microsystems PC/FORTH 2.0, the ``UNSMUDGE`` on line 9 "
 "handles the problem. This problem does not arise with the "
 "Laxen/Perry/Harris model."
-msgstr "Laboratory Microsystems PC / FORTH 2.0では、9行目の ``UNSMUDGE`` が問題を処理します。 この問題は、Laxen/Perry/ Harrisモデルでは発生しません。"
+msgstr "Laboratory Microsystems PC / FORTH 2.0では、9行目の ``UNSMUDGE`` が問題を処理します。 この問題は、Laxen/Perry/Harrisモデルでは発生しません。"
 
 #: ../../appendixb.rst:184
 msgid ""
 "The final screen is an example of using ``DOER/MAKE``. After loading the "
 "block, enter"
-msgstr "最後のスクリーン ``DOER/MAKE`` を使った例です。 ブロックをロードしたら、以下の通り入力します。"
+msgstr "最後のスクリーンは ``DOER/MAKE`` を使った例です。 ブロックをロードしたら、以下の通り入力します。"
 
 #: ../../appendixb.rst:193
 msgid "then enter"

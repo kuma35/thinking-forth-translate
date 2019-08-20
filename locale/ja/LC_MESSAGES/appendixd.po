@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: 2019-07-26 23:13+0900\n"
+"PO-Revision-Date: 2019-08-20 20:51+0900\n"
 "Last-Translator: kuma35\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -46,7 +46,7 @@ msgstr "``RAM-ALLOT`` と ``THERE`` というワードの問題は、それら�
 
 #: ../../appendixd.rst:21
 msgid "Our word’s syntax will be"
-msgstr "私たちのワードのの構文は次のようになるでしょう。"
+msgstr "私たちのワードの構文は次のようになるでしょう。"
 
 #: ../../appendixd.rst:30
 msgid ""

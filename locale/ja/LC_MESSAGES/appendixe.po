@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-27 11:18+0900\n"
-"PO-Revision-Date: 2019-08-20 09:25+0900\n"
+"POT-Creation-Date: 2019-08-20 21:00+0900\n"
+"PO-Revision-Date: 2019-08-20 21:16+0900\n"
 "Last-Translator: kuma35\n"
 "Language: ja_JP\n"
 "Language-Team: Japanese\n"
@@ -27,7 +27,7 @@ msgstr "付録E Forthスタイル規則の要約"
 msgid ""
 "The contents of this Appendix are in the public domain. We encourage "
 "publication without restriction, provided that you credit the source."
-msgstr "この付録の内容はパブリックドメインです。 あなたが出典をクレジットするならば、我々は制限なしに出版を奨励します。"
+msgstr "この付録の内容はパブリックドメインです。 あなたが出典をクレジットするならば、私たちは制限なしに出版を奨励します。"
 
 #: ../../appendixe.rst:11
 msgid "Spacing and Indentation Guidelines"
@@ -59,7 +59,7 @@ msgstr "3つの空白で字下げするのは後続の各行(入れ子になっ�
 
 #: ../../appendixe.rst:23
 msgid "1 space between words/numbers within a phrase"
-msgstr "1つの空白空けるのは、フレーズの中の、ワードや数字の間。"
+msgstr "1つの空白空けるのは、フレーズの中の、ワードや数値の間。"
 
 #: ../../appendixe.rst:25
 msgid "2 or 3 spaces between phrases"
@@ -367,7 +367,7 @@ msgstr "2\\*"
 msgid "takes relative input parameters"
 msgstr "増分入力パラメータを取る"
 
-#: ../../appendixe.rst:163 ../../appendixe.rst:166 ../../appendixe.rst:295
+#: ../../appendixe.rst:163 ../../appendixe.rst:295
 msgid "+name"
 msgstr "+name"
 
@@ -378,6 +378,10 @@ msgstr "+DRAW"
 #: ../../appendixe.rst:165
 msgid "takes scaled input parameters"
 msgstr "乗算入力パラメータを取る"
+
+#: ../../appendixe.rst:166
+msgid "\\*name"
+msgstr "\\*name"
 
 #: ../../appendixe.rst:167
 msgid "\\*DRAW"
@@ -869,6 +873,7 @@ msgstr "\\-BLINKING"
 msgid "**Memory**"
 msgstr "**メモリ**"
 
+# 逆な気がしてならないが原文このままである。
 #: ../../appendixe.rst:307
 msgid "save value of"
 msgstr "値を保存(save value of)"
@@ -881,6 +886,7 @@ msgstr "@name"
 msgid "@CURSOR"
 msgstr "@CURSOR"
 
+# 逆な気がしてならないが原文このままである。
 #: ../../appendixe.rst:310
 msgid "restore value of"
 msgstr "値を復元(restore value of)"
@@ -1115,7 +1121,7 @@ msgstr "**テキスト**"
 
 #: ../../appendixe.rst:383
 msgid "string follows delimited by \\\""
-msgstr "``\"`` で区切られた文字列が続く"
+msgstr "(ワード区切の空白に続いて)文字列が続き ``\"`` で終端する"
 
 #: ../../appendixe.rst:384
 msgid "name\\\""
@@ -1383,5 +1389,7 @@ msgid ""
 "and 3 between the comment and the definition. A more liberal technique "
 "uses 3 spaces before and after the comment. Whatever you choose, be "
 "consistent."
-msgstr "よく見られる代替手段では、名前とコメントの間に1空白、コメントと定義の間に3空白が必要です。 より自由な手法では、コメントの前後に3つの空白を使用します。 あなたは何を選んでも構いませんが、一貫性を保ってください。"
+msgstr ""
+"よく見られる代替手段では、名前とコメントの間に1空白、コメントと定義の間に3空白が必要です。 "
+"より自由な手法では、コメントの前後に3つの空白を使用します。 あなたは何を選んでも構いませんが、一貫性を保ってください。"
 
