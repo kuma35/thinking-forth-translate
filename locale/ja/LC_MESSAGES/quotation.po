@@ -4,20 +4,22 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-24 20:17+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2019-08-20 08:30+0900\n"
+"Last-Translator: kuma35\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
 
+# 邦訳名：化学のはじめ　だそうなので、どこかに訳がありそうな気もするが
+# 入手できなかったので訳出した。
 #: ../../quotation.rst:2
 msgid ""
 "*It is impossible to disassociate language from science or science from "
@@ -27,9 +29,9 @@ msgid ""
 "concepts are expressed. To call forth a concept, a word is needed; to "
 "portray a phenomenon, a concept is needed. All three mirror one and the "
 "same reality.*"
-msgstr ""
+msgstr "*全ての科学は常3つのこと、つまり、科学が基づいている一連の現象、その現象を抽象化した概念、そしてその概念を表現する言葉を含んでいるので、科学から言語へ、また言語から科学への結びつきを解除することは不可能です。概念を呼び出すには言葉が必要です。現象を表現するためには概念が必要です。3つとも同じ現実を写す鏡です。*"
 
 #: ../../quotation.rst:10
 msgid "\\-\\-\\- Antoine Lavoisier, 1789"
-msgstr ""
+msgstr "― アントワーヌ・ラヴォアジエ 1789年"
 
