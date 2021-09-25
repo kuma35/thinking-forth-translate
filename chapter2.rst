@@ -74,9 +74,9 @@ The iterative approach was explained eloquently by Kim Harris
 
     .. figure:: fig2-1.png
        :name: fig2-1
-       :alt: The iterative approach to the software development cycle.
 
        The iterative approach to the software development cycle, from "The Forth Philosophy", by Kim Harris, **Dr. Dobb's Journal.**
+
 
     The **goal** of the method is to produce a model which accurately
     predicts all observable behavior of the natural system.
@@ -467,11 +467,11 @@ constraints.
 
 .. figure:: img2-047.png
    :name: img2-047
-   :alt: Refining the conceptual model to meet requirements and constraints.
 
    Refining the conceptual model to meet requirements and constraints.
 
 ..
+
 
 If the requirements definition is for “something to stand on to paint
 the ceiling,” then a description of the conceptual model is “a device
@@ -508,11 +508,8 @@ until you can weave a pattern that fits the bill.
 
 .. figure:: fig2-2.png
    :name: fig2-2
-   :alt: An iterative approach to analysis.
 
    An iterative approach to analysis.
-
-..
 
 :numref:`fig2-2`  illustrates the iterative approach to the
 analysis phase. The final step is one of the most important: show the
@@ -624,11 +621,11 @@ diagram” (DFD), which Teleska mentioned.
 
 .. figure:: fig2-3.png
    :name: fig2-3
-   :alt: A data-flow diagram.
 
    A data-flow diagram.
 
 ..
+
 
 A data-flow diagram, such as the one depicted in
 :numref:`fig2-3` , emphasizes what happens to items of data as
@@ -663,7 +660,7 @@ language.
 For anyone with a few days’ familiarity with Forth, simple definitions
 convey at least as much meaning as the diagrams:
 
-.. code-block:: none
+.. code-block:: forth
    
    : REQUEST  ( quantity part# -- )
       ON-HAND?  IF  TRANSFER  ELSE  REORDER  THEN ;
@@ -681,7 +678,7 @@ indicate the two items of data needed to initiate the process.
 (If I were designing this application, I’d suggest that the user
 interface be a word called ``NEED``, which has this syntax:
 
-.. code-block:: none
+.. code-block:: forth
    
    NEED 50 AXLES
 
@@ -844,11 +841,11 @@ The Decision Tree
 
 .. figure:: fig2-4.png
    :name: fig2-4
-   :alt: Example of a decision tree.
 
    Example of a decision tree.
 
 ..
+
 
 :numref:`fig2-4`  illustrates the telephone rate rules by means
 of a decision tree. The decision tree is the easiest method of any to
@@ -872,11 +869,11 @@ rules in decision-table form.
 
 .. figure:: fig2-5.png
    :name: fig2-5
-   :alt: The decision table.
 
    The decision table.
 
 ..
+
 
 In :numref:`fig2-5`  there are three dimensions: the rate
 discount, whether an operator intervenes, and initial minute vs.
@@ -927,11 +924,11 @@ shown in :numref:`fig2-6` .
 
 .. figure:: fig2-6.png
    :name: fig2-6
-   :alt: A simplified decision table.
 
    A simplified decision table.
 
 ..
+
 
 It’s easy to get so enamored of one’s analytic tools that one forgets
 about the problem. The analyst must do more than carry out all
@@ -955,17 +952,17 @@ as in :numref:`fig2-7` ?
 
 .. figure:: fig2-7.png
    :name: fig2-7
-   :alt: The sectional decision table.
 
    The sectional decision table.
 
 ..
 
+
 Now we’re getting the answer through a combination of table look-up and
 calculation. The formula for the per-minute charge can be expressed as a
 pseudoForth definition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PER-MINUTE-CHARGE ( -- per-minute-charge)
            CONNECT-CHARGE  MILEAGE-CHARGE  + ;
@@ -981,7 +978,7 @@ the operator charge is not a function of any of the three dimensions.
 It’s more appropriately expressed as a “logical calculation”; that is, a
 function that combines logic with arithmetic:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?ASSISTANCE
       ( direct-dial-charge -- total-charge)
@@ -993,11 +990,11 @@ function that combines logic with arithmetic:
 
 .. figure:: fig2-8.png
    :name: fig2-8
-   :alt: The decision table without operator involvement depicted.
 
    The decision table without operator involvement depicted.
 
 ..
+
 
 This leaves us with the simplified table shown in
 :numref:`fig2-8` , and an increased reliance on expressing
@@ -1005,7 +1002,7 @@ calculations. Now we’re getting somewhere.
 
 Let’s go back to our definition of ``PER-MINUTE-CHARGE``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PER-MINUTE-CHARGE ( -- per-minute-charge)
       CONNECT-CHARGE  MILEAGE-CHARGE  + ;
@@ -1028,7 +1025,7 @@ the full, lower, or lowest rates.
 
 Now we can define the pair of words to replace ``PER-MINUTE-CHARGE``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : FIRST  ( -- charge)
      1MINUTE  ?ASSISTANCE   MILEAGE-CHARGE + ;
@@ -1042,7 +1039,7 @@ What is the rule for the mileage charge? Very simple. It is the rate
 assume we can define the word ``MILEAGE-RATE``, which will fetch the mileage
 rate from the table:
 
-.. code-block:: none
+.. code-block:: forth
    
    : MILEAGE-CHARGE  ( -- charge)
       #MILES @  MILEAGE-RATE * ;
@@ -1052,7 +1049,7 @@ rate from the table:
 Finally, if we know the total number of minutes for a call, we can now
 calculate the total direct-dial charge:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TOTAL   ( -- total-charge)
       FIRST                        ( first minute rate)
@@ -1093,11 +1090,11 @@ efficiently.
 
 .. figure:: img2-060.png
    :name: img2-060
-   :alt: Given two adequate solutions, the correct one is the simpler.
 
    Given two adequate solutions, the correct one is the simpler.
 
 ..
+
 
 Certain constraints will also affect the conceptual model of the data
 structure. In the library index example, you need to know not only
@@ -1211,11 +1208,11 @@ Moore continues:
 
 .. figure:: img2-063.png
    :name: img2-063
-   :alt: An overgeneralized solution.
 
    An overgeneralized solution.
 
 ..
+
 
 Moore continues:
     Sometimes the possibilities for simplification aren't immediately
@@ -1320,11 +1317,11 @@ probability:
 
 .. figure:: img2-066.png
    :name: img2-066
-   :alt: Conventional wisdom reveres complexity.
 
    Conventional wisdom reveres complexity.
 
 ..
+
 
 .. hint::
 

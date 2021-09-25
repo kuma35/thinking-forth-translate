@@ -107,9 +107,9 @@ though the programmer had written them out in full.
 
 .. figure:: img1-004.png
    :name: img1-004
-   :alt: So then I typed GOTO 500---and here I am!
 
    So then I typed GOTO 500---and here I am!
+
 
 ..
 
@@ -175,7 +175,6 @@ like the jumble you see in  :numref:`fig1-1` .
 
 .. figure:: fig1-1.png
    :name: fig1-1
-   :alt: Unstructured code using jumps or "GOTOs."
 
    Unstructured code using jumps or "GOTOs."
 
@@ -219,11 +218,11 @@ be shown at this level.
 
 .. figure:: fig1-2.png
    :name: fig1-2
-   :alt: Design for a structured program
 
    Design for a structured program
 
 ..
+
 
 A branching decision occurs in this module to choose between the “cold
 cereal” module and the “eggs” module, but control flow stays within the
@@ -259,11 +258,11 @@ module by renting a new apartment every three months.)
 
 .. figure:: fig1-3.png
    :name: fig1-3
-   :alt: Structured programming with a non-structured language
 
    Structured programming with a non-structured language
 
 ..
+
 
 Structured programming was originally conceived as a design approach.
 Modules were imaginary entities that existed in the mind of the
@@ -283,11 +282,12 @@ to teach the principles of structured programming to his students.
 
 .. figure:: fig1-4.png
    :name: fig1-4
-   :alt: Using a structured language.
+
 
    Using a structured language.
 
 ..
+
 
 :numref:`fig1-4`  shows how this type of language would allow
 “Make Breakfast” to be written.
@@ -326,11 +326,11 @@ writing code that cannot be used.
 
 .. figure:: img1-010.png
    :name: img1-010
-   :alt: Software patches are ugly and conceal structural weaknesses.
 
    Software patches are ugly and conceal structural weaknesses.
 
 ..
+
 
 Subroutines
 -----------
@@ -392,11 +392,12 @@ program ( :numref:`fig1-5` ).
 
 .. figure:: fig1-5.png
    :name: fig1-5
-   :alt: A main program and a subroutine in memory.
+
 
    A main program and a subroutine in memory.
 
 ..
+
 
 Over the years computer scientists have become more forceful in favoring
 the use of many small subroutines over long-winded, continuous programs.
@@ -455,11 +456,11 @@ level.
 
 .. figure:: img1-013.png
    :name: img1-013
-   :alt: Tobias, I think you\'ve carried the successive refinement of that module far enough.
 
    Tobias, I think you\'ve carried the successive refinement of that module far enough.
 
 ..
+
 
 Structured Design
 -----------------
@@ -598,11 +599,11 @@ chart and an input-output chart.
 
 .. figure:: fig1-6.png
    :name: fig1-6
-   :alt: The form of a structured chart, from "Structured Design," **IBM Systems Journal.**
 
    The form of a structured chart, from "Structured Design," **IBM Systems Journal.**
 
 ..
+
 
 :numref:`fig1-6`  shows these two parts. The main program,
 called DOIT, consists of three subordinate modules, which in turn invoke
@@ -753,7 +754,7 @@ traditional methodologies.
 
 Here\’s an example of Forth code;
 
-.. code-block:: none
+.. code-block:: forth
    
    : BREAKFAST
       HURRIED?  IF  CEREAL  ELSE  EGGS  THEN CLEAN ;
@@ -804,7 +805,7 @@ words ``PUSH`` and ``POP`` do not exist in high-level Forth.
 
 Thus we can write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DOIT
        GETC  TRANSFORM-TO-D  PUT-D ;
@@ -838,7 +839,7 @@ no matter how simple each of them may be.
 
 A line from a typical Forth application might read:
 
-.. code-block:: none
+.. code-block:: forth
    
    20 ROTATE LEFT TURRET
 
@@ -885,11 +886,12 @@ problem-oriented words such as ``CEREAL`` and ``EGGS`` .
 
 .. figure:: fig1-7.png
    :name: fig1-7
-   :alt: Structured design vs. component design.
+
 
    Structured design vs. component design.
 
 ..
+
 
 :numref:`fig1-7`  contrasts the results of structured design
 with the results of designing by components. Instead of *modules* called
@@ -929,11 +931,11 @@ visible lexicon. We’ll call the supporting definitions “internal” words.
 
 .. figure:: fig1-8.png
    :name: fig1-8
-   :alt: A lexicon describes a component.
 
    A lexicon describes a component.
 
 ..
+
 
 The lexicon provides the logical equivalents to the data objects and
 algorithms in the form of names. The lexicon veils the component’s data
@@ -947,11 +949,11 @@ one component becomes the “how” of a higher component.
 
 .. figure:: fig1-9.png
    :name: fig1-9
-   :alt: The entire application consists of components.
 
    The entire application consists of components.
 
 ..
+
 
 Written in Forth, an entire application consists of nothing but
 components.  :numref:`fig1-9`  show show a robotics application
@@ -986,7 +988,7 @@ This availability of commands also makes the process of testing and
 debugging a whole lot easier. Because Forth is interactive, the
 programmer can type and test the primitive commands, such as
 
-.. code-block:: none
+.. code-block:: forth
    
    RIGHT SHOULDER 20 PIVOT
 
@@ -994,7 +996,7 @@ programmer can type and test the primitive commands, such as
 
 from the “outside” as easily as the more powerful ones like
 
-.. code-block:: none
+.. code-block:: forth
    
    LIFT COFFEE-POT
 
@@ -1059,7 +1061,7 @@ of previously-defined components. This feature is direct access memory.
 Suppose we define a variable called ``APPLES``, like
 this:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE APPLES
 
@@ -1068,7 +1070,7 @@ this:
 We can store a number into this variable to indicate how many apples we
 currently have:
 
-.. code-block:: none
+.. code-block:: forth
    
    20 APPLES !
 
@@ -1076,7 +1078,7 @@ currently have:
 
 We can display the contents of the variable(type ``APPLES ?`` [ :kbd:`Enter` ]):
 
-.. code-block:: none
+.. code-block:: forth
    
    APPLES ? 20 ok
 
@@ -1084,7 +1086,7 @@ We can display the contents of the variable(type ``APPLES ?`` [ :kbd:`Enter` ]):
 
 We can up the count by one:
 
-.. code-block:: none
+.. code-block:: forth
    
    1 APPLES +!
 
@@ -1113,7 +1115,7 @@ supply two different addresses depending on which kind of apple we’re
 currently talking about. So we define a more complicated version of
 ``APPLES`` as follows:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE COLOR  ( pointer to current tally)
    VARIABLE REDS  ( tally of red apples)
@@ -1126,11 +1128,11 @@ currently talking about. So we define a more complicated version of
 
 .. figure:: fig1-10.png
    :name: fig1-10
-   :alt: Changing the indirect pointer.
 
    Changing the indirect pointer.
 
 ..
+
 
 Here we’ve redefined ``APPLES.`` Now it fetches the
 contents of a variable called ``COLOR``. ``COLOR`` is a pointer, either to the
@@ -1144,7 +1146,7 @@ we say ``GREEN``, we can use it to refer to green apples
 We didn’t need to change the syntax of any existing code that uses
 ``APPLES``. We can still say
 
-.. code-block:: none
+.. code-block:: forth
    
    20 APPLES !
 
@@ -1152,7 +1154,7 @@ We didn’t need to change the syntax of any existing code that uses
 
 and
 
-.. code-block:: none
+.. code-block:: forth
    
    1 APPLES +!
 
@@ -1183,7 +1185,7 @@ obvious action is a “verb.”
 Words such as ``RED`` and ``GREEN`` in our example can only be called
 “adjectives” since they modify the function of ``APPLES``. The phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    RED APPLES ?
 
@@ -1191,7 +1193,7 @@ Words such as ``RED`` and ``GREEN`` in our example can only be called
 
 is different from
 
-.. code-block:: none
+.. code-block:: forth
    
    GREEN APPLES ?
 
@@ -1218,11 +1220,11 @@ Before we answer, let’s explore the advantages of the Forth approach.
 
 .. figure:: img1-028.png
    :name: img1-028
-   :alt: Two points of view.
 
    Two points of view.
 
 ..
+
 
 Here\'s what **Charles Moore**, the inventor of Forth, has to say:
     You define each word so that the computer knows what it means. The way
@@ -1283,11 +1285,11 @@ researcher.”
 
 .. figure:: img1-030.png
    :name: img1-030
-   :alt: Two solutions to the problem of security.
 
    Two solutions to the problem of security.
 
 ..
+
 
 For those purists who believe Forth isn’t fit to be called a high-level
 language, Forth makes matters even worse. While strong syntax checking
@@ -1409,11 +1411,11 @@ words that need to be coded in assembler.
 
 .. figure:: img1-033.png
    :name: img1-033
-   :alt: The best top-down designs of mice and young men.
 
    The best top-down designs of mice and young men.
 
 ..
+
 
 Third, Forth applications tend to be better designed than those written
 entirely in assembler. Forth programmers take advantage of the

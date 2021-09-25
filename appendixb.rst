@@ -25,7 +25,7 @@ return stack. That’s all. Forth execution then continues with this
 address on the return stack, which will cause the vectored function to
 be performed. It’s like saying (in ’83-Standard)
 
-.. code-block:: none
+.. code-block:: forth
    
    ' NOTHING >BODY >R <return>
 
@@ -39,7 +39,7 @@ Here’s an illustration of the dictionary entry created when we enter
 
 Now suppose we define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TEST   MAKE JOE  CR ;
 
@@ -56,7 +56,7 @@ Let’s look at the code for
 inside a colon definition, ``STATE`` will be true, and
 we’ll execute the phrase:
 
-.. code-block:: none
+.. code-block:: forth
    
    COMPILE (MAKE)  HERE MARKER !  0 ,
 
@@ -107,7 +107,7 @@ That’s the basic idea. But what about that cell containing zero? That’s
 for the use of ``;AND``. Suppose we changed TEST to
 read:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TEST   MAKE JOE  CR ;AND SPACE ;
 
@@ -121,7 +121,7 @@ right now. Here’s what this new version of TEST will look like:
 
 Here’s the definition of ``;AND``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ;AND   COMPILE  EXIT  HERE MARKER @ ! ;   IMMEDIATE
 
@@ -139,7 +139,7 @@ location of the second string of code beginning with
 Now ``(MAKE)`` has a pointer to the place to resume
 execution. The phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    IF >R THEN
 
@@ -159,7 +159,7 @@ One final note: on some systems you may encounter a problem. If you use
 forward reference, you may not be able to find the most recently defined
 word. For instance, if you have:
 
-.. code-block:: none
+.. code-block:: forth
    
    : REFRAIN   DO-DAH  DO-DAH ;
    MAKE SONG  CHORUS  REFRAIN ;
@@ -171,7 +171,7 @@ is due to the placement of ``SMUDGE`` . As a solution, try rearranging the
 order of definitions or, if necessary, put ``MAKE`` code inside a definition
 which you then execute:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SETUP   MAKE SONG  CHORUS  REFRAIN ;   SETUP
 
@@ -184,7 +184,7 @@ model.
 The final screen is an example of using ``DOER/MAKE``.
 After loading the block, enter
 
-.. code-block:: none
+.. code-block:: forth
    
    RECITAL
 
@@ -192,7 +192,7 @@ After loading the block, enter
 
 then enter
 
-.. code-block:: none
+.. code-block:: forth
    
    WHY?
 
@@ -201,7 +201,7 @@ then enter
 followed by return, as many times as you like (you’ll get a different
 reason each time).
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    ( DOER/MAKE   Shadow screen                      LPB 12/05/83 )
@@ -217,7 +217,7 @@ reason each time).
    ;AND      Allows continuation of the "making" definition
    UNDO      Usage:  UNDO doer-name ; makes it safe to execute
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    \ DOER/MAKE   FORTH-83 Laxen/Perry/Harris model  LPB 12/05/83 
@@ -235,7 +235,7 @@ reason each time).
    \
    \ The code in this screen is in the public domain.
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    ( DOER/MAKE   FORTH-83 Lab. Micro PC/FORTH 2.0   LPB 12/05/83 )
@@ -253,7 +253,7 @@ reason each time).
    \
    ( The code in this screen is in the public domain.)
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    ( DOER/MAKE   FIG model                          LPB 12/05/83 )
@@ -272,7 +272,7 @@ reason each time).
    ;S
    The code in this screen is in the public domain.
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    ( DOER/MAKE   79-Standard  MVP FORTH             LPB 12/05/83 )
@@ -290,7 +290,7 @@ reason each time).
    \
    ( The code in this screen is in the public domain.)
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    ( TODDLER: Example of DOER/MAKE                      12/01/83 )

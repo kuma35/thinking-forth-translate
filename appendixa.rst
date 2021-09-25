@@ -9,7 +9,7 @@ The Dictionary
 Forth is expressed in
 words (and numbers) and is separated by spaces:
 
-.. code-block:: none
+.. code-block:: forth
    
    HAND OPEN  ARM LOWER  HAND CLOSE  ARM RAISE 
 
@@ -25,7 +25,7 @@ dictionary. One defining word is ``:`` (pronounced
 “colon”), which is used to define a new word in terms of previously
 defined words. Here is how one might define a new word called LIFT:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LIFT   HAND OPEN  ARM LOWER  HAND CLOSE  ARM RAISE ;
 
@@ -54,7 +54,7 @@ Still another defining
 word is ``CONSTANT``,
 which is used like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    17 CONSTANT SEVENTEEN
 
@@ -66,7 +66,7 @@ The defining word
 ``VARIABLE`` creates a location for temporary
 data. ``VARIABLE`` is used like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE BANANAS
 
@@ -77,7 +77,7 @@ This reserves a location which is identified by the name ``BANANAS``.
 Fetching the contents of this location is the job of the word
 ``@`` (pronounced “fetch”). For instance,
 
-.. code-block:: none
+.. code-block:: forth
    
    BANANAS @
 
@@ -87,7 +87,7 @@ fetches the contents of the variable ``BANANAS``. Its counterpart is
 ``!`` (pronounced “store”), which stores a value into
 the location, as in:
 
-.. code-block:: none
+.. code-block:: forth
    
    100 BANANAS !
 
@@ -96,7 +96,7 @@ the location, as in:
 Forth also provides a word to increment the current value by the given
 value; for instance, the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    2 BANANAS +!
 
@@ -122,7 +122,7 @@ much simpler mechanism: the data stack.
 When you type a number, it goes on the stack. When you invoke a word
 which has numeric input, it will take it from the stack. Thus the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    17 SPACES
 
@@ -134,7 +134,7 @@ the binary value 17 onto the stack; the word
 
 A constant also pushes its value onto the stack; thus the phrase:
 
-.. code-block:: none
+.. code-block:: forth
    
    SEVENTEEN SPACES
 
@@ -163,7 +163,7 @@ structured, GOTO-less programming.
 
 The syntax of the ``IF THEN`` construct is as follows:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... ( フラグ ) IF  KNOCK  THEN  OPEN ...
 
@@ -181,7 +181,7 @@ will be performed.
 The word ``ELSE`` allows an
 alternate phrase to be executed in the false case. In the phrase:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( flag ) IF KNOCK  ELSE  RING  THEN  OPEN ...
 
@@ -194,7 +194,7 @@ with ``OPEN``.
 Forth also provides for indexed loops in the
 form
 
-.. code-block:: none
+.. code-block:: forth
    
    ( limit) ( index) DO ... LOOP
 
@@ -202,7 +202,7 @@ form
 
 and indefinite loops in the forms:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... BEGIN  ...  ( flag) UNTIL
 
@@ -210,7 +210,7 @@ and indefinite loops in the forms:
 
 and
 
-.. code-block:: none
+.. code-block:: forth
    
    ... BEGIN  ...  ( flag) WHILE ... REPEAT ;
 

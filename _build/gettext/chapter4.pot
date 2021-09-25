@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 05:55+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "More complicated problems present many possible ways to go with the incoming data. How do you know which route will take you closer to the solution? You don’t. This class of problem is best solved by working backward ( :numref:`fig4-1` )."
 msgstr ""
 
-#: ../../chapter4.rst:133
+#: ../../chapter4.rst:132
 msgid "A problem that is easier to solve backward than forward."
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Belief is a necessary ingredient for successfully working backward. We’ll illustrate with a famous mathematical problem. Suppose we have two containers. The containers have no graduation marks, but one holds nine gallons and the other holds four gallons. Our task is to measure out exactly six gallons of water from the nearby stream in one of the containers ( :numref:`fig4-2` )."
 msgstr ""
 
-#: ../../chapter4.rst:152
+#: ../../chapter4.rst:151
 msgid "Two containers."
 msgstr ""
 
@@ -196,11 +196,11 @@ msgstr ""
 msgid "How can we pour off three gallons into the small container? If there had already been one gallon in the small container! Suddenly we’re over the hump. The simple question now is, how do we get one gallon in the small container? We must have started with a full nine-gallon container, poured off four gallons twice, leaving one gallon. Then we transferred the one gallon to the small container."
 msgstr ""
 
-#: ../../chapter4.rst:204
+#: ../../chapter4.rst:203
 msgid "Achieving the end result."
 msgstr ""
 
-#: ../../chapter4.rst:210
+#: ../../chapter4.rst:209
 msgid "Intent on a complicated problem."
 msgstr ""
 
@@ -244,7 +244,7 @@ msgstr ""
 msgid "The literature of problem solving often employs the example of the nine dots. It stumped me, so I’ll pass it along. We have nine dots arranged as shown in  :numref:`fig4-4` . The object is to draw straight lines that touch or pass through all nine dots, without lifting the pen off the paper. The constraint is that you must touch all nine dots with only four lines."
 msgstr ""
 
-#: ../../chapter4.rst:261
+#: ../../chapter4.rst:260
 msgid "The nine dots problem."
 msgstr ""
 
@@ -252,7 +252,7 @@ msgstr ""
 msgid "You can sit a good while and do no better than the almost-right :numref:`fig4-5` . If you concentrate really hard, you may eventually conclude that the problem is a trick—there’s no solution."
 msgstr ""
 
-#: ../../chapter4.rst:274
+#: ../../chapter4.rst:273
 msgid "Not quite right."
 msgstr ""
 
@@ -312,7 +312,7 @@ msgstr ""
 msgid "Don’t invest too much effort in your first solution without asking yourself for a second opinion."
 msgstr ""
 
-#: ../../chapter4.rst:340
+#: ../../chapter4.rst:339
 msgid "\"I\\'m not just sleeping. I\\'m using my neocortex.\""
 msgstr ""
 
@@ -572,7 +572,7 @@ msgstr ""
 msgid "To illustrate, suppose we have a table of eight-byte records. The first record occupies the first eight bytes of the table. To compute its starting address, we add “0” to ``TABLE``. To compute the starting address of the “second” record, we add “8” to ``TABLE``."
 msgstr ""
 
-#: ../../chapter4.rst:653
+#: ../../chapter4.rst:652
 msgid "A table of 8-byte records."
 msgstr ""
 
@@ -708,7 +708,7 @@ msgstr ""
 msgid "This rule is a corollary to “Avoid expectations.” It’s one of Forth’s philosophical quirks to let words do their own work. Witness the Forth compiler (the function that compiles colon definitions), caricatured in  :numref:`fig4-7` . It has very few rules:"
 msgstr ""
 
-#: ../../chapter4.rst:796
+#: ../../chapter4.rst:795
 msgid "The traditional compiler vs. the Forth compiler."
 msgstr ""
 
@@ -1533,7 +1533,7 @@ msgstr ""
 msgid "It’s like building an arm with three hands. We can attach it to the ``ONES`` column, as in  :numref:`fig4-8` a, or we can attach it to the tens’ column, as in  :numref:`fig4-8` b, or to any power of ten."
 msgstr ""
 
-#: ../../chapter4.rst:1594
+#: ../../chapter4.rst:1593
 msgid "A mechanical representation: accessing the data structure."
 msgstr ""
 
@@ -1700,4 +1700,3 @@ msgstr ""
 #: ../../chapter4.rst:1830
 msgid "Michael Stolowitz, \"A Compiler for Programmable Logic in FORTH,\" 1982 **FORML Conference Proceedings** , p.257."
 msgstr ""
-

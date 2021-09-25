@@ -13,7 +13,7 @@ From Chapter Four
 A definition of ``ASCII``
 that will work in ’83 Standard is:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ASCII  ( -- c)  \  Compile:  c  ( -- )
    \ Interpret:   c   ( -- c)
@@ -28,7 +28,7 @@ From Chapter Five
 The word ``\``
 can be defined as:
 
-.. code-block:: none
+.. code-block:: forth
    
    : \  ( skip rest of line)
         >IN @  64 / 1+  64 *  >IN ! ; IMMEDIATE
@@ -38,7 +38,7 @@ can be defined as:
 If you decide not to use ``EXIT`` to terminate a
 screen, you can define ``\S`` as:
 
-.. code-block:: none
+.. code-block:: forth
    
    : \S   1024 >IN ! ;
 
@@ -47,7 +47,7 @@ screen, you can define ``\S`` as:
 The word ``FH`` can be
 defined simply as:
 
-.. code-block:: none
+.. code-block:: forth
    
    : FH   \   ( offset -- offset-block)   "from here"
        BLK @ + ;
@@ -56,7 +56,7 @@ defined simply as:
 
 This factoring allows you to use ``FH`` in many ways, e.g.:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TEST   [ 1 FH ] LITERAL LOAD ;
 
@@ -64,7 +64,7 @@ This factoring allows you to use ``FH`` in many ways, e.g.:
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    : SEE   [ 2 FH ] LITERAL LIST ;
 
@@ -74,7 +74,7 @@ A slightly more complicated version of ``FH`` also lets you edit or load a
 screen with a phrase such as “14 FH LIST,” relative to the screen that
 you just listed ``(SCR)``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : FH   \   ( offset -- offset-block)   "from here"
         BLK @  ?DUP 0= IF  SCR @  THEN  + ;
@@ -84,7 +84,7 @@ you just listed ``(SCR)``:
 ``BL`` is a
 simple constant:
 
-.. code-block:: none
+.. code-block:: forth
    
    32 CONSTANT BL
 
@@ -94,7 +94,7 @@ simple constant:
 ``FALSE`` can be defined
 as:
 
-.. code-block:: none
+.. code-block:: forth
    
    0 CONSTANT FALSE
    -1 CONSTANT TRUE
@@ -109,7 +109,7 @@ however, “true” is indicated with hex FFFF, which is the signed number -1 (a
 ``WITHIN`` can be defined
 in high level like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : WITHIN  ( n lo hi+1 -- ?)
         >R  1- OVER <  SWAP R>  < AND ;
@@ -118,7 +118,7 @@ in high level like this:
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    : WITHIN ( n lo hi+1 -- ?)
       OVER -  >R - R> U< ;
@@ -135,7 +135,7 @@ on the return stack (the index and the limit),
 ``LEAP`` must drop both of them plus one more
 return-stack item to exit:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LEAP   R> R> 2DROP  R> DROP ;
 
@@ -144,7 +144,7 @@ return-stack item to exit:
 If ``DO`` keeps *three* items on the return stack, it
 must be defined:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LEAP   R> R> 2DROP  R> R> 2DROP ;
 

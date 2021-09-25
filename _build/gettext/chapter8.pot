@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-29 05:55+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -962,7 +962,7 @@ msgstr ""
 msgid "A well-designed component—hardware or software—will let you implement a corresponding lexicon in a clean, efficient manner. The character graphics set from the old Epson MX-80 printer (although now obsolete) illustrates the point well. :numref:`fig8-6` shows the graphics characters produced by the ASCII codes 160 to 223."
 msgstr ""
 
-#: ../../chapter8.rst:1371
+#: ../../chapter8.rst:1370
 msgid "The Epson MX-80 graphics character set."
 msgstr ""
 
@@ -1373,4 +1373,3 @@ msgstr ""
 #: ../../chapter8.rst:1897
 msgid "Charles Eaker, \"Just in Case,\"  **ForthDimensions**  II/3, p. 37."
 msgstr ""
-

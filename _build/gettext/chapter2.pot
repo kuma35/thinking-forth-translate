@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-04 22:12+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "\\.\\.\\. a never-ending cycle of discovery and refinement. It first studies a natural system and gathers observations about its behavior. Then the observations are modeled to produce a theory about the natural system. Next, analysis tools are applied to the model, which produces predictions about the real system's behavior. Experiments are devised to compare actual behavior to the predicted behavior. The natural system is again studied, and the model is revised."
 msgstr ""
 
-#: ../../chapter2.rst:79
+#: ../../chapter2.rst:78
 msgid "The iterative approach to the software development cycle, from \"The Forth Philosophy\", by Kim Harris, **Dr. Dobb's Journal.**"
 msgstr ""
 
@@ -496,7 +496,7 @@ msgstr ""
 msgid "A conceptual model is an imaginary solution to the problem. It is a view of how the system *appears* to work. It is an answer to all the requirements and constraints."
 msgstr ""
 
-#: ../../chapter2.rst:472
+#: ../../chapter2.rst:471
 msgid "Refining the conceptual model to meet requirements and constraints."
 msgstr ""
 
@@ -528,748 +528,747 @@ msgstr ""
 msgid "Like the entire development cycle, the analysis phase is best approached iteratively. Each new requirement will tend to suggest something in your mental model. Your job is to juggle all the requirements and constraints until you can weave a pattern that fits the bill."
 msgstr ""
 
-#: ../../chapter2.rst:513
+#: ../../chapter2.rst:512
 msgid "An iterative approach to analysis."
 msgstr ""
 
-#: ../../chapter2.rst:517
+#: ../../chapter2.rst:514
 msgid ":numref:`fig2-2`  illustrates the iterative approach to the analysis phase. The final step is one of the most important: show the documented model to the customer. Use whatever means of communication are necessary—diagrams, tables, or cartoons—to convey your understanding to the customer and get the needed feedback. Even if you cycle through this loop a hundred times, it’s worth the effort."
 msgstr ""
 
-#: ../../chapter2.rst:524
+#: ../../chapter2.rst:521
 msgid "In the next three sections we’ll explore three techniques for defining and documenting the conceptual model:"
 msgstr ""
 
-#: ../../chapter2.rst:527
+#: ../../chapter2.rst:524
 msgid "defining the interfaces"
 msgstr ""
 
-#: ../../chapter2.rst:529
+#: ../../chapter2.rst:526
 msgid "defining the rules"
 msgstr ""
 
-#: ../../chapter2.rst:531
+#: ../../chapter2.rst:528
 msgid "defining the data structures."
 msgstr ""
 
-#: ../../chapter2.rst:534
+#: ../../chapter2.rst:531
 msgid "Defining the Interfaces"
 msgstr ""
 
-#: ../../chapter2.rst:538
+#: ../../chapter2.rst:535
 msgid "First, and most importantly, the conceptual model should describe the system's interfaces."
 msgstr ""
 
-#: ../../chapter2.rst:581
+#: ../../chapter2.rst:578
 msgid "Teleska:"
 msgstr ""
 
-#: ../../chapter2.rst:542
+#: ../../chapter2.rst:539
 msgid "The \"spec\" basically deals with WHAT. In its most glorious form, it describes what the system would look like to the user---you might call it the user's manual. I find I write more notes on the human interaction---what it will look like on the outside---than on the part that gets the job done. For instance, I'll include a whole error-action listing to show what happens when a particular error occurs. Oddly, this is the part that takes the most time to implement anyway."
 msgstr ""
 
-#: ../../chapter2.rst:551
+#: ../../chapter2.rst:548
 msgid "I'm currently working on a solid-state industrial washing-machine timer. In this case, the user interface is not that complex. What is complex is the interface to the washing machine, for which I must depend on the customer and the documentation they can provide."
 msgstr ""
 
-#: ../../chapter2.rst:556
+#: ../../chapter2.rst:553
 msgid "The significant interface is whatever is the arms and legs of the product. I don't make the distinction between hardware and software at this early stage. They can be interchanged in the implementation."
 msgstr ""
 
-#: ../../chapter2.rst:560
+#: ../../chapter2.rst:557
 msgid "The process of designing hardware and the process of designing software are analogous. The way I design hardware is to treat it as a black box. The front panel is input and output. You can do the same with software."
 msgstr ""
 
-#: ../../chapter2.rst:565
+#: ../../chapter2.rst:562
 msgid "I use any techniques, diagrams, etc., to show the customer what the inputs and outputs look like, using his description of what the product has to do.  But in parallel, in my own mind, I'm imagining how it will be implemented.  I'm evaluating whether I can do this efficiently. So to me it's not a black box, it's a gray box. The designer must be able to see inside the black boxes."
 msgstr ""
 
-#: ../../chapter2.rst:572
+#: ../../chapter2.rst:569
 msgid "When I design a system that's got different modules, I try to make the coupling as rational and as little as possible. But there's always give and take, since you're compromising the ideal."
 msgstr ""
 
-#: ../../chapter2.rst:576
+#: ../../chapter2.rst:573
 msgid "For the document itself, I use DFDs [data-flow diagrams, which we'll discuss later], and any other kind of representation that I can show to my client. I show them as many diagrams as I can to clarify my understanding.  I don't generally use these once it comes to implementation. The prose must be complete, even without reference to the diagrams."
 msgstr ""
 
-#: ../../chapter2.rst:585
+#: ../../chapter2.rst:582
 msgid "Decide on error- and exception-handling early as part of defining the interface."
 msgstr ""
 
-#: ../../chapter2.rst:588
+#: ../../chapter2.rst:585
 msgid "It’s true that when coding for oneself, a programmer can often concentrate first on making the code run correctly under *normal* conditions, then worry about error-handling later. When working for someone else, however, error-handling should be worked out ahead of time. This is an area often overlooked by the beginning programmer."
 msgstr ""
 
-#: ../../chapter2.rst:595
+#: ../../chapter2.rst:592
 msgid "The reason it’s so important to decide on error-handling at this stage is the wide divergence in how errors can be treated. An error might be:"
 msgstr ""
 
-#: ../../chapter2.rst:598
+#: ../../chapter2.rst:595
 msgid "ignored"
 msgstr ""
 
-#: ../../chapter2.rst:600
+#: ../../chapter2.rst:597
 msgid "made to set a flag indicating that an error occurred, while processing continues"
 msgstr ""
 
-#: ../../chapter2.rst:603
+#: ../../chapter2.rst:600
 msgid "made to halt the application immediately"
 msgstr ""
 
-#: ../../chapter2.rst:605
+#: ../../chapter2.rst:602
 msgid "designed to initiate procedures to correct the problem and keep the program running."
 msgstr ""
 
-#: ../../chapter2.rst:608
+#: ../../chapter2.rst:605
 msgid "There’s room for a serious communications gap if the degree of complexity required in the error-handling is not nailed down early. Obviously, the choice bears tremendous impact on the design and implementation of the application."
 msgstr ""
 
-#: ../../chapter2.rst:616
+#: ../../chapter2.rst:613
 msgid "Develop the conceptual model by imagining the data traveling through and being acted upon by the parts of the model."
 msgstr ""
 
-#: ../../chapter2.rst:619
+#: ../../chapter2.rst:616
 msgid "A discipline called *structured analysis* [weinberg80]_ offers some techniques for describing interfaces in ways that your clients will easily understand. One of these techniques is called the “data-flow diagram” (DFD), which Teleska mentioned."
 msgstr ""
 
-#: ../../chapter2.rst:629
+#: ../../chapter2.rst:625
 msgid "A data-flow diagram."
 msgstr ""
 
-#: ../../chapter2.rst:633
+#: ../../chapter2.rst:630
 msgid "A data-flow diagram, such as the one depicted in :numref:`fig2-3` , emphasizes what happens to items of data as they travel through the system. The circles represent “transforms,” functions that act upon information. The arrows represent the inputs and outputs of the transforms."
 msgstr ""
 
-#: ../../chapter2.rst:639
+#: ../../chapter2.rst:636
 msgid "The diagram depicts a frozen moment of the system in action. It ignores initialization, looping structures, and other details of programming that relate to time."
 msgstr ""
 
-#: ../../chapter2.rst:643
+#: ../../chapter2.rst:640
 msgid "Three benefits are claimed for using DFDs:"
 msgstr ""
 
-#: ../../chapter2.rst:645
+#: ../../chapter2.rst:642
 msgid "First, they speak in simple, direct terms to the customer. If your customer agrees with the contents of your data-flow diagram, you know you understand the problem."
 msgstr ""
 
-#: ../../chapter2.rst:649
+#: ../../chapter2.rst:646
 msgid "Second, they let you think in terms of the logical “whats,” without getting caught up in the procedural “hows,” which is consistent with the philosophy of hiding information as we discussed in the last chapter."
 msgstr ""
 
-#: ../../chapter2.rst:653
+#: ../../chapter2.rst:650
 msgid "Third, they focus your attention on the interfaces to the system and between modules."
 msgstr ""
 
-#: ../../chapter2.rst:656
+#: ../../chapter2.rst:653
 msgid "Forth programmers, however, rarely use DFDs except for the customer’s benefit. Forth encourages you to think in terms of the conceptual model, and Forth’s implicit use of a data stack makes the passing of data among modules so simple it can usually be taken for granted. This is because Forth, used properly, approaches a functional language."
 msgstr ""
 
-#: ../../chapter2.rst:663
+#: ../../chapter2.rst:660
 msgid "For anyone with a few days’ familiarity with Forth, simple definitions convey at least as much meaning as the diagrams:"
 msgstr ""
 
-#: ../../chapter2.rst:676
+#: ../../chapter2.rst:673
 msgid "This is Forth pseudocode. No effort has been made to determine what values are actually passed on the stack, because that is an implementation detail. The stack comment for ``REQUEST`` is used only to indicate the two items of data needed to initiate the process."
 msgstr ""
 
-#: ../../chapter2.rst:681
+#: ../../chapter2.rst:678
 msgid "(If I were designing this application, I’d suggest that the user interface be a word called ``NEED``, which has this syntax:"
 msgstr ""
 
-#: ../../chapter2.rst:690
+#: ../../chapter2.rst:687
 msgid "``NEED`` converts the quantity into a numeric value on the stack, translates the string ``AXLES`` into a part number, also on the stack, then calls ``REQUEST``. Such a command should be defined only at the outer-most level.)"
 msgstr ""
 
-#: ../../chapter2.rst:703
+#: ../../chapter2.rst:700
 msgid "Johnson of Moore Products Co. has a few words on Forth pseudocode:"
 msgstr ""
 
-#: ../../chapter2.rst:696
+#: ../../chapter2.rst:693
 msgid "IBM uses a rigorously documented PDL (program design language). We use a PDL here as well, although we call it FDL, for Forth design language. It's probably worthwhile having all those standards, but once you're familiar with Forth, Forth itself can be a design language. You just have to leave out the so-called \"noise\" words: ``C@``, ``DUP``, ``OVER``, etc., and show only the basic flow. Most Forth people probably do that informally. We do it purposefully."
 msgstr ""
 
-#: ../../chapter2.rst:715
+#: ../../chapter2.rst:712
 msgid "During one of our interviews I asked Moore if he used diagrams of any sort to plan out the conceptual model, or did he code straight into Forth? His reply:"
 msgstr ""
 
-#: ../../chapter2.rst:706
+#: ../../chapter2.rst:703
 msgid "The conceptual model **is** Forth. Over the years I've learned to think that way."
 msgstr ""
 
-#: ../../chapter2.rst:709
+#: ../../chapter2.rst:706
 msgid "**Can everyone learn to think that way?**"
 msgstr ""
 
-#: ../../chapter2.rst:711
+#: ../../chapter2.rst:708
 msgid "I've got an unfair advantage. I codified my programming style and other people have adopted it. I was surprised that this happened. And I feel at a lovely advantage because it is my style that others are learning to emulate. Can they learn to think like I think? I imagine so. It's just a matter of practice, and I've had more practice."
 msgstr ""
 
-#: ../../chapter2.rst:718
+#: ../../chapter2.rst:715
 msgid "Defining the Rules"
 msgstr ""
 
-#: ../../chapter2.rst:720
+#: ../../chapter2.rst:717
 msgid "Most of your efforts at defining a problem will center on describing the interface. Some applications will also require that you define the set of application rules."
 msgstr ""
 
-#: ../../chapter2.rst:724
+#: ../../chapter2.rst:721
 msgid "All programming involves rules. Usually these rules are so simple it hardly matters how you express them: “If someone pushes the button, ring the bell.”"
 msgstr ""
 
-#: ../../chapter2.rst:728
+#: ../../chapter2.rst:725
 msgid "Some applications, however, involve rules so complicated that they can’t be expressed in a few sentences of English. A few formal techniques can come in handy to help you understand and document these more complicated rules."
 msgstr ""
 
-#: ../../chapter2.rst:733
+#: ../../chapter2.rst:730
 msgid "Here’s an example. Our requirements call for a system to compute the charges on long-distance phone calls. Here’s the customer’s explanation of its rate structure. (I made this up; I have no idea how the phone company actually computes their rates except that they overcharge.)"
 msgstr ""
 
-#: ../../chapter2.rst:738
+#: ../../chapter2.rst:735
 msgid "All charges are computed by the minute, according to distance in hundreds of miles, plus a flat charge. The flat charge for direct dial calls during weekdays between 8 A.M. and 5 P.M. is .30 for the first minute, and .20 for each additional minute; in addition, each minute is charged .12 per 100 miles. The flat charge for direct calls during weekdays between 5 P.M. and 11 P.M. is .22 for the first minute, and .15 for each additional minute; the distance rate per minute is .10 per 100 miles. The flat charge for direct calls late during weekdays between 11 P.M. or anytime on Saturday, Sundays, or holidays is .12 for the first minute, and .09 for each additional minute; the distance rate per minute is .06 per 100 miles. If the call requires assistance from the operator, the flat charge increases by .90, regardless of the hour."
 msgstr ""
 
-#: ../../chapter2.rst:751
+#: ../../chapter2.rst:748
 msgid "This description is written in plain old English, and it’s quite a mouthful. It’s hard to follow and, like an attic cluttered with accumulated belongings, it may even hide a few bugs."
 msgstr ""
 
-#: ../../chapter2.rst:755
+#: ../../chapter2.rst:752
 msgid "In building a conceptual model for this system, we must describe the rate structure in an unambiguous, useful way. The first step towards cleaning up the clutter involves factoring out irrelevant pieces of information—that is, applying the rules of limited redundancy. We can improve this statement a lot by splitting it into two statements. First there’s the time-of-day rule:"
 msgstr ""
 
-#: ../../chapter2.rst:763
+#: ../../chapter2.rst:760
 msgid "Calls during weekdays between 8 A.M. and 5 P.M. are charged at \"full\" rate. Calls during weekdays between 5 P.M. and 11 P.M. are charged at \"lower\" rate. Calls placed during weekdays between 11 P.M. or anytime on Saturday, Sundays, or holidays are charged at the \"lowest\" rate."
 msgstr ""
 
-#: ../../chapter2.rst:768
+#: ../../chapter2.rst:765
 msgid "Then there’s the rate structure itself, which should be described in terms of “first-minute rate,” “additional minute rate,” “distance rate,” and “operator-assistance rate.”"
 msgstr ""
 
-#: ../../chapter2.rst:774
+#: ../../chapter2.rst:771
 msgid "Factor the fruit. (Don't confuse apples with oranges.)"
 msgstr ""
 
-#: ../../chapter2.rst:776
+#: ../../chapter2.rst:773
 msgid "These prose statements are still difficult to read, however. System analysts use several techniques to simplify these statements: structured English, decision trees, and decision tables. Let’s study each of these techniques and evaluate their usefulness in the Forth environment."
 msgstr ""
 
-#: ../../chapter2.rst:782
+#: ../../chapter2.rst:779
 msgid "Structured English"
 msgstr ""
 
-#: ../../chapter2.rst:784
+#: ../../chapter2.rst:781
 msgid "Structured English is a sort of structured pseudocode in which our rate statement would read something like this:"
 msgstr ""
 
-#: ../../chapter2.rst:837
+#: ../../chapter2.rst:834
 msgid "This is just plain awkward. It’s hard to read, harder to maintain, and hardest to write. And for all that, it’s worthless at implementation time. I don’t even want to talk about it anymore."
 msgstr ""
 
-#: ../../chapter2.rst:843
+#: ../../chapter2.rst:840
 msgid "The Decision Tree"
 msgstr ""
 
-#: ../../chapter2.rst:849
+#: ../../chapter2.rst:845
 msgid "Example of a decision tree."
 msgstr ""
 
-#: ../../chapter2.rst:853
+#: ../../chapter2.rst:850
 msgid ":numref:`fig2-4`  illustrates the telephone rate rules by means of a decision tree. The decision tree is the easiest method of any to “follow down” to determine the result of certain conditions. For this reason, it may be the best representation to show the customer."
 msgstr ""
 
-#: ../../chapter2.rst:858
+#: ../../chapter2.rst:855
 msgid "Unfortunately, the decision tree is difficult to “follow up,” to determine which conditions produce certain results. This difficulty inhibits seeing ways to simplify the problem. The tree obscures the fact that additional minutes cost the same, whether the operator assists or not. You can’t see the facts for the tree."
 msgstr ""
 
-#: ../../chapter2.rst:866
+#: ../../chapter2.rst:863
 msgid "The Decision Table"
 msgstr ""
 
-#: ../../chapter2.rst:868
+#: ../../chapter2.rst:865
 msgid "The decision table, described next, provides the most usable graphic representation of compound rules for the programmer, and possibly for the customer as well.  :numref:`fig2-5`  shows our rate structure rules in decision-table form."
 msgstr ""
 
-#: ../../chapter2.rst:877
+#: ../../chapter2.rst:873
 msgid "The decision table."
 msgstr ""
 
-#: ../../chapter2.rst:881
+#: ../../chapter2.rst:878
 msgid "In :numref:`fig2-5`  there are three dimensions: the rate discount, whether an operator intervenes, and initial minute vs. additional minute."
 msgstr ""
 
-#: ../../chapter2.rst:885
+#: ../../chapter2.rst:882
 msgid "Drawing problems with more than two dimensions gets a little tricky. As you can see, these additional dimensions can be depicted on paper as subdimensions within an outer dimension. All of the subdimension’s conditions appear within every condition of the outer dimension. In software, any number of dimensions can be easily handled, as we’ll see."
 msgstr ""
 
-#: ../../chapter2.rst:891
+#: ../../chapter2.rst:888
 msgid "All the techniques we’ve described force you to analyze which conditions apply to which dimensions. In factoring these dimensions, two rules apply:"
 msgstr ""
 
-#: ../../chapter2.rst:895
+#: ../../chapter2.rst:892
 msgid "First, all the elements of each dimension must be mutually exclusive. You don’t put “first minute” in the same dimension as “direct dial,” because they are not mutually exclusive."
 msgstr ""
 
-#: ../../chapter2.rst:899
+#: ../../chapter2.rst:896
 msgid "Second, all possibilities must be accounted for within each dimension. If there were another rate for calls made between 2 A.M. to 2:05 A.M., the table would have to be enlarged."
 msgstr ""
 
-#: ../../chapter2.rst:903
+#: ../../chapter2.rst:900
 msgid "But our decision tables have other advantages all to themselves. The decision table not only reads well to the client but actually benefits the implementor in several ways:"
 msgstr ""
 
-#: ../../chapter2.rst:909
+#: ../../chapter2.rst:906
 msgid "Transferability to actual code."
 msgstr ""
 
-#: ../../chapter2.rst:908
+#: ../../chapter2.rst:905
 msgid "This is particularly true in Forth, where decision tables are easy to implement in a form very similar to the drawing."
 msgstr ""
 
-#: ../../chapter2.rst:912
+#: ../../chapter2.rst:909
 msgid "Ability to trace the logic upwards."
 msgstr ""
 
-#: ../../chapter2.rst:912
+#: ../../chapter2.rst:909
 msgid "Find a condition and see what factors produced it."
 msgstr ""
 
-#: ../../chapter2.rst:916
+#: ../../chapter2.rst:913
 msgid "Clearer graphic representation."
 msgstr ""
 
-#: ../../chapter2.rst:915
+#: ../../chapter2.rst:912
 msgid "Decision tables serve as a better tool for understanding, both for the implementor and the analyst."
 msgstr ""
 
-#: ../../chapter2.rst:918
+#: ../../chapter2.rst:915
 msgid "Unlike decision trees, these decision tables group the *results* together in a graphically meaningful way. Visualization of ideas helps in understanding problems, particularly those problems that are too complex to perceive in a linear way."
 msgstr ""
 
-#: ../../chapter2.rst:923
+#: ../../chapter2.rst:920
 msgid "For instance, :numref:`fig2-5`  clearly shows that the charge for additional minutes does not depend on whether an operator assisted or not. With this new understanding we can draw a simplified table, as shown in :numref:`fig2-6` ."
 msgstr ""
 
-#: ../../chapter2.rst:932
+#: ../../chapter2.rst:928
 msgid "A simplified decision table."
 msgstr ""
 
-#: ../../chapter2.rst:936
+#: ../../chapter2.rst:933
 msgid "It’s easy to get so enamored of one’s analytic tools that one forgets about the problem. The analyst must do more than carry out all possibilities of a problem to the nth degree, as I have seen authors of books on structured analysis recommend. That approach only increases the amount of available detail. The problem solver must also try to simplify the problem."
 msgstr ""
 
-#: ../../chapter2.rst:945
+#: ../../chapter2.rst:942
 msgid "You don't understand a problem until you can simplify it."
 msgstr ""
 
-#: ../../chapter2.rst:947
+#: ../../chapter2.rst:944
 msgid "If the goal of analysis is not only understanding, but simplification, then perhaps we’ve got more work to do."
 msgstr ""
 
-#: ../../chapter2.rst:950
+#: ../../chapter2.rst:947
 msgid "Our revised decision table ( :numref:`fig2-6` ) shows that the per-mile charge depends only on whether the rate is full, lower, or lowest. In other words, it’s subject to only one of the three dimensions shown in the table. What happens if we split this table into two tables, as in :numref:`fig2-7` ?"
 msgstr ""
 
-#: ../../chapter2.rst:960
+#: ../../chapter2.rst:956
 msgid "The sectional decision table."
 msgstr ""
 
-#: ../../chapter2.rst:964
+#: ../../chapter2.rst:961
 msgid "Now we’re getting the answer through a combination of table look-up and calculation. The formula for the per-minute charge can be expressed as a pseudoForth definition:"
 msgstr ""
 
-#: ../../chapter2.rst:975
+#: ../../chapter2.rst:972
 msgid "The “+” now appears once in the definition, not nine times in the table."
 msgstr ""
 
-#: ../../chapter2.rst:977
+#: ../../chapter2.rst:974
 msgid "Taking the principle of calculation one step further, we note (or remember from the original problem statement) that operator assistance merely adds a one-time charge of .90 to the total charge. In this sense, the operator charge is not a function of any of the three dimensions. It’s more appropriately expressed as a “logical calculation”; that is, a function that combines logic with arithmetic:"
 msgstr ""
 
-#: ../../chapter2.rst:992
+#: ../../chapter2.rst:989
 msgid "(But remember, this charge applies only to the first minute.)"
 msgstr ""
 
-#: ../../chapter2.rst:998
+#: ../../chapter2.rst:994
 msgid "The decision table without operator involvement depicted."
 msgstr ""
 
-#: ../../chapter2.rst:1002
+#: ../../chapter2.rst:999
 msgid "This leaves us with the simplified table shown in :numref:`fig2-8` , and an increased reliance on expressing calculations. Now we’re getting somewhere."
 msgstr ""
 
-#: ../../chapter2.rst:1006
+#: ../../chapter2.rst:1003
 msgid "Let’s go back to our definition of ``PER-MINUTE-CHARGE``:"
 msgstr ""
 
-#: ../../chapter2.rst:1015
+#: ../../chapter2.rst:1012
 msgid "Let’s get more specific about the rules for the connection charge and for the mileage charge."
 msgstr ""
 
-#: ../../chapter2.rst:1018
+#: ../../chapter2.rst:1015
 msgid "The connection charge depends on whether the minute is the first or an additional minute. Since there are two kinds of per-minute charges, perhaps it will be easiest to rewrite ``PER-MINUTE-CHARGE`` as two different words."
 msgstr ""
 
-#: ../../chapter2.rst:1023
+#: ../../chapter2.rst:1020
 msgid "Let’s assume we will build a component that will fetch the appropriate rates from the table. The word ``1MINUTE`` will get the rate for the first minute; ``+MINUTES`` will get the rate for each additional minute. Both of these words will depend on the time of day to determine whether to use the full, lower, or lowest rates."
 msgstr ""
 
-#: ../../chapter2.rst:1029
+#: ../../chapter2.rst:1026
 msgid "Now we can define the pair of words to replace ``PER-MINUTE-CHARGE``:"
 msgstr ""
 
-#: ../../chapter2.rst:1040
+#: ../../chapter2.rst:1037
 msgid "What is the rule for the mileage charge? Very simple. It is the rate (per hundred miles) times the number of miles (in hundreds). Let’s assume we can define the word ``MILEAGE-RATE``, which will fetch the mileage rate from the table:"
 msgstr ""
 
-#: ../../chapter2.rst:1052
+#: ../../chapter2.rst:1049
 msgid "Finally, if we know the total number of minutes for a call, we can now calculate the total direct-dial charge:"
 msgstr ""
 
-#: ../../chapter2.rst:1065
+#: ../../chapter2.rst:1062
 msgid "We’ve expressed the rules to this particular problem through a combination of simple tables and logical calculations."
 msgstr ""
 
-#: ../../chapter2.rst:1068
+#: ../../chapter2.rst:1065
 msgid "(Some final notes on this example: We’ve written something very close to a running Forth application. But it is only pseudocode. We’ve avoided stack manipulations by assuming that values will somehow be on the stack where the comments indicate. Also, we’ve used hyphenated names because they might be more readable for the customer. Short names are preferred in real code—see :doc:`Chapter Five<chapter5>`.)"
 msgstr ""
 
-#: ../../chapter2.rst:1075
+#: ../../chapter2.rst:1072
 msgid "We’ll unveil the finished code for this example in :doc:`Chapter Eight<chapter8>`."
 msgstr ""
 
-#: ../../chapter2.rst:1079
+#: ../../chapter2.rst:1076
 msgid "Defining the Data Structures"
 msgstr ""
 
-#: ../../chapter2.rst:1081
+#: ../../chapter2.rst:1078
 msgid "After defining the interfaces, and sometimes defining the rules, occasionally you’ll need to define certain data structures as well. We’re not referring here to the implementation of the data structures, but rather to a description of their conceptual model."
 msgstr ""
 
-#: ../../chapter2.rst:1086
+#: ../../chapter2.rst:1083
 msgid "If you’re automating a library index, for instance, a crucial portion of your analysis will concern developing the logical data structure. You’ll have to decide what information will be kept for each book: title, author, subject, etc. These “attributes” will comprise an “entity” (set of related records) called ``BOOKS``. Then you’ll have to determine what other data structures will be required to let the users search the ``BOOKS`` efficiently."
 msgstr ""
 
-#: ../../chapter2.rst:1098
+#: ../../chapter2.rst:1094
 msgid "Given two adequate solutions, the correct one is the simpler."
 msgstr ""
 
-#: ../../chapter2.rst:1102
+#: ../../chapter2.rst:1099
 msgid "Certain constraints will also affect the conceptual model of the data structure. In the library index example, you need to know not only *what* information the users need, but also how long they’re willing to *wait* to get it."
 msgstr ""
 
-#: ../../chapter2.rst:1107
+#: ../../chapter2.rst:1104
 msgid "For instance, users can request listings of topics by year of publication—say everything on ladies’ lingerie between 1900 and 1910. If they expect to get this information in the snap of a girdle, you’ll have to index on years and on topics. If they can wait a day, you might just let the computer search through all the books in the library."
 msgstr ""
 
-#: ../../chapter2.rst:1115
+#: ../../chapter2.rst:1112
 msgid "Achieving Simplicity"
 msgstr ""
 
-#: ../../chapter2.rst:1119
+#: ../../chapter2.rst:1116
 msgid "Keep it simple."
 msgstr ""
 
-#: ../../chapter2.rst:1121
+#: ../../chapter2.rst:1118
 msgid "While you are taking these crucial first steps toward understanding the problem, keep in mind the old saying:"
 msgstr ""
 
-#: ../../chapter2.rst:1124
+#: ../../chapter2.rst:1121
 msgid "Given two solutions to a problem, the correct one is the simpler."
 msgstr ""
 
-#: ../../chapter2.rst:1126
+#: ../../chapter2.rst:1123
 msgid "This is especially true in software design. The simpler solution is often more difficult to discover, but once found, it is:"
 msgstr ""
 
-#: ../../chapter2.rst:1129
+#: ../../chapter2.rst:1126
 msgid "easier to understand"
 msgstr ""
 
-#: ../../chapter2.rst:1131
+#: ../../chapter2.rst:1128
 msgid "easier to implement"
 msgstr ""
 
-#: ../../chapter2.rst:1133
+#: ../../chapter2.rst:1130
 msgid "easier to verify and debug"
 msgstr ""
 
-#: ../../chapter2.rst:1135
+#: ../../chapter2.rst:1132
 msgid "easier to maintain"
 msgstr ""
 
-#: ../../chapter2.rst:1137
+#: ../../chapter2.rst:1134
 msgid "more compact"
 msgstr ""
 
-#: ../../chapter2.rst:1139
+#: ../../chapter2.rst:1136
 msgid "more efficient"
 msgstr ""
 
-#: ../../chapter2.rst:1141
+#: ../../chapter2.rst:1138
 msgid "more fun"
 msgstr ""
 
-#: ../../chapter2.rst:1160
+#: ../../chapter2.rst:1157
 msgid "One of the most compelling advocates of simplicity is Moore:"
 msgstr ""
 
-#: ../../chapter2.rst:1144
+#: ../../chapter2.rst:1141
 msgid "You need a feeling for the size of the problem. How much code should it take to implement the thing? One block? Three? I think this is a very useful design tool. You want to gut-feel whether it's a trivial problem or a major problem, how much time and effort you should spend on it."
 msgstr ""
 
-#: ../../chapter2.rst:1150
+#: ../../chapter2.rst:1147
 msgid "When you're done, look back and say, \"Did I come up with a solution that is reasonable?\" If your solution fills six screens, it may seem you've used a sledgehammer to kill a mosquito. Your mental image is out of proportion to the significance of the problem."
 msgstr ""
 
-#: ../../chapter2.rst:1155
+#: ../../chapter2.rst:1152
 msgid "I've seen nuclear physics programs with hundreds of thousands of lines of FORTRAN. Whatever that code does, it doesn't warrant hundreds of thousands of lines of code. Probably its writers have overgeneralized the problem. They've solved a large problem of which their real needs are a subset. They have violated the principle that the solution should match the problem."
 msgstr ""
 
-#: ../../chapter2.rst:1164
+#: ../../chapter2.rst:1161
 msgid "Generality usually involves complexity. Don't generalize your solution any more than will be required; instead, keep it changeable."
 msgstr ""
 
-#: ../../chapter2.rst:1205
-#: ../../chapter2.rst:1241
+#: ../../chapter2.rst:1202
+#: ../../chapter2.rst:1238
 msgid "Moore continues:"
 msgstr ""
 
-#: ../../chapter2.rst:1168
+#: ../../chapter2.rst:1165
 msgid "Given a problem, you can code a solution to it. Having done that, and found certain unpleasantnesses to it, you can go back and change the problem, and end up with a simpler solution."
 msgstr ""
 
-#: ../../chapter2.rst:1172
+#: ../../chapter2.rst:1169
 msgid "There's a class of device optimization---minimizing the number of gates in a circuit-where you take advantage of the \"don\\'t care\" situation. These occur either because a case won't arise in practice or because you really don't care. But the spec is often written by people who have no appreciation for programming. The designer may have carefully specified all the cases, but hasn't told you, the programmer, which cases are really important."
 msgstr ""
 
-#: ../../chapter2.rst:1179
+#: ../../chapter2.rst:1176
 msgid "If you are free to go back and argue with him and take advantage of the \"don\\'t cares\", you can come up with a simpler solution."
 msgstr ""
 
-#: ../../chapter2.rst:1182
+#: ../../chapter2.rst:1179
 msgid "Take an engineering application, such as a 75-ton metal powder press, stamping out things. They want to install a computer to control the valves in place of the hydraulic control previously used. What kind of spec will you get from the engineer? Most likely the sensors were placed for convenience from an electromechanical standpoint. Now they could be put somewhere else, but the engineer has forgotten. If you demand explanations, you can come closer to the real world and further from their model of the world."
 msgstr ""
 
-#: ../../chapter2.rst:1191
+#: ../../chapter2.rst:1188
 msgid "Another example is the PID (proportional integration and differentiation) algorithm for servos. You have one term that integrates, another term that differentiates, and a third term that smooths. You combine those with 30\\% integration, 10\\% differentiation, or whatever. But it\\'s only a digital filter. It used to be convenient in analog days to break out certain terms of the digital filter and say, \"This is the integrator and this is the differentiator. I\\'ll make this with a capacitor and I\\'ll make that with an inductor\"."
 msgstr ""
 
-#: ../../chapter2.rst:1201
+#: ../../chapter2.rst:1198
 msgid "Again the spec writers will model the analog solution which was modeling the electromechanical solution, and they\\'re several models away from reality. In fact, you can replace it all with two or three coefficients in a digital filter for a much cleaner, simpler and more efficient solution."
 msgstr ""
 
-#: ../../chapter2.rst:1209
+#: ../../chapter2.rst:1206
 msgid "Go back to what the problem was before the customer tried to solve it. Exploit the \"don\\'t cares\"."
 msgstr ""
 
-#: ../../chapter2.rst:1216
+#: ../../chapter2.rst:1212
 msgid "An overgeneralized solution."
 msgstr ""
 
-#: ../../chapter2.rst:1221
+#: ../../chapter2.rst:1218
 msgid "Sometimes the possibilities for simplification aren't immediately obvious."
 msgstr ""
 
-#: ../../chapter2.rst:1224
+#: ../../chapter2.rst:1221
 msgid "There's this problem of zooming in a digitized graphics display, such as CAD systems. You have a picture on the screen and you want to zoom in on a portion to see the details."
 msgstr ""
 
-#: ../../chapter2.rst:1228
+#: ../../chapter2.rst:1225
 msgid "I used to implement it so that you move the cursor to the position of interest, then press a button, and it zooms until you have a window of the desired size. That was the way I've always done it. Until I realized that that was stupid. I never needed to zoom with such fine resolution."
 msgstr ""
 
-#: ../../chapter2.rst:1234
+#: ../../chapter2.rst:1231
 msgid "So instead of moving the cursor a pixel at a time, I jump the cursor by units of, say, ten. And instead of increasing the size of box, I jump the size of the box. You don't have a choice of sizes. You zoom by a factor of four. The in-between sizes are not interesting. You can do it as many times as you like."
 msgstr ""
 
-#: ../../chapter2.rst:1240
+#: ../../chapter2.rst:1237
 msgid "By quantizing things fairly brutally, you make it easier to work with, more responsive, and simpler."
 msgstr ""
 
-#: ../../chapter2.rst:1245
+#: ../../chapter2.rst:1242
 msgid "To simplify, quantize."
 msgstr ""
 
-#: ../../chapter2.rst:1258
+#: ../../chapter2.rst:1255
 msgid "Moore concludes:"
 msgstr ""
 
-#: ../../chapter2.rst:1248
+#: ../../chapter2.rst:1245
 msgid "It takes arrogance to go back and say \"You didn\\'t really mean this\", or \"Would you mind if I took off this page and replaced it with this expression?\" They get annoyed. They want you to do what they told you to do."
 msgstr ""
 
-#: ../../chapter2.rst:1253
+#: ../../chapter2.rst:1250
 msgid "LaFarr Stuart took this attitude when he redesigned Forth [stuart80]_ . He didn't like the input buffer, so he implemented Forth without it, and discovered he didn't really need an input buffer."
 msgstr ""
 
-#: ../../chapter2.rst:1257
+#: ../../chapter2.rst:1254
 msgid "If you can improve the problem, it's a great situation to get into. It's much more fun redesigning the world than implementing it."
 msgstr ""
 
-#: ../../chapter2.rst:1260
+#: ../../chapter2.rst:1257
 msgid "Effective programmers learn to be tactful and to couch their approaches in non-threatening ways: “What would be the consequences of replacing that with this?” etc."
 msgstr ""
 
-#: ../../chapter2.rst:1264
+#: ../../chapter2.rst:1261
 msgid "Yet another way to simplify a problem is this:"
 msgstr ""
 
-#: ../../chapter2.rst:1268
+#: ../../chapter2.rst:1265
 msgid "To simplify, keep the user out of trouble."
 msgstr ""
 
-#: ../../chapter2.rst:1270
+#: ../../chapter2.rst:1267
 msgid "Suppose you’re designing part of a word processor that displays a directory of stored documents on the screen, one per line. You plan that the user can move the cursor next to the name of any document, then type a one-letter command indicating the chosen action: “p” for print, “e” for edit, etc."
 msgstr ""
 
-#: ../../chapter2.rst:1276
+#: ../../chapter2.rst:1273
 msgid "Initially it seems all right to let the user move the cursor anywhere on the screen. This means that those places where text already appears must be protected from being overwritten. This implies a concept of “protected fields” and special handling. A simpler approach confines the cursor to certain fields, possibly using reverse video to let the user see the size of the allowable field."
 msgstr ""
 
-#: ../../chapter2.rst:1283
+#: ../../chapter2.rst:1280
 msgid "Another example occurs when an application prompts the user for a numeric value. You often see such applications that don’t check input until you press “return,” at which time the system responds with an error message such as “invalid number.” It’s just as easy—probably easier—to check each key as it’s typed and simply not allow non-numeric characters to appear."
 msgstr ""
 
-#: ../../chapter2.rst:1292
+#: ../../chapter2.rst:1289
 msgid "To simplify, take advantage of what's available."
 msgstr ""
 
-#: ../../chapter2.rst:1302
+#: ../../chapter2.rst:1299
 msgid "Michael LaManna, a Forth programmer in Long Island, New York, comments:"
 msgstr ""
 
-#: ../../chapter2.rst:1295
+#: ../../chapter2.rst:1292
 msgid "I always try to design the application on the most powerful processor I can get my hands on. If I have a choice between doing development on a 68000-based system and a 6809-based system, I'd go for the 68000-based system. The processor itself is so powerful it takes care of a lot of details I might otherwise have to solve myself."
 msgstr ""
 
-#: ../../chapter2.rst:1301
+#: ../../chapter2.rst:1298
 msgid "If I have to go back later and rewrite parts of the application for a simpler processor, that's okay. At least I won't have wasted my time."
 msgstr ""
 
-#: ../../chapter2.rst:1304
+#: ../../chapter2.rst:1301
 msgid "A word of caution: If you’re using an existing component to simplify your prototype, don’t let the component affect your design. You don’t want the design to depend on the internals of the component."
 msgstr ""
 
-#: ../../chapter2.rst:1310
+#: ../../chapter2.rst:1307
 msgid "Budgeting and Scheduling"
 msgstr ""
 
-#: ../../chapter2.rst:1312
+#: ../../chapter2.rst:1309
 msgid "Another important aspect of the analysis phase is figuring the price tag. Again, this process is much more difficult than it would seem. If you don’t know the problem till you solve it, how can you possibly know how long it will take to solve it?"
 msgstr ""
 
-#: ../../chapter2.rst:1317
+#: ../../chapter2.rst:1314
 msgid "Careful planning is essential, because things always take longer than you expect. I have a theory about this, based on the laws of probability:"
 msgstr ""
 
-#: ../../chapter2.rst:1325
+#: ../../chapter2.rst:1321
 msgid "Conventional wisdom reveres complexity."
 msgstr ""
 
-#: ../../chapter2.rst:1331
+#: ../../chapter2.rst:1328
 msgid "The mean time for making a \"two-hour\" addition to an application is approximately 12 hours."
 msgstr ""
 
-#: ../../chapter2.rst:1334
+#: ../../chapter2.rst:1331
 msgid "Imagine the following scenario: You’re in the middle of writing a large application when suddenly it strikes you to add some relatively simple feature. You think it’ll take about two hours, so without further planning, you just do it. Consider: That’s two hours coding time. The design time you don’t count because you perceived the need—and the design—in a flash of brilliance while working on the application. So you estimate two hours."
 msgstr ""
 
-#: ../../chapter2.rst:1342
+#: ../../chapter2.rst:1339
 msgid "But consider the following possibilities:"
 msgstr ""
 
-#: ../../chapter2.rst:1344
+#: ../../chapter2.rst:1341
 msgid "Your implementation has a bug. After two hours it doesn’t work. So you spend another two hours recoding. (Total 4.)"
 msgstr ""
 
-#: ../../chapter2.rst:1347
+#: ../../chapter2.rst:1344
 msgid "OR, before you implemented it, you realized your initial design wouldn’t work. You spend two hours redesigning. *These* two hours count. Plus another two hours coding it. (Total 4.)"
 msgstr ""
 
-#: ../../chapter2.rst:1351
+#: ../../chapter2.rst:1348
 msgid "OR, you implement the first design before you realize the design wouldn’t work. So you redesign (two more hours) and reimplement (two more). (Total 6.)"
 msgstr ""
 
-#: ../../chapter2.rst:1355
+#: ../../chapter2.rst:1352
 msgid "OR, you implement the first design, code it, find a bug, rewrite the code, find a design flaw, redesign, recode, find a bug in the new code, recode again. (Total 10.)"
 msgstr ""
 
-#: ../../chapter2.rst:1359
+#: ../../chapter2.rst:1356
 msgid "You see how the thing snowballs?"
 msgstr ""
 
-#: ../../chapter2.rst:1361
+#: ../../chapter2.rst:1358
 msgid "Now you have to document your new feature. Add two hours to the above. (Total 12.)"
 msgstr ""
 
-#: ../../chapter2.rst:1364
+#: ../../chapter2.rst:1361
 msgid "After you’ve spent anywhere from 2 to 12 hours installing and debugging your new feature, you suddenly find that element Y of your application bombs out. Worst yet, you have no idea why. You spend two hours reading memory dumps trying to divine the reason. Once you do, you spend as many as 12 additional hours redesigning element Y. (Total 26.) Then you have to document the syntax change you made to element Y. (Total 27.)"
 msgstr ""
 
-#: ../../chapter2.rst:1372
+#: ../../chapter2.rst:1369
 msgid "That’s a total of over three man-days. If all these mishaps befell you at once, you’d call for the men with the little white coats. It rarely gets that bad, of course, but the odds are decidedly *against* any project being as easy as you think it will be."
 msgstr ""
 
-#: ../../chapter2.rst:1377
+#: ../../chapter2.rst:1374
 msgid "How can you improve your chances of judging time requirements correctly? Many fine books have been written on this topic, notably *The Mythical Man-Month* by Frederick P. Brooks, Jr. [brooks75]_ . I have little to add to this body of knowledge except for some personal observations."
 msgstr ""
 
-#: ../../chapter2.rst:1384
+#: ../../chapter2.rst:1381
 msgid "Don’t guess on a total. Break the problem up into the smallest possible pieces, then estimate the time for each piece. The sum of the pieces is always greater than what you’d have guessed the total would be. (The whole appears to be less than the sum of the parts.)"
 msgstr ""
 
-#: ../../chapter2.rst:1389
+#: ../../chapter2.rst:1386
 msgid "In itemizing the pieces, separate those you understand well enough to hazard a guess from those you don’t. For the second category, give the customer a range."
 msgstr ""
 
-#: ../../chapter2.rst:1393
+#: ../../chapter2.rst:1390
 msgid "A bit of psychology: always give your client some options. Clients *like* options. If you say, “This will cost you $6,000,” the client will probably respond “I’d really like to spend $4,000.” This puts you in the position of either accepting or going without a job."
 msgstr ""
 
-#: ../../chapter2.rst:1398
+#: ../../chapter2.rst:1395
 msgid "But if you say, “You have a choice: for $4,000 I’ll make it *walk* through the hoop; for $6,000 I’ll make it *jump* through the hoop. For $8,000 I’ll make it *dance* through the hoop waving flags, tossing confetti and singing “Roll Out the Barrel.”"
 msgstr ""
 
-#: ../../chapter2.rst:1403
+#: ../../chapter2.rst:1400
 msgid "Most customers opt for jumping through the hoop."
 msgstr ""
 
-#: ../../chapter2.rst:1407
+#: ../../chapter2.rst:1404
 msgid "Everything takes longer than you think, including thinking."
 msgstr ""
 
-#: ../../chapter2.rst:1410
+#: ../../chapter2.rst:1407
 msgid "Reviewing the Conceptual Model"
 msgstr ""
 
-#: ../../chapter2.rst:1412
+#: ../../chapter2.rst:1409
 msgid "The final box on our iterative analytic wheel is labeled “Show Model to Customer.” With the tools we’ve outlined in this chapter, this job should be easy to do."
 msgstr ""
 
-#: ../../chapter2.rst:1416
+#: ../../chapter2.rst:1413
 msgid "In documenting the requirements specification, remember that specs are like snowmen. They may be frozen now, but they shift, slip, and melt away when the heat is on. Whether you choose data-flow diagrams or straight Forth pseudocode, prepare yourself for the great thaw by remembering to apply the concepts of limited redundancy."
 msgstr ""
 
-#: ../../chapter2.rst:1422
+#: ../../chapter2.rst:1419
 msgid "Show the documented conceptual model to the customer. When the customer is finally satisfied, you’re ready for the next big step: the design!"
 msgstr ""
 
-#: ../../chapter2.rst:1427
+#: ../../chapter2.rst:1424
 msgid "REFERNCES"
 msgstr ""
 
-#: ../../chapter2.rst:1429
+#: ../../chapter2.rst:1426
 msgid "Kim Harris, \"The Forth Philosophy,\"   **Dr. Dobb's Journal,**  Vol. 6, Iss. 9, No. 59 (Sept. 81),  pp. 6-11."
 msgstr ""
 
-#: ../../chapter2.rst:1430
+#: ../../chapter2.rst:1427
 msgid "Victor Weinberg,  **Structured Analysis,**   Englewood Cliffs, N.J.: Prentice-Hall, Inc., 1980."
 msgstr ""
 
-#: ../../chapter2.rst:1431
+#: ../../chapter2.rst:1428
 msgid "LaFarr Stuart, \"LaFORTH,\"   **1980 FORML Proceedings,**  p. 78."
 msgstr ""
 
-#: ../../chapter2.rst:1432
+#: ../../chapter2.rst:1429
 msgid "Frederick P. Brooks, Jr.,  **The Mythical  Man-Month,**  Reading, Massachusetts, Addison-Wesley, 1975."
 msgstr ""
-

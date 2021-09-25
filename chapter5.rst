@@ -26,7 +26,7 @@ situations. This chapter merges many widely-adopted conventions with
 personal preferences, commented with alternate ideas and the reasons for
 the preferences. In other words:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TIP  VALUE JUDGEMENT ;
 
@@ -47,9 +47,9 @@ on nearly impossible.
 .. no  name for this figure. use fig5-1 Example of application-load screen
 
 .. figure:: fig5-1.png
-   :alt: I still don't see how these programming conventions enhance readability.
 
    I still don't see how these programming conventions enhance readability.
+
 
 The necessity for good organization applies to an application listing as
 well. Good organization has three aspects:
@@ -111,7 +111,7 @@ Load screens:
 
 Example of an application-load screen
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #1
    :name: fig5-1
    :lineno-start: 0
@@ -136,7 +136,7 @@ Application-load Screen
 Since it resides in Screen 1, you can load this entire application by
 entering
 
-.. code-block:: none
+.. code-block:: forth
    
    1 LOAD
 
@@ -178,7 +178,7 @@ Skip Commands
 Two commands make it easy to
 control what gets loaded in each screen and what gets ignored. They are:
 
-.. code-block::
+.. code-block:: forth
 
    \
    \S ( also called EXIT)
@@ -198,7 +198,7 @@ instance, these two “skip-line”s keep the definition of ``NUTATE`` from
 being compiled without causing problems in encountering either right
 parenthesis:
 
-.. code-block:: none
+.. code-block:: forth
    
    \ : NUTATE  ( x y z )
    \   SWAP ROT  (NUTATE) ;
@@ -231,7 +231,7 @@ beginning of the chapter.
 
 Example of a chapter-load screen.
 
-.. code-block:: none
+.. code-block:: forth
    :name: fig5-2
    :caption: Screen #100
    :lineno-start: 0
@@ -254,13 +254,13 @@ Example of a chapter-load screen.
 There are two ways to implement relative loading. The most common is to
 define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : +LOAD  ( offset -- )  BLK @ +  LOAD ;
 
 and
 
-.. code-block:: none
+.. code-block:: forth
    
    : +THRU  ( lo-offset hi-offset -- )
         1+ SWAP DO  I +LOAD  LOOP ;
@@ -270,7 +270,7 @@ word, ``FH`` (see :doc:`Appendix C<appendixc>` for its definition).
 
 The phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    1 FH LOAD
 
@@ -278,7 +278,7 @@ is read “1 from here ``LOAD``,” and is equivalent to 1 ``+LOAD``.
 
 Similarly,
 
-.. code-block:: none
+.. code-block:: forth
    
    2 FH   5 FH THRU
 
@@ -286,7 +286,7 @@ is read “2 from here, 5 from here ``THRU``.”
 
 Some programmers begin each chapter with a dummy word; e.g.,
 
-.. code-block:: none
+.. code-block:: forth
    
    : VIDEO-IO ;
 
@@ -438,19 +438,19 @@ Some might answer that rhetorical question: “It’s easier to remember
 names than numbers.” If that’s so, then predefine those block numbers as
 constants, e.g.:
 
-.. code-block:: none
+.. code-block:: forth
    
    90 CONSTANT FRAMING
 
 Then to load the “framing” section, enter
 
-.. code-block:: none
+.. code-block:: forth
    
    FRAMING LOAD
 
 Or, to list the section’s load block, enter
 
-.. code-block:: none
+.. code-block:: forth
    
    FRAMING LIST
 
@@ -502,7 +502,7 @@ called a “triad;” most Forth systems include the word ``TRIAD`` to produce
 it, given as an argument the number of any of the three screens in the
 triad. For instance, if you type
 
-.. code-block:: none
+.. code-block:: forth
    
    77 TRIAD
 
@@ -562,7 +562,7 @@ includes the date of latest revision and, when authorship is important,
 the programmer’s initials (three characters to the left of the date);
 e.g.:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( Chapter name        Screen Name -- pg #      JPJ 06/10/83)
 
@@ -603,7 +603,7 @@ and eliminates possible confusion between dates and months.
 If your system has ``\`` (“skip-line”—see :doc:`Appendix C<appendixc>`),
 you can write the comment line like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    \ Chapter name        Screen Name -- pg.#       JPJ 06/10/83
 
@@ -619,7 +619,7 @@ indented.
 
 
 
-.. code-block:: none
+.. code-block:: forth
    :name: fig5-5
    :caption: The output of ``INDEX`` showing indented comment lines.
    :lineno-start: 0
@@ -645,13 +645,13 @@ indented.
 
 *Bad:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : ARRIVING   ." HELLO" ;   : DEPARTING   ." GOODBYE" ;
 
 *Good:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : ARRIVING   ." HELLO" ;
    : DEPARTING   ." GOODBYE" ;
@@ -665,7 +665,7 @@ leaves room for an explanatory comment on the same line. The exception
 is a large “family” of words (defined by a common defining-word) which
 do not need unique comments:
 
-.. code-block:: none
+.. code-block:: forth
    
    0 HUE BLACK     1 HUE BLUE      2 HUE GREEN
    3 HUE CYAN      4 HUE RED       5 HUE MAGENTA
@@ -709,7 +709,7 @@ base to ``DECIMAL`` at the end, they reset base to
 *whatever it was at the beginning.* This extra bit of insurance can be
 accomplished in this fashion:
 
-.. code-block:: none
+.. code-block:: forth
    
    BASE @       HEX    \ save original BASE on stack
    0A2 CONSTANT BELLS
@@ -724,7 +724,7 @@ passed from one defining word to another—see “Compile-Time Factoring” in
 :doc:`Chapter Six<chapter6>`. In these cases, it’s best to save the value of
 ``BASE`` on the return stack like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    BASE @ >R     HEX
    ... etc. ...
@@ -785,39 +785,39 @@ Here are some common errors of spacing and indentation:
 
 *Bad* (name not separated from the body of the definition):
 
-.. code-block:: none
+.. code-block:: forth
    
    : PUSH HEAVE HO ;
 
 *Good:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : PUSH   HEAVE HO ;
 
 *Bad* (subsequent lines not indented three spaces):
 
-.. code-block:: none
+.. code-block:: forth
    
    : RIDDANCE  ( thing-never-to-darken-again -- )
    DARKEN  NEVER AGAIN ;
 
 *Good:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : RIDDANCE  ( thing-never-to-darken-again -- )
       DARKEN  NEVER AGAIN ;
 
 *Bad* (lack of phrasing):
 
-.. code-block:: none
+.. code-block:: forth
    
    : GETTYSBURG   4 SCORE 7 YEARS + AGO ;
 
 *Good:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : GETTYSBURG   4 SCORE   7 YEARS +   AGO ;
 
@@ -972,13 +972,13 @@ A “stack-effect comment” is a stack effect that appears in source code
 surrounded by parentheses. Here’s the stack-effect comment for the word
 COUNT:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( address-of-counted-string -- address-of-text count)
 
 or:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( 'counted-string -- 'text count)
 
@@ -988,13 +988,13 @@ If a definition has no effect on the stack (that is, no effect the user
 is aware of, despite what gyrations occur within the definition), it
 needs no stack-effect comment:
 
-.. code-block:: none
+.. code-block:: forth
    
    : BAKE   COOKIES OVEN ! ;
 
 On the other hand, you may want to use an empty stack comment—i.e.,
 
-.. code-block:: none
+.. code-block:: forth
    
    : BAKE   ( -- )  COOKIES OVEN ! ;
 
@@ -1003,13 +1003,13 @@ to emphasize that the word has no effect on the stack.
 If a definition consumes arguments but returns none, the double-hyphen
 is optional. For instance,
 
-.. code-block:: none
+.. code-block:: forth
    
    ( address count -- )
 
 can be shortened to
 
-.. code-block:: none
+.. code-block:: forth
    
    ( address count)
 
@@ -1035,7 +1035,7 @@ Table :numref:`tab-5-2` shows three ways to represent a boolean
 flag. To illustrate, here are three versions of the same stack comment
 for the word ``-TEXT``:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( at u a2 -- ?)
    ( at u a2 -- t=no-match)
@@ -1107,7 +1107,7 @@ the items themselves change, you can use the vertical bar ( ``|`` ) to mean
 “or.” The following stack-effect comment describes a word that returns either
 the address of a file or, if the requested file is not found, zero:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( -- address|O=undefined-file)
 
@@ -1116,7 +1116,7 @@ If the number of items in a stack picture can vary—in either the
 entire stack picture, along with the double-hyphen, separated by the
 “or” symbol. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    -FIND   ( -- apf len t=found | -- f=not-found )
 
@@ -1132,13 +1132,13 @@ If you prefer, you can
 write the entire stack effect twice, either on the same line, separated
 by three spaces:
 
-.. code-block:: none
+.. code-block:: forth
    
    ?DUP   \ if zero: ( n -- n)    if non-zero:( n -- n n)
 
 or listed vertically:
 
-.. code-block:: none
+.. code-block:: forth
    
    -FIND  \     found:( -- apf len t )
           \ not-found:( -- f )
@@ -1149,7 +1149,7 @@ Data-Structure Comments
 A “data-structure comment” depicts the elements in a data structure. For
 example, here’s the definition of an insert buffer called ``|INSERT`` :
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE |INSERT  64 ALLOT  \  { 1# | 63text }
 
@@ -1180,14 +1180,14 @@ if the preamble gives the above bit-pattern the name “status,” then
 “status” can be used in stack comments to indicate values with that
 pattern:
 
-.. code-block:: none
+.. code-block:: forth
    
    : STATUS?  ( -- status) ... ;
 
 If a ``2VARIABLE`` contains one double-length value,
 the comment should be a stack picture that indicates the contents:
 
-.. code-block:: none
+.. code-block:: forth
    
    2VARIABLE PRICE  \ price in cents
 
@@ -1195,14 +1195,14 @@ If a ``2VARIABLE`` contains two single-length data
 elements, it’s given a stack picture showing what would be on the stack
 after a ``2@``. Thus:
 
-.. code-block:: none
+.. code-block:: forth
    
    2VARIABLE MEASUREMENTS  ( height weight )
 
 This is different from the comment that would be used if ``MEASUREMENTS``
 were defined by ``CREATE``.
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE MEASUREMENTS  4 ALLOT    \ { 2weight | 2height }
 
@@ -1240,13 +1240,13 @@ surrounded by three spaces on each side. For instance, here’s one way to
 comment the definition of ``’`` (tick) showing first the input-stream
 comment, then the stack comment:
 
-.. code-block:: none
+.. code-block:: forth
    
    : '   \ name   ( -- a)
 
 If you prefer to use ``(`` , the comment would look like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : '   ( name   ( -- a)
 
@@ -1284,7 +1284,7 @@ Purpose Comments
 The purpose comment should be kept to a minimum-never more than a full
 line. For example:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COLD   \ restore system to start condition
        ... ;
@@ -1296,20 +1296,20 @@ On the other hand, a word’s purpose can often be described in terms of
 its stack-effect comment. You rarely need both a stack comment and a
 purpose comment. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SPACES  ( #)   ... ;
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    : SPACES  ( #spaces-to-type -- )   ... ;
 
 This definition takes as its incoming argument a number that represents
 the number of spaces to type.
 
-.. code-block:: none
+.. code-block:: forth
    
    : ELEMENT  ( element# -- 'element)  2*  TABLE + ;
 
@@ -1318,7 +1318,7 @@ the number of spaces to type.
 This definition converts an index, which it consumes, into an address
 within a table of 2-byte elements corresponding to the indexed element.
 
-.. code-block:: none
+.. code-block:: forth
    
    : PAD  ( -- 'scratch-pad)  HERE  80 + ;
 
@@ -1328,7 +1328,7 @@ Occasionally, readability is best served by including both types of
 comment. In this case, the purpose comment should appear last. For
 instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    : BLOCK  ( n -- a)  \   ensure block n in buffer at a
 
@@ -1339,19 +1339,19 @@ instance:
 
 For example:
 
-.. code-block:: none
+.. code-block:: forth
    
    : GET   \   name   ( -- a)   get first match
 
 If you prefer to use ``(``, then write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : GET   (   name  ( -- a)    ( get first match)
 
 If necessary, you can put the purpose comment on a second line:
 
-.. code-block:: none
+.. code-block:: forth
    
    : WORD   \   name   ( c -- a)
       \ scan for string delimt'd by "c"; leave at a
@@ -1378,7 +1378,7 @@ These two behaviors must be commented separately.
 
 For instance,
 
-.. code-block:: none
+.. code-block:: forth
    
    : CONSTANT  ( n ) CREATE ,
       DOES>  ( -- n)  @ ;
@@ -1390,7 +1390,7 @@ address is on the stack when the run-time code begins.
 
 *Bad* (run-time comment includes apf):
 
-.. code-block:: none
+.. code-block:: forth
    
    : ARRAY   \  name  ( #cells)
       CREATE 2* ALLOT
@@ -1398,7 +1398,7 @@ address is on the stack when the run-time code begins.
 
 *Good:*
 
-.. code-block:: none
+.. code-block:: forth
    
    : ARRAY   \  name  ( #cells)
       CREATE 2* ALLOT
@@ -1406,14 +1406,14 @@ address is on the stack when the run-time code begins.
 
 Words defined by this word ``ARRAY`` will exhibit the stack effect:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( i -- 'cell)
 
 If the defining word does not specify the run-time behavior, there still
 exists a run-time behavior, and it may be commented:
 
-.. code-block:: none
+.. code-block:: forth
    
    : VARIABLE   (  name  ( -- )  CREATE  2 ALLOT ;
       \ does>   ( -- adr )
@@ -1437,7 +1437,7 @@ As with defining words, most compiling words involve two behaviors:
 
 For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    : IF   ( ? -- ) ...
    \ Compile:   ( -- address-of-unresolved-branch)
@@ -1450,7 +1450,7 @@ of less importance to the user).
 
 Other examples:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ABORT"  ( ? -- )
    \ Compile:   text"   ( -- )
@@ -1459,7 +1459,7 @@ Occasionally a compiling word may exhibit a different behavior when it
 is invoked *outside* a colon definition. Such words (to be fastidious
 about it) require three comments. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ASCII  ( -- c)
    \ Compile:   c   ( -- )
@@ -1486,7 +1486,7 @@ of commenting to choose from. The first style, often called the
 in the manner of a well-commented assembly language listing. These
 line-by-line comments are called “narrative comments.”
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
    
    \ CRC Checksum                                      07/15/83
@@ -1506,7 +1506,7 @@ line-by-line comments are called “narrative comments.”
 The other approach does not intersperse narrative comments between code
 phrases. This is called the “horizontal format.”
 
-.. code-block:: none
+.. code-block:: forth
    
    : ACCUMULATE  ( oldcrc char -- newcrc)
       256 *  XOR  8 0 DO  DUP 0< IF
@@ -1604,9 +1604,9 @@ explanations.
 .. fig5-2 used for Example of a chapter-load screen.
 
 .. figure:: fig5-2.png
-   :alt: Wiggins, proud of his commenting technique.
 
    Wiggins, proud of his commenting technique.
+
 
 .. hint::
 
@@ -1697,13 +1697,13 @@ realized that a nicer name is ``WORDS``. Not only does ``WORDS`` sound more
 pleasant by itself, it also works nicely with vocabulary names. For
 instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    EDITOR WORDS
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    ASSEMBLER WORDS
 
@@ -1760,7 +1760,7 @@ The choice of ``I'M`` is another invention of **Moore**, who says:
 Another of Moore’s favorite words is ``TH``,
 which he uses as an array indexing word. For instance, the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    5 TH
 
@@ -1793,14 +1793,14 @@ Still, there are exceptions. Here are a few:
    handful of commands that get used over and over, but have little or
    no intrinsic meaning:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       :   ;   @   !   .   ,
 
    But there are so few of them, and they’re used so often, they become
    old friends. I would never want to type, on a regular basis,
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DEFINE   END-DEFINITION   FETCH   STORE
            PRINT   COMPILE#
@@ -1851,7 +1851,7 @@ Most important, they make your code crisp and clean.
 
 Compare the following two strategies for saying the same thing:
 
-.. code-block:: none
+.. code-block:: forth
    
    ENABLE-LEFT-MOTOR        LEFT MOTOR ON
    ENABLE-RIGHT-MOTOR       RIGHT MOTOR ON
@@ -1880,7 +1880,7 @@ names and numbers may be an indication of bad factoring. The crime is
 similar to hyphenation, except that what should be factored out is a
 number, not a word. A better factoring of the above would be
 
-.. code-block:: none
+.. code-block:: forth
    
    1 CHANNEL
    2 CHANNEL
@@ -1892,7 +1892,7 @@ Often the bundling of names and numbers indicates fuzzy naming. In the
 above case, more descriptive names might indicate the purpose of the
 channels, as in
 
-.. code-block:: none
+.. code-block:: forth
    
    VOICE , TELEMETRY , GUITAR
 
@@ -1912,7 +1912,7 @@ of the most useful conventions developed over the years.
 An example of the power of naming conventions is the use of “dot” to
 mean “print” or “display.” Forth itself uses
 
-.. code-block:: none
+.. code-block:: forth
    
    .   D.   U.R
 
@@ -1920,7 +1920,7 @@ for displaying various types of numbers in various formats. The
 convention extends to application words as well. If you have a variable
 called ``DATE,`` and you want a word that displays the date, use the name
 
-.. code-block:: none
+.. code-block:: forth
    
    .DATE
 
@@ -1944,13 +1944,13 @@ Probably the former, even though it assumes you know the play.
 
 For instance, the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    ... DONE IF CLOSE THEN ...
 
 is just as readable as
 
-.. code-block:: none
+.. code-block:: forth
    
    ... DONE? IF CLOSE THEN ...
 
@@ -2005,13 +2005,13 @@ words that can make dealing with booleans more readable are
 ``TRUE`` and ``FALSE``. With these
 additions you can write phrases such as
 
-.. code-block:: none
+.. code-block:: forth
    
    TRUE 'STAMP? !
 
 to set a flag or
 
-.. code-block:: none
+.. code-block:: forth
    
    FALSE 'STAMP? !
 
@@ -2024,20 +2024,20 @@ abbreviations.)
 As part of your application (not necessarily part of your Forth system),
 you can take this idea a step further and define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ON   ( a)  TRUE SWAP ! ;
    : OFF   ( a)  FALSE SWAP ! ;
 
 These words allow you to write:
 
-.. code-block:: none
+.. code-block:: forth
    
    'STAMP? ON
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    'STAMP? OFF
 
@@ -2048,7 +2048,7 @@ An often-used word is ``WITHIN``, which
 determines whether a given value lies within two other values. The
 syntax is:
 
-.. code-block:: none
+.. code-block:: forth
    
    n  lo hi WITHIN
 
@@ -2062,7 +2062,7 @@ Moore recommends the word
 number just under the top stack item, instead of to the top stack item.
 It could be implemented in high level as:
 
-.. code-block:: none
+.. code-block:: forth
    
    : UNDER+  ( a b c -- a+c b )  ROT +  SWAP ;
 

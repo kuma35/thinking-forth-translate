@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 17:40+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "How is such a mental lapse possible, in one so intelligent as yourself? Apparently the human mind actually makes links between memories. New ideas are somehow added onto existing paths of related thoughts."
 msgstr ""
 
-#: ../../chapter3.rst:36
+#: ../../chapter3.rst:35
 msgid "Pools of thought not yet linked"
 msgstr ""
 
@@ -192,7 +192,7 @@ msgstr ""
 msgid "Below these commands should lie a third component, the set of words that implement the data structure to be edited."
 msgstr ""
 
-#: ../../chapter3.rst:214
+#: ../../chapter3.rst:213
 msgid "Generalized decomposition of the Tiny Editor problem."
 msgstr ""
 
@@ -482,7 +482,7 @@ msgstr ""
 msgid "According to the dictum of top-down design, let’s take the widest-angle view possible and examine the problem.  :numref:`fig3-3`  depicts the program in its simplest terms. Here we’ve realized that the editor is actually a loop which keeps getting keystrokes and performing some editing function, until the user presses the return key."
 msgstr ""
 
-#: ../../chapter3.rst:467
+#: ../../chapter3.rst:466
 msgid "The traditional approach: view from the top."
 msgstr ""
 
@@ -498,7 +498,7 @@ msgstr ""
 msgid "Applying the notion of successive refinement,  :numref:`fig3-4` shows the editor problem redrawn with “Process a Keystroke” expanded. We find it takes several attempts before we arrive at this configuration. Designing this level forces us to consider many things at once that we had deferred till later in the previous try."
 msgstr ""
 
-#: ../../chapter3.rst:487
+#: ../../chapter3.rst:486
 msgid "A structure for \"Process a Keystroke.\""
 msgstr ""
 
@@ -518,7 +518,7 @@ msgstr ""
 msgid "As you can see, this turns out even more awkward than the first figure. Now we’re testing for each key twice. It’s interesting though, how the two structures are totally different, yet functionally equivalent. It’s enough to make one wonder whether the control structure is terribly relevant to the problem."
 msgstr ""
 
-#: ../../chapter3.rst:516
+#: ../../chapter3.rst:515
 msgid "Another structure for \"Process a Keystroke.\""
 msgstr ""
 
@@ -542,7 +542,7 @@ msgstr ""
 msgid "Okay, everyone, now act surprised. We’ve just been told that this application won’t run on a memory-mapped display. What does this change do to our design structure?"
 msgstr ""
 
-#: ../../chapter3.rst:548
+#: ../../chapter3.rst:547
 msgid "The same section, \"refined\" and \"optimized.\""
 msgstr ""
 
@@ -570,7 +570,7 @@ msgstr ""
 msgid "Granted, this is an easy problem to fix. We need only move the refresh modules up before “Increment Pointer.” The point here is: How did we miss it? By getting preoccupied with control flow structure, a superficial element of program design."
 msgstr ""
 
-#: ../../chapter3.rst:583
+#: ../../chapter3.rst:582
 msgid "Adding refresh."
 msgstr ""
 
@@ -602,7 +602,7 @@ msgstr ""
 msgid "This means the presence of redundant code. As we’ve seen, redundant code brings at least two problems: bulky code and poor maintainability. A change to the interface of one module will affect the interface of the opposite module."
 msgstr ""
 
-#: ../../chapter3.rst:621
+#: ../../chapter3.rst:620
 msgid "Traditional view of the interface as a junction."
 msgstr ""
 
@@ -610,7 +610,7 @@ msgstr ""
 msgid "There\\'s more to good interface design than that. Allow me to introduce a design element which I call the “interface component.” The purpose an interface component is to implement, and *hide information about* , the data interface between two or more other components ( :numref:`fig3-9` )."
 msgstr ""
 
-#: ../../chapter3.rst:635
+#: ../../chapter3.rst:634
 msgid "Use of the interface component."
 msgstr ""
 
@@ -734,7 +734,7 @@ msgstr ""
 msgid "Like a textbook, the elementary stuff comes first. A newcomer to the project would be able to read the elementary parts of the code before moving on the advanced stuff."
 msgstr ""
 
-#: ../../chapter3.rst:782
+#: ../../chapter3.rst:781
 msgid "Two ways to add advanced capabilities."
 msgstr ""
 
@@ -886,7 +886,7 @@ msgstr ""
 msgid "Second, the object is usually designed to stand alone. It can\\’t take advantage of tools provided by supporting components. As a result, it tends to duplicate code inside itself that will appear elsewhere in the application. Some objects are even required to parse text in order to interpret their parameters. Each may even use its own syntax. A shameless waste of time and energy!"
 msgstr ""
 
-#: ../../chapter3.rst:966
+#: ../../chapter3.rst:965
 msgid "\"No scrambled?\""
 msgstr ""
 
@@ -1069,4 +1069,3 @@ msgstr ""
 #: ../../chapter3.rst:1219
 msgid "Editor\\'s note: But see the recant in the 1994 Preface on page :doc:`preface94` , and the clairification in the 2004 Preface on page :doc:`preface2004` . Think of something like Windows COM \"objects\" or CORBA. Real object oriented programming, as it originates in Smalltalk, does not hide information from the programmer. Adding a \"scrambled\" method to the \"egg master object\" is no problem. Smalltalk works by adding methods to known classes, you don\\'t even need to subclass them. You can look inside an object and its source code whenever you want. And table driven method dispatching can be quite efficient. \\-\\-\\- **Bernd Paysan**"
 msgstr ""
-

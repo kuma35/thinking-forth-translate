@@ -128,11 +128,11 @@ backward ( :numref:`fig4-1` ).
 
 .. figure:: fig4-1.png
    :name: fig4-1
-   :alt: A problem that is easier to solve backward than forward.
 
    A problem that is easier to solve backward than forward.
 
 ..
+
 
 .. hint::
 
@@ -147,11 +147,11 @@ containers ( :numref:`fig4-2` ).
 
 .. figure:: fig4-2.png
    :name: fig4-2
-   :alt: Two containers.
 
    Two containers.
 
 ..
+
 
 Try to solve this on your own before reading further.
 
@@ -199,15 +199,15 @@ the one gallon to the small container.
 
 .. figure:: fig4-3.png
    :name: fig4-3
-   :alt: Achieving the end result.
 
    Achieving the end result.
 
+
 .. figure:: img4-103.png
    :name: img4-103
-   :alt: Intent on a complicated problem.
 
    Intent on a complicated problem.
+
 
 Our final step should be to check our logic by running the problem
 forwards again.
@@ -256,11 +256,11 @@ only four lines.
 .. figure:: fig4-4.png
    :name: fig4-4
    :scale: 40%
-   :alt: The nine dots problem.
 
    The nine dots problem.
 
 ..
+
 
 You can sit a good while and do no better than the almost-right
 :numref:`fig4-5` . If you concentrate really hard, you may
@@ -269,11 +269,11 @@ eventually conclude that the problem is a trick—there’s no solution.
 .. figure:: fig4-5.png
    :scale: 40%
    :name: fig4-5
-   :alt: Not quite right.
 
    Not quite right.
 
 ..
+
 
 But if you sit back and ask yourself,
 
@@ -335,9 +335,9 @@ yourself for a second opinion.
 
 .. figure:: img4-106.png
    :name: img4-106
-   :alt: "I\'m not just sleeping. I\'m using my neocortex."
 
    "I\'m not just sleeping. I\'m using my neocortex."
+
 
 Interview with a Software Inventor
 ==================================
@@ -473,7 +473,7 @@ number on the stack. Syntactically speaking, then, the number should
 precede the name. For instance, the syntax of the word ``SPACES``, which
 emits ``n`` number of spaces, is
 
-.. code-block:: none
+.. code-block:: forth
    
    20 SPACES
 
@@ -481,7 +481,7 @@ Sometimes this rule violates the order that our ear is accustomed to
 hearing. For instance, the Forth word ``+`` expects to be preceded by both
 arguments, as in
 
-.. code-block:: none
+.. code-block:: forth
    
    3 4 +
 
@@ -497,7 +497,7 @@ could redefine ``+`` to expect one number in the input stream, like this:
 
 by defining it so:
 
-.. code-block:: none
+.. code-block:: forth
    
    : +   BL WORD  NUMBER DROP  + ;
 
@@ -529,7 +529,7 @@ information in pretty columns.
 If ``INVENTORY`` passes a pointer to ``SHOW``, which acts upon it,
 the syntax becomes
 
-.. code-block:: none
+.. code-block:: forth
    
    INVENTORY SHOW
 
@@ -538,7 +538,7 @@ word-order, Forth offers ways to
 achieve it. But most involve new levels of complexity. Sometimes the
 best thing to do is to choose a better name. How about
 
-.. code-block:: none
+.. code-block:: forth
    
    INVENTORY REPORT
 
@@ -548,7 +548,7 @@ best thing to do is to choose a better name. How about
 
 If the requirements insist on the syntax
 
-.. code-block:: none
+.. code-block:: forth
    
    SHOW INVENTORY
 
@@ -583,7 +583,7 @@ undefined.
 The rule also applies to defined words that you want to refer to, but
 not execute in the usual way. An example is ``FORGET`` , as in
 
-.. code-block:: none
+.. code-block:: forth
    
    FORGET TASK
 
@@ -603,7 +603,7 @@ Suppose you’re writing the word ``LAUNCH``, which requires the number of a
 launch pad and fires the appropriate rocket. You want the definition to
 look roughly like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LAUNCH  ( pad#)  LOAD  AIM  FIRE ;
 
@@ -613,7 +613,7 @@ somewhere. The question is where? If you put them inside ``LOAD`` and ``AIM``,
 then you can keep them out of ``LAUNCH``, as in the definition above. If you
 leave them out of ``LOAD`` and ``AIM``, you’ll have to define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LAUNCH  ( pad#)  DUP LOAD  DUP AIM  FIRE ;
 
@@ -621,13 +621,13 @@ By convention, the latter version is preferable, because ``LOAD`` and ``AIM``
 are cleaner. They do what you expect them to do. Should you have to
 define ``READY``, you can do it so:
 
-.. code-block:: none
+.. code-block:: forth
    
    : READY  ( pad#)  DUP LOAD  AIM ;
 
 and not
 
-.. code-block:: none
+.. code-block:: forth
    
    : READY  ( pad#)  LOAD  AIM  DROP ;
 
@@ -648,9 +648,9 @@ of the “second” record, we add “8” to ``TABLE``.
 
 .. figure:: fig4-6.png
    :name: fig4-6
-   :alt: A table of 8-byte records.
 
    A table of 8-byte records.
+
 
 It’s easy to derive a formula to achieve these results: 
 
@@ -670,7 +670,7 @@ It’s easy to derive a formula to achieve these results:
 We can easily write a word which converts a
 record# into the address where that record begins:
 
-.. code-block:: none
+.. code-block:: forth
    
    : RECORD  ( record# -- adr )
       8 *  TABLE + ;
@@ -683,7 +683,7 @@ Use zero-relative numbering throughout your design and then, only in the
 “user lexicons” (the set of words that the end-user will use) include
 the conversion from zero-to one-relative numbering:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ITEM  ( n -- adr)  1- RECORD ;
 
@@ -704,14 +704,14 @@ this rule in the words ``TYPE``, ``ERASE``, and ``BLANK``.
 Another convention for readability. For instance, in some systems, the
 phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    22 37 COPY
 
 copies Screen 22 to Screen 37. The syntax of ``CMOVE`` incorporates both
 this convention and the previous convention:
 
-.. code-block:: none
+.. code-block:: forth
    
    source destination count CMOVE
 
@@ -729,7 +729,7 @@ light-blue with 9. You want to define two words: ``BLUE`` will return 1;
 In Forth, it would be possible to define ``BLUE`` as a constant, so that
 when executed it always returns 1.
 
-.. code-block:: none
+.. code-block:: forth
    
    1 CONSTANT BLUE
 
@@ -737,14 +737,14 @@ And then define ``LIGHT`` such that it looks for the next word in the input
 stream, executes it, and “ors” it with 8 (the logic of this will become
 apparent when we visit this example again, later in the book):
 
-.. code-block:: none
+.. code-block:: forth
    
    : LIGHT  ( precedes a color)  ( -- color value)
         ' EXECUTE  8 OR ;
 
 in fig-Forth:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LIGHT [COMPILE] '  CFA EXECUTE  8 OR ;
 
@@ -761,7 +761,7 @@ This definition will work when invoked in the input stream, but special
 handling is required if we want to let ``LIGHT`` be invoked within a colon
 definition, as in:
 
-.. code-block:: none
+.. code-block:: forth
    
    : EDITING   LIGHT BLUE BORDER ;
 
@@ -791,9 +791,9 @@ very few rules:
 
 .. figure:: fig4-7.png
    :name: fig4-7
-   :alt: The traditional compiler vs. the Forth compiler.
 
    The traditional compiler vs. the Forth compiler.
+
 
 -  Scan for the next word in the input stream and look it up in the
    dictionary.
@@ -853,14 +853,14 @@ specific to individual applications. For instance:
    language that lets you create and describe monsters and rooms, etc.
    You might create a defining word called ``ROOM`` to be used like this:
    
-   .. code-block:: none
+   .. code-block:: forth
    
       ROOM DUNGEON
 
    Then create a set of words to describe the room\’s attributes by
    building unseen data structures associated with the room:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       EAST-OF DRAGON-LAIR
       WEST-OF BRIDGE
@@ -981,18 +981,18 @@ Suppose we must write code to fulfill this specification:
 There are three approaches we could take:
 
 Calculation
-    .. code-block:: none
+    .. code-block:: forth
        
        ( n)  1-  2*  10 +
 
 Data Structure
-    .. code-block:: none
+    .. code-block:: forth
    
        CREATE TABLE  10 C,  12 C,  14 C,
        ( n)  1- TABLE + C@
 
 Logic
-    .. code-block:: none
+    .. code-block:: forth
    
        ( n)  CASE
                 1 OF 10 ENDOF
@@ -1052,7 +1052,7 @@ using a decision table:
 We could have achieved this
 same result with logic:
 
-.. code-block:: none
+.. code-block:: forth
    
    CASE
       CTRL-D     OF  'INSERTING @  IF
@@ -1186,7 +1186,7 @@ It may be premature, but we can already see a
 method by which Forth will let us decompose a number into decimal
 digits—with modulo division by ten. For instance, if we say
 
-.. code-block:: none
+.. code-block:: forth
    
    37 10 /MOD
 
@@ -1377,7 +1377,7 @@ exceptions. In either of those cases, it will respond accordingly. If
 neither exception applies, it will follow the “normal” algorithm. Using
 pseudocode, then:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )  4-OR-9? IF  special cases
       ELSE  normal case  THEN ;
@@ -1402,7 +1402,7 @@ What our structure really says is that either the 4-exception or the
 9-exception must prohibit execution of the normal case. It’s not enough
 merely to test for each exception, as in this version:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )  4-CASE? IF  ONER FIVER  THEN
                    9-CASE? IF  ONER TENER  THEN
@@ -1417,7 +1417,7 @@ we could arrange for each exception to pass an additional flag,
 indicating that the exception occurred. If either of these flags is
 true, then we can exclude the normal case:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )  4-CASE? DUP IF  ONER FIVER  THEN
                    9-CASE? DUP IF  ONER TENER  THEN
@@ -1434,7 +1434,7 @@ necessary to add up to the value.”
 
 A direct translation of these rules into Forth would look like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( n)  DUP  4 > IF  FIVER 5 -  THEN  ONERS
 
@@ -1445,7 +1445,7 @@ zero (false) when the number is less than five, and one (true) when it’s
 between 5 and 9. We can use it as the boolean flag to tell whether we
 want the leading ``FIVER`` :
 
-.. code-block:: none
+.. code-block:: forth
    
    ( n )  5 / IF FIVER THEN ...
 
@@ -1455,7 +1455,7 @@ Furthermore, the remainder of modulo 5 division is always a number
 between 0 and 4, which means that (except for our exception) we can use
 the remainder directly as the argument to ``ONERS``. We revise our phrase to
 
-.. code-block:: none
+.. code-block:: forth
    
    ( n )  /MOD IF FIVER THEN ONERS
 
@@ -1464,7 +1464,7 @@ and 9 with a single test—namely, if the remainder is 4. This suggests
 that we can do our 5 ``/MOD`` first, then test for the
 exception. Something like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )
         5 /MOD  OVER 4 =  IF  special case  ELSE
@@ -1492,7 +1492,7 @@ Again, we can use the quotient of division by five. If the quotient is
 zero, the digit must have been four; otherwise it was nine. So we’ll
 play the same trick and use the quotient as a boolean flag. We’ll write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ALMOST  ( quotient )
         IF  ONER TENER  ELSE  ONER FIVER  THEN ;
@@ -1500,7 +1500,7 @@ play the same trick and use the quotient as a boolean flag. We’ll write:
 In retrospect, we notice that we’re printing a ``ONER`` either way. We can
 simplify the definition to:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ALMOST  ( quotient )
         ONER  IF TENER ELSE FIVER THEN ;
@@ -1508,7 +1508,7 @@ simplify the definition to:
 We’ve assumed that we have a quotient on the stack to use. Let’s go back
 to our definition of ``DIGIT`` and make sure that we do, in fact:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )
         5 /MOD  OVER 4 =  IF  ALMOST  ELSE
@@ -1520,7 +1520,7 @@ execute the ``ELSE`` clause. The word
 ``ALMOST``, however, only needs the quotient. So, for
 symmetry, we must ``DROP`` the remainder like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIGIT  ( n )
         5 /MOD  OVER 4 =  IF  ALMOST DROP  ELSE
@@ -1531,7 +1531,7 @@ digit of a Roman numeral. If we were desperate to try it out before
 writing the needed auxiliary definitions, we could very quickly define a
 lexicon of words to print one group of symbols, say the ``ONES`` row:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ONER    ." I" ;
    : FIVER   ." V" ;
@@ -1589,9 +1589,9 @@ tens’ column, as in  :numref:`fig4-8` b, or to any power of ten.
 
 .. figure:: fig4-8.png
    :name: fig4-8
-   :alt: A mechanical representation: accessing the data structure.
 
    A mechanical representation: accessing the data structure.
+
 
 An experienced Forth programmer is not likely to imagine arms, hands, or
 things like that. But there must be a strong mental image—the stuff of
@@ -1610,7 +1610,7 @@ Our table is simply an array of characters. Since a character requires
 only a byte, let’s make each “slot” one byte. We’ll call the table
 ``ROMANS``:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE ROMANS    ( ones)  ASCII I  C,   ASCII V  C,
                     ( tens)  ASCII X  C,   ASCII L  C,
@@ -1622,7 +1622,7 @@ Note: This use of ``ASCII`` requires that
 (see :doc:`Appendix C<appendixc>`). If the word ``ASCII`` is
 not defined in your system, or if it is not state-dependent, use:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE ROMANS  73 C,  86 C,  88 C,  76 C,
       67 C,  68 C,  77 C,
@@ -1641,7 +1641,7 @@ point to the current decimal column. Let’s create a variable called
 ``COLUMN#`` (pronounced “column-number”) and have it contain an offset into
 the table:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE COLUMN#  ( current offset)
    : ONES        O COLUMN# ! ;
@@ -1652,7 +1652,7 @@ the table:
 Now we can find our way to any “arm position” by adding the contents of
 ``COLUMN#`` to the beginning address of the table, given by ``ROMANS``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COLUMN  ( -- adr-of-column)  ROMANS  COLUMN# @  + ;
 
@@ -1661,14 +1661,14 @@ We’ll start with ``ONER``.
 
 The thing we want to do in ONER is ``EMIT`` a character.
 
-.. code-block:: none
+.. code-block:: forth
    
    : ONER                   EMIT ;
 
 Working backward, ``EMIT`` requires the ASCII
 character on the stack. How do we get it there? With ``C@``.
 
-.. code-block:: none
+.. code-block:: forth
    
    : ONER                C@ EMIT ;
 
@@ -1680,20 +1680,20 @@ The ``ONER`` is the first "hand" on the movable arm—the position
 that ``COLUMN`` is already pointing to. So, the address we want is simply
 the address returned by ``COLUMN``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ONER   COLUMN       C@ EMIT ;
 
 Now let’s write ``FIVER``. It computes the same slot address, then adds one
 to get the next slot, before fetching the symbol and emitting it:
 
-.. code-block:: none
+.. code-block:: forth
    
    : FIVER  COLUMN 1+    C@ EMIT ;
 
 And ``TENER`` is:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TENER  COLUMN 2+    C@ EMIT ;
 
@@ -1701,13 +1701,13 @@ These three definitions are redundant. Since the only difference between
 them is the incidental offset, we can factor the incidental offset out
 from the rest of the definitions:
 
-.. code-block:: none
+.. code-block:: forth
    
    : .SYMBOL  ( offset)  COLUMN +  C@ EMIT ;
 
 Now we can define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ONER    O .SYMBOL ;
    : FIVER   1 .SYMBOL ;
@@ -1731,7 +1731,7 @@ highest value we can represent is 3,999, or MMMCMXCIX.
 
 We might redefine ROMAN as follows:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ROMAN  ( n)
       DUP  3999 >  ABORT" Too large"  ROMAN ;
@@ -1744,7 +1744,7 @@ We might redefine ROMAN as follows:
     
     Of course, nobody will appreciate it like you do.
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #20
    :name: fig4-9
    :lineno-start: 0
@@ -1763,7 +1763,7 @@ We might redefine ROMAN as follows:
    : COLUMN ( -- address-of-column)  ROMANS  COLUMN# @  + ;
    \
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #21
    :lineno-start: 0
    
@@ -1781,7 +1781,7 @@ We might redefine ROMAN as follows:
       5 /MOD  OVER  4 = IF  ALMOST  DROP  ELSE  IF FIVER THEN
       ONERS THEN ;
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #22
    :lineno-start: 0
    

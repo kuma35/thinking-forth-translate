@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2021-09-26 02:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,4 +59,3 @@ msgstr ""
 #: ../../preface.rst:76
 msgid "Many thanks to all the good people who gave their time and ideas to this book, including: Charles Moore, Dr. Mark Bernstein, Dave Johnson, John Teleska, Dr. Michael Starling, Dr. Peter Kogge, Tom Dowling, Donald Burgess, Cary Campbell, Dr. Raymond Dessy, Michael Ham, and Kim Harris. Another of the interviewees, Michael LaManna, passed away while this book was in production. He is deeply missed by those of us who loved him."
 msgstr ""
-

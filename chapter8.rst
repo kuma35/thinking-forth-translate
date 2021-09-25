@@ -181,7 +181,7 @@ supposedly “highest” level procedure is burdened with eliminating the
 worst-case, most trivial kind of event. And each test becomes
 responsible for invoking the next test.
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Refactoring and/or eliminating conditionals.
    :name: fig8-3
 
@@ -269,7 +269,7 @@ execute functions are hidden within the Forth system.
     the amount, the check number, the word ``FROM``, and the person's
     name:
     
-    .. code-block:: none
+    .. code-block:: forth
        
        200.00 127 FROM ALLIED
     
@@ -277,7 +277,7 @@ execute functions are hidden within the Forth system.
     someone, you type the amount, the invoice number, the word ``BILL``
     and the person's name:
 
-    .. code-block:: none
+    .. code-block:: forth
    
        1000.00 280 BILL TECHNITECH
 
@@ -307,7 +307,7 @@ A few common Forth words have been the source of controversy recently
 over this issue. One such word is ``."`` which prints a string. In its
 simplest form, it’s allowed only inside a colon definition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TEST   ." THIS IS A STRING " ;
 
@@ -338,13 +338,13 @@ Suppose a student wants to write a new word called
 ``B."`` (for “bright-dot-quote”) to display a string
 in bright characters on her display, to be used like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    ." INSERT DISK IN "  B." LEFT "  ." DRIVE "
 
 She might expect to define :literal:`B\."` as
 
-.. code-block:: none
+.. code-block:: forth
    
    : B."   BRIGHT  ."  NORMAL ;
 
@@ -366,7 +366,7 @@ mode to normal after typing, even though it will already be normal most
 of the time. With this syntax, the programmer need merely precede the
 emphasized string with the simple word ``BRIGHT``.
 
-.. code-block:: none
+.. code-block:: forth
    
    ." INSERT DISK IN "  BRIGHT ." LEFT "  ." DRIVE "
 
@@ -400,7 +400,7 @@ Nesting and Combining Conditionals
 
 Take this example, please:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PROCESS-KEY
       KEY  DUP  LEFT-ARROW  =  IF CURSOR-LEFT  THEN
@@ -414,7 +414,7 @@ left-arrow key, there’s no need to check if it was some other key.
 
 Instead, you can nest the conditionals, like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PROCESS-KEY
       KEY  DUP  LEFT-ARROW  =  IF CURSOR-LEFT  ELSE
@@ -432,7 +432,7 @@ Many instances of doubly-nested
 simplified by combining the flags with logical operators before making
 the decision. Here’s a doubly-nested test:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?PLAY   SATURDAY? IF  WORK FINISHED? IF
         GO PARTY  THEN  THEN ;
@@ -442,7 +442,7 @@ it’s both Saturday and the chores are done before it boogies on down.
 Instead, let’s combine the conditions logically and make a single
 decision:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?PLAY   SATURDAY?  WORK FINISHED? AND  IF
       GO PARTY  THEN ;
@@ -452,14 +452,14 @@ It’s simpler and more readable.
 The logical “or” situation, when implemented with
 ``IF``  ``THEN``\ s, is even clumsier:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?RISE    PHONE RINGS?  IF  UP GET  THEN
         ALARM-CLOCK RINGS?  IF  UP GET  THEN ;
 
 This is much more elegantly written as
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?RISE  PHONE RINGS?  ALARM RINGS? OR  IF  UP GET  THEN ;
 
@@ -468,7 +468,7 @@ some of the conditions is too great.
 
 We might write
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?CHOW-MEIN   BEAN-SPROUTS?  CHOW-MEIN RECIPE?  AND IF
       CHOW-MEIN PREPARE  THEN ;
@@ -478,7 +478,7 @@ file to see if there’s anything on chow mein. Obviously there’s no point
 in undertaking the search if we have no bean sprouts in the fridge. It
 would be more efficient to write
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?CHOW-MEIN   BEAN-SPROUTS? IF  CHOW-MEIN RECIPE? IF
       CHOW-MEIN PREPARE THEN   THEN ;
@@ -498,7 +498,7 @@ conditions.
 Trying to improve performance in this way is more difficult with the OR
 construct. For instance, in the definition
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?RISE  PHONE RINGS?  ALARM RINGS? OR  IF  UP GET THEN ;
 
@@ -506,7 +506,7 @@ we’re testing for the phone and the alarm, even though only one of them
 needs to ring for us to get up. Now suppose it were much more difficult
 to determine that the alarm clock was ringing. We could write
 
-.. code-block:: none
+.. code-block:: forth
    
    : ?RISE   PHONE RINGS? IF  UP GET  ELSE
         ALARM-CLOCK RINGS?  IF UP GET THEN THEN  ;
@@ -538,7 +538,7 @@ this word using nested
 ``IF``  ``ELSE``  ``THEN``\ s,
 like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : .SUIT ( suit -- )
      DUP  O=  IF ." HEARTS "   ELSE
@@ -553,7 +553,7 @@ Here’s the same definition, rewritten using the “Eaker case statement”
 format, named after Dr. Charles E. Eaker, the gentleman who proposed it
 [eaker]_.
 
-.. code-block:: none
+.. code-block:: forth
    
    : .SUIT ( suit -- )
      CASE
@@ -656,7 +656,7 @@ byte. This makes it easier to type, move, or do practically anything
 with the string. With the address and count on the stack, the definition
 of ``TYPE`` can be coded:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TYPE  ( a #)  OVER + SWAP DO  I C@ EMIT  LOOP ;
 
@@ -669,7 +669,7 @@ returns to ``DO`` if it has not yet reached the limit.
 If a delimiter were used, let’s say ASCII null (zero), the definition
 would have to be written:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TYPE  ( a)  BEGIN DUP C@  ?DUP WHILE  EMIT  1+
       REPEAT  DROP ;
@@ -681,7 +681,7 @@ Optimization note: The use of ``?DUP`` in this
 solution is expensive in terms of time because it contains an extra
 decision itself. A faster definition would be:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TYPE  ( a)  BEGIN DUP C@  DUP WHILE EMIT 1+
        REPEAT  2DROP ;
@@ -725,7 +725,7 @@ calculate.” The idea is that booleans, which the computer represents as
 numbers, can efficiently be used to effect numeric decisions. Here’s one
 example, found in many Forth systems:
 
-.. code-block:: none
+.. code-block:: forth
    
    : S>D  ( n -- d)  \ sign extend s to d
         DUP O<  IF -1  ELSE  O THEN ;
@@ -743,7 +743,7 @@ If so, it pushes a negative one onto the stack; otherwise a zero. But
 notice that the outcome is merely arithmetic; there’s no change in
 process. We can take advantage of this fact by using the boolean itself:
 
-.. code-block:: none
+.. code-block:: forth
    
    : S>D  ( n -- d)  \ sign extend s to d
         DUP  O< ;
@@ -753,7 +753,7 @@ moment’s (in)decision.
 
 (In pre-1983 systems, the definition would be:
 
-.. code-block:: none
+.. code-block:: forth
    
    : S>D  ( n -- d)  \ sign extend s to d
         DUP  O< NEGATE ;
@@ -769,14 +769,14 @@ We can do even more with “hybrid values”:
 In the case of a decision that produces either zero or a non-zero
 ``n`` the traditional phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    ( ? ) IF  n  ELSE  O  THEN
 
 
 is equivalent to the simpler statement
 
-.. code-block:: none
+.. code-block:: forth
    
    ( ? )  n AND
 
@@ -787,19 +787,19 @@ flag will either produce ``n`` (all bits intact) or ``0``
 
 To restate with an example:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( ? )  IF  200  ELSE  O  THEN
 
 is the same as
 
-.. code-block:: none
+.. code-block:: forth
    
    ( ? )  200 AND
 
 Take a look at this example:
 
-.. code-block:: none
+.. code-block:: forth
    
    n  a b <  IF  45 +  THEN
 
@@ -809,7 +809,7 @@ is the same as “adding 45 or adding 0,” the difference between the two
 outcomes is purely numeric. We can rid ourselves of a decision, and
 simply compute:
 
-.. code-block:: none
+.. code-block:: forth
    
    n  a b <  45 AND  +
 
@@ -833,7 +833,7 @@ simply compute:
 
     This would be equivalent to
     
-    .. code-block:: none
+    .. code-block:: forth
    
        t  O<  1 AND
     
@@ -847,13 +847,13 @@ We can eliminate numeric ``ELSE`` clauses as well (where both results are
 non-zero), by factoring out the difference between the two results. For
 instance,
 
-.. code-block:: none
+.. code-block:: forth
    
    : STEPPERS  'TESTING? @  IF 150 ELSE 151  THEN  LOAD ;
 
 can be simplified to
 
-.. code-block:: none
+.. code-block:: forth
    
    : STEPPERS   150  'TESTING? @  1 AND +  LOAD ;
 
@@ -897,13 +897,13 @@ trick.
 Suppose we want to decrement the contents of the variable ``VALUE``, but we
 don’t want the value to go below zero:
 
-.. code-block:: none
+.. code-block:: forth
    
    -1 VALUE +!  VALUE @  -1 = IF  O VALUE !  THEN
 
 This is more simply written:
 
-.. code-block:: none
+.. code-block:: forth
    
    VALUE @  1-  O MAX  VALUE !
 
@@ -939,7 +939,7 @@ Let’s construct the word ``SPEED-LIMIT``, which returns the speed limit
 depending on the current state. Using
 ``IF``  ``THEN`` we would write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SPEED-LIMIT  ( -- speed-limit)
         'FREEWAY? @  IF  55  ELSE  25  THEN ;
@@ -947,7 +947,7 @@ depending on the current state. Using
 We might eliminate the ``IF``  ``THEN`` by using a hybrid
 value with ``AND``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SPEED-LIMIT   25  'FREEWAY? @  30 AND + ;
 
@@ -957,14 +957,14 @@ therefore isn’t very readable.
 Let’s try a data table. This is a one-dimensional table, with only two
 elements, so there’s not much to it:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE LIMITS   25 ,  55 ,
 
 The word ``SPEED-LIMIT?`` now must apply the boolean to offset into the data
 table:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SPEED-LIMIT  ( -- speed-limit)
         LIMITS  'FREEWAY? @  2 AND  +  @ ;
@@ -977,21 +977,21 @@ What we have done, though, is to factor out the decision-making process
 from the data itself. This becomes more cost-effective when we have more
 than one set of data related to the same decision. Suppose we also had
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE #LANES   4 ,  10 ,
 
 representing the number of lanes on a city street and on a freeway. We
 can use identical code to compute the current number of lanes:
 
-.. code-block:: none
+.. code-block:: forth
    
    : #LANES?  ( -- #lanes)
         #LANES  'FREEWAY? @  2 AND  +  @ ;
 
 Applying techniques of factoring, we simplify this to:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ROAD  ( for-freeway for-city ) CREATE , ,
         DOES> ( -- data )  'FREEWAY? @  2 AND  +  @ ;
@@ -1010,7 +1010,7 @@ two-dimensional data structure.
 
 A solution to the phone rate problem.
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #103
    :name: fig8-4
    :lineno-start: 0
@@ -1028,7 +1028,7 @@ A solution to the phone rate problem.
    2 CHARGE +MINUTES  \ rate for each additional minute
    4 CHARGE /MILES    \ rate per each 100 miles
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #104
    :lineno-start: 0
 
@@ -1052,13 +1052,13 @@ The current rate, which depends on the time of day, is stored as an
 address, representing one of the three rate-structure sub-tables. We can
 say
 
-.. code-block:: none
+.. code-block:: forth
    
    FULL RATE !
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    LOWER RATE !
 
@@ -1088,13 +1088,13 @@ mode.
 
 The first screen implements the change of the modes. If we invoke
 
-.. code-block:: none
+.. code-block:: forth
    
    NORMAL MODE# !
 
 we’ll go into Normal Mode.
 
-.. code-block:: none
+.. code-block:: forth
    
    INSERTING MODE# !
 
@@ -1118,7 +1118,7 @@ variable ``MODE#``. Since ``MODE#`` will contain either a 2 or a 4, by adding
 this offset we’re now pointing into the table at the address of the
 routine we want to perform. A simple
 
-.. code-block:: none
+.. code-block:: forth
    
    @ EXECUTE
 
@@ -1126,13 +1126,13 @@ will perform the routine (or ``@EXECUTE`` if you have it).
 
 In fig-Forth, change the definition of ``IS`` to:
 
-.. code-block:: none
+.. code-block:: forth
    
    : IS   [COMPILE] '  CFA , ;
 
 Implementation of the Tiny Editor.
    
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #30
    :name: fig8-5
    :lineno-start: 0
@@ -1149,7 +1149,7 @@ Implementation of the Tiny Editor.
    VARIABLE ESCAPE?      \ t=time-to-leave-loop
    : ESCAPE  TRUE ESCAPE? ! ;
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #31
    :lineno-start: 0
 
@@ -1166,7 +1166,7 @@ Implementation of the Tiny Editor.
     O ,  ( no match)       IS OVERWRITE       IS INSERT
    HERE /KEY -  CONSTANT 'NOMATCH  \ adr of no-match key
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Screen #32
    :lineno-start: 0
 
@@ -1181,14 +1181,14 @@ Implementation of the Tiny Editor.
 
 In 79-Standard Forths, use:
 
-.. code-block:: none
+.. code-block:: forth
    
    : IS   [COMPILE] '  , ;
 
 We’ve also used non-redundancy at compile time in the definition just
 below the function table:
 
-.. code-block:: none
+.. code-block:: forth
    
    HERE /KEY -  CONSTANT 'NOMATCH  \  adr of no-match key
 
@@ -1205,7 +1205,7 @@ back is the last row.) We now have two words:
 
 We use these names to supply the addresses passed to ``DO``:
 
-.. code-block:: none
+.. code-block:: forth
    
    'NOMATCH FUNCTION DO
 
@@ -1221,7 +1221,7 @@ Incidentally, the approach to ``’FUNCTION`` taken in the listing is a
 quick-and-dirty one; it uses a local variable to simplify stack
 manipulation. A simpler solution that uses no local variable is:
 
-.. code-block:: none
+.. code-block:: forth
    
    : 'FUNCTION  ( key -- adr of match )
       'NOMATCH SWAP  'NOMATCH FUNCTIONS DO  DUP
@@ -1240,7 +1240,7 @@ for speed justify the extra complexity of a table.
 
 Here is an example that computes powers of two to 8-bit precision:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE TWOS
       1 C,  2 C,  4 C,  8 C,  16 C,  32 C,
@@ -1366,9 +1366,9 @@ characters produced by the ASCII codes 160 to 223.
 
 .. figure:: fig8-6.png
    :name: fig8-6
-   :alt: The Epson MX-80 graphics character set.
 
    The Epson MX-80 graphics character set.
+
 
 Each graphics character is a different combination of six tiny boxes,
 either filled in or left blank. Suppose in our application we want to
@@ -1387,7 +1387,7 @@ and assuming that each byte contains hex FF if the
 pixel is “on;” zero if it is “off,” then here’s how little code it takes
 to compute the character:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE PIXELS  6 ALLOT
    : PIXEL  ( i -- a )  PIXELS + ;
@@ -1433,7 +1433,7 @@ Using Structured Exits
 In the chapter on factoring we demonstrated the possibility of factoring
 out a control structure using this technique:
 
-.. code-block:: none
+.. code-block:: forth
    
    : CONDITIONALLY   A B OR  C AND  IF  NOT R> DROP  THEN ;
    : ACTIVE   CONDITIONALLY   TUMBLE JUGGLE JUMP ;
@@ -1480,13 +1480,13 @@ examples of both approaches.
 If you have an ``IF``  ``ELSE``  ``THEN`` phrase in which no code follows
 ``THEN``, like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... HUNGRY?  IF  EAT-IT  ELSE  FREEZE-IT  THEN ;
 
 you can eliminate ``ELSE`` by using ``EXIT``:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... HUNGRY?  IF EAT-IT EXIT  THEN  FREEZE-IT ;
 
@@ -1503,7 +1503,7 @@ readable.
     out in the middle without having to match all your ``THEN``\ s at the
     end. In one application I had a word that went like this:
 
-    .. code-block:: none
+    .. code-block:: forth
    
        : TESTING
           SIMPLE  1CONDITION IF ... EXIT THEN
@@ -1535,7 +1535,7 @@ We can introduce the word ``LEAP`` (see :doc:`Appendix C<appendixc>`),
 which will work like ``EXIT`` (it will simulate a semicolon). Now
 we can write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : 'FUNCTION  ( key -- adr-of-match )
       'NOMATCH FUNCTIONS DO  DUP  I @ =  IF  DROP I LEAP
@@ -1546,7 +1546,7 @@ right out of the definition, leaving ``I`` (the address at which we found
 it) on the stack. If we don’t find a match, we fall through the loop and
 execute
 
-.. code-block:: none
+.. code-block:: forth
    
    DROP  'NOMATCH
 
@@ -1599,7 +1599,7 @@ loaded each time. Instead, write throw-away definitions that make the
 decisions for you. For instance (as already previewed in another
 context):
 
-.. code-block:: none
+.. code-block:: forth
    
    : STEPPERS   150  'TESTING? @  1 AND +  LOAD ;
 
@@ -1611,14 +1611,14 @@ Sometimes you need a flag to indicate whether or not a previous piece of
 code was invoked. The following definition leaves a flag which indicates
 that ``DO-IT`` was done:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DID-I?  ( -- t=I-did)
       SHOULD-I?  IF  DO-IT  TRUE  ELSE  FALSE  THEN ;
 
 This can be simplified to:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DID-I?  ( -- t=I-did)
            SHOULD-I? DUP  IF  DO-IT  THEN ;
@@ -1638,26 +1638,26 @@ The purpose of the word ``LIGHT`` is to set a flag which indicates whether
 we want the intensity bit to be set or not. While we could have
 written
 
-.. code-block:: none
+.. code-block:: forth
    
    : LIGHT   TRUE 'LIGHT? ! ;
 
 to set the flag, and
 
-.. code-block:: none
+.. code-block:: forth
    
    'LIGHT? @ IF  8 OR  THEN ...
 
 to use the flag, this approach is not quite as simple as putting the
 intensity bit-mask itself in the variable:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LIGHT   8 'LIGHT? ! ;
 
 and then simply writing
 
-.. code-block:: none
+.. code-block:: forth
    
    'LIGHT? @  OR ...
 
@@ -1676,7 +1676,7 @@ For instance, the code for transmitting a character to a printer is
 different than for slapping a character onto a video display. A poor
 implementation would define:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE DEVICE  ( O=video | 1=printer)
    : VIDEO   FALSE DEVICE ! ;
@@ -1690,7 +1690,7 @@ you type a string.
 
 A preferable implementation would use vectored execution. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    DOER TYPE  ( a # -- )
    : VIDEO   MAKE TYPE ( ...code for video...) ;
@@ -1716,7 +1716,7 @@ concerned about speed. We type strings so often, we can’t afford to
 waste time doing it. The best solution here might be to set the function
 of ``TYPE`` and also set a flag:
 
-.. code-block:: none
+.. code-block:: forth
    
    DOER TYPE
    : VIDEO   O DEVICE !  MAKE TYPE
@@ -1737,7 +1737,7 @@ If changing the state involves changing a small number of functions, you
 can still use ``DOER/MAKE``. Here are definitions of three memory-move
 operators that can be shut off together.
 
-.. code-block:: none
+.. code-block:: forth
    
    DOER !'  ( vectorable ! )
    DOER CMOVE'  ( vectorable CMOVE )
@@ -1755,14 +1755,14 @@ would be preferable.
 A corollary to this rule introduces the “structured exit hook,” a
 ``DOER`` word vectored to perform a structured exit.
 
-.. code-block:: none
+.. code-block:: forth
    
    DOER HESITATE  ( the exit hook)
    : DISSOLVE   HESITATE  FILE-DIVORCE ;
 
 (… Much later in the listing:)
 
-.. code-block:: none
+.. code-block:: forth
    
    : RELENT   MAKE HESITATE   SEND-FLOWERS  R> DROP ;
 
@@ -1812,7 +1812,7 @@ one we’ve seen several times already. In our “colors” example we made
 the assumption that the best syntax would
 be:
 
-.. code-block:: none
+.. code-block:: forth
    
    LIGHT BLUE
 
@@ -1820,7 +1820,7 @@ that is, the adjective ``LIGHT`` preceding the color. Fine. But remember the
 code to implement that version? Compare it with the simplicity of this
 approach:
 
-.. code-block:: none
+.. code-block:: forth
    
    O CONSTANT BLACK    1 CONSTANT BLUE    2 CONSTANT GREEN
    3 CONSTANT CYAN     4 CONSTANT RED     5 CONSTANT MAGENTA
@@ -1829,7 +1829,7 @@ approach:
 
 In this version we’ve reversed the syntax, so that we now say
 
-.. code-block:: none
+.. code-block:: forth
    
    BLUE LIGHT
 

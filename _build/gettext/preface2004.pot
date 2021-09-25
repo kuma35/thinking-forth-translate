@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-25 07:30+0900\n"
+"POT-Creation-Date: 2021-09-26 02:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,4 +203,3 @@ msgstr ""
 #: ../../preface2004.rst:170
 msgid "Note from John: I'll add that Bernd really took the ball and ran with it, employing the \"Free Software\" development model to impressive effect.  Of course, an important part of most Free Software projects is one dedicated super developer who blazes the trail and gets a large percentage of the work done.  Bernd is that guy."
 msgstr ""
-

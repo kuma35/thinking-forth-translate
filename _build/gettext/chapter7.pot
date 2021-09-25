@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-13 08:46+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -337,7 +337,7 @@ msgstr ""
 msgid "In the stack commentary for ``CMOVE>`` in :numref:`fig7-1` , the inner brace represents the contents of the ``DO``  ``LOOP``. The stack depth upon exiting the loop is the same as upon entering it: one element. Within the outer braces, the stack result of the ``IF`` clause is the same as that of the ``ELSE`` clause: one element left over. (What that leftover element represents doesn’t matter, as symbolized by the “x” next to ``THEN``.)"
 msgstr ""
 
-#: ../../chapter7.rst:404
+#: ../../chapter7.rst:403
 msgid "Example of a stack commentary."
 msgstr ""
 
@@ -497,7 +497,7 @@ msgstr ""
 msgid "In fact this property is exactly what we use when we test words in isolation.  Words that do not have this property are significantly harder to test. In a sense a \"named variable\" whose value changes frequently is the next worst thing to the now \"forbidden\" GOTO."
 msgstr ""
 
-#: ../../chapter7.rst:603
+#: ../../chapter7.rst:602
 msgid "\"Shot from a cannon on a fast-moving train, hurtling between the blades of a windmill, and expecting to grab a trapeze dangling from a hot-air balloon... I told you Ace, there were too many variables!\""
 msgstr ""
 
@@ -845,7 +845,7 @@ msgstr ""
 msgid "But a preferred technique involves creating a table, with each element of the table referred to by name. Then creating a second table of the same length. As you can see in :numref:`fig7-3`, we can save the state by copying the table, called ``POINTERS,`` into the second table, called ``SAVED``."
 msgstr ""
 
-#: ../../chapter7.rst:1050
+#: ../../chapter7.rst:1049
 msgid "Conceptual model for saving a state table."
 msgstr ""
 
@@ -881,7 +881,7 @@ msgstr ""
 msgid "The case of alternating states is slightly more involved. In this situation we need to alternate back and forth between two (or more) states, never clobbering the conditions in each state when we jump to the other state. :numref:`fig7-5` shows the conceptual model for this kind of state table."
 msgstr ""
 
-#: ../../chapter7.rst:1113
+#: ../../chapter7.rst:1112
 msgid "Conceptual model for alternating-states tables."
 msgstr ""
 
@@ -949,7 +949,7 @@ msgstr ""
 msgid "When you invoke ``LEFTWING``, for example, ``MAKE`` redirects ``PLATFORM`` and exits. Invoking ``LEFTWING`` does not cause “proponent” to be printed. :numref:`fig7-7`  demonstrates this point, using a conceptualized illustration of the dictionary."
 msgstr ""
 
-#: ../../chapter7.rst:1246
+#: ../../chapter7.rst:1245
 msgid "``DOER`` and ``MAKE``."
 msgstr ""
 
@@ -957,7 +957,7 @@ msgstr ""
 msgid "If you want to *continue* execution, you can use the word ``;AND`` in place of semicolon. ``;AND`` terminates the code that the ``DOER`` word points to, and resumes execution of the definition in which it appears, as you can see in :numref:`fig7-8` ."
 msgstr ""
 
-#: ../../chapter7.rst:1258
+#: ../../chapter7.rst:1257
 msgid "Multiple ``MAKE``\\ s in parallel using ``;AND``."
 msgstr ""
 
@@ -965,7 +965,7 @@ msgstr ""
 msgid "Finally, you can chain the “making” of ``DOER`` words in series by not using ``;AND``. :numref:`fig7-9`  explains this better than I could write about it."
 msgstr ""
 
-#: ../../chapter7.rst:1268
+#: ../../chapter7.rst:1267
 msgid "Multiple ``MAKE``\\ s in series."
 msgstr ""
 
@@ -1116,4 +1116,3 @@ msgstr ""
 #: ../../chapter7.rst:1505
 msgid "Daniel Slater, \"A State Space Approach to   Robotics,\"  **The Journal of Forth Application and Research** ,   1, 1 (September 1983), 17."
 msgstr ""
-

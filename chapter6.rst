@@ -47,14 +47,14 @@ The simplest thing to
 factor out is data, thanks to Forth’s data stack. For instance, to
 compute two-thirds of 1,000, we write
 
-.. code-block:: none
+.. code-block:: forth
    
    1000 2 3 */
 
 To define a word that computes two-thirds of *any* number, we factor out
 the argument from the definition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : TWO-THIRDS  ( n1 -- n2)  2 3 */ ;
 
@@ -62,14 +62,14 @@ When the datum comes in the *middle* of the useful phrase, we have to
 use stack manipulation. For instance, to center a piece of text ten
 characters long on an 80-column screen, we would write:
 
-.. code-block:: none
+.. code-block:: forth
    
    80  10 -   2/ SPACES
 
 But text isn’t always 10 characters long. To make the phrase useful for
 any string, you’d factor out the length by writing:
 
-.. code-block:: none
+.. code-block:: forth
    
    : CENTER ( length -- ) 80  SWAP -  2/ SPACES ;
 
@@ -98,7 +98,7 @@ out simply as a number on the stack. For instance:
 How can you factor out the “8 \*” operation? By
 including “\*” in the factoring and passing it a one or eight:
 
-.. code-block:: none
+.. code-block:: forth
    
    : NEW  ( n )  WILLY NILLY  *  PUDDIN' PIE AND ;
 
@@ -127,20 +127,20 @@ On the other hand, the
 difference sometimes *is* a function. Witness:
 
 Segment 1:
-    .. code-block:: none
+    .. code-block:: forth
    
        BLETCH-A  BLETCH-B BLETCH-C
                 BLETCH-D  BLETCH-E  BLETCH-F
 
 Segment 2:
-    .. code-block:: none
+    .. code-block:: forth
    
        BLETCH-A  BLETCH-B  PERVERSITY
                 BLETCH-D  BLETCH-E  BLETCH-F
 
 Wrong approach:
 
-.. code-block:: none
+.. code-block:: forth
    
    : BLETCHES  ( t=do-BLETCH-C | f=do-PERVERSITY -- ) 
       BLETCH-A  BLETCH-B  IF  BLETCH-C  ELSE  PERVERSITY
@@ -154,7 +154,7 @@ Segment 2:
 
 A better approach:
 
-.. code-block:: none
+.. code-block:: forth
    
    : BLETCH-AB   BLETCH-A BLETCH-B ;
    : BLETCH-DEF   BLETCH-D BLETCH-E BLETCH-F ;
@@ -181,7 +181,7 @@ Factoring Out Code from Within Control Structures
 Be alert to repetitions on either side of an ``IF``  ``ELSE``  ``THEN``
 statement. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... ( c)  DUP  BL 127 WITHIN
           IF  EMIT  ELSE
@@ -191,7 +191,7 @@ This fragment normally emits an ASCII character, but if the character is
 a control code, it emits a dot. Either way, an ``EMIT`` is performed. Factor
 ``EMIT`` out of the conditional structure, like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... ( c)  DUP  BL 127 WITHIN NOT
           IF  DROP  ASCII .  THEN  EMIT  ...
@@ -217,7 +217,7 @@ Factoring Out Control Structures Themselves
 Here are two definitions whose differences lies within a ``IF``  ``THEN``
 construct:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ACTIVE    A B OR  C AND  IF  TUMBLE JUGGLE JUMP THEN ;
    : LAZY      A B OR  C AND  IF   SIT  EAT  SLEEP   THEN ;
@@ -227,7 +227,7 @@ changes. Since you can’t factor the ``IF`` into one
 word and the ``THEN`` into another, the simplest thing
 is to factor the condition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : CONDITIONS? ( -- ?) A B OR C AND ;
    : ACTIVE    CONDITIONS? IF TUMBLE JUGGLE JUMP THEN ;
@@ -237,7 +237,7 @@ Depending on the number of repetitions of the
 same condition and control structure, you may even want to factor out
 both. Watch this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : CONDITIONALLY   A B OR  C AND NOT IF  R> DROP   THEN ;
    : ACTIVE   CONDITIONALLY   TUMBLE JUGGLE JUMP ;
@@ -262,7 +262,7 @@ out names, when the names seem almost, but not quite, the same. Examine
 the following terrible example of code, which is meant to initialize
 three variables associated with each of eight channels:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE 0STS       VARIABLE 1STS       VARIABLE 2STS 
    VARIABLE 3STS       VARIABLE 4STS       VARIABLE 5STS
@@ -273,7 +273,7 @@ three variables associated with each of eight channels:
    VARIABLE 2UPS       VARIABLE 3UPS       VARIABLE 4UPS
    VARIABLE 5UPS       VARIABLE 6UPS       VARIABLE 7UPS
 
-.. code-block:: none
+.. code-block:: forth
    
    : INIT-CHO   0 0STS !  1000 0TNR !  -1 0UPS ! ; 
    : INIT-CH1   0 1STS !  1000 1TNR !  -1 1UPS ! ; 
@@ -284,7 +284,7 @@ three variables associated with each of eight channels:
    : INIT-CH6   0 6STS !  1000 6TNR !  -1 6UPS ! ; 
    : INIT-CH7   0 7STS !  1000 7TNR !  -1 7UPS ! ; 
 
-.. code-block:: none
+.. code-block:: forth
    
    : INIT-ALL-CHS    INIT-CHO  INIT-CH1  INIT-CH2  INIT-CH3
       INIT-CH4  INIT-CH5  INIT-CH6  INIT-CH7 ;
@@ -296,7 +296,7 @@ Here’s an improved rendition. The similar variable names have been
 factored into three data structures, and the lengthy recital of ``INIT-CH``
 words has been factored into a ``DO``  ``LOOP``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : ARRAY  ( #cells -- )  CREATE  2* ALLOT
       DOES> ( i -- 'cell)  SWAP  2* + ; 
@@ -333,7 +333,7 @@ Examine the structure of this code (without worrying about its
 purpose—you’ll see the same example later
 on):
 
-.. code-block:: none
+.. code-block:: forth
    
    : HUE  ( color -- color') 
       'LIGHT? @  OR  0 'LIGHT? ! ;
@@ -349,7 +349,7 @@ on):
 The above approach is technically correct, but
 less memory-efficient than the following approach using defining words:
 
-.. code-block:: none
+.. code-block:: forth
    
    : HUE   ( color -- )  CREATE ,
       DOES>  ( -- color )  @ 'LIGHT? @  OR  0 'LIGHT? ! ;
@@ -473,7 +473,7 @@ this may be a good time to “make a break.”
 
 Suppose you have
 
-.. code-block:: none
+.. code-block:: forth
    
    ... BALANCE  DUP xxx xxx xxx xxx xxx xxx xxx xxx xxx
         xxx xxx xxx xxx xxx xxx   ( balance) SHOW  ...
@@ -485,7 +485,7 @@ when ``SHOW`` executes, the programmer has interjected a stack picture.
 
 This solution is generally a sign of bad factoring. Better to write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : REVISE  ( balance -- )  xxx xxx xxx xxx xxx xxx xxx
         xxx xxx xxx xxx xxx xxx xxx ;
@@ -516,7 +516,7 @@ In looking over your work, you often find identical phrases or short
 passages duplicated several times. In writing an editor I found this
 phrase repeated several times:
 
-.. code-block:: none
+.. code-block:: forth
    
    FRAME  CURSOR @ +
 
@@ -526,14 +526,14 @@ Because it appeared several times I factored it into a new word called
 It’s up to you to recognize fragments that are coded differently but
 functionally equivalent, such as:
 
-.. code-block:: none
+.. code-block:: forth
    
    FRAME  CURSOR @ 1-  +
 
 The ``1-`` appears to make this phrase different from the one defined as ``AT.``
 But in fact, it can be written
 
-.. code-block:: none
+.. code-block:: forth
    
    AT 1-
 
@@ -547,7 +547,7 @@ On the other hand:
 Don’t blindly seize upon duplications that may not be useful. For
 instance, in several places in one application I used this phrase:
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @ BLOCK  >IN @ +  C@
 
@@ -556,7 +556,7 @@ letter being pointed to by the interpreter.
 
 In a later revision, I unexpectedly had to write:
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @ BLOCK  >IN @ +  C!
 
@@ -609,7 +609,7 @@ this criterion during the implementation stage as well.
 
 Here’s a very short definition that does little except hide information:
 
-.. code-block:: none
+.. code-block:: forth
    
    : >BODY  ( acf -- apf )  2+ ;
 
@@ -625,7 +625,7 @@ included as an Experimental Proposal in the Forth-83 Standard
 
 Here’s a group of definitions that might be used in writing an editor:
 
-.. code-block:: none
+.. code-block:: forth
    
    : FRAME  ( -- a)  SCR @ BLOCK ;
    : CURSOR  ( -- a)  R# ;
@@ -641,7 +641,7 @@ an editing buffer to protect the user from making errors that destroy a
 block, you merely have to redefine two of these words, perhaps like
 this:
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE FRAME  1024 ALLOT
    VARIABLE CURSOR
@@ -660,7 +660,7 @@ number of people in a group. (This is a good thing for managers of
 programmer teams to know—the number of communication paths increases
 drastically with each new addition to the team.)
 
-.. code-block:: none
+.. code-block:: forth
    
    : PEOPLE>PATHS  ( #people -- #paths )  DUP 1-  *  2/ ;
 
@@ -668,14 +668,14 @@ This definition does the calculation only. Here’s the “user definition”
 that invokes ``PEOPLE>PATHS`` to perform the calculation, and then displays
 the result:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PEOPLE  ( #people)
        ." = "  PEOPLE>PATHS  .  ." PATHS " ;
 
 This produces:
 
-.. code-block:: none
+.. code-block:: forth
    
    2 PEOPLE = 1 PATHS
    3 PEOPLE = 3 PATHS
@@ -695,7 +695,7 @@ The word ``.`` (dot) is a prime example. Dot is great 99％ of the time, but
 occasionally it does too much. Here\’s what it does, in fact (in
 Forth–83):
 
-.. code-block:: none
+.. code-block:: forth
    
    : .   ( n )  DUP ABS 0 <# #S  ROT SIGN  #> TYPE SPACE ;
 
@@ -707,7 +707,7 @@ prints a final space.
 
 Here’s a better factoring found in some Forth systems:
 
-.. code-block:: none
+.. code-block:: forth
    
    : (.)  ( n -- a #)  DUP ABS 0  <# #S  ROT SIGN  #> ;
    : .  ( n)  (.) TYPE SPACE ;
@@ -721,13 +721,13 @@ even center it in a field. (A better approach would have been to use
 Information hiding can also be a reason *not* to factor. For instance,
 if you factor the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    SCR @ BLOCK
 
 into the definition
 
-.. code-block:: none
+.. code-block:: forth
    
    : FRAME   SCR @ BLOCK ;
 
@@ -767,20 +767,20 @@ department in which Forth had recently introduced. Their purpose was
 purely instructional, to remind the programmer which vocabulary was
 ``CURRENT``, and which was ``CONTEXT``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : .CONTEXT   CONTEXT @  8 -  NFA  ID.  ;
    : .CURRENT   CURRENT @  8 -  NFA  ID.  ;
 
 If you typed
 
-.. code-block:: none
+.. code-block:: forth
    
    .CONTEXT
 
 the system would respond
 
-.. code-block:: none
+.. code-block:: forth
    
    .CONTEXT FORTH
 
@@ -791,13 +791,13 @@ The obvious repetition of code struck my eye as a sign of bad factoring.
 It would have been possible to consolidate the repeated passage into a
 third definition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : .VOCABULARY   ( pointer )  @  8 -  NFA  ID. ;
 
 shortening the original definitions to:
 
-.. code-block:: none
+.. code-block:: forth
    
    : .CONTEXT   CONTEXT .VOCABULARY ;
    : .CURRENT   CURRENT .VOCABULARY ;
@@ -810,19 +810,19 @@ the word ``CURRENT``.
 
 Applying the principles of good naming, I suggested:
 
-.. code-block:: none
+.. code-block:: forth
    
    : IS  ( adr)   @  8 -  NFA  ID. ;
 
 allowing the syntax(``CONTEXT IS`` \[:kbd:`Enter`\])
 
-.. code-block:: none
+.. code-block:: forth
    
    CONTEXT IS ASSEMBLER ok
 
 or(``CURRENT IS`` \[:kbd:`Enter`\])
 
-.. code-block:: none
+.. code-block:: forth
    
    CURRENT IS FORTH ok
 
@@ -852,7 +852,7 @@ or 80.
 
 Here’s the most straightforward way to fulfill the requirements:
 
-.. code-block:: none
+.. code-block:: forth
    
    : 40-B&W       40 #COLUMNS !  0 MODE ;
    : 40-COLOR     40 #COLUMNS !  1 MODE ;
@@ -861,7 +861,7 @@ Here’s the most straightforward way to fulfill the requirements:
 
 By factoring to eliminate the repetition, we come up with this version:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COL-MODE!     ( #columns mode )  MODE  #COLUMNS ! ;
    : 40-B&W       40 0 COL-MODE! ;
@@ -874,14 +874,14 @@ following the injunctions against numerically-prefixed and hyphenated
 names, we realize that we can use the number of columns as a stack
 argument, and *calculate* the mode:
 
-.. code-block:: none
+.. code-block:: forth
    
    : B&W    ( #cols -- )  DUP #COLUMNS !  20 /  2-     MODE ;
    : COLOR  ( #cols -- )  DUP #COLUMNS !  20 /  2-  1+ MODE ;
 
 This gives us this syntax:
 
-.. code-block:: none
+.. code-block:: forth
    
    40 B&W
    80 B&W
@@ -893,7 +893,7 @@ We’ve reduced the number of commands from four to two.
 Once again, though, we have some duplicate code. If we factor out this
 code we get:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COL-MODE!  ( #columns chroma?)
       SWAP DUP #COLUMNS !  20 / 2-  +  MODE ;
@@ -909,7 +909,7 @@ Our final example is a set of words to represent colors on a particular
 system. Names like ``BLUE`` and ``RED`` are nicer than numbers. One solution
 might be to define:
 
-.. code-block:: none
+.. code-block:: forth
    
     0 CONSTANT BLACK                 1 CONSTANT BLUE
     2 CONSTANT GREEN                 3 CONSTANT CYAN
@@ -923,7 +923,7 @@ might be to define:
 These colors can be used with words such as ``BACKGROUND``, ``FOREGROUND``, and
 ``BORDER``:
 
-.. code-block:: none
+.. code-block:: forth
    
    WHITE BACKGROUND  RED FOREGROUND  BLUE BORDER
 
@@ -936,7 +936,7 @@ between these two sets is the setting of the “intensity bit.”) If we
 factor out the “lightness,” we might come up with this
 solution:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE 'LIGHT?  ( intensity bit?)
    : HUE  ( color)  CREATE ,
@@ -948,13 +948,13 @@ solution:
 
 With this syntax, the word
 
-.. code-block:: none
+.. code-block:: forth
    
    BLUE
 
 by itself will return a “1” on the stack, but the phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    LIGHT BLUE
 
@@ -963,7 +963,7 @@ hues, then cleared.)
 
 If necessary for readability, we still might want to define:
 
-.. code-block:: none
+.. code-block:: forth
    
    8 HUE DARK-GRAY
    14 HUE YELLOW
@@ -977,7 +977,7 @@ shorter object code.
 
 The phrase
 
-.. code-block:: none
+.. code-block:: forth
    
    OVER + SWAP
 
@@ -987,7 +987,7 @@ and count into an ending address and starting address appropriate for a
 
 Another commonly seen phrase is
 
-.. code-block:: none
+.. code-block:: forth
    
    1+ SWAP
 
@@ -1057,7 +1057,7 @@ left-most and top-most coordinates of the first box.
 
 Naturally we can define:
 
-.. code-block:: none
+.. code-block:: forth
    
    8 CONSTANT WIDE
    5 CONSTANT HIGH
@@ -1079,7 +1079,7 @@ margin. To figure the total width of all the boxes, we add
 
 So we could, crudely, define:
 
-.. code-block:: none
+.. code-block:: forth
    
    24 CONSTANT LEFTMARGIN
 
@@ -1092,7 +1092,7 @@ the left margin ourselves.
 In the Forth environment, we can use the full power of Forth even when
 we’re compiling. Why not let Forth do the figuring?
 
-.. code-block:: none
+.. code-block:: forth
    
    WIDE 3 *  AVE 2 *  +  80 SWAP -  2/ CONSTANT LEFTMARGIN
    HIGH 3 *  STREET 2 * +  24 SWAP -  2/ CONSTANT TOPMARGIN
@@ -1112,11 +1112,11 @@ positions the cursor to the ( x y ) coordinate on the stack.)
 
 Notice the line immediately following the list of points:
 
-.. code-block:: none
+.. code-block:: forth
    
    HERE POINTS -  ( /table)  2/  CONSTANT #POINTS
 
-.. code-block:: none
+.. code-block:: forth
    :name: fig6-2
    :caption: Another example of limiting compile-time redundancy.
 	     
@@ -1143,7 +1143,7 @@ Compile-Time Factoring through Defining Words
 Let’s examine a series of approaches to the same problem—defining a
 group of related addresses. Here\’s the first try:
 
-.. code-block:: none
+.. code-block:: forth
    
    HEX 01A0 CONSTANT BASE.PORT.ADDRESS
    BASE.PORT.ADDRESS CONSTANT SPEAKER
@@ -1160,7 +1160,7 @@ the use of a defining word.
 The following approach, which is more readable, combines all the
 repeated code into the “does” part of a defining word:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PORT  ( offset -- )  CREATE ,
       \ does>  ( -- 'port) @ BASE.PORT.ADDRESS + ;
@@ -1173,7 +1173,7 @@ In this solution we\’re performing the offset calculation at *run*-time,
 every time we invoke one of these names. It would be more efficient to
 perform the calculation at compile time, like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : PORT  ( offset -- )  BASE.PORT.ADDRESS + CONSTANT ;
       \ does>  ( -- 'port)
@@ -1199,7 +1199,7 @@ stack. The defining word ``PORT`` duplicates this address, makes a constant
 out of it, then adds 2 to the address still on the stack, for the next
 invocation of ``PORT``.
 
-.. code-block:: none
+.. code-block:: forth
    
    : PORT   ( 'port -- 'next-port)  DUP CREATE ,  2+ ;
       \ does>  ( -- 'port)
@@ -1221,7 +1221,7 @@ has to be defined as a constant. Provided that the base-port address
 won’t be used outside of this lexicon of port names, it\’s just as well
 to refer to it by number here.
 
-.. code-block:: none
+.. code-block:: forth
    
    HEX 01A0  ( base port adr)
      PORT SPEAKER
@@ -1252,7 +1252,7 @@ At first we focus our attention on the problem of drawing a box—never
 mind erasing it. We might come up with
 this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LAYER   WIDE  0 DO  ASCII * EMIT  LOOP ;
    : BOX   ( upper-left-x  upper-left-y -- )
@@ -1265,7 +1265,7 @@ like to change the emitted character from an asterisk to a blank. This
 requires the addition of a variable, and some readable words for setting
 the contents of the variable. So:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE INK
    : DRAW   ASCII *  INK ! ;
@@ -1277,13 +1277,13 @@ remains the same.
 
 This approach allows the syntax
 
-.. code-block:: none
+.. code-block:: forth
    
    ( x y ) DRAW BOX
 
 or
 
-.. code-block:: none
+.. code-block:: forth
    
    ( x y ) UNDRAW BOX
 
@@ -1326,19 +1326,19 @@ reason.
     merely adds a subscript to an address and gives you back an
     address. You can define an array by saying
     
-    .. code-block:: none
+    .. code-block:: forth
 
        CREATE X   100 ALLOT
     
     then saying
 
-    .. code-block:: none
+    .. code-block:: forth
    
        X +
     
     Or you can say
     
-    .. code-block:: none
+    .. code-block:: forth
    
        : X   X + ;
     

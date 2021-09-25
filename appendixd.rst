@@ -20,7 +20,7 @@ Chapter Three
 
    Our word’s syntax will be
 
-.. code-block:: none
+.. code-block:: forth
    
    : RAM-ALLOT   ( #bytes-to-allot -- starting-adr) 
        ... ;
@@ -30,7 +30,7 @@ Chapter Three
    This syntax will remain the same whether we define it to allocate
    growing upward:
 
-.. code-block:: none
+.. code-block:: forth
    
    : RAM-ALLOT  ( #bytes-to-allot -- starting-adr)
        >RAM @  DUP ROT +  >RAM ! ;
@@ -39,7 +39,7 @@ Chapter Three
 
    or to allocate growing downward:
 
-.. code-block:: none
+.. code-block:: forth
    
    : RAM-ALLOT  ( #bytes-to-allot -- starting-adr)
        >RAM @  SWAP -  DUP >RAM ! ;
@@ -49,7 +49,7 @@ Chapter Four
 
 Our solution is as follows:
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    \ CARDS Shuffle                              6-20-83
@@ -67,6 +67,6 @@ Our solution is as follows:
 Chapter Eight
 =============
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIRECTION  ( n|-n|0 -- 1|-1|0)  DUP  IF  0< 1 OR  THEN ;

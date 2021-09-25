@@ -109,7 +109,7 @@ Samples of Good Commenting Style
 Here are two sample screens to illustrate good commenting
 style.
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    \ Formatter         Data Structures -- p.2             06/06/83
@@ -127,7 +127,7 @@ style.
    VARIABLE WALL     \ current primary right margin
    VARIABLE WALL-WAS \ WALL when curr. line started being formt'd
 
-.. code-block:: none
+.. code-block:: forth
    :lineno-start: 0
 
    \ Formatter          positioning -- p.1               06/06/83

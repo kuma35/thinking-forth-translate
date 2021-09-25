@@ -31,11 +31,11 @@ ideas are somehow added onto existing paths of related thoughts.
 
 .. figure:: fig3-1.png
    :name: fig3-1
-   :alt: Pools of thought not yet linked
 
    Pools of thought not yet linked
 
 ..
+
 
 In the mishap just described, no connection was ever made between the
 two separately-linked pools of thought until Thursday. The conflict
@@ -127,7 +127,7 @@ As long as that number 14 remains a “secret” to the component and won’t
 be used elsewhere, you don’t need to define it as constant. Just use the
 number 14 in both definitions:
 
-.. code-block:: none
+.. code-block:: forth
    
    : +RECORD  14 RECORD# +! ;
    : -RECORD -14 RECORD# +! ;
@@ -138,7 +138,7 @@ On the other hand, if the value will be needed outside of the component,
 or if it’s used several times within the component and there’s a good
 chance that it will change, you’re better off hiding it behind a name:
 
-.. code-block:: none
+.. code-block:: forth
    
    14 CONSTANT /RECORD
    : +RECORD /RECORD RECORD# +! ;
@@ -209,18 +209,18 @@ implement the data structure to be edited.
 
 .. figure:: fig3-2.png
    :name: fig3-2
-   :alt: Generalized decomposition of the Tiny Editor problem.
 
    Generalized decomposition of the Tiny Editor problem.
 
 ..
+
 
 Finally, we’ll need a component to display the field on the video
 screen. For the sake of simplicity, let’s plan on creating one word
 only, ``REDISPLAY``, to redisplay the entire field after each key is
 pressed.
 
-.. code-block:: none
+.. code-block:: forth
    
    : EDITOR  BEGIN  KEY  REVISE  REDISPLAY  ... UNTIL ;
 
@@ -286,7 +286,7 @@ within this component.
 
 Let’s attempt to rewrite these algorithms in code:
 
-.. code-block:: none
+.. code-block:: forth
    
    : KEY#  ( returns value of key last pressed )  ... ;
    : POSITION  ( returns address of character pointed-to)  ;
@@ -346,7 +346,7 @@ do in “insert mode” in the right column.
 To implement what happens when “backspace” is pressed while in Insert
 Mode, we add a new procedure:
 
-.. code-block:: none
+.. code-block:: forth
    
    : INSERT<   BACKWARD  SLIDE< ;
 
@@ -387,7 +387,7 @@ cavalierly relegated to the key interpreter, now must depend on which
 editing functions occur. As we’ve discovered, the most important names
 needed to implement the key interpreter are:
 
-.. code-block:: none
+.. code-block:: forth
    
    FORWARD
    BACKWARD
@@ -410,7 +410,7 @@ the terminal’s cursor to its current position.
 Here are our revised procedure names. The commands just added are in
 boldface:
 
-.. code-block:: none
+.. code-block:: forth
    
    : OVERWRITE  KEY# POSITION C!  KEY# EMIT  FORWARD ;
    : RETYPE  ( type from current position to
@@ -462,11 +462,11 @@ editing function, until the user presses the return key.
 
 .. figure:: fig3-3.png
    :name: fig3-3
-   :alt: The traditional approach: view from the top.
 
    The traditional approach: view from the top.
 
 ..
+
 
 Inside the loop we have three modules: getting a character from the
 keyboard, editing the data, and finally refreshing the display to match
@@ -482,11 +482,11 @@ had deferred till later in the previous try.
 
 .. figure:: fig3-4.png
    :name: fig3-4
-   :alt: A structure for "Process a Keystroke."
 
    A structure for "Process a Keystroke."
 
 ..
+
 
 For instance, we must determine all the keys that might be pressed. More
 significantly, we must consider the problem of “insert mode.” This
@@ -511,11 +511,11 @@ relevant to the problem.
 
 .. figure:: fig3-5.png
    :name: fig3-5
-   :alt: Another structure for "Process a Keystroke."
 
    Another structure for "Process a Keystroke."
 
 ..
+
 
 Having decided on the first structure, we’ve finally arrived at the most
 important modules—the ones that do the work of overwriting, inserting,
@@ -543,11 +543,11 @@ do to our design structure?
 
 .. figure:: fig3-6.png
    :name: fig3-6
-   :alt: The same section, "refined" and "optimized."
 
    The same section, "refined" and "optimized."
 
 ..
+
 
 Well, for one thing it destroys “Refresh Display” as a separate module.
 The function of “Refresh Display” is now scattered among the various
@@ -578,11 +578,11 @@ superficial element of program design.
 
 .. figure:: fig3-7.png
    :name: fig3-7
-   :alt: Adding refresh.
 
    Adding refresh.
 
 ..
+
 
 In contrast, in our design by components the correct solution fell out
 naturally because we “used” the refresh component inside the editing
@@ -616,11 +616,11 @@ opposite module.
 
 .. figure:: fig3-8.png
    :name: fig3-8
-   :alt: Traditional view of the interface as a junction.
 
    Traditional view of the interface as a junction.
 
 ..
+
 
 There\'s more to good interface design than that. Allow me to introduce a
 design element which I call the “interface component.” The purpose an
@@ -630,11 +630,11 @@ between two or more other components ( :numref:`fig3-9` ).
 
 .. figure:: fig3-9.png
    :name: fig3-9
-   :alt: Use of the interface component.
 
    Use of the interface component.
 
 ..
+
 
 .. hint::
 
@@ -678,7 +678,7 @@ buffers are defined with ``CREATE``, the count is an
 ordinary ``VARIABLE``, and the attribute patterns are
 defined as ``CONSTANT`` s, such as:
 
-.. code-block:: none
+.. code-block:: forth
    
    1 CONSTANT UNDERNESS  ( bit mask for underlining)
    2 CONSTANT BOLDNESS  ( bit mask for boldface)
@@ -777,11 +777,11 @@ moving on the advanced stuff.
 
 .. figure:: fig3-10.png
    :name: fig3-10
-   :alt: Two ways to add advanced capabilities.
 
    Two ways to add advanced capabilities.
 
 ..
+
 
 But in many large applications, the extra capabilities are best
 implemented as an enhancement to some private, root function in the
@@ -805,7 +805,7 @@ the text. This feature requires somehow “getting inside of” ``NEWPAGE`` , so
 that when ``NEWPAGE`` is next executed, it will format the deferred figure
 at the top of the new page:
 
-.. code-block:: none
+.. code-block:: forth
    
    : NEWPAGE  ... ( terminate page with footer)
       ( start new page with header)  ...  ?HOLDOVER ... ;
@@ -961,11 +961,11 @@ shameless waste of time and energy!
 
 .. figure:: no-scrambled.png
    :name: no-scrambled
-   :alt: "No scrambled?"
 
    "No scrambled?"
 
 ..
+
 
 Finally, because the object is constructed to recognize a finite set of
 possibilities, it\’s difficult to make additions to the row of buttons
@@ -1084,7 +1084,7 @@ For Further Thinking
 
    (a).
    
-   .. code-block:: none
+   .. code-block:: forth
       
       ( Define editor keys )
       HEX
@@ -1108,7 +1108,7 @@ For Further Thinking
 
    (b).
    
-   .. code-block:: none
+   .. code-block:: forth
    
       ( Keystroke interpreter)
       : EDITOR
@@ -1129,7 +1129,7 @@ For Further Thinking
 
    We might do something like this:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       HEX
       C000 CONSTANT FIRST-ARRAY  ( 8 bytes)
@@ -1143,14 +1143,14 @@ For Further Thinking
    pointer,” called ``>RAM``, showing where the next free byte is. We first
    set the pointer to the beginning of the RAM space:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       VARIABLE >RAM
       C000 >RAM !
 
    Now we can define each array like this:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       >RAM @ CONSTANT FIRST-ARRAY    8 >RAM +!
       >RAM @ CONSTANT SECOND-ARRAY   6 >RAM +!
@@ -1162,7 +1162,7 @@ For Further Thinking
 
    To make the above more readable, we might add these two definitions:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       : THERE ( -- address of next free byte in RAM)
            >RAM @ ;
@@ -1170,7 +1170,7 @@ For Further Thinking
 
    We can now rewrite the above equivalently as:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       THERE CONSTANT FIRST-ARRAY    8 RAM-ALLOT
       THERE CONSTANT SECOND-ARRAY   6 RAM-ALLOT
@@ -1191,7 +1191,7 @@ For Further Thinking
 
    To do this, we must now write:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       F000 >RAM ! ( EFFF, last byte, plus one)
       : THERE ( -- address of next free byte in RAM)

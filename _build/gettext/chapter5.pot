@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-27 04:49+0900\n"
+"POT-Creation-Date: 2021-09-26 04:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "A well-organized book has clearly defined chapters, with clearly defined sections, and a table of contents to help you see the organization at a glance. A well-organized book is easy to read. A badly organized book makes comprehension more difficult, and makes finding information later on nearly impossible."
 msgstr ""
 
-#: ../../chapter5.rst:52
+#: ../../chapter5.rst:51
 msgid "I still don't see how these programming conventions enhance readability."
 msgstr ""
 
@@ -1518,7 +1518,7 @@ msgstr ""
 msgid "If you succeed, then you can eliminate the clutter of excessive commenting, achieving a purity of expression without redundant explanations."
 msgstr ""
 
-#: ../../chapter5.rst:1609
+#: ../../chapter5.rst:1608
 msgid "Wiggins, proud of his commenting technique."
 msgstr ""
 
@@ -1941,4 +1941,3 @@ msgstr ""
 #: ../../chapter5.rst:2089
 msgid "Henry Laxen, \"Choosing Names,\"  **Forth Dimensions,** vol. 4, no.\\ 4, Forth Interest Group."
 msgstr ""
-

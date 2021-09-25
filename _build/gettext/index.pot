@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 19:06+0900\n"
+"POT-Creation-Date: 2021-09-26 02:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,11 @@ msgstr ""
 msgid "|Attribution| Attribution."
 msgstr ""
 
+#: ../../copyright.txt:33
+#: ../../copyright.txt:33
+msgid "Attribution"
+msgstr ""
+
 #: ../../copyright.txt:23
 msgid "You must give the original author credit."
 msgstr ""
@@ -73,12 +78,22 @@ msgstr ""
 msgid "|Noncommercial| Noncommercial."
 msgstr ""
 
+#: ../../copyright.txt:36
+#: ../../copyright.txt:36
+msgid "Noncommercial"
+msgstr ""
+
 #: ../../copyright.txt:26
 msgid "You may not use this work for commercial purposes."
 msgstr ""
 
 #: ../../copyright.txt:31
 msgid "|ShareAlike| Share Alike."
+msgstr ""
+
+#: ../../copyright.txt:39
+#: ../../copyright.txt:39
+msgid "ShareAlike"
 msgstr ""
 
 #: ../../copyright.txt:29
@@ -136,4 +151,3 @@ msgstr ""
 #: ../../index.rst:48
 msgid ":ref:`search`"
 msgstr ""
-

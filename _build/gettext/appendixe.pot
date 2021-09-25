@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 21:00+0900\n"
+"POT-Creation-Date: 2021-09-26 02:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1380,4 +1380,3 @@ msgstr ""
 #: ../../appendixe.rst:458
 msgid "An often-seen alternative calls for 1 space between the name and comment and 3 between the comment and the definition. A more liberal technique uses 3 spaces before and after the comment. Whatever you choose, be consistent."
 msgstr ""
-

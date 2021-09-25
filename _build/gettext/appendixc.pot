@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Thinking Forth 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-26 22:56+0900\n"
+"POT-Creation-Date: 2021-09-26 02:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,4 +88,3 @@ msgstr ""
 #: ../../appendixc.rst:144
 msgid "If ``DO`` keeps *three* items on the return stack, it must be defined:"
 msgstr ""
-

@@ -93,7 +93,7 @@ Let’s witness a case where a wrong-headed approach leads to a messy
 stack problem. Suppose we’re trying to write the definition of ``+THRU``
 (see :doc:`Chapter Five<chapter5>`, “Listing Organization” section, “Relative Loading” subsection). We’ve decided that our loop body will be
 
-.. code-block:: none
+.. code-block:: forth
    
    ...  DO  I LOAD  LOOP ;
 
@@ -143,13 +143,13 @@ We made it, but what a mess!
 If we’re gluttons for punishment, we might make two more stabs at it
 arriving at:
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @  DUP ROT + 1+  ROT ROT +
 
 and
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @  ROT OVER +  ROT ROT + 1+  SWAP
 
@@ -164,7 +164,7 @@ we have four elements on the stack.
 At this point, the first resort is usually the
 return stack:
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @  DUP >R  + 1+  SWAP R> +
 
@@ -177,7 +177,7 @@ Admittedly an improvement. But readable?
 Next we think, “Maybe we need a named variable.” Of course, we have one
 already: ``BLK``. So we try:
 
-.. code-block:: none
+.. code-block:: forth
    
    BLK @  + 1+  SWAP BLK @ +
 
@@ -188,13 +188,13 @@ Now it’s more readable, but it’s still rather long, and redundant too.
 
 We look back at the source for ``+LOAD`` just defined:
 
-.. code-block:: none
+.. code-block:: forth
    
    : +LOAD  ( offset -- )  BLK @ +  LOAD ;
 
 This word, ``+LOAD``, should be doing the work. All we have to write is:
 
-.. code-block:: none
+.. code-block:: forth
    
    : +THRU  ( lo hi )  1+ SWAP  DO  I +LOAD  LOOP ;
 
@@ -242,7 +242,7 @@ Although we’re using the stack to get the four arguments, the algorithm
 for drawing a box doesn’t lend itself to the nature of the stack. If
 you’re in a hurry, it would probably be best to take the easy way out:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE TOP         ( y coordinates top of box)
    VARIABLE LEFT        ( x     "       left side)
@@ -319,7 +319,7 @@ factoring of function simplifies the definition of ``[BOX]``.
 
 Or we might discover that this syntax feels more natural to the user:
 
-.. code-block:: none
+.. code-block:: forth
    
    10 10 ORIGIN! 30 30 BOX
 
@@ -358,13 +358,13 @@ it, and the number of things above it can change constantly. For
 instance, if you have an address at the fourth stack position down, you
 can write
 
-.. code-block:: none
+.. code-block:: forth
    
    4 PICK @
 
 to fetch its contents. But you must write
 
-.. code-block:: none
+.. code-block:: forth
    
    ( n) 5 PICK !
 
@@ -399,9 +399,9 @@ next to ``THEN``.)
 
 .. figure:: fig7-1.png
    :name: fig7-1
-   :alt: Example of a stack commentary.
 
    Example of a stack commentary.
+
 
 .. hint::
 
@@ -410,13 +410,13 @@ next to ``THEN``.)
 
 For example:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COUNT  ( a -- a+1 # )  DUP C@  SWAP 1+  SWAP ;
 
 (where you first get the count) is more efficiently written:
 
-.. code-block:: none
+.. code-block:: forth
    
    : COUNT  ( a -- a+1 # )  DUP 1+  SWAP C@ ;
 
@@ -432,7 +432,7 @@ does some job and, if something goes wrong, returns an error-code
 identifying the problem. Here’s one way the stack interface might be
 designed:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( -- error-code f | -- t)
 
@@ -443,7 +443,7 @@ the nature of the error.
 You’ll find stack manipulation easier, though, if you redesign the
 interface to look like this:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( -- error-code | O=no-error)
 
@@ -485,7 +485,7 @@ Sometimes the operators
 will appear to be symmetrical, but due to the control structure they
 aren’t. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    
    ... BEGIN ... >R ... WHILE ... R> ... REPEAT
 
@@ -550,7 +550,7 @@ for the line feed character.
 Once the loop has found the character sequence, we subtract its relative
 address from our current cursor position
 
-.. code-block:: none
+.. code-block:: forth
    
    its-position CURSOR @  SWAP -
 
@@ -558,7 +558,7 @@ to determine the distance between them.
 
 Our word’s stack effect is:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( -- distance-to-previous-cr/lf)
 
@@ -568,7 +568,7 @@ position—to the first previous line-feed character. We end up factoring
 out the “``CURSOR @``” and allowing the starting address to be passed as an
 argument on the stack, resulting in:
 
-.. code-block:: none
+.. code-block:: forth
    
    ( starting-position -- distance-to-previous-cr/lf)
 
@@ -598,9 +598,9 @@ more useful.
 
 .. figure:: img7-211.png
    :name: img7-211
-   :alt: "Shot from a cannon on a fast-moving train, hurtling between the blades of a windmill, and expecting to grab a trapeze dangling from a hot-air balloon... I told you Ace, there were too many variables!"
 
    "Shot from a cannon on a fast-moving train, hurtling between the blades of a windmill, and expecting to grab a trapeze dangling from a hot-air balloon... I told you Ace, there were too many variables!"
+
 
 Earlier we suggested the use of local variables
 especially during the design phase, to eliminate stack traffic. It’s
@@ -678,7 +678,7 @@ problems this can create, and some of the things we can do about them.
 that indicates the current number radix for all numeric input and
 output. The following words are commonly found in Forth systems:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DECIMAL   10 BASE ! ;
    : HEX   16 BASE ! ;
@@ -687,7 +687,7 @@ Suppose we’ve written a word that displays a “dump” of memory.
 Ordinarily, we work in decimal mode, but we want the dump in
 hexadecimal. So we write:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DUMP  ( a # )
       HEX   ...   ( code for the dump) ... DECIMAL ;
@@ -702,14 +702,14 @@ This means we have to tuck away
 the saved value temporarily, while we format the dump. The return stack
 is one place to do this:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DUMP  ( a # )
       BASE @ >R  HEX   ( code for dump)  R> BASE ! ;
 
 If things get too messy, we may have to define a temporary variable:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE OLD-BASE
    : DUMP  ( a # )
@@ -723,7 +723,7 @@ belong only to your application (and not part of your system), and if
 this same situation comes up more than once, apply a technique of
 factoring:
 
-.. code-block:: none
+.. code-block:: forth
    
    : BURY  ( a)  DUP 2+  2 CMOVE ;
    : EXHUME  ( a)  DUP 2+  SWAP 2 CMOVE ;
@@ -731,13 +731,13 @@ factoring:
 Then instead of defining two variables, such as ``CONDITION`` and
 ``OLD-CONDITION``, define one double-length variable:
 
-.. code-block:: none
+.. code-block:: forth
    
    2VARIABLE CONDITION
 
 Use ``BURY`` and ``EXHUME`` to save and restore the original value:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DIDDLE    CONDITION BURY  17 CONDITION !  ( diddle )
       CONDITION EXHUME ;
@@ -795,7 +795,7 @@ Finally, when you encounter this situation of having to save/restore a
 value, make sure it’s not just a case of bad factoring. For example,
 suppose we have written:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LONG   18 #HOLES ! ;
    : SHORT   9 #HOLES ! ;
@@ -806,7 +806,7 @@ The current ``GAME`` is either ``LONG`` or ``SHORT``.
 Later we decide we need a word to play *any* number of holes. So we
 invoke ``GAME`` making sure not to clobber the current value of ``#HOLES``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : HOLES  ( n)  #HOLES @  SWAP #HOLES !  GAME  #HOLES ! ;
 
@@ -814,7 +814,7 @@ Because we needed ``HOLES`` after we’d defined ``GAME``, it seemed to be of
 greater complexity; we built ``HOLES`` around ``GAME``. But in fact—perhaps you
 see it already—rethinking is in order:
 
-.. code-block:: none
+.. code-block:: forth
    
    : HOLES ( n)  O DO  I HOLE PLAY  LOOP ;
    : GAME   #HOLES @ HOLES ;
@@ -833,7 +833,7 @@ defining your own stack.
 Here is the code for a user stack including very simple error checking
 (an error clears the stack):
 
-.. code-block:: none
+.. code-block:: forth
    
    CREATE STACK  12 ALLOT  \  { 2tos-pointer | 10stack [5 cells] }
    HERE CONSTANT STACK>
@@ -921,7 +921,7 @@ There are two ways to accomplish the latter approach, depending on how
 you want to decompose the problem. First, we could nest one condition
 within the other:
 
-.. code-block:: none
+.. code-block:: forth
    
    : [DISPLAY]  ...
         ( the original definition, always does the output) ... ;
@@ -947,7 +947,7 @@ was renamed ``<DISPLAY>``.
 That’s one approach to the use of two variables. Another is to include
 both tests within a single word:
 
-.. code-block:: none
+.. code-block:: forth
    
    : DISPLAY   'LOOKAHEAD? @  'TOC @ OR  NOT IF [DISPLAY] THEN ;
 
@@ -956,7 +956,7 @@ mess. We can use a single variable not as a flag, but as a counter.
 
 We define:
 
-.. code-block:: none
+.. code-block:: forth
    
    VARIABLE 'INVISIBLE?  ( t=invisible)
    : DISPLAY   'INVISIBLE? @  O= IF [DISPLAY] THEN ;
@@ -987,7 +987,7 @@ This use of a counter may be dangerous, however. It requires parity of
 command usage: two ``VISIBLE``\ s yields invisible. That is, unless ``VISIBLE``
 clips the counter:
 
-.. code-block:: none
+.. code-block:: forth
    
    : VISIBLE   'INVISIBLE? @  1-  O MAX  'INVISIBLE? ! ;
 
@@ -1011,7 +1011,7 @@ The simple case requires saving and restoring a
 state. Suppose we initially have six variables representing the state of
 a particular component, as shown in :numref:`fig7-2`.
 
-.. code-block:: none
+.. code-block:: forth
    :caption: A collection of related variables.
    :name: fig7-2
    
@@ -1026,7 +1026,7 @@ Now suppose that we need to save all of them, so
 that further processing can take place, and later restore all of them.
 We could define:
 
-.. code-block:: none
+.. code-block:: forth
    
    : @STATE ( -- top bottom left right inside out)
       TOP @  BOTTOM @  LEFT @  RIGHT @  INSIDE @  OUT @ ;
@@ -1045,13 +1045,13 @@ called ``SAVED``.
 
 .. figure:: fig7-3.png
    :name: fig7-3
-   :alt: Conceptual model for saving a state table.
 
    Conceptual model for saving a state table.
 
+
 We’ve implemented this approach with the code in :numref:`fig7-4`.
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Implementation of save/restorable state table.
    :name: fig7-4
    :lineno-start: 0
@@ -1108,9 +1108,9 @@ for this kind of state table.
 
 .. figure:: fig7-5.png
    :name: fig7-5
-   :alt: Conceptual model for alternating-states tables.
 
    Conceptual model for alternating-states tables.
+
 
 In this model, the names ``TOP``, ``BOTTOM``, etc., can be
 made to point into either of two tables, ``REAL`` or ``PSEUDO``. By making the
@@ -1122,7 +1122,7 @@ The code in :numref:`fig7-6` implements this alternating states
 mechanism. The words ``WORKING`` and ``PRETENDING`` change the pointer
 appropriately. For instance:
 
-.. code-block:: none
+.. code-block:: forth
    :caption: Implementation of alternating-states mechanism.
    :name: fig7-6
    :lineno-start: 0
@@ -1144,7 +1144,7 @@ appropriately. For instance:
    : WORKING      REAL 'POINTERS ! ;     WORKING
    : PRETENDING   PSEUDO 'POINTERS ! ;
 
-.. code-block:: none
+.. code-block:: forth
    :emphasize-lines: 3,6,8,10
    
    WORKING
@@ -1186,14 +1186,14 @@ for code and implementation details.) It works like this: You define the
 word whose behavior will be vectorable with the defining word
 ``DOER``, as in
 
-.. code-block:: none
+.. code-block:: forth
    
    DOER PLATFORM
 
 Initially, the new word ``PLATFORM`` does nothing. Then you can write words
 that change what ``PLATFORM`` does by using the word ``MAKE``:
 
-.. code-block:: none
+.. code-block:: forth
    
    : LEFTWING   MAKE PLATFORM  ." proponent " ;
    : RIGHTWING  MAKE PLATFORM  ." opponent " ;
@@ -1209,20 +1209,20 @@ When you invoke ``LEFTWING``, the phrase ``MAKE PLATFORM`` changes what
 ``RIGHTWING`` will make ``PLATFORM`` display “opponent.” You can use
 ``PLATFORM`` within another definition:
 
-.. code-block:: none
+.. code-block:: forth
    
    : SLOGAN   ." Our candidate is a longstanding " PLATFORM
       ." of heavy taxation for business. " ;
 
 The statement
 
-.. code-block:: none
+.. code-block:: forth
    
    LEFTWING SLOGAN
 
 will display one campaign statement, while
 
-.. code-block:: none
+.. code-block:: forth
    
    RIGHTWING SLOGAN
 
@@ -1241,9 +1241,9 @@ conceptualized illustration of the dictionary.
 
 .. figure:: fig7-7.png
    :name: fig7-7
-   :alt: ``DOER`` and ``MAKE``.
 
    ``DOER`` and ``MAKE``.
+
 
 If you want to *continue* execution, you can use the word
 ``;AND`` in place of semicolon.
@@ -1253,9 +1253,9 @@ definition in which it appears, as you can see in :numref:`fig7-8` .
 
 .. figure:: fig7-8.png
    :name: fig7-8
-   :alt: Multiple ``MAKE``\ s in parallel using ``;AND``.
 
    Multiple ``MAKE``\ s in parallel using ``;AND``.
+
 
 Finally, you can chain the “making” of ``DOER`` words
 in series by not using ``;AND``.
@@ -1263,9 +1263,9 @@ in series by not using ``;AND``.
 
 .. figure:: fig7-9.png
    :name: fig7-9
-   :alt: Multiple ``MAKE``\ s in series.
 
    Multiple ``MAKE``\ s in series.
+
 
 Using DOER/MAKE
 ===============
@@ -1283,7 +1283,7 @@ They are:
    Consider the definition of a word called ``DUMP``, designed to reveal the
    contents of a specified region of memory.
 
-   .. code-block:: none
+   .. code-block:: forth
       :lineno-start: 0
       :emphasize-lines: 4
       
@@ -1296,7 +1296,7 @@ They are:
    The problem arises when you write a definition called ``CDUMP``, designed
    to format the output according to bytes, not cells:
 
-   .. code-block:: none
+   .. code-block:: forth
       :lineno-start: 0
       :emphasize-lines: 4
    
@@ -1315,7 +1315,7 @@ They are:
    vectored by the code in ``DUMP`` and ``CDUMP``. (Recognize that
    “``1``  ``+LOOP``” has the same effect as “``LOOP``”.)
    
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER .UNIT ( a -- increment)  \ display byte or cell
       : <DUMP>  ( a # )
@@ -1330,7 +1330,7 @@ They are:
 #. To change the state of related functions by invoking a single
    command. For instance:
 
-   .. code-block:: none
+   .. code-block:: forth
       :lineno-start: 0
    
       DOER TYPE'
@@ -1363,7 +1363,7 @@ They are:
 
    We write:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER ANNOUNCE
       : LONG MAKE ANNOUNCE
@@ -1384,7 +1384,7 @@ They are:
    behaviors, letting each one set the next. The following example
    (though not terribly practical) illustrates the point.
 
-   .. code-block:: none
+   .. code-block:: forth
       :lineno-start: 0
    
       DOER WHERE
@@ -1414,7 +1414,7 @@ They are:
    We can even define a ``DOER`` word that toggles its
    own behavior endlessly:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER SPEECH
       : ALTERNATE
@@ -1429,13 +1429,13 @@ They are:
    To implement a forward reference, build the header of the word with
    ``DOER``, before invoking its name.
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER STILL-UNDEFINED
    
    Later in the listing, use ``MAKE``;
    
-   .. code-block:: none
+   .. code-block:: forth
    
       MAKE STILL-UNDEFINED  ALL THAT JAZZ ;
    
@@ -1453,7 +1453,7 @@ They are:
    
    This translates nicely into:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER GCD ( a b -- gcd)
       MAKE GCD  ?DUP  IF  DUP ROT ROT  MOD  GCD  THEN ;
@@ -1461,7 +1461,7 @@ They are:
    Indirect recursion occurs when one word invokes a second word, while
    the second word invokes the first. This can be done using the form:
 
-   .. code-block:: none
+   .. code-block:: forth
    
       DOER B
       : A  ... B ... ;
@@ -1469,7 +1469,7 @@ They are:
 
 #. Debugging. I often define:
    
-   .. code-block:: none
+   .. code-block:: forth
       
       DOER SNAP
    
